@@ -113,7 +113,9 @@
   Probé tracked=true -> sigue agotada; lo dejé como estaba (tracked=false).
   El pack (46094051573939) está en la ubicación propia "calle 20c no 28b-08 pereira" -> se vende,
   pero sus pedidos NO van a Dropi automáticamente. Pendiente del usuario: revisar Envío y entrega / app Dropi.
-  Permisos actuales: products, files, inventory, locations.
+  RESUELTO: la ubicación FulfillmentDropi estaba "sin asignar" en el Perfil general de envío.
+  Añadida al grupo de ubicaciones (DeliveryLocationGroup 105616933043) -> "1 unidad" disponible.
+  Permisos actuales: products, files, inventory, locations, shipping.
 
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
