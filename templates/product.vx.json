@@ -1,102 +1,94 @@
 {
   "sections": {
-    "hero": {
-      "type": "vx-hero",
+    "principal": {
+      "type": "vx-producto",
       "settings": {
-        "producto": "compresor-inflador-portatil",
-        "eyebrow": "Vuronix AirGo · Inflador inalámbrico",
-        "titulo": "Nunca más te quedes",
-        "titulo_acento": "varado.",
-        "sub": "Llanta baja a las 10 de la noche y la bomba de la gasolinera dañada. Con AirGo llevas el aire contigo: eliges la presión y se apaga solo al llegar.",
-        "nota_precio": "Pagas al recibir",
-        "btn1_texto": "Pídelo hoy",
-        "btn2_texto": "Ver cómo funciona",
-        "btn2_url": "#como-funciona",
-        "etiqueta": "Pago contraentrega"
+        "eyebrow": "Vuronix AirGo",
+        "intro": "El inflador inalámbrico para moto, carro y bici. Eliges la presión y se apaga solo al llegar.",
+        "puntos": "Modos listos: moto, carro, bici y balón + manual\nPresión exacta con sensor digital (±1 PSI)\nInalámbrico, carga por USB tipo C\nLuz LED para emergencias de noche\nSolo 480 g: cabe en el baúl o la guantera",
+        "boton_texto": "Agregar al carrito",
+        "nota_precio": "Pago contraentrega: pagas en efectivo al recibir.",
+        "specs": "Presión máxima: 150 PSI\nPrecisión: ±1 PSI\nUnidades: PSI, BAR y KPA\nBatería: litio, 2 × 2000 mAh\nCarga: USB tipo C\nPeso: 480 g\nModos: moto, carro, bicicleta, balón y manual\nMaterial: ABS resistente\nColor: negro",
+        "envio": "Envío a toda Colombia.\nPago contraentrega: pagas en efectivo directamente al transportador cuando recibes tu pedido."
       },
       "blocks": {
-        "chip-1": {
-          "type": "chip",
+        "conf-1": {
+          "type": "confianza",
           "settings": {
             "icono": "efectivo",
+            "titulo": "Contraentrega",
             "texto": "Pagas al recibir"
           }
         },
-        "chip-2": {
-          "type": "chip",
+        "conf-2": {
+          "type": "confianza",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío",
+            "texto": "A toda Colombia"
+          }
+        },
+        "conf-3": {
+          "type": "confianza",
+          "settings": {
+            "icono": "chat",
+            "titulo": "Asesoría",
+            "texto": "Te ayudamos"
+          }
+        }
+      },
+      "block_order": [
+        "conf-1",
+        "conf-2",
+        "conf-3"
+      ]
+    },
+    "garantias": {
+      "type": "vx-garantias",
+      "settings": {},
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icono": "efectivo",
+            "texto": "Pago contraentrega"
+          }
+        },
+        "item-2": {
+          "type": "item",
           "settings": {
             "icono": "camion",
             "texto": "Envío a toda Colombia"
           }
         },
-        "chip-3": {
-          "type": "chip",
+        "item-3": {
+          "type": "item",
           "settings": {
-            "icono": "reloj",
-            "texto": "Listo en minutos"
+            "icono": "rayo",
+            "texto": "Se apaga solo"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icono": "medidor",
+            "texto": "150 PSI"
+          }
+        },
+        "item-5": {
+          "type": "item",
+          "settings": {
+            "icono": "check",
+            "texto": "Carga USB-C"
           }
         }
       },
       "block_order": [
-        "chip-1",
-        "chip-2",
-        "chip-3"
-      ]
-    },
-    "cifras": {
-      "type": "vx-cifras",
-      "settings": {},
-      "blocks": {
-        "cifra-1": {
-          "type": "cifra",
-          "settings": {
-            "prefijo": "",
-            "valor": 150,
-            "decimales": 0,
-            "unidad": "PSI",
-            "titulo": "Presión máxima",
-            "texto": "Fuerza de sobra para moto, carro y bici."
-          }
-        },
-        "cifra-2": {
-          "type": "cifra",
-          "settings": {
-            "prefijo": "±",
-            "valor": 1,
-            "decimales": 0,
-            "unidad": "PSI",
-            "titulo": "Precisión",
-            "texto": "Sensor digital: ni te pasas ni te quedas corto."
-          }
-        },
-        "cifra-3": {
-          "type": "cifra",
-          "settings": {
-            "prefijo": "",
-            "valor": 480,
-            "decimales": 0,
-            "unidad": "g",
-            "titulo": "De peso",
-            "texto": "Más pequeño que una botella de agua."
-          }
-        },
-        "cifra-4": {
-          "type": "cifra",
-          "settings": {
-            "prefijo": "",
-            "valor": 4000,
-            "decimales": 0,
-            "unidad": "mAh",
-            "titulo": "De batería",
-            "texto": "2 × 2000 mAh de litio, carga por USB-C."
-          }
-        }
-      },
-      "block_order": [
-        "cifra-1",
-        "cifra-2",
-        "cifra-3",
-        "cifra-4"
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
       ]
     },
     "anatomia": {
@@ -224,54 +216,6 @@
         "modo-2",
         "modo-3",
         "modo-4"
-      ]
-    },
-    "garantias": {
-      "type": "vx-garantias",
-      "settings": {},
-      "blocks": {
-        "item-1": {
-          "type": "item",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pago contraentrega"
-          }
-        },
-        "item-2": {
-          "type": "item",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío a toda Colombia"
-          }
-        },
-        "item-3": {
-          "type": "item",
-          "settings": {
-            "icono": "rayo",
-            "texto": "Se apaga solo"
-          }
-        },
-        "item-4": {
-          "type": "item",
-          "settings": {
-            "icono": "medidor",
-            "texto": "150 PSI"
-          }
-        },
-        "item-5": {
-          "type": "item",
-          "settings": {
-            "icono": "check",
-            "texto": "Carga USB-C"
-          }
-        }
-      },
-      "block_order": [
-        "item-1",
-        "item-2",
-        "item-3",
-        "item-4",
-        "item-5"
       ]
     },
     "pasos": {
@@ -530,29 +474,16 @@
         "pregunta-5",
         "pregunta-6"
       ]
-    },
-    "cierre": {
-      "type": "vx-cierre",
-      "settings": {
-        "producto": "compresor-inflador-portatil",
-        "eyebrow": "Llévalo en tu moto",
-        "titulo": "Olvídate de las",
-        "titulo_acento": "llantas bajas.",
-        "texto": "Pídelo hoy y págalo al recibir, en efectivo, en cualquier parte de Colombia.",
-        "btn_texto": "Lo quiero"
-      }
     }
   },
   "order": [
-    "hero",
-    "cifras",
+    "principal",
+    "garantias",
     "anatomia",
     "modos",
-    "garantias",
     "pasos",
     "comparativa",
     "detalles",
-    "faq",
-    "cierre"
+    "faq"
   ]
 }

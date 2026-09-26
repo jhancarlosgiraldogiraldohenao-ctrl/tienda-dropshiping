@@ -1,0 +1,100 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-grafito);
+  }
+  #shopify-section-{{ section.id }} .vx-pasos__cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-paso h3 { font-size: clamp(30px, 4vw, {{ section.settings.paso_size }}px); }
+  #shopify-section-{{ section.id }} .vx-paso p, #shopify-section-{{ section.id }} .vx-pasos__cabecera p { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .vx-pasos__texto { text-align: {{ section.settings.alineacion }}; }
+{% endstyle %}
+
+<section class="vx-section vx-pasos" id="{{ section.settings.ancla | default: 'como-funciona' }}" data-vx-pasos>
+  <div class="vx-container">
+    <div class="vx-pasos__grid">
+      <div class="vx-pasos__visual">
+        <div class="vx-pasos__pila">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.imagen != blank -%}
+              <img class="{% if forloop.first %}is-activo{% endif %}" style="object-fit: {{ block.settings.encuadre }}" src="{{ block.settings.imagen | image_url: width: 1100 }}" alt="{{ block.settings.imagen.alt | escape }}" loading="lazy">
+            {%- else -%}
+              <img class="{% if forloop.first %}is-activo{% endif %}" style="object-fit: {{ block.settings.encuadre }}" src="{{ block.settings.foto_defecto | asset_url }}" alt="{{ block.settings.titulo | escape }}" loading="lazy">
+            {%- endif -%}
+          {%- endfor -%}
+          <span class="vx-pasos__contador">{{ section.settings.texto_paso }} <b data-vx-pasos-num>01</b> / {{ section.blocks.size | prepend: '0' | slice: -2, 2 }}</span>
+        </div>
+      </div>
+
+      <div class="vx-pasos__texto">
+        <div class="vx-pasos__cabecera">
+          {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+          <h2 class="vx-reveal" style="--vx-i:1; margin-top: 16px">{{ section.settings.titulo }}</h2>
+          {%- if section.settings.texto != blank -%}<p class="vx-reveal" style="--vx-i:2">{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
+        </div>
+        {%- for block in section.blocks -%}
+          <div class="vx-paso{% if forloop.first %} is-activo{% endif %}" data-i="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
+            <div class="vx-paso__foto-movil" style="--vx-fit: {{ block.settings.encuadre }}">
+              {%- if block.settings.imagen != blank -%}
+                <img src="{{ block.settings.imagen | image_url: width: 900 }}" alt="{{ block.settings.imagen.alt | escape }}" loading="lazy">
+              {%- else -%}
+                <img src="{{ block.settings.foto_defecto | asset_url }}" alt="{{ block.settings.titulo | escape }}" loading="lazy">
+              {%- endif -%}
+            </div>
+            <div class="vx-paso__num">{{ forloop.index | prepend: '0' | slice: -2, 2 }}</div>
+            <h3>{{ block.settings.titulo }}</h3>
+            <p>{{ block.settings.texto | newline_to_br }}</p>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VX – Pasos",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Así de fácil" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Tres pasos. Cero adivinanzas." },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Sin cables, sin gasolinera, sin fila." },
+    { "type": "text", "id": "texto_paso", "label": "Palabra del contador", "default": "Paso" },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla (para enlazar con #)", "default": "como-funciona" },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación del texto", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 100, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "paso_size", "label": "Tamaño del título de cada paso (px)", "min": 24, "max": 72, "step": 2, "unit": "px", "default": 48 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 22, "step": 1, "unit": "px", "default": 17 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "paso",
+      "name": "Paso",
+      "settings": [
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Conecta" },
+        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Enrosca la manguera en la válvula." },
+        { "type": "image_picker", "id": "imagen", "label": "Foto" },
+        { "type": "select", "id": "foto_defecto", "label": "Foto por defecto (si no eliges una)", "options": [
+          { "value": "vx-detalle-valvula.jpg", "label": "Válvula y manguera" },
+          { "value": "vx-paso-controles.jpg", "label": "Pantalla y botones" },
+          { "value": "vx-detalle-botones.jpg", "label": "Botones" },
+          { "value": "vx-detalle-pantalla.jpg", "label": "Pantalla" },
+          { "value": "vx-escena-rueda.jpg", "label": "Junto a la rueda" },
+          { "value": "vx-detalle-usbc.jpg", "label": "Puerto USB-C" }
+        ], "default": "vx-escena-rueda.jpg" },
+        { "type": "select", "id": "encuadre", "label": "Encuadre de la foto", "options": [ { "value": "cover", "label": "Llenar el marco" }, { "value": "contain", "label": "Foto completa" } ], "default": "cover" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [ { "name": "VX – Pasos", "blocks": [ { "type": "paso" } ] } ]
+}
+{% endschema %}

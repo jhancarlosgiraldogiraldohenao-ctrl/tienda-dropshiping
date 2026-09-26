@@ -1,0 +1,216 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+{%- assign variante = product.selected_or_first_available_variant -%}
+{%- assign form_id = 'vx-form-' | append: section.id -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-asfalto);
+  }
+  #shopify-section-{{ section.id }} .vx-compra__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.6 | round }}px, 6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-compra__intro, #shopify-section-{{ section.id }} .vx-compra__puntos li { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .vx-compra { text-align: {{ section.settings.alineacion }}; }
+{% endstyle %}
+
+<section class="vx-section vx-producto">
+  <div class="vx-container">
+    <div class="vx-producto__grid">
+      {%- comment -%} Galería: sigue las fotos del catálogo {%- endcomment -%}
+      <div class="vx-galeria" data-vx-galeria>
+        {%- assign primera = product.featured_media -%}
+        <div class="vx-galeria__principal">
+          {%- if section.settings.sello != blank -%}<span class="vx-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
+          {%- if primera -%}
+            <img src="{{ primera | image_url: width: 1200 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | escape }}" loading="eager" fetchpriority="high">
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag }}
+          {%- endif -%}
+        </div>
+        {%- if product.media.size > 1 -%}
+          <div class="vx-galeria__mins">
+            {%- for media in product.media -%}
+              {%- if media.media_type == 'image' -%}
+                <button type="button" class="vx-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-src="{{ media | image_url: width: 1200 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
+                  <img src="{{ media | image_url: width: 180 }}" alt="" loading="lazy" width="90" height="90">
+                </button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%} Columna de compra {%- endcomment -%}
+      <div class="vx-compra" data-vx-compra data-txt-comprar="{{ section.settings.boton_texto | escape }}" data-txt-agotado="{{ section.settings.agotado_texto | escape }}" data-formato="{{ shop.money_format | escape }}">
+        {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h1 class="vx-compra__titulo">{{ product.title }}</h1>
+        {%- if section.settings.intro != blank -%}<p class="vx-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
+
+        <div class="vx-compra__precio">
+          <strong data-vx-precio>{{ variante.price | money }}</strong>
+          <s data-vx-antes>{% if variante.compare_at_price > variante.price %}{{ variante.compare_at_price | money }}{% endif %}</s>
+          {%- if variante.compare_at_price > variante.price and section.settings.mostrar_ahorro -%}
+            <span class="vx-compra__ahorro">-{{ variante.compare_at_price | minus: variante.price | times: 100 | divided_by: variante.compare_at_price }}%</span>
+          {%- endif -%}
+        </div>
+        {%- if section.settings.nota_precio != blank -%}<p class="vx-compra__nota">{{ section.settings.nota_precio }}</p>{%- endif -%}
+
+        {%- if section.settings.puntos != blank -%}
+          <ul class="vx-compra__puntos">
+            {%- assign puntos = section.settings.puntos | newline_to_br | split: '<br />' -%}
+            {%- for p in puntos -%}
+              {%- assign t = p | strip -%}
+              {%- if t != blank -%}<li>{% render 'vx-icono', nombre: 'check' %}<span>{{ t }}</span></li>{%- endif -%}
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- unless product.has_only_default_variant -%}
+          <div class="vx-variantes">
+            {%- for option in product.options_with_values -%}
+              <div>
+                <label for="vx-op-{{ section.id }}-{{ forloop.index0 }}">{{ option.name }}</label>
+                <select id="vx-op-{{ section.id }}-{{ forloop.index0 }}" data-vx-opcion>
+                  {%- for value in option.values -%}
+                    <option value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>{{ value }}</option>
+                  {%- endfor -%}
+                </select>
+              </div>
+            {%- endfor -%}
+          </div>
+          <script type="application/json" data-vx-variantes>
+            [{%- for v in product.variants -%}{"id": {{ v.id }}, "price": {{ v.price }}, "compare_at_price": {{ v.compare_at_price | default: 0 }}, "available": {{ v.available }}, "options": {{ v.options | json }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}]
+          </script>
+        {%- endunless -%}
+
+        <div class="vx-compra__form">
+          <product-form class="product-form" data-section-id="{{ section.id }}">
+            <div class="product-form__error-message-wrapper" role="alert" hidden>
+              <span class="product-form__error-message"></span>
+            </div>
+            {%- form 'product', product, id: form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" value="{{ variante.id }}" class="product-variant-id">
+              <div class="vx-cantidad">
+                {%- if section.settings.mostrar_cantidad -%}
+                  <div class="vx-cantidad__caja">
+                    <button type="button" data-vx-cant="-1" aria-label="Menos">−</button>
+                    <input type="number" name="quantity" value="1" min="1" aria-label="Cantidad">
+                    <button type="button" data-vx-cant="1" aria-label="Más">+</button>
+                  </div>
+                {%- endif -%}
+                <button type="submit" name="add" class="vx-btn product-form__submit" {% unless variante.available %}disabled{% endunless %}>
+                  <span>{% if variante.available %}{{ section.settings.boton_texto }}{% else %}{{ section.settings.agotado_texto }}{% endif %}</span>
+                  <div class="loading__spinner hidden">
+                    <svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg>
+                  </div>
+                </button>
+              </div>
+            {%- endform -%}
+          </product-form>
+        </div>
+
+        {%- if section.settings.mostrar_stock and variante.available -%}
+          <div class="vx-compra__stock"><i></i>{{ section.settings.stock_texto }}</div>
+        {%- endif -%}
+
+        {%- if section.blocks.size > 0 -%}
+          <div class="vx-confianza">
+            {%- for block in section.blocks -%}
+              <div {{ block.shopify_attributes }}>{% render 'vx-icono', nombre: block.settings.icono %}<strong>{{ block.settings.titulo }}</strong>{{ block.settings.texto }}</div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        <div class="vx-desc">
+          {%- if section.settings.mostrar_descripcion and product.description != blank -%}
+            <details {% if section.settings.abrir_descripcion %}open{% endif %}>
+              <summary>{{ section.settings.desc_titulo }}</summary>
+              <div class="vx-desc__cuerpo">{{ product.description }}</div>
+            </details>
+          {%- endif -%}
+          {%- if section.settings.specs != blank -%}
+            <details>
+              <summary>{{ section.settings.specs_titulo }}</summary>
+              <div class="vx-desc__cuerpo">
+                <ul>
+                  {%- assign specs = section.settings.specs | newline_to_br | split: '<br />' -%}
+                  {%- for s in specs -%}{%- assign t = s | strip -%}{%- if t != blank -%}<li>{{ t }}</li>{%- endif -%}{%- endfor -%}
+                </ul>
+              </div>
+            </details>
+          {%- endif -%}
+          {%- if section.settings.envio != blank -%}
+            <details>
+              <summary>{{ section.settings.envio_titulo }}</summary>
+              <div class="vx-desc__cuerpo">{{ section.settings.envio | newline_to_br }}</div>
+            </details>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {%- if section.settings.barra_movil -%}
+    <div class="vx-sticky-compra" data-vx-sticky-compra>
+      <strong>{{ variante.price | money }}</strong>
+      <button type="button" class="vx-btn" {% unless variante.available %}disabled{% endunless %}>{{ section.settings.boton_texto }}</button>
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "VX – Producto",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Vuronix" },
+    { "type": "textarea", "id": "intro", "label": "Frase de introducción" },
+    { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Pago contraentrega" },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Pagas en efectivo al recibir." },
+    { "type": "checkbox", "id": "mostrar_ahorro", "label": "Mostrar % de ahorro (si hay precio anterior)", "default": true },
+    { "type": "textarea", "id": "puntos", "label": "Puntos clave (uno por línea)" },
+    { "type": "header", "content": "Botón de compra" },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Agregar al carrito" },
+    { "type": "text", "id": "agotado_texto", "label": "Texto si está agotado", "default": "Agotado" },
+    { "type": "checkbox", "id": "mostrar_cantidad", "label": "Mostrar selector de cantidad", "default": true },
+    { "type": "checkbox", "id": "mostrar_stock", "label": "Mostrar aviso de disponibilidad", "default": true },
+    { "type": "text", "id": "stock_texto", "label": "Aviso de disponibilidad", "default": "Disponible · despacho en 24 h" },
+    { "type": "checkbox", "id": "barra_movil", "label": "Barra de compra fija en el móvil", "default": true },
+    { "type": "header", "content": "Desplegables" },
+    { "type": "checkbox", "id": "mostrar_descripcion", "label": "Mostrar la descripción del catálogo", "default": true },
+    { "type": "checkbox", "id": "abrir_descripcion", "label": "Descripción abierta al cargar", "default": false },
+    { "type": "text", "id": "desc_titulo", "label": "Título de la descripción", "default": "Descripción" },
+    { "type": "text", "id": "specs_titulo", "label": "Título de especificaciones", "default": "Especificaciones" },
+    { "type": "textarea", "id": "specs", "label": "Especificaciones (una por línea)" },
+    { "type": "text", "id": "envio_titulo", "label": "Título de envío y pago", "default": "Envío y pago" },
+    { "type": "textarea", "id": "envio", "label": "Texto de envío y pago" },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 90, "step": 2, "unit": "px", "default": 60 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 22, "step": 1, "unit": "px", "default": 16 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 40 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 80 }
+  ],
+  "blocks": [
+    {
+      "type": "confianza",
+      "name": "Garantía",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [
+          { "value": "efectivo", "label": "Efectivo" }, { "value": "camion", "label": "Envío" }, { "value": "escudo", "label": "Garantía" },
+          { "value": "chat", "label": "Chat" }, { "value": "reloj", "label": "Reloj" }
+        ], "default": "escudo" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Garantía" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Compra segura" }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [ { "name": "VX – Producto" } ]
+}
+{% endschema %}

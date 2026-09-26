@@ -27,6 +27,50 @@
 - Mini Retro White Noise Bluetooth Speaker, D5 Starry Moon Lamp,
   Smart Fingerprint Padlock, Metal Expansion Phone Stand
 
+## Brief confirmado (2026-09-26)
+- Estilo "herramienta pro de carretera": asfalto #0E0F11, grafito #17191C,
+  amarillo señal #FFC400, estudio claro #EEF0F2. Titulares Barlow Condensed
+  (Google Fonts) + Inter. Radios 8/14px. Tema global: barlow_n7 / inter_n4.
+- Requisitos del usuario: texto SIEMPRE en bloques HTML (nunca quemado en la
+  imagen); sinergia fotos-bloques; composición muy trabajada, nada de plantilla;
+  usar SUS fotos (las mejores). Sin fotos IA.
+- Marca: Vuronix (producto: AirGo). Otros 4 productos: sin tocar (el usuario
+  no respondió; la web se centra en el inflador).
+
+## Fotos usadas (recortes de producto-2/3/4, en assets/)
+- vx-escena-rueda (hero, paso 1, cierre), vx-estudio-frente (anatomía),
+  vx-recorte-tres-cuartos.png (modos, sin fondo), vx-paso-controles, vx-detalle-*
+  (pantalla, botones, válvula, usbc, boquillas, linterna), vx-estudio-gris.
+- Descartadas: producto-1 (500px, iconos) y producto-5 (320px): baja calidad.
+
+## Tema de trabajo
+- "Vuronix AirGo" id 155009319091 (NO publicado). Tema activo sigue siendo #154842661043.
+- Preview: https://sqfyqn-qn.myshopify.com?preview_theme_id=155009319091
+
+## Secciones (prefijo vx-)
+- vx-hero: apertura, foto con parallax + pantalla animada HTML que "infla" 18→32 PSI
+- vx-cifras: banda de 4 cifras con contador
+- vx-anatomia: foto de estudio con puntos numerados + tarjetas (bloques con x/y)
+- vx-modos: selector interactivo moto/carro/bici/balón con lectura digital
+- vx-garantias: marquesina amarilla
+- vx-pasos: escena sticky, la foto cambia con cada paso (ancla #como-funciona)
+- vx-comparativa: AirGo vs gasolinera
+- vx-detalles: bento de detalles + "qué incluye"
+- vx-faq, vx-cierre
+- vx-producto: página de producto (galería del catálogo, variantes, cantidad,
+  product-form de Dawn -> cajón del carrito, confianza, desplegables, barra móvil)
+- header.liquid: wordmark "Vuronix" + logo opcional por sección
+- footer.liquid: reescrito (VX – Pie de página)
+- snippets/vx-icono.liquid, assets/vx-styles.css, assets/vx-scripts.js, vx-favicon.png
+- templates/index.json y templates/product.vx.json
+
+## Catálogo (hecho por API)
+- Producto: título "Inflador Portátil Inalámbrico AirGo – Vuronix", tipo
+  "Infladores portátiles", vendor Vuronix, descripción reescrita, SEO,
+  templateSuffix "vx" asignado, fotos reordenadas (escena, detalles, infografía,
+  proveedor 500px, proveedor 320px) y textos alternativos corregidos.
+
 ## Pendiente
-- Mensaje 2: propuesta de estilo enviada; esperando confirmación + decisión fotos IA
-- Secciones creadas: ninguna aún
+- Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
+- Publicar el tema como activo solo con OK explícito.
+- Políticas legales (panel → Configuración → Políticas).
