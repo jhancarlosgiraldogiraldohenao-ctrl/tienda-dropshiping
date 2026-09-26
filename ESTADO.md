@@ -185,4 +185,10 @@
   como og:image por defecto y descripción por defecto en snippets/meta-tags.liquid.
 - Comprobado: todos los visitantes (sin sesión) ven el tema nuevo #155009319091.
 
+## Ronda 13 (2026-09-26, en vivo)
+- 10 productos ajenos (auriculares, drone, regleta, proyectores, cámara, soporte, candado, lámpara, parlante) -> DRAFT.
+  Catálogo /collections/all solo muestra AirGo.
+- "Seguir comprando" (carrito vacío, página y cajón) -> /products/compresor-inflador-portatil.
+- Quitado el bloque "¿Tienes una cuenta? Inicia sesión" del carrito y del cajón (if false).
+
 ## Pendiente
