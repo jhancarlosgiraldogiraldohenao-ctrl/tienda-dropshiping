@@ -301,7 +301,7 @@
 .vx-celda--m { grid-column: span 5; grid-row: span 2; }
 .vx-celda--p { grid-column: span 4; grid-row: span 2; }
 .vx-celda--a { grid-column: span 6; grid-row: span 2; }
-.vx-celda__foto { flex: 1; min-height: 200px; background: #fff; overflow: hidden; }
+.vx-celda__foto { flex: 1; min-height: 280px; background: #101114; overflow: hidden; }
 .vx-celda__foto img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--vx-ease); }
 .vx-celda:hover .vx-celda__foto img { transform: scale(1.05); }
 .vx-celda__foto--contener img { object-fit: contain; padding: 18px; }

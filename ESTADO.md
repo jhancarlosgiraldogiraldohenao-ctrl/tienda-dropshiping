@@ -90,6 +90,15 @@
 - Detalles: quitadas "Rosca firme" y "Cabe en todo"; quedan 3 tarjetas iguales.
 - Fotos del usuario (detalles + pack dúo): AÚN NO recibidas en Contenido → Archivos.
 
+## Cambios ronda 4 (2026-09-26)
+- Fotos profesionales del usuario (recibidas por chat): pack dúo (recortado a fondo
+  grafito -> assets/vx-pack-duo.jpg y subida al producto como foto del pack,
+  MediaImage 33551302131891 asignada a la variante), USB-C cargando (recortada a la
+  derecha y tapado el recuadro "Cargando..." -> vx-detalle-usbc-pro.jpg), linterna
+  (vx-detalle-linterna-pro.jpg), boquillas (recorte sobre grafito -> vx-detalle-boquillas-pro.jpg).
+- Detalles: fondo de fotos #101114, altura mínima 280px.
+- Pack dúo: precio 189.900 (tachado 219.800, ahorro 29.900).
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

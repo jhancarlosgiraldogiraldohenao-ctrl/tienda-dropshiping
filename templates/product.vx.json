@@ -350,7 +350,9 @@
         "texto": "Cada pieza pensada para la emergencia de las 10 de la noche.",
         "incluye_titulo": "Qué incluye",
         "incluye_texto": "Todo listo para usar desde el primer día.",
-        "incluye_lista": "1 | Inflador portátil\n1 | Manguera de conexión\n3 | Boquillas: balones, inflables y bicicleta\n1 | Cable de carga tipo C"
+        "incluye_lista": "1 | Inflador portátil\n1 | Manguera de conexión\n3 | Boquillas: balones, inflables y bicicleta\n1 | Cable de carga tipo C",
+        "fondo_fotos": "#101114",
+        "alto_fila": 200
       },
       "blocks": {
         "celda-1": {
@@ -360,8 +362,8 @@
             "tag": "Emergencias",
             "titulo": "Luz LED",
             "texto": "Si la llanta se baja de noche, tienes luz para ver lo que haces.",
-            "foto_defecto": "vx-detalle-linterna.png",
-            "encuadre": "contain"
+            "foto_defecto": "vx-detalle-linterna-pro.jpg",
+            "encuadre": "cover"
           }
         },
         "celda-2": {
@@ -371,8 +373,8 @@
             "tag": "Incluidas",
             "titulo": "3 boquillas",
             "texto": "Para balones, inflables y válvula de bicicleta.",
-            "foto_defecto": "vx-detalle-boquillas.jpg",
-            "encuadre": "contain"
+            "foto_defecto": "vx-detalle-boquillas-pro.jpg",
+            "encuadre": "cover"
           }
         },
         "celda-3": {
@@ -381,8 +383,8 @@
             "tamano": "p",
             "tag": "Carga",
             "titulo": "USB tipo C",
-            "texto": "Con el cargador del celular, un power bank o el USB del carro.",
-            "foto_defecto": "vx-detalle-usbc.jpg",
+            "texto": "Con el cargador del celular, un power bank o el USB del carro. La luz azul te avisa que está cargando.",
+            "foto_defecto": "vx-detalle-usbc-pro.jpg",
             "encuadre": "cover"
           }
         }
