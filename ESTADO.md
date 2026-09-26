@@ -165,6 +165,8 @@
 - El nombre de la tienda sigue siendo "Mi tienda" -> el usuario debe cambiarlo a "Vuronix"
   (Configuración → Detalles de la tienda); no se puede por API.
 
+## TIENDA ABIERTA (2026-09-26) — verificación final OK
+- Sin contraseña; título "Vuronix AirGo"; tema live #155009319091; producto y las 2 opciones disponibles
+  (se añaden al carrito); 4 políticas responden 200; pago contraentrega en checkout.
+
 ## Pendiente
-- Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
-- Publicar el tema como activo solo con OK explícito.
