@@ -107,7 +107,13 @@
 - Pack: foto sin base blanca, re-subida al producto (MediaImage 33551420981427), la vieja borrada.
 - PROBLEMA ABIERTO: la variante "1 unidad" (46092267061427) sale AGOTADA en la tienda
   (cart/add.js 422) aunque el admin dice availableForSale=true, tracked=false, policy CONTINUE.
-  Probable nivel de inventario/ubicación. Pedido permiso read/write_inventory + read_locations.
+  Causa: el inventario de "1 unidad" vive SOLO en la ubicación de Dropi (FulfillmentDropi,
+  Location 85472051379, servicio de preparación, 405 uds) y la tienda online no la cuenta como
+  vendible (probable: esa ubicación no está en el perfil de envío / mercado de Colombia).
+  Probé tracked=true -> sigue agotada; lo dejé como estaba (tracked=false).
+  El pack (46094051573939) está en la ubicación propia "calle 20c no 28b-08 pereira" -> se vende,
+  pero sus pedidos NO van a Dropi automáticamente. Pendiente del usuario: revisar Envío y entrega / app Dropi.
+  Permisos actuales: products, files, inventory, locations.
 
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
