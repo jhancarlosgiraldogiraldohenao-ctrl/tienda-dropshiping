@@ -158,7 +158,13 @@
 - A partir de ahora los push necesitan --allow-live (cambios visibles al instante).
 - Usuario ya tiene plan Basic. Pack dúo en Dropi: lo gestiona él a mano.
 
+## Políticas (2026-09-26)
+- Creadas por API (permiso legal_policies): envíos, reembolsos (retracto 5 días hábiles, Ley 1480,
+  garantía legal), términos del servicio. Privacidad: la plantilla de Shopify ya existente (en español).
+- Correo usado en las políticas: el de la tienda. Tiempo de entrega indicado: 2 a 7 días hábiles (confirmar con Dropi).
+- El nombre de la tienda sigue siendo "Mi tienda" -> el usuario debe cambiarlo a "Vuronix"
+  (Configuración → Detalles de la tienda); no se puede por API.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.
-- Políticas legales (panel → Configuración → Políticas).
