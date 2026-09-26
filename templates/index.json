@@ -578,9 +578,9 @@
           "type": "razon",
           "settings": {
             "icono": "escudo",
-            "titulo": "Garantía y retracto",
-            "texto": "Tienes la garantía legal del Estatuto del Consumidor y 5 días hábiles para retractarte de tu compra.",
-            "dato": "Ley 1480 de 2011"
+            "titulo": "Compra protegida",
+            "texto": "Tu AirGo tiene garantía legal por defectos de fábrica. Si llega con alguna falla, te respondemos según la ley colombiana.",
+            "dato": "Garantía legal"
           }
         },
         "razon-4": {

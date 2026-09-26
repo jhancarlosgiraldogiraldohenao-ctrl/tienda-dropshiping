@@ -177,4 +177,7 @@
   garantía legal + retracto 5 días, especificaciones claras + franja "Pagas solo cuando el AirGo está en tus manos").
   En portada tras packs y en producto tras la ficha. Motivo: el mismo producto aparece más barato en Mercado Libre.
 
+- vx-porque tarjeta 3 -> "Compra protegida" (solo garantía legal). El retracto de 5 días se mantiene SOLO en la
+  política de reembolsos (obligatorio por Ley 1480 art. 47); decisión consensuada con el usuario.
+
 ## Pendiente
