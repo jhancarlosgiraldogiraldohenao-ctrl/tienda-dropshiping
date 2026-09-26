@@ -169,4 +169,7 @@
 - Sin contraseña; título "Vuronix AirGo"; tema live #155009319091; producto y las 2 opciones disponibles
   (se añaden al carrito); 4 políticas responden 200; pago contraentrega en checkout.
 
+## Precios (2026-09-26, decididos con el usuario; costo Dropi 59.000/ud)
+- 1 unidad 139.900 SIN tachado. Pack dúo 239.900, tachado 279.800 (= 2 sueltas, descuento real, ahorro 39.900).
+
 ## Pendiente
