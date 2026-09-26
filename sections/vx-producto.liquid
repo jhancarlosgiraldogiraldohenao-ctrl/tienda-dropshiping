@@ -20,6 +20,32 @@
   <div class="vx-container">
     <div class="vx-producto__grid">
       {%- comment -%} Galería: sigue las fotos del catálogo {%- endcomment -%}
+      {%- if section.settings.modo_galeria == 'dos' -%}
+        <div class="vx-duo">
+          {%- for i in (1..2) -%}
+            {%- liquid
+              assign k_img = 'foto_' | append: i
+              assign k_cap = 'foto_' | append: i | append: '_texto'
+              if i == 1
+                assign defecto = 'vx-producto-frente.jpg'
+                assign alt_def = 'Inflador portátil Vuronix AirGo'
+              else
+                assign defecto = 'vx-producto-incluye.jpg'
+                assign alt_def = 'Inflador Vuronix AirGo con sus tres boquillas incluidas'
+              endif
+            -%}
+            <figure class="vx-duo__foto">
+              {%- if i == 1 and section.settings.sello != blank -%}<span class="vx-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
+              {%- if section.settings[k_img] != blank -%}
+                <img src="{{ section.settings[k_img] | image_url: width: 1000 }}" alt="{{ section.settings[k_img].alt | default: alt_def | escape }}" width="1000" height="1250" loading="eager">
+              {%- else -%}
+                <img src="{{ defecto | asset_url }}" alt="{{ alt_def }}" width="1200" height="1500" loading="eager">
+              {%- endif -%}
+              {%- if section.settings[k_cap] != blank -%}<figcaption>{{ section.settings[k_cap] }}</figcaption>{%- endif -%}
+            </figure>
+          {%- endfor -%}
+        </div>
+      {%- else -%}
       <div class="vx-galeria" data-vx-galeria>
         {%- assign primera = product.featured_media -%}
         <div class="vx-galeria__principal">
@@ -42,6 +68,7 @@
           </div>
         {%- endif -%}
       </div>
+      {%- endif -%}
 
       {%- comment -%} Columna de compra {%- endcomment -%}
       <div class="vx-compra" data-vx-compra data-txt-comprar="{{ section.settings.boton_texto | escape }}" data-txt-agotado="{{ section.settings.agotado_texto | escape }}" data-formato="{{ shop.money_format | escape }}">
@@ -166,6 +193,12 @@
   "name": "VX – Producto",
   "tag": "section",
   "settings": [
+    { "type": "header", "content": "Fotos" },
+    { "type": "select", "id": "modo_galeria", "label": "Qué fotos mostrar", "options": [ { "value": "dos", "label": "Dos fotos elegidas (lado a lado)" }, { "value": "catalogo", "label": "Todas las fotos del catálogo" } ], "default": "dos" },
+    { "type": "image_picker", "id": "foto_1", "label": "Foto 1 (el producto)" },
+    { "type": "text", "id": "foto_1_texto", "label": "Texto bajo la foto 1", "default": "El inflador" },
+    { "type": "image_picker", "id": "foto_2", "label": "Foto 2 (lo que viene)" },
+    { "type": "text", "id": "foto_2_texto", "label": "Texto bajo la foto 2", "default": "Lo que viene en la caja" },
     { "type": "header", "content": "Textos" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Vuronix" },
     { "type": "textarea", "id": "intro", "label": "Frase de introducción" },

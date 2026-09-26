@@ -421,6 +421,12 @@
 .vx-sticky-compra strong { font-family: var(--vx-display); font-size: 24px; color: var(--vx-texto); }
 .vx-sticky-compra .vx-btn { flex: 1; min-height: 50px; font-size: 17px; }
 
+/* Galería de dos fotos */
+.vx-duo { position: sticky; top: 90px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.vx-duo__foto { position: relative; margin: 0; border-radius: 20px; overflow: hidden; background: #f6f7f9; }
+.vx-duo__foto img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+.vx-duo__foto figcaption { position: absolute; left: 12px; bottom: 12px; background: rgba(14,15,17,0.88); color: var(--vx-texto); font-family: var(--vx-display); font-weight: 700; font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 11px; border-radius: 6px; }
+
 /* =========================================================
    Ropa global (header, footer, Dawn)
    ========================================================= */
@@ -482,6 +488,7 @@
   .vx-faq__lado { position: static; }
   .vx-producto__grid { grid-template-columns: 1fr; }
   .vx-galeria { position: static; grid-template-columns: 1fr; }
+  .vx-duo { position: static; }
   .vx-galeria__mins { flex-direction: row; order: 2; max-height: none; overflow-x: auto; }
   .vx-galeria__min { width: 70px; flex: none; }
   .vx-sticky-compra { display: flex; }
@@ -506,6 +513,8 @@
   .vx-cierre__fondo img { object-position: 60% 20%; }
   .vx-cierre__fondo::after { background: linear-gradient(0deg, rgba(14,15,17,0.98) 0%, rgba(14,15,17,0.85) 55%, rgba(14,15,17,0.15) 100%); }
   .vx-confianza { grid-template-columns: 1fr 1fr 1fr; }
+  .vx-duo { grid-template-columns: 85% 85%; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; margin-right: calc(var(--vx-margen) * -1); padding-right: var(--vx-margen); }
+  .vx-duo__foto { scroll-snap-align: start; }
   .vx-footer__top { grid-template-columns: 1fr; }
   .vx-paso__num { font-size: 90px; }
 }

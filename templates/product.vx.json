@@ -8,7 +8,7 @@
         "puntos": "Modos listos: moto, carro, bici y balón + manual\nPresión exacta con sensor digital (±1 PSI)\nInalámbrico, carga por USB tipo C\nLuz LED para emergencias de noche\nSolo 480 g: cabe en el baúl o la guantera",
         "boton_texto": "Agregar al carrito",
         "nota_precio": "Pago contraentrega: pagas en efectivo al recibir.",
-        "specs": "Presión máxima: 150 PSI\nPrecisión: ±1 PSI\nUnidades: PSI, BAR y KPA\nBatería: litio, 2 × 2000 mAh\nCarga: USB tipo C\nPeso: 480 g\nModos: moto, carro, bicicleta, balón y manual\nMaterial: ABS resistente\nColor: negro",
+        "specs": "Presión máxima: 150 PSI\nPrecisión: ±1 PSI\nUnidades: PSI, BAR y KPA\nBatería: litio 2000 mAh, 7,4 V (2 celdas)\nCarga: USB tipo C\nPeso: 480 g\nModos: moto, carro, bicicleta, balón y manual\nMaterial: ABS resistente\nColor: negro",
         "envio": "Envío a toda Colombia.\nPago contraentrega: pagas en efectivo directamente al transportador cuando recibes tu pedido."
       },
       "blocks": {

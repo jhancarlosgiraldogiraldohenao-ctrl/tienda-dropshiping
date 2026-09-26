@@ -84,11 +84,11 @@
           "type": "cifra",
           "settings": {
             "prefijo": "",
-            "valor": 4000,
+            "valor": 2000,
             "decimales": 0,
             "unidad": "mAh",
             "titulo": "De batería",
-            "texto": "2 × 2000 mAh de litio, carga por USB-C."
+            "texto": "Litio recargable de 7,4 V. Carga por USB-C."
           }
         }
       },

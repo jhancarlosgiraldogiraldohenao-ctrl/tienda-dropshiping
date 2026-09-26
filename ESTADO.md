@@ -70,6 +70,14 @@
   templateSuffix "vx" asignado, fotos reordenadas (escena, detalles, infografía,
   proveedor 500px, proveedor 320px) y textos alternativos corregidos.
 
+## Cambios ronda 2 (2026-09-26)
+- Menú: "Catálogo" (/collections/all) oculto con el ajuste del header "ocultar_enlaces".
+- Producto: galería en modo "dos" (vx-producto-frente.jpg + vx-producto-incluye.jpg,
+  compuestas sin texto); modo "catalogo" sigue disponible desde el editor.
+- Batería: 2000 mAh (7,4 V, 2 celdas en serie; la infografía del proveedor indica 7,4 V).
+  Cambiado en cifras, especificaciones y descripción del catálogo.
+- Pedidas al usuario fotos profesionales para "Detalles" (subidas en Contenido → Archivos).
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.
