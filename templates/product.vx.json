@@ -128,8 +128,8 @@
             "titulo": "Pantalla digital",
             "texto": "Lectura de presión en PSI, BAR o KPA, con el nivel de batería a la vista.",
             "lado": "izq",
-            "x": 44,
-            "y": 58
+            "x": 68,
+            "y": 52
           }
         },
         "punto-4": {
@@ -243,7 +243,7 @@
           "settings": {
             "titulo": "Elige y ajusta",
             "texto": "Selecciona el modo (moto, carro, bici o balón) y marca con + y − la presión que necesitas.",
-            "foto_defecto": "vx-paso-controles.jpg",
+            "foto_defecto": "vx-paso-ajusta.jpg",
             "encuadre": "cover"
           }
         },
@@ -252,8 +252,8 @@
           "settings": {
             "titulo": "Suelta y listo",
             "texto": "Presiona encender y espera. Cuando llega a la presión exacta, se apaga solo.",
-            "foto_defecto": "vx-detalle-pantalla.jpg",
-            "encuadre": "contain"
+            "foto_defecto": "vx-producto-frente.jpg",
+            "encuadre": "cover"
           }
         }
       },

@@ -49,10 +49,10 @@
               <h3>{{ v.title }}</h3>
               {%- if section.settings[k_nota] != blank -%}<p class="vx-pack__nota">{{ section.settings[k_nota] }}</p>{%- endif -%}
               <div class="vx-pack__precio">
-                <strong>{{ v.price | money }}</strong>
+                <strong>{{ v.price | money_without_trailing_zeros }}</strong>
                 {%- if v.compare_at_price > v.price -%}
-                  <s>{{ v.compare_at_price | money }}</s>
-                  <span class="vx-pack__ahorro">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | money }}</span>
+                  <s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>
+                  <span class="vx-pack__ahorro">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | money_without_trailing_zeros }}</span>
                 {%- endif -%}
               </div>
               {%- if section.settings[k_lista] != blank -%}

@@ -99,6 +99,16 @@
 - Detalles: fondo de fotos #101114, altura mínima 280px.
 - Pack dúo: precio 189.900 (tachado 219.800, ahorro 29.900).
 
+## Ronda 5 (2026-09-26)
+- Contraseña de la tienda: datsea (auto-revisión con theme dev --store-password).
+- Precios sin ",00" (money_without_trailing_zeros + JS), hero/cierre usan la variante 1.
+- HUD del hero arriba (no tapa el aparato); cierre con degradado más opaco; wordmark móvil 20px.
+- Pasos: paso 2 = vx-paso-ajusta.jpg (recorte de la foto linterna), paso 3 = vx-producto-frente.jpg.
+- Pack: foto sin base blanca, re-subida al producto (MediaImage 33551420981427), la vieja borrada.
+- PROBLEMA ABIERTO: la variante "1 unidad" (46092267061427) sale AGOTADA en la tienda
+  (cart/add.js 422) aunque el admin dice availableForSale=true, tracked=false, policy CONTINUE.
+  Probable nivel de inventario/ubicación. Pedido permiso read/write_inventory + read_locations.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

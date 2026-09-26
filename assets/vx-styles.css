@@ -131,7 +131,7 @@
 .vx-hero__chips { display: flex; flex-wrap: wrap; gap: 10px 22px; margin-top: 30px; padding-top: 24px; border-top: 1px solid var(--vx-linea); }
 .vx-chip { display: inline-flex; align-items: center; gap: 9px; font-size: 14px; color: var(--vx-texto); }
 .vx-chip svg { width: 18px; height: 18px; color: var(--vx-senal); flex: none; }
-.vx-hero__precio { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; font-family: var(--vx-display); }
+.vx-hero__precio { display: flex; flex-wrap: wrap; align-items: baseline; gap: 12px; margin-top: 18px; font-family: var(--vx-display); }
 .vx-hero__precio strong { font-size: 34px; font-weight: 700; }
 .vx-hero__precio s { color: var(--vx-texto-suave); font-size: 20px; }
 .vx-hero__precio span { font-family: var(--vx-fuente); font-size: 13px; color: var(--vx-texto-suave); }
@@ -157,7 +157,7 @@
 
 /* HUD flotante: la "pantalla" del inflador en HTML */
 .vx-hud {
-  position: absolute; left: clamp(-56px, -4vw, -20px); bottom: 9%; z-index: 3;
+  position: absolute; left: clamp(-56px, -4vw, -20px); top: 10%; z-index: 3;
   width: min(300px, 62%);
   background: rgba(14, 15, 17, 0.82);
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
@@ -355,7 +355,7 @@
 .vx-cierre__caja { position: relative; border-radius: 28px; overflow: hidden; min-height: 560px; display: grid; align-items: end; isolation: isolate; }
 .vx-cierre__fondo { position: absolute; inset: 0; z-index: -1; }
 .vx-cierre__fondo img { width: 100%; height: 100%; object-fit: cover; object-position: 70% 50%; }
-.vx-cierre__fondo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,15,17,0.96) 0%, rgba(14,15,17,0.82) 40%, rgba(14,15,17,0.1) 75%); }
+.vx-cierre__fondo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(14,15,17,0.98) 0%, rgba(14,15,17,0.94) 42%, rgba(14,15,17,0.35) 70%, rgba(14,15,17,0.05) 100%); }
 .vx-cierre__contenido { padding: clamp(28px, 5vw, 72px); max-width: 640px; }
 .vx-cierre__contenido h2 { margin: 16px 0 16px; }
 .vx-cierre__contenido p { color: var(--vx-texto-suave); }
@@ -512,7 +512,9 @@
   .vx-hero__grid { grid-template-columns: 1fr; min-height: 0; }
   .vx-hero__visual { order: -1; margin: 0 calc(var(--vx-margen) * -1); }
   .vx-hero__marco { border-radius: 0; aspect-ratio: 4 / 3.4; clip-path: polygon(0 0, 100% 0, 100% 90%, 82% 100%, 0 100%); }
-  .vx-hud { left: var(--vx-margen); bottom: -34px; width: 230px; padding: 14px 16px; }
+  .vx-hud { left: auto; right: var(--vx-margen); top: auto; bottom: -34px; width: 236px; padding: 12px 14px; }
+  .vx-hud__top { font-size: 10px; letter-spacing: 0.1em; gap: 8px; }
+  .vx-hud__top span { white-space: nowrap; }
   .vx-hud__valor { font-size: 50px; margin: 6px 0 8px; }
   .vx-hero__texto { padding-top: 40px; }
   .vx-cifras__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -550,6 +552,8 @@
 }
 @media (max-width: 540px) {
   .vx-hero__ctas .vx-btn { width: 100%; }
+  .vx-wordmark { font-size: 20px; letter-spacing: 0.08em; gap: 6px; }
+  .vx-wordmark svg { width: 18px; height: 18px; }
   .vx-modos__tabs { grid-template-columns: 1fr 1fr; }
   .vx-modo { flex-direction: column; align-items: flex-start; font-size: 17px; padding: 14px; }
   .vx-modos__panel img { max-width: 56%; max-height: 380px; }

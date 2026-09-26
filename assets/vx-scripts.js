@@ -205,7 +205,8 @@
           .replace(/\{\{\s*amount_no_decimals_with_comma_separator\s*\}\}/, entero)
           .replace(/\{\{\s*amount_no_decimals\s*\}\}/, entero)
           .replace(/\{\{\s*amount_with_comma_separator\s*\}\}/, dec)
-          .replace(/\{\{\s*amount\s*\}\}/, dec);
+          .replace(/\{\{\s*amount\s*\}\}/, dec)
+          .replace(/[.,]00(?=\D*$)/, '');
       }
       var barraPrecio = document.querySelector('[data-vx-sticky-compra] strong');
       var duoImg = document.querySelector('[data-vx-duo-principal] img');
@@ -218,6 +219,11 @@
         if (boton) {
           if (v.available) { boton.removeAttribute('disabled'); boton.removeAttribute('aria-disabled'); if (txtBoton) txtBoton.textContent = txtCompra; }
           else { boton.setAttribute('disabled', ''); if (txtBoton) txtBoton.textContent = txtAgotado; }
+        }
+        var duoCap = duoImg ? duoImg.parentElement.querySelector('figcaption') : null;
+        if (duoCap && v.img !== undefined) {
+          if (!duoCap.dataset.original) duoCap.dataset.original = duoCap.textContent;
+          duoCap.textContent = v.primera ? duoCap.dataset.original : (v.titulo || duoCap.dataset.original);
         }
         if (duoImg && v.img !== undefined) {
           var nueva = v.primera ? duoOriginal : v.img;
@@ -232,7 +238,7 @@
       radios.forEach(function (r, idx) {
         r.addEventListener('change', function () {
           radios.forEach(function (x) { x.closest('.vx-oferta').classList.toggle('is-activa', x.checked); });
-          aplicar({ id: r.value, price: +r.dataset.price, compare_at_price: +r.dataset.compare, available: r.dataset.available === 'true', img: r.dataset.img, primera: idx === 0 });
+          aplicar({ id: r.value, price: +r.dataset.price, compare_at_price: +r.dataset.compare, available: r.dataset.available === 'true', img: r.dataset.img, titulo: r.dataset.titulo, primera: idx === 0 });
         });
       });
       var marcada = c.querySelector('[data-vx-oferta]:checked');

@@ -2,6 +2,7 @@
 <script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
 
 {%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.variants.first -%}
 
 {% style %}
   #shopify-section-{{ section.id }} {
@@ -31,7 +32,7 @@
         {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
         <div class="vx-cierre__compra">
           {%- if producto != blank and section.settings.mostrar_precio -%}
-            <div class="vx-cierre__precio"><strong>{{ producto.price | money }}</strong><span>{{ section.settings.nota_precio }}</span></div>
+            <div class="vx-cierre__precio"><strong>{{ v1.price | money_without_trailing_zeros }}</strong><span>{{ section.settings.nota_precio }}</span></div>
           {%- endif -%}
           {%- if section.settings.btn_texto != blank -%}
             <a class="vx-btn" href="{{ section.settings.btn_url | default: producto.url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'vx-icono', nombre: 'flecha' %}</a>

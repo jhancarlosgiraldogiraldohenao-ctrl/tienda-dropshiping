@@ -2,6 +2,7 @@
 <script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
 
 {%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.variants.first -%}
 {%- assign url_compra = section.settings.btn1_url | default: producto.url | default: '#' -%}
 
 {% style %}
@@ -36,8 +37,8 @@
 
         {%- if section.settings.mostrar_precio and producto != blank -%}
           <div class="vx-hero__precio vx-reveal" style="--vx-i:3">
-            <strong>{{ producto.price | money }}</strong>
-            {%- if producto.compare_at_price > producto.price -%}<s>{{ producto.compare_at_price | money }}</s>{%- endif -%}
+            <strong>{{ v1.price | money_without_trailing_zeros }}</strong>
+            {%- if v1.compare_at_price > v1.price -%}<s>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
             {%- if section.settings.nota_precio != blank -%}<span>{{ section.settings.nota_precio }}</span>{%- endif -%}
           </div>
         {%- endif -%}
