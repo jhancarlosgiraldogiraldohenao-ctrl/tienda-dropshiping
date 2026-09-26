@@ -133,6 +133,11 @@
 - Nueva sección vx-resenas (solo reseñas reales, se oculta sin reseñas) en portada (antes de FAQ)
   y producto (tras garantías) + plantilla templates/page.resenas.json para una página de reseñas.
 
+## Ronda 8 (2026-09-26)
+- Carrito: botón "Finalizar compra →" (locales/es.json "checkout"), grande y de marca; nota
+  "Envío gratis a toda Colombia · Pagas en efectivo al recibir" (textos tax-note en es.json);
+  cajón con altura 100dvh y pie fijo para que el botón se vea en móvil.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

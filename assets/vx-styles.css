@@ -508,6 +508,14 @@
 /* =========================================================
    Ropa global (header, footer, Dawn)
    ========================================================= */
+/* Carrito: botón de compra grande, de marca y siempre visible */
+.cart__checkout-button { min-height: 60px !important; font-family: var(--vx-display) !important; font-weight: 800 !important; font-size: 21px !important; letter-spacing: 0.08em !important; text-transform: uppercase; border-radius: 8px !important; box-shadow: 0 12px 30px -12px rgba(255,196,0,0.6) !important; }
+.cart__checkout-button::after, .cart__checkout-button::before { display: none !important; }
+cart-drawer .drawer__inner { height: 100vh; height: 100dvh; }
+cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
+.cart-drawer .totals__total-value, .cart__footer .totals__total-value { font-family: var(--vx-display); font-weight: 800; font-size: 24px; }
+.tax-note { color: var(--vx-senal) !important; opacity: 1 !important; }
+body:has(cart-drawer.active) .vx-sticky-compra { display: none; }
 .section-header { margin-bottom: 0 !important; }
 .header-wrapper { border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
 .vx-wordmark { display: inline-flex; align-items: center; gap: 10px; font-family: var(--vx-display); font-weight: 800; font-size: 28px; letter-spacing: 0.12em; text-transform: uppercase; color: rgb(var(--color-foreground)); text-decoration: none; }
