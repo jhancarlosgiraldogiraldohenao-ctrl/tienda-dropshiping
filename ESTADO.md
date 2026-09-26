@@ -180,4 +180,9 @@
 - vx-porque tarjeta 3 -> "Compra protegida" (solo garantía legal). El retracto de 5 días se mantiene SOLO en la
   política de reembolsos (obligatorio por Ley 1480 art. 47); decisión consensuada con el usuario.
 
+## Vista previa al compartir (2026-09-26)
+- La portada no tenía og:image -> WhatsApp mostraba tarjeta vacía/antigua. Añadido assets/vx-compartir.jpg (1200x630)
+  como og:image por defecto y descripción por defecto en snippets/meta-tags.liquid.
+- Comprobado: todos los visitantes (sin sesión) ven el tema nuevo #155009319091.
+
 ## Pendiente
