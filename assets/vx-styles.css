@@ -24,6 +24,8 @@
 }
 
 /* ---------- base ---------- */
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 .vx-section {
   padding-top: 0 !important;
   padding-bottom: 0 !important;

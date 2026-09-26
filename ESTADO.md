@@ -150,6 +150,9 @@
   la foto 1 pasa a vx-pack-duo con el texto "AirGo Dúo" (ajuste oferta_2_foto_texto).
 - Frase de introducción del producto: "El compresor inteligente para moto, carro y bici...".
 
+## Ronda 11 (2026-09-26)
+- "Pídelo hoy" (hero) ahora va a la página del producto (sin btn1_url -> product.url). Scroll suave para anclas.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

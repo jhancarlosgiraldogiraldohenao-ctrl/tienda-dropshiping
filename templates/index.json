@@ -12,8 +12,7 @@
         "btn1_texto": "Pídelo hoy",
         "btn2_texto": "Ver cómo funciona",
         "btn2_url": "#como-funciona",
-        "etiqueta": "Pago contraentrega",
-        "btn1_url": "#packs"
+        "etiqueta": "Pago contraentrega"
       },
       "blocks": {
         "chip-1": {
