@@ -144,6 +144,12 @@
   (assets/icon-cart*.svg). Pie sin enlace a Contacto; FAQ sin botón "Escríbenos".
 - Producto: tarjeta "Asesoría" -> "Fácil de usar · Listo en minutos"; aviso stock "Disponible · envío gratis".
 
+## Ronda 10 (2026-09-26)
+- Galería producto: foto 1 "AirGo" (vx-producto-frente), foto 2 "Accesorios incluidos"
+  (vx-producto-accesorios.jpg: boquillas pro + cable USB-C recortado de producto-1). Al elegir el pack
+  la foto 1 pasa a vx-pack-duo con el texto "AirGo Dúo" (ajuste oferta_2_foto_texto).
+- Frase de introducción del producto: "El compresor inteligente para moto, carro y bici...".
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

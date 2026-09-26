@@ -28,10 +28,10 @@
               assign k_cap = 'foto_' | append: i | append: '_texto'
               if i == 1
                 assign defecto = 'vx-producto-frente.jpg'
-                assign alt_def = 'Inflador portátil Vuronix AirGo'
+                assign alt_def = 'AirGo, compresor inteligente inalámbrico'
               else
-                assign defecto = 'vx-producto-incluye.jpg'
-                assign alt_def = 'Inflador Vuronix AirGo con sus tres boquillas incluidas'
+                assign defecto = 'vx-producto-accesorios.jpg'
+                assign alt_def = 'Accesorios incluidos: tres boquillas y cable USB-C'
               endif
             -%}
             <figure class="vx-duo__foto"{% if i == 1 %} data-vx-duo-principal{% endif %}>
@@ -104,6 +104,7 @@
                   assign k_img = 'oferta_' | append: forloop.index | append: '_img'
                   assign k_nota = 'oferta_' | append: forloop.index | append: '_nota'
                   assign k_tag = 'oferta_' | append: forloop.index | append: '_etiqueta'
+                  assign k_cap = 'oferta_' | append: forloop.index | append: '_foto_texto'
                   if forloop.index == 1
                     assign img_def = 'vx-producto-frente.jpg'
                   else
@@ -119,7 +120,7 @@
                 -%}
                 <label class="vx-oferta{% if v.id == variante.id %} is-activa{% endif %}{% unless v.available %} is-agotada{% endunless %}">
                   <input type="radio" name="vx-oferta-{{ section.id }}" value="{{ v.id }}" data-vx-oferta
-                    data-price="{{ v.price }}" data-compare="{{ v.compare_at_price | default: 0 }}" data-available="{{ v.available }}" data-img="{{ img_url }}" data-titulo="{{ v.title | escape }}"
+                    data-price="{{ v.price }}" data-compare="{{ v.compare_at_price | default: 0 }}" data-available="{{ v.available }}" data-img="{{ img_url }}" data-titulo="{{ section.settings[k_cap] | default: v.title | escape }}"
                     {% if v.id == variante.id %}checked{% endif %} {% unless v.available %}disabled{% endunless %}>
                   <span class="vx-oferta__radio" aria-hidden="true"></span>
                   <span class="vx-oferta__img"><img src="{{ img_url }}" alt="" width="72" height="72" loading="lazy"></span>
@@ -245,9 +246,9 @@
     { "type": "header", "content": "Fotos" },
     { "type": "select", "id": "modo_galeria", "label": "Qué fotos mostrar", "options": [ { "value": "dos", "label": "Dos fotos elegidas (lado a lado)" }, { "value": "catalogo", "label": "Todas las fotos del catálogo" } ], "default": "dos" },
     { "type": "image_picker", "id": "foto_1", "label": "Foto 1 (el producto)" },
-    { "type": "text", "id": "foto_1_texto", "label": "Texto bajo la foto 1", "default": "El inflador" },
+    { "type": "text", "id": "foto_1_texto", "label": "Texto bajo la foto 1", "default": "AirGo" },
     { "type": "image_picker", "id": "foto_2", "label": "Foto 2 (lo que viene)" },
-    { "type": "text", "id": "foto_2_texto", "label": "Texto bajo la foto 2", "default": "Lo que viene en la caja" },
+    { "type": "text", "id": "foto_2_texto", "label": "Texto bajo la foto 2", "default": "Accesorios incluidos" },
     { "type": "header", "content": "Opciones de compra (1 unidad / pack)" },
     { "type": "select", "id": "estilo_variantes", "label": "Cómo mostrar las opciones", "options": [ { "value": "tarjetas", "label": "Tarjetas" }, { "value": "desplegable", "label": "Desplegable" } ], "default": "tarjetas" },
     { "type": "text", "id": "ofertas_titulo", "label": "Título sobre las tarjetas", "default": "Elige tu opción" },
@@ -255,9 +256,11 @@
     { "type": "image_picker", "id": "oferta_1_img", "label": "Opción 1 – foto" },
     { "type": "text", "id": "oferta_1_nota", "label": "Opción 1 – texto pequeño" },
     { "type": "text", "id": "oferta_1_etiqueta", "label": "Opción 1 – etiqueta (vacío = ahorro automático)" },
+    { "type": "text", "id": "oferta_1_foto_texto", "label": "Opción 1 – texto sobre la foto al elegirla" },
     { "type": "image_picker", "id": "oferta_2_img", "label": "Opción 2 – foto" },
     { "type": "text", "id": "oferta_2_nota", "label": "Opción 2 – texto pequeño" },
     { "type": "text", "id": "oferta_2_etiqueta", "label": "Opción 2 – etiqueta (vacío = ahorro automático)" },
+    { "type": "text", "id": "oferta_2_foto_texto", "label": "Opción 2 – texto sobre la foto al elegirla" },
     { "type": "header", "content": "Textos" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Vuronix" },
     { "type": "textarea", "id": "intro", "label": "Frase de introducción" },

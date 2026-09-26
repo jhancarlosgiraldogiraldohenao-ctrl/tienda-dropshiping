@@ -4,7 +4,7 @@
       "type": "vx-producto",
       "settings": {
         "eyebrow": "Vuronix",
-        "intro": "El inflador inalámbrico para moto, carro y bici. Eliges la presión y se apaga solo al llegar.",
+        "intro": "El compresor inteligente para moto, carro y bici. Eliges la presión y se apaga solo al llegar.",
         "puntos": "Modos listos: moto, carro, bici y balón + manual\nPresión exacta con sensor digital (±1 PSI)\nInalámbrico, carga por USB tipo C\nLuz LED para emergencias de noche\nSolo 480 g: cabe en el baúl o la guantera",
         "boton_texto": "Agregar al carrito",
         "nota_precio": "Pago contraentrega: pagas en efectivo al recibir.",
@@ -14,7 +14,10 @@
         "oferta_1_nota": "Para tener siempre aire a mano.",
         "oferta_2_nota": "Uno para la moto y otro para el carro, o para regalar.",
         "comprar_nota": "Envío gratis · pagas en efectivo al recibir",
-        "stock_texto": "Disponible · envío gratis"
+        "stock_texto": "Disponible · envío gratis",
+        "foto_1_texto": "AirGo",
+        "foto_2_texto": "Accesorios incluidos",
+        "oferta_2_foto_texto": "AirGo Dúo"
       },
       "blocks": {
         "conf-1": {
