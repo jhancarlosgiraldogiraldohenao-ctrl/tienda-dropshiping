@@ -153,6 +153,11 @@
 ## Ronda 11 (2026-09-26)
 - "Pídelo hoy" (hero) ahora va a la página del producto (sin btn1_url -> product.url). Scroll suave para anclas.
 
+## PUBLICADO (2026-09-26)
+- Tema "Vuronix AirGo" #155009319091 es ahora el tema ACTIVO (live). El anterior #154842661043 queda sin publicar.
+- A partir de ahora los push necesitan --allow-live (cambios visibles al instante).
+- Usuario ya tiene plan Basic. Pack dúo en Dropi: lo gestiona él a mano.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.
