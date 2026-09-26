@@ -172,4 +172,9 @@
 ## Precios (2026-09-26, decididos con el usuario; costo Dropi 59.000/ud)
 - 1 unidad 139.900 SIN tachado. Pack dúo 239.900, tachado 279.800 (= 2 sueltas, descuento real, ahorro 39.900).
 
+## Ronda 12 (2026-09-26, en vivo con --allow-live)
+- Nueva sección vx-porque "¿Por qué comprar en Vuronix?" (envío desde Colombia 2-7 días, contraentrega,
+  garantía legal + retracto 5 días, especificaciones claras + franja "Pagas solo cuando el AirGo está en tus manos").
+  En portada tras packs y en producto tras la ficha. Motivo: el mismo producto aparece más barato en Mercado Libre.
+
 ## Pendiente

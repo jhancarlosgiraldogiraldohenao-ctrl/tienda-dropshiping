@@ -472,10 +472,62 @@
     "resenas": {
       "type": "vx-resenas",
       "settings": {}
+    },
+    "porque": {
+      "type": "vx-porque",
+      "settings": {
+        "texto": "Encuentras compresores parecidos en muchos lados. Esto es lo que te llevas al comprar aquí.",
+        "franja": "Pagas solo cuando el AirGo está en tus manos."
+      },
+      "blocks": {
+        "razon-1": {
+          "type": "razon",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis desde Colombia",
+            "texto": "Despachamos desde bodegas en Colombia, no desde el exterior. Nada de esperar semanas ni pagar aduanas.",
+            "dato": "Llega en 2 a 7 días hábiles"
+          }
+        },
+        "razon-2": {
+          "type": "razon",
+          "settings": {
+            "icono": "efectivo",
+            "titulo": "Pagas solo al recibir",
+            "texto": "No necesitas tarjeta ni pagar por adelantado. Pagas en efectivo cuando el AirGo está en tus manos.",
+            "dato": "Pago contraentrega"
+          }
+        },
+        "razon-3": {
+          "type": "razon",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía y retracto",
+            "texto": "Tienes la garantía legal del Estatuto del Consumidor y 5 días hábiles para retractarte de tu compra.",
+            "dato": "Ley 1480 de 2011"
+          }
+        },
+        "razon-4": {
+          "type": "razon",
+          "settings": {
+            "icono": "medidor",
+            "titulo": "Especificaciones claras",
+            "texto": "150 PSI, precisión de ±1 PSI, batería de 2000 mAh y carga USB-C. Sin letra pequeña ni cifras infladas.",
+            "dato": "Lo que ves es lo que recibes"
+          }
+        }
+      },
+      "block_order": [
+        "razon-1",
+        "razon-2",
+        "razon-3",
+        "razon-4"
+      ]
     }
   },
   "order": [
     "principal",
+    "porque",
     "garantias",
     "resenas",
     "anatomia",

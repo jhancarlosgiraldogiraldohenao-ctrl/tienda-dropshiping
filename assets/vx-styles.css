@@ -475,6 +475,24 @@ html { scroll-behavior: smooth; }
   .vx-oferta__precio { grid-column: 3; text-align: left; display: flex; gap: 8px; align-items: baseline; }
 }
 
+/* Por qué comprar aquí */
+.vx-porque__cabecera { max-width: 780px; margin: 0 auto clamp(30px, 4vw, 54px); }
+.vx-porque__cabecera h2 { margin-top: 16px; }
+.vx-porque__cabecera p { margin-top: 14px; color: var(--vx-texto-suave); }
+.vx-porque__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.vx-porque__card { position: relative; padding: 28px 24px 26px; border-radius: 20px; background: linear-gradient(160deg, var(--vx-grafito-2), var(--vx-grafito)); border: 1px solid var(--vx-linea); display: flex; flex-direction: column; gap: 10px; transition: transform 0.5s var(--vx-ease), border-color 0.4s; overflow: hidden; }
+.vx-porque__card::before { content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 3px; background: var(--vx-senal); transform: scaleX(0); transform-origin: left; transition: transform 0.6s var(--vx-ease); }
+.vx-porque__card:hover { transform: translateY(-5px); border-color: rgba(255,196,0,0.45); }
+.vx-porque__card:hover::before { transform: scaleX(1); }
+.vx-porque__icono { width: 54px; height: 54px; border-radius: 14px; display: grid; place-items: center; background: var(--vx-senal-suave); color: var(--vx-senal); margin-bottom: 6px; }
+.vx-porque__icono svg { width: 28px; height: 28px; }
+.vx-porque__card h3 { font-size: 26px; font-weight: 700; }
+.vx-porque__card p { color: var(--vx-texto-suave); line-height: 1.6; }
+.vx-porque__dato { margin-top: auto; padding-top: 12px; font-family: var(--vx-display); font-weight: 700; font-size: 14px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--vx-senal); }
+.vx-porque__franja { margin-top: 18px; display: flex; align-items: center; justify-content: center; gap: 14px; padding: 20px 24px; border-radius: 16px; background: var(--vx-senal); color: var(--vx-tinta); text-align: center; }
+.vx-porque__franja svg { width: 28px; height: 28px; flex: none; }
+.vx-porque__franja p { font-family: var(--vx-display); font-weight: 800; font-size: clamp(18px, 2.4vw, 26px); letter-spacing: 0.02em; text-transform: uppercase; line-height: 1.15; }
+
 /* Reseñas */
 .vx-resenas__cabecera { max-width: 760px; margin: 0 auto clamp(30px, 4vw, 52px); }
 .vx-resenas__cabecera h2 { margin-top: 16px; }
