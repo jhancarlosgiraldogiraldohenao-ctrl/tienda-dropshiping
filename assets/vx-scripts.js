@@ -207,6 +207,36 @@
           .replace(/\{\{\s*amount_with_comma_separator\s*\}\}/, dec)
           .replace(/\{\{\s*amount\s*\}\}/, dec);
       }
+      var barraPrecio = document.querySelector('[data-vx-sticky-compra] strong');
+      var duoImg = document.querySelector('[data-vx-duo-principal] img');
+      var duoOriginal = duoImg ? duoImg.getAttribute('src') : null;
+      function aplicar(v) {
+        input.value = v.id;
+        if (precio) precio.textContent = dinero(v.price);
+        if (barraPrecio) barraPrecio.textContent = dinero(v.price);
+        if (antes) antes.textContent = v.compare_at_price > v.price ? dinero(v.compare_at_price) : '';
+        if (boton) {
+          if (v.available) { boton.removeAttribute('disabled'); boton.removeAttribute('aria-disabled'); if (txtBoton) txtBoton.textContent = txtCompra; }
+          else { boton.setAttribute('disabled', ''); if (txtBoton) txtBoton.textContent = txtAgotado; }
+        }
+        if (duoImg && v.img !== undefined) {
+          var nueva = v.primera ? duoOriginal : v.img;
+          if (nueva && duoImg.getAttribute('src') !== nueva) {
+            duoImg.style.opacity = 0;
+            setTimeout(function () { duoImg.removeAttribute('srcset'); duoImg.src = nueva; duoImg.style.opacity = 1; }, 180);
+          }
+        }
+        var url = new URL(window.location.href); url.searchParams.set('variant', v.id); window.history.replaceState({}, '', url);
+      }
+      var radios = c.querySelectorAll('[data-vx-oferta]');
+      radios.forEach(function (r, idx) {
+        r.addEventListener('change', function () {
+          radios.forEach(function (x) { x.closest('.vx-oferta').classList.toggle('is-activa', x.checked); });
+          aplicar({ id: r.value, price: +r.dataset.price, compare_at_price: +r.dataset.compare, available: r.dataset.available === 'true', img: r.dataset.img, primera: idx === 0 });
+        });
+      });
+      var marcada = c.querySelector('[data-vx-oferta]:checked');
+      if (marcada && marcada !== radios[0]) marcada.dispatchEvent(new Event('change'));
       if (datos && selects.length) {
         var variantes = JSON.parse(datos.textContent);
         selects.forEach(function (s) {
@@ -214,14 +244,7 @@
             var elegidas = Array.prototype.map.call(selects, function (x) { return x.value; });
             var v = variantes.find(function (vv) { return vv.options.every(function (o, i) { return o === elegidas[i]; }); });
             if (!v) { if (boton) boton.setAttribute('disabled', ''); if (txtBoton) txtBoton.textContent = txtAgotado; return; }
-            input.value = v.id;
-            if (precio) precio.textContent = dinero(v.price);
-            if (antes) { antes.textContent = v.compare_at_price > v.price ? dinero(v.compare_at_price) : ''; }
-            if (boton) {
-              if (v.available) { boton.removeAttribute('disabled'); boton.removeAttribute('aria-disabled'); if (txtBoton) txtBoton.textContent = txtCompra; }
-              else { boton.setAttribute('disabled', ''); if (txtBoton) txtBoton.textContent = txtAgotado; }
-            }
-            var url = new URL(window.location.href); url.searchParams.set('variant', v.id); window.history.replaceState({}, '', url);
+            aplicar(v);
           });
         });
       }

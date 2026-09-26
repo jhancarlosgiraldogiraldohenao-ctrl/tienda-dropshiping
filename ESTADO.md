@@ -78,6 +78,18 @@
   Cambiado en cifras, especificaciones y descripción del catálogo.
 - Pedidas al usuario fotos profesionales para "Detalles" (subidas en Contenido → Archivos).
 
+## Cambios ronda 3 (2026-09-26)
+- Producto: opción "Presentación": "1 unidad" (46092267061427, 109.900, stock 405)
+  y "Pack dúo (2 unidades)" (46094051573939, 199.900, tachado 219.800, SKU CI-02,
+  inventoryPolicy CONTINUE porque no tenemos permiso de inventario).
+- vx-producto: tarjetas de opciones (radio) con foto, nota, precio y ahorro; al elegir
+  el pack cambia la foto principal a vx-pack-duo.jpg (provisional, compuesta).
+- Nueva sección vx-packs en portada (tras comparativa), tarjeta 2 destacada "Mejor precio".
+- Modos: foto nueva vx-recorte-frente.png (alta resolución, sin reflejo blanco ni fondo en el asa).
+- Fotos de producto sobre fondo grafito (vx-producto-frente/incluye, vx-pack-duo).
+- Detalles: quitadas "Rosca firme" y "Cabe en todo"; quedan 3 tarjetas iguales.
+- Fotos del usuario (detalles + pack dúo): AÚN NO recibidas en Contenido → Archivos.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

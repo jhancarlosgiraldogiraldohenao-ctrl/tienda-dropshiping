@@ -34,7 +34,7 @@
                 assign alt_def = 'Inflador Vuronix AirGo con sus tres boquillas incluidas'
               endif
             -%}
-            <figure class="vx-duo__foto">
+            <figure class="vx-duo__foto"{% if i == 1 %} data-vx-duo-principal{% endif %}>
               {%- if i == 1 and section.settings.sello != blank -%}<span class="vx-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
               {%- if section.settings[k_img] != blank -%}
                 <img src="{{ section.settings[k_img] | image_url: width: 1000 }}" alt="{{ section.settings[k_img].alt | default: alt_def | escape }}" width="1000" height="1250" loading="eager">
@@ -96,6 +96,50 @@
         {%- endif -%}
 
         {%- unless product.has_only_default_variant -%}
+          {%- if section.settings.estilo_variantes == 'tarjetas' and product.options.size == 1 -%}
+            <div class="vx-ofertas" role="radiogroup" aria-label="{{ product.options.first | escape }}">
+              {%- if section.settings.ofertas_titulo != blank -%}<p class="vx-ofertas__titulo">{{ section.settings.ofertas_titulo }}</p>{%- endif -%}
+              {%- for v in product.variants -%}
+                {%- liquid
+                  assign k_img = 'oferta_' | append: forloop.index | append: '_img'
+                  assign k_nota = 'oferta_' | append: forloop.index | append: '_nota'
+                  assign k_tag = 'oferta_' | append: forloop.index | append: '_etiqueta'
+                  if forloop.index == 1
+                    assign img_def = 'vx-producto-frente.jpg'
+                  else
+                    assign img_def = 'vx-pack-duo.jpg'
+                  endif
+                  if section.settings[k_img] != blank
+                    assign img_url = section.settings[k_img] | image_url: width: 1000
+                  elsif v.featured_image
+                    assign img_url = v.featured_image | image_url: width: 1000
+                  else
+                    assign img_url = img_def | asset_url
+                  endif
+                -%}
+                <label class="vx-oferta{% if v.id == variante.id %} is-activa{% endif %}{% unless v.available %} is-agotada{% endunless %}">
+                  <input type="radio" name="vx-oferta-{{ section.id }}" value="{{ v.id }}" data-vx-oferta
+                    data-price="{{ v.price }}" data-compare="{{ v.compare_at_price | default: 0 }}" data-available="{{ v.available }}" data-img="{{ img_url }}"
+                    {% if v.id == variante.id %}checked{% endif %} {% unless v.available %}disabled{% endunless %}>
+                  <span class="vx-oferta__radio" aria-hidden="true"></span>
+                  <span class="vx-oferta__img"><img src="{{ img_url }}" alt="" width="72" height="72" loading="lazy"></span>
+                  <span class="vx-oferta__txt">
+                    <strong>{{ v.title }}</strong>
+                    {%- if section.settings[k_nota] != blank -%}<small>{{ section.settings[k_nota] }}</small>{%- endif -%}
+                  </span>
+                  <span class="vx-oferta__precio">
+                    <strong>{{ v.price | money }}</strong>
+                    {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money }}</s>{%- endif -%}
+                  </span>
+                  {%- if section.settings[k_tag] != blank -%}
+                    <span class="vx-oferta__badge">{{ section.settings[k_tag] }}</span>
+                  {%- elsif v.compare_at_price > v.price -%}
+                    <span class="vx-oferta__badge">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | money }}</span>
+                  {%- endif -%}
+                </label>
+              {%- endfor -%}
+            </div>
+          {%- else -%}
           <div class="vx-variantes">
             {%- for option in product.options_with_values -%}
               <div>
@@ -108,6 +152,7 @@
               </div>
             {%- endfor -%}
           </div>
+          {%- endif -%}
           <script type="application/json" data-vx-variantes>
             [{%- for v in product.variants -%}{"id": {{ v.id }}, "price": {{ v.price }}, "compare_at_price": {{ v.compare_at_price | default: 0 }}, "available": {{ v.available }}, "options": {{ v.options | json }}}{% unless forloop.last %},{% endunless %}{%- endfor -%}]
           </script>
@@ -199,6 +244,16 @@
     { "type": "text", "id": "foto_1_texto", "label": "Texto bajo la foto 1", "default": "El inflador" },
     { "type": "image_picker", "id": "foto_2", "label": "Foto 2 (lo que viene)" },
     { "type": "text", "id": "foto_2_texto", "label": "Texto bajo la foto 2", "default": "Lo que viene en la caja" },
+    { "type": "header", "content": "Opciones de compra (1 unidad / pack)" },
+    { "type": "select", "id": "estilo_variantes", "label": "Cómo mostrar las opciones", "options": [ { "value": "tarjetas", "label": "Tarjetas" }, { "value": "desplegable", "label": "Desplegable" } ], "default": "tarjetas" },
+    { "type": "text", "id": "ofertas_titulo", "label": "Título sobre las tarjetas", "default": "Elige tu opción" },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro automático", "default": "Ahorras" },
+    { "type": "image_picker", "id": "oferta_1_img", "label": "Opción 1 – foto" },
+    { "type": "text", "id": "oferta_1_nota", "label": "Opción 1 – texto pequeño" },
+    { "type": "text", "id": "oferta_1_etiqueta", "label": "Opción 1 – etiqueta (vacío = ahorro automático)" },
+    { "type": "image_picker", "id": "oferta_2_img", "label": "Opción 2 – foto" },
+    { "type": "text", "id": "oferta_2_nota", "label": "Opción 2 – texto pequeño" },
+    { "type": "text", "id": "oferta_2_etiqueta", "label": "Opción 2 – etiqueta (vacío = ahorro automático)" },
     { "type": "header", "content": "Textos" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Vuronix" },
     { "type": "textarea", "id": "intro", "label": "Frase de introducción" },

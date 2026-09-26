@@ -9,7 +9,10 @@
         "boton_texto": "Agregar al carrito",
         "nota_precio": "Pago contraentrega: pagas en efectivo al recibir.",
         "specs": "Presión máxima: 150 PSI\nPrecisión: ±1 PSI\nUnidades: PSI, BAR y KPA\nBatería: litio 2000 mAh, 7,4 V (2 celdas)\nCarga: USB tipo C\nPeso: 480 g\nModos: moto, carro, bicicleta, balón y manual\nMaterial: ABS resistente\nColor: negro",
-        "envio": "Envío a toda Colombia.\nPago contraentrega: pagas en efectivo directamente al transportador cuando recibes tu pedido."
+        "envio": "Envío a toda Colombia.\nPago contraentrega: pagas en efectivo directamente al transportador cuando recibes tu pedido.",
+        "ofertas_titulo": "Elige tu opción",
+        "oferta_1_nota": "Para tener siempre aire a mano.",
+        "oferta_2_nota": "Uno para la moto y otro para el carro, o para regalar."
       },
       "blocks": {
         "conf-1": {
@@ -353,7 +356,7 @@
         "celda-1": {
           "type": "celda",
           "settings": {
-            "tamano": "g",
+            "tamano": "p",
             "tag": "Emergencias",
             "titulo": "Luz LED",
             "texto": "Si la llanta se baja de noche, tienes luz para ver lo que haces.",
@@ -364,7 +367,7 @@
         "celda-2": {
           "type": "celda",
           "settings": {
-            "tamano": "m",
+            "tamano": "p",
             "tag": "Incluidas",
             "titulo": "3 boquillas",
             "texto": "Para balones, inflables y válvula de bicicleta.",
@@ -382,36 +385,12 @@
             "foto_defecto": "vx-detalle-usbc.jpg",
             "encuadre": "cover"
           }
-        },
-        "celda-4": {
-          "type": "celda",
-          "settings": {
-            "tamano": "p",
-            "tag": "Conexión",
-            "titulo": "Rosca firme",
-            "texto": "La manguera se enrosca a la válvula: nada de fugas.",
-            "foto_defecto": "vx-detalle-valvula.jpg",
-            "encuadre": "cover"
-          }
-        },
-        "celda-5": {
-          "type": "celda",
-          "settings": {
-            "tamano": "p",
-            "tag": "480 g",
-            "titulo": "Cabe en todo",
-            "texto": "Baúl de la moto, morral o guantera.",
-            "foto_defecto": "vx-estudio-gris.jpg",
-            "encuadre": "contain"
-          }
         }
       },
       "block_order": [
         "celda-1",
         "celda-2",
-        "celda-3",
-        "celda-4",
-        "celda-5"
+        "celda-3"
       ]
     },
     "faq": {

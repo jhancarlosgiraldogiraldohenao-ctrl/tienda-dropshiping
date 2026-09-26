@@ -40,7 +40,7 @@
         {%- if section.settings.imagen != blank -%}
           <img src="{{ section.settings.imagen | image_url: width: 900 }}" alt="{{ section.settings.imagen.alt | escape }}" width="{{ section.settings.imagen.width }}" height="{{ section.settings.imagen.height }}" loading="lazy">
         {%- else -%}
-          <img src="{{ 'vx-recorte-tres-cuartos.png' | asset_url }}" alt="Inflador Vuronix AirGo en vista lateral" width="367" height="388" loading="lazy">
+          <img src="{{ 'vx-recorte-frente.png' | asset_url }}" alt="Inflador Vuronix AirGo" width="460" height="1178" loading="lazy">
         {%- endif -%}
         <p class="vx-modos__nota" data-vx-modo-nota>{{ primero.settings.nota }}</p>
       </div>

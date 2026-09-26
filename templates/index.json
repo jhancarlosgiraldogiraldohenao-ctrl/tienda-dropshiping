@@ -409,7 +409,7 @@
         "celda-1": {
           "type": "celda",
           "settings": {
-            "tamano": "g",
+            "tamano": "p",
             "tag": "Emergencias",
             "titulo": "Luz LED",
             "texto": "Si la llanta se baja de noche, tienes luz para ver lo que haces.",
@@ -420,7 +420,7 @@
         "celda-2": {
           "type": "celda",
           "settings": {
-            "tamano": "m",
+            "tamano": "p",
             "tag": "Incluidas",
             "titulo": "3 boquillas",
             "texto": "Para balones, inflables y válvula de bicicleta.",
@@ -438,36 +438,12 @@
             "foto_defecto": "vx-detalle-usbc.jpg",
             "encuadre": "cover"
           }
-        },
-        "celda-4": {
-          "type": "celda",
-          "settings": {
-            "tamano": "p",
-            "tag": "Conexión",
-            "titulo": "Rosca firme",
-            "texto": "La manguera se enrosca a la válvula: nada de fugas.",
-            "foto_defecto": "vx-detalle-valvula.jpg",
-            "encuadre": "cover"
-          }
-        },
-        "celda-5": {
-          "type": "celda",
-          "settings": {
-            "tamano": "p",
-            "tag": "480 g",
-            "titulo": "Cabe en todo",
-            "texto": "Baúl de la moto, morral o guantera.",
-            "foto_defecto": "vx-estudio-gris.jpg",
-            "encuadre": "contain"
-          }
         }
       },
       "block_order": [
         "celda-1",
         "celda-2",
-        "celda-3",
-        "celda-4",
-        "celda-5"
+        "celda-3"
       ]
     },
     "faq": {
@@ -541,6 +517,21 @@
         "texto": "Pídelo hoy y págalo al recibir, en efectivo, en cualquier parte de Colombia.",
         "btn_texto": "Lo quiero"
       }
+    },
+    "packs": {
+      "type": "vx-packs",
+      "settings": {
+        "producto": "compresor-inflador-portatil",
+        "eyebrow": "Elige tu opción",
+        "titulo": "Uno para ti. O dos y ahorras.",
+        "texto": "Uno para la moto y otro para el carro, o para regalar. Pagas al recibir en cualquier caso.",
+        "btn_texto": "Lo quiero",
+        "pack_1_texto": "Para tener siempre aire a mano.",
+        "pack_1_lista": "1 inflador AirGo\n3 boquillas + cable USB-C\nPago contraentrega",
+        "pack_2_texto": "Uno para la moto y otro para el carro (o para regalar).",
+        "pack_2_lista": "2 infladores AirGo\n6 boquillas + 2 cables USB-C\nPago contraentrega",
+        "pack_2_etiqueta": "Mejor precio"
+      }
     }
   },
   "order": [
@@ -551,6 +542,7 @@
     "garantias",
     "pasos",
     "comparativa",
+    "packs",
     "detalles",
     "faq",
     "cierre"
