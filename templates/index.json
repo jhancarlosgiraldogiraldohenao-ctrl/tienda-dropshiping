@@ -4,7 +4,7 @@
       "type": "vx-hero",
       "settings": {
         "producto": "compresor-inflador-portatil",
-        "eyebrow": "Vuronix AirGo · Inflador inalámbrico",
+        "eyebrow": "AirGo · Compresor inteligente",
         "titulo": "Nunca más te quedes",
         "titulo_acento": "varado.",
         "sub": "Llanta baja a las 10 de la noche y la bomba de la gasolinera dañada. Con AirGo llevas el aire contigo: eliges la presión y se apaga solo al llegar.",
@@ -12,7 +12,8 @@
         "btn1_texto": "Pídelo hoy",
         "btn2_texto": "Ver cómo funciona",
         "btn2_url": "#como-funciona",
-        "etiqueta": "Pago contraentrega"
+        "etiqueta": "Pago contraentrega",
+        "btn1_url": "#packs"
       },
       "blocks": {
         "chip-1": {
@@ -524,7 +525,7 @@
       "type": "vx-packs",
       "settings": {
         "producto": "compresor-inflador-portatil",
-        "eyebrow": "Elige tu opción",
+        "eyebrow": "Promoción de lanzamiento",
         "titulo": "Uno para ti. O dos y ahorras.",
         "texto": "Uno para la moto y otro para el carro, o para regalar. Pagas al recibir en cualquier caso.",
         "btn_texto": "Lo quiero",
@@ -532,19 +533,21 @@
         "pack_1_lista": "1 inflador AirGo\n3 boquillas + cable USB-C\nPago contraentrega",
         "pack_2_texto": "Uno para la moto y otro para el carro (o para regalar).",
         "pack_2_lista": "2 infladores AirGo\n6 boquillas + 2 cables USB-C\nPago contraentrega",
-        "pack_2_etiqueta": "Mejor precio"
+        "pack_2_etiqueta": "Mejor precio",
+        "padding_top": 88,
+        "padding_bottom": 88
       }
     }
   },
   "order": [
     "hero",
+    "packs",
     "cifras",
     "anatomia",
     "modos",
     "garantias",
     "pasos",
     "comparativa",
-    "packs",
     "detalles",
     "faq",
     "cierre"

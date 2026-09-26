@@ -117,6 +117,13 @@
   Añadida al grupo de ubicaciones (DeliveryLocationGroup 105616933043) -> "1 unidad" disponible.
   Permisos actuales: products, files, inventory, locations, shipping.
 
+## Ronda 6 (2026-09-26)
+- Título del producto: "AirGo · Compresor Inteligente Inalámbrico" (+ SEO).
+- Precios tachados (pedido del usuario): 1 unidad 109.900 (antes 129.900), pack 189.900 (antes 239.800).
+- Portada: sección de packs justo después de la apertura (id #packs); "Pídelo hoy" baja a #packs.
+- Producto: botón "Comprar ahora" (enlace /cart/ID:CANT -> checkout directo), "Agregar al carrito"
+  pasa a secundario; % de ahorro se actualiza al cambiar de opción.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

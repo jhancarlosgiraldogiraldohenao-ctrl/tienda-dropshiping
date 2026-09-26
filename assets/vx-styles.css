@@ -473,6 +473,12 @@
   .vx-oferta__precio { grid-column: 3; text-align: left; display: flex; gap: 8px; align-items: baseline; }
 }
 
+/* Comprar ahora */
+.vx-compra__ahora { width: 100%; min-height: 64px; font-size: 22px; margin-top: 12px; }
+.vx-compra__ahora[aria-disabled='true'] { pointer-events: none; opacity: 0.5; }
+.vx-compra__nota-ahora { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px; font-size: 14px; color: var(--vx-texto-suave); }
+.vx-compra__nota-ahora svg { width: 18px; height: 18px; color: var(--vx-senal); }
+
 /* Galería de dos fotos */
 .vx-duo { position: sticky; top: 90px; display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 .vx-duo__foto { position: relative; margin: 0; border-radius: 20px; overflow: hidden; background: #101114; border: 1px solid var(--vx-linea); }

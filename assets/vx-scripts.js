@@ -211,11 +211,21 @@
       var barraPrecio = document.querySelector('[data-vx-sticky-compra] strong');
       var duoImg = document.querySelector('[data-vx-duo-principal] img');
       var duoOriginal = duoImg ? duoImg.getAttribute('src') : null;
+      var ahora = c.querySelector('[data-vx-comprar]');
+      function cantidad() { var q = c.querySelector('input[name="quantity"]'); return q ? Math.max(1, parseInt(q.value, 10) || 1) : 1; }
+      function actualizarAhora() {
+        if (!ahora) return;
+        ahora.setAttribute('href', ahora.getAttribute('href').replace(/\/\d+:\d+$/, '/' + input.value + ':' + cantidad()));
+      }
+      c.addEventListener('change', actualizarAhora); c.addEventListener('click', function () { setTimeout(actualizarAhora, 0); });
       function aplicar(v) {
         input.value = v.id;
+        if (ahora) { if (v.available) ahora.removeAttribute('aria-disabled'); else ahora.setAttribute('aria-disabled', 'true'); }
         if (precio) precio.textContent = dinero(v.price);
         if (barraPrecio) barraPrecio.textContent = dinero(v.price);
         if (antes) antes.textContent = v.compare_at_price > v.price ? dinero(v.compare_at_price) : '';
+        var pct = c.querySelector('[data-vx-pct]');
+        if (pct) { if (v.compare_at_price > v.price) { pct.hidden = false; pct.textContent = '-' + Math.floor((v.compare_at_price - v.price) * 100 / v.compare_at_price) + '%'; } else pct.hidden = true; }
         if (boton) {
           if (v.available) { boton.removeAttribute('disabled'); boton.removeAttribute('aria-disabled'); if (txtBoton) txtBoton.textContent = txtCompra; }
           else { boton.setAttribute('disabled', ''); if (txtBoton) txtBoton.textContent = txtAgotado; }
@@ -262,11 +272,12 @@
       });
       var barra = document.querySelector('[data-vx-sticky-compra]');
       if (barra && boton && 'IntersectionObserver' in window) {
+        var ancla = ahora || boton;
         new IntersectionObserver(function (e) {
           barra.classList.toggle('is-visible', !e[0].isIntersecting && e[0].boundingClientRect.top < 0);
-        }).observe(boton);
+        }).observe(ancla);
         var irA = barra.querySelector('button');
-        if (irA) irA.addEventListener('click', function () { boton.click(); });
+        if (irA) irA.addEventListener('click', function () { if (ahora) { actualizarAhora(); window.location.href = ahora.getAttribute('href'); } else boton.click(); });
       }
     });
   }

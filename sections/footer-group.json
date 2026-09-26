@@ -10,7 +10,7 @@
         "nav_titulo": "Tienda",
         "nav_1_label": "Inicio",
         "nav_1_url": "/",
-        "nav_2_label": "Inflador AirGo",
+        "nav_2_label": "AirGo",
         "nav_2_url": "/products/compresor-inflador-portatil",
         "nav_3_label": "Cómo funciona",
         "nav_3_url": "/#como-funciona",
@@ -22,5 +22,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }

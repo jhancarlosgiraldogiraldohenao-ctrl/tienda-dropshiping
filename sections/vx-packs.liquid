@@ -14,7 +14,7 @@
   #shopify-section-{{ section.id }} .vx-packs__cabecera p { font-size: {{ section.settings.texto_size }}px; }
 {% endstyle %}
 
-<section class="vx-section vx-packs">
+<section class="vx-section vx-packs" id="packs">
   <div class="vx-container">
     <div class="vx-packs__cabecera">
       {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
