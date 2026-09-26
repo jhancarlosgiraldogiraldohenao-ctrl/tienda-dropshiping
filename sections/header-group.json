@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Pago contraentrega · Envío a toda Colombia",
+            "text": "Envío gratis · Pago contraentrega a toda Colombia",
             "text_alignment": "center",
             "color_scheme": "scheme-4",
             "link": ""

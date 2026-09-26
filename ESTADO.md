@@ -124,6 +124,15 @@
 - Producto: botón "Comprar ahora" (enlace /cart/ID:CANT -> checkout directo), "Agregar al carrito"
   pasa a secundario; % de ahorro se actualiza al cambiar de opción.
 
+## Ronda 7 (2026-09-26)
+- Envío: borrada la tarifa "Estándar" (14.951 COP, gratis desde 162.600) y creada "Envío gratis" (0 COP)
+  en la zona Domestic (CO). Internacional sin tocar (60.000).
+- Textos "Envío gratis" (barra superior, hero, packs, garantías, producto, pie) + cláusula del flete
+  (FAQ "¿El envío tiene costo?", "¿Cómo pago?", producto "Envío y pago", pie).
+- Pago contraentrega activado por el usuario (con textos de flete); PayPal desactivado.
+- Nueva sección vx-resenas (solo reseñas reales, se oculta sin reseñas) en portada (antes de FAQ)
+  y producto (tras garantías) + plantilla templates/page.resenas.json para una página de reseñas.
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.

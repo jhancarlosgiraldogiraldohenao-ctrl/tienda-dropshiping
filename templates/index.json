@@ -27,7 +27,7 @@
           "type": "chip",
           "settings": {
             "icono": "camion",
-            "texto": "Envío a toda Colombia"
+            "texto": "Envío gratis a toda Colombia"
           }
         },
         "chip-3": {
@@ -242,7 +242,7 @@
           "type": "item",
           "settings": {
             "icono": "camion",
-            "texto": "Envío a toda Colombia"
+            "texto": "Envío gratis"
           }
         },
         "item-3": {
@@ -490,7 +490,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "Pagas cuando recibes, en efectivo, directamente al transportador. Pago contraentrega a todo Colombia."
+            "respuesta": "Pagas cuando recibes, en efectivo, directamente al transportador. Pago contraentrega y envío gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
           }
         },
         "pregunta-6": {
@@ -499,6 +499,13 @@
             "pregunta": "¿Cómo lo cuido?",
             "respuesta": "Cárgalo completamente antes del primer uso y recárgalo cada cierto tiempo aunque no lo uses, para tenerlo listo en una emergencia. En usos largos, déjalo descansar unos minutos para que no se caliente."
           }
+        },
+        "pregunta-7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿El envío tiene costo?",
+            "respuesta": "No. El envío es gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
+          }
         }
       },
       "block_order": [
@@ -506,6 +513,7 @@
         "pregunta-2",
         "pregunta-3",
         "pregunta-4",
+        "pregunta-7",
         "pregunta-5",
         "pregunta-6"
       ]
@@ -517,7 +525,7 @@
         "eyebrow": "Llévalo en tu moto",
         "titulo": "Olvídate de las",
         "titulo_acento": "llantas bajas.",
-        "texto": "Pídelo hoy y págalo al recibir, en efectivo, en cualquier parte de Colombia.",
+        "texto": "Pídelo hoy con envío gratis y págalo al recibir, en efectivo, en cualquier parte de Colombia.",
         "btn_texto": "Lo quiero"
       }
     },
@@ -527,16 +535,20 @@
         "producto": "compresor-inflador-portatil",
         "eyebrow": "Promoción de lanzamiento",
         "titulo": "Uno para ti. O dos y ahorras.",
-        "texto": "Uno para la moto y otro para el carro, o para regalar. Pagas al recibir en cualquier caso.",
+        "texto": "Uno para la moto y otro para el carro, o para regalar. Envío gratis y pagas al recibir.",
         "btn_texto": "Lo quiero",
         "pack_1_texto": "Para tener siempre aire a mano.",
-        "pack_1_lista": "1 inflador AirGo\n3 boquillas + cable USB-C\nPago contraentrega",
+        "pack_1_lista": "1 inflador AirGo\n3 boquillas + cable USB-C\nEnvío gratis · pago contraentrega",
         "pack_2_texto": "Uno para la moto y otro para el carro (o para regalar).",
-        "pack_2_lista": "2 infladores AirGo\n6 boquillas + 2 cables USB-C\nPago contraentrega",
+        "pack_2_lista": "2 infladores AirGo\n6 boquillas + 2 cables USB-C\nEnvío gratis · pago contraentrega",
         "pack_2_etiqueta": "Mejor precio",
         "padding_top": 88,
         "padding_bottom": 88
       }
+    },
+    "resenas": {
+      "type": "vx-resenas",
+      "settings": {}
     }
   },
   "order": [
@@ -549,6 +561,7 @@
     "pasos",
     "comparativa",
     "detalles",
+    "resenas",
     "faq",
     "cierre"
   ]

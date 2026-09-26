@@ -9,10 +9,11 @@
         "boton_texto": "Agregar al carrito",
         "nota_precio": "Pago contraentrega: pagas en efectivo al recibir.",
         "specs": "Presión máxima: 150 PSI\nPrecisión: ±1 PSI\nUnidades: PSI, BAR y KPA\nBatería: litio 2000 mAh, 7,4 V (2 celdas)\nCarga: USB tipo C\nPeso: 480 g\nModos: moto, carro, bicicleta, balón y manual\nMaterial: ABS resistente\nColor: negro",
-        "envio": "Envío a toda Colombia.\nPago contraentrega: pagas en efectivo directamente al transportador cuando recibes tu pedido.",
+        "envio": "Envío gratis a toda Colombia.\nPago contraentrega: pagas en efectivo al transportador cuando recibes tu pedido.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete.",
         "ofertas_titulo": "Elige tu opción",
         "oferta_1_nota": "Para tener siempre aire a mano.",
-        "oferta_2_nota": "Uno para la moto y otro para el carro, o para regalar."
+        "oferta_2_nota": "Uno para la moto y otro para el carro, o para regalar.",
+        "comprar_nota": "Envío gratis · pagas en efectivo al recibir"
       },
       "blocks": {
         "conf-1": {
@@ -27,7 +28,7 @@
           "type": "confianza",
           "settings": {
             "icono": "camion",
-            "titulo": "Envío",
+            "titulo": "Envío gratis",
             "texto": "A toda Colombia"
           }
         },
@@ -61,7 +62,7 @@
           "type": "item",
           "settings": {
             "icono": "camion",
-            "texto": "Envío a toda Colombia"
+            "texto": "Envío gratis"
           }
         },
         "item-3": {
@@ -436,7 +437,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "Pagas cuando recibes, en efectivo, directamente al transportador. Pago contraentrega a todo Colombia."
+            "respuesta": "Pagas cuando recibes, en efectivo, directamente al transportador. Pago contraentrega y envío gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
           }
         },
         "pregunta-6": {
@@ -445,6 +446,13 @@
             "pregunta": "¿Cómo lo cuido?",
             "respuesta": "Cárgalo completamente antes del primer uso y recárgalo cada cierto tiempo aunque no lo uses, para tenerlo listo en una emergencia. En usos largos, déjalo descansar unos minutos para que no se caliente."
           }
+        },
+        "pregunta-7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿El envío tiene costo?",
+            "respuesta": "No. El envío es gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
+          }
         }
       },
       "block_order": [
@@ -452,14 +460,20 @@
         "pregunta-2",
         "pregunta-3",
         "pregunta-4",
+        "pregunta-7",
         "pregunta-5",
         "pregunta-6"
       ]
+    },
+    "resenas": {
+      "type": "vx-resenas",
+      "settings": {}
     }
   },
   "order": [
     "principal",
     "garantias",
+    "resenas",
     "anatomia",
     "modos",
     "pasos",

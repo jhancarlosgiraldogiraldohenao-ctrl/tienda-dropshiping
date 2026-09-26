@@ -473,6 +473,26 @@
   .vx-oferta__precio { grid-column: 3; text-align: left; display: flex; gap: 8px; align-items: baseline; }
 }
 
+/* Reseñas */
+.vx-resenas__cabecera { max-width: 760px; margin: 0 auto clamp(30px, 4vw, 52px); }
+.vx-resenas__cabecera h2 { margin-top: 16px; }
+.vx-resenas__resumen { display: inline-flex; align-items: center; gap: 14px; margin-top: 18px; flex-wrap: wrap; justify-content: center; }
+.vx-resenas__resumen .vx-lcd { font-size: 56px; }
+.vx-estrellas { --vx-nota: 5; display: inline-block; font-size: 20px; line-height: 1; letter-spacing: 3px; background: linear-gradient(90deg, var(--vx-senal) calc(var(--vx-nota) / 5 * 100%), rgba(255,255,255,0.18) 0); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.vx-estrellas::before { content: '★★★★★'; }
+.vx-resenas__grid { columns: 3 300px; column-gap: 18px; }
+.vx-resena { break-inside: avoid; margin-bottom: 18px; border-radius: 18px; overflow: hidden; background: var(--vx-asfalto); border: 1px solid var(--vx-linea); }
+.vx-resena__foto img { width: 100%; height: auto; }
+.vx-resena__cuerpo { padding: 20px 22px 22px; display: grid; gap: 10px; }
+.vx-resena__cuerpo h3 { font-size: 22px; font-weight: 700; }
+.vx-resena__texto { color: var(--vx-texto-suave); }
+.vx-resena__autor { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-top: 4px; font-size: 14px; }
+.vx-resena__autor small { display: block; color: var(--vx-texto-suave); font-size: 12px; }
+.vx-resena__avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--vx-senal); color: var(--vx-tinta); display: grid; place-items: center; font-family: var(--vx-display); font-weight: 800; font-size: 18px; text-transform: uppercase; }
+.vx-resena__ok { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: #3ddc84; }
+.vx-resena__ok svg { width: 14px; height: 14px; }
+.vx-resenas__vacio { text-align: center; color: var(--vx-texto-suave); border: 1px dashed rgba(255,255,255,0.2); border-radius: 14px; padding: 24px; }
+
 /* Comprar ahora */
 .vx-compra__ahora { width: 100%; min-height: 64px; font-size: 22px; margin-top: 12px; }
 .vx-compra__ahora[aria-disabled='true'] { pointer-events: none; opacity: 0.5; }
