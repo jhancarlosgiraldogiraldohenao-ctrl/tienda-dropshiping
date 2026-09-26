@@ -454,8 +454,8 @@
       "settings": {
         "eyebrow": "Preguntas frecuentes",
         "titulo": "Lo que todos preguntan",
-        "texto": "¿Te queda alguna duda? Escríbenos y te respondemos.",
-        "btn_texto": "Escríbenos"
+        "texto": "Todo lo que necesitas saber antes de pedir tu AirGo.",
+        "btn_texto": ""
       },
       "blocks": {
         "pregunta-1": {

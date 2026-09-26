@@ -13,7 +13,8 @@
         "ofertas_titulo": "Elige tu opción",
         "oferta_1_nota": "Para tener siempre aire a mano.",
         "oferta_2_nota": "Uno para la moto y otro para el carro, o para regalar.",
-        "comprar_nota": "Envío gratis · pagas en efectivo al recibir"
+        "comprar_nota": "Envío gratis · pagas en efectivo al recibir",
+        "stock_texto": "Disponible · envío gratis"
       },
       "blocks": {
         "conf-1": {
@@ -35,9 +36,9 @@
         "conf-3": {
           "type": "confianza",
           "settings": {
-            "icono": "chat",
-            "titulo": "Asesoría",
-            "texto": "Te ayudamos"
+            "icono": "reloj",
+            "titulo": "Fácil de usar",
+            "texto": "Listo en minutos"
           }
         }
       },
@@ -401,8 +402,8 @@
       "settings": {
         "eyebrow": "Preguntas frecuentes",
         "titulo": "Lo que todos preguntan",
-        "texto": "¿Te queda alguna duda? Escríbenos y te respondemos.",
-        "btn_texto": "Escríbenos"
+        "texto": "Todo lo que necesitas saber antes de pedir tu AirGo.",
+        "btn_texto": ""
       },
       "blocks": {
         "pregunta-1": {

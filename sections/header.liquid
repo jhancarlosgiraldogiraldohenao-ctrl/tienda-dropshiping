@@ -175,7 +175,7 @@
         render 'header-drawer', show_country_selector: country_selector, show_language_selector: language_selector, show_social_links: social_links
       endif
 
-      if render_search_left
+      if render_search_left and section.settings.mostrar_busqueda
         render 'header-search', input_id: 'Search-In-Modal-1'
       endif
     -%}
@@ -287,9 +287,9 @@
           </localization-form>
         {%- endif -%}
       </div>
-      {% render 'header-search', input_id: 'Search-In-Modal' %}
+      {%- if section.settings.mostrar_busqueda -%}{% render 'header-search', input_id: 'Search-In-Modal' %}{%- endif -%}
 
-      {%- if shop.customer_accounts_enabled -%}
+      {%- if shop.customer_accounts_enabled and section.settings.mostrar_cuenta -%}
         <shopify-account
           menu="{{ settings.customer_account_menu | default: 'customer-account-main-menu' }}"
           class="header__icon header__icon--account link focus-inset"
@@ -515,6 +515,8 @@
     { "type": "text", "id": "marca_texto", "label": "Nombre de la marca (si no hay logo)", "default": "Vuronix" },
     { "type": "image_picker", "id": "logo", "label": "Logo (opcional, sustituye al nombre)" },
     { "type": "range", "id": "logo_width", "label": "Ancho del logo (px)", "min": 50, "max": 300, "step": 10, "unit": "px", "default": 140 },
+    { "type": "checkbox", "id": "mostrar_busqueda", "label": "Mostrar la lupa de búsqueda", "default": false },
+    { "type": "checkbox", "id": "mostrar_cuenta", "label": "Mostrar el icono de cuenta (iniciar sesión)", "default": false },
     { "type": "text", "id": "ocultar_enlaces", "label": "Ocultar del menú estas direcciones (separadas por comas)", "default": "/collections/all" },
     {
       "type": "select",

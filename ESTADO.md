@@ -138,6 +138,12 @@
   "Envío gratis a toda Colombia · Pagas en efectivo al recibir" (textos tax-note en es.json);
   cajón con altura 100dvh y pie fijo para que el botón se vea en móvil.
 
+## Ronda 9 (2026-09-26)
+- Cabecera: sin lupa ni cuenta (ajustes mostrar_busqueda / mostrar_cuenta = false); "Contacto" oculto
+  del menú (ocultar_enlaces "/collections/all, /pages/contact"); icono de carrito de compras nuevo
+  (assets/icon-cart*.svg). Pie sin enlace a Contacto; FAQ sin botón "Escríbenos".
+- Producto: tarjeta "Asesoría" -> "Fácil de usar · Listo en minutos"; aviso stock "Disponible · envío gratis".
+
 ## Pendiente
 - Auto-revisión visual: la tienda tiene contraseña -> pedirla al usuario.
 - Publicar el tema como activo solo con OK explícito.
