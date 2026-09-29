@@ -1,0 +1,124 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-asfalto);
+  }
+  #shopify-section-{{ section.id }} .vx-detalles__cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-detalles__cabecera p { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .vx-celda__texto { text-align: {{ section.settings.alineacion }}; }
+  #shopify-section-{{ section.id }} .vx-celda__foto { background: {{ section.settings.fondo_fotos }}; }
+  #shopify-section-{{ section.id }} .vx-bento { grid-auto-rows: minmax({{ section.settings.alto_fila }}px, auto); }
+{% endstyle %}
+
+<section class="vx-section vx-detalles">
+  <div class="vx-container">
+    <div class="vx-detalles__cabecera">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="vx-reveal" style="--vx-i:1; margin-top: 16px">{{ section.settings.titulo }}</h2>
+      </div>
+      {%- if section.settings.texto != blank -%}<p class="vx-reveal" style="--vx-i:2">{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
+    </div>
+
+    <div class="vx-bento">
+      {%- for block in section.blocks -%}
+        <article class="vx-celda vx-celda--{{ block.settings.tamano }} vx-reveal" style="--vx-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+          {%- if block.settings.tag != blank -%}<span class="vx-celda__tag">{{ block.settings.tag }}</span>{%- endif -%}
+          <div class="vx-celda__foto{% if block.settings.encuadre == 'contain' %} vx-celda__foto--contener{% endif %}">
+            {%- if block.settings.imagen != blank -%}
+              <img src="{{ block.settings.imagen | image_url: width: 1000 }}" alt="{{ block.settings.imagen.alt | escape }}" loading="lazy">
+            {%- else -%}
+              <img src="{{ block.settings.foto_defecto | asset_url }}" alt="{{ block.settings.titulo | escape }}" loading="lazy">
+            {%- endif -%}
+          </div>
+          <div class="vx-celda__texto">
+            <h3>{{ block.settings.titulo }}</h3>
+            {%- if block.settings.texto != blank -%}<p>{{ block.settings.texto }}</p>{%- endif -%}
+          </div>
+        </article>
+      {%- endfor -%}
+    </div>
+
+    {%- if section.settings.mostrar_incluye -%}
+      <div class="vx-incluye">
+        <div class="vx-incluye__titulo vx-reveal">
+          <h3>{{ section.settings.incluye_titulo }}</h3>
+          <p>{{ section.settings.incluye_texto }}</p>
+        </div>
+        <ul class="vx-incluye__lista">
+          {%- assign lineas = section.settings.incluye_lista | newline_to_br | split: '<br />' -%}
+          {%- for linea in lineas -%}
+            {%- assign l = linea | strip -%}
+            {%- if l != blank -%}
+              {%- assign partes = l | split: '|' -%}
+              <li class="vx-reveal" style="--vx-i:{{ forloop.index }}">{% if partes.size > 1 %}<b>{{ partes[0] | strip }}</b>{{ partes[1] | strip }}{% else %}{{ l }}{% endif %}</li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VX – Detalles",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Los detalles" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Pequeño por fuera. Serio por dentro." },
+    { "type": "textarea", "id": "texto", "label": "Texto" },
+    { "type": "header", "content": "Qué incluye" },
+    { "type": "checkbox", "id": "mostrar_incluye", "label": "Mostrar 'Qué incluye'", "default": true },
+    { "type": "text", "id": "incluye_titulo", "label": "Título", "default": "Qué incluye" },
+    { "type": "text", "id": "incluye_texto", "label": "Texto", "default": "Todo listo para usar desde el primer día." },
+    { "type": "textarea", "id": "incluye_lista", "label": "Lista (una línea por elemento; formato: cantidad | nombre)", "default": "1 | Inflador portátil" },
+    { "type": "header", "content": "Diseño" },
+    { "type": "color", "id": "fondo_fotos", "label": "Fondo detrás de las fotos", "default": "#FFFFFF" },
+    { "type": "range", "id": "alto_fila", "label": "Altura mínima de las filas (px)", "min": 100, "max": 260, "step": 10, "unit": "px", "default": 160 },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación del texto de las tarjetas", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 100, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 22, "step": 1, "unit": "px", "default": 17 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 }
+  ],
+  "blocks": [
+    {
+      "type": "celda",
+      "name": "Tarjeta",
+      "settings": [
+        { "type": "select", "id": "tamano", "label": "Tamaño", "options": [
+          { "value": "g", "label": "Grande (7/12)" }, { "value": "m", "label": "Mediana (5/12)" }, { "value": "a", "label": "Mitad (6/12)" }, { "value": "p", "label": "Pequeña (4/12)" }
+        ], "default": "p" },
+        { "type": "text", "id": "tag", "label": "Etiqueta" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Detalle" },
+        { "type": "textarea", "id": "texto", "label": "Texto" },
+        { "type": "image_picker", "id": "imagen", "label": "Foto" },
+        { "type": "select", "id": "foto_defecto", "label": "Foto por defecto (si no eliges una)", "options": [
+          { "value": "vx-detalle-linterna-pro.jpg", "label": "Linterna LED (foto profesional)" },
+          { "value": "vx-detalle-boquillas-pro.jpg", "label": "Boquillas (foto profesional)" },
+          { "value": "vx-detalle-usbc-pro.jpg", "label": "Cargando por USB-C (foto profesional)" },
+          { "value": "vx-detalle-linterna.png", "label": "Linterna LED" },
+          { "value": "vx-detalle-boquillas.jpg", "label": "Boquillas" },
+          { "value": "vx-detalle-usbc.jpg", "label": "Puerto USB-C" },
+          { "value": "vx-detalle-valvula.jpg", "label": "Válvula" },
+          { "value": "vx-detalle-botones.jpg", "label": "Botones" },
+          { "value": "vx-detalle-pantalla.jpg", "label": "Pantalla" },
+          { "value": "vx-estudio-gris.jpg", "label": "Producto de frente" },
+          { "value": "vx-escena-rueda.jpg", "label": "Junto a la rueda" }
+        ], "default": "vx-detalle-usbc.jpg" },
+        { "type": "select", "id": "encuadre", "label": "Encuadre de la foto", "options": [ { "value": "cover", "label": "Llenar" }, { "value": "contain", "label": "Foto completa" } ], "default": "cover" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "VX – Detalles", "blocks": [ { "type": "celda" } ] } ]
+}
+{% endschema %}

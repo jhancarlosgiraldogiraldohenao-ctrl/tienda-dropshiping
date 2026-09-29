@@ -1,0 +1,151 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.variants.first -%}
+{%- assign url_compra = section.settings.btn1_url | default: producto.url | default: '#' -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-asfalto);
+  }
+  #shopify-section-{{ section.id }} .vx-hero__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.52 | round }}px, 7vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-hero__sub { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .vx-hero__texto { text-align: {{ section.settings.alineacion }}; }
+  {%- if section.settings.alineacion == 'center' -%}
+  #shopify-section-{{ section.id }} .vx-hero__ctas, #shopify-section-{{ section.id }} .vx-hero__chips, #shopify-section-{{ section.id }} .vx-hero__precio { justify-content: center; }
+  #shopify-section-{{ section.id }} .vx-hero__sub { margin-inline: auto; }
+  {%- endif -%}
+{% endstyle %}
+
+<section class="vx-section vx-hero">
+  <div class="vx-container">
+    <div class="vx-hero__grid">
+      <div class="vx-hero__texto">
+        {%- if section.settings.eyebrow != blank -%}
+          <span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>
+        {%- endif -%}
+        <h1 class="vx-hero__titulo vx-reveal" style="--vx-i:1">
+          {{ section.settings.titulo }}
+          {%- if section.settings.titulo_acento != blank %} <span class="vx-acento">{{ section.settings.titulo_acento }}</span>{% endif -%}
+        </h1>
+        {%- if section.settings.sub != blank -%}
+          <p class="vx-hero__sub vx-reveal" style="--vx-i:2">{{ section.settings.sub | newline_to_br }}</p>
+        {%- endif -%}
+
+        {%- if section.settings.mostrar_precio and producto != blank -%}
+          <div class="vx-hero__precio vx-reveal" style="--vx-i:3">
+            <strong>{{ v1.price | money_without_trailing_zeros }}</strong>
+            {%- if v1.compare_at_price > v1.price -%}<s>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+            {%- if section.settings.nota_precio != blank -%}<span>{{ section.settings.nota_precio }}</span>{%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="vx-hero__ctas vx-reveal" style="--vx-i:4">
+          {%- if section.settings.btn1_texto != blank -%}
+            <a class="vx-btn" href="{{ url_compra }}">{{ section.settings.btn1_texto }} {% render 'vx-icono', nombre: 'flecha' %}</a>
+          {%- endif -%}
+          {%- if section.settings.btn2_texto != blank -%}
+            <a class="vx-btn vx-btn--ghost" href="{{ section.settings.btn2_url | default: '#como-funciona' }}">{{ section.settings.btn2_texto }}</a>
+          {%- endif -%}
+        </div>
+
+        {%- if section.blocks.size > 0 -%}
+          <div class="vx-hero__chips vx-reveal" style="--vx-i:5">
+            {%- for block in section.blocks -%}
+              <span class="vx-chip" {{ block.shopify_attributes }}>{% render 'vx-icono', nombre: block.settings.icono %}{{ block.settings.texto }}</span>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="vx-hero__visual vx-reveal vx-reveal--der" style="--vx-i:2">
+        <div class="vx-hero__marco">
+          {%- if section.settings.etiqueta != blank -%}<span class="vx-hero__etiqueta">{{ section.settings.etiqueta }}</span>{%- endif -%}
+          {%- if section.settings.imagen != blank -%}
+            <img src="{{ section.settings.imagen | image_url: width: 1400 }}" srcset="{{ section.settings.imagen | image_url: width: 700 }} 700w, {{ section.settings.imagen | image_url: width: 1100 }} 1100w, {{ section.settings.imagen | image_url: width: 1600 }} 1600w" sizes="(min-width: 990px) 55vw, 100vw" alt="{{ section.settings.imagen.alt | default: section.settings.alt_imagen | escape }}" width="{{ section.settings.imagen.width }}" height="{{ section.settings.imagen.height }}" loading="eager" fetchpriority="high" data-vx-parallax="{{ section.settings.parallax }}">
+          {%- else -%}
+            <img src="{{ 'vx-escena-rueda.jpg' | asset_url }}" alt="{{ section.settings.alt_imagen | escape }}" width="1254" height="1254" loading="eager" fetchpriority="high" data-vx-parallax="{{ section.settings.parallax }}">
+          {%- endif -%}
+        </div>
+
+        {%- if section.settings.mostrar_hud -%}
+          <div class="vx-hud" data-vx-hud data-desde="{{ section.settings.hud_desde }}" data-hasta="{{ section.settings.hud_hasta }}" data-txt-inflando="{{ section.settings.hud_inflando | escape }}" data-txt-listo="{{ section.settings.hud_listo | escape }}">
+            <div class="vx-hud__top">
+              <span>{{ section.settings.hud_titulo }}</span>
+              <span class="vx-hud__estado"><i class="vx-hud__punto"></i><span data-vx-hud-estado>{{ section.settings.hud_inflando }}</span></span>
+            </div>
+            <div class="vx-hud__valor vx-lcd" data-vx-hud-valor>{{ section.settings.hud_desde | times: 1.0 }}<small>{{ section.settings.hud_unidad }}</small></div>
+            <div class="vx-hud__barra"><i data-vx-hud-barra></i></div>
+            <div class="vx-hud__pie"><span>{{ section.settings.hud_pie_izq }}</span><span>{{ section.settings.hud_pie_der }}</span></div>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  {%- if section.settings.mostrar_carretera -%}<div class="vx-carretera" aria-hidden="true"></div>{%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "VX – Apertura",
+  "tag": "section",
+  "class": "vx-wrap",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Vuronix AirGo · Inflador inalámbrico" },
+    { "type": "text", "id": "titulo", "label": "Título (parte blanca)", "default": "Nunca más te quedes" },
+    { "type": "text", "id": "titulo_acento", "label": "Título (parte amarilla)", "default": "varado." },
+    { "type": "textarea", "id": "sub", "label": "Texto", "default": "Llanta baja a las 10 de la noche y la bomba de la gasolinera dañada. Con AirGo llevas el aire contigo: eliges la presión y se apaga solo al llegar." },
+    { "type": "header", "content": "Precio" },
+    { "type": "product", "id": "producto", "label": "Producto (para mostrar el precio y enlazar la compra)" },
+    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
+    { "type": "text", "id": "nota_precio", "label": "Nota junto al precio", "default": "Pagas al recibir" },
+    { "type": "header", "content": "Botones" },
+    { "type": "text", "id": "btn1_texto", "label": "Botón principal – texto", "default": "Pídelo hoy" },
+    { "type": "url", "id": "btn1_url", "label": "Botón principal – enlace (vacío = página del producto)" },
+    { "type": "text", "id": "btn2_texto", "label": "Botón secundario – texto", "default": "Ver cómo funciona" },
+    { "type": "url", "id": "btn2_url", "label": "Botón secundario – enlace" },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto principal" },
+    { "type": "text", "id": "alt_imagen", "label": "Descripción de la foto (accesibilidad)", "default": "Inflador Vuronix AirGo conectado a la llanta de un carro" },
+    { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la foto", "default": "Pago contraentrega" },
+    { "type": "range", "id": "parallax", "label": "Movimiento de la foto al bajar", "min": 0, "max": 30, "step": 2, "default": 12 },
+    { "type": "header", "content": "Pantalla animada" },
+    { "type": "checkbox", "id": "mostrar_hud", "label": "Mostrar pantalla animada", "default": true },
+    { "type": "text", "id": "hud_titulo", "label": "Título", "default": "Modo carro" },
+    { "type": "text", "id": "hud_unidad", "label": "Unidad", "default": "PSI" },
+    { "type": "number", "id": "hud_desde", "label": "Presión inicial", "default": 18 },
+    { "type": "number", "id": "hud_hasta", "label": "Presión objetivo", "default": 32 },
+    { "type": "text", "id": "hud_inflando", "label": "Texto mientras infla", "default": "Inflando" },
+    { "type": "text", "id": "hud_listo", "label": "Texto al terminar", "default": "Listo · se apagó solo" },
+    { "type": "text", "id": "hud_pie_izq", "label": "Pie izquierdo", "default": "Objetivo 32 PSI" },
+    { "type": "text", "id": "hud_pie_der", "label": "Pie derecho", "default": "±1 PSI" },
+    { "type": "checkbox", "id": "mostrar_carretera", "label": "Mostrar línea de carretera abajo", "default": true },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación del texto", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 40, "max": 140, "step": 2, "unit": "px", "default": 112 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 24, "step": 1, "unit": "px", "default": 18 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Garantía corta",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [
+          { "value": "efectivo", "label": "Efectivo" }, { "value": "camion", "label": "Envío" }, { "value": "escudo", "label": "Garantía" },
+          { "value": "chat", "label": "Chat" }, { "value": "rayo", "label": "Rayo" }, { "value": "reloj", "label": "Reloj" }, { "value": "check", "label": "Check" }
+        ], "default": "check" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Envío a toda Colombia" }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [ { "name": "VX – Apertura", "blocks": [ { "type": "chip" } ] } ]
+}
+{% endschema %}

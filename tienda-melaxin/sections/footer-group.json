@@ -1,0 +1,28 @@
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "marca_texto": "Vuronix",
+        "tagline": "Inflador portátil AirGo: el aire que necesitas, siempre contigo. Hecho para las vías de Colombia.",
+        "nav_titulo": "Tienda",
+        "nav_1_label": "Inicio",
+        "nav_1_url": "/",
+        "nav_2_label": "AirGo",
+        "nav_2_url": "/products/compresor-inflador-portatil",
+        "nav_3_label": "Cómo funciona",
+        "nav_3_url": "/#como-funciona",
+        "nav_4_label": "",
+        "nav_4_url": "",
+        "info_titulo": "Compra tranquilo",
+        "info_texto": "Envío gratis a toda Colombia.\nPago contraentrega: pagas en efectivo cuando recibes tu pedido.\nSi no estás o rechazas el pedido al momento de la entrega, se cobrará el valor del flete.",
+        "texto_gigante": "Vuronix"
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "sections": {
+    "hero": {
+      "type": "vx-hero",
+      "settings": {
+        "producto": "compresor-inflador-portatil",
+        "eyebrow": "AirGo · Compresor inteligente",
+        "titulo": "Nunca más te quedes",
+        "titulo_acento": "varado.",
+        "sub": "Llanta baja a las 10 de la noche y la bomba de la gasolinera dañada. Con AirGo llevas el aire contigo: eliges la presión y se apaga solo al llegar.",
+        "nota_precio": "Pagas al recibir",
+        "btn1_texto": "Pídelo hoy",
+        "btn2_texto": "Ver cómo funciona",
+        "btn2_url": "#como-funciona",
+        "etiqueta": "Pago contraentrega"
+      },
+      "blocks": {
+        "chip-1": {
+          "type": "chip",
+          "settings": {
+            "icono": "efectivo",
+            "texto": "Pagas al recibir"
+          }
+        },
+        "chip-2": {
+          "type": "chip",
+          "settings": {
+            "icono": "camion",
+            "texto": "Envío gratis a toda Colombia"
+          }
+        },
+        "chip-3": {
+          "type": "chip",
+          "settings": {
+            "icono": "reloj",
+            "texto": "Listo en minutos"
+          }
+        }
+      },
+      "block_order": [
+        "chip-1",
+        "chip-2",
+        "chip-3"
+      ]
+    },
+    "cifras": {
+      "type": "vx-cifras",
+      "settings": {},
+      "blocks": {
+        "cifra-1": {
+          "type": "cifra",
+          "settings": {
+            "prefijo": "",
+            "valor": 150,
+            "decimales": 0,
+            "unidad": "PSI",
+            "titulo": "Presión máxima",
+            "texto": "Fuerza de sobra para moto, carro y bici."
+          }
+        },
+        "cifra-2": {
+          "type": "cifra",
+          "settings": {
+            "prefijo": "±",
+            "valor": 1,
+            "decimales": 0,
+            "unidad": "PSI",
+            "titulo": "Precisión",
+            "texto": "Sensor digital: ni te pasas ni te quedas corto."
+          }
+        },
+        "cifra-3": {
+          "type": "cifra",
+          "settings": {
+            "prefijo": "",
+            "valor": 480,
+            "decimales": 0,
+            "unidad": "g",
+            "titulo": "De peso",
+            "texto": "Más pequeño que una botella de agua."
+          }
+        },
+        "cifra-4": {
+          "type": "cifra",
+          "settings": {
+            "prefijo": "",
+            "valor": 2000,
+            "decimales": 0,
+            "unidad": "mAh",
+            "titulo": "De batería",
+            "texto": "Litio recargable de 7,4 V. Carga por USB-C."
+          }
+        }
+      },
+      "block_order": [
+        "cifra-1",
+        "cifra-2",
+        "cifra-3",
+        "cifra-4"
+      ]
+    },
+    "anatomia": {
+      "type": "vx-anatomia",
+      "settings": {
+        "eyebrow": "Diseñado al detalle",
+        "titulo": "Todo lo que necesitas, en 480 gramos",
+        "texto": "Pasa el cursor o toca cada número para conocer cada parte."
+      },
+      "blocks": {
+        "punto-1": {
+          "type": "punto",
+          "settings": {
+            "titulo": "Manguera integrada",
+            "texto": "Siempre en su sitio. Se enrosca a la válvula y no se pierde.",
+            "lado": "izq",
+            "x": 51,
+            "y": 10
+          }
+        },
+        "punto-2": {
+          "type": "punto",
+          "settings": {
+            "titulo": "Botón lateral",
+            "texto": "Enciende y apaga con un toque firme, sin encendidos accidentales en el morral.",
+            "lado": "der",
+            "x": 81,
+            "y": 45
+          }
+        },
+        "punto-3": {
+          "type": "punto",
+          "settings": {
+            "titulo": "Pantalla digital",
+            "texto": "Lectura de presión en PSI, BAR o KPA, con el nivel de batería a la vista.",
+            "lado": "izq",
+            "x": 68,
+            "y": 52
+          }
+        },
+        "punto-4": {
+          "type": "punto",
+          "settings": {
+            "titulo": "Controles simples",
+            "texto": "Modo, más, menos y luz. Nada de menús raros.",
+            "lado": "der",
+            "x": 47,
+            "y": 80
+          }
+        },
+        "punto-5": {
+          "type": "punto",
+          "settings": {
+            "titulo": "Cuerpo compacto",
+            "texto": "480 g en ABS resistente. Cabe debajo del sillín, en el baúl o en la guantera.",
+            "lado": "izq",
+            "x": 30,
+            "y": 90
+          }
+        }
+      },
+      "block_order": [
+        "punto-1",
+        "punto-2",
+        "punto-3",
+        "punto-4",
+        "punto-5"
+      ]
+    },
+    "modos": {
+      "type": "vx-modos",
+      "settings": {
+        "eyebrow": "4 modos + manual",
+        "titulo": "Uno para todo lo que rueda",
+        "texto": "Elige el modo y AirGo ya sabe qué hacer. Toca cada uno para ver la lectura."
+      },
+      "blocks": {
+        "modo-1": {
+          "type": "modo",
+          "settings": {
+            "icono": "moto",
+            "nombre": "Moto",
+            "sub": "Modo dedicado",
+            "valor": "33.0",
+            "unidad": "PSI",
+            "nota": "Presión de referencia para una llanta de moto. Revisa siempre la recomendada por el fabricante."
+          }
+        },
+        "modo-2": {
+          "type": "modo",
+          "settings": {
+            "icono": "carro",
+            "nombre": "Carro",
+            "sub": "Ajuste y rescate",
+            "valor": "32.0",
+            "unidad": "PSI",
+            "nota": "Ideal para ajustar la presión o recuperar una llanta baja, sin ir a la gasolinera."
+          }
+        },
+        "modo-3": {
+          "type": "modo",
+          "settings": {
+            "icono": "bici",
+            "nombre": "Bicicleta",
+            "sub": "Válvula incluida",
+            "valor": "45.0",
+            "unidad": "PSI",
+            "nota": "Con la boquilla para bicicleta incluida. La presión ideal depende de tu llanta."
+          }
+        },
+        "modo-4": {
+          "type": "modo",
+          "settings": {
+            "icono": "balon",
+            "nombre": "Balón",
+            "sub": "Aguja incluida",
+            "valor": "8.0",
+            "unidad": "PSI",
+            "nota": "Balones, flotadores y piscinas inflables con las boquillas que vienen en la caja."
+          }
+        }
+      },
+      "block_order": [
+        "modo-1",
+        "modo-2",
+        "modo-3",
+        "modo-4"
+      ]
+    },
+    "garantias": {
+      "type": "vx-garantias",
+      "settings": {},
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icono": "efectivo",
+            "texto": "Pago contraentrega"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icono": "camion",
+            "texto": "Envío gratis"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icono": "rayo",
+            "texto": "Se apaga solo"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icono": "medidor",
+            "texto": "150 PSI"
+          }
+        },
+        "item-5": {
+          "type": "item",
+          "settings": {
+            "icono": "check",
+            "texto": "Carga USB-C"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4",
+        "item-5"
+      ]
+    },
+    "pasos": {
+      "type": "vx-pasos",
+      "settings": {
+        "eyebrow": "Así de fácil",
+        "titulo": "Tres pasos. Cero adivinanzas.",
+        "texto": "Sin cables, sin gasolinera y sin fila."
+      },
+      "blocks": {
+        "paso-1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conecta",
+            "texto": "Enrosca la manguera en la válvula de la llanta. Así, sin herramientas.",
+            "foto_defecto": "vx-escena-rueda.jpg",
+            "encuadre": "cover"
+          }
+        },
+        "paso-2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Elige y ajusta",
+            "texto": "Selecciona el modo (moto, carro, bici o balón) y marca con + y − la presión que necesitas.",
+            "foto_defecto": "vx-paso-ajusta.jpg",
+            "encuadre": "cover"
+          }
+        },
+        "paso-3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Suelta y listo",
+            "texto": "Presiona encender y espera. Cuando llega a la presión exacta, se apaga solo.",
+            "foto_defecto": "vx-producto-frente.jpg",
+            "encuadre": "cover"
+          }
+        }
+      },
+      "block_order": [
+        "paso-1",
+        "paso-2",
+        "paso-3"
+      ]
+    },
+    "comparativa": {
+      "type": "vx-comparativa",
+      "settings": {
+        "eyebrow": "La cuenta es fácil",
+        "titulo": "AirGo vs. la gasolinera",
+        "col_nos": "AirGo",
+        "col_ellos": "Gasolinera"
+      },
+      "blocks": {
+        "fila-1": {
+          "type": "fila",
+          "settings": {
+            "criterio": "Disponible",
+            "nos": "Siempre contigo",
+            "nos_ok": true,
+            "ellos": "Si está abierta y funciona",
+            "ellos_ok": false
+          }
+        },
+        "fila-2": {
+          "type": "fila",
+          "settings": {
+            "criterio": "Presión exacta",
+            "nos": "Se apaga solo (±1 PSI)",
+            "nos_ok": true,
+            "ellos": "Manómetro al ojo",
+            "ellos_ok": false
+          }
+        },
+        "fila-3": {
+          "type": "fila",
+          "settings": {
+            "criterio": "Tiempo",
+            "nos": "Unos minutos, donde estés",
+            "nos_ok": true,
+            "ellos": "Desvío y fila",
+            "ellos_ok": false
+          }
+        },
+        "fila-4": {
+          "type": "fila",
+          "settings": {
+            "criterio": "De noche",
+            "nos": "Luz LED incorporada",
+            "nos_ok": true,
+            "ellos": "A oscuras",
+            "ellos_ok": false
+          }
+        },
+        "fila-5": {
+          "type": "fila",
+          "settings": {
+            "criterio": "Balones y bici",
+            "nos": "Boquillas incluidas",
+            "nos_ok": true,
+            "ellos": "Solo llantas",
+            "ellos_ok": false
+          }
+        },
+        "fila-6": {
+          "type": "fila",
+          "settings": {
+            "criterio": "Costo por uso",
+            "nos": "Lo recargas por USB-C",
+            "nos_ok": true,
+            "ellos": "Propina cada vez",
+            "ellos_ok": false
+          }
+        }
+      },
+      "block_order": [
+        "fila-1",
+        "fila-2",
+        "fila-3",
+        "fila-4",
+        "fila-5",
+        "fila-6"
+      ]
+    },
+    "detalles": {
+      "type": "vx-detalles",
+      "settings": {
+        "eyebrow": "Los detalles",
+        "titulo": "Pequeño por fuera. Serio por dentro.",
+        "texto": "Cada pieza pensada para la emergencia de las 10 de la noche.",
+        "incluye_titulo": "Qué incluye",
+        "incluye_texto": "Todo listo para usar desde el primer día.",
+        "incluye_lista": "1 | Inflador portátil\n1 | Manguera de conexión\n3 | Boquillas: balones, inflables y bicicleta\n1 | Cable de carga tipo C",
+        "fondo_fotos": "#101114",
+        "alto_fila": 200
+      },
+      "blocks": {
+        "celda-1": {
+          "type": "celda",
+          "settings": {
+            "tamano": "p",
+            "tag": "Emergencias",
+            "titulo": "Luz LED",
+            "texto": "Si la llanta se baja de noche, tienes luz para ver lo que haces.",
+            "foto_defecto": "vx-detalle-linterna-pro.jpg",
+            "encuadre": "cover"
+          }
+        },
+        "celda-2": {
+          "type": "celda",
+          "settings": {
+            "tamano": "p",
+            "tag": "Incluidas",
+            "titulo": "3 boquillas",
+            "texto": "Para balones, inflables y válvula de bicicleta.",
+            "foto_defecto": "vx-detalle-boquillas-pro.jpg",
+            "encuadre": "cover"
+          }
+        },
+        "celda-3": {
+          "type": "celda",
+          "settings": {
+            "tamano": "p",
+            "tag": "Carga",
+            "titulo": "USB tipo C",
+            "texto": "Con el cargador del celular, un power bank o el USB del carro. La luz azul te avisa que está cargando.",
+            "foto_defecto": "vx-detalle-usbc-pro.jpg",
+            "encuadre": "cover"
+          }
+        }
+      },
+      "block_order": [
+        "celda-1",
+        "celda-2",
+        "celda-3"
+      ]
+    },
+    "faq": {
+      "type": "vx-faq",
+      "settings": {
+        "eyebrow": "Preguntas frecuentes",
+        "titulo": "Lo que todos preguntan",
+        "texto": "Todo lo que necesitas saber antes de pedir tu AirGo.",
+        "btn_texto": ""
+      },
+      "blocks": {
+        "pregunta-1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para mi moto?",
+            "respuesta": "Sí. Se conecta a la válvula estándar de motos y carros, y trae un modo especial para moto."
+          }
+        },
+        "pregunta-2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuántas llantas infla con una carga?",
+            "respuesta": "Con la batería llena puedes recargar varias llantas de moto. En carros es ideal para ajustar la presión o recuperar una llanta baja; inflar llantas de carro completamente desinfladas consume más batería."
+          }
+        },
+        "pregunta-3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto se demora?",
+            "respuesta": "Depende del tamaño de la llanta y de qué tan baja esté. Para ajustar la presión de una llanta de moto bastan unos minutos, sin tener que buscar gasolinera."
+          }
+        },
+        "pregunta-4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Hace ruido?",
+            "respuesta": "Es un compresor, así que suena mientras trabaja, igual que cualquier inflador. Lo bueno es que solo tarda unos minutos."
+          }
+        },
+        "pregunta-5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "Pagas cuando recibes, en efectivo, directamente al transportador. Pago contraentrega y envío gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
+          }
+        },
+        "pregunta-6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo lo cuido?",
+            "respuesta": "Cárgalo completamente antes del primer uso y recárgalo cada cierto tiempo aunque no lo uses, para tenerlo listo en una emergencia. En usos largos, déjalo descansar unos minutos para que no se caliente."
+          }
+        },
+        "pregunta-7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿El envío tiene costo?",
+            "respuesta": "No. El envío es gratis a toda Colombia.\nImportante: si no estás al momento de la entrega o rechazas el pedido cuando llega, se cobrará el valor del flete."
+          }
+        }
+      },
+      "block_order": [
+        "pregunta-1",
+        "pregunta-2",
+        "pregunta-3",
+        "pregunta-4",
+        "pregunta-7",
+        "pregunta-5",
+        "pregunta-6"
+      ]
+    },
+    "cierre": {
+      "type": "vx-cierre",
+      "settings": {
+        "producto": "compresor-inflador-portatil",
+        "eyebrow": "Llévalo en tu moto",
+        "titulo": "Olvídate de las",
+        "titulo_acento": "llantas bajas.",
+        "texto": "Pídelo hoy con envío gratis y págalo al recibir, en efectivo, en cualquier parte de Colombia.",
+        "btn_texto": "Lo quiero"
+      }
+    },
+    "packs": {
+      "type": "vx-packs",
+      "settings": {
+        "producto": "compresor-inflador-portatil",
+        "eyebrow": "Promoción de lanzamiento",
+        "titulo": "Uno para ti. O dos y ahorras.",
+        "texto": "Uno para la moto y otro para el carro, o para regalar. Envío gratis y pagas al recibir.",
+        "btn_texto": "Lo quiero",
+        "pack_1_texto": "Para tener siempre aire a mano.",
+        "pack_1_lista": "1 inflador AirGo\n3 boquillas + cable USB-C\nEnvío gratis · pago contraentrega",
+        "pack_2_texto": "Uno para la moto y otro para el carro (o para regalar).",
+        "pack_2_lista": "2 infladores AirGo\n6 boquillas + 2 cables USB-C\nEnvío gratis · pago contraentrega",
+        "pack_2_etiqueta": "Mejor precio",
+        "padding_top": 88,
+        "padding_bottom": 88
+      }
+    },
+    "resenas": {
+      "type": "vx-resenas",
+      "settings": {}
+    },
+    "porque": {
+      "type": "vx-porque",
+      "settings": {
+        "texto": "Encuentras compresores parecidos en muchos lados. Esto es lo que te llevas al comprar aquí.",
+        "franja": "Pagas solo cuando el AirGo está en tus manos."
+      },
+      "blocks": {
+        "razon-1": {
+          "type": "razon",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis desde Colombia",
+            "texto": "Despachamos desde bodegas en Colombia, no desde el exterior. Nada de esperar semanas ni pagar aduanas.",
+            "dato": "Llega en 2 a 7 días hábiles"
+          }
+        },
+        "razon-2": {
+          "type": "razon",
+          "settings": {
+            "icono": "efectivo",
+            "titulo": "Pagas solo al recibir",
+            "texto": "No necesitas tarjeta ni pagar por adelantado. Pagas en efectivo cuando el AirGo está en tus manos.",
+            "dato": "Pago contraentrega"
+          }
+        },
+        "razon-3": {
+          "type": "razon",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Compra protegida",
+            "texto": "Tu AirGo tiene garantía legal por defectos de fábrica. Si llega con alguna falla, te respondemos según la ley colombiana.",
+            "dato": "Garantía legal"
+          }
+        },
+        "razon-4": {
+          "type": "razon",
+          "settings": {
+            "icono": "medidor",
+            "titulo": "Especificaciones claras",
+            "texto": "150 PSI, precisión de ±1 PSI, batería de 2000 mAh y carga USB-C. Sin letra pequeña ni cifras infladas.",
+            "dato": "Lo que ves es lo que recibes"
+          }
+        }
+      },
+      "block_order": [
+        "razon-1",
+        "razon-2",
+        "razon-3",
+        "razon-4"
+      ]
+    }
+  },
+  "order": [
+    "hero",
+    "packs",
+    "porque",
+    "cifras",
+    "anatomia",
+    "modos",
+    "garantias",
+    "pasos",
+    "comparativa",
+    "detalles",
+    "resenas",
+    "faq",
+    "cierre"
+  ]
+}

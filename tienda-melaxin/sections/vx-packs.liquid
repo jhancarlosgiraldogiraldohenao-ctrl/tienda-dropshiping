@@ -1,0 +1,110 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{%- assign producto = section.settings.producto -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-grafito);
+  }
+  #shopify-section-{{ section.id }} .vx-packs__cabecera { text-align: {{ section.settings.alineacion }}; }
+  #shopify-section-{{ section.id }} .vx-packs__cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-packs__cabecera p { font-size: {{ section.settings.texto_size }}px; }
+{% endstyle %}
+
+<section class="vx-section vx-packs" id="packs">
+  <div class="vx-container">
+    <div class="vx-packs__cabecera">
+      {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="vx-reveal" style="--vx-i:1">{{ section.settings.titulo }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="vx-reveal" style="--vx-i:2">{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
+    </div>
+
+    {%- if producto != blank -%}
+      <div class="vx-packs__grid">
+        {%- for v in producto.variants limit: 3 -%}
+          {%- liquid
+            assign k_img = 'pack_' | append: forloop.index | append: '_img'
+            assign k_nota = 'pack_' | append: forloop.index | append: '_texto'
+            assign k_lista = 'pack_' | append: forloop.index | append: '_lista'
+            assign k_tag = 'pack_' | append: forloop.index | append: '_etiqueta'
+            if forloop.index == 1
+              assign img_def = 'vx-producto-frente.jpg'
+            else
+              assign img_def = 'vx-pack-duo.jpg'
+            endif
+          -%}
+          <article class="vx-pack vx-reveal{% if section.settings[k_tag] != blank %} vx-pack--destacado{% endif %}" style="--vx-i:{{ forloop.index | plus: 2 }}">
+            {%- if section.settings[k_tag] != blank -%}<span class="vx-pack__tag">{{ section.settings[k_tag] }}</span>{%- endif -%}
+            <div class="vx-pack__foto">
+              {%- if section.settings[k_img] != blank -%}
+                <img src="{{ section.settings[k_img] | image_url: width: 900 }}" alt="{{ section.settings[k_img].alt | default: v.title | escape }}" width="900" height="900" loading="lazy">
+              {%- else -%}
+                <img src="{{ img_def | asset_url }}" alt="{{ producto.title | escape }} – {{ v.title | escape }}" width="1200" height="1200" loading="lazy">
+              {%- endif -%}
+            </div>
+            <div class="vx-pack__cuerpo">
+              <h3>{{ v.title }}</h3>
+              {%- if section.settings[k_nota] != blank -%}<p class="vx-pack__nota">{{ section.settings[k_nota] }}</p>{%- endif -%}
+              <div class="vx-pack__precio">
+                <strong>{{ v.price | money_without_trailing_zeros }}</strong>
+                {%- if v.compare_at_price > v.price -%}
+                  <s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>
+                  <span class="vx-pack__ahorro">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | money_without_trailing_zeros }}</span>
+                {%- endif -%}
+              </div>
+              {%- if section.settings[k_lista] != blank -%}
+                <ul class="vx-pack__lista">
+                  {%- assign lineas = section.settings[k_lista] | newline_to_br | split: '<br />' -%}
+                  {%- for l in lineas -%}{%- assign t = l | strip -%}{%- if t != blank -%}<li>{% render 'vx-icono', nombre: 'check' %}<span>{{ t }}</span></li>{%- endif -%}{%- endfor -%}
+                </ul>
+              {%- endif -%}
+              <a class="vx-btn{% if section.settings[k_tag] == blank %} vx-btn--ghost{% endif %}" href="{{ producto.url }}?variant={{ v.id }}">{{ section.settings.btn_texto }} {% render 'vx-icono', nombre: 'flecha' %}</a>
+            </div>
+          </article>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VX – Packs",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Elige tu opción" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Uno para ti. O dos y ahorras." },
+    { "type": "textarea", "id": "texto", "label": "Texto" },
+    { "type": "product", "id": "producto", "label": "Producto (sus opciones se muestran como tarjetas)" },
+    { "type": "text", "id": "btn_texto", "label": "Texto del botón", "default": "Elegir" },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
+    { "type": "header", "content": "Tarjeta 1" },
+    { "type": "image_picker", "id": "pack_1_img", "label": "Foto" },
+    { "type": "text", "id": "pack_1_texto", "label": "Texto" },
+    { "type": "textarea", "id": "pack_1_lista", "label": "Lista (una línea por punto)" },
+    { "type": "text", "id": "pack_1_etiqueta", "label": "Etiqueta destacada (vacío = sin destacar)" },
+    { "type": "header", "content": "Tarjeta 2" },
+    { "type": "image_picker", "id": "pack_2_img", "label": "Foto" },
+    { "type": "text", "id": "pack_2_texto", "label": "Texto" },
+    { "type": "textarea", "id": "pack_2_lista", "label": "Lista (una línea por punto)" },
+    { "type": "text", "id": "pack_2_etiqueta", "label": "Etiqueta destacada (vacío = sin destacar)" },
+    { "type": "header", "content": "Tarjeta 3 (si hay tercera opción)" },
+    { "type": "image_picker", "id": "pack_3_img", "label": "Foto" },
+    { "type": "text", "id": "pack_3_texto", "label": "Texto" },
+    { "type": "textarea", "id": "pack_3_lista", "label": "Lista (una línea por punto)" },
+    { "type": "text", "id": "pack_3_etiqueta", "label": "Etiqueta destacada" },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación del encabezado", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "center" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 100, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 22, "step": 1, "unit": "px", "default": 17 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 }
+  ],
+  "presets": [ { "name": "VX – Packs" } ]
+}
+{% endschema %}

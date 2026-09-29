@@ -1,0 +1,88 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{%- assign primero = section.blocks.first -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-asfalto);
+  }
+  #shopify-section-{{ section.id }} .vx-modos__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-modos__intro { font-size: {{ section.settings.texto_size }}px; color: var(--vx-texto-suave); }
+  #shopify-section-{{ section.id }} .vx-modos__texto { text-align: {{ section.settings.alineacion }}; }
+{% endstyle %}
+
+<section class="vx-section vx-modos" data-vx-modos>
+  <div class="vx-container">
+    <div class="vx-modos__grid">
+      <div class="vx-modos__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow vx-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="vx-modos__titulo vx-reveal" style="--vx-i:1">{{ section.settings.titulo }}</h2>
+        {%- if section.settings.texto != blank -%}<p class="vx-modos__intro vx-reveal" style="--vx-i:2">{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
+        <div class="vx-modos__tabs" role="tablist">
+          {%- for block in section.blocks -%}
+            <button type="button" role="tab" class="vx-modo vx-reveal{% if forloop.first %} is-activo{% endif %}" style="--vx-i:{{ forloop.index | plus: 2 }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}"
+              data-valor="{{ block.settings.valor | escape }}" data-unidad="{{ block.settings.unidad | escape }}" data-nombre="{{ block.settings.nombre | escape }}" data-nota="{{ block.settings.nota | escape }}" {{ block.shopify_attributes }}>
+              {% render 'vx-icono', nombre: block.settings.icono %}
+              <span>{{ block.settings.nombre }}<small>{{ block.settings.sub }}</small></span>
+            </button>
+          {%- endfor -%}
+        </div>
+      </div>
+
+      <div class="vx-modos__panel vx-reveal vx-reveal--der" style="--vx-i:2">
+        <div class="vx-modos__lectura">
+          <div class="vx-modos__nombre" data-vx-modo-nombre>{{ primero.settings.nombre }}</div>
+          <div class="vx-lcd" data-vx-modo-valor>{{ primero.settings.valor }}<small data-vx-modo-unidad>{{ primero.settings.unidad }}</small></div>
+        </div>
+        {%- if section.settings.imagen != blank -%}
+          <img src="{{ section.settings.imagen | image_url: width: 900 }}" alt="{{ section.settings.imagen.alt | escape }}" width="{{ section.settings.imagen.width }}" height="{{ section.settings.imagen.height }}" loading="lazy">
+        {%- else -%}
+          <img src="{{ 'vx-recorte-frente.png' | asset_url }}" alt="Inflador Vuronix AirGo" width="460" height="1178" loading="lazy">
+        {%- endif -%}
+        <p class="vx-modos__nota" data-vx-modo-nota>{{ primero.settings.nota }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VX – Modos",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "4 modos + manual" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Uno para todo lo que rueda" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Elige el modo y el inflador ya sabe qué hacer." },
+    { "type": "image_picker", "id": "imagen", "label": "Foto del producto" },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación del texto", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 100, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 22, "step": 1, "unit": "px", "default": 17 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 }
+  ],
+  "blocks": [
+    {
+      "type": "modo",
+      "name": "Modo",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [
+          { "value": "moto", "label": "Moto" }, { "value": "carro", "label": "Carro" }, { "value": "bici", "label": "Bicicleta" }, { "value": "balon", "label": "Balón" }, { "value": "manual", "label": "Manual" }
+        ], "default": "moto" },
+        { "type": "text", "id": "nombre", "label": "Nombre", "default": "Moto" },
+        { "type": "text", "id": "sub", "label": "Texto pequeño", "default": "Modo dedicado" },
+        { "type": "text", "id": "valor", "label": "Lectura en la pantalla", "default": "33.0" },
+        { "type": "text", "id": "unidad", "label": "Unidad", "default": "PSI" },
+        { "type": "textarea", "id": "nota", "label": "Nota", "default": "Presión de referencia. Consulta siempre la de tu vehículo." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "VX – Modos", "blocks": [ { "type": "modo" } ] } ]
+}
+{% endschema %}

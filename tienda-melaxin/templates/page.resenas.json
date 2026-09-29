@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "resenas": {
+      "type": "vx-resenas",
+      "settings": {
+        "padding_top": 64
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {}
+    }
+  },
+  "order": [
+    "resenas",
+    "main"
+  ]
+}

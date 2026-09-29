@@ -1,0 +1,75 @@
+{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'vx-scripts.js' | asset_url }}" defer></script>
+
+{%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.variants.first -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background: var(--vx-asfalto);
+  }
+  #shopify-section-{{ section.id }} .vx-cierre__contenido h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 7vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .vx-cierre__contenido p { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .vx-cierre__contenido { text-align: {{ section.settings.alineacion }}; }
+  #shopify-section-{{ section.id }} .vx-cierre__caja { min-height: {{ section.settings.alto }}px; }
+{% endstyle %}
+
+<section class="vx-section vx-cierre">
+  <div class="vx-container">
+    <div class="vx-cierre__caja vx-reveal vx-reveal--zoom">
+      <div class="vx-cierre__fondo">
+        {%- if section.settings.imagen != blank -%}
+          <img src="{{ section.settings.imagen | image_url: width: 1800 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy">
+        {%- else -%}
+          <img src="{{ 'vx-escena-rueda.jpg' | asset_url }}" alt="" loading="lazy">
+        {%- endif -%}
+      </div>
+      <div class="vx-cierre__contenido">
+        {%- if section.settings.eyebrow != blank -%}<span class="vx-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2>{{ section.settings.titulo }}{% if section.settings.titulo_acento != blank %} <span class="vx-acento">{{ section.settings.titulo_acento }}</span>{% endif %}</h2>
+        {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto | newline_to_br }}</p>{%- endif -%}
+        <div class="vx-cierre__compra">
+          {%- if producto != blank and section.settings.mostrar_precio -%}
+            <div class="vx-cierre__precio"><strong>{{ v1.price | money_without_trailing_zeros }}</strong><span>{{ section.settings.nota_precio }}</span></div>
+          {%- endif -%}
+          {%- if section.settings.btn_texto != blank -%}
+            <a class="vx-btn" href="{{ section.settings.btn_url | default: producto.url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'vx-icono', nombre: 'flecha' %}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "VX – Cierre",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Llévalo en tu moto" },
+    { "type": "text", "id": "titulo", "label": "Título (parte blanca)", "default": "Olvídate de las" },
+    { "type": "text", "id": "titulo_acento", "label": "Título (parte amarilla)", "default": "llantas bajas." },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Pídelo hoy y págalo al recibir." },
+    { "type": "header", "content": "Compra" },
+    { "type": "product", "id": "producto", "label": "Producto" },
+    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Pago contraentrega" },
+    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Lo quiero" },
+    { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = página del producto)" },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto de fondo" },
+    { "type": "range", "id": "alto", "label": "Altura mínima (px)", "min": 360, "max": 800, "step": 20, "unit": "px", "default": 560 },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título (px)", "min": 28, "max": 120, "step": 2, "unit": "px", "default": 88 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 13, "max": 24, "step": 1, "unit": "px", "default": 18 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 24 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 104 }
+  ],
+  "presets": [ { "name": "VX – Cierre" } ]
+}
+{% endschema %}
