@@ -294,7 +294,8 @@
         "g1",
         "g2",
         "g3"
-      ]
+      ],
+      "disabled": true
     },
     "seguro": {
       "type": "kf-seguro",
@@ -428,6 +429,129 @@
       "block_order": [
         "x1",
         "x2"
+      ],
+      "disabled": true
+    },
+    "progreso": {
+      "type": "kf-progreso",
+      "settings": {},
+      "blocks": {
+        "t1": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Desde el día 1",
+            "titulo": "Piel más suave",
+            "texto": "Al enjuagar sientes la piel lisa al tacto, sin la aspereza de las células muertas."
+          }
+        },
+        "t2": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 2",
+            "titulo": "Textura pareja",
+            "texto": "Codos, rodillas y piernas se sienten y se ven más uniformes y menos resecos."
+          }
+        },
+        "t3": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 4 en adelante",
+            "titulo": "Tono más luminoso",
+            "texto": "Las manchas y zonas oscuras se ven más claras y la piel luce más pareja y radiante."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "comparativa": {
+      "type": "kf-comparativa",
+      "settings": {
+        "col_otros": "Con granitos"
+      },
+      "blocks": {
+        "c0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Llega sola a la espalda y zonas difíciles",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "c1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Exfolia sin raspar ni frotar fuerte",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "c2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Con ácido kójico y niacinamida para el tono",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "c3": {
+          "type": "fila",
+          "settings": {
+            "texto": "Deja la piel luminosa, no solo lisa",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "c4": {
+          "type": "fila",
+          "settings": {
+            "texto": "Se enjuaga fácil en la ducha",
+            "nos": true,
+            "otros": true
+          }
+        }
+      },
+      "block_order": [
+        "c0",
+        "c1",
+        "c2",
+        "c3",
+        "c4"
+      ]
+    },
+    "antes_despues": {
+      "type": "kf-antes-despues",
+      "settings": {},
+      "blocks": {
+        "a0": {
+          "type": "caso",
+          "settings": {
+            "zona": "Codos",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a1": {
+          "type": "caso",
+          "settings": {
+            "zona": "Rodillas",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a2": {
+          "type": "caso",
+          "settings": {
+            "zona": "Axilas y piernas",
+            "tiempo": "4 semanas"
+          }
+        }
+      },
+      "block_order": [
+        "a0",
+        "a1",
+        "a2"
       ]
     }
   },
@@ -435,11 +559,14 @@
     "hero",
     "cinta",
     "activos",
+    "progreso",
     "ritual",
     "zonas",
-    "regalo",
+    "comparativa",
+    "antes_despues",
     "seguro",
     "faq",
+    "regalo",
     "cierre"
   ]
 }

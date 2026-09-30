@@ -1,0 +1,72 @@
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kf-scripts.js' | asset_url }}" defer></script>
+
+{%- assign con_fotos = section.blocks | where: 'type', 'caso' -%}
+{%- assign hay = false -%}
+{%- for b in con_fotos -%}{%- if b.settings.antes != blank and b.settings.despues != blank -%}{%- assign hay = true -%}{%- endif -%}{%- endfor -%}
+
+{%- if hay or request.design_mode -%}
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .kf-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+<section class="kf-section kf-ad">
+  <div class="kf-container kf-ad__wrap">
+    <div class="kf-cabecera kf-cabecera--centro">
+      {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow kf-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="kf-reveal" style="--kf-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="kf-reveal" style="--kf-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="kf-ad__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.settings.antes != blank and block.settings.despues != blank -%}
+          <figure class="kf-ad__caso kf-reveal" {{ block.shopify_attributes }}>
+            <div class="kf-ad__comparador" data-kf-comparador style="--pos: 50%">
+              <img src="{{ block.settings.despues | image_url: width: 900 }}" alt="{{ block.settings.zona | escape }} – después" loading="lazy" width="900" height="1125">
+              <div class="kf-ad__antes"><img src="{{ block.settings.antes | image_url: width: 900 }}" alt="{{ block.settings.zona | escape }} – antes" loading="lazy" width="900" height="1125"></div>
+              <span class="kf-ad__tag kf-ad__tag--antes">{{ section.settings.txt_antes }}</span>
+              <span class="kf-ad__tag kf-ad__tag--despues">{{ section.settings.txt_despues }}</span>
+              <input type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar">
+              <span class="kf-ad__manija" aria-hidden="true"></span>
+            </div>
+            <figcaption><strong>{{ block.settings.zona }}</strong>{%- if block.settings.tiempo != blank -%} · {{ block.settings.tiempo }}{%- endif -%}{%- if block.settings.nombre != blank -%}<span>{{ block.settings.nombre }}</span>{%- endif -%}</figcaption>
+          </figure>
+        {%- elsif request.design_mode -%}
+          <div class="kf-ad__vacio" {{ block.shopify_attributes }}>Sube la foto de ANTES y la de DESPUÉS de este caso. Mientras falten, esta sección no se muestra en la tienda.</div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.aviso != blank -%}<p class="kf-seguro__aviso">{{ section.settings.aviso }}</p>{%- endif -%}
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "KF – Antes y después",
+  "tag": "section",
+  "settings": [
+    { "type": "paragraph", "content": "Usa solo fotos REALES de clientas (con su permiso). La sección se oculta sola mientras no haya al menos un caso con las dos fotos." },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Resultados reales" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Antes y <em>después.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Desliza para comparar. Fotos de clientas reales, sin filtros." },
+    { "type": "text", "id": "txt_antes", "label": "Etiqueta antes", "default": "Antes" },
+    { "type": "text", "id": "txt_despues", "label": "Etiqueta después", "default": "Después" },
+    { "type": "text", "id": "aviso", "label": "Aviso", "default": "Resultados reales de clientas con uso constante. Pueden variar según cada piel." },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 60 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "caso", "name": "Caso", "settings": [
+      { "type": "image_picker", "id": "antes", "label": "Foto ANTES (real)" },
+      { "type": "image_picker", "id": "despues", "label": "Foto DESPUÉS (real, mismo ángulo y luz)" },
+      { "type": "text", "id": "zona", "label": "Zona", "default": "Codos" },
+      { "type": "text", "id": "tiempo", "label": "Tiempo de uso", "default": "4 semanas" },
+      { "type": "text", "id": "nombre", "label": "Nombre de la clienta (opcional)" }
+    ] }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "KF – Antes y después", "blocks": [ { "type": "caso" } ] } ]
+}
+{% endschema %}

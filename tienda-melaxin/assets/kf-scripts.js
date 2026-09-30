@@ -130,7 +130,14 @@
     });
   }
 
-  function initTodo(root) { initReveals(root); initZonas(root); initGaleria(root); initCompra(root); initHeroPack(root); }
+  function initComparador(root) {
+    (root || document).querySelectorAll('[data-kf-comparador]').forEach(function (c) {
+      var r = c.querySelector('input[type="range"]');
+      if (r) r.addEventListener('input', function () { c.style.setProperty('--pos', r.value + '%'); });
+    });
+  }
+
+  function initTodo(root) { initComparador(root); initReveals(root); initZonas(root); initGaleria(root); initCompra(root); initHeroPack(root); }
   document.addEventListener('DOMContentLoaded', function () { initTodo(document); });
   document.addEventListener('shopify:section:load', function (e) { initTodo(e.target); });
 })();

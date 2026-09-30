@@ -285,13 +285,82 @@
         "f6",
         "f7"
       ]
+    },
+    "progreso": {
+      "type": "kf-progreso",
+      "settings": {},
+      "blocks": {
+        "t1": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Desde el día 1",
+            "titulo": "Piel más suave",
+            "texto": "Al enjuagar sientes la piel lisa al tacto, sin la aspereza de las células muertas."
+          }
+        },
+        "t2": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 2",
+            "titulo": "Textura pareja",
+            "texto": "Codos, rodillas y piernas se sienten y se ven más uniformes y menos resecos."
+          }
+        },
+        "t3": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 4 en adelante",
+            "titulo": "Tono más luminoso",
+            "texto": "Las manchas y zonas oscuras se ven más claras y la piel luce más pareja y radiante."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "antes_despues": {
+      "type": "kf-antes-despues",
+      "settings": {},
+      "blocks": {
+        "a0": {
+          "type": "caso",
+          "settings": {
+            "zona": "Codos",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a1": {
+          "type": "caso",
+          "settings": {
+            "zona": "Rodillas",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a2": {
+          "type": "caso",
+          "settings": {
+            "zona": "Axilas y piernas",
+            "tiempo": "4 semanas"
+          }
+        }
+      },
+      "block_order": [
+        "a0",
+        "a1",
+        "a2"
+      ]
     }
   },
   "order": [
     "principal",
     "activos",
+    "progreso",
     "ritual",
     "zonas",
+    "antes_despues",
     "seguro",
     "faq"
   ]
