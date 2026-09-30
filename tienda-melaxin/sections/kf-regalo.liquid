@@ -36,7 +36,7 @@
           <div class="kf-regalo__precio kf-reveal">
             <strong>{{ pack.price | money_without_trailing_zeros }}</strong>
             {%- if pack.compare_at_price > pack.price -%}<s>{{ pack.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
-            {%- if ahorro > 0 -%}<span>{{ section.settings.texto_ahorro }} {{ ahorro | money_without_trailing_zeros }}</span>{%- endif -%}
+            {%- if pack.compare_at_price > pack.price -%}<span>{{ section.settings.texto_ahorro }} {{ pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round }}%</span>{%- endif -%}
             {%- if section.settings.nota_precio != blank -%}<small>{{ section.settings.nota_precio }}</small>{%- endif -%}
           </div>
         {%- endif -%}

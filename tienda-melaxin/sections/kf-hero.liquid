@@ -29,7 +29,7 @@
             <strong data-kf-h-precio>{{ v1.price | money_without_trailing_zeros }}</strong>
             {%- if v1.compare_at_price > v1.price -%}
               <s data-kf-h-antes>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>
-              <span class="kf-precio__pct" data-kf-h-pct>-{{ v1.compare_at_price | minus: v1.price | times: 100 | divided_by: v1.compare_at_price }}%</span>
+              <span class="kf-precio__pct" data-kf-h-pct>-{{ v1.compare_at_price | minus: v1.price | times: 100.0 | divided_by: v1.compare_at_price | round }}%</span>
             {%- endif -%}
             {%- if section.settings.nota_precio != blank -%}<span class="kf-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
           </div>
@@ -39,15 +39,15 @@
           {%- if section.settings.btn1_texto != blank -%}<a class="kf-btn kf-btn--curcuma" href="{{ url_compra }}" data-kf-h-comprar><span>{{ section.settings.btn1_texto }}</span> {% render 'kf-icono', nombre: 'flecha' %}</a>{%- endif -%}
           {%- assign pack = producto.variants[1] -%}
           {%- if section.settings.mostrar_pack and pack -%}
-            {%- assign ahorro = v1.price | times: 2 | minus: pack.price -%}
+            {%- assign ahorro = pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round -%}
             <button type="button" class="kf-btn kf-btn--ghost kf-hero__pack" data-kf-h-pack
               data-url-uno="{{ url_compra }}" data-url-pack="{{ routes.cart_url }}/{{ pack.id }}:1"
               data-precio-uno="{{ v1.price | money_without_trailing_zeros | escape }}" data-precio-pack="{{ pack.price | money_without_trailing_zeros | escape }}"
               data-antes-uno="{{ v1.compare_at_price | money_without_trailing_zeros | escape }}" data-antes-pack="{{ pack.compare_at_price | money_without_trailing_zeros | escape }}"
-              data-pct-uno="{% if v1.compare_at_price > v1.price %}-{{ v1.compare_at_price | minus: v1.price | times: 100 | divided_by: v1.compare_at_price }}%{% endif %}" data-pct-pack="{% if pack.compare_at_price > pack.price %}-{{ pack.compare_at_price | minus: pack.price | times: 100 | divided_by: pack.compare_at_price }}%{% endif %}"
+              data-pct-uno="{% if v1.compare_at_price > v1.price %}-{{ v1.compare_at_price | minus: v1.price | times: 100.0 | divided_by: v1.compare_at_price | round }}%{% endif %}" data-pct-pack="{% if pack.compare_at_price > pack.price %}-{{ pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round }}%{% endif %}"
               data-txt-comprar-uno="{{ section.settings.btn1_texto | escape }}" data-txt-comprar-pack="{{ section.settings.pack_comprar | escape }}"
-              data-txt-pack="{{ section.settings.pack_texto | escape }} · {{ section.settings.pack_ahorro | escape }} {{ ahorro | money_without_trailing_zeros | escape }}" data-txt-volver="{{ section.settings.pack_volver | escape }}"
-              data-sello-uno="{{ section.settings.sello_centro | escape }}" data-sello-pack="{{ section.settings.pack_sello | escape }}" aria-pressed="false">{{ section.settings.pack_texto }} · {{ section.settings.pack_ahorro }} {{ ahorro | money_without_trailing_zeros }}</button>
+              data-txt-pack="{{ section.settings.pack_texto | escape }} · {{ section.settings.pack_ahorro | escape }} {{ ahorro }}%" data-txt-volver="{{ section.settings.pack_volver | escape }}"
+              data-sello-uno="{{ section.settings.sello_centro | escape }}" data-sello-pack="{{ section.settings.pack_sello | escape }}" aria-pressed="false">{{ section.settings.pack_texto }} · {{ section.settings.pack_ahorro }} {{ ahorro }}%</button>
           {%- elsif section.settings.btn2_texto != blank -%}<a class="kf-btn kf-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
         </div>
 
