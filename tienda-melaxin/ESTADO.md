@@ -17,6 +17,15 @@
 - Descripción segura (sin "99 %", sin blanquea/elimina manchas, uso seguro incluido).
 - El producto creado a mano (9093797937350) se borró.
 
+## Hecho (2026-09-30)
+- Dominio público: kojicfur.myshopify.com (redirige desde aixrcr-mp).
+- Tema "Kojicfur" #155039662278 (NO publicado). Preview: https://kojicfur.myshopify.com?preview_theme_id=155039662278
+- Secciones kf-: hero, cinta, activos, ritual (#ritual), zonas (selector), regalo, seguro, faq, cierre, producto.
+- Estilo "ritual de cúrcuma": crema #FBF6EF, café #2A1D17, cúrcuma #E8741E / #C8551A, Fraunces + Inter.
+- Producto con plantilla product.kf, SEO escrito.
+- Envío: "Envío gratis" 0 COP en Colombia; zona internacional borrada.
+- Políticas: envíos, devoluciones (uso personal, art. 47 Ley 1480), términos.
+
 ## Pendiente
 - Nombre de marca, costo del proveedor del ID 2131637, envío gratis, políticas,
   contraentrega, diseño del tema, quitar contraseña.
