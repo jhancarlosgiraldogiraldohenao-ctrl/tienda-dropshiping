@@ -2,7 +2,10 @@
   "sections": {
     "principal": {
       "type": "kf-producto",
-      "settings": {},
+      "settings": {
+        "titulo_corto": "Exfoliante corporal en spray",
+        "sticky_texto": "Exfoliante en spray · 200 ml"
+      },
       "blocks": {
         "p1": {
           "type": "confianza",
