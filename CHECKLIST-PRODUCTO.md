@@ -17,3 +17,12 @@ exfoliante Dr. Melaxin Peel Shot y después apareció la Alerta INVIMA 248-2026
 6. Precio de mercado en Colombia (MercadoLibre, tiendas) vs. costo + flete.
 7. Stock y bodega del proveedor en Dropi.
 8. Solo después de pasar 1–7: construir tienda.
+
+## Condiciones del usuario (no negociables)
+- No escribe a proveedores (no contestan): no sugerir "pregúntale al proveedor".
+- No puede pedir muestras ni comprar producto por adelantado: solo productos
+  en Dropi (o similar) con contra entrega y stock, sin inversión previa.
+- Masajeadores eléctricos con fin estético/terapéutico = dispositivo médico
+  (Decreto 4725/2005) → necesitan registro INVIMA → descartar.
+- Antes de elegir, confirmar que el producto tiene anuncios activos
+  (Biblioteca de anuncios de Meta / TikTok).
