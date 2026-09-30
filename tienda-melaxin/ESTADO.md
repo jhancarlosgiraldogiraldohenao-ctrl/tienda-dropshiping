@@ -19,7 +19,7 @@
 
 ## Hecho (2026-09-30)
 - Dominio público: kojicfur.myshopify.com (redirige desde aixrcr-mp).
-- Tema "Kojicfur" #155039662278 (NO publicado). Preview: https://kojicfur.myshopify.com?preview_theme_id=155039662278
+- Tema "Kojicfur" #155039662278 PUBLICADO (live, 2026-09-30); Horizon #155025211590 queda sin publicar. Preview: https://kojicfur.myshopify.com?preview_theme_id=155039662278
 - Secciones kf-: hero, cinta, activos, ritual (#ritual), zonas (selector), regalo, seguro, faq, cierre, producto.
 - Estilo "ritual de cúrcuma": crema #FBF6EF, café #2A1D17, cúrcuma #E8741E / #C8551A, Fraunces + Inter.
 - Producto con plantilla product.kf, SEO escrito.
