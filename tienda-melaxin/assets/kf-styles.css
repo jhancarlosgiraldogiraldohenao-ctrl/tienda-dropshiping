@@ -292,6 +292,8 @@ body { background: var(--kf-crema); }
 .kf-producto { background: var(--kf-crema); }
 .kf-producto__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(28px, 5vw, 72px); padding: clamp(24px, 4vw, 56px) 0 clamp(56px, 7vw, 96px); align-items: start; }
 .kf-galeria { position: sticky; top: 90px; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
+.kf-galeria:not(:has(.kf-galeria__mins)) { grid-template-columns: minmax(0, 1fr); }
+.kf-galeria:not(:has(.kf-galeria__mins)) .kf-galeria__principal { grid-column: 1; }
 .kf-galeria__principal { grid-column: 2; grid-row: 1; position: relative; border-radius: var(--kf-radio); overflow: hidden; background: #fff; aspect-ratio: 2 / 3; }
 .kf-galeria__principal img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.25s; }
 .kf-galeria__mins { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; gap: 10px; }

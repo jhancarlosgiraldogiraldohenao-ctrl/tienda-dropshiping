@@ -24,7 +24,7 @@
             {{ 'product-1' | placeholder_svg_tag }}
           {%- endif -%}
         </div>
-        {%- if product.media.size > 1 -%}
+        {%- if product.media.size > 1 and section.settings.mostrar_miniaturas -%}
           <div class="kf-galeria__mins">
             {%- for media in product.media -%}
               {%- if media.media_type == 'image' -%}
@@ -126,6 +126,7 @@
     { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
     { "type": "textarea", "id": "puntos", "label": "Puntos clave (uno por línea)", "default": "Piel con sensación más suave y lisa\nAyuda a unificar visualmente el tono\nFormato spray: sin frotar de más\n200 ml para varias semanas de uso" },
     { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Pagas al recibir" },
+    { "type": "checkbox", "id": "mostrar_miniaturas", "label": "Mostrar las demás fotos del producto", "default": false },
     { "type": "header", "content": "Botones" },
     { "type": "text", "id": "comprar_texto", "label": "Botón comprar ahora", "default": "Comprar ahora · pago contraentrega" },
     { "type": "text", "id": "comprar_corto", "label": "Botón en la barra del celular", "default": "Comprar ahora" },
