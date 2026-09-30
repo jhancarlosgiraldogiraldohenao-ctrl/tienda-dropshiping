@@ -118,9 +118,8 @@ body { background: var(--kf-crema); }
 .kf-hero__ctas { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
 .kf-hero__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
 .kf-hero__visual { position: relative; }
-.kf-arco { position: relative; border-radius: 999px 999px var(--kf-radio) var(--kf-radio); overflow: hidden; aspect-ratio: 4 / 5; background: var(--kf-arena); box-shadow: var(--kf-sombra); }
-.kf-arco img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.04); transition: transform 1.6s var(--kf-ease); }
-.kf-hero__visual.is-visible .kf-arco img { transform: scale(1); }
+.kf-arco { position: relative; border-radius: 50% 50% var(--kf-radio) var(--kf-radio) / 26% 26% var(--kf-radio) var(--kf-radio); overflow: hidden; aspect-ratio: 2 / 3; background: var(--kf-arena); box-shadow: var(--kf-sombra); }
+.kf-arco img { width: 100%; height: 100%; object-fit: cover; }
 .kf-flotante {
   position: absolute; z-index: 2;
   display: inline-flex; align-items: center; gap: 10px;
@@ -166,7 +165,7 @@ body { background: var(--kf-crema); }
 .kf-activos { background: var(--kf-crema); }
 .kf-activos__grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(32px, 6vw, 96px); align-items: start; padding: clamp(64px, 9vw, 128px) 0; }
 .kf-activos__visual { position: sticky; top: 100px; }
-.kf-activos__visual .kf-arco { aspect-ratio: 3 / 4; }
+.kf-activos__visual .kf-arco { aspect-ratio: 2 / 3; }
 .kf-activos__nota { position: absolute; left: 20px; right: 20px; bottom: 20px; z-index: 2; background: rgba(42, 29, 23, 0.82); color: var(--kf-crema); backdrop-filter: blur(8px); border-radius: var(--kf-radio-s); padding: 16px 18px; font-size: 14px; line-height: 1.5; }
 .kf-activos__lista { display: grid; gap: 16px; margin-top: 40px; }
 .kf-activo {
@@ -217,7 +216,7 @@ body { background: var(--kf-crema); }
 }
 .kf-zona-btn:hover { border-color: var(--kf-texto); }
 .kf-zona-btn.is-activa { background: var(--kf-cafe); color: var(--kf-crema); border-color: var(--kf-cafe); }
-.kf-zonas__panel { position: relative; border-radius: var(--kf-radio); overflow: hidden; min-height: 460px; aspect-ratio: 4 / 5; background: var(--kf-cafe); color: var(--kf-crema); box-shadow: var(--kf-sombra); }
+.kf-zonas__panel { position: relative; border-radius: var(--kf-radio); overflow: hidden; aspect-ratio: 2 / 3; background: var(--kf-cafe); color: var(--kf-crema); box-shadow: var(--kf-sombra); }
 .kf-zonas__panel img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.92; }
 .kf-zonas__panel::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(42, 29, 23, 0) 45%, rgba(42, 29, 23, 0.9) 100%); }
 .kf-zonas__info { position: absolute; left: 0; right: 0; bottom: 0; z-index: 2; padding: clamp(24px, 4vw, 40px); }
@@ -233,7 +232,7 @@ body { background: var(--kf-crema); }
 .kf-regalo { background: var(--kf-cafe); color: var(--kf-crema); }
 .kf-regalo::before { content: ''; position: absolute; inset: 0; background: radial-gradient(700px 400px at 20% 50%, rgba(232, 116, 30, 0.28), transparent 70%); pointer-events: none; }
 .kf-regalo__grid { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(32px, 6vw, 96px); align-items: center; padding: clamp(64px, 9vw, 128px) 0; }
-.kf-regalo__foto { border-radius: var(--kf-radio); overflow: hidden; aspect-ratio: 4 / 5; }
+.kf-regalo__foto { border-radius: var(--kf-radio); overflow: hidden; aspect-ratio: 2 / 3; }
 .kf-regalo__foto img { width: 100%; height: 100%; object-fit: cover; }
 .kf-regalo h2 { font-size: clamp(40px, 5vw, 72px); margin-top: 18px; }
 .kf-regalo__texto > p { margin-top: 18px; color: rgba(251, 246, 239, 0.75); font-size: 17px; }
@@ -284,7 +283,7 @@ body { background: var(--kf-crema); }
 .kf-cierre .kf-precio { margin-top: 26px; }
 .kf-cierre .kf-btn { margin-top: 26px; }
 .kf-cierre__chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
-.kf-cierre__foto { align-self: stretch; min-height: 380px; }
+.kf-cierre__foto { align-self: center; aspect-ratio: 2 / 3; }
 .kf-cierre__foto img { width: 100%; height: 100%; object-fit: cover; }
 
 /* =========================================================
@@ -293,7 +292,7 @@ body { background: var(--kf-crema); }
 .kf-producto { background: var(--kf-crema); }
 .kf-producto__grid { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: clamp(28px, 5vw, 72px); padding: clamp(24px, 4vw, 56px) 0 clamp(56px, 7vw, 96px); align-items: start; }
 .kf-galeria { position: sticky; top: 90px; display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
-.kf-galeria__principal { grid-column: 2; grid-row: 1; position: relative; border-radius: var(--kf-radio); overflow: hidden; background: #fff; aspect-ratio: 4 / 5; }
+.kf-galeria__principal { grid-column: 2; grid-row: 1; position: relative; border-radius: var(--kf-radio); overflow: hidden; background: #fff; aspect-ratio: 2 / 3; }
 .kf-galeria__principal img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.25s; }
 .kf-galeria__mins { grid-column: 1; grid-row: 1; display: flex; flex-direction: column; gap: 10px; }
 .kf-galeria__min { padding: 0; border: 1.5px solid transparent; border-radius: 12px; overflow: hidden; cursor: pointer; background: #fff; aspect-ratio: 1; transition: border-color 0.2s, opacity 0.2s; opacity: 0.6; }
@@ -387,7 +386,8 @@ cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; 
   .kf-activos__visual { position: relative; top: 0; max-width: 520px; }
   .kf-seguro__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .kf-cierre__caja { grid-template-columns: minmax(0, 1fr); }
-  .kf-cierre__foto { min-height: 320px; order: -1; }
+  .kf-cierre__foto { order: -1; max-height: 520px; width: 100%; }
+  .kf-cierre__foto img { object-position: center 20%; }
   .kf-galeria { position: relative; top: 0; }
   .kf-footer__top { grid-template-columns: 1fr 1fr; }
   .kf-footer__marca { grid-column: 1 / -1; }
@@ -413,7 +413,7 @@ cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; 
   .kf-activo { grid-template-columns: 48px minmax(0, 1fr); padding: 20px; }
   .kf-activo__icono { width: 48px; height: 48px; }
   .kf-activo__num { display: none; }
-  .kf-zonas__panel { min-height: 380px; }
+  .kf-zonas__panel { aspect-ratio: 2 / 3; }
   .kf-seguro__grid { grid-template-columns: minmax(0, 1fr); }
   .kf-galeria { grid-template-columns: minmax(0, 1fr); }
   .kf-galeria__principal { grid-column: 1; }
