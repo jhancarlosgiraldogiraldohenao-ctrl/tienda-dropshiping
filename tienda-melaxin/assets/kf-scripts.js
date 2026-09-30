@@ -101,7 +101,33 @@
     }
   }
 
-  function initTodo(root) { initReveals(root); initZonas(root); initGaleria(root); initCompra(root); }
+  function initHeroPack(root) {
+    (root || document).querySelectorAll('[data-kf-hero]').forEach(function (h) {
+      var b = h.querySelector('[data-kf-h-pack]');
+      if (!b) return;
+      var comprar = h.querySelector('[data-kf-h-comprar]');
+      var txt = comprar ? comprar.querySelector('span') : null;
+      var precio = h.querySelector('[data-kf-h-precio]');
+      var antes = h.querySelector('[data-kf-h-antes]');
+      var pct = h.querySelector('[data-kf-h-pct]');
+      var sello = h.querySelector('[data-kf-h-sello]');
+      b.addEventListener('click', function () {
+        var pack = !h.classList.contains('is-pack');
+        var k = pack ? 'Pack' : 'Uno';
+        h.classList.toggle('is-pack', pack);
+        b.setAttribute('aria-pressed', pack);
+        b.textContent = pack ? b.dataset.txtVolver : b.dataset.txtPack;
+        if (comprar) comprar.setAttribute('href', b.dataset['url' + k]);
+        if (txt) txt.textContent = b.dataset['txtComprar' + k];
+        if (precio) precio.textContent = b.dataset['precio' + k];
+        if (antes) antes.textContent = b.dataset['antes' + k];
+        if (pct) pct.textContent = b.dataset['pct' + k];
+        if (sello) sello.textContent = b.dataset['sello' + k];
+      });
+    });
+  }
+
+  function initTodo(root) { initReveals(root); initZonas(root); initGaleria(root); initCompra(root); initHeroPack(root); }
   document.addEventListener('DOMContentLoaded', function () { initTodo(document); });
   document.addEventListener('shopify:section:load', function (e) { initTodo(e.target); });
 })();

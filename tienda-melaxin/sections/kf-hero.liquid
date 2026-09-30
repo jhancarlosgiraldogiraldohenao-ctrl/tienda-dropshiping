@@ -16,7 +16,7 @@
   {%- endif -%}
 {% endstyle %}
 
-<section class="kf-section kf-hero">
+<section class="kf-section kf-hero" data-kf-hero>
   <div class="kf-container">
     <div class="kf-hero__grid">
       <div class="kf-hero__texto">
@@ -26,18 +26,29 @@
 
         {%- if section.settings.mostrar_precio and producto != blank -%}
           <div class="kf-precio kf-reveal" style="--kf-i:3">
-            <strong>{{ v1.price | money_without_trailing_zeros }}</strong>
+            <strong data-kf-h-precio>{{ v1.price | money_without_trailing_zeros }}</strong>
             {%- if v1.compare_at_price > v1.price -%}
-              <s>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>
-              <span class="kf-precio__pct">-{{ v1.compare_at_price | minus: v1.price | times: 100 | divided_by: v1.compare_at_price }}%</span>
+              <s data-kf-h-antes>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>
+              <span class="kf-precio__pct" data-kf-h-pct>-{{ v1.compare_at_price | minus: v1.price | times: 100 | divided_by: v1.compare_at_price }}%</span>
             {%- endif -%}
             {%- if section.settings.nota_precio != blank -%}<span class="kf-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
           </div>
         {%- endif -%}
 
         <div class="kf-hero__ctas kf-reveal" style="--kf-i:4">
-          {%- if section.settings.btn1_texto != blank -%}<a class="kf-btn kf-btn--curcuma" href="{{ url_compra }}">{{ section.settings.btn1_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>{%- endif -%}
-          {%- if section.settings.btn2_texto != blank -%}<a class="kf-btn kf-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
+          {%- if section.settings.btn1_texto != blank -%}<a class="kf-btn kf-btn--curcuma" href="{{ url_compra }}" data-kf-h-comprar><span>{{ section.settings.btn1_texto }}</span> {% render 'kf-icono', nombre: 'flecha' %}</a>{%- endif -%}
+          {%- assign pack = producto.variants[1] -%}
+          {%- if section.settings.mostrar_pack and pack -%}
+            {%- assign ahorro = v1.price | times: 2 | minus: pack.price -%}
+            <button type="button" class="kf-btn kf-btn--ghost kf-hero__pack" data-kf-h-pack
+              data-url-uno="{{ url_compra }}" data-url-pack="{{ routes.cart_url }}/{{ pack.id }}:1"
+              data-precio-uno="{{ v1.price | money_without_trailing_zeros | escape }}" data-precio-pack="{{ pack.price | money_without_trailing_zeros | escape }}"
+              data-antes-uno="{{ v1.compare_at_price | money_without_trailing_zeros | escape }}" data-antes-pack="{{ pack.compare_at_price | money_without_trailing_zeros | escape }}"
+              data-pct-uno="{% if v1.compare_at_price > v1.price %}-{{ v1.compare_at_price | minus: v1.price | times: 100 | divided_by: v1.compare_at_price }}%{% endif %}" data-pct-pack="{% if pack.compare_at_price > pack.price %}-{{ pack.compare_at_price | minus: pack.price | times: 100 | divided_by: pack.compare_at_price }}%{% endif %}"
+              data-txt-comprar-uno="{{ section.settings.btn1_texto | escape }}" data-txt-comprar-pack="{{ section.settings.pack_comprar | escape }}"
+              data-txt-pack="{{ section.settings.pack_texto | escape }} · {{ section.settings.pack_ahorro | escape }} {{ ahorro | money_without_trailing_zeros | escape }}" data-txt-volver="{{ section.settings.pack_volver | escape }}"
+              data-sello-uno="{{ section.settings.sello_centro | escape }}" data-sello-pack="{{ section.settings.pack_sello | escape }}" aria-pressed="false">{{ section.settings.pack_texto }} · {{ section.settings.pack_ahorro }} {{ ahorro | money_without_trailing_zeros }}</button>
+          {%- elsif section.settings.btn2_texto != blank -%}<a class="kf-btn kf-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
         </div>
 
         {%- assign chips = section.blocks | where: 'type', 'chip' -%}
@@ -52,7 +63,7 @@
         {%- if section.settings.sello_centro != blank -%}
           <div class="kf-sello" aria-hidden="true">
             <svg viewBox="0 0 124 124"><defs><path id="kf-circ-{{ section.id }}" d="M62,62 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs><text><textPath href="#kf-circ-{{ section.id }}">{{ section.settings.sello_texto }}</textPath></text></svg>
-            <b>{{ section.settings.sello_centro }}</b>
+            <b data-kf-h-sello>{{ section.settings.sello_centro }}</b>
           </div>
         {%- endif -%}
         <div class="kf-arco">
@@ -60,6 +71,9 @@
             <img src="{{ section.settings.imagen | image_url: width: 1200 }}" srcset="{{ section.settings.imagen | image_url: width: 600 }} 600w, {{ section.settings.imagen | image_url: width: 900 }} 900w, {{ section.settings.imagen | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 45vw, 90vw" alt="{{ section.settings.imagen.alt | default: section.settings.alt_imagen | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
           {%- else -%}
             <img src="{{ 'kf-hero.jpg' | asset_url }}" alt="{{ section.settings.alt_imagen | escape }}" width="1024" height="1536" loading="eager" fetchpriority="high">
+          {%- endif -%}
+          {%- if section.settings.mostrar_pack and section.settings.imagen_pack != blank -%}
+            <img class="kf-arco__pack" src="{{ section.settings.imagen_pack | image_url: width: 1200 }}" alt="{{ section.settings.imagen_pack.alt | escape }}" width="1024" height="1536" loading="lazy" aria-hidden="true">
           {%- endif -%}
         </div>
         {%- for block in section.blocks -%}
@@ -89,7 +103,14 @@
     { "type": "header", "content": "Botones" },
     { "type": "text", "id": "btn1_texto", "label": "Botón principal – texto", "default": "Lo quiero" },
     { "type": "url", "id": "btn1_url", "label": "Botón principal – enlace (vacío = producto)" },
-    { "type": "text", "id": "btn2_texto", "label": "Botón secundario – texto", "default": "Ver el ritual" },
+    { "type": "checkbox", "id": "mostrar_pack", "label": "Mostrar botón del pack x2 (usa la 2.ª opción del producto)", "default": true },
+    { "type": "text", "id": "pack_texto", "label": "Botón pack – texto", "default": "Pack x2" },
+    { "type": "text", "id": "pack_ahorro", "label": "Botón pack – palabra de ahorro", "default": "ahorra" },
+    { "type": "text", "id": "pack_comprar", "label": "Botón comprar en modo pack", "default": "Llevar el pack x2" },
+    { "type": "text", "id": "pack_volver", "label": "Botón para volver a 1 unidad", "default": "← Volver a 1 unidad" },
+    { "type": "text", "id": "pack_sello", "label": "Sello en modo pack", "default": "x2" },
+    { "type": "image_picker", "id": "imagen_pack", "label": "Foto del pack x2" },
+    { "type": "text", "id": "btn2_texto", "label": "Botón secundario – texto (si no hay pack)", "default": "Ver el ritual" },
     { "type": "url", "id": "btn2_url", "label": "Botón secundario – enlace" },
     { "type": "header", "content": "Imagen" },
     { "type": "image_picker", "id": "imagen", "label": "Foto principal" },

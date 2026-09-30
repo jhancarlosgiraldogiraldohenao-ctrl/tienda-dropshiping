@@ -3,7 +3,8 @@
     "hero": {
       "type": "kf-hero",
       "settings": {
-        "producto": "dr-melaxin-peel-shot"
+        "producto": "dr-melaxin-peel-shot",
+        "imagen_pack": "shopify://shop_images/kf-pack-piedra.jpg"
       },
       "blocks": {
         "h1": {

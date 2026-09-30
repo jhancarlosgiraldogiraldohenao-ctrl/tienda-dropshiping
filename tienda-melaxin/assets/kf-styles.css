@@ -454,3 +454,13 @@ cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; 
 .kf-regalo__precio s { color: rgba(251, 246, 239, 0.55); font-size: 18px; }
 .kf-regalo__precio span { background: var(--kf-curcuma); color: var(--kf-cafe); font-weight: 700; font-size: 13px; padding: 5px 12px; border-radius: 999px; }
 .kf-regalo__precio small { width: 100%; color: rgba(251, 246, 239, 0.7); font-size: 14px; }
+
+/* pack x2 en la apertura */
+.kf-arco { isolation: isolate; }
+.kf-arco__pack { position: absolute; inset: 0; opacity: 0; transform: scale(1.03); transition: opacity 0.6s var(--kf-ease), transform 0.9s var(--kf-ease); z-index: 1; }
+.kf-hero.is-pack .kf-arco__pack { opacity: 1; transform: none; }
+.kf-hero .kf-flotante { transition: opacity 0.4s; }
+.kf-hero.is-pack .kf-flotante { opacity: 0; pointer-events: none; }
+.kf-hero__pack { border: 0; font-family: var(--kf-fuente); }
+.kf-hero.is-pack .kf-hero__pack { background: var(--kf-arena); }
+.kf-hero .kf-precio strong, .kf-hero .kf-precio s, .kf-hero .kf-precio__pct { transition: opacity 0.2s; }
