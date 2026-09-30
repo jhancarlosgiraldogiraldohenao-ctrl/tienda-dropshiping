@@ -204,42 +204,48 @@
           "type": "zona",
           "settings": {
             "zona": "Codos",
-            "texto": "Suaviza la piel áspera y reseca por el roce del día a día."
+            "texto": "Suaviza la piel áspera y reseca por el roce del día a día.",
+            "imagen": "shopify://shop_images/kf-zona-codos.jpg"
           }
         },
         "z2": {
           "type": "zona",
           "settings": {
             "zona": "Rodillas",
-            "texto": "Ayuda a que se vean más parejas antes de ponerte short o vestido."
+            "texto": "Ayuda a que se vean más parejas antes de ponerte short o vestido.",
+            "imagen": "shopify://shop_images/kf-zona-rodillas.jpg"
           }
         },
         "z3": {
           "type": "zona",
           "settings": {
             "zona": "Espalda",
-            "texto": "El spray llega solito a donde tus manos no alcanzan."
+            "texto": "El spray llega solito a donde tus manos no alcanzan.",
+            "imagen": "shopify://shop_images/kf-zona-espalda.jpg"
           }
         },
         "z4": {
           "type": "zona",
           "settings": {
             "zona": "Piernas",
-            "texto": "Textura más lisa y una apariencia luminosa para la temporada de playa."
+            "texto": "Textura más lisa y una apariencia luminosa para la temporada de playa.",
+            "imagen": "shopify://shop_images/kf-zona-rodillas.jpg"
           }
         },
         "z5": {
           "type": "zona",
           "settings": {
             "zona": "Brazos",
-            "texto": "Renueva la superficie y deja la piel suave al tacto."
+            "texto": "Renueva la superficie y deja la piel suave al tacto.",
+            "imagen": "shopify://shop_images/kf-zona-brazos.jpg"
           }
         },
         "z6": {
           "type": "zona",
           "settings": {
             "zona": "Pies",
-            "texto": "Ideal para talones y zonas con piel gruesa o reseca."
+            "texto": "Ideal para talones y zonas con piel gruesa o reseca.",
+            "imagen": "shopify://shop_images/kf-zona-pies.jpg"
           }
         }
       },
