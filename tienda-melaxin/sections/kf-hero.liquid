@@ -76,9 +76,11 @@
             <img class="kf-arco__pack" src="{{ section.settings.imagen_pack | image_url: width: 1200 }}" alt="{{ section.settings.imagen_pack.alt | escape }}" width="1024" height="1536" loading="lazy" aria-hidden="true">
           {%- endif -%}
         </div>
+        {%- assign n_uno = 0 -%}{%- assign n_pack = 0 -%}
         {%- for block in section.blocks -%}
           {%- if block.type == 'flotante' -%}
-            <span class="kf-flotante" {{ block.shopify_attributes }}><i>{% render 'kf-icono', nombre: block.settings.icono %}</i><span>{{ block.settings.titulo }}{%- if block.settings.texto != blank -%}<small>{{ block.settings.texto }}</small>{%- endif -%}</span></span>
+            {%- if block.settings.modo == 'pack' -%}{%- assign n_pack = n_pack | plus: 1 -%}{%- assign pos = n_pack -%}{%- else -%}{%- assign n_uno = n_uno | plus: 1 -%}{%- assign pos = n_uno -%}{%- endif -%}
+            <span class="kf-flotante kf-pos-{{ pos }}{% if block.settings.modo == 'pack' %} kf-flotante--pack{% else %} kf-flotante--uno{% endif %}" {{ block.shopify_attributes }}><i>{% render 'kf-icono', nombre: block.settings.icono %}</i><span>{{ block.settings.titulo }}{%- if block.settings.texto != blank -%}<small>{{ block.settings.texto }}</small>{%- endif -%}</span></span>
           {%- endif -%}
         {%- endfor -%}
       </div>
@@ -137,9 +139,10 @@
     {
       "type": "flotante",
       "name": "Etiqueta flotante",
-      "limit": 4,
+      "limit": 8,
       "settings": [
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "sol", "label": "Sol" }, { "value": "hoja", "label": "Hoja" }, { "value": "gota", "label": "Gota" }, { "value": "capas", "label": "Capas" }, { "value": "brillo", "label": "Brillo" } ], "default": "hoja" },
+        { "type": "select", "id": "modo", "label": "Se muestra con", "options": [ { "value": "uno", "label": "1 unidad" }, { "value": "pack", "label": "Pack x2" } ], "default": "uno" },
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "sol", "label": "Sol" }, { "value": "hoja", "label": "Hoja" }, { "value": "gota", "label": "Gota" }, { "value": "capas", "label": "Capas" }, { "value": "brillo", "label": "Brillo" }, { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "spray", "label": "Spray" }, { "value": "efectivo", "label": "Efectivo" } ], "default": "hoja" },
         { "type": "text", "id": "titulo", "label": "Título", "default": "Cúrcuma" },
         { "type": "text", "id": "texto", "label": "Texto pequeño" }
       ]

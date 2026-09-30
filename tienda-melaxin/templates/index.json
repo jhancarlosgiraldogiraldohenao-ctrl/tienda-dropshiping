@@ -12,7 +12,8 @@
           "settings": {
             "icono": "hoja",
             "titulo": "Cúrcuma",
-            "texto": "Luz y calidez"
+            "texto": "Luz y calidez",
+            "modo": "uno"
           }
         },
         "h2": {
@@ -20,7 +21,8 @@
           "settings": {
             "icono": "brillo",
             "titulo": "Ácido kójico",
-            "texto": "Tono más parejo"
+            "texto": "Tono más parejo",
+            "modo": "uno"
           }
         },
         "h3": {
@@ -28,7 +30,8 @@
           "settings": {
             "icono": "gota",
             "titulo": "Niacinamida",
-            "texto": "Textura uniforme"
+            "texto": "Textura uniforme",
+            "modo": "uno"
           }
         },
         "h4": {
@@ -36,7 +39,8 @@
           "settings": {
             "icono": "capas",
             "titulo": "AHA + PHA",
-            "texto": "Exfoliación suave"
+            "texto": "Exfoliación suave",
+            "modo": "uno"
           }
         },
         "h5": {
@@ -59,6 +63,42 @@
             "icono": "spray",
             "texto": "200 ml"
           }
+        },
+        "hp1": {
+          "type": "flotante",
+          "settings": {
+            "modo": "pack",
+            "icono": "regalo",
+            "titulo": "Uno para regalar",
+            "texto": "El detalle de Navidad"
+          }
+        },
+        "hp2": {
+          "type": "flotante",
+          "settings": {
+            "modo": "pack",
+            "icono": "brillo",
+            "titulo": "Ahorra 30%",
+            "texto": "Frente a 2 sueltos"
+          }
+        },
+        "hp3": {
+          "type": "flotante",
+          "settings": {
+            "modo": "pack",
+            "icono": "spray",
+            "titulo": "2 × 200 ml",
+            "texto": "Rutina para meses"
+          }
+        },
+        "hp4": {
+          "type": "flotante",
+          "settings": {
+            "modo": "pack",
+            "icono": "camion",
+            "titulo": "Un solo envío",
+            "texto": "Gratis · pagas al recibir"
+          }
         }
       },
       "block_order": [
@@ -66,6 +106,10 @@
         "h2",
         "h3",
         "h4",
+        "hp1",
+        "hp2",
+        "hp3",
+        "hp4",
         "h5",
         "h6",
         "h7"
