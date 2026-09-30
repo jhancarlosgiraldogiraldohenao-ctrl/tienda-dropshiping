@@ -261,14 +261,17 @@
     "regalo": {
       "type": "kf-regalo",
       "settings": {
-        "producto": "dr-melaxin-peel-shot"
+        "producto": "dr-melaxin-peel-shot",
+        "eyebrow": "Pack x2 · Temporada de regalos",
+        "titulo": "<p>Uno para ti, <em>otro para regalar.</em></p>",
+        "texto": "Llévate dos sprays y ahorra. Para mamá, la tía, la novia o tu amiga secreta: un detalle de cuidado personal que sí se usa."
       },
       "blocks": {
         "g1": {
           "type": "punto",
           "settings": {
             "icono": "regalo",
-            "texto": "Un detalle de cuidado personal que sí se usa"
+            "texto": "Dos sprays de 200 ml, cada uno para varias semanas"
           }
         },
         "g2": {

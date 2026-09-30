@@ -41,16 +41,54 @@
         {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
         <h1 class="kf-compra__titulo">{{ section.settings.titulo_corto | default: product.title }}</h1>
         {%- if section.settings.subtitulo != blank -%}<p class="kf-compra__estrellas">{{ section.settings.subtitulo }}</p>{%- endif -%}
-        {%- if section.settings.intro != blank -%}<p class="kf-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
-
-        <div class="kf-precio">
-          <strong>{{ variante.price | money_without_trailing_zeros }}</strong>
-          {%- if variante.compare_at_price > variante.price -%}
-            <s>{{ variante.compare_at_price | money_without_trailing_zeros }}</s>
-            <span class="kf-precio__pct">-{{ variante.compare_at_price | minus: variante.price | times: 100 | divided_by: variante.compare_at_price }}%</span>
-          {%- endif -%}
+        {%- assign v1 = product.variants.first -%}
+        <div class="kf-precio" data-kf-precio-bloque>
+          <strong data-kf-precio>{{ variante.price | money_without_trailing_zeros }}</strong>
+          <s data-kf-antes{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>{{ variante.compare_at_price | money_without_trailing_zeros }}</s>
+          <span class="kf-precio__pct" data-kf-pct{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>-{{ variante.compare_at_price | minus: variante.price | times: 100 | divided_by: variante.compare_at_price }}%</span>
           {%- if section.settings.nota_precio != blank -%}<span class="kf-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
         </div>
+
+        {%- unless product.has_only_default_variant -%}
+          <div class="kf-ofertas" role="radiogroup" aria-label="{{ product.options.first | escape }}">
+            {%- if section.settings.ofertas_titulo != blank -%}<p class="kf-ofertas__titulo">{{ section.settings.ofertas_titulo }}</p>{%- endif -%}
+            {%- for v in product.variants -%}
+              {%- liquid
+                if v.featured_image
+                  assign img_url = v.featured_image | image_url: width: 1200
+                else
+                  assign img_url = product.featured_media | image_url: width: 1200
+                endif
+                assign normal = v1.price | times: forloop.index
+                assign ahorro = normal | minus: v.price
+                if forloop.first
+                  assign nota = section.settings.oferta_1_nota
+                else
+                  assign nota = section.settings.oferta_2_nota
+                endif
+              -%}
+              <label class="kf-oferta{% if v.id == variante.id %} is-activa{% endif %}">
+                <input type="radio" name="kf-oferta-{{ section.id }}" value="{{ v.id }}" data-kf-oferta data-price="{{ v.price | money_without_trailing_zeros | escape }}" data-compare="{% if v.compare_at_price > v.price %}{{ v.compare_at_price | money_without_trailing_zeros | escape }}{% endif %}" data-pct="{% if v.compare_at_price > v.price %}-{{ v.compare_at_price | minus: v.price | times: 100 | divided_by: v.compare_at_price }}%{% endif %}" data-img="{{ img_url }}" {% if v.id == variante.id %}checked{% endif %} {% unless v.available %}disabled{% endunless %}>
+                <span class="kf-oferta__radio" aria-hidden="true"></span>
+                <span class="kf-oferta__txt">
+                  <strong>{{ v.title }}</strong>
+                  {%- if nota != blank -%}<small>{{ nota }}</small>{%- endif -%}
+                </span>
+                <span class="kf-oferta__precio">
+                  <strong>{{ v.price | money_without_trailing_zeros }}</strong>
+                  {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+                </span>
+                {%- if ahorro > 0 -%}
+                  <span class="kf-oferta__badge">{{ section.settings.texto_ahorro }} {{ ahorro | money_without_trailing_zeros }}</span>
+                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank -%}
+                  <span class="kf-oferta__badge kf-oferta__badge--suave">{{ section.settings.oferta_1_etiqueta }}</span>
+                {%- endif -%}
+              </label>
+            {%- endfor -%}
+          </div>
+        {%- endunless -%}
+
+        {%- if section.settings.intro != blank -%}<p class="kf-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
 
         {%- if section.settings.puntos != blank -%}
           <ul class="kf-compra__puntos">
@@ -108,8 +146,8 @@
   </div>
 
   <div class="kf-sticky-compra" data-kf-sticky-compra>
-    <div><small>{{ section.settings.sticky_texto }}</small><strong>{{ variante.price | money_without_trailing_zeros }}</strong></div>
-    <a class="kf-btn kf-btn--curcuma" href="{{ routes.cart_url }}/{{ variante.id }}:1">{{ section.settings.comprar_corto }}</a>
+    <div><small>{{ section.settings.sticky_texto }}</small><strong data-kf-sticky-precio>{{ variante.price | money_without_trailing_zeros }}</strong></div>
+    <a class="kf-btn kf-btn--curcuma" data-kf-comprar-sticky href="{{ routes.cart_url }}/{{ variante.id }}:1">{{ section.settings.comprar_corto }}</a>
   </div>
 </section>
 
@@ -126,6 +164,12 @@
     { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
     { "type": "textarea", "id": "puntos", "label": "Puntos clave (uno por línea)", "default": "Piel con sensación más suave y lisa\nAyuda a unificar visualmente el tono\nFormato spray: sin frotar de más\n200 ml para varias semanas de uso" },
     { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Pagas al recibir" },
+    { "type": "header", "content": "Opciones de compra" },
+    { "type": "text", "id": "ofertas_titulo", "label": "Título de las opciones", "default": "Elige tu opción" },
+    { "type": "text", "id": "oferta_1_nota", "label": "Opción 1 – texto pequeño", "default": "Para tu ritual" },
+    { "type": "text", "id": "oferta_1_etiqueta", "label": "Opción 1 – etiqueta", "default": "-20%" },
+    { "type": "text", "id": "oferta_2_nota", "label": "Opción 2 – texto pequeño", "default": "Uno para ti y otro para regalar" },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
     { "type": "checkbox", "id": "mostrar_miniaturas", "label": "Mostrar las demás fotos del producto", "default": false },
     { "type": "header", "content": "Botones" },
     { "type": "text", "id": "comprar_texto", "label": "Botón comprar ahora", "default": "Comprar ahora · pago contraentrega" },

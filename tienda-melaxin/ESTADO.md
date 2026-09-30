@@ -29,3 +29,10 @@
 ## Pendiente
 - Nombre de marca, costo del proveedor del ID 2131637, envío gratis, políticas,
   contraentrega, diseño del tema, quitar contraseña.
+
+## Pack x2 (2026-09-30)
+- Opción "Presentación": "1 unidad" (SKU 2131637, 79.900 / tachado 99.900) y
+  "Pack x2" (SKU 2131637-X2, 139.900 / tachado 199.800, ahorra 19.900), variante 48044877643974.
+- El pack NO se sincroniza solo con Dropi: el usuario lo pasa a mano (2 unidades del ID 2131637).
+- Página de producto: tarjetas de opción; sección Regalo = oferta pack x2 con compra directa.
+- Producto con 1 sola foto visible (frasco con cúrcuma); foto de dos frascos asignada al pack.

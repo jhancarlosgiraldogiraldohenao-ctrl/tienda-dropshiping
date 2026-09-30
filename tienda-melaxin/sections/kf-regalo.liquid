@@ -27,8 +27,25 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
+        {%- assign prod = section.settings.producto -%}
+        {%- assign idx = section.settings.variante_num | minus: 1 -%}
+        {%- assign pack = prod.variants[idx] | default: prod.selected_or_first_available_variant -%}
+        {%- if prod != blank and section.settings.mostrar_precio -%}
+          {%- assign normal = prod.variants.first.price | times: section.settings.variante_num -%}
+          {%- assign ahorro = normal | minus: pack.price -%}
+          <div class="kf-regalo__precio kf-reveal">
+            <strong>{{ pack.price | money_without_trailing_zeros }}</strong>
+            {%- if pack.compare_at_price > pack.price -%}<s>{{ pack.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+            {%- if ahorro > 0 -%}<span>{{ section.settings.texto_ahorro }} {{ ahorro | money_without_trailing_zeros }}</span>{%- endif -%}
+            {%- if section.settings.nota_precio != blank -%}<small>{{ section.settings.nota_precio }}</small>{%- endif -%}
+          </div>
+        {%- endif -%}
         {%- if section.settings.btn_texto != blank -%}
-          <a class="kf-btn kf-btn--curcuma kf-reveal" href="{{ section.settings.btn_url | default: section.settings.producto.url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>
+          {%- if prod != blank and section.settings.compra_directa -%}
+            <a class="kf-btn kf-btn--curcuma kf-reveal" href="{{ routes.cart_url }}/{{ pack.id }}:1">{{ section.settings.btn_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>
+          {%- else -%}
+            <a class="kf-btn kf-btn--curcuma kf-reveal" href="{{ section.settings.btn_url | default: prod.url | default: '#' }}{% if prod != blank and section.settings.btn_url == blank %}?variant={{ pack.id }}{% endif %}">{{ section.settings.btn_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>
+          {%- endif -%}
         {%- endif -%}
       </div>
     </div>
@@ -45,7 +62,12 @@
     { "type": "textarea", "id": "texto", "label": "Texto", "default": "Para mamá, la tía, la novia o tu amiga secreta. Un detalle de cuidado personal que se siente especial desde que lo destapan." },
     { "type": "image_picker", "id": "imagen", "label": "Foto" },
     { "type": "product", "id": "producto", "label": "Producto del botón" },
-    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Quiero regalarlo" },
+    { "type": "range", "id": "variante_num", "label": "Opción del producto que se vende aquí (1 = unidad, 2 = pack)", "min": 1, "max": 3, "step": 1, "default": 2 },
+    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "2 sprays de 200 ml · Envío gratis · Pagas al recibir" },
+    { "type": "checkbox", "id": "compra_directa", "label": "El botón lleva directo a pagar", "default": true },
+    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Llevar el pack x2" },
     { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = producto)" },
     { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 72 },
     { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },

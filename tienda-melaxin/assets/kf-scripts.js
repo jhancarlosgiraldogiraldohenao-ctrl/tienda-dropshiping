@@ -65,6 +65,30 @@
         });
       });
       if (q) q.addEventListener('change', sync);
+      var precio = c.querySelector('[data-kf-precio]');
+      var antes = c.querySelector('[data-kf-antes]');
+      var pct = c.querySelector('[data-kf-pct]');
+      var sPrecio = document.querySelector('[data-kf-sticky-precio]');
+      var sComprar = document.querySelector('[data-kf-comprar-sticky]');
+      var foto = document.querySelector('.kf-galeria__principal img');
+      c.querySelectorAll('[data-kf-oferta]').forEach(function (r) {
+        r.addEventListener('change', function () {
+          if (!r.checked) return;
+          c.querySelectorAll('.kf-oferta').forEach(function (l) { l.classList.toggle('is-activa', l.contains(r)); });
+          if (id) id.value = r.value;
+          if (precio) precio.textContent = r.dataset.price;
+          if (sPrecio) sPrecio.textContent = r.dataset.price;
+          if (antes) { antes.textContent = r.dataset.compare; antes.hidden = !r.dataset.compare; }
+          if (pct) { pct.textContent = r.dataset.pct; pct.hidden = !r.dataset.pct; }
+          if (sComprar) sComprar.setAttribute('href', sComprar.getAttribute('href').replace(/\/\d+:\d+$/, '/' + r.value + ':1'));
+          if (foto && r.dataset.img && foto.getAttribute('src') !== r.dataset.img) {
+            foto.style.opacity = 0;
+            setTimeout(function () { foto.removeAttribute('srcset'); foto.src = r.dataset.img; foto.style.opacity = 1; }, 180);
+          }
+          var url = new URL(window.location.href); url.searchParams.set('variant', r.value); window.history.replaceState({}, '', url);
+          sync();
+        });
+      });
       sync();
     });
     var barra = document.querySelector('[data-kf-sticky-compra]');
