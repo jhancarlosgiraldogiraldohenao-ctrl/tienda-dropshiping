@@ -514,7 +514,7 @@
     "comparativa": {
       "type": "kf-comparativa",
       "settings": {
-        "col_otros": "Con granitos"
+        "col_otros": "Otros exfoliantes"
       },
       "blocks": {
         "c0": {
