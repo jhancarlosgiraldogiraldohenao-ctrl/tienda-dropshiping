@@ -1,6 +1,9 @@
 /* Kojicfur · interacciones (vanilla, sin dependencias) */
 (function () {
   'use strict';
+  // Varias secciones cargan este archivo: se inicializa una sola vez.
+  if (window.__kfScripts) return;
+  window.__kfScripts = true;
 
   function initReveals(root) {
     var els = (root || document).querySelectorAll('.kf-reveal:not(.is-visible)');
