@@ -40,7 +40,7 @@
       <div class="kf-compra" data-kf-compra>
         {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
         <h1 class="kf-compra__titulo">{{ section.settings.titulo_corto | default: product.title }}</h1>
-        {%- if section.settings.subtitulo != blank -%}<p class="kf-compra__estrellas">{% render 'kf-icono', nombre: 'hoja' %}{{ section.settings.subtitulo }}</p>{%- endif -%}
+        {%- if section.settings.subtitulo != blank -%}<p class="kf-compra__estrellas">{{ section.settings.subtitulo }}</p>{%- endif -%}
         {%- if section.settings.intro != blank -%}<p class="kf-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
 
         <div class="kf-precio">

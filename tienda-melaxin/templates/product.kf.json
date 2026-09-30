@@ -40,7 +40,9 @@
     },
     "activos": {
       "type": "kf-activos",
-      "settings": {},
+      "settings": {
+        "imagen": "shopify://shop_images/file_00000000a01c81f5ac569fe948e4c053_7210f52d-9620-4a07-b974-c74d89147b13.png"
+      },
       "blocks": {
         "a1": {
           "type": "activo",
