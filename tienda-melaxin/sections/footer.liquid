@@ -1,24 +1,24 @@
-{{ 'vx-styles.css' | asset_url | stylesheet_tag }}
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background: #08090a; }
-  #shopify-section-{{ section.id }} .vx-footer__marca p, #shopify-section-{{ section.id }} .vx-footer__texto { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background: #231812; }
+  #shopify-section-{{ section.id }} .kf-footer__marca p, #shopify-section-{{ section.id }} .kf-footer__texto { font-size: {{ section.settings.texto_size }}px; }
 {% endstyle %}
 
-<footer class="vx-section vx-footer">
-  <div class="vx-container">
-    <div class="vx-footer__top">
-      <div class="vx-footer__marca">
+<footer class="kf-section kf-footer">
+  <div class="kf-container">
+    <div class="kf-footer__top">
+      <div class="kf-footer__marca">
         {%- if section.settings.logo != blank -%}
-          <img src="{{ section.settings.logo | image_url: width: 600 }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="{{ section.settings.logo_width }}" style="width: {{ section.settings.logo_width }}px; height: auto" loading="lazy">
+          <img src="{{ section.settings.logo | image_url: width: 600 }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="{{ section.settings.logo_width }}" height="{{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | round }}" style="width: {{ section.settings.logo_width }}px; height: auto" loading="lazy">
         {%- else -%}
-          <a class="vx-wordmark" href="{{ routes.root_url }}" style="color: var(--vx-texto)"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M3 6h7l6 13 6-13h7L19 27h-6z"/></svg>{{ section.settings.marca_texto | default: shop.name }}</a>
+          <a class="kf-wordmark" href="{{ routes.root_url }}" ><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M16 2.5v4M16 25.5v4M2.5 16h4M25.5 16h4M6.4 6.4l2.8 2.8M22.8 22.8l2.8 2.8M6.4 25.6l2.8-2.8M22.8 9.2l2.8-2.8"/></g></svg>{{ section.settings.marca_texto | default: shop.name }}</a>
         {%- endif -%}
         {%- if section.settings.tagline != blank -%}<p>{{ section.settings.tagline | newline_to_br }}</p>{%- endif -%}
-        <div class="vx-footer__redes">
-          {%- if settings.social_instagram_link != blank -%}<a href="{{ settings.social_instagram_link }}" aria-label="Instagram" target="_blank" rel="noopener">{% render 'vx-icono', nombre: 'instagram' %}</a>{%- endif -%}
-          {%- if settings.social_facebook_link != blank -%}<a href="{{ settings.social_facebook_link }}" aria-label="Facebook" target="_blank" rel="noopener">{% render 'vx-icono', nombre: 'facebook' %}</a>{%- endif -%}
-          {%- if settings.social_tiktok_link != blank -%}<a href="{{ settings.social_tiktok_link }}" aria-label="TikTok" target="_blank" rel="noopener">{% render 'vx-icono', nombre: 'tiktok' %}</a>{%- endif -%}
+        <div class="kf-footer__redes">
+          {%- if settings.social_instagram_link != blank -%}<a href="{{ settings.social_instagram_link }}" aria-label="Instagram" target="_blank" rel="noopener">{% render 'kf-icono', nombre: 'instagram' %}</a>{%- endif -%}
+          {%- if settings.social_facebook_link != blank -%}<a href="{{ settings.social_facebook_link }}" aria-label="Facebook" target="_blank" rel="noopener">{% render 'kf-icono', nombre: 'facebook' %}</a>{%- endif -%}
+          {%- if settings.social_tiktok_link != blank -%}<a href="{{ settings.social_tiktok_link }}" aria-label="TikTok" target="_blank" rel="noopener">{% render 'kf-icono', nombre: 'tiktok' %}</a>{%- endif -%}
         </div>
       </div>
 
@@ -37,24 +37,24 @@
 
       <div>
         <h4>{{ section.settings.info_titulo }}</h4>
-        <p class="vx-footer__texto">{{ section.settings.info_texto | newline_to_br }}</p>
+        <p class="kf-footer__texto">{{ section.settings.info_texto | newline_to_br }}</p>
       </div>
     </div>
 
     {%- if section.settings.texto_gigante != blank -%}
-      <div class="vx-footer__gigante" aria-hidden="true">{{ section.settings.texto_gigante }}</div>
+      <div class="kf-footer__gigante" aria-hidden="true">{{ section.settings.texto_gigante }}</div>
     {%- endif -%}
 
-    <div class="vx-footer__base">
+    <div class="kf-footer__base">
       <span>© {{ 'now' | date: '%Y' }} {{ section.settings.marca_texto | default: shop.name }}. {{ section.settings.copyright }}</span>
-      <nav class="vx-footer__legal" aria-label="Legal">
+      <nav class="kf-footer__legal" aria-label="Legal">
         <a href="{{ routes.root_url }}policies/privacy-policy">{{ section.settings.legal_privacidad }}</a>
         <a href="{{ routes.root_url }}policies/terms-of-service">{{ section.settings.legal_terminos }}</a>
         <a href="{{ routes.root_url }}policies/refund-policy">{{ section.settings.legal_devoluciones }}</a>
         <a href="{{ routes.root_url }}policies/shipping-policy">{{ section.settings.legal_envios }}</a>
       </nav>
       {%- if section.settings.mostrar_pagos and shop.enabled_payment_types.size > 0 -%}
-        <ul class="vx-footer__pagos" role="list">
+        <ul class="kf-footer__pagos" role="list">
           {%- for type in shop.enabled_payment_types -%}<li>{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>{%- endfor -%}
         </ul>
       {%- endif -%}
@@ -77,15 +77,15 @@
 
 {% schema %}
 {
-  "name": "VX – Pie de página",
+  "name": "KF – Pie de página",
   "tag": "section",
   "class": "section",
   "settings": [
     { "type": "header", "content": "Marca" },
-    { "type": "text", "id": "marca_texto", "label": "Nombre de la marca", "default": "Vuronix" },
+    { "type": "text", "id": "marca_texto", "label": "Nombre de la marca", "default": "Kojicfur" },
     { "type": "image_picker", "id": "logo", "label": "Logo (opcional)" },
     { "type": "range", "id": "logo_width", "label": "Ancho del logo (px)", "min": 60, "max": 300, "step": 10, "unit": "px", "default": 160 },
-    { "type": "textarea", "id": "tagline", "label": "Frase de la marca", "default": "Herramientas compactas para que nada te deje varado." },
+    { "type": "textarea", "id": "tagline", "label": "Frase de la marca", "default": "Rituales de cuidado corporal." },
     { "type": "paragraph", "content": "Los iconos de redes aparecen cuando pones tus enlaces en Configuración del tema → Redes sociales." },
     { "type": "header", "content": "Navegación" },
     { "type": "text", "id": "nav_titulo", "label": "Título", "default": "Tienda" },
@@ -102,7 +102,7 @@
     { "type": "header", "content": "Información" },
     { "type": "text", "id": "info_titulo", "label": "Título", "default": "Compra tranquilo" },
     { "type": "textarea", "id": "info_texto", "label": "Texto", "default": "Pago contraentrega en toda Colombia." },
-    { "type": "text", "id": "texto_gigante", "label": "Texto gigante decorativo", "default": "Vuronix" },
+    { "type": "text", "id": "texto_gigante", "label": "Texto gigante decorativo", "default": "Kojicfur" },
     { "type": "header", "content": "Barra inferior" },
     { "type": "text", "id": "copyright", "label": "Texto tras el copyright", "default": "Todos los derechos reservados." },
     { "type": "text", "id": "legal_privacidad", "label": "Texto enlace privacidad", "default": "Privacidad" },

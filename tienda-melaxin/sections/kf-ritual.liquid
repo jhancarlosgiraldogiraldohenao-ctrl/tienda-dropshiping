@@ -1,0 +1,53 @@
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kf-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .kf-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .kf-paso p { font-size: {{ section.settings.texto_size }}px; }
+{% endstyle %}
+
+<section class="kf-section kf-ritual" id="{{ section.settings.ancla | default: 'ritual' }}">
+  <div class="kf-container kf-ritual__wrap">
+    <div class="kf-cabecera kf-cabecera--centro">
+      {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow kf-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="kf-reveal" style="--kf-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="kf-reveal" style="--kf-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="kf-ritual__pasos">
+      {%- for block in section.blocks -%}
+        <div class="kf-paso kf-reveal" style="--kf-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="kf-paso__num">{{ forloop.index }}</div>
+          <h3>{{ block.settings.titulo }}</h3>
+          <p>{{ block.settings.texto }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.nota != blank -%}
+      <p class="kf-ritual__nota kf-reveal">{% render 'kf-icono', nombre: 'sol' %}<span>{{ section.settings.nota }}</span></p>
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – El ritual",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El ritual" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Tres pasos. <em>Cero complicaciones.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "En la ducha, en menos de lo que tarda una canción." },
+    { "type": "text", "id": "nota", "label": "Nota final", "default": "Empieza 2 o 3 veces por semana y de día usa protector solar en las zonas expuestas." },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "ritual" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 20, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "paso", "name": "Paso", "settings": [ { "type": "text", "id": "titulo", "label": "Título", "default": "Rocía" }, { "type": "textarea", "id": "texto", "label": "Texto", "default": "Sobre la piel limpia y seca." } ] }
+  ],
+  "max_blocks": 4,
+  "presets": [ { "name": "KF – El ritual", "blocks": [ { "type": "paso" } ] } ]
+}
+{% endschema %}

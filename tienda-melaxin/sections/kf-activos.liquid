@@ -1,0 +1,76 @@
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kf-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .kf-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .kf-activo p { font-size: {{ section.settings.texto_size }}px; }
+{% endstyle %}
+
+<section class="kf-section kf-activos" id="{{ section.settings.ancla | default: 'activos' }}">
+  <div class="kf-container">
+    <div class="kf-activos__grid">
+      <div class="kf-activos__visual kf-reveal">
+        <div class="kf-arco">
+          {%- if section.settings.imagen != blank -%}
+            <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1333">
+          {%- else -%}
+            <img src="{{ 'kf-curcuma.jpg' | asset_url }}" alt="Spray Peel Shot rodeado de cúrcuma y ácido kójico" loading="lazy" width="1024" height="1536">
+          {%- endif -%}
+        </div>
+        {%- if section.settings.nota != blank -%}<p class="kf-activos__nota">{{ section.settings.nota }}</p>{%- endif -%}
+      </div>
+      <div>
+        <div class="kf-cabecera">
+          {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow kf-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+          <h2 class="kf-reveal" style="--kf-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+          {%- if section.settings.texto != blank -%}<p class="kf-reveal" style="--kf-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+        </div>
+        <div class="kf-activos__lista">
+          {%- for block in section.blocks -%}
+            <article class="kf-activo kf-reveal" style="--kf-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+              <span class="kf-activo__icono">{% render 'kf-icono', nombre: block.settings.icono %}</span>
+              <div>
+                <h3>{{ block.settings.titulo }}</h3>
+                <p>{{ block.settings.texto }}</p>
+              </div>
+              <span class="kf-activo__num">0{{ forloop.index }}</span>
+            </article>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Activos",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Lo que hay adentro" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Cuatro activos, <em>un solo spray.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Una fórmula pensada para renovar la superficie de la piel y devolverle un aspecto parejo y luminoso." },
+    { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "text", "id": "nota", "label": "Nota sobre la foto", "default": "Formulado con ácido kójico de alta pureza, según lo declarado por la marca." },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "activos" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 20, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "activo",
+      "name": "Activo",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "sol", "label": "Sol" }, { "value": "hoja", "label": "Hoja" }, { "value": "gota", "label": "Gota" }, { "value": "capas", "label": "Capas" }, { "value": "brillo", "label": "Brillo" } ], "default": "hoja" },
+        { "type": "text", "id": "titulo", "label": "Nombre", "default": "Cúrcuma" },
+        { "type": "textarea", "id": "texto", "label": "Qué hace", "default": "Ingrediente tradicional asociado a una piel de aspecto luminoso." }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [ { "name": "KF – Activos", "blocks": [ { "type": "activo" } ] } ]
+}
+{% endschema %}

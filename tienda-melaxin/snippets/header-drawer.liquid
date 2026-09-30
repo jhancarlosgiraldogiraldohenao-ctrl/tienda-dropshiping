@@ -27,16 +27,16 @@
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
       {%- liquid
-        assign vx_skip = false
-        assign vx_ocultos = section.settings.ocultar_enlaces | split: ','
-        for u in vx_ocultos
+        assign kf_skip = false
+        assign kf_ocultos = section.settings.ocultar_enlaces | split: ','
+        for u in kf_ocultos
           assign uu = u | strip
           if uu != blank and uu == link.url
-            assign vx_skip = true
+            assign kf_skip = true
           endif
         endfor
       -%}
-      {%- if vx_skip -%}{%- continue -%}{%- endif -%}
+      {%- if kf_skip -%}{%- continue -%}{%- endif -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">

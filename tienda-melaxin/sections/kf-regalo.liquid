@@ -1,0 +1,67 @@
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kf-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background: var(--kf-cafe); }
+  #shopify-section-{{ section.id }} h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="kf-section kf-oscuro kf-regalo">
+  <div class="kf-container">
+    <div class="kf-regalo__grid">
+      <div class="kf-regalo__foto kf-reveal">
+        {%- if section.settings.imagen != blank -%}
+          <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1250">
+        {%- else -%}
+          <img src="{{ 'kf-duo.jpg' | asset_url }}" alt="Dos sprays Dr. Melaxin Peel Shot" loading="lazy" width="1024" height="1536">
+        {%- endif -%}
+      </div>
+      <div class="kf-regalo__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow kf-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="kf-reveal" style="--kf-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p class="kf-reveal" style="--kf-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="kf-regalo__lista">
+            {%- for block in section.blocks -%}
+              <li class="kf-reveal" style="--kf-i:{{ forloop.index | plus: 2 }}" {{ block.shopify_attributes }}>{% render 'kf-icono', nombre: block.settings.icono %}<span>{{ block.settings.texto }}</span></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if section.settings.btn_texto != blank -%}
+          <a class="kf-btn kf-btn--curcuma kf-reveal" href="{{ section.settings.btn_url | default: section.settings.producto.url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Regalo",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Temporada de regalos" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>El regalo que <em>sí se usa.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Para mamá, la tía, la novia o tu amiga secreta. Un detalle de cuidado personal que se siente especial desde que lo destapan." },
+    { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "product", "id": "producto", "label": "Producto del botón" },
+    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Quiero regalarlo" },
+    { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = producto)" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "punto",
+      "name": "Punto",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "efectivo", "label": "Efectivo" }, { "value": "brillo", "label": "Brillo" }, { "value": "check", "label": "Check" } ], "default": "check" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Llega a su puerta con envío gratis" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [ { "name": "KF – Regalo" } ]
+}
+{% endschema %}

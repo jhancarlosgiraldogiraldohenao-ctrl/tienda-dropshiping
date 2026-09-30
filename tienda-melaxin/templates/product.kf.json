@@ -1,123 +1,38 @@
 {
   "sections": {
-    "hero": {
-      "type": "kf-hero",
-      "settings": {
-        "producto": "dr-melaxin-peel-shot"
-      },
-      "blocks": {
-        "h1": {
-          "type": "flotante",
-          "settings": {
-            "icono": "hoja",
-            "titulo": "Cúrcuma",
-            "texto": "Luz y calidez"
-          }
-        },
-        "h2": {
-          "type": "flotante",
-          "settings": {
-            "icono": "brillo",
-            "titulo": "Ácido kójico",
-            "texto": "Tono más parejo"
-          }
-        },
-        "h3": {
-          "type": "flotante",
-          "settings": {
-            "icono": "gota",
-            "titulo": "Niacinamida",
-            "texto": "Textura uniforme"
-          }
-        },
-        "h4": {
-          "type": "flotante",
-          "settings": {
-            "icono": "capas",
-            "titulo": "AHA + PHA",
-            "texto": "Exfoliación suave"
-          }
-        },
-        "h5": {
-          "type": "chip",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis"
-          }
-        },
-        "h6": {
-          "type": "chip",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas al recibir"
-          }
-        },
-        "h7": {
-          "type": "chip",
-          "settings": {
-            "icono": "spray",
-            "texto": "200 ml"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4",
-        "h5",
-        "h6",
-        "h7"
-      ]
-    },
-    "cinta": {
-      "type": "kf-cinta",
+    "principal": {
+      "type": "kf-producto",
       "settings": {},
       "blocks": {
-        "c1": {
-          "type": "item",
+        "p1": {
+          "type": "confianza",
           "settings": {
-            "texto": "Piel más suave"
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
           }
         },
-        "c2": {
-          "type": "item",
+        "p2": {
+          "type": "confianza",
           "settings": {
-            "texto": "Envío gratis a toda Colombia"
+            "icono": "efectivo",
+            "titulo": "Pagas al recibir",
+            "texto": "En efectivo, en tu puerta"
           }
         },
-        "c3": {
-          "type": "item",
+        "p3": {
+          "type": "confianza",
           "settings": {
-            "texto": "Tono visiblemente más parejo"
-          }
-        },
-        "c4": {
-          "type": "item",
-          "settings": {
-            "texto": "Pagas al recibir"
-          }
-        },
-        "c5": {
-          "type": "item",
-          "settings": {
-            "texto": "Con cúrcuma y ácido kójico"
-          }
-        },
-        "c6": {
-          "type": "item",
-          "settings": {
-            "texto": "El regalo de diciembre"
+            "icono": "escudo",
+            "titulo": "Compra protegida",
+            "texto": "Garantía y retracto de ley"
           }
         }
       },
       "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4",
-        "c5",
-        "c6"
+        "p1",
+        "p2",
+        "p3"
       ]
     },
     "activos": {
@@ -252,40 +167,6 @@
         "z6"
       ]
     },
-    "regalo": {
-      "type": "kf-regalo",
-      "settings": {
-        "producto": "dr-melaxin-peel-shot"
-      },
-      "blocks": {
-        "g1": {
-          "type": "punto",
-          "settings": {
-            "icono": "regalo",
-            "texto": "Un detalle de cuidado personal que sí se usa"
-          }
-        },
-        "g2": {
-          "type": "punto",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis hasta su puerta en toda Colombia"
-          }
-        },
-        "g3": {
-          "type": "punto",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas en efectivo cuando lo recibes"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3"
-      ]
-    },
     "seguro": {
       "type": "kf-seguro",
       "settings": {},
@@ -393,43 +274,14 @@
         "f6",
         "f7"
       ]
-    },
-    "cierre": {
-      "type": "kf-cierre",
-      "settings": {
-        "producto": "dr-melaxin-peel-shot"
-      },
-      "blocks": {
-        "x1": {
-          "type": "chip",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis"
-          }
-        },
-        "x2": {
-          "type": "chip",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas al recibir"
-          }
-        }
-      },
-      "block_order": [
-        "x1",
-        "x2"
-      ]
     }
   },
   "order": [
-    "hero",
-    "cinta",
+    "principal",
     "activos",
     "ritual",
     "zonas",
-    "regalo",
     "seguro",
-    "faq",
-    "cierre"
+    "faq"
   ]
 }

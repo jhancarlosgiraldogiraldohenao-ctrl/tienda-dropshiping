@@ -1,0 +1,67 @@
+{{ 'kf-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'kf-scripts.js' | asset_url }}" defer></script>
+
+{%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.selected_or_first_available_variant -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5.2vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="kf-section kf-cierre">
+  <div class="kf-container">
+    <div class="kf-cierre__caja kf-reveal">
+      <div class="kf-cierre__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="kf-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 style="margin-top: 16px">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if producto != blank -%}
+          <div class="kf-precio">
+            <strong>{{ v1.price | money_without_trailing_zeros }}</strong>
+            {%- if v1.compare_at_price > v1.price -%}<s>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.btn_texto != blank -%}
+          <a class="kf-btn" href="{{ section.settings.btn_url | default: producto.url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'kf-icono', nombre: 'flecha' %}</a>
+        {%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <div class="kf-cierre__chips">
+            {%- for block in section.blocks -%}<span class="kf-chip" {{ block.shopify_attributes }}>{% render 'kf-icono', nombre: block.settings.icono %}{{ block.settings.texto }}</span>{%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+      <div class="kf-cierre__foto">
+        {%- if section.settings.imagen != blank -%}
+          <img src="{{ section.settings.imagen | image_url: width: 900 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="900" height="1200">
+        {%- else -%}
+          <img src="{{ 'kf-estudio.jpg' | asset_url }}" alt="Spray Dr. Melaxin Peel Shot 200 ml" loading="lazy" width="1024" height="1536">
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Cierre",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Tu turno" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color café)", "default": "<p>Tu piel, en su <em>mejor versión.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Pídelo hoy y págalo cuando llegue a tu casa." },
+    { "type": "product", "id": "producto", "label": "Producto" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Pedir el mío" },
+    { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = producto)" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "chip", "name": "Garantía corta", "settings": [ { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "efectivo", "label": "Efectivo" }, { "value": "camion", "label": "Envío" }, { "value": "escudo", "label": "Garantía" }, { "value": "check", "label": "Check" } ], "default": "check" }, { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis" } ] }
+  ],
+  "max_blocks": 4,
+  "presets": [ { "name": "KF – Cierre" } ]
+}
+{% endschema %}
