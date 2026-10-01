@@ -23,7 +23,9 @@
         "sello_centro": "6+",
         "alineacion": "left",
         "titulo_size": 84,
-        "texto_size": 18
+        "texto_size": 18,
+        "btn2_texto": "Cómo funciona",
+        "btn2_url": "#como-funciona"
       },
       "blocks": {
         "b0": {
