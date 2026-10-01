@@ -51,3 +51,5 @@ Cliente paga (Mercado Pago) → DSers muestra pedido → "Pedir" (tarjeta) → A
 Descartados: Tienda VIP 89.085 (7 vendidos), Shop1105766789 77.279 (caro).
 
 Cambio (1-oct): principal = Shop1105361249 (71.037, sin aviso de oferta limitada). Baby Party y Ydou tenían 'oferta por reserva anticipada, quedan pocas'. Precios calculados sobre ~71.000.
+
+Decisión final (1-oct): pedir a Baby Party Store (63.428) mientras dure el precio; precios y cuentas calculados sobre 71.037 (Shop1105361249 = respaldo inmediato si sube). No prometer bolsa de regalo en la tienda (solo la trae el de 71.037).
