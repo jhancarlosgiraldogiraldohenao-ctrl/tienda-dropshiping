@@ -445,7 +445,8 @@
         "b0",
         "b1",
         "b2"
-      ]
+      ],
+      "disabled": true
     },
     "seguro": {
       "type": "hl-seguro",
@@ -605,6 +606,32 @@
       "block_order": [
         "b0",
         "b1"
+      ],
+      "disabled": true
+    },
+    "antes_despues": {
+      "type": "hl-antes-despues",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Antes y <em>después</em></p>",
+        "texto": "Desliza para ver cómo cambia tu sala con el arbolito Holly.",
+        "txt_antes": "Luces normales",
+        "txt_despues": "Con Holly",
+        "aviso": "Imágenes ilustrativas. La proyección se ve mejor con la luz apagada.",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "a1": {
+          "type": "caso",
+          "settings": {
+            "zona": "La sala",
+            "tiempo": "En segundos",
+            "nombre": ""
+          }
+        }
+      },
+      "block_order": [
+        "a1"
       ]
     }
   },
@@ -615,9 +642,10 @@
     "ritual",
     "zonas",
     "comparativa",
-    "regalo",
+    "antes_despues",
     "seguro",
     "faq",
+    "regalo",
     "cierre"
   ]
 }
