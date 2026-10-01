@@ -653,3 +653,7 @@ body { background: var(--hl-crema); }
   .hl-luces { height: 44px; }
   .hl-hero .hl-hero__grid { padding-top: 64px; }
 }
+/* antes / después de una sola escena */
+.hl-ad__grid:has(> .hl-ad__caso:only-child) { grid-template-columns: minmax(0, 760px); justify-content: center; }
+.hl-ad__comparador { aspect-ratio: 1 / 1; box-shadow: var(--hl-sombra); }
+.hl-ad__tag--despues { background: var(--hl-curcuma-hondo); }

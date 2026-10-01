@@ -626,7 +626,9 @@
           "settings": {
             "zona": "La sala",
             "tiempo": "En segundos",
-            "nombre": ""
+            "nombre": "",
+            "antes": "shopify://shop_images/holly-ia-antes.jpg",
+            "despues": "shopify://shop_images/holly-ia-sala-arbol.jpg"
           }
         }
       },
