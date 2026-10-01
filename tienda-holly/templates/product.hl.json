@@ -66,7 +66,7 @@
         "eyebrow": "Pequeño, pero mágico",
         "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
         "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
-        "imagen": "shopify://shop_images/holly-detalle.webp",
+        "imagen": "shopify://shop_images/holly-ia-nina.jpg",
         "nota": "Textura de pino realista, bolitas rojas y luces LED.",
         "ancla": "detalles",
         "titulo_size": 64
@@ -165,7 +165,7 @@
           "settings": {
             "zona": "La sala",
             "texto": "Prende la Navidad mientras ven películas en familia.",
-            "imagen": "shopify://shop_images/holly-sala.webp"
+            "imagen": "shopify://shop_images/holly-ia-familia.jpg"
           }
         },
         "b1": {
@@ -173,7 +173,7 @@
           "settings": {
             "zona": "Cuarto de los niños",
             "texto": "Una luz de noche que los hace soñar con Santa.",
-            "imagen": "shopify://shop_images/holly-disenos.webp"
+            "imagen": "shopify://shop_images/holly-ia-nina.jpg"
           }
         },
         "b2": {
@@ -181,7 +181,7 @@
           "settings": {
             "zona": "El techo",
             "texto": "Apúntalo hacia arriba y el techo se llena de copos y renos.",
-            "imagen": "shopify://shop_images/holly-hero.webp"
+            "imagen": "shopify://shop_images/holly-ia-techo.jpg"
           }
         },
         "b3": {
