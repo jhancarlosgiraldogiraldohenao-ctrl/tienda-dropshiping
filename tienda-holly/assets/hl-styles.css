@@ -661,3 +661,5 @@ body { background: var(--hl-crema); }
 .hl-hero .hl-hero__pack { color: #fff; font-weight: 700; box-shadow: inset 0 0 0 2px var(--hl-dorado); }
 .hl-hero .hl-hero__pack:hover { background: rgba(227, 182, 91, 0.12); box-shadow: inset 0 0 0 2px #f0c874; }
 .hl-hero.is-pack .hl-hero__pack { background: var(--hl-dorado); color: var(--hl-cafe); box-shadow: none; }
+.hl-galeria__min[hidden] { display: none !important; }
+.hl-galeria__min[data-grupo="pack"], .hl-galeria__min[data-grupo="uno"] { order: -1; }

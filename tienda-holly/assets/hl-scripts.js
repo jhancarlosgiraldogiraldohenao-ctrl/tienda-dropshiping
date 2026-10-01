@@ -84,6 +84,17 @@
           if (antes) { antes.textContent = r.dataset.compare; antes.hidden = !r.dataset.compare; }
           if (pct) { pct.textContent = r.dataset.pct; pct.hidden = !r.dataset.pct; }
           if (sComprar) sComprar.setAttribute('href', sComprar.getAttribute('href').replace(/\/\d+:\d+$/, '/' + r.value + ':1'));
+          var mins = document.querySelector('.hl-galeria__mins');
+          if (mins) {
+            var labels = c.querySelectorAll('[data-hl-oferta]');
+            var modo = (labels.length > 1 && r === labels[1]) ? 'pack' : 'uno';
+            mins.setAttribute('data-modo', modo);
+            mins.querySelectorAll('.hl-galeria__min').forEach(function (m) {
+              var gr = m.getAttribute('data-grupo');
+              m.hidden = gr !== 'todos' && gr !== modo;
+              m.classList.toggle('is-activo', gr === modo);
+            });
+          }
           if (foto && r.dataset.img && foto.getAttribute('src') !== r.dataset.img) {
             foto.style.opacity = 0;
             setTimeout(function () { foto.removeAttribute('srcset'); foto.src = r.dataset.img; foto.style.opacity = 1; }, 180);

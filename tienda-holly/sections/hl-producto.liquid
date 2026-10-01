@@ -15,7 +15,10 @@
   <div class="hl-container">
     <div class="hl-producto__grid">
       <div class="hl-galeria" data-hl-galeria>
-        {%- assign primera = product.featured_media -%}
+        {%- assign primera = variante.featured_media | default: product.featured_media -%}
+        {%- assign id_uno = product.variants[0].featured_media.id -%}
+        {%- assign id_pack = product.variants[1].featured_media.id -%}
+        {%- if variante.id == product.variants[1].id -%}{%- assign modo = 'pack' -%}{%- else -%}{%- assign modo = 'uno' -%}{%- endif -%}
         <div class="hl-galeria__principal">
           {%- if section.settings.sello != blank -%}<span class="hl-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
           {%- if primera -%}
@@ -25,10 +28,18 @@
           {%- endif -%}
         </div>
         {%- if product.media.size > 1 and section.settings.mostrar_miniaturas -%}
-          <div class="hl-galeria__mins">
+          <div class="hl-galeria__mins" data-modo="{{ modo }}">
             {%- for media in product.media -%}
               {%- if media.media_type == 'image' -%}
-                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-src="{{ media | image_url: width: 1200 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
+                {%- liquid
+                  assign grupo = 'todos'
+                  if product.variants.size > 1 and media.id == id_pack
+                    assign grupo = 'pack'
+                  elsif product.variants.size > 1 and media.id == id_uno
+                    assign grupo = 'uno'
+                  endif
+                -%}
+                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-grupo="{{ grupo }}"{% if grupo != 'todos' and grupo != modo %} hidden{% endif %} data-src="{{ media | image_url: width: 1200 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
                   <img src="{{ media | image_url: width: 180 }}" alt="" loading="lazy" width="90" height="90">
                 </button>
               {%- endif -%}
