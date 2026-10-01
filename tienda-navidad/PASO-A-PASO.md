@@ -41,3 +41,11 @@ Sin muestras, sin inversión previa. Mercado: Colombia. Fecha límite Navidad: 2
 
 ## Cada venta
 Cliente paga (Mercado Pago) → DSers muestra pedido → "Pedir" (tarjeta) → AliExpress envía → rastreo automático.
+
+## Proveedores AliExpress elegidos (30-sep-2026, todos Choice, envío gratis)
+| Rol | Tienda | Precio | Vendidos | ★ tienda | Entrega | Enlace |
+|---|---|---|---|---|---|---|
+| Principal | Baby Party Store | 63.428 (oferta reserva, quedan pocas) – variantes 1 u / 2 pcs | 5000+ | 4.2 | ~8 oct | https://es.aliexpress.com/item/1005013285307521.html |
+| Respaldo 1 | Ydou Party Store | 70.169 (incluye bolsa regalo) | 10.000+ | 4.1 | 7–19 oct | https://es.aliexpress.com/item/1005013296358591.html |
+| Respaldo 2 | Shop1105361249 Store | 71.037 (6 lentes + bolsa regalo) | 5000+ | 4.1 | ~8 oct | https://es.aliexpress.com/item/1005013296990278.html |
+Descartados: Tienda VIP 89.085 (7 vendidos), Shop1105766789 77.279 (caro).
