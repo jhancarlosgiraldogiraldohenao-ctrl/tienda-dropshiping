@@ -1,28 +1,32 @@
 /* =========================================================
-   KOJICFUR · estilos propios (prefijo hl-)
-   Concepto: "ritual de cúrcuma". Crema cálida, café espresso
-   y naranja cúrcuma (el color del frasco). Titulares en serif
-   editorial (Fraunces) con acentos en cursiva.
+   HOLLY · estilos propios (prefijo hl-)
+   Concepto: "noche de Navidad en casa". Verde pino profundo,
+   rojo acebo, dorado de lucecitas y crema cálido. Titulares en
+   Playfair Display con acentos en caligrafía (Great Vibes).
    ========================================================= */
 :root {
-  --hl-crema: #fbf6ef;
-  --hl-arena: #efe7da;
-  --hl-durazno: #f5dcd7;
-  --hl-cafe: #10291f;
-  --hl-cafe-2: #183a2c;
+  --hl-crema: #fbf5ea;
+  --hl-arena: #f3e9d8;
+  --hl-durazno: #f6dcd6;
+  --hl-cafe: #0e2219;
+  --hl-cafe-2: #163126;
   --hl-texto: #10291f;
-  --hl-texto-suave: #5b6a61;
-  --hl-curcuma: #c8283a;
-  --hl-curcuma-hondo: #9e1b2b;
-  --hl-curcuma-suave: rgba(200, 40, 58, 0.12);
+  --hl-texto-suave: #55665c;
+  --hl-curcuma: #d23142;
+  --hl-curcuma-hondo: #a81d2d;
+  --hl-curcuma-suave: rgba(210, 49, 66, 0.12);
+  --hl-dorado: #e3b65b;
+  --hl-dorado-suave: rgba(227, 182, 91, 0.16);
+  --hl-pino: #1d4a35;
   --hl-linea: rgba(16, 41, 31, 0.12);
-  --hl-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --hl-serif: 'Playfair Display', Georgia, serif;
+  --hl-script: 'Great Vibes', 'Playfair Display', cursive;
   --hl-fuente: 'Inter', -apple-system, 'Segoe UI', sans-serif;
   --hl-radio: 28px;
   --hl-radio-s: 14px;
   --hl-margen: clamp(18px, 4vw, 48px);
   --hl-ease: cubic-bezier(0.22, 1, 0.36, 1);
-  --hl-sombra: 0 30px 60px -30px rgba(16, 41, 31, 0.35);
+  --hl-sombra: 0 30px 60px -30px rgba(16, 41, 31, 0.45);
 }
 
 /* ---------- base ---------- */
@@ -42,8 +46,7 @@ body { background: var(--hl-crema); }
 .hl-section h1, .hl-section h2, .hl-section h3, .hl-section h4 {
   font-family: var(--hl-serif);
   font-weight: 400;
-  font-variation-settings: 'opsz' 120;
-  letter-spacing: -0.02em;
+    letter-spacing: -0.02em;
   line-height: 1.02;
   margin: 0;
   color: inherit;
@@ -508,3 +511,145 @@ cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; 
 .hl-ad__caso figcaption span { display: block; font-size: 13px; }
 .hl-ad__vacio { border: 2px dashed var(--hl-linea); border-radius: var(--hl-radio); padding: 30px; font-size: 14px; color: var(--hl-texto-suave); min-height: 200px; display: grid; place-items: center; text-align: center; }
 @media (max-width: 749px) { .hl-tabla__fila { grid-template-columns: minmax(0, 1fr) 84px 84px; } .hl-tabla__fila > span { padding: 14px 12px; font-size: 14px; } .hl-tabla__cabeza > span { font-size: 10.5px; letter-spacing: 0.04em; padding-left: 4px; padding-right: 4px; overflow-wrap: anywhere; } }
+
+/* =========================================================
+   CAPA NAVIDEÑA HOLLY
+   ========================================================= */
+body { background: var(--hl-crema); }
+.hl-section h1, .hl-section h2, .hl-section h3, .hl-section h4 { font-weight: 500; letter-spacing: -0.015em; line-height: 1.06; }
+.hl-section h1 em, .hl-section h2 em, .hl-section h3 em {
+  font-family: var(--hl-script); font-style: normal; font-weight: 400;
+  font-size: 1.22em; letter-spacing: 0; line-height: 0.9; color: var(--hl-curcuma-hondo);
+}
+.hl-oscuro { color: var(--hl-crema); }
+.hl-oscuro h1 em, .hl-oscuro h2 em, .hl-oscuro h3 em { color: var(--hl-dorado); }
+.hl-oscuro .hl-eyebrow { color: var(--hl-dorado); }
+.hl-oscuro .hl-eyebrow::before { box-shadow: 0 0 0 4px var(--hl-dorado-suave), 0 0 14px 2px rgba(227, 182, 91, 0.7); }
+.hl-oscuro p { color: rgba(251, 245, 234, 0.78); }
+.hl-btn--oro { --b: var(--hl-dorado); color: var(--hl-cafe); box-shadow: 0 14px 30px -12px rgba(227, 182, 91, 0.55); }
+.hl-btn--oro:hover { background: #f0c874; }
+.hl-oscuro .hl-btn--curcuma { box-shadow: 0 14px 34px -10px rgba(210, 49, 66, 0.7); }
+
+/* fondo de noche reutilizable */
+.hl-noche {
+  background:
+    radial-gradient(900px 520px at 82% 18%, rgba(227, 182, 91, 0.16), transparent 60%),
+    radial-gradient(700px 480px at 8% 92%, rgba(210, 49, 66, 0.18), transparent 65%),
+    linear-gradient(180deg, #0b1d15 0%, #0e2219 55%, #10291f 100%) !important;
+  color: var(--hl-crema);
+}
+
+/* nieve cayendo (solo CSS) */
+.hl-nieve { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+.hl-nieve::before, .hl-nieve::after {
+  content: ''; position: absolute; inset: 0;
+  background-image:
+    radial-gradient(2.4px 2.4px at 18px 26px, rgba(255,255,255,0.95), transparent),
+    radial-gradient(1.8px 1.8px at 72px 118px, rgba(255,255,255,0.85), transparent),
+    radial-gradient(2.8px 2.8px at 132px 64px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1.6px 1.6px at 168px 168px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(2.2px 2.2px at 96px 182px, rgba(255,255,255,0.9), transparent),
+    radial-gradient(1.4px 1.4px at 44px 150px, rgba(255,255,255,0.7), transparent);
+  background-size: 200px 200px;
+  animation: hl-nieva 22s linear infinite;
+  opacity: 0.55;
+}
+.hl-nieve::after { background-size: 300px 300px; animation-duration: 34s; opacity: 0.35; filter: blur(0.6px); }
+@keyframes hl-nieva { from { background-position: 0 0; } to { background-position: 0 600px; } }
+
+/* guirnalda de lucecitas */
+.hl-luces {
+  position: absolute; top: 0; left: 0; right: 0; height: 52px; z-index: 3;
+  display: flex; overflow: hidden; pointer-events: none;
+  background: radial-gradient(circle at 50% -6px, transparent 30px, #2b4a3a 30px 32px, transparent 32.5px) repeat-x;
+  background-size: 64px 28px;
+}
+.hl-luces span { flex: none; width: 64px; position: relative; }
+.hl-luces span::before {
+  content: ''; position: absolute; left: 50%; top: 24px; width: 11px; height: 16px; margin-left: -5.5px;
+  border-radius: 50% 50% 48% 48% / 40% 40% 60% 60%;
+  background: var(--c, #e3b65b); box-shadow: 0 0 12px 3px var(--c, #e3b65b), 0 0 26px 6px color-mix(in srgb, var(--c, #e3b65b) 40%, transparent);
+  animation: hl-titila 2.4s ease-in-out infinite; animation-delay: calc(var(--d, 0) * -0.37s);
+}
+.hl-luces span::after { content: ''; position: absolute; left: 50%; top: 20px; width: 6px; height: 6px; margin-left: -3px; border-radius: 2px; background: #2b4a3a; }
+.hl-luces span:nth-child(4n+1) { --c: #ff4757; --d: 1; }
+.hl-luces span:nth-child(4n+2) { --c: #ffd36b; --d: 3; }
+.hl-luces span:nth-child(4n+3) { --c: #4cd387; --d: 5; }
+.hl-luces span:nth-child(4n+4) { --c: #fff3d6; --d: 2; }
+@keyframes hl-titila { 0%, 100% { opacity: 1; filter: brightness(1.15); } 50% { opacity: 0.45; filter: brightness(0.8); } }
+@media (prefers-reduced-motion: reduce) { .hl-nieve::before, .hl-nieve::after, .hl-luces span::before { animation: none; } }
+
+/* HERO navideño */
+.hl-hero.hl-noche .hl-container { position: relative; z-index: 1; }
+.hl-hero .hl-hero__grid { padding-top: clamp(70px, 8vw, 110px); }
+.hl-hero.hl-oscuro .hl-hero__sub { color: rgba(251, 245, 234, 0.8); }
+.hl-hero.hl-oscuro .hl-precio s { color: rgba(251, 245, 234, 0.55); }
+.hl-hero.hl-oscuro .hl-precio strong { color: #fff; }
+.hl-hero.hl-oscuro .hl-precio__nota { color: rgba(251, 245, 234, 0.65); }
+.hl-hero.hl-oscuro .hl-chip { background: rgba(255, 255, 255, 0.07); border-color: rgba(251, 245, 234, 0.16); color: var(--hl-crema); }
+.hl-hero.hl-oscuro .hl-chip svg { color: var(--hl-dorado); }
+.hl-hero .hl-arco { aspect-ratio: 4 / 5; box-shadow: 0 0 0 1px rgba(227, 182, 91, 0.35), 0 40px 80px -30px rgba(0, 0, 0, 0.7), 0 0 90px -20px rgba(227, 182, 91, 0.35); background: #0b1d15; }
+.hl-hero .hl-arco img { object-position: 72% 50%; }
+.hl-hero .hl-sello { background: var(--hl-curcuma-hondo); }
+.hl-hero .hl-sello b { color: #fff; }
+.hl-flotante { background: rgba(255, 252, 245, 0.92); color: var(--hl-texto); }
+
+/* CINTA roja */
+.hl-cinta { background: linear-gradient(90deg, #8f1726, #b3202f 50%, #8f1726) !important; }
+.hl-cinta__item { font-family: var(--hl-serif); }
+.hl-cinta__item svg { color: var(--hl-dorado); }
+
+/* COMO FUNCIONA (ritual) de noche */
+.hl-ritual.hl-noche .hl-paso__num { background: rgba(255, 255, 255, 0.05); border-color: rgba(227, 182, 91, 0.45); color: var(--hl-dorado); box-shadow: 0 0 30px -8px rgba(227, 182, 91, 0.45); }
+.hl-ritual.hl-noche .hl-paso:hover .hl-paso__num { background: var(--hl-dorado); color: var(--hl-cafe); }
+.hl-ritual.hl-noche .hl-ritual__pasos::before { background: repeating-linear-gradient(90deg, var(--hl-dorado) 0 6px, transparent 6px 12px); }
+.hl-ritual.hl-noche .hl-paso p { color: rgba(251, 245, 234, 0.72); }
+.hl-ritual.hl-noche .hl-ritual__nota { background: rgba(255, 255, 255, 0.06); color: rgba(251, 245, 234, 0.8); }
+.hl-ritual.hl-noche .hl-ritual__nota svg { color: var(--hl-dorado); }
+
+/* tarjetas y bloques claros con toque navideño */
+.hl-activo, .hl-tarjeta { background: #fffdf8; }
+.hl-activos__visual .hl-arco, .hl-zonas__panel, .hl-regalo__foto { aspect-ratio: 4 / 5; }
+.hl-zona-btn.is-activa { background: var(--hl-curcuma-hondo); border-color: var(--hl-curcuma-hondo); }
+
+/* REGALO: rojo profundo */
+.hl-regalo { background: radial-gradient(800px 500px at 80% 30%, rgba(227, 182, 91, 0.18), transparent 60%), linear-gradient(160deg, #6e101c 0%, #8f1726 55%, #5c0d17 100%) !important; }
+.hl-regalo::before { display: none; }
+.hl-regalo__lista svg { color: var(--hl-dorado); }
+.hl-regalo .hl-precio s { color: rgba(251, 245, 234, 0.6); }
+.hl-regalo .hl-precio__pct { background: var(--hl-dorado); color: var(--hl-cafe); }
+.hl-regalo .hl-btn--curcuma { --b: var(--hl-dorado); color: var(--hl-cafe); }
+
+/* FAQ de noche */
+.hl-faq.hl-noche .hl-faq__lista, .hl-faq.hl-noche details { border-color: rgba(251, 245, 234, 0.14); }
+.hl-faq.hl-noche summary i { border-color: rgba(251, 245, 234, 0.25); }
+.hl-faq.hl-noche details[open] summary i { background: var(--hl-dorado); color: var(--hl-cafe); }
+.hl-faq.hl-noche details > div { color: rgba(251, 245, 234, 0.75); }
+.hl-faq.hl-noche .hl-cabecera p { color: rgba(251, 245, 234, 0.72); }
+
+/* CIERRE */
+.hl-cierre__caja { background: radial-gradient(600px 400px at 85% 20%, rgba(227, 182, 91, 0.25), transparent 60%), linear-gradient(135deg, #163126 0%, #0e2219 100%); color: var(--hl-crema); }
+.hl-cierre h2 em { color: var(--hl-dorado); }
+.hl-cierre__texto > p { color: rgba(251, 245, 234, 0.78); }
+.hl-cierre .hl-precio s { color: rgba(251, 245, 234, 0.55); }
+.hl-cierre .hl-btn { --b: var(--hl-dorado); color: var(--hl-cafe); }
+.hl-cierre .hl-chip { background: rgba(255, 255, 255, 0.07); border-color: rgba(251, 245, 234, 0.16); color: var(--hl-crema); }
+.hl-cierre__foto { aspect-ratio: 1 / 1; }
+
+/* producto */
+.hl-galeria__principal { aspect-ratio: 1 / 1; }
+
+/* header y footer */
+.header-wrapper { border-bottom-color: rgba(251, 245, 234, 0.1) !important; }
+.hl-wordmark { font-family: var(--hl-script) !important; font-weight: 400 !important; font-size: 40px !important; letter-spacing: 0 !important; }
+.hl-wordmark svg { width: 30px !important; height: 30px !important; }
+.hl-footer { background: #0a1a13 !important; }
+.hl-footer h4 { color: var(--hl-dorado) !important; }
+.hl-footer a:hover { color: var(--hl-dorado) !important; }
+.hl-footer__gigante { font-family: var(--hl-script) !important; font-style: normal !important; }
+@media (max-width: 749px) {
+  .hl-wordmark { font-size: 32px !important; }
+  .hl-wordmark svg { width: 24px !important; height: 24px !important; }
+  .hl-luces { height: 44px; }
+  .hl-hero .hl-hero__grid { padding-top: 64px; }
+}

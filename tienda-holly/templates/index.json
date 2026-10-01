@@ -3,68 +3,66 @@
     "hero": {
       "type": "hl-hero",
       "settings": {
-        "producto": "dr-melaxin-peel-shot",
-        "imagen_pack": "shopify://shop_images/hl-pack-piedra.jpg"
+        "eyebrow": "Holly · Navidad 2026",
+        "titulo": "<p>Convierte tu cuarto en una <em>noche de Navidad</em></p>",
+        "sub": "Un arbolito con luces que proyecta Santas, copos de nieve y renos en el techo. Lo conectas por USB y en segundos tu casa se llena de magia.",
+        "producto": "arbolito-proyector-navideno",
+        "mostrar_precio": true,
+        "nota_precio": "Envío gratis a toda Colombia · Pago seguro con Mercado Pago",
+        "btn1_texto": "Quiero mi arbolito",
+        "mostrar_pack": true,
+        "pack_texto": "Pack x2 para regalar",
+        "pack_ahorro": "ahorra",
+        "pack_comprar": "Llevar el pack x2",
+        "pack_volver": "← Volver a 1 arbolito",
+        "pack_sello": "x2",
+        "imagen": "shopify://shop_images/holly-hero.webp",
+        "imagen_pack": "shopify://shop_images/holly-regalo.webp",
+        "alt_imagen": "Arbolito proyector navideño iluminando una sala",
+        "sello_texto": "envío gratis · navidad 2026 · ",
+        "sello_centro": "6+",
+        "alineacion": "left",
+        "titulo_size": 84,
+        "texto_size": 18
       },
       "blocks": {
-        "h1": {
+        "b0": {
           "type": "flotante",
           "settings": {
-            "icono": "hoja",
-            "titulo": "Cúrcuma",
-            "texto": "Luz y calidez",
-            "modo": "uno"
+            "modo": "uno",
+            "icono": "copo",
+            "titulo": "6+ diseños",
+            "texto": "Santa, copos y renos"
           }
         },
-        "h2": {
+        "b1": {
           "type": "flotante",
           "settings": {
-            "icono": "brillo",
-            "titulo": "Ácido kójico",
-            "texto": "Tono más parejo",
-            "modo": "uno"
+            "modo": "uno",
+            "icono": "usb",
+            "titulo": "Conexión USB",
+            "texto": "Cargador, PC o power bank"
           }
         },
-        "h3": {
+        "b2": {
           "type": "flotante",
           "settings": {
-            "icono": "gota",
-            "titulo": "Niacinamida",
-            "texto": "Textura uniforme",
-            "modo": "uno"
+            "modo": "uno",
+            "icono": "arbol",
+            "titulo": "Cuerpo flexible",
+            "texto": "Apúntalo donde quieras"
           }
         },
-        "h4": {
+        "b3": {
           "type": "flotante",
           "settings": {
-            "icono": "capas",
-            "titulo": "AHA + PHA",
-            "texto": "Exfoliación suave",
-            "modo": "uno"
+            "modo": "uno",
+            "icono": "regalo",
+            "titulo": "Regalo perfecto",
+            "texto": "Para grandes y chicos"
           }
         },
-        "h5": {
-          "type": "chip",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis"
-          }
-        },
-        "h6": {
-          "type": "chip",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas al recibir"
-          }
-        },
-        "h7": {
-          "type": "chip",
-          "settings": {
-            "icono": "spray",
-            "texto": "200 ml"
-          }
-        },
-        "hp1": {
+        "b4": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
@@ -73,529 +71,538 @@
             "texto": "El detalle de Navidad"
           }
         },
-        "hp2": {
+        "b5": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
             "icono": "brillo",
-            "titulo": "Ahorra 30%",
+            "titulo": "Ahorras $39.900",
             "texto": "Frente a 2 sueltos"
           }
         },
-        "hp3": {
+        "b6": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "spray",
-            "titulo": "2 × 200 ml",
-            "texto": "Rutina para meses"
+            "icono": "casa",
+            "titulo": "2 arbolitos",
+            "texto": "Sala y cuarto de los niños"
           }
         },
-        "hp4": {
+        "b7": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
             "icono": "camion",
             "titulo": "Un solo envío",
-            "texto": "Gratis · pagas al recibir"
-          }
-        }
-      },
-      "block_order": [
-        "h1",
-        "h2",
-        "h3",
-        "h4",
-        "hp1",
-        "hp2",
-        "hp3",
-        "hp4",
-        "h5",
-        "h6",
-        "h7"
-      ]
-    },
-    "cinta": {
-      "type": "hl-cinta",
-      "settings": {},
-      "blocks": {
-        "c1": {
-          "type": "item",
-          "settings": {
-            "texto": "Piel más suave"
+            "texto": "Gratis a toda Colombia"
           }
         },
-        "c2": {
-          "type": "item",
-          "settings": {
-            "texto": "Envío gratis a toda Colombia"
-          }
-        },
-        "c3": {
-          "type": "item",
-          "settings": {
-            "texto": "Tono visiblemente más parejo"
-          }
-        },
-        "c4": {
-          "type": "item",
-          "settings": {
-            "texto": "Pagas al recibir"
-          }
-        },
-        "c5": {
-          "type": "item",
-          "settings": {
-            "texto": "Con cúrcuma y ácido kójico"
-          }
-        },
-        "c6": {
-          "type": "item",
-          "settings": {
-            "texto": "El regalo de diciembre"
-          }
-        }
-      },
-      "block_order": [
-        "c1",
-        "c2",
-        "c3",
-        "c4",
-        "c5",
-        "c6"
-      ]
-    },
-    "activos": {
-      "type": "hl-activos",
-      "settings": {},
-      "blocks": {
-        "a1": {
-          "type": "activo",
-          "settings": {
-            "icono": "brillo",
-            "titulo": "Ácido kójico",
-            "texto": "De alta pureza. Ayuda a mejorar visualmente las manchas y el tono desigual."
-          }
-        },
-        "a2": {
-          "type": "activo",
-          "settings": {
-            "icono": "hoja",
-            "titulo": "Cúrcuma",
-            "texto": "Ingrediente tradicional asociado a una piel de aspecto luminoso y cálido."
-          }
-        },
-        "a3": {
-          "type": "activo",
-          "settings": {
-            "icono": "gota",
-            "titulo": "Niacinamida",
-            "texto": "Favorece una apariencia más uniforme y una textura más fina."
-          }
-        },
-        "a4": {
-          "type": "activo",
-          "settings": {
-            "icono": "capas",
-            "titulo": "AHA + PHA",
-            "texto": "Exfoliantes suaves que retiran células muertas y dejan la piel lisa al tacto."
-          }
-        }
-      },
-      "block_order": [
-        "a1",
-        "a2",
-        "a3",
-        "a4"
-      ]
-    },
-    "ritual": {
-      "type": "hl-ritual",
-      "settings": {},
-      "blocks": {
-        "r1": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Rocía",
-            "texto": "Sobre la piel limpia y seca, en la zona que quieras cuidar."
-          }
-        },
-        "r2": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Espera",
-            "texto": "Distribuye suave, sin frotar, y deja actuar según indica el envase."
-          }
-        },
-        "r3": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Enjuaga e hidrata",
-            "texto": "Retira con agua y termina con tu crema de siempre. Listo."
-          }
-        }
-      },
-      "block_order": [
-        "r1",
-        "r2",
-        "r3"
-      ]
-    },
-    "zonas": {
-      "type": "hl-zonas",
-      "settings": {},
-      "blocks": {
-        "z1": {
-          "type": "zona",
-          "settings": {
-            "zona": "Codos",
-            "texto": "Suaviza la piel áspera y reseca por el roce del día a día.",
-            "imagen": "shopify://shop_images/hl-zona-codos-spray.jpg"
-          }
-        },
-        "z2": {
-          "type": "zona",
-          "settings": {
-            "zona": "Rodillas",
-            "texto": "Ayuda a que se vean más parejas antes de ponerte short o vestido.",
-            "imagen": "shopify://shop_images/hl-zona-rodillas.jpg"
-          }
-        },
-        "z3": {
-          "type": "zona",
-          "settings": {
-            "zona": "Espalda",
-            "texto": "El spray llega solito a donde tus manos no alcanzan.",
-            "imagen": "shopify://shop_images/hl-zona-espalda-spray.jpg"
-          }
-        },
-        "z4": {
-          "type": "zona",
-          "settings": {
-            "zona": "Piernas",
-            "texto": "Textura más lisa y una apariencia luminosa para la temporada de playa.",
-            "imagen": "shopify://shop_images/hl-zona-piernas.jpg"
-          }
-        },
-        "z5": {
-          "type": "zona",
-          "settings": {
-            "zona": "Brazos",
-            "texto": "Renueva la superficie y deja la piel suave al tacto.",
-            "imagen": "shopify://shop_images/hl-zona-brazos.jpg"
-          }
-        },
-        "z6": {
-          "type": "zona",
-          "settings": {
-            "zona": "Pies",
-            "texto": "Ideal para talones y zonas con piel gruesa o reseca.",
-            "imagen": "shopify://shop_images/hl-zona-pies.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "z1",
-        "z2",
-        "z3",
-        "z4",
-        "z5",
-        "z6"
-      ]
-    },
-    "regalo": {
-      "type": "hl-regalo",
-      "settings": {
-        "producto": "dr-melaxin-peel-shot",
-        "eyebrow": "Pack x2 · Temporada de regalos",
-        "titulo": "<p>Uno para ti, <em>otro para regalar.</em></p>",
-        "texto": "Llévate dos sprays y ahorra. Para mamá, la tía, la novia o tu amiga secreta: un detalle de cuidado personal que sí se usa."
-      },
-      "blocks": {
-        "g1": {
-          "type": "punto",
-          "settings": {
-            "icono": "regalo",
-            "texto": "Dos sprays de 200 ml, cada uno para varias semanas"
-          }
-        },
-        "g2": {
-          "type": "punto",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis hasta su puerta en toda Colombia"
-          }
-        },
-        "g3": {
-          "type": "punto",
-          "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas en efectivo cuando lo recibes"
-          }
-        }
-      },
-      "block_order": [
-        "g1",
-        "g2",
-        "g3"
-      ],
-      "disabled": true
-    },
-    "seguro": {
-      "type": "hl-seguro",
-      "settings": {},
-      "blocks": {
-        "s1": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "mano",
-            "titulo": "Prueba primero",
-            "texto": "Aplica en una zona pequeña antes del primer uso."
-          }
-        },
-        "s2": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "sol",
-            "titulo": "Protector solar",
-            "texto": "De día, protege las zonas expuestas al sol."
-          }
-        },
-        "s3": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "ojo",
-            "titulo": "Lejos de los ojos",
-            "texto": "Evita ojos, labios y mucosas."
-          }
-        },
-        "s4": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "escudo",
-            "titulo": "Piel sana",
-            "texto": "No lo uses sobre heridas ni piel recién depilada o irritada."
-          }
-        }
-      },
-      "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
-      ]
-    },
-    "faq": {
-      "type": "hl-faq",
-      "settings": {},
-      "blocks": {
-        "f1": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>En efectivo, cuando el pedido llega a tu casa. No necesitas tarjeta ni pagar nada por adelantado.</p>"
-          }
-        },
-        "f2": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada: el envío es gratis a toda Colombia. Si no estás o rechazas el pedido al momento de la entrega, se cobra el valor del flete.</p>"
-          }
-        },
-        "f3": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 2 y 7 días hábiles, según tu ciudad. Te llega con número de guía para rastrearlo.</p>"
-          }
-        },
-        "f4": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cada cuánto lo uso?",
-            "respuesta": "<p>Empieza 2 o 3 veces por semana y aumenta según cómo responda tu piel. Siempre hidrata después y usa protector solar de día.</p>"
-          }
-        },
-        "f5": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Sirve para la cara?",
-            "respuesta": "<p>Está pensado para el cuerpo: brazos, piernas, espalda, codos, rodillas, manos y pies.</p>"
-          }
-        },
-        "f6": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuándo veo cambios?",
-            "respuesta": "<p>La sensación de piel suave se nota desde las primeras aplicaciones. La apariencia del tono mejora con el uso constante; los resultados varían según cada piel.</p>"
-          }
-        },
-        "f7": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto me dura?",
-            "respuesta": "<p>El frasco trae 200 ml, suficiente para varias semanas de uso regular.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4",
-        "f5",
-        "f6",
-        "f7"
-      ]
-    },
-    "cierre": {
-      "type": "hl-cierre",
-      "settings": {
-        "producto": "dr-melaxin-peel-shot"
-      },
-      "blocks": {
-        "x1": {
+        "b8": {
           "type": "chip",
           "settings": {
             "icono": "camion",
             "texto": "Envío gratis"
           }
         },
-        "x2": {
+        "b9": {
           "type": "chip",
           "settings": {
-            "icono": "efectivo",
-            "texto": "Pagas al recibir"
+            "icono": "candado",
+            "texto": "Pago seguro"
+          }
+        },
+        "b10": {
+          "type": "chip",
+          "settings": {
+            "icono": "escudo",
+            "texto": "Garantía de entrega"
           }
         }
       },
       "block_order": [
-        "x1",
-        "x2"
-      ],
-      "disabled": true
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9",
+        "b10"
+      ]
     },
-    "progreso": {
-      "type": "hl-progreso",
-      "settings": {},
+    "cinta": {
+      "type": "hl-cinta",
+      "settings": {
+        "etiqueta": "Diseños que proyecta"
+      },
       "blocks": {
-        "t1": {
-          "type": "etapa",
+        "b0": {
+          "type": "item",
           "settings": {
-            "cuando": "Desde el día 1",
-            "titulo": "Piel más suave",
-            "texto": "Al enjuagar sientes la piel lisa al tacto, sin la aspereza de las células muertas."
+            "texto": "Santa Claus"
           }
         },
-        "t2": {
-          "type": "etapa",
+        "b1": {
+          "type": "item",
           "settings": {
-            "cuando": "Semana 2",
-            "titulo": "Textura pareja",
-            "texto": "Codos, rodillas y piernas se sienten y se ven más uniformes y menos resecos."
+            "texto": "Copos de nieve"
           }
         },
-        "t3": {
-          "type": "etapa",
+        "b2": {
+          "type": "item",
           "settings": {
-            "cuando": "Semana 4 en adelante",
-            "titulo": "Tono más luminoso",
-            "texto": "Las manchas y zonas oscuras se ven más claras y la piel luce más pareja y radiante."
+            "texto": "Envío gratis a toda Colombia"
+          }
+        },
+        "b3": {
+          "type": "item",
+          "settings": {
+            "texto": "Renos"
+          }
+        },
+        "b4": {
+          "type": "item",
+          "settings": {
+            "texto": "Muñecos de nieve"
+          }
+        },
+        "b5": {
+          "type": "item",
+          "settings": {
+            "texto": "Pago seguro con Mercado Pago"
+          }
+        },
+        "b6": {
+          "type": "item",
+          "settings": {
+            "texto": "Campanas"
+          }
+        },
+        "b7": {
+          "type": "item",
+          "settings": {
+            "texto": "Arbolitos de colores"
           }
         }
       },
       "block_order": [
-        "t1",
-        "t2",
-        "t3"
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ]
+    },
+    "activos": {
+      "type": "hl-activos",
+      "settings": {
+        "eyebrow": "Pequeño, pero mágico",
+        "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
+        "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
+        "imagen": "shopify://shop_images/holly-detalle.webp",
+        "nota": "Textura de pino realista, bolitas rojas y luces LED.",
+        "ancla": "detalles",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "activo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Luces LED cálidas",
+            "texto": "El arbolito brilla con lucecitas doradas y bolitas rojas, como un pino de verdad en miniatura."
+          }
+        },
+        "b1": {
+          "type": "activo",
+          "settings": {
+            "icono": "copo",
+            "titulo": "6+ diseños navideños",
+            "texto": "Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos llenando tu techo."
+          }
+        },
+        "b2": {
+          "type": "activo",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Flexible y resistente",
+            "texto": "Dobla el cuerpo para apuntar al techo o a la pared, en el ángulo que más te guste."
+          }
+        },
+        "b3": {
+          "type": "activo",
+          "settings": {
+            "icono": "usb",
+            "titulo": "Se conecta por USB",
+            "texto": "Funciona con el cargador de tu celular, el computador o un power bank. Sin pilas ni instalación."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "ritual": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "Así de fácil",
+        "titulo": "<p>Tres pasos y <em>listo</em></p>",
+        "texto": "Sin apps, sin pilas y sin instalar nada.",
+        "nota": "No incluye adaptador de pared: usa el cargador USB de tu celular.",
+        "ancla": "como-funciona",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Conecta",
+            "texto": "A cualquier puerto USB: el cargador de tu celular, el computador o un power bank."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Apunta",
+            "texto": "Dobla el arbolito hacia el techo o la pared, donde quieras ver la magia."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Disfruta",
+            "texto": "Apaga la luz y mira cómo todo se llena de Santas, copos y renos."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "zonas": {
+      "type": "hl-zonas",
+      "settings": {
+        "eyebrow": "Ideas para tu casa",
+        "titulo": "<p>Magia en <em>cada rincón</em></p>",
+        "texto": "Toca un lugar para ver la idea.",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "zona",
+          "settings": {
+            "zona": "La sala",
+            "texto": "Prende la Navidad mientras ven películas en familia.",
+            "imagen": "shopify://shop_images/holly-sala.webp"
+          }
+        },
+        "b1": {
+          "type": "zona",
+          "settings": {
+            "zona": "Cuarto de los niños",
+            "texto": "Una luz de noche que los hace soñar con Santa.",
+            "imagen": "shopify://shop_images/holly-disenos.webp"
+          }
+        },
+        "b2": {
+          "type": "zona",
+          "settings": {
+            "zona": "El techo",
+            "texto": "Apúntalo hacia arriba y el techo se llena de copos y renos.",
+            "imagen": "shopify://shop_images/holly-hero.webp"
+          }
+        },
+        "b3": {
+          "type": "zona",
+          "settings": {
+            "zona": "Para regalar",
+            "texto": "Un detalle diferente para el amigo secreto o la familia.",
+            "imagen": "shopify://shop_images/holly-regalo.webp"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
       ]
     },
     "comparativa": {
       "type": "hl-comparativa",
       "settings": {
-        "col_otros": "Otros exfoliantes"
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Más que <em>una luz</em></p>",
+        "texto": "Frente a las instalaciones de luces de siempre.",
+        "col_nos": "Arbolito Holly",
+        "col_otros": "Luces comunes",
+        "titulo_size": 60
       },
       "blocks": {
-        "c0": {
+        "b0": {
           "type": "fila",
           "settings": {
-            "texto": "Llega sola a la espalda y zonas difíciles",
+            "texto": "Proyecta figuras navideñas en techo y paredes",
             "nos": true,
             "otros": false
           }
         },
-        "c1": {
+        "b1": {
           "type": "fila",
           "settings": {
-            "texto": "Exfolia sin raspar ni frotar fuerte",
+            "texto": "Se pone en segundos, sin escalera ni clavos",
             "nos": true,
             "otros": false
           }
         },
-        "c2": {
+        "b2": {
           "type": "fila",
           "settings": {
-            "texto": "Con ácido kójico y niacinamida para el tono",
+            "texto": "Funciona con cualquier cargador USB",
             "nos": true,
             "otros": false
           }
         },
-        "c3": {
+        "b3": {
           "type": "fila",
           "settings": {
-            "texto": "Deja la piel luminosa, no solo lisa",
+            "texto": "Sirve como luz de noche para los niños",
             "nos": true,
             "otros": false
           }
         },
-        "c4": {
+        "b4": {
           "type": "fila",
           "settings": {
-            "texto": "Se enjuaga fácil en la ducha",
+            "texto": "Le da ambiente navideño a tu casa",
             "nos": true,
             "otros": true
           }
         }
       },
       "block_order": [
-        "c0",
-        "c1",
-        "c2",
-        "c3",
-        "c4"
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
       ]
     },
-    "antes_despues": {
-      "type": "hl-antes-despues",
-      "settings": {},
+    "regalo": {
+      "type": "hl-regalo",
+      "settings": {
+        "producto": "arbolito-proyector-navideno",
+        "variante_num": 2,
+        "eyebrow": "Pack x2 · Temporada de regalos",
+        "titulo": "<p>Uno para ti, <em>otro para regalar</em></p>",
+        "texto": "Llévate dos arbolitos y ahorra. Uno para la sala y otro para el cuarto de los niños… o para ese regalo que todavía no tienes.",
+        "imagen": "shopify://shop_images/holly-regalo.webp",
+        "mostrar_precio": true,
+        "texto_ahorro": "Ahorras",
+        "nota_precio": "2 arbolitos · Envío gratis · Pago seguro",
+        "compra_directa": true,
+        "btn_texto": "Llevar el pack x2",
+        "titulo_size": 72
+      },
       "blocks": {
-        "a0": {
-          "type": "caso",
+        "b0": {
+          "type": "punto",
           "settings": {
-            "zona": "Codos",
-            "tiempo": "4 semanas"
+            "icono": "regalo",
+            "texto": "Dos arbolitos proyectores con luces LED"
           }
         },
-        "a1": {
-          "type": "caso",
+        "b1": {
+          "type": "punto",
           "settings": {
-            "zona": "Rodillas",
-            "tiempo": "4 semanas"
+            "icono": "camion",
+            "texto": "Envío gratis en un solo paquete"
           }
         },
-        "a2": {
-          "type": "caso",
+        "b2": {
+          "type": "punto",
           "settings": {
-            "zona": "Axilas y piernas",
-            "tiempo": "4 semanas"
+            "icono": "escudo",
+            "texto": "Si no llega, te devolvemos tu dinero"
           }
         }
       },
       "block_order": [
-        "a0",
-        "a1",
-        "a2"
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "seguro": {
+      "type": "hl-seguro",
+      "settings": {
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
+        "texto": "Así funciona tu pedido, paso a paso.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Pagas con Mercado Pago: tarjeta, PSE, Nequi o Efecty."
+          }
+        },
+        "b1": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia, con número de rastreo en tu correo."
+          }
+        },
+        "b2": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Llega a tiempo",
+            "texto": "Pide antes del 25 de noviembre y recíbelo antes de Navidad."
+          }
+        },
+        "b3": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Lo que todos <em>preguntan</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Con Mercado Pago, 100% seguro: tarjeta de crédito o débito, PSE, Nequi o efectivo en Efecty. Pagas al hacer tu pedido.</p>"
+          }
+        },
+        "b1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tarda en llegar?",
+            "respuesta": "<p>Entre 8 y 20 días hábiles según tu ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+          }
+        },
+        "b2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Sí, si haces tu pedido antes del 25 de noviembre.</p>"
+          }
+        },
+        "b3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
+          }
+        },
+        "b4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo se conecta?",
+            "respuesta": "<p>Por USB. No incluye adaptador de pared: funciona con el cargador de tu celular, el computador o un power bank.</p>"
+          }
+        },
+        "b5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué diseños proyecta?",
+            "respuesta": "<p>Más de 6 escenas navideñas: Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos.</p>"
+          }
+        },
+        "b6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se ve de día?",
+            "respuesta": "<p>La proyección se ve mejor con la luz apagada o en penumbra. Las lucecitas del arbolito sí se ven siempre.</p>"
+          }
+        },
+        "b7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no llega o llega dañado?",
+            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ]
+    },
+    "cierre": {
+      "type": "hl-cierre",
+      "settings": {
+        "producto": "arbolito-proyector-navideno",
+        "eyebrow": "Navidad 2026",
+        "titulo": "<p>Este año, <em>que brille tu casa</em></p>",
+        "texto": "Pídelo hoy y recíbelo a tiempo para la Navidad.",
+        "imagen": "shopify://shop_images/holly-disenos.webp",
+        "btn_texto": "Quiero mi arbolito",
+        "titulo_size": 72
+      },
+      "blocks": {
+        "b0": {
+          "type": "chip",
+          "settings": {
+            "icono": "camion",
+            "texto": "Envío gratis"
+          }
+        },
+        "b1": {
+          "type": "chip",
+          "settings": {
+            "icono": "candado",
+            "texto": "Pago seguro"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1"
       ]
     }
   },
@@ -603,14 +610,12 @@
     "hero",
     "cinta",
     "activos",
-    "progreso",
     "ritual",
     "zonas",
     "comparativa",
-    "antes_despues",
+    "regalo",
     "seguro",
     "faq",
-    "regalo",
     "cierre"
   ]
 }

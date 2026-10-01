@@ -3,11 +3,33 @@
     "principal": {
       "type": "hl-producto",
       "settings": {
-        "titulo_corto": "Exfoliante corporal en spray",
-        "sticky_texto": "Exfoliante en spray · 200 ml"
+        "eyebrow": "Holly · Navidad 2026",
+        "titulo_corto": "Arbolito Proyector Navideño",
+        "subtitulo": "Luces LED · 6+ diseños · Conexión USB",
+        "intro": "Conéctalo, apúntalo al techo y tu cuarto se llena de Santas, copos de nieve y renos. El detalle que convierte cualquier noche en Navidad.",
+        "nota_precio": "Envío gratis · Pago seguro con Mercado Pago",
+        "puntos": "Proyecta más de 6 diseños navideños\nArbolito con luces LED y textura de pino\nCuerpo flexible para apuntar donde quieras\nFunciona con cualquier cargador USB",
+        "sello": "Envío gratis",
+        "ofertas_titulo": "Elige tu opción",
+        "oferta_1_nota": "Para tu casa",
+        "oferta_1_etiqueta": "-25%",
+        "oferta_2_nota": "Uno para ti y otro para regalar",
+        "texto_ahorro": "Ahorras",
+        "mostrar_miniaturas": true,
+        "comprar_texto": "Comprar ahora",
+        "comprar_corto": "Comprar",
+        "comprar_nota": "Pago 100% seguro con Mercado Pago: tarjeta, PSE, Nequi o Efecty",
+        "carrito_texto": "Agregar al carrito",
+        "agotado_texto": "Agotado",
+        "sticky_texto": "Arbolito Proyector Navideño",
+        "desc_titulo": "Descripción",
+        "abrir_descripcion": false,
+        "envio_titulo": "Envío y pago",
+        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 25 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
+        "titulo_size": 46
       },
       "blocks": {
-        "p1": {
+        "b0": {
           "type": "confianza",
           "settings": {
             "icono": "camion",
@@ -15,352 +37,364 @@
             "texto": "A toda Colombia"
           }
         },
-        "p2": {
+        "b1": {
           "type": "confianza",
           "settings": {
-            "icono": "efectivo",
-            "titulo": "Pagas al recibir",
-            "texto": "En efectivo, en tu puerta"
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Con Mercado Pago"
           }
         },
-        "p3": {
+        "b2": {
           "type": "confianza",
           "settings": {
             "icono": "escudo",
-            "titulo": "Compra protegida",
-            "texto": "Garantía y retracto de ley"
+            "titulo": "Garantía",
+            "texto": "Si no llega, te devolvemos tu dinero"
           }
         }
       },
       "block_order": [
-        "p1",
-        "p2",
-        "p3"
+        "b0",
+        "b1",
+        "b2"
       ]
     },
     "activos": {
       "type": "hl-activos",
       "settings": {
-        "imagen": "shopify://shop_images/file_00000000a01c81f5ac569fe948e4c053_7210f52d-9620-4a07-b974-c74d89147b13.png"
+        "eyebrow": "Pequeño, pero mágico",
+        "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
+        "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
+        "imagen": "shopify://shop_images/holly-detalle.webp",
+        "nota": "Textura de pino realista, bolitas rojas y luces LED.",
+        "ancla": "detalles",
+        "titulo_size": 64
       },
       "blocks": {
-        "a1": {
+        "b0": {
           "type": "activo",
           "settings": {
             "icono": "brillo",
-            "titulo": "Ácido kójico",
-            "texto": "De alta pureza. Ayuda a mejorar visualmente las manchas y el tono desigual."
+            "titulo": "Luces LED cálidas",
+            "texto": "El arbolito brilla con lucecitas doradas y bolitas rojas, como un pino de verdad en miniatura."
           }
         },
-        "a2": {
+        "b1": {
           "type": "activo",
           "settings": {
-            "icono": "hoja",
-            "titulo": "Cúrcuma",
-            "texto": "Ingrediente tradicional asociado a una piel de aspecto luminoso y cálido."
+            "icono": "copo",
+            "titulo": "6+ diseños navideños",
+            "texto": "Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos llenando tu techo."
           }
         },
-        "a3": {
+        "b2": {
           "type": "activo",
           "settings": {
-            "icono": "gota",
-            "titulo": "Niacinamida",
-            "texto": "Favorece una apariencia más uniforme y una textura más fina."
+            "icono": "arbol",
+            "titulo": "Flexible y resistente",
+            "texto": "Dobla el cuerpo para apuntar al techo o a la pared, en el ángulo que más te guste."
           }
         },
-        "a4": {
+        "b3": {
           "type": "activo",
           "settings": {
-            "icono": "capas",
-            "titulo": "AHA + PHA",
-            "texto": "Exfoliantes suaves que retiran células muertas y dejan la piel lisa al tacto."
+            "icono": "usb",
+            "titulo": "Se conecta por USB",
+            "texto": "Funciona con el cargador de tu celular, el computador o un power bank. Sin pilas ni instalación."
           }
         }
       },
       "block_order": [
-        "a1",
-        "a2",
-        "a3",
-        "a4"
+        "b0",
+        "b1",
+        "b2",
+        "b3"
       ]
     },
     "ritual": {
       "type": "hl-ritual",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Así de fácil",
+        "titulo": "<p>Tres pasos y <em>listo</em></p>",
+        "texto": "Sin apps, sin pilas y sin instalar nada.",
+        "nota": "No incluye adaptador de pared: usa el cargador USB de tu celular.",
+        "ancla": "como-funciona",
+        "titulo_size": 64
+      },
       "blocks": {
-        "r1": {
+        "b0": {
           "type": "paso",
           "settings": {
-            "titulo": "Rocía",
-            "texto": "Sobre la piel limpia y seca, en la zona que quieras cuidar."
+            "titulo": "Conecta",
+            "texto": "A cualquier puerto USB: el cargador de tu celular, el computador o un power bank."
           }
         },
-        "r2": {
+        "b1": {
           "type": "paso",
           "settings": {
-            "titulo": "Espera",
-            "texto": "Distribuye suave, sin frotar, y deja actuar según indica el envase."
+            "titulo": "Apunta",
+            "texto": "Dobla el arbolito hacia el techo o la pared, donde quieras ver la magia."
           }
         },
-        "r3": {
+        "b2": {
           "type": "paso",
           "settings": {
-            "titulo": "Enjuaga e hidrata",
-            "texto": "Retira con agua y termina con tu crema de siempre. Listo."
+            "titulo": "Disfruta",
+            "texto": "Apaga la luz y mira cómo todo se llena de Santas, copos y renos."
           }
         }
       },
       "block_order": [
-        "r1",
-        "r2",
-        "r3"
+        "b0",
+        "b1",
+        "b2"
       ]
     },
     "zonas": {
       "type": "hl-zonas",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Ideas para tu casa",
+        "titulo": "<p>Magia en <em>cada rincón</em></p>",
+        "texto": "Toca un lugar para ver la idea.",
+        "titulo_size": 64
+      },
       "blocks": {
-        "z1": {
+        "b0": {
           "type": "zona",
           "settings": {
-            "zona": "Codos",
-            "texto": "Suaviza la piel áspera y reseca por el roce del día a día.",
-            "imagen": "shopify://shop_images/hl-zona-codos-spray.jpg"
+            "zona": "La sala",
+            "texto": "Prende la Navidad mientras ven películas en familia.",
+            "imagen": "shopify://shop_images/holly-sala.webp"
           }
         },
-        "z2": {
+        "b1": {
           "type": "zona",
           "settings": {
-            "zona": "Rodillas",
-            "texto": "Ayuda a que se vean más parejas antes de ponerte short o vestido.",
-            "imagen": "shopify://shop_images/hl-zona-rodillas.jpg"
+            "zona": "Cuarto de los niños",
+            "texto": "Una luz de noche que los hace soñar con Santa.",
+            "imagen": "shopify://shop_images/holly-disenos.webp"
           }
         },
-        "z3": {
+        "b2": {
           "type": "zona",
           "settings": {
-            "zona": "Espalda",
-            "texto": "El spray llega solito a donde tus manos no alcanzan.",
-            "imagen": "shopify://shop_images/hl-zona-espalda-spray.jpg"
+            "zona": "El techo",
+            "texto": "Apúntalo hacia arriba y el techo se llena de copos y renos.",
+            "imagen": "shopify://shop_images/holly-hero.webp"
           }
         },
-        "z4": {
+        "b3": {
           "type": "zona",
           "settings": {
-            "zona": "Piernas",
-            "texto": "Textura más lisa y una apariencia luminosa para la temporada de playa.",
-            "imagen": "shopify://shop_images/hl-zona-piernas.jpg"
-          }
-        },
-        "z5": {
-          "type": "zona",
-          "settings": {
-            "zona": "Brazos",
-            "texto": "Renueva la superficie y deja la piel suave al tacto.",
-            "imagen": "shopify://shop_images/hl-zona-brazos.jpg"
-          }
-        },
-        "z6": {
-          "type": "zona",
-          "settings": {
-            "zona": "Pies",
-            "texto": "Ideal para talones y zonas con piel gruesa o reseca.",
-            "imagen": "shopify://shop_images/hl-zona-pies.jpg"
+            "zona": "Para regalar",
+            "texto": "Un detalle diferente para el amigo secreto o la familia.",
+            "imagen": "shopify://shop_images/holly-regalo.webp"
           }
         }
       },
       "block_order": [
-        "z1",
-        "z2",
-        "z3",
-        "z4",
-        "z5",
-        "z6"
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "comparativa": {
+      "type": "hl-comparativa",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Más que <em>una luz</em></p>",
+        "texto": "Frente a las instalaciones de luces de siempre.",
+        "col_nos": "Arbolito Holly",
+        "col_otros": "Luces comunes",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "b0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Proyecta figuras navideñas en techo y paredes",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Se pone en segundos, sin escalera ni clavos",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Funciona con cualquier cargador USB",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b3": {
+          "type": "fila",
+          "settings": {
+            "texto": "Sirve como luz de noche para los niños",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b4": {
+          "type": "fila",
+          "settings": {
+            "texto": "Le da ambiente navideño a tu casa",
+            "nos": true,
+            "otros": true
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
       ]
     },
     "seguro": {
       "type": "hl-seguro",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
+        "texto": "Así funciona tu pedido, paso a paso.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
+        "titulo_size": 56
+      },
       "blocks": {
-        "s1": {
+        "b0": {
           "type": "tarjeta",
           "settings": {
-            "icono": "mano",
-            "titulo": "Prueba primero",
-            "texto": "Aplica en una zona pequeña antes del primer uso."
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Pagas con Mercado Pago: tarjeta, PSE, Nequi o Efecty."
           }
         },
-        "s2": {
+        "b1": {
           "type": "tarjeta",
           "settings": {
-            "icono": "sol",
-            "titulo": "Protector solar",
-            "texto": "De día, protege las zonas expuestas al sol."
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia, con número de rastreo en tu correo."
           }
         },
-        "s3": {
+        "b2": {
           "type": "tarjeta",
           "settings": {
-            "icono": "ojo",
-            "titulo": "Lejos de los ojos",
-            "texto": "Evita ojos, labios y mucosas."
+            "icono": "reloj",
+            "titulo": "Llega a tiempo",
+            "texto": "Pide antes del 25 de noviembre y recíbelo antes de Navidad."
           }
         },
-        "s4": {
+        "b3": {
           "type": "tarjeta",
           "settings": {
             "icono": "escudo",
-            "titulo": "Piel sana",
-            "texto": "No lo uses sobre heridas ni piel recién depilada o irritada."
+            "titulo": "Garantía",
+            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
           }
         }
       },
       "block_order": [
-        "s1",
-        "s2",
-        "s3",
-        "s4"
+        "b0",
+        "b1",
+        "b2",
+        "b3"
       ]
     },
     "faq": {
       "type": "hl-faq",
-      "settings": {},
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Lo que todos <em>preguntan</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
       "blocks": {
-        "f1": {
+        "b0": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>En efectivo, cuando el pedido llega a tu casa. No necesitas tarjeta ni pagar nada por adelantado.</p>"
+            "respuesta": "<p>Con Mercado Pago, 100% seguro: tarjeta de crédito o débito, PSE, Nequi o efectivo en Efecty. Pagas al hacer tu pedido.</p>"
           }
         },
-        "f2": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada: el envío es gratis a toda Colombia. Si no estás o rechazas el pedido al momento de la entrega, se cobra el valor del flete.</p>"
-          }
-        },
-        "f3": {
+        "b1": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 2 y 7 días hábiles, según tu ciudad. Te llega con número de guía para rastrearlo.</p>"
+            "respuesta": "<p>Entre 8 y 20 días hábiles según tu ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
           }
         },
-        "f4": {
+        "b2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cada cuánto lo uso?",
-            "respuesta": "<p>Empieza 2 o 3 veces por semana y aumenta según cómo responda tu piel. Siempre hidrata después y usa protector solar de día.</p>"
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Sí, si haces tu pedido antes del 25 de noviembre.</p>"
           }
         },
-        "f5": {
+        "b3": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Sirve para la cara?",
-            "respuesta": "<p>Está pensado para el cuerpo: brazos, piernas, espalda, codos, rodillas, manos y pies.</p>"
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
           }
         },
-        "f6": {
+        "b4": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cuándo veo cambios?",
-            "respuesta": "<p>La sensación de piel suave se nota desde las primeras aplicaciones. La apariencia del tono mejora con el uso constante; los resultados varían según cada piel.</p>"
+            "pregunta": "¿Cómo se conecta?",
+            "respuesta": "<p>Por USB. No incluye adaptador de pared: funciona con el cargador de tu celular, el computador o un power bank.</p>"
           }
         },
-        "f7": {
+        "b5": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cuánto me dura?",
-            "respuesta": "<p>El frasco trae 200 ml, suficiente para varias semanas de uso regular.</p>"
+            "pregunta": "¿Qué diseños proyecta?",
+            "respuesta": "<p>Más de 6 escenas navideñas: Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos.</p>"
+          }
+        },
+        "b6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se ve de día?",
+            "respuesta": "<p>La proyección se ve mejor con la luz apagada o en penumbra. Las lucecitas del arbolito sí se ven siempre.</p>"
+          }
+        },
+        "b7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no llega o llega dañado?",
+            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
           }
         }
       },
       "block_order": [
-        "f1",
-        "f2",
-        "f3",
-        "f4",
-        "f5",
-        "f6",
-        "f7"
-      ]
-    },
-    "progreso": {
-      "type": "hl-progreso",
-      "settings": {},
-      "blocks": {
-        "t1": {
-          "type": "etapa",
-          "settings": {
-            "cuando": "Desde el día 1",
-            "titulo": "Piel más suave",
-            "texto": "Al enjuagar sientes la piel lisa al tacto, sin la aspereza de las células muertas."
-          }
-        },
-        "t2": {
-          "type": "etapa",
-          "settings": {
-            "cuando": "Semana 2",
-            "titulo": "Textura pareja",
-            "texto": "Codos, rodillas y piernas se sienten y se ven más uniformes y menos resecos."
-          }
-        },
-        "t3": {
-          "type": "etapa",
-          "settings": {
-            "cuando": "Semana 4 en adelante",
-            "titulo": "Tono más luminoso",
-            "texto": "Las manchas y zonas oscuras se ven más claras y la piel luce más pareja y radiante."
-          }
-        }
-      },
-      "block_order": [
-        "t1",
-        "t2",
-        "t3"
-      ]
-    },
-    "antes_despues": {
-      "type": "hl-antes-despues",
-      "settings": {},
-      "blocks": {
-        "a0": {
-          "type": "caso",
-          "settings": {
-            "zona": "Codos",
-            "tiempo": "4 semanas"
-          }
-        },
-        "a1": {
-          "type": "caso",
-          "settings": {
-            "zona": "Rodillas",
-            "tiempo": "4 semanas"
-          }
-        },
-        "a2": {
-          "type": "caso",
-          "settings": {
-            "zona": "Axilas y piernas",
-            "tiempo": "4 semanas"
-          }
-        }
-      },
-      "block_order": [
-        "a0",
-        "a1",
-        "a2"
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
       ]
     }
   },
   "order": [
     "principal",
     "activos",
-    "progreso",
     "ritual",
     "zonas",
-    "antes_despues",
+    "comparativa",
     "seguro",
     "faq"
   ]

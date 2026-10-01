@@ -5,7 +5,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
@@ -17,9 +17,9 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Envío gratis · Pagas al recibir en toda Colombia",
+            "text": "🎄 Pide antes del 25 de noviembre y recíbelo antes de Navidad · Envío gratis a toda Colombia",
             "text_alignment": "center",
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-5",
             "link": ""
           }
         }
@@ -31,8 +31,8 @@
     "header": {
       "type": "header",
       "settings": {
-        "color_scheme": "scheme-1",
-        "menu_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "menu_color_scheme": "scheme-3",
         "logo_position": "middle-left",
         "menu": "main-menu",
         "menu_type_desktop": "dropdown",
@@ -44,7 +44,7 @@
         "margin_bottom": 0,
         "padding_top": 16,
         "padding_bottom": 16,
-        "marca_texto": "Kojicfur",
+        "marca_texto": "Holly",
         "ocultar_enlaces": "/collections/all, /pages/contact",
         "mostrar_busqueda": false,
         "mostrar_cuenta": false

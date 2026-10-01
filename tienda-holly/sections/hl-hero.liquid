@@ -16,7 +16,9 @@
   {%- endif -%}
 {% endstyle %}
 
-<section class="hl-section hl-hero" data-hl-hero>
+<section class="hl-section hl-hero hl-oscuro hl-noche" data-hl-hero>
+  <div class="hl-nieve" aria-hidden="true"></div>
+  <div class="hl-luces" aria-hidden="true">{%- for i in (1..40) -%}<span></span>{%- endfor -%}</div>
   <div class="hl-container">
     <div class="hl-hero__grid">
       <div class="hl-hero__texto">
@@ -94,46 +96,287 @@
   "tag": "section",
   "class": "hl-wrap",
   "settings": [
-    { "type": "header", "content": "Textos" },
-    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Dr. Melaxin · Peel Shot 200 ml" },
-    { "type": "richtext", "id": "titulo", "label": "Título (lo que pongas en cursiva sale en color cúrcuma)", "default": "<p>Piel suave, <em>lista</em> para diciembre.</p>" },
-    { "type": "textarea", "id": "sub", "label": "Texto", "default": "Un spray exfoliante con ácido kójico, cúrcuma y niacinamida que renueva la textura de tu piel y le devuelve la luz. Rocías, esperas, enjuagas. Así de fácil." },
-    { "type": "header", "content": "Precio" },
-    { "type": "product", "id": "producto", "label": "Producto (precio y enlace de compra)" },
-    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
-    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
-    { "type": "header", "content": "Botones" },
-    { "type": "text", "id": "btn1_texto", "label": "Botón principal – texto", "default": "Lo quiero" },
-    { "type": "url", "id": "btn1_url", "label": "Botón principal – enlace (vacío = producto)" },
-    { "type": "checkbox", "id": "mostrar_pack", "label": "Mostrar botón del pack x2 (usa la 2.ª opción del producto)", "default": true },
-    { "type": "text", "id": "pack_texto", "label": "Botón pack – texto", "default": "Pack x2" },
-    { "type": "text", "id": "pack_ahorro", "label": "Botón pack – palabra de ahorro", "default": "ahorra" },
-    { "type": "text", "id": "pack_comprar", "label": "Botón comprar en modo pack", "default": "Llevar el pack x2" },
-    { "type": "text", "id": "pack_volver", "label": "Botón para volver a 1 unidad", "default": "← Volver a 1 unidad" },
-    { "type": "text", "id": "pack_sello", "label": "Sello en modo pack", "default": "x2" },
-    { "type": "image_picker", "id": "imagen_pack", "label": "Foto del pack x2" },
-    { "type": "text", "id": "btn2_texto", "label": "Botón secundario – texto (si no hay pack)", "default": "Ver el ritual" },
-    { "type": "url", "id": "btn2_url", "label": "Botón secundario – enlace" },
-    { "type": "header", "content": "Imagen" },
-    { "type": "image_picker", "id": "imagen", "label": "Foto principal" },
-    { "type": "text", "id": "alt_imagen", "label": "Descripción de la foto", "default": "Spray exfoliante Dr. Melaxin Peel Shot junto a cúrcuma" },
-    { "type": "text", "id": "sello_texto", "label": "Sello giratorio – texto", "default": "envío gratis · pagas al recibir · " },
-    { "type": "text", "id": "sello_centro", "label": "Sello giratorio – centro", "default": "200ml" },
-    { "type": "header", "content": "Tipografía" },
-    { "type": "select", "id": "alineacion", "label": "Alineación", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
-    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 40, "max": 120, "step": 2, "unit": "px", "default": 96 },
-    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 24, "step": 1, "unit": "px", "default": 18 },
-    { "type": "header", "content": "Espaciado" },
-    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
-    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+    {
+      "type": "header",
+      "content": "Textos"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Dr. Melaxin · Peel Shot 200 ml"
+    },
+    {
+      "type": "richtext",
+      "id": "titulo",
+      "label": "Título (lo que pongas en cursiva sale en color cúrcuma)",
+      "default": "<p>Piel suave, <em>lista</em> para diciembre.</p>"
+    },
+    {
+      "type": "textarea",
+      "id": "sub",
+      "label": "Texto",
+      "default": "Un spray exfoliante con ácido kójico, cúrcuma y niacinamida que renueva la textura de tu piel y le devuelve la luz. Rocías, esperas, enjuagas. Así de fácil."
+    },
+    {
+      "type": "header",
+      "content": "Precio"
+    },
+    {
+      "type": "product",
+      "id": "producto",
+      "label": "Producto (precio y enlace de compra)"
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_precio",
+      "label": "Mostrar precio",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "nota_precio",
+      "label": "Nota bajo el precio",
+      "default": "Envío gratis · Pagas en efectivo al recibir"
+    },
+    {
+      "type": "header",
+      "content": "Botones"
+    },
+    {
+      "type": "text",
+      "id": "btn1_texto",
+      "label": "Botón principal – texto",
+      "default": "Lo quiero"
+    },
+    {
+      "type": "url",
+      "id": "btn1_url",
+      "label": "Botón principal – enlace (vacío = producto)"
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_pack",
+      "label": "Mostrar botón del pack x2 (usa la 2.ª opción del producto)",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "pack_texto",
+      "label": "Botón pack – texto",
+      "default": "Pack x2"
+    },
+    {
+      "type": "text",
+      "id": "pack_ahorro",
+      "label": "Botón pack – palabra de ahorro",
+      "default": "ahorra"
+    },
+    {
+      "type": "text",
+      "id": "pack_comprar",
+      "label": "Botón comprar en modo pack",
+      "default": "Llevar el pack x2"
+    },
+    {
+      "type": "text",
+      "id": "pack_volver",
+      "label": "Botón para volver a 1 unidad",
+      "default": "← Volver a 1 unidad"
+    },
+    {
+      "type": "text",
+      "id": "pack_sello",
+      "label": "Sello en modo pack",
+      "default": "x2"
+    },
+    {
+      "type": "image_picker",
+      "id": "imagen_pack",
+      "label": "Foto del pack x2"
+    },
+    {
+      "type": "text",
+      "id": "btn2_texto",
+      "label": "Botón secundario – texto (si no hay pack)",
+      "default": "Ver el ritual"
+    },
+    {
+      "type": "url",
+      "id": "btn2_url",
+      "label": "Botón secundario – enlace"
+    },
+    {
+      "type": "header",
+      "content": "Imagen"
+    },
+    {
+      "type": "image_picker",
+      "id": "imagen",
+      "label": "Foto principal"
+    },
+    {
+      "type": "text",
+      "id": "alt_imagen",
+      "label": "Descripción de la foto",
+      "default": "Spray exfoliante Dr. Melaxin Peel Shot junto a cúrcuma"
+    },
+    {
+      "type": "text",
+      "id": "sello_texto",
+      "label": "Sello giratorio – texto",
+      "default": "envío gratis · pagas al recibir · "
+    },
+    {
+      "type": "text",
+      "id": "sello_centro",
+      "label": "Sello giratorio – centro",
+      "default": "200ml"
+    },
+    {
+      "type": "header",
+      "content": "Tipografía"
+    },
+    {
+      "type": "select",
+      "id": "alineacion",
+      "label": "Alineación",
+      "options": [
+        {
+          "value": "left",
+          "label": "Izquierda"
+        },
+        {
+          "value": "center",
+          "label": "Centro"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "titulo_size",
+      "label": "Tamaño del título",
+      "min": 40,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 96
+    },
+    {
+      "type": "range",
+      "id": "texto_size",
+      "label": "Tamaño del texto",
+      "min": 13,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Espaciado"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacio superior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacio inferior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    }
   ],
   "blocks": [
     {
       "type": "chip",
       "name": "Garantía corta",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "efectivo", "label": "Efectivo" }, { "value": "camion", "label": "Envío" }, { "value": "escudo", "label": "Garantía" }, { "value": "spray", "label": "Spray" }, { "value": "hoja", "label": "Hoja" }, { "value": "check", "label": "Check" } ], "default": "check" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis" }
+        {
+          "type": "select",
+          "id": "icono",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "efectivo",
+              "label": "Efectivo"
+            },
+            {
+              "value": "camion",
+              "label": "Envío"
+            },
+            {
+              "value": "escudo",
+              "label": "Garantía"
+            },
+            {
+              "value": "spray",
+              "label": "Spray"
+            },
+            {
+              "value": "hoja",
+              "label": "Hoja"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            },
+            {
+              "value": "copo",
+              "label": "Copo de nieve"
+            },
+            {
+              "value": "estrella",
+              "label": "Estrella"
+            },
+            {
+              "value": "usb",
+              "label": "USB"
+            },
+            {
+              "value": "candado",
+              "label": "Candado (pago seguro)"
+            },
+            {
+              "value": "arbol",
+              "label": "Árbol"
+            },
+            {
+              "value": "casa",
+              "label": "Casa"
+            },
+            {
+              "value": "regalo",
+              "label": "Regalo"
+            },
+            {
+              "value": "brillo",
+              "label": "Brillo"
+            },
+            {
+              "value": "reloj",
+              "label": "Reloj"
+            }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
+          "id": "texto",
+          "label": "Texto",
+          "default": "Envío gratis"
+        }
       ]
     },
     {
@@ -141,13 +384,120 @@
       "name": "Etiqueta flotante",
       "limit": 8,
       "settings": [
-        { "type": "select", "id": "modo", "label": "Se muestra con", "options": [ { "value": "uno", "label": "1 unidad" }, { "value": "pack", "label": "Pack x2" } ], "default": "uno" },
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "sol", "label": "Sol" }, { "value": "hoja", "label": "Hoja" }, { "value": "gota", "label": "Gota" }, { "value": "capas", "label": "Capas" }, { "value": "brillo", "label": "Brillo" }, { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "spray", "label": "Spray" }, { "value": "efectivo", "label": "Efectivo" } ], "default": "hoja" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Cúrcuma" },
-        { "type": "text", "id": "texto", "label": "Texto pequeño" }
+        {
+          "type": "select",
+          "id": "modo",
+          "label": "Se muestra con",
+          "options": [
+            {
+              "value": "uno",
+              "label": "1 unidad"
+            },
+            {
+              "value": "pack",
+              "label": "Pack x2"
+            }
+          ],
+          "default": "uno"
+        },
+        {
+          "type": "select",
+          "id": "icono",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "sol",
+              "label": "Sol"
+            },
+            {
+              "value": "hoja",
+              "label": "Hoja"
+            },
+            {
+              "value": "gota",
+              "label": "Gota"
+            },
+            {
+              "value": "capas",
+              "label": "Capas"
+            },
+            {
+              "value": "brillo",
+              "label": "Brillo"
+            },
+            {
+              "value": "regalo",
+              "label": "Regalo"
+            },
+            {
+              "value": "camion",
+              "label": "Envío"
+            },
+            {
+              "value": "spray",
+              "label": "Spray"
+            },
+            {
+              "value": "efectivo",
+              "label": "Efectivo"
+            },
+            {
+              "value": "copo",
+              "label": "Copo de nieve"
+            },
+            {
+              "value": "estrella",
+              "label": "Estrella"
+            },
+            {
+              "value": "usb",
+              "label": "USB"
+            },
+            {
+              "value": "candado",
+              "label": "Candado (pago seguro)"
+            },
+            {
+              "value": "arbol",
+              "label": "Árbol"
+            },
+            {
+              "value": "casa",
+              "label": "Casa"
+            },
+            {
+              "value": "escudo",
+              "label": "Garantía"
+            },
+            {
+              "value": "reloj",
+              "label": "Reloj"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            }
+          ],
+          "default": "hoja"
+        },
+        {
+          "type": "text",
+          "id": "titulo",
+          "label": "Título",
+          "default": "Cúrcuma"
+        },
+        {
+          "type": "text",
+          "id": "texto",
+          "label": "Texto pequeño"
+        }
       ]
     }
   ],
-  "presets": [ { "name": "KF – Apertura" } ]
+  "presets": [
+    {
+      "name": "KF – Apertura"
+    }
+  ]
 }
 {% endschema %}

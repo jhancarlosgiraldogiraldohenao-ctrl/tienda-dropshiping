@@ -31,26 +31,163 @@
   "name": "KF – Uso seguro",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Úsalo bien" },
-    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Tu piel, <em>con cuidado.</em></p>" },
-    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Es un exfoliante con ácidos: funciona mejor cuando lo usas con cabeza." },
-    { "type": "text", "id": "aviso", "label": "Aviso final", "default": "Solo para uso externo. Los resultados pueden variar según el tipo de piel y la constancia de uso." },
-    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 56 },
-    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
-    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Úsalo bien"
+    },
+    {
+      "type": "richtext",
+      "id": "titulo",
+      "label": "Título (cursiva = color cúrcuma)",
+      "default": "<p>Tu piel, <em>con cuidado.</em></p>"
+    },
+    {
+      "type": "textarea",
+      "id": "texto",
+      "label": "Texto",
+      "default": "Es un exfoliante con ácidos: funciona mejor cuando lo usas con cabeza."
+    },
+    {
+      "type": "text",
+      "id": "aviso",
+      "label": "Aviso final",
+      "default": "Solo para uso externo. Los resultados pueden variar según el tipo de piel y la constancia de uso."
+    },
+    {
+      "type": "range",
+      "id": "titulo_size",
+      "label": "Tamaño del título",
+      "min": 28,
+      "max": 96,
+      "step": 2,
+      "unit": "px",
+      "default": 56
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacio superior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacio inferior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    }
   ],
   "blocks": [
     {
       "type": "tarjeta",
       "name": "Consejo",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "mano", "label": "Mano" }, { "value": "sol", "label": "Sol" }, { "value": "ojo", "label": "Ojo" }, { "value": "gota", "label": "Gota" }, { "value": "escudo", "label": "Escudo" } ], "default": "mano" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Prueba primero" },
-        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Aplica en una zona pequeña antes del primer uso." }
+        {
+          "type": "select",
+          "id": "icono",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "mano",
+              "label": "Mano"
+            },
+            {
+              "value": "sol",
+              "label": "Sol"
+            },
+            {
+              "value": "ojo",
+              "label": "Ojo"
+            },
+            {
+              "value": "gota",
+              "label": "Gota"
+            },
+            {
+              "value": "escudo",
+              "label": "Escudo"
+            },
+            {
+              "value": "copo",
+              "label": "Copo de nieve"
+            },
+            {
+              "value": "estrella",
+              "label": "Estrella"
+            },
+            {
+              "value": "usb",
+              "label": "USB"
+            },
+            {
+              "value": "candado",
+              "label": "Candado (pago seguro)"
+            },
+            {
+              "value": "arbol",
+              "label": "Árbol"
+            },
+            {
+              "value": "casa",
+              "label": "Casa"
+            },
+            {
+              "value": "regalo",
+              "label": "Regalo"
+            },
+            {
+              "value": "camion",
+              "label": "Envío"
+            },
+            {
+              "value": "brillo",
+              "label": "Brillo"
+            },
+            {
+              "value": "reloj",
+              "label": "Reloj"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            }
+          ],
+          "default": "mano"
+        },
+        {
+          "type": "text",
+          "id": "titulo",
+          "label": "Título",
+          "default": "Prueba primero"
+        },
+        {
+          "type": "textarea",
+          "id": "texto",
+          "label": "Texto",
+          "default": "Aplica en una zona pequeña antes del primer uso."
+        }
       ]
     }
   ],
   "max_blocks": 4,
-  "presets": [ { "name": "KF – Uso seguro", "blocks": [ { "type": "tarjeta" } ] } ]
+  "presets": [
+    {
+      "name": "KF – Uso seguro",
+      "blocks": [
+        {
+          "type": "tarjeta"
+        }
+      ]
+    }
+  ]
 }
 {% endschema %}

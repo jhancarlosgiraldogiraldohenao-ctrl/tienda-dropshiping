@@ -5,20 +5,20 @@
     "footer": {
       "type": "footer",
       "settings": {
-        "marca_texto": "Kojicfur",
-        "tagline": "Rituales de cuidado corporal con ingredientes que tu piel entiende. Piel suave, uniforme y luminosa, hecha para el sol de Colombia.",
+        "marca_texto": "Holly",
+        "tagline": "Pequeños detalles que llenan tu hogar de magia navideña. Luces, proyectores y regalos que hacen sonreír a toda la familia.",
         "nav_titulo": "Tienda",
         "nav_1_label": "Inicio",
         "nav_1_url": "/",
-        "nav_2_label": "Peel Shot",
-        "nav_2_url": "/products/dr-melaxin-peel-shot",
-        "nav_3_label": "El ritual",
-        "nav_3_url": "/#ritual",
+        "nav_2_label": "Arbolito Proyector",
+        "nav_2_url": "/products/arbolito-proyector-navideno",
+        "nav_3_label": "Cómo funciona",
+        "nav_3_url": "/#como-funciona",
         "nav_4_label": "",
         "nav_4_url": "",
         "info_titulo": "Compra tranquilo",
-        "info_texto": "Envío gratis a toda Colombia.\nPago contraentrega: pagas en efectivo cuando recibes tu pedido.\nSi no estás o rechazas el pedido al momento de la entrega, se cobrará el valor del flete.",
-        "texto_gigante": "Kojicfur"
+        "info_texto": "Envío gratis a toda Colombia, con número de rastreo.\nPago 100% seguro con Mercado Pago: tarjeta, PSE, Nequi o Efecty.\nSi tu pedido no llega, te devolvemos tu dinero.",
+        "texto_gigante": "Holly"
       }
     }
   },

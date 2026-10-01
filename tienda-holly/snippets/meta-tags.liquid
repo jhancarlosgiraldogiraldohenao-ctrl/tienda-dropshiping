@@ -2,7 +2,7 @@
   assign og_title = page_title | default: shop.name
   assign og_url = canonical_url | default: request.origin
   assign og_type = 'website'
-  assign og_description = page_description | default: shop.description | default: 'Kojicfur · Dr. Melaxin Peel Shot, spray exfoliante corporal con ácido kójico y cúrcuma. Envío gratis y pago contraentrega en toda Colombia.'
+  assign og_description = page_description | default: shop.description | default: 'Holly · Arbolito proyector navideño que llena tu casa de Santas, copos y renos. Envío gratis a toda Colombia.'
 
   if request.page_type == 'product'
     assign og_type = 'product'

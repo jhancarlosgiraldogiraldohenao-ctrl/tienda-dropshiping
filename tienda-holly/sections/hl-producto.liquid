@@ -116,7 +116,7 @@
             {%- endform -%}
           </product-form>
           <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
-          {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'efectivo' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
+          {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
         </div>
 
         {%- if section.blocks.size > 0 -%}
@@ -156,38 +156,204 @@
   "name": "KF – Producto",
   "tag": "section",
   "settings": [
-    { "type": "header", "content": "Textos" },
-    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Dr. Melaxin · 200 ml" },
-    { "type": "text", "id": "titulo_corto", "label": "Título visible (vacío = título del producto)", "default": "Peel Shot, spray exfoliante corporal" },
-    { "type": "text", "id": "subtitulo", "label": "Subtítulo", "default": "Ácido kójico · Cúrcuma · Niacinamida · AHA + PHA" },
-    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Renueva la textura de tu piel y ayuda a mejorar visualmente el tono desigual. Rocías, esperas y enjuagas: llega fácil a espalda, codos y rodillas." },
-    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
-    { "type": "textarea", "id": "puntos", "label": "Puntos clave (uno por línea)", "default": "Piel con sensación más suave y lisa\nAyuda a unificar visualmente el tono\nFormato spray: sin frotar de más\n200 ml para varias semanas de uso" },
-    { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Pagas al recibir" },
-    { "type": "header", "content": "Opciones de compra" },
-    { "type": "text", "id": "ofertas_titulo", "label": "Título de las opciones", "default": "Elige tu opción" },
-    { "type": "text", "id": "oferta_1_nota", "label": "Opción 1 – texto pequeño", "default": "Para tu ritual" },
-    { "type": "text", "id": "oferta_1_etiqueta", "label": "Opción 1 – etiqueta", "default": "-20%" },
-    { "type": "text", "id": "oferta_2_nota", "label": "Opción 2 – texto pequeño", "default": "Uno para ti y otro para regalar" },
-    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
-    { "type": "checkbox", "id": "mostrar_miniaturas", "label": "Mostrar las demás fotos del producto", "default": false },
-    { "type": "header", "content": "Botones" },
-    { "type": "text", "id": "comprar_texto", "label": "Botón comprar ahora", "default": "Comprar ahora · pago contraentrega" },
-    { "type": "text", "id": "comprar_corto", "label": "Botón en la barra del celular", "default": "Comprar ahora" },
-    { "type": "text", "id": "comprar_nota", "label": "Nota bajo el botón", "default": "No pagas nada ahora: pagas en efectivo al recibir" },
-    { "type": "text", "id": "carrito_texto", "label": "Botón agregar al carrito", "default": "Agregar al carrito" },
-    { "type": "text", "id": "agotado_texto", "label": "Texto agotado", "default": "Agotado" },
-    { "type": "text", "id": "sticky_texto", "label": "Texto barra del celular", "default": "Peel Shot 200 ml" },
-    { "type": "header", "content": "Desplegables" },
-    { "type": "text", "id": "desc_titulo", "label": "Título descripción", "default": "Descripción y modo de uso" },
-    { "type": "checkbox", "id": "abrir_descripcion", "label": "Descripción abierta", "default": false },
-    { "type": "text", "id": "envio_titulo", "label": "Título envío", "default": "Envío y pago" },
-    { "type": "textarea", "id": "envio", "label": "Texto envío", "default": "Envío gratis a toda Colombia. Entrega estimada de 2 a 7 días hábiles.\nPagas en efectivo cuando recibes el pedido.\nSi no estás o rechazas el pedido al momento de la entrega, se cobrará el valor del flete." },
-    { "type": "header", "content": "Tamaños y espacio" },
-    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 24, "max": 64, "step": 2, "unit": "px", "default": 46 },
-    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 20, "step": 1, "unit": "px", "default": 16 },
-    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
-    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+    {
+      "type": "header",
+      "content": "Textos"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Dr. Melaxin · 200 ml"
+    },
+    {
+      "type": "text",
+      "id": "titulo_corto",
+      "label": "Título visible (vacío = título del producto)",
+      "default": "Peel Shot, spray exfoliante corporal"
+    },
+    {
+      "type": "text",
+      "id": "subtitulo",
+      "label": "Subtítulo",
+      "default": "Ácido kójico · Cúrcuma · Niacinamida · AHA + PHA"
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Introducción",
+      "default": "Renueva la textura de tu piel y ayuda a mejorar visualmente el tono desigual. Rocías, esperas y enjuagas: llega fácil a espalda, codos y rodillas."
+    },
+    {
+      "type": "text",
+      "id": "nota_precio",
+      "label": "Nota bajo el precio",
+      "default": "Envío gratis · Pagas en efectivo al recibir"
+    },
+    {
+      "type": "textarea",
+      "id": "puntos",
+      "label": "Puntos clave (uno por línea)",
+      "default": "Piel con sensación más suave y lisa\nAyuda a unificar visualmente el tono\nFormato spray: sin frotar de más\n200 ml para varias semanas de uso"
+    },
+    {
+      "type": "text",
+      "id": "sello",
+      "label": "Sello sobre la foto",
+      "default": "Pagas al recibir"
+    },
+    {
+      "type": "header",
+      "content": "Opciones de compra"
+    },
+    {
+      "type": "text",
+      "id": "ofertas_titulo",
+      "label": "Título de las opciones",
+      "default": "Elige tu opción"
+    },
+    {
+      "type": "text",
+      "id": "oferta_1_nota",
+      "label": "Opción 1 – texto pequeño",
+      "default": "Para tu ritual"
+    },
+    {
+      "type": "text",
+      "id": "oferta_1_etiqueta",
+      "label": "Opción 1 – etiqueta",
+      "default": "-20%"
+    },
+    {
+      "type": "text",
+      "id": "oferta_2_nota",
+      "label": "Opción 2 – texto pequeño",
+      "default": "Uno para ti y otro para regalar"
+    },
+    {
+      "type": "text",
+      "id": "texto_ahorro",
+      "label": "Texto de ahorro",
+      "default": "Ahorras"
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_miniaturas",
+      "label": "Mostrar las demás fotos del producto",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Botones"
+    },
+    {
+      "type": "text",
+      "id": "comprar_texto",
+      "label": "Botón comprar ahora",
+      "default": "Comprar ahora · pago contraentrega"
+    },
+    {
+      "type": "text",
+      "id": "comprar_corto",
+      "label": "Botón en la barra del celular",
+      "default": "Comprar ahora"
+    },
+    {
+      "type": "text",
+      "id": "comprar_nota",
+      "label": "Nota bajo el botón",
+      "default": "No pagas nada ahora: pagas en efectivo al recibir"
+    },
+    {
+      "type": "text",
+      "id": "carrito_texto",
+      "label": "Botón agregar al carrito",
+      "default": "Agregar al carrito"
+    },
+    {
+      "type": "text",
+      "id": "agotado_texto",
+      "label": "Texto agotado",
+      "default": "Agotado"
+    },
+    {
+      "type": "text",
+      "id": "sticky_texto",
+      "label": "Texto barra del celular",
+      "default": "Peel Shot 200 ml"
+    },
+    {
+      "type": "header",
+      "content": "Desplegables"
+    },
+    {
+      "type": "text",
+      "id": "desc_titulo",
+      "label": "Título descripción",
+      "default": "Descripción y modo de uso"
+    },
+    {
+      "type": "checkbox",
+      "id": "abrir_descripcion",
+      "label": "Descripción abierta",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "envio_titulo",
+      "label": "Título envío",
+      "default": "Envío y pago"
+    },
+    {
+      "type": "textarea",
+      "id": "envio",
+      "label": "Texto envío",
+      "default": "Envío gratis a toda Colombia. Entrega estimada de 2 a 7 días hábiles.\nPagas en efectivo cuando recibes el pedido.\nSi no estás o rechazas el pedido al momento de la entrega, se cobrará el valor del flete."
+    },
+    {
+      "type": "header",
+      "content": "Tamaños y espacio"
+    },
+    {
+      "type": "range",
+      "id": "titulo_size",
+      "label": "Tamaño del título",
+      "min": 24,
+      "max": 64,
+      "step": 2,
+      "unit": "px",
+      "default": 46
+    },
+    {
+      "type": "range",
+      "id": "texto_size",
+      "label": "Tamaño del texto",
+      "min": 13,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacio superior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacio inferior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    }
   ],
   "blocks": [
     {
@@ -195,9 +361,78 @@
       "name": "Garantía",
       "limit": 3,
       "settings": [
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "camion", "label": "Envío" }, { "value": "efectivo", "label": "Efectivo" }, { "value": "escudo", "label": "Garantía" }, { "value": "regalo", "label": "Regalo" } ], "default": "camion" },
-        { "type": "text", "id": "titulo", "label": "Título", "default": "Envío gratis" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "A toda Colombia" }
+        {
+          "type": "select",
+          "id": "icono",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "camion",
+              "label": "Envío"
+            },
+            {
+              "value": "efectivo",
+              "label": "Efectivo"
+            },
+            {
+              "value": "escudo",
+              "label": "Garantía"
+            },
+            {
+              "value": "regalo",
+              "label": "Regalo"
+            },
+            {
+              "value": "copo",
+              "label": "Copo de nieve"
+            },
+            {
+              "value": "estrella",
+              "label": "Estrella"
+            },
+            {
+              "value": "usb",
+              "label": "USB"
+            },
+            {
+              "value": "candado",
+              "label": "Candado (pago seguro)"
+            },
+            {
+              "value": "arbol",
+              "label": "Árbol"
+            },
+            {
+              "value": "casa",
+              "label": "Casa"
+            },
+            {
+              "value": "brillo",
+              "label": "Brillo"
+            },
+            {
+              "value": "reloj",
+              "label": "Reloj"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            }
+          ],
+          "default": "camion"
+        },
+        {
+          "type": "text",
+          "id": "titulo",
+          "label": "Título",
+          "default": "Envío gratis"
+        },
+        {
+          "type": "text",
+          "id": "texto",
+          "label": "Texto",
+          "default": "A toda Colombia"
+        }
       ]
     }
   ]

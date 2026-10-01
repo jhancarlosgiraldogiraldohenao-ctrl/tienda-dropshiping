@@ -7,7 +7,8 @@
   #shopify-section-{{ section.id }} .hl-paso p { font-size: {{ section.settings.texto_size }}px; }
 {% endstyle %}
 
-<section class="hl-section hl-ritual" id="{{ section.settings.ancla | default: 'ritual' }}">
+<section class="hl-section hl-ritual hl-oscuro hl-noche" id="{{ section.settings.ancla | default: 'ritual' }}">
+  <div class="hl-nieve" aria-hidden="true"></div>
   <div class="hl-container hl-ritual__wrap">
     <div class="hl-cabecera hl-cabecera--centro">
       {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}

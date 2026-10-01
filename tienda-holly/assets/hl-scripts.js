@@ -1,4 +1,4 @@
-/* Kojicfur · interacciones (vanilla, sin dependencias) */
+/* Holly · interacciones (vanilla, sin dependencias) */
 (function () {
   'use strict';
   // Varias secciones cargan este archivo: se inicializa una sola vez.

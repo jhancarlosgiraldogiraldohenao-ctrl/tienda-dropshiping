@@ -212,7 +212,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M16 2.5v4M16 25.5v4M2.5 16h4M25.5 16h4M6.4 6.4l2.8 2.8M22.8 22.8l2.8 2.8M6.4 25.6l2.8-2.8M22.8 9.2l2.8-2.8"/></g></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
+          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15.5 17.5C12.5 10 5 8.5 1.5 12.5c2.8.3 3.6 2.4 2.6 4.2 2.7-.6 3.9 1.2 3.1 3.3 2.8-2 5.3-2.2 8.3-2.5z" fill="#2f7a4f"/><path d="M16.5 17.5C19.5 10 27 8.5 30.5 12.5c-2.8.3-3.6 2.4-2.6 4.2-2.7-.6-3.9 1.2-3.1 3.3-2.8-2-5.3-2.2-8.3-2.5z" fill="#3f9563"/><circle cx="12.8" cy="20.6" r="3.1" fill="#c8283a"/><circle cx="19.2" cy="20.6" r="3.1" fill="#b01f30"/><circle cx="16" cy="16.4" r="3.1" fill="#e0384a"/></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -255,7 +255,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M16 2.5v4M16 25.5v4M2.5 16h4M25.5 16h4M6.4 6.4l2.8 2.8M22.8 22.8l2.8 2.8M6.4 25.6l2.8-2.8M22.8 9.2l2.8-2.8"/></g></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
+          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15.5 17.5C12.5 10 5 8.5 1.5 12.5c2.8.3 3.6 2.4 2.6 4.2 2.7-.6 3.9 1.2 3.1 3.3 2.8-2 5.3-2.2 8.3-2.5z" fill="#2f7a4f"/><path d="M16.5 17.5C19.5 10 27 8.5 30.5 12.5c-2.8.3-3.6 2.4-2.6 4.2-2.7-.6-3.9 1.2-3.1 3.3-2.8-2-5.3-2.2-8.3-2.5z" fill="#3f9563"/><circle cx="12.8" cy="20.6" r="3.1" fill="#c8283a"/><circle cx="19.2" cy="20.6" r="3.1" fill="#b01f30"/><circle cx="16" cy="16.4" r="3.1" fill="#e0384a"/></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -511,8 +511,8 @@
   "class": "section-header",
   "max_blocks": 3,
   "settings": [
-    { "type": "header", "content": "Marca Kojicfur" },
-    { "type": "text", "id": "marca_texto", "label": "Nombre de la marca (si no hay logo)", "default": "Kojicfur" },
+    { "type": "header", "content": "Marca Holly" },
+    { "type": "text", "id": "marca_texto", "label": "Nombre de la marca (si no hay logo)", "default": "Holly" },
     { "type": "image_picker", "id": "logo", "label": "Logo (opcional, sustituye al nombre)" },
     { "type": "range", "id": "logo_width", "label": "Ancho del logo (px)", "min": 50, "max": 300, "step": 10, "unit": "px", "default": 140 },
     { "type": "checkbox", "id": "mostrar_busqueda", "label": "Mostrar la lupa de búsqueda", "default": false },

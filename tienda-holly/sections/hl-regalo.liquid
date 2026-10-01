@@ -13,7 +13,7 @@
         {%- if section.settings.imagen != blank -%}
           <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1250">
         {%- else -%}
-          <img src="{{ 'hl-duo.jpg' | asset_url }}" alt="Dos sprays Dr. Melaxin Peel Shot" loading="lazy" width="1024" height="1536">
+          <img src="{{ 'hl-duo.jpg' | asset_url }}" alt="Arbolito proyector navideño para regalar" loading="lazy" width="1024" height="1536">
         {%- endif -%}
       </div>
       <div class="hl-regalo__texto">
@@ -57,33 +57,188 @@
   "name": "KF – Regalo",
   "tag": "section",
   "settings": [
-    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Temporada de regalos" },
-    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>El regalo que <em>sí se usa.</em></p>" },
-    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Para mamá, la tía, la novia o tu amiga secreta. Un detalle de cuidado personal que se siente especial desde que lo destapan." },
-    { "type": "image_picker", "id": "imagen", "label": "Foto" },
-    { "type": "product", "id": "producto", "label": "Producto del botón" },
-    { "type": "range", "id": "variante_num", "label": "Opción del producto que se vende aquí (1 = unidad, 2 = pack)", "min": 1, "max": 3, "step": 1, "default": 2 },
-    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
-    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
-    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "2 sprays de 200 ml · Envío gratis · Pagas al recibir" },
-    { "type": "checkbox", "id": "compra_directa", "label": "El botón lleva directo a pagar", "default": true },
-    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Llevar el pack x2" },
-    { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = producto)" },
-    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 72 },
-    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
-    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Antetítulo",
+      "default": "Temporada de regalos"
+    },
+    {
+      "type": "richtext",
+      "id": "titulo",
+      "label": "Título (cursiva = color cúrcuma)",
+      "default": "<p>El regalo que <em>sí se usa.</em></p>"
+    },
+    {
+      "type": "textarea",
+      "id": "texto",
+      "label": "Texto",
+      "default": "Para mamá, la tía, la novia o tu amiga secreta. Un detalle de cuidado personal que se siente especial desde que lo destapan."
+    },
+    {
+      "type": "image_picker",
+      "id": "imagen",
+      "label": "Foto"
+    },
+    {
+      "type": "product",
+      "id": "producto",
+      "label": "Producto del botón"
+    },
+    {
+      "type": "range",
+      "id": "variante_num",
+      "label": "Opción del producto que se vende aquí (1 = unidad, 2 = pack)",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_precio",
+      "label": "Mostrar precio",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "texto_ahorro",
+      "label": "Texto de ahorro",
+      "default": "Ahorras"
+    },
+    {
+      "type": "text",
+      "id": "nota_precio",
+      "label": "Nota bajo el precio",
+      "default": "2 sprays de 200 ml · Envío gratis · Pagas al recibir"
+    },
+    {
+      "type": "checkbox",
+      "id": "compra_directa",
+      "label": "El botón lleva directo a pagar",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "btn_texto",
+      "label": "Botón – texto",
+      "default": "Llevar el pack x2"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Botón – enlace (vacío = producto)"
+    },
+    {
+      "type": "range",
+      "id": "titulo_size",
+      "label": "Tamaño del título",
+      "min": 28,
+      "max": 96,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Espacio superior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Espacio inferior",
+      "min": 0,
+      "max": 160,
+      "step": 8,
+      "unit": "px",
+      "default": 0
+    }
   ],
   "blocks": [
     {
       "type": "punto",
       "name": "Punto",
       "settings": [
-        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "efectivo", "label": "Efectivo" }, { "value": "brillo", "label": "Brillo" }, { "value": "check", "label": "Check" } ], "default": "check" },
-        { "type": "text", "id": "texto", "label": "Texto", "default": "Llega a su puerta con envío gratis" }
+        {
+          "type": "select",
+          "id": "icono",
+          "label": "Icono",
+          "options": [
+            {
+              "value": "regalo",
+              "label": "Regalo"
+            },
+            {
+              "value": "camion",
+              "label": "Envío"
+            },
+            {
+              "value": "efectivo",
+              "label": "Efectivo"
+            },
+            {
+              "value": "brillo",
+              "label": "Brillo"
+            },
+            {
+              "value": "check",
+              "label": "Check"
+            },
+            {
+              "value": "copo",
+              "label": "Copo de nieve"
+            },
+            {
+              "value": "estrella",
+              "label": "Estrella"
+            },
+            {
+              "value": "usb",
+              "label": "USB"
+            },
+            {
+              "value": "candado",
+              "label": "Candado (pago seguro)"
+            },
+            {
+              "value": "arbol",
+              "label": "Árbol"
+            },
+            {
+              "value": "casa",
+              "label": "Casa"
+            },
+            {
+              "value": "escudo",
+              "label": "Garantía"
+            },
+            {
+              "value": "reloj",
+              "label": "Reloj"
+            }
+          ],
+          "default": "check"
+        },
+        {
+          "type": "text",
+          "id": "texto",
+          "label": "Texto",
+          "default": "Llega a su puerta con envío gratis"
+        }
       ]
     }
   ],
   "max_blocks": 5,
-  "presets": [ { "name": "KF – Regalo" } ]
+  "presets": [
+    {
+      "name": "KF – Regalo"
+    }
+  ]
 }
 {% endschema %}
