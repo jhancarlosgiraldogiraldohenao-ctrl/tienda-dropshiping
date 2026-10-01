@@ -1,0 +1,89 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background: var(--hl-cafe); }
+  #shopify-section-{{ section.id }} h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section hl-oscuro hl-regalo">
+  <div class="hl-container">
+    <div class="hl-regalo__grid">
+      <div class="hl-regalo__foto hl-reveal">
+        {%- if section.settings.imagen != blank -%}
+          <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1250">
+        {%- else -%}
+          <img src="{{ 'hl-duo.jpg' | asset_url }}" alt="Dos sprays Dr. Melaxin Peel Shot" loading="lazy" width="1024" height="1536">
+        {%- endif -%}
+      </div>
+      <div class="hl-regalo__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="hl-regalo__lista">
+            {%- for block in section.blocks -%}
+              <li class="hl-reveal" style="--hl-i:{{ forloop.index | plus: 2 }}" {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: block.settings.icono %}<span>{{ block.settings.texto }}</span></li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- assign prod = section.settings.producto -%}
+        {%- assign idx = section.settings.variante_num | minus: 1 -%}
+        {%- assign pack = prod.variants[idx] | default: prod.selected_or_first_available_variant -%}
+        {%- if prod != blank and section.settings.mostrar_precio -%}
+          {%- assign normal = prod.variants.first.price | times: section.settings.variante_num -%}
+          {%- assign ahorro = normal | minus: pack.price -%}
+          <div class="hl-regalo__precio hl-reveal">
+            <strong>{{ pack.price | money_without_trailing_zeros }}</strong>
+            {%- if pack.compare_at_price > pack.price -%}<s>{{ pack.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+            {%- if pack.compare_at_price > pack.price -%}<span>{{ section.settings.texto_ahorro }} {{ pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round }}%</span>{%- endif -%}
+            {%- if section.settings.nota_precio != blank -%}<small>{{ section.settings.nota_precio }}</small>{%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.btn_texto != blank -%}
+          {%- if prod != blank and section.settings.compra_directa -%}
+            <a class="hl-btn hl-btn--curcuma hl-reveal" href="{{ routes.cart_url }}/{{ pack.id }}:1">{{ section.settings.btn_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
+          {%- else -%}
+            <a class="hl-btn hl-btn--curcuma hl-reveal" href="{{ section.settings.btn_url | default: prod.url | default: '#' }}{% if prod != blank and section.settings.btn_url == blank %}?variant={{ pack.id }}{% endif %}">{{ section.settings.btn_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
+          {%- endif -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Regalo",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Temporada de regalos" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>El regalo que <em>sí se usa.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Para mamá, la tía, la novia o tu amiga secreta. Un detalle de cuidado personal que se siente especial desde que lo destapan." },
+    { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "product", "id": "producto", "label": "Producto del botón" },
+    { "type": "range", "id": "variante_num", "label": "Opción del producto que se vende aquí (1 = unidad, 2 = pack)", "min": 1, "max": 3, "step": 1, "default": 2 },
+    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "2 sprays de 200 ml · Envío gratis · Pagas al recibir" },
+    { "type": "checkbox", "id": "compra_directa", "label": "El botón lleva directo a pagar", "default": true },
+    { "type": "text", "id": "btn_texto", "label": "Botón – texto", "default": "Llevar el pack x2" },
+    { "type": "url", "id": "btn_url", "label": "Botón – enlace (vacío = producto)" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 72 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "punto",
+      "name": "Punto",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "efectivo", "label": "Efectivo" }, { "value": "brillo", "label": "Brillo" }, { "value": "check", "label": "Check" } ], "default": "check" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Llega a su puerta con envío gratis" }
+      ]
+    }
+  ],
+  "max_blocks": 5,
+  "presets": [ { "name": "KF – Regalo" } ]
+}
+{% endschema %}

@@ -1,0 +1,153 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{%- assign producto = section.settings.producto -%}
+{%- assign v1 = producto.selected_or_first_available_variant -%}
+{%- assign url_compra = section.settings.btn1_url | default: producto.url | default: '#' -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-hero__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.48 | round }}px, 6.6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .hl-hero__sub { font-size: {{ section.settings.texto_size }}px; }
+  #shopify-section-{{ section.id }} .hl-hero__texto { text-align: {{ section.settings.alineacion }}; }
+  {%- if section.settings.alineacion == 'center' -%}
+  #shopify-section-{{ section.id }} .hl-hero__ctas, #shopify-section-{{ section.id }} .hl-hero__chips, #shopify-section-{{ section.id }} .hl-precio { justify-content: center; }
+  #shopify-section-{{ section.id }} .hl-hero__sub { margin-inline: auto; }
+  {%- endif -%}
+{% endstyle %}
+
+<section class="hl-section hl-hero" data-hl-hero>
+  <div class="hl-container">
+    <div class="hl-hero__grid">
+      <div class="hl-hero__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h1 class="hl-hero__titulo hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h1>
+        {%- if section.settings.sub != blank -%}<p class="hl-hero__sub hl-reveal" style="--hl-i:2">{{ section.settings.sub | newline_to_br }}</p>{%- endif -%}
+
+        {%- if section.settings.mostrar_precio and producto != blank -%}
+          <div class="hl-precio hl-reveal" style="--hl-i:3">
+            <strong data-hl-h-precio>{{ v1.price | money_without_trailing_zeros }}</strong>
+            {%- if v1.compare_at_price > v1.price -%}
+              <s data-hl-h-antes>{{ v1.compare_at_price | money_without_trailing_zeros }}</s>
+              <span class="hl-precio__pct" data-hl-h-pct>-{{ v1.compare_at_price | minus: v1.price | times: 100.0 | divided_by: v1.compare_at_price | round }}%</span>
+            {%- endif -%}
+            {%- if section.settings.nota_precio != blank -%}<span class="hl-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
+          </div>
+        {%- endif -%}
+
+        <div class="hl-hero__ctas hl-reveal" style="--hl-i:4">
+          {%- if section.settings.btn1_texto != blank -%}<a class="hl-btn hl-btn--curcuma" href="{{ url_compra }}" data-hl-h-comprar><span>{{ section.settings.btn1_texto }}</span> {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
+          {%- assign pack = producto.variants[1] -%}
+          {%- if section.settings.mostrar_pack and pack -%}
+            {%- assign ahorro = pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round -%}
+            <button type="button" class="hl-btn hl-btn--ghost hl-hero__pack" data-hl-h-pack
+              data-url-uno="{{ url_compra }}" data-url-pack="{{ routes.cart_url }}/{{ pack.id }}:1"
+              data-precio-uno="{{ v1.price | money_without_trailing_zeros | escape }}" data-precio-pack="{{ pack.price | money_without_trailing_zeros | escape }}"
+              data-antes-uno="{{ v1.compare_at_price | money_without_trailing_zeros | escape }}" data-antes-pack="{{ pack.compare_at_price | money_without_trailing_zeros | escape }}"
+              data-pct-uno="{% if v1.compare_at_price > v1.price %}-{{ v1.compare_at_price | minus: v1.price | times: 100.0 | divided_by: v1.compare_at_price | round }}%{% endif %}" data-pct-pack="{% if pack.compare_at_price > pack.price %}-{{ pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round }}%{% endif %}"
+              data-txt-comprar-uno="{{ section.settings.btn1_texto | escape }}" data-txt-comprar-pack="{{ section.settings.pack_comprar | escape }}"
+              data-txt-pack="{{ section.settings.pack_texto | escape }} · {{ section.settings.pack_ahorro | escape }} {{ ahorro }}%" data-txt-volver="{{ section.settings.pack_volver | escape }}"
+              data-sello-uno="{{ section.settings.sello_centro | escape }}" data-sello-pack="{{ section.settings.pack_sello | escape }}" aria-pressed="false">{{ section.settings.pack_texto }} · {{ section.settings.pack_ahorro }} {{ ahorro }}%</button>
+          {%- elsif section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
+        </div>
+
+        {%- assign chips = section.blocks | where: 'type', 'chip' -%}
+        {%- if chips.size > 0 -%}
+          <div class="hl-hero__chips hl-reveal" style="--hl-i:5">
+            {%- for block in chips -%}<span class="hl-chip" {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: block.settings.icono %}{{ block.settings.texto }}</span>{%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="hl-hero__visual hl-reveal" style="--hl-i:2">
+        {%- if section.settings.sello_centro != blank -%}
+          <div class="hl-sello" aria-hidden="true">
+            <svg viewBox="0 0 124 124"><defs><path id="hl-circ-{{ section.id }}" d="M62,62 m-48,0 a48,48 0 1,1 96,0 a48,48 0 1,1 -96,0"/></defs><text><textPath href="#hl-circ-{{ section.id }}">{{ section.settings.sello_texto }}</textPath></text></svg>
+            <b data-hl-h-sello>{{ section.settings.sello_centro }}</b>
+          </div>
+        {%- endif -%}
+        <div class="hl-arco">
+          {%- if section.settings.imagen != blank -%}
+            <img src="{{ section.settings.imagen | image_url: width: 1200 }}" srcset="{{ section.settings.imagen | image_url: width: 600 }} 600w, {{ section.settings.imagen | image_url: width: 900 }} 900w, {{ section.settings.imagen | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 45vw, 90vw" alt="{{ section.settings.imagen.alt | default: section.settings.alt_imagen | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
+          {%- else -%}
+            <img src="{{ 'hl-hero.jpg' | asset_url }}" alt="{{ section.settings.alt_imagen | escape }}" width="1024" height="1536" loading="eager" fetchpriority="high">
+          {%- endif -%}
+          {%- if section.settings.mostrar_pack and section.settings.imagen_pack != blank -%}
+            <img class="hl-arco__pack" src="{{ section.settings.imagen_pack | image_url: width: 1200 }}" alt="{{ section.settings.imagen_pack.alt | escape }}" width="1024" height="1536" loading="lazy" aria-hidden="true">
+          {%- endif -%}
+        </div>
+        {%- assign n_uno = 0 -%}{%- assign n_pack = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'flotante' -%}
+            {%- if block.settings.modo == 'pack' -%}{%- assign n_pack = n_pack | plus: 1 -%}{%- assign pos = n_pack -%}{%- else -%}{%- assign n_uno = n_uno | plus: 1 -%}{%- assign pos = n_uno -%}{%- endif -%}
+            <span class="hl-flotante hl-pos-{{ pos }}{% if block.settings.modo == 'pack' %} hl-flotante--pack{% else %} hl-flotante--uno{% endif %}" {{ block.shopify_attributes }}><i>{% render 'hl-icono', nombre: block.settings.icono %}</i><span>{{ block.settings.titulo }}{%- if block.settings.texto != blank -%}<small>{{ block.settings.texto }}</small>{%- endif -%}</span></span>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Apertura",
+  "tag": "section",
+  "class": "hl-wrap",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Dr. Melaxin · Peel Shot 200 ml" },
+    { "type": "richtext", "id": "titulo", "label": "Título (lo que pongas en cursiva sale en color cúrcuma)", "default": "<p>Piel suave, <em>lista</em> para diciembre.</p>" },
+    { "type": "textarea", "id": "sub", "label": "Texto", "default": "Un spray exfoliante con ácido kójico, cúrcuma y niacinamida que renueva la textura de tu piel y le devuelve la luz. Rocías, esperas, enjuagas. Así de fácil." },
+    { "type": "header", "content": "Precio" },
+    { "type": "product", "id": "producto", "label": "Producto (precio y enlace de compra)" },
+    { "type": "checkbox", "id": "mostrar_precio", "label": "Mostrar precio", "default": true },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
+    { "type": "header", "content": "Botones" },
+    { "type": "text", "id": "btn1_texto", "label": "Botón principal – texto", "default": "Lo quiero" },
+    { "type": "url", "id": "btn1_url", "label": "Botón principal – enlace (vacío = producto)" },
+    { "type": "checkbox", "id": "mostrar_pack", "label": "Mostrar botón del pack x2 (usa la 2.ª opción del producto)", "default": true },
+    { "type": "text", "id": "pack_texto", "label": "Botón pack – texto", "default": "Pack x2" },
+    { "type": "text", "id": "pack_ahorro", "label": "Botón pack – palabra de ahorro", "default": "ahorra" },
+    { "type": "text", "id": "pack_comprar", "label": "Botón comprar en modo pack", "default": "Llevar el pack x2" },
+    { "type": "text", "id": "pack_volver", "label": "Botón para volver a 1 unidad", "default": "← Volver a 1 unidad" },
+    { "type": "text", "id": "pack_sello", "label": "Sello en modo pack", "default": "x2" },
+    { "type": "image_picker", "id": "imagen_pack", "label": "Foto del pack x2" },
+    { "type": "text", "id": "btn2_texto", "label": "Botón secundario – texto (si no hay pack)", "default": "Ver el ritual" },
+    { "type": "url", "id": "btn2_url", "label": "Botón secundario – enlace" },
+    { "type": "header", "content": "Imagen" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto principal" },
+    { "type": "text", "id": "alt_imagen", "label": "Descripción de la foto", "default": "Spray exfoliante Dr. Melaxin Peel Shot junto a cúrcuma" },
+    { "type": "text", "id": "sello_texto", "label": "Sello giratorio – texto", "default": "envío gratis · pagas al recibir · " },
+    { "type": "text", "id": "sello_centro", "label": "Sello giratorio – centro", "default": "200ml" },
+    { "type": "header", "content": "Tipografía" },
+    { "type": "select", "id": "alineacion", "label": "Alineación", "options": [ { "value": "left", "label": "Izquierda" }, { "value": "center", "label": "Centro" } ], "default": "left" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 40, "max": 120, "step": 2, "unit": "px", "default": 96 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 24, "step": 1, "unit": "px", "default": 18 },
+    { "type": "header", "content": "Espaciado" },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Garantía corta",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "efectivo", "label": "Efectivo" }, { "value": "camion", "label": "Envío" }, { "value": "escudo", "label": "Garantía" }, { "value": "spray", "label": "Spray" }, { "value": "hoja", "label": "Hoja" }, { "value": "check", "label": "Check" } ], "default": "check" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis" }
+      ]
+    },
+    {
+      "type": "flotante",
+      "name": "Etiqueta flotante",
+      "limit": 8,
+      "settings": [
+        { "type": "select", "id": "modo", "label": "Se muestra con", "options": [ { "value": "uno", "label": "1 unidad" }, { "value": "pack", "label": "Pack x2" } ], "default": "uno" },
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "sol", "label": "Sol" }, { "value": "hoja", "label": "Hoja" }, { "value": "gota", "label": "Gota" }, { "value": "capas", "label": "Capas" }, { "value": "brillo", "label": "Brillo" }, { "value": "regalo", "label": "Regalo" }, { "value": "camion", "label": "Envío" }, { "value": "spray", "label": "Spray" }, { "value": "efectivo", "label": "Efectivo" } ], "default": "hoja" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Cúrcuma" },
+        { "type": "text", "id": "texto", "label": "Texto pequeño" }
+      ]
+    }
+  ],
+  "presets": [ { "name": "KF – Apertura" } ]
+}
+{% endschema %}

@@ -1,0 +1,34 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  #shopify-section-{{ section.id }} .hl-cinta__pista { animation-duration: {{ section.settings.velocidad }}s; }
+{% endstyle %}
+
+<section class="hl-section hl-cinta" aria-label="{{ section.settings.etiqueta | escape }}">
+  <div class="hl-cinta__pista">
+    {%- for n in (1..2) -%}
+      <div class="hl-cinta__grupo"{% if n == 2 %} aria-hidden="true"{% endif %}>
+        {%- for rep in (1..2) -%}
+          {%- for block in section.blocks -%}
+            <span class="hl-cinta__item" {% if n == 1 and rep == 1 %}{{ block.shopify_attributes }}{% endif %}>{{ block.settings.texto }}{% render 'hl-icono', nombre: 'sol' %}</span>
+          {%- endfor -%}
+        {%- endfor -%}
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Cinta en movimiento",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "etiqueta", "label": "Nombre (accesibilidad)", "default": "Beneficios" },
+    { "type": "range", "id": "velocidad", "label": "Duración de una vuelta", "min": 10, "max": 80, "step": 2, "unit": "s", "default": 36 }
+  ],
+  "blocks": [
+    { "type": "item", "name": "Frase", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis a toda Colombia" } ] }
+  ],
+  "presets": [ { "name": "KF – Cinta en movimiento", "blocks": [ { "type": "item" } ] } ]
+}
+{% endschema %}

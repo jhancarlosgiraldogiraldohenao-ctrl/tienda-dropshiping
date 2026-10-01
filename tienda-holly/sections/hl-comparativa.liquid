@@ -1,0 +1,53 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section hl-comparativa">
+  <div class="hl-container hl-comparativa__wrap">
+    <div class="hl-cabecera hl-cabecera--centro">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="hl-tabla hl-reveal" style="--hl-i:3" role="table">
+      <div class="hl-tabla__fila hl-tabla__cabeza" role="row">
+        <span role="columnheader"></span>
+        <span role="columnheader" class="hl-tabla__nos">{{ section.settings.col_nos }}</span>
+        <span role="columnheader">{{ section.settings.col_otros }}</span>
+      </div>
+      {%- for block in section.blocks -%}
+        <div class="hl-tabla__fila" role="row" {{ block.shopify_attributes }}>
+          <span role="cell">{{ block.settings.texto }}</span>
+          <span role="cell" class="hl-tabla__nos">{% if block.settings.nos %}{% render 'hl-icono', nombre: 'check' %}{% else %}{% render 'hl-icono', nombre: 'x' %}{% endif %}</span>
+          <span role="cell" class="hl-tabla__otro">{% if block.settings.otros %}{% render 'hl-icono', nombre: 'check' %}{% else %}{% render 'hl-icono', nombre: 'x' %}{% endif %}</span>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Comparativa",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Por qué en spray" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Exfoliar, <em>sin raspar.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Frente a las esponjas, guantes y exfoliantes de granitos de siempre." },
+    { "type": "text", "id": "col_nos", "label": "Columna 1", "default": "Peel Shot" },
+    { "type": "text", "id": "col_otros", "label": "Columna 2", "default": "Exfoliante de granitos" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 60 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "fila", "name": "Fila", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "Llega sola a la espalda" }, { "type": "checkbox", "id": "nos", "label": "Nosotros sí", "default": true }, { "type": "checkbox", "id": "otros", "label": "Los otros sí", "default": false } ] }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "KF – Comparativa", "blocks": [ { "type": "fila" } ] } ]
+}
+{% endschema %}

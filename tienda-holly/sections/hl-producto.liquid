@@ -1,0 +1,205 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
+{%- assign variante = product.selected_or_first_available_variant -%}
+{%- assign form_id = 'hl-form-' | append: section.id -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-compra__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.62 | round }}px, 3.6vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .hl-compra__intro, #shopify-section-{{ section.id }} .hl-compra__puntos li { font-size: {{ section.settings.texto_size }}px; }
+{% endstyle %}
+
+<section class="hl-section hl-producto">
+  <div class="hl-container">
+    <div class="hl-producto__grid">
+      <div class="hl-galeria" data-hl-galeria>
+        {%- assign primera = product.featured_media -%}
+        <div class="hl-galeria__principal">
+          {%- if section.settings.sello != blank -%}<span class="hl-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
+          {%- if primera -%}
+            <img src="{{ primera | image_url: width: 1200 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
+          {%- else -%}
+            {{ 'product-1' | placeholder_svg_tag }}
+          {%- endif -%}
+        </div>
+        {%- if product.media.size > 1 and section.settings.mostrar_miniaturas -%}
+          <div class="hl-galeria__mins">
+            {%- for media in product.media -%}
+              {%- if media.media_type == 'image' -%}
+                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-src="{{ media | image_url: width: 1200 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
+                  <img src="{{ media | image_url: width: 180 }}" alt="" loading="lazy" width="90" height="90">
+                </button>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="hl-compra" data-hl-compra>
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h1 class="hl-compra__titulo">{{ section.settings.titulo_corto | default: product.title }}</h1>
+        {%- if section.settings.subtitulo != blank -%}<p class="hl-compra__estrellas">{{ section.settings.subtitulo }}</p>{%- endif -%}
+        {%- assign v1 = product.variants.first -%}
+        <div class="hl-precio" data-hl-precio-bloque>
+          <strong data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</strong>
+          <s data-hl-antes{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>{{ variante.compare_at_price | money_without_trailing_zeros }}</s>
+          <span class="hl-precio__pct" data-hl-pct{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>-{{ variante.compare_at_price | minus: variante.price | times: 100.0 | divided_by: variante.compare_at_price | round }}%</span>
+          {%- if section.settings.nota_precio != blank -%}<span class="hl-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
+        </div>
+
+        {%- unless product.has_only_default_variant -%}
+          <div class="hl-ofertas" role="radiogroup" aria-label="{{ product.options.first | escape }}">
+            {%- if section.settings.ofertas_titulo != blank -%}<p class="hl-ofertas__titulo">{{ section.settings.ofertas_titulo }}</p>{%- endif -%}
+            {%- for v in product.variants -%}
+              {%- liquid
+                if v.featured_image
+                  assign img_url = v.featured_image | image_url: width: 1200
+                else
+                  assign img_url = product.featured_media | image_url: width: 1200
+                endif
+                assign normal = v1.price | times: forloop.index
+                assign ahorro = normal | minus: v.price
+                if forloop.first
+                  assign nota = section.settings.oferta_1_nota
+                else
+                  assign nota = section.settings.oferta_2_nota
+                endif
+              -%}
+              <label class="hl-oferta{% if v.id == variante.id %} is-activa{% endif %}">
+                <input type="radio" name="hl-oferta-{{ section.id }}" value="{{ v.id }}" data-hl-oferta data-price="{{ v.price | money_without_trailing_zeros | escape }}" data-compare="{% if v.compare_at_price > v.price %}{{ v.compare_at_price | money_without_trailing_zeros | escape }}{% endif %}" data-pct="{% if v.compare_at_price > v.price %}-{{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%{% endif %}" data-img="{{ img_url }}" {% if v.id == variante.id %}checked{% endif %} {% unless v.available %}disabled{% endunless %}>
+                <span class="hl-oferta__radio" aria-hidden="true"></span>
+                <span class="hl-oferta__txt">
+                  <strong>{{ v.title }}</strong>
+                  {%- if nota != blank -%}<small>{{ nota }}</small>{%- endif -%}
+                </span>
+                <span class="hl-oferta__precio">
+                  <strong>{{ v.price | money_without_trailing_zeros }}</strong>
+                  {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+                </span>
+                {%- if ahorro > 0 -%}
+                  <span class="hl-oferta__badge">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%</span>
+                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank -%}
+                  <span class="hl-oferta__badge hl-oferta__badge--suave">{{ section.settings.oferta_1_etiqueta }}</span>
+                {%- endif -%}
+              </label>
+            {%- endfor -%}
+          </div>
+        {%- endunless -%}
+
+        {%- if section.settings.intro != blank -%}<p class="hl-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
+
+        {%- if section.settings.puntos != blank -%}
+          <ul class="hl-compra__puntos">
+            {%- assign puntos = section.settings.puntos | newline_to_br | split: '<br />' -%}
+            {%- for p in puntos -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{% render 'hl-icono', nombre: 'check' %}<span>{{ t }}</span></li>{%- endif -%}{%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        <div class="hl-compra__form">
+          <product-form class="product-form" data-section-id="{{ section.id }}">
+            <div class="product-form__error-message-wrapper" role="alert" hidden><span class="product-form__error-message"></span></div>
+            {%- form 'product', product, id: form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" value="{{ variante.id }}" class="product-variant-id">
+              <div class="hl-compra__fila">
+                <div class="hl-cantidad">
+                  <button type="button" data-hl-cant="-1" aria-label="Menos">−</button>
+                  <input type="number" name="quantity" value="1" min="1" aria-label="Cantidad">
+                  <button type="button" data-hl-cant="1" aria-label="Más">+</button>
+                </div>
+                <button type="submit" name="add" class="hl-btn hl-btn--ghost product-form__submit" {% unless variante.available %}disabled{% endunless %}>
+                  <span>{% if variante.available %}{{ section.settings.carrito_texto }}{% else %}{{ section.settings.agotado_texto }}{% endif %}</span>
+                  <div class="loading__spinner hidden"><svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg></div>
+                </button>
+              </div>
+            {%- endform -%}
+          </product-form>
+          <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
+          {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'efectivo' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
+        </div>
+
+        {%- if section.blocks.size > 0 -%}
+          <div class="hl-confianza">
+            {%- for block in section.blocks -%}
+              <div {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: block.settings.icono %}<strong>{{ block.settings.titulo }}</strong>{{ block.settings.texto }}</div>
+            {%- endfor -%}
+          </div>
+        {%- endif -%}
+
+        <div class="hl-desc">
+          {%- if product.description != blank -%}
+            <details{% if section.settings.abrir_descripcion %} open{% endif %}>
+              <summary>{{ section.settings.desc_titulo }}</summary>
+              <div class="hl-desc__cuerpo">{{ product.description }}</div>
+            </details>
+          {%- endif -%}
+          {%- if section.settings.envio != blank -%}
+            <details>
+              <summary>{{ section.settings.envio_titulo }}</summary>
+              <div class="hl-desc__cuerpo">{{ section.settings.envio | newline_to_br }}</div>
+            </details>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hl-sticky-compra" data-hl-sticky-compra>
+    <div><small>{{ section.settings.sticky_texto }}</small><strong data-hl-sticky-precio>{{ variante.price | money_without_trailing_zeros }}</strong></div>
+    <a class="hl-btn hl-btn--curcuma" data-hl-comprar-sticky href="{{ routes.cart_url }}/{{ variante.id }}:1">{{ section.settings.comprar_corto }}</a>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Producto",
+  "tag": "section",
+  "settings": [
+    { "type": "header", "content": "Textos" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Dr. Melaxin · 200 ml" },
+    { "type": "text", "id": "titulo_corto", "label": "Título visible (vacío = título del producto)", "default": "Peel Shot, spray exfoliante corporal" },
+    { "type": "text", "id": "subtitulo", "label": "Subtítulo", "default": "Ácido kójico · Cúrcuma · Niacinamida · AHA + PHA" },
+    { "type": "textarea", "id": "intro", "label": "Introducción", "default": "Renueva la textura de tu piel y ayuda a mejorar visualmente el tono desigual. Rocías, esperas y enjuagas: llega fácil a espalda, codos y rodillas." },
+    { "type": "text", "id": "nota_precio", "label": "Nota bajo el precio", "default": "Envío gratis · Pagas en efectivo al recibir" },
+    { "type": "textarea", "id": "puntos", "label": "Puntos clave (uno por línea)", "default": "Piel con sensación más suave y lisa\nAyuda a unificar visualmente el tono\nFormato spray: sin frotar de más\n200 ml para varias semanas de uso" },
+    { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Pagas al recibir" },
+    { "type": "header", "content": "Opciones de compra" },
+    { "type": "text", "id": "ofertas_titulo", "label": "Título de las opciones", "default": "Elige tu opción" },
+    { "type": "text", "id": "oferta_1_nota", "label": "Opción 1 – texto pequeño", "default": "Para tu ritual" },
+    { "type": "text", "id": "oferta_1_etiqueta", "label": "Opción 1 – etiqueta", "default": "-20%" },
+    { "type": "text", "id": "oferta_2_nota", "label": "Opción 2 – texto pequeño", "default": "Uno para ti y otro para regalar" },
+    { "type": "text", "id": "texto_ahorro", "label": "Texto de ahorro", "default": "Ahorras" },
+    { "type": "checkbox", "id": "mostrar_miniaturas", "label": "Mostrar las demás fotos del producto", "default": false },
+    { "type": "header", "content": "Botones" },
+    { "type": "text", "id": "comprar_texto", "label": "Botón comprar ahora", "default": "Comprar ahora · pago contraentrega" },
+    { "type": "text", "id": "comprar_corto", "label": "Botón en la barra del celular", "default": "Comprar ahora" },
+    { "type": "text", "id": "comprar_nota", "label": "Nota bajo el botón", "default": "No pagas nada ahora: pagas en efectivo al recibir" },
+    { "type": "text", "id": "carrito_texto", "label": "Botón agregar al carrito", "default": "Agregar al carrito" },
+    { "type": "text", "id": "agotado_texto", "label": "Texto agotado", "default": "Agotado" },
+    { "type": "text", "id": "sticky_texto", "label": "Texto barra del celular", "default": "Peel Shot 200 ml" },
+    { "type": "header", "content": "Desplegables" },
+    { "type": "text", "id": "desc_titulo", "label": "Título descripción", "default": "Descripción y modo de uso" },
+    { "type": "checkbox", "id": "abrir_descripcion", "label": "Descripción abierta", "default": false },
+    { "type": "text", "id": "envio_titulo", "label": "Título envío", "default": "Envío y pago" },
+    { "type": "textarea", "id": "envio", "label": "Texto envío", "default": "Envío gratis a toda Colombia. Entrega estimada de 2 a 7 días hábiles.\nPagas en efectivo cuando recibes el pedido.\nSi no estás o rechazas el pedido al momento de la entrega, se cobrará el valor del flete." },
+    { "type": "header", "content": "Tamaños y espacio" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 24, "max": 64, "step": 2, "unit": "px", "default": 46 },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto", "min": 13, "max": 20, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "confianza",
+      "name": "Garantía",
+      "limit": 3,
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "camion", "label": "Envío" }, { "value": "efectivo", "label": "Efectivo" }, { "value": "escudo", "label": "Garantía" }, { "value": "regalo", "label": "Regalo" } ], "default": "camion" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Envío gratis" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "A toda Colombia" }
+      ]
+    }
+  ]
+}
+{% endschema %}

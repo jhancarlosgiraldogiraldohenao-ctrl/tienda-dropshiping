@@ -1,0 +1,120 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; background: #0c1f17; }
+  #shopify-section-{{ section.id }} .hl-footer__marca p, #shopify-section-{{ section.id }} .hl-footer__texto { font-size: {{ section.settings.texto_size }}px; }
+{% endstyle %}
+
+<footer class="hl-section hl-footer">
+  <div class="hl-container">
+    <div class="hl-footer__top">
+      <div class="hl-footer__marca">
+        {%- if section.settings.logo != blank -%}
+          <img src="{{ section.settings.logo | image_url: width: 600 }}" alt="{{ section.settings.logo.alt | default: shop.name | escape }}" width="{{ section.settings.logo_width }}" height="{{ section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio | round }}" style="width: {{ section.settings.logo_width }}px; height: auto" loading="lazy">
+        {%- else -%}
+          <a class="hl-wordmark" href="{{ routes.root_url }}" ><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="6.5" fill="currentColor"/><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M16 2.5v4M16 25.5v4M2.5 16h4M25.5 16h4M6.4 6.4l2.8 2.8M22.8 22.8l2.8 2.8M6.4 25.6l2.8-2.8M22.8 9.2l2.8-2.8"/></g></svg>{{ section.settings.marca_texto | default: shop.name }}</a>
+        {%- endif -%}
+        {%- if section.settings.tagline != blank -%}<p>{{ section.settings.tagline | newline_to_br }}</p>{%- endif -%}
+        <div class="hl-footer__redes">
+          {%- if settings.social_instagram_link != blank -%}<a href="{{ settings.social_instagram_link }}" aria-label="Instagram" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'instagram' %}</a>{%- endif -%}
+          {%- if settings.social_facebook_link != blank -%}<a href="{{ settings.social_facebook_link }}" aria-label="Facebook" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'facebook' %}</a>{%- endif -%}
+          {%- if settings.social_tiktok_link != blank -%}<a href="{{ settings.social_tiktok_link }}" aria-label="TikTok" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'tiktok' %}</a>{%- endif -%}
+        </div>
+      </div>
+
+      <div>
+        <h4>{{ section.settings.nav_titulo }}</h4>
+        <ul>
+          {%- for i in (1..5) -%}
+            {%- assign k_label = 'nav_' | append: i | append: '_label' -%}
+            {%- assign k_url = 'nav_' | append: i | append: '_url' -%}
+            {%- if section.settings[k_label] != blank -%}
+              <li><a href="{{ section.settings[k_url] | default: '#' }}">{{ section.settings[k_label] }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      </div>
+
+      <div>
+        <h4>{{ section.settings.info_titulo }}</h4>
+        <p class="hl-footer__texto">{{ section.settings.info_texto | newline_to_br }}</p>
+      </div>
+    </div>
+
+    {%- if section.settings.texto_gigante != blank -%}
+      <div class="hl-footer__gigante" aria-hidden="true">{{ section.settings.texto_gigante }}</div>
+    {%- endif -%}
+
+    <div class="hl-footer__base">
+      <span>© {{ 'now' | date: '%Y' }} {{ section.settings.marca_texto | default: shop.name }}. {{ section.settings.copyright }}</span>
+      <nav class="hl-footer__legal" aria-label="Legal">
+        <a href="{{ routes.root_url }}policies/privacy-policy">{{ section.settings.legal_privacidad }}</a>
+        <a href="{{ routes.root_url }}policies/terms-of-service">{{ section.settings.legal_terminos }}</a>
+        <a href="{{ routes.root_url }}policies/refund-policy">{{ section.settings.legal_devoluciones }}</a>
+        <a href="{{ routes.root_url }}policies/shipping-policy">{{ section.settings.legal_envios }}</a>
+      </nav>
+      {%- if section.settings.mostrar_pagos and shop.enabled_payment_types.size > 0 -%}
+        <ul class="hl-footer__pagos" role="list">
+          {%- for type in shop.enabled_payment_types -%}<li>{{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}</li>{%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </div>
+
+    {%- if section.settings.mostrar_pais -%}
+      {%- form 'localization', id: 'FooterCountryFormNoScript', class: 'localization-form' -%}
+        <div class="localization-form__select">
+          <select class="localization-selector link" name="country_code" aria-label="País">
+            {%- for country in localization.available_countries -%}
+              <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected{% endif %}>{{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})</option>
+            {%- endfor -%}
+          </select>
+        </div>
+        <button class="button button--tertiary">Actualizar país</button>
+      {%- endform -%}
+    {%- endif -%}
+  </div>
+</footer>
+
+{% schema %}
+{
+  "name": "KF – Pie de página",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "header", "content": "Marca" },
+    { "type": "text", "id": "marca_texto", "label": "Nombre de la marca", "default": "Kojicfur" },
+    { "type": "image_picker", "id": "logo", "label": "Logo (opcional)" },
+    { "type": "range", "id": "logo_width", "label": "Ancho del logo (px)", "min": 60, "max": 300, "step": 10, "unit": "px", "default": 160 },
+    { "type": "textarea", "id": "tagline", "label": "Frase de la marca", "default": "Rituales de cuidado corporal." },
+    { "type": "paragraph", "content": "Los iconos de redes aparecen cuando pones tus enlaces en Configuración del tema → Redes sociales." },
+    { "type": "header", "content": "Navegación" },
+    { "type": "text", "id": "nav_titulo", "label": "Título", "default": "Tienda" },
+    { "type": "text", "id": "nav_1_label", "label": "Enlace 1 – texto", "default": "Inicio" },
+    { "type": "url", "id": "nav_1_url", "label": "Enlace 1 – dirección" },
+    { "type": "text", "id": "nav_2_label", "label": "Enlace 2 – texto" },
+    { "type": "url", "id": "nav_2_url", "label": "Enlace 2 – dirección" },
+    { "type": "text", "id": "nav_3_label", "label": "Enlace 3 – texto" },
+    { "type": "url", "id": "nav_3_url", "label": "Enlace 3 – dirección" },
+    { "type": "text", "id": "nav_4_label", "label": "Enlace 4 – texto" },
+    { "type": "url", "id": "nav_4_url", "label": "Enlace 4 – dirección" },
+    { "type": "text", "id": "nav_5_label", "label": "Enlace 5 – texto" },
+    { "type": "url", "id": "nav_5_url", "label": "Enlace 5 – dirección" },
+    { "type": "header", "content": "Información" },
+    { "type": "text", "id": "info_titulo", "label": "Título", "default": "Compra tranquilo" },
+    { "type": "textarea", "id": "info_texto", "label": "Texto", "default": "Pago contraentrega en toda Colombia." },
+    { "type": "text", "id": "texto_gigante", "label": "Texto gigante decorativo", "default": "Kojicfur" },
+    { "type": "header", "content": "Barra inferior" },
+    { "type": "text", "id": "copyright", "label": "Texto tras el copyright", "default": "Todos los derechos reservados." },
+    { "type": "text", "id": "legal_privacidad", "label": "Texto enlace privacidad", "default": "Privacidad" },
+    { "type": "text", "id": "legal_terminos", "label": "Texto enlace términos", "default": "Términos" },
+    { "type": "text", "id": "legal_devoluciones", "label": "Texto enlace devoluciones", "default": "Devoluciones" },
+    { "type": "text", "id": "legal_envios", "label": "Texto enlace envíos", "default": "Envíos" },
+    { "type": "checkbox", "id": "mostrar_pagos", "label": "Mostrar iconos de pago", "default": true },
+    { "type": "checkbox", "id": "mostrar_pais", "label": "Mostrar selector de país", "default": false },
+    { "type": "header", "content": "Tipografía y espaciado" },
+    { "type": "range", "id": "texto_size", "label": "Tamaño del texto (px)", "min": 12, "max": 20, "step": 1, "unit": "px", "default": 15 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior (px)", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ]
+}
+{% endschema %}

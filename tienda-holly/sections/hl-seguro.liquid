@@ -1,0 +1,56 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section hl-seguro">
+  <div class="hl-container hl-seguro__wrap">
+    <div class="hl-cabecera hl-cabecera--centro">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="hl-seguro__grid">
+      {%- for block in section.blocks -%}
+        <div class="hl-tarjeta hl-reveal" style="--hl-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+          {% render 'hl-icono', nombre: block.settings.icono %}
+          <h3>{{ block.settings.titulo }}</h3>
+          <p>{{ block.settings.texto }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.aviso != blank -%}<p class="hl-seguro__aviso">{{ section.settings.aviso }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Uso seguro",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Úsalo bien" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Tu piel, <em>con cuidado.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Es un exfoliante con ácidos: funciona mejor cuando lo usas con cabeza." },
+    { "type": "text", "id": "aviso", "label": "Aviso final", "default": "Solo para uso externo. Los resultados pueden variar según el tipo de piel y la constancia de uso." },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "tarjeta",
+      "name": "Consejo",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [ { "value": "mano", "label": "Mano" }, { "value": "sol", "label": "Sol" }, { "value": "ojo", "label": "Ojo" }, { "value": "gota", "label": "Gota" }, { "value": "escudo", "label": "Escudo" } ], "default": "mano" },
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Prueba primero" },
+        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Aplica en una zona pequeña antes del primer uso." }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [ { "name": "KF – Uso seguro", "blocks": [ { "type": "tarjeta" } ] } ]
+}
+{% endschema %}

@@ -1,0 +1,367 @@
+{
+  "sections": {
+    "principal": {
+      "type": "hl-producto",
+      "settings": {
+        "titulo_corto": "Exfoliante corporal en spray",
+        "sticky_texto": "Exfoliante en spray · 200 ml"
+      },
+      "blocks": {
+        "p1": {
+          "type": "confianza",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        "p2": {
+          "type": "confianza",
+          "settings": {
+            "icono": "efectivo",
+            "titulo": "Pagas al recibir",
+            "texto": "En efectivo, en tu puerta"
+          }
+        },
+        "p3": {
+          "type": "confianza",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Compra protegida",
+            "texto": "Garantía y retracto de ley"
+          }
+        }
+      },
+      "block_order": [
+        "p1",
+        "p2",
+        "p3"
+      ]
+    },
+    "activos": {
+      "type": "hl-activos",
+      "settings": {
+        "imagen": "shopify://shop_images/file_00000000a01c81f5ac569fe948e4c053_7210f52d-9620-4a07-b974-c74d89147b13.png"
+      },
+      "blocks": {
+        "a1": {
+          "type": "activo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Ácido kójico",
+            "texto": "De alta pureza. Ayuda a mejorar visualmente las manchas y el tono desigual."
+          }
+        },
+        "a2": {
+          "type": "activo",
+          "settings": {
+            "icono": "hoja",
+            "titulo": "Cúrcuma",
+            "texto": "Ingrediente tradicional asociado a una piel de aspecto luminoso y cálido."
+          }
+        },
+        "a3": {
+          "type": "activo",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Niacinamida",
+            "texto": "Favorece una apariencia más uniforme y una textura más fina."
+          }
+        },
+        "a4": {
+          "type": "activo",
+          "settings": {
+            "icono": "capas",
+            "titulo": "AHA + PHA",
+            "texto": "Exfoliantes suaves que retiran células muertas y dejan la piel lisa al tacto."
+          }
+        }
+      },
+      "block_order": [
+        "a1",
+        "a2",
+        "a3",
+        "a4"
+      ]
+    },
+    "ritual": {
+      "type": "hl-ritual",
+      "settings": {},
+      "blocks": {
+        "r1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Rocía",
+            "texto": "Sobre la piel limpia y seca, en la zona que quieras cuidar."
+          }
+        },
+        "r2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Espera",
+            "texto": "Distribuye suave, sin frotar, y deja actuar según indica el envase."
+          }
+        },
+        "r3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Enjuaga e hidrata",
+            "texto": "Retira con agua y termina con tu crema de siempre. Listo."
+          }
+        }
+      },
+      "block_order": [
+        "r1",
+        "r2",
+        "r3"
+      ]
+    },
+    "zonas": {
+      "type": "hl-zonas",
+      "settings": {},
+      "blocks": {
+        "z1": {
+          "type": "zona",
+          "settings": {
+            "zona": "Codos",
+            "texto": "Suaviza la piel áspera y reseca por el roce del día a día.",
+            "imagen": "shopify://shop_images/hl-zona-codos-spray.jpg"
+          }
+        },
+        "z2": {
+          "type": "zona",
+          "settings": {
+            "zona": "Rodillas",
+            "texto": "Ayuda a que se vean más parejas antes de ponerte short o vestido.",
+            "imagen": "shopify://shop_images/hl-zona-rodillas.jpg"
+          }
+        },
+        "z3": {
+          "type": "zona",
+          "settings": {
+            "zona": "Espalda",
+            "texto": "El spray llega solito a donde tus manos no alcanzan.",
+            "imagen": "shopify://shop_images/hl-zona-espalda-spray.jpg"
+          }
+        },
+        "z4": {
+          "type": "zona",
+          "settings": {
+            "zona": "Piernas",
+            "texto": "Textura más lisa y una apariencia luminosa para la temporada de playa.",
+            "imagen": "shopify://shop_images/hl-zona-piernas.jpg"
+          }
+        },
+        "z5": {
+          "type": "zona",
+          "settings": {
+            "zona": "Brazos",
+            "texto": "Renueva la superficie y deja la piel suave al tacto.",
+            "imagen": "shopify://shop_images/hl-zona-brazos.jpg"
+          }
+        },
+        "z6": {
+          "type": "zona",
+          "settings": {
+            "zona": "Pies",
+            "texto": "Ideal para talones y zonas con piel gruesa o reseca.",
+            "imagen": "shopify://shop_images/hl-zona-pies.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "z1",
+        "z2",
+        "z3",
+        "z4",
+        "z5",
+        "z6"
+      ]
+    },
+    "seguro": {
+      "type": "hl-seguro",
+      "settings": {},
+      "blocks": {
+        "s1": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "mano",
+            "titulo": "Prueba primero",
+            "texto": "Aplica en una zona pequeña antes del primer uso."
+          }
+        },
+        "s2": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "sol",
+            "titulo": "Protector solar",
+            "texto": "De día, protege las zonas expuestas al sol."
+          }
+        },
+        "s3": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "ojo",
+            "titulo": "Lejos de los ojos",
+            "texto": "Evita ojos, labios y mucosas."
+          }
+        },
+        "s4": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Piel sana",
+            "texto": "No lo uses sobre heridas ni piel recién depilada o irritada."
+          }
+        }
+      },
+      "block_order": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {},
+      "blocks": {
+        "f1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>En efectivo, cuando el pedido llega a tu casa. No necesitas tarjeta ni pagar nada por adelantado.</p>"
+          }
+        },
+        "f2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada: el envío es gratis a toda Colombia. Si no estás o rechazas el pedido al momento de la entrega, se cobra el valor del flete.</p>"
+          }
+        },
+        "f3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tarda en llegar?",
+            "respuesta": "<p>Entre 2 y 7 días hábiles, según tu ciudad. Te llega con número de guía para rastrearlo.</p>"
+          }
+        },
+        "f4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cada cuánto lo uso?",
+            "respuesta": "<p>Empieza 2 o 3 veces por semana y aumenta según cómo responda tu piel. Siempre hidrata después y usa protector solar de día.</p>"
+          }
+        },
+        "f5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para la cara?",
+            "respuesta": "<p>Está pensado para el cuerpo: brazos, piernas, espalda, codos, rodillas, manos y pies.</p>"
+          }
+        },
+        "f6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuándo veo cambios?",
+            "respuesta": "<p>La sensación de piel suave se nota desde las primeras aplicaciones. La apariencia del tono mejora con el uso constante; los resultados varían según cada piel.</p>"
+          }
+        },
+        "f7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto me dura?",
+            "respuesta": "<p>El frasco trae 200 ml, suficiente para varias semanas de uso regular.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7"
+      ]
+    },
+    "progreso": {
+      "type": "hl-progreso",
+      "settings": {},
+      "blocks": {
+        "t1": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Desde el día 1",
+            "titulo": "Piel más suave",
+            "texto": "Al enjuagar sientes la piel lisa al tacto, sin la aspereza de las células muertas."
+          }
+        },
+        "t2": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 2",
+            "titulo": "Textura pareja",
+            "texto": "Codos, rodillas y piernas se sienten y se ven más uniformes y menos resecos."
+          }
+        },
+        "t3": {
+          "type": "etapa",
+          "settings": {
+            "cuando": "Semana 4 en adelante",
+            "titulo": "Tono más luminoso",
+            "texto": "Las manchas y zonas oscuras se ven más claras y la piel luce más pareja y radiante."
+          }
+        }
+      },
+      "block_order": [
+        "t1",
+        "t2",
+        "t3"
+      ]
+    },
+    "antes_despues": {
+      "type": "hl-antes-despues",
+      "settings": {},
+      "blocks": {
+        "a0": {
+          "type": "caso",
+          "settings": {
+            "zona": "Codos",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a1": {
+          "type": "caso",
+          "settings": {
+            "zona": "Rodillas",
+            "tiempo": "4 semanas"
+          }
+        },
+        "a2": {
+          "type": "caso",
+          "settings": {
+            "zona": "Axilas y piernas",
+            "tiempo": "4 semanas"
+          }
+        }
+      },
+      "block_order": [
+        "a0",
+        "a1",
+        "a2"
+      ]
+    }
+  },
+  "order": [
+    "principal",
+    "activos",
+    "progreso",
+    "ritual",
+    "zonas",
+    "antes_despues",
+    "seguro",
+    "faq"
+  ]
+}

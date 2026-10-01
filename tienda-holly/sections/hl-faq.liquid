@@ -1,0 +1,47 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section hl-faq" id="preguntas">
+  <div class="hl-container">
+    <div class="hl-faq__grid">
+      <div class="hl-cabecera">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+      <div class="hl-faq__lista hl-reveal" style="--hl-i:2">
+        {%- for block in section.blocks -%}
+          <details {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
+            <summary>{{ block.settings.pregunta }}<i aria-hidden="true"></i></summary>
+            <div>{{ block.settings.respuesta }}</div>
+          </details>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Preguntas frecuentes",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Preguntas" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Lo que todas <em>preguntan.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto" },
+    { "type": "checkbox", "id": "abrir_primera", "label": "Abrir la primera pregunta", "default": true },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "pregunta", "name": "Pregunta", "settings": [ { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" }, { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>En efectivo, cuando recibes el pedido.</p>" } ] }
+  ],
+  "presets": [ { "name": "KF – Preguntas frecuentes", "blocks": [ { "type": "pregunta" } ] } ]
+}
+{% endschema %}

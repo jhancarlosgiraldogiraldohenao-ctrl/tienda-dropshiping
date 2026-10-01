@@ -1,0 +1,48 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section hl-oscuro hl-progreso">
+  <div class="hl-container hl-progreso__wrap">
+    <div class="hl-cabecera">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+      {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <ol class="hl-linea-tiempo">
+      {%- for block in section.blocks -%}
+        <li class="hl-reveal" style="--hl-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <span class="hl-linea-tiempo__cuando">{{ block.settings.cuando }}</span>
+          <h3>{{ block.settings.titulo }}</h3>
+          <p>{{ block.settings.texto }}</p>
+        </li>
+      {%- endfor -%}
+    </ol>
+    {%- if section.settings.nota != blank -%}<p class="hl-progreso__nota hl-reveal">{{ section.settings.nota }}</p>{%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Qué vas a notar",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Semana a semana" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Lo que vas a <em>notar.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Con uso constante, 2 o 3 veces por semana." },
+    { "type": "text", "id": "nota", "label": "Nota final", "default": "Cada piel es distinta: la constancia y el protector solar hacen la diferencia." },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    { "type": "etapa", "name": "Etapa", "settings": [ { "type": "text", "id": "cuando", "label": "Cuándo", "default": "Día 1" }, { "type": "text", "id": "titulo", "label": "Título", "default": "Piel más suave" }, { "type": "textarea", "id": "texto", "label": "Texto", "default": "Desde la primera aplicación." } ] }
+  ],
+  "max_blocks": 5,
+  "presets": [ { "name": "KF – Qué vas a notar", "blocks": [ { "type": "etapa" } ] } ]
+}
+{% endschema %}

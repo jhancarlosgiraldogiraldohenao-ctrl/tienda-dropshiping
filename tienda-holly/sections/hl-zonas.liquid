@@ -1,0 +1,76 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{%- if section.settings.imagen != blank -%}
+  {%- assign img_base = section.settings.imagen | image_url: width: 1100 -%}
+{%- else -%}
+  {%- assign img_base = 'hl-estudio.jpg' | asset_url -%}
+{%- endif -%}
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} [data-hl-zona-img] { transition: opacity 0.25s; }
+{% endstyle %}
+
+<section class="hl-section hl-zonas" data-hl-zonas>
+  <div class="hl-container">
+    <div class="hl-zonas__grid">
+      <div>
+        <div class="hl-cabecera">
+          {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+          <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+          {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+        </div>
+        <div class="hl-zonas__botones hl-reveal" style="--hl-i:3" role="group" aria-label="{{ section.settings.eyebrow | escape }}">
+          {%- for block in section.blocks -%}
+            {%- if block.settings.imagen != blank -%}{%- assign img_z = block.settings.imagen | image_url: width: 1100 -%}{%- else -%}{%- assign img_z = img_base -%}{%- endif -%}
+            <button type="button" class="hl-zona-btn{% if forloop.first %} is-activa{% endif %}" data-hl-zona-btn="{{ forloop.index }}" data-img="{{ img_z }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.zona }}</button>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="hl-zonas__panel hl-reveal" style="--hl-i:2">
+        {%- assign primera = section.blocks.first -%}
+        {%- if primera.settings.imagen != blank -%}{%- assign img_ini = primera.settings.imagen | image_url: width: 1100 -%}{%- else -%}{%- assign img_ini = img_base -%}{%- endif -%}
+        <img src="{{ img_ini }}" alt="" data-hl-zona-img loading="lazy" width="1024" height="1536">
+        <div class="hl-zonas__info">
+          {%- for block in section.blocks -%}
+            <div class="hl-zona{% if forloop.first %} is-activa{% endif %}" data-hl-zona="{{ forloop.index }}">
+              <h3>{{ block.settings.zona }}</h3>
+              <p>{{ block.settings.texto }}</p>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "KF – Zonas de uso",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Dónde usarlo" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Llega a donde <em>tus manos no.</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Toca una zona para ver cómo te ayuda el spray." },
+    { "type": "image_picker", "id": "imagen", "label": "Foto de fondo" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
+  ],
+  "blocks": [
+    {
+      "type": "zona",
+      "name": "Zona",
+      "settings": [
+        { "type": "text", "id": "zona", "label": "Zona", "default": "Codos" },
+        { "type": "textarea", "id": "texto", "label": "Texto", "default": "Suaviza la piel áspera y oscurecida por el roce." },
+        { "type": "image_picker", "id": "imagen", "label": "Foto (opcional)" }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [ { "name": "KF – Zonas de uso", "blocks": [ { "type": "zona" } ] } ]
+}
+{% endschema %}
