@@ -66,7 +66,7 @@
         "eyebrow": "Pequeño, pero mágico",
         "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
         "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
-        "imagen": "shopify://shop_images/holly-ia-nina.jpg",
+        "imagen": "shopify://shop_images/holly-ia-detalle.jpg",
         "nota": "Textura de pino realista, bolitas rojas y luces LED.",
         "ancla": "detalles",
         "titulo_size": 64
@@ -189,7 +189,7 @@
           "settings": {
             "zona": "Para regalar",
             "texto": "Un detalle diferente para el amigo secreto o la familia.",
-            "imagen": "shopify://shop_images/holly-regalo.webp"
+            "imagen": "shopify://shop_images/holly-ia-pack2.jpg"
           }
         }
       },

@@ -16,8 +16,8 @@
         "pack_comprar": "Llevar el pack x2",
         "pack_volver": "← Volver a 1 arbolito",
         "pack_sello": "x2",
-        "imagen": "shopify://shop_images/holly-ia-sala-arbol.jpg",
-        "imagen_pack": "shopify://shop_images/holly-regalo.webp",
+        "imagen": "shopify://shop_images/holly-ia-principal.jpg",
+        "imagen_pack": "shopify://shop_images/holly-ia-pack2.jpg",
         "alt_imagen": "Arbolito proyector navideño iluminando una sala",
         "sello_texto": "envío gratis · navidad 2026 · ",
         "sello_centro": "6+",
@@ -208,7 +208,7 @@
         "eyebrow": "Pequeño, pero mágico",
         "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
         "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
-        "imagen": "shopify://shop_images/holly-ia-nina.jpg",
+        "imagen": "shopify://shop_images/holly-ia-detalle.jpg",
         "nota": "Textura de pino realista, bolitas rojas y luces LED.",
         "ancla": "detalles",
         "titulo_size": 64
@@ -331,7 +331,7 @@
           "settings": {
             "zona": "Para regalar",
             "texto": "Un detalle diferente para el amigo secreto o la familia.",
-            "imagen": "shopify://shop_images/holly-regalo.webp"
+            "imagen": "shopify://shop_images/holly-ia-pack2.jpg"
           }
         }
       },
@@ -410,7 +410,7 @@
         "eyebrow": "Pack x2 · Temporada de regalos",
         "titulo": "<p>Uno para ti, <em>otro para regalar</em></p>",
         "texto": "Llévate dos arbolitos y ahorra. Uno para la sala y otro para el cuarto de los niños… o para ese regalo que todavía no tienes.",
-        "imagen": "shopify://shop_images/holly-regalo.webp",
+        "imagen": "shopify://shop_images/holly-ia-pack2.jpg",
         "mostrar_precio": true,
         "texto_ahorro": "Ahorras",
         "nota_precio": "2 arbolitos · Envío gratis · Pago seguro",
@@ -582,7 +582,7 @@
         "eyebrow": "Navidad 2026",
         "titulo": "<p>Este año, <em>que brille tu casa</em></p>",
         "texto": "Pídelo hoy y recíbelo a tiempo para la Navidad.",
-        "imagen": "shopify://shop_images/holly-ia-techo.jpg",
+        "imagen": "shopify://shop_images/holly-ia-sala-arbol.jpg",
         "btn_texto": "Quiero mi arbolito",
         "titulo_size": 72
       },

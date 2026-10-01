@@ -589,7 +589,7 @@ body { background: var(--hl-crema); }
 .hl-hero.hl-oscuro .hl-chip { background: rgba(255, 255, 255, 0.07); border-color: rgba(251, 245, 234, 0.16); color: var(--hl-crema); }
 .hl-hero.hl-oscuro .hl-chip svg { color: var(--hl-dorado); }
 .hl-hero .hl-arco { aspect-ratio: 4 / 5; box-shadow: 0 0 0 1px rgba(227, 182, 91, 0.35), 0 40px 80px -30px rgba(0, 0, 0, 0.7), 0 0 90px -20px rgba(227, 182, 91, 0.35); background: #0b1d15; }
-.hl-hero .hl-arco img { object-position: 60% 50%; }
+.hl-hero .hl-arco img { object-position: 35% 50%; }
 .hl-hero .hl-sello { background: var(--hl-curcuma-hondo); }
 .hl-hero .hl-sello b { color: #fff; }
 .hl-flotante { background: rgba(255, 252, 245, 0.92); color: var(--hl-texto); }
