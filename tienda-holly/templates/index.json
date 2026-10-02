@@ -582,8 +582,8 @@
         "producto": "arbolito-proyector-navideno",
         "eyebrow": "Navidad 2026",
         "titulo": "<p>Este año, <em>que brille tu casa</em></p>",
-        "texto": "Pídelo hoy y recíbelo a tiempo para la Navidad.",
-        "imagen": "shopify://shop_images/holly-ia-sala-arbol.jpg",
+        "texto": "Pídelo hoy con envío gratis a toda Colombia. Lleva 2 y ahorra 35%: uno para tu casa y otro para regalar.",
+        "imagen": "shopify://shop_images/holly-ia-pack2.jpg",
         "btn_texto": "Quiero mi arbolito",
         "titulo_size": 72
       },
@@ -601,13 +601,20 @@
             "icono": "candado",
             "texto": "Pago seguro"
           }
+        },
+        "b2": {
+          "type": "chip",
+          "settings": {
+            "icono": "regalo",
+            "texto": "Lleva 2 y ahorra 35%"
+          }
         }
       },
       "block_order": [
         "b0",
-        "b1"
-      ],
-      "disabled": true
+        "b1",
+        "b2"
+      ]
     },
     "antes_despues": {
       "type": "hl-antes-despues",
@@ -647,7 +654,7 @@
     "antes_despues",
     "seguro",
     "faq",
-    "regalo",
-    "cierre"
+    "cierre",
+    "regalo"
   ]
 }
