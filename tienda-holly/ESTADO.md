@@ -20,3 +20,6 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 | Shop1105675445 | 66.934 | 1 | https://es.aliexpress.com/item/1005013300099234.html |
 | Sunshine Party Store | 70.222 | 3 opciones (revisar si hay 2 u) | https://es.aliexpress.com/item/1005013296364956.html |
 | Nice Party 25 Store | 48.850 (queda 1) | 1 | https://es.aliexpress.com/item/1005013303456264.html |
+
+## Preferencias del usuario
+- Precio del proveedor: NO recordatorio programado. Cada vez que el usuario vuelva a escribir, recordarle revisar el precio de Baby Party Store (1u y 2pcs) y pedir captura.
