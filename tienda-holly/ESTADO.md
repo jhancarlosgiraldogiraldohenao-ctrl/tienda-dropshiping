@@ -10,3 +10,13 @@
 - Imágenes en Files: holly-hero, holly-pasos, holly-detalle, holly-disenos, holly-sala, holly-regalo, holly-pack2, holly-uno (.webp)
 - Pagos: Mercado Pago Tarjetas activo (Shopify cobra 2% por transacción). Envío gratis Colombia. Políticas creadas.
 - Pendiente: nombre "Holly" en Configuración → General; Checkout Pro (PSE/Nequi/Efecty); acreditación al instante en Mercado Pago.
+
+## Proveedores AliExpress (revisión 2-oct, todos Choice, envío gratis, todos con "oferta reserva anticipada")
+OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto.
+| Tienda | Precio | Variantes | Enlace |
+|---|---|---|---|
+| Baby Party Store (en DSers) | 72.764 | 1 u / 2pcs | https://es.aliexpress.com/item/1005013285307521.html |
+| Shop1105361249 | 64.629 | 6 lentes + bolsa | https://es.aliexpress.com/item/1005013296990278.html |
+| Shop1105675445 | 66.934 | 1 | https://es.aliexpress.com/item/1005013300099234.html |
+| Sunshine Party Store | 70.222 | 3 opciones (revisar si hay 2 u) | https://es.aliexpress.com/item/1005013296364956.html |
+| Nice Party 25 Store | 48.850 (queda 1) | 1 | https://es.aliexpress.com/item/1005013303456264.html |
