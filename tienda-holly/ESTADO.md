@@ -1,6 +1,6 @@
 # Tienda Holly (arbolito proyector navideño)
 
-- Tienda: a1fcei-t6.myshopify.com (nombre aún "Mi tienda"; se cambia a Holly al final)
+- Tienda: hollycolombia.myshopify.com (antes a1fcei-t6; CLI/admin sigue con a1fcei-t6). Nombre: holly
 - Tema: "Holly Navidad" id 189151379745 PUBLICADO (live) 2-oct-2026
 - Producto: gid://shopify/Product/10571536761121 · handle arbolito-proyector-navideno · plantilla product.hl
   - 1 arbolito: variante 53660137750817 · 139.900 (antes 176.900)
