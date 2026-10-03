@@ -28,3 +28,4 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - El arbolito NO usa cable: el extremo de su cuerpo en rosca termina en un conector USB-A macho que se enchufa DIRECTO a la cabecita del cargador de celular (adaptador de pared USB), y el cargador va al tomacorriente. Siempre describirlo así.
 - Producto: pinito artificial flexible con bolitas rojas y luces LED cálidas, lente proyector blanco redondo en la punta, cuerpo verde que se enrolla en rosca en la base y termina en el USB.
 - No incluye el adaptador de pared (el cliente usa el de su celular).
+- El usuario adjunta una foto del producto a la IA de video: en cada prompt pedir que el producto sea copia EXACTA de la imagen de referencia (forma, colores, tamaño, detalles), sin rediseñarlo.
