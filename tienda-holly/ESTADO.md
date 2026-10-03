@@ -23,3 +23,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 
 ## Preferencias del usuario
 - Precio del proveedor: NO recordatorio programado. Cada vez que el usuario vuelva a escribir, recordarle revisar el precio de Baby Party Store (1u y 2pcs) y pedir captura.
+
+## Regla para prompts de video/imagen (pedida por el usuario)
+- El arbolito NO usa cable: el extremo de su cuerpo en rosca termina en un conector USB-A macho que se enchufa DIRECTO a la cabecita del cargador de celular (adaptador de pared USB), y el cargador va al tomacorriente. Siempre describirlo así.
+- Producto: pinito artificial flexible con bolitas rojas y luces LED cálidas, lente proyector blanco redondo en la punta, cuerpo verde que se enrolla en rosca en la base y termina en el USB.
+- No incluye el adaptador de pared (el cliente usa el de su celular).
