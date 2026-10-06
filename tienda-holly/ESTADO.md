@@ -37,5 +37,6 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 4. Pocos textos, cortos y fáciles de entender, que vendan (gancho + beneficio). Cada texto en pantalla ~3,5–4 s mínimo para que se alcance a leer. Gancho visible desde el primer segundo.
 5. Duración libre según lo mejor para viralizar (normalmente 12–16 s).
 7. ORGÁNICO = estilo UGC: SIN tarjeta de promoción al final; 1 texto gancho al inicio (máx. 2: gancho + "Se conecta al cargador del celular"); final natural en momento bonito (favorece re-ver). La venta va en descripción, comentario fijado y respuestas. Versión con cierre "Regala Holly" + tarjeta solo para anuncios pagados.
+9. Con CADA video editado entregar: el video + descripción para TikTok (corta, pregunta para comentar, "Link en la bio", hashtags) + descripción para Instagram (más larga, beneficios, pack x2, envío gratis, hashtags).
 8. Prompts nuevos de video: pedir look UGC (filmed on iPhone, handheld, casual home video, natural light).
 6. El usuario sube 2 videos diarios (TikTok + Instagram).
