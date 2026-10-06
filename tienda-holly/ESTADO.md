@@ -29,3 +29,11 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Producto: pinito artificial flexible con bolitas rojas y luces LED cálidas, lente proyector blanco redondo en la punta, cuerpo verde que se enrolla en rosca en la base y termina en el USB.
 - No incluye el adaptador de pared (el cliente usa el de su celular).
 - El usuario adjunta una foto del producto a la IA de video: en cada prompt pedir que el producto sea copia EXACTA de la imagen de referencia (forma, colores, tamaño, detalles), sin rediseñarlo.
+
+## Reglas para EDITAR videos (pedidas por el usuario, 6-oct)
+1. Elegir solo los momentos más ganadores; que se vea lindo, con transiciones suaves (fundidos ~0,3 s), sin cortes raros.
+2. NUNCA quitar el audio original del video (salvo que se reemplace por uno claramente mejor). Si el video no trae audio, se avisa.
+3. Textos: blancos, gruesos (Playfair Display, como "Da alegría. Brinda felicidad."), con sombra suave, SIN cuadros/recuadros. Última línea puede ir en dorado.
+4. Pocos textos, cortos y fáciles de entender, que vendan (gancho + beneficio). Cada texto en pantalla ~3,5–4 s mínimo para que se alcance a leer. Gancho visible desde el primer segundo.
+5. Duración libre según lo mejor para viralizar (normalmente 12–15 s). Cierre: "Da alegría. Brinda felicidad. Regala Holly" + tarjeta (foto pack, precios, link) + ~2 s quieto.
+6. El usuario sube 2 videos diarios (TikTok + Instagram).
