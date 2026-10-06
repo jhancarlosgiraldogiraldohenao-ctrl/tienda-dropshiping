@@ -35,5 +35,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 2. NUNCA quitar el audio original del video (salvo que se reemplace por uno claramente mejor). Si el video no trae audio, se avisa.
 3. Textos: blancos, gruesos (Playfair Display, como "Da alegría. Brinda felicidad."), con sombra suave, SIN cuadros/recuadros. Última línea puede ir en dorado.
 4. Pocos textos, cortos y fáciles de entender, que vendan (gancho + beneficio). Cada texto en pantalla ~3,5–4 s mínimo para que se alcance a leer. Gancho visible desde el primer segundo.
-5. Duración libre según lo mejor para viralizar (normalmente 12–15 s). Cierre: "Da alegría. Brinda felicidad. Regala Holly" + tarjeta (foto pack, precios, link) + ~2 s quieto.
+5. Duración libre según lo mejor para viralizar (normalmente 12–16 s).
+7. ORGÁNICO = estilo UGC: SIN tarjeta de promoción al final; 1 texto gancho al inicio (máx. 2: gancho + "Se conecta al cargador del celular"); final natural en momento bonito (favorece re-ver). La venta va en descripción, comentario fijado y respuestas. Versión con cierre "Regala Holly" + tarjeta solo para anuncios pagados.
+8. Prompts nuevos de video: pedir look UGC (filmed on iPhone, handheld, casual home video, natural light).
 6. El usuario sube 2 videos diarios (TikTok + Instagram).
