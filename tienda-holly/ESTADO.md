@@ -30,6 +30,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - No incluye el adaptador de pared (el cliente usa el de su celular).
 - El usuario adjunta una foto del producto a la IA de video: en cada prompt pedir que el producto sea copia EXACTA de la imagen de referencia (forma, colores, tamaño, detalles), sin rediseñarlo.
 
+## Restricción del usuario (7-oct): NO usará su cara ni su voz en contenido. Proponer solo formatos sin cara/voz (texto, voz IA de TikTok, carruseles, videos cortos, sonidos en tendencia).
+
 ## Reglas para EDITAR videos (pedidas por el usuario, 6-oct)
 1. Elegir solo los momentos más ganadores; que se vea lindo, con transiciones suaves (fundidos ~0,3 s), sin cortes raros.
 2. NUNCA quitar el audio original del video (salvo que se reemplace por uno claramente mejor). Si el video no trae audio, se avisa.
