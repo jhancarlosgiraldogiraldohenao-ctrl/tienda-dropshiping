@@ -40,3 +40,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 9. Con CADA video editado entregar: el video + descripción para TikTok (corta, pregunta para comentar, "Link en la bio", hashtags) + descripción para Instagram (más larga, beneficios, pack x2, envío gratis, hashtags).
 8. Prompts nuevos de video: pedir look UGC (filmed on iPhone, handheld, casual home video, natural light).
 6. El usuario sube 2 videos diarios (TikTok + Instagram).
+
+## Seguimiento de precio proveedor (Baby Party Store)
+- 2-oct: 72.764 (1u) / 117.083 (2pcs)
+- 7-oct: 56.347 (1u) / 2pcs pendiente de captura. Ganancia 1u sin ads ≈ 74.300; con ads (CPA 30k) ≈ 44.300. No bajar precio de venta (posible promo temporal).
