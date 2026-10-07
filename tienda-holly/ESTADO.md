@@ -43,4 +43,4 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 
 ## Seguimiento de precio proveedor (Baby Party Store)
 - 2-oct: 72.764 (1u) / 117.083 (2pcs)
-- 7-oct: 56.347 (1u) / 2pcs pendiente de captura. Ganancia 1u sin ads ≈ 74.300; con ads (CPA 30k) ≈ 44.300. No bajar precio de venta (posible promo temporal).
+- 7-oct: 56.347 (1u) / 105.566 (2pcs). Ganancia pack sin ads ≈ 109.800; con ads ≈ 79.800. Ganancia 1u sin ads ≈ 74.300; con ads (CPA 30k) ≈ 44.300. No bajar precio de venta (posible promo temporal).
