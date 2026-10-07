@@ -46,3 +46,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 ## Seguimiento de precio proveedor (Baby Party Store)
 - 2-oct: 72.764 (1u) / 117.083 (2pcs)
 - 7-oct: 56.347 (1u) / 105.566 (2pcs). Ganancia pack sin ads ≈ 109.800; con ads ≈ 79.800. Ganancia 1u sin ads ≈ 74.300; con ads (CPA 30k) ≈ 44.300. No bajar precio de venta (posible promo temporal).
+
+## Referente del nicho: Nuvella (estudiado 7-oct)
+- TikTok @thenubbis: 41,3k seguidores, 218k likes, solo 22 videos, cuenta creada 10-ago-2026, cuenta PERSONAL con link en bio. Tienda nuvvella.com (México, MXN), vende luces inteligentes de árbol a 1.399 MXN + muchos upsells (diseños, LEDs, seguro de envío, ebook). Usa videos de IA etiquetados y aun así se viralizan.
+- Fórmula a copiar: producto funcionando ("wow") desde el segundo 1; un solo texto gancho en 2da persona ("Imagínate llegar a tu casa y ver esto"); videos cortos 8–10 s; descripción en primera persona tipo historia.
+- 7-oct: los 8 videos se reeditaron con esta fórmula (versiones v3).
