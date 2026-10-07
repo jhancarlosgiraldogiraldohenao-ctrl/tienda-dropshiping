@@ -51,3 +51,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - TikTok @thenubbis: 41,3k seguidores, 218k likes, solo 22 videos, cuenta creada 10-ago-2026, cuenta PERSONAL con link en bio. Tienda nuvvella.com (México, MXN), vende luces inteligentes de árbol a 1.399 MXN + muchos upsells (diseños, LEDs, seguro de envío, ebook). Usa videos de IA etiquetados y aun así se viralizan.
 - Fórmula a copiar: producto funcionando ("wow") desde el segundo 1; un solo texto gancho en 2da persona ("Imagínate llegar a tu casa y ver esto"); videos cortos 8–10 s; descripción en primera persona tipo historia.
 - 7-oct: los 8 videos se reeditaron con esta fórmula (versiones v3).
+
+## Productos descartados (7-oct)
+- Luces inteligentes de árbol con figuras (pixel/app): las buenas cuestan ≥192k–223k (precio de venta ~380k, muy alto para tienda nueva); las baratas no dibujan figuras.
+- Cortinas LED de ventana con figuras (ej. AliExpress 1005010530172767, 4,9⭐ 1000+ vendidos, "Welcome deal" 124.792 / tachado 295.898): fotos REALES de clientes se ven pixeladas/distorsionadas vs. anuncios de IA → riesgo de reclamos. Descartadas.
+- Regla aprendida: revisar SIEMPRE fotos reales de reseñas antes de aprobar; desconfiar de precios "Welcome deal/Dto. bienvenida" (solo 1ª compra).
