@@ -75,3 +75,12 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - CORRECCIÓN 8-oct: el precio TACHADO en AliExpress (junto al Welcome deal) suele estar inflado; NO es el costo real. Costo real = DSers (ej. arbolito: Welcome 56.347 → DSers 63.907). Cueva gato (1005013090707412) y cama trineo (1005010205758228, 4.4★ 7 reseñas 106 vendidos, foto real OK) se deben revisar en DSers antes de descartar.
 - Disfraz "Papá Noel montando" para perro 1005010100656093: 4.6★ 8 reseñas 105 vendidos, Welcome 35.056. Pendiente: MercadoLibre + DSers. Ojo tallas (S/M/L/XL) → guía de tallas obligatoria.
 - DSers 8-oct: cama trineo = USD 54,22–67,93 ≈ 175.000–220.000 COP (tasa DSers ≈3.234, igual que arbolito USD 19,76 = 63.907) → MercadoLibre la vende a 178.671 → DESCARTADA. (DSers muestra USD: multiplicar × ~3.234.)
+
+## ✅ 2º PRODUCTO APROBADO (8-oct): Cueva árbol de Navidad para gatos
+- AliExpress 1005010211375140 · 4.9★ 7 reseñas · 49 vendidos · foto real de cliente = igual a publicación · 4 colores (verde, rojo/blanco, verde claro, vino) · envía a CO.
+- DSers: USD 14,81 ≈ 47.900 COP (todos los colores).
+- Envío NO gratis: Estándar 105.356 (18–27 oct, 82% ≤17 días) ← USAR ESTE · Economía 102.949 (20 oct–7 nov).
+- Costo total ≈ 153.300 → precio Holly 229.900 → ganancia ≈ 67.000 (sin ads, tras ~4% Mercado Pago). MercadoLibre: 270.812.
+- Sin pack x2 hasta confirmar si el envío se duplica.
+- Colocar en colección "Regalos" con su propio link. Videos: gatos (ya probado que funciona).
+- Último día de pedido para llegar antes de Navidad ≈ 5-dic.
