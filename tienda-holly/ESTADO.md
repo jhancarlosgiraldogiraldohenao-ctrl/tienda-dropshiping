@@ -72,3 +72,5 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Cueva árbol gato → NO por ahora: vendedor 1005013262243653 no envía a CO; vendedor 1005013090707412 sí envía pero precio real 383.998 (167.203 era Welcome deal) y 1 vendido, sin reseñas. Producto nuevo, sin reseñas en ningún vendedor.
 - Cama trineo 1005013150536853 → opción B: real ~122.408 (97.612 Welcome deal), stats de tienda (no del producto). Falta: reseñas del producto + costo DSers. Venta posible 189.900 (~60k ganancia).
 - Idea a buscar: disfraces/gorros/bufandas navideñas para mascotas (49.900–79.900, livianos).
+- CORRECCIÓN 8-oct: el precio TACHADO en AliExpress (junto al Welcome deal) suele estar inflado; NO es el costo real. Costo real = DSers (ej. arbolito: Welcome 56.347 → DSers 63.907). Cueva gato (1005013090707412) y cama trineo (1005010205758228, 4.4★ 7 reseñas 106 vendidos, foto real OK) se deben revisar en DSers antes de descartar.
+- Disfraz "Papá Noel montando" para perro 1005010100656093: 4.6★ 8 reseñas 105 vendidos, Welcome 35.056. Pendiente: MercadoLibre + DSers. Ojo tallas (S/M/L/XL) → guía de tallas obligatoria.
