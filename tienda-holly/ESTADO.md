@@ -66,3 +66,9 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Minecraft es marca de Mojang/Microsoft. Las versiones de AliExpress no tienen licencia → riesgo de cierre de tienda Shopify, bloqueo de Mercado Pago y videos bajados por TikTok/IG por propiedad intelectual. Tampoco se puede usar "Minecraft" en títulos, captions o hashtags.
 - Regla nueva: **nada de personajes/marcas** (Disney, Pokémon, Stitch, Minecraft, Marvel, etc.).
 - La idea de estructura SÍ vale: colección "Regalos" en Holly con su propio link (/collections/regalos) y cada producto con su link /products/... — sin costo extra en el plan de $1.
+
+### 8-oct · Nicho mascotas + Navidad
+- MercadoLibre (filtro 1) OK: cueva árbol gato 270.812 (2 vendedores, internacional); cama trineo perro 178.671 (internacional).
+- Cueva árbol gato → NO por ahora: vendedor 1005013262243653 no envía a CO; vendedor 1005013090707412 sí envía pero precio real 383.998 (167.203 era Welcome deal) y 1 vendido, sin reseñas. Producto nuevo, sin reseñas en ningún vendedor.
+- Cama trineo 1005013150536853 → opción B: real ~122.408 (97.612 Welcome deal), stats de tienda (no del producto). Falta: reseñas del producto + costo DSers. Venta posible 189.900 (~60k ganancia).
+- Idea a buscar: disfraces/gorros/bufandas navideñas para mascotas (49.900–79.900, livianos).
