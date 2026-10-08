@@ -33,7 +33,8 @@
               {%- if media.media_type == 'image' -%}
                 {%- liquid
                   assign grupo = 'todos'
-                  if product.variants.size > 1 and media.id == id_pack
+                  if section.settings.modo_colores
+                  elsif product.variants.size > 1 and media.id == id_pack
                     assign grupo = 'pack'
                   elsif product.variants.size > 1 and media.id == id_uno
                     assign grupo = 'uno'
@@ -72,7 +73,10 @@
                 endif
                 assign normal = v1.price | times: forloop.index
                 assign ahorro = normal | minus: v.price
-                if forloop.first
+                if section.settings.modo_colores
+                  assign nota = ''
+                  assign ahorro = 0
+                elsif forloop.first
                   assign nota = section.settings.oferta_1_nota
                 else
                   assign nota = section.settings.oferta_2_nota
@@ -91,7 +95,7 @@
                 </span>
                 {%- if ahorro > 0 -%}
                   <span class="hl-oferta__badge">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%</span>
-                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank -%}
+                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank and section.settings.modo_colores == false -%}
                   <span class="hl-oferta__badge hl-oferta__badge--suave">{{ section.settings.oferta_1_etiqueta }}</span>
                 {%- endif -%}
               </label>
@@ -240,6 +244,12 @@
       "id": "oferta_2_nota",
       "label": "Opción 2 – texto pequeño",
       "default": "Uno para ti y otro para regalar"
+    },
+    {
+      "type": "checkbox",
+      "id": "modo_colores",
+      "label": "Las opciones son colores (no packs)",
+      "default": false
     },
     {
       "type": "text",

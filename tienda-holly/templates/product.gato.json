@@ -1,0 +1,402 @@
+{
+  "sections": {
+    "principal": {
+      "type": "hl-producto",
+      "settings": {
+        "eyebrow": "Holly · Regalos para tu mascota",
+        "titulo_corto": "Casita Árbol de Navidad para Gatos",
+        "subtitulo": "Tejida a mano · Felpa suave · 4 colores",
+        "intro": "Un arbolito de Navidad tejido que es también la camita favorita de tu gato. Calientita, suave y tan linda que decora tu sala mientras él duerme adentro.",
+        "nota_precio": "Envío gratis · Pago seguro con Mercado Pago",
+        "puntos": "Tejida a mano en felpa suave y calientita\nCueva cerrada: tu gato se siente seguro\nDecora tu casa en Navidad (y todo el año)\nMide 50 × 50 × 60 cm: para gatos y perritos pequeños",
+        "sello": "Envío gratis",
+        "ofertas_titulo": "Elige el color",
+        "oferta_1_nota": "Para tu casa",
+        "oferta_1_etiqueta": "",
+        "oferta_2_nota": "Uno para ti y otro para regalar",
+        "texto_ahorro": "Ahorras",
+        "mostrar_miniaturas": true,
+        "comprar_texto": "Comprar ahora",
+        "comprar_corto": "Comprar",
+        "comprar_nota": "Pago 100% seguro con Mercado Pago",
+        "carrito_texto": "Agregar al carrito",
+        "agotado_texto": "Agotado",
+        "sticky_texto": "Casita Árbol para Gatos",
+        "desc_titulo": "Descripción",
+        "abrir_descripcion": false,
+        "envio_titulo": "Envío y pago",
+        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 1 de diciembre para recibirla antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
+        "titulo_size": 46,
+        "modo_colores": true
+      },
+      "blocks": {
+        "b0": {
+          "type": "confianza",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
+          }
+        },
+        "b1": {
+          "type": "confianza",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Con Mercado Pago"
+          }
+        },
+        "b2": {
+          "type": "confianza",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si no llega, te devolvemos tu dinero"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "activos": {
+      "type": "hl-activos",
+      "settings": {
+        "eyebrow": "Hecha para consentirlo",
+        "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
+        "texto": "Los gatos aman los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
+        "imagen": "shopify://shop_images/holly-gato-detalle.jpg",
+        "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
+        "ancla": "detalles",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "activo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Tejida a mano",
+            "texto": "Felpa gruesa y suave, con pompones de colores, estrella roja y muñequitos de Navidad."
+          }
+        },
+        "b1": {
+          "type": "activo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Cueva cerrada",
+            "texto": "Tu gato se esconde, se enrolla y duerme tranquilo. Se siente protegido."
+          }
+        },
+        "b2": {
+          "type": "activo",
+          "settings": {
+            "icono": "copo",
+            "titulo": "Calientita",
+            "texto": "Ideal para noches frías: la felpa guarda el calor de tu mascota."
+          }
+        },
+        "b3": {
+          "type": "activo",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Decora tu casa",
+            "texto": "Parece un arbolito de Navidad. Queda hermosa en la sala o junto al árbol."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "ritual": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "Así de fácil",
+        "titulo": "<p>Llega lista <em>para usar</em></p>",
+        "texto": "Producto terminado: no hay que armar nada.",
+        "nota": "Mide 50 × 50 × 60 cm. Ideal para gatos y perritos pequeños.",
+        "ancla": "como-funciona",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ábrela",
+            "texto": "Sácala de la bolsa y dale forma con las manos."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ubícala",
+            "texto": "En la sala, junto al árbol o en su rincón favorito."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Míralo",
+            "texto": "Tu gato entra solito a explorar… y ya no quiere salir."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "zonas": {
+      "type": "hl-zonas",
+      "settings": {
+        "eyebrow": "Ideas",
+        "titulo": "<p>Un rincón <em>para él</em></p>",
+        "texto": "Toca un lugar para ver la idea.",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "zona",
+          "settings": {
+            "zona": "La sala",
+            "texto": "Junto al árbol de Navidad, como un adorno más.",
+            "imagen": "shopify://shop_images/holly-gato-sala.jpg"
+          }
+        },
+        "b1": {
+          "type": "zona",
+          "settings": {
+            "zona": "Su siesta",
+            "texto": "Su lugar calientito para dormir todo el día.",
+            "imagen": "shopify://shop_images/holly-gato-siesta.jpg"
+          }
+        },
+        "b2": {
+          "type": "zona",
+          "settings": {
+            "zona": "Asomándose",
+            "texto": "Ese momento en que saca la cabecita… 😍",
+            "imagen": "shopify://shop_images/holly-gato-asoma.jpg"
+          }
+        },
+        "b3": {
+          "type": "zona",
+          "settings": {
+            "zona": "Para regalar",
+            "texto": "El regalo perfecto para quien ama a su gato.",
+            "imagen": "shopify://shop_images/holly-gato-regalo.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "comparativa": {
+      "type": "hl-comparativa",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Más que <em>una camita</em></p>",
+        "texto": "Frente a una cama de mascota común.",
+        "col_nos": "Casita Holly",
+        "col_otros": "Cama común",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "b0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Cueva cerrada donde se siente seguro",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Decora tu casa como un arbolito de Navidad",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Tejida a mano con detalles navideños",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b3": {
+          "type": "fila",
+          "settings": {
+            "texto": "El regalo perfecto para un amante de gatos",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b4": {
+          "type": "fila",
+          "settings": {
+            "texto": "Suave y cómoda para dormir",
+            "nos": true,
+            "otros": true
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "seguro": {
+      "type": "hl-seguro",
+      "settings": {
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
+        "texto": "Así funciona tu pedido, paso a paso.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Pagas con Mercado Pago, 100% seguro."
+          }
+        },
+        "b1": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia, con número de rastreo en tu correo."
+          }
+        },
+        "b2": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Llega a tiempo",
+            "texto": "Pide antes del 1 de diciembre y recíbela antes de Navidad."
+          }
+        },
+        "b3": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Lo que todos <em>preguntan</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Con Mercado Pago, 100% seguro. Pagas al hacer tu pedido.</p>"
+          }
+        },
+        "b1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tarda en llegar?",
+            "respuesta": "<p>Entre 8 y 20 días hábiles según tu ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+          }
+        },
+        "b2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Sí, si haces tu pedido antes del 1 de diciembre.</p>"
+          }
+        },
+        "b3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
+          }
+        },
+        "b4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué tamaño tiene?",
+            "respuesta": "<p>50 × 50 cm de base y 60 cm de alto. Ideal para gatos y perritos pequeños.</p>"
+          }
+        },
+        "b5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Hay que armarla?",
+            "respuesta": "<p>No. Llega terminada: solo la sacas de la bolsa y le das forma con las manos.</p>"
+          }
+        },
+        "b6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si a mi gato no le gusta?",
+            "respuesta": "<p>Dale unos días: ponla en su lugar favorito y mete adentro una manta o juguete con su olor. Los gatos aman los espacios cerrados y calientitos.</p>"
+          }
+        },
+        "b7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no llega o llega dañada?",
+            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7"
+      ]
+    }
+  },
+  "order": [
+    "principal",
+    "activos",
+    "ritual",
+    "zonas",
+    "comparativa",
+    "seguro",
+    "faq"
+  ]
+}

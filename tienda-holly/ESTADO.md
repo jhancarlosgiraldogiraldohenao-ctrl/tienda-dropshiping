@@ -84,3 +84,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Sin pack x2 hasta confirmar si el envío se duplica.
 - Colocar en colección "Regalos" con su propio link. Videos: gatos (ya probado que funciona).
 - Último día de pedido para llegar antes de Navidad ≈ 5-dic.
+- Precio decidido: 249.900 (tachado 329.900, -24%). Costos/u: producto 47.900 + envío Estándar 105.356 + MP ~11.000 (3,29%+952+IVA) + Shopify 2% 5.000 + colchón tarjeta/dólar 4% ~6.100 = ~175.400 → ganancia ~74.500 orgánico / ~39.500 con ads (CPA 35k). Mínimo aceptable 229.900.
+- Montaje: plantilla product.gato (hl-producto con opción nueva "modo_colores" = colores en vez de packs). Colección "Regalos" creada (gid 520147009825, handle regalos) SIN publicar aún (falta scope publications → activar en admin).
+- Flujo: el usuario hace "Push to Shopify" desde DSers (para que quede mapeado el proveedor) → yo cambio título, descripción, precios, imágenes y plantilla vía API.
+- Imágenes que se esperan en Files: holly-gato-detalle, holly-gato-sala, holly-gato-siesta, holly-gato-asoma, holly-gato-regalo (.jpg).
+- OJO plantilla arbolito: FAQ/textos mencionan PSE/Nequi/Efecty pero solo hay tarjetas activas.
