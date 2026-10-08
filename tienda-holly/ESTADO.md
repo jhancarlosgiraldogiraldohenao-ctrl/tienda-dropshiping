@@ -89,3 +89,4 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Flujo: el usuario hace "Push to Shopify" desde DSers (para que quede mapeado el proveedor) → yo cambio título, descripción, precios, imágenes y plantilla vía API.
 - Imágenes que se esperan en Files: holly-gato-detalle, holly-gato-sala, holly-gato-siesta, holly-gato-asoma, holly-gato-regalo (.jpg).
 - OJO plantilla arbolito: FAQ/textos mencionan PSE/Nequi/Efecty pero solo hay tarjetas activas.
+- 8-oct PRECIO FINAL cueva gato (pedido del usuario: colchón como el arbolito): costo conservador producto+envío = 180.000 (real 153.256, +17%). Precio 259.900 (tachado 339.900, -24%). Conservador: ~56.000 orgánico / ~21.000 con ads. Real: ~84.000 / ~49.000. Si DSers producto+envío pasa de 180.000 → subir precio. Revisar costo en cada sesión (como arbolito).
