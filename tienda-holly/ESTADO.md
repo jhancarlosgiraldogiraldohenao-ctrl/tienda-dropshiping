@@ -74,3 +74,4 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Idea a buscar: disfraces/gorros/bufandas navideñas para mascotas (49.900–79.900, livianos).
 - CORRECCIÓN 8-oct: el precio TACHADO en AliExpress (junto al Welcome deal) suele estar inflado; NO es el costo real. Costo real = DSers (ej. arbolito: Welcome 56.347 → DSers 63.907). Cueva gato (1005013090707412) y cama trineo (1005010205758228, 4.4★ 7 reseñas 106 vendidos, foto real OK) se deben revisar en DSers antes de descartar.
 - Disfraz "Papá Noel montando" para perro 1005010100656093: 4.6★ 8 reseñas 105 vendidos, Welcome 35.056. Pendiente: MercadoLibre + DSers. Ojo tallas (S/M/L/XL) → guía de tallas obligatoria.
+- DSers 8-oct: cama trineo = USD 54,22–67,93 ≈ 175.000–220.000 COP (tasa DSers ≈3.234, igual que arbolito USD 19,76 = 63.907) → MercadoLibre la vende a 178.671 → DESCARTADA. (DSers muestra USD: multiplicar × ~3.234.)
