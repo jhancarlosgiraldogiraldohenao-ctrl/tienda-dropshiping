@@ -61,3 +61,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - 8-oct: Luces de ramas de sauce LED USB (AliExpress 1005007569583049 Brand+, 4,7⭐ 85 reseñas 1000+; y 1005013288898142): foto real se ve bien. CORRECCIÓN: en MercadoLibre Colombia hay publicaciones pero NINGUNA disponible para comprar (demanda sin oferta) → (se creyó candidato)  En AliExpress hay muchos proveedores (elegir el mejor + respaldos). Variante: USB caliente, 96 LED; vender 1 rama / pack x2 / pack x3. Falta costo real DSers.
 - Orden de filtro acordado: 1) MercadoLibre Colombia (si está saturado, descartar), 2) fotos reales de reseñas DEL PRODUCTO, 3) costo real en DSers. Candidatos pendientes: tren para árbol, estrella proyectora, globo de nieve con brillantina.
 - 8-oct DEFINITIVO: luces de ramas LED DESCARTADAS. MercadoLibre: 29.795 COP con stock, FULL, envío gratis, y "810 productos nuevos desde $26.310". Más barato que nuestro costo AliExpress (~67k). Lección: en MercadoLibre mirar SIEMPRE "X productos nuevos desde $…" / opciones de compra, no solo las primeras publicaciones.
+
+### 8-oct · Proyector Minecraft → NO (marca registrada)
+- Minecraft es marca de Mojang/Microsoft. Las versiones de AliExpress no tienen licencia → riesgo de cierre de tienda Shopify, bloqueo de Mercado Pago y videos bajados por TikTok/IG por propiedad intelectual. Tampoco se puede usar "Minecraft" en títulos, captions o hashtags.
+- Regla nueva: **nada de personajes/marcas** (Disney, Pokémon, Stitch, Minecraft, Marvel, etc.).
+- La idea de estructura SÍ vale: colección "Regalos" en Holly con su propio link (/collections/regalos) y cada producto con su link /products/... — sin costo extra en el plan de $1.
