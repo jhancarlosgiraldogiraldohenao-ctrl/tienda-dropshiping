@@ -466,7 +466,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con Mercado Pago: tarjeta, PSE, Nequi o Efecty."
+            "texto": "Pagas con tarjeta de crédito a través de Mercado Pago, 100% seguro."
           }
         },
         "b1": {
@@ -515,7 +515,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con Mercado Pago, 100% seguro: tarjeta de crédito o débito, PSE, Nequi o efectivo en Efecty. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito, a través de Mercado Pago (100% seguro). Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {

@@ -25,7 +25,7 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 1 de diciembre para recibirla antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
+        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 25 de noviembre para recibirla antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
         "titulo_size": 46,
         "modo_colores": true
       },
@@ -292,7 +292,7 @@
           "settings": {
             "icono": "reloj",
             "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 1 de diciembre y recíbela antes de Navidad."
+            "texto": "Pide antes del 25 de noviembre y recíbela antes de Navidad."
           }
         },
         "b3": {
@@ -339,7 +339,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 1 de diciembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 25 de noviembre.</p>"
           }
         },
         "b3": {
