@@ -96,6 +96,9 @@
 {%- if section.settings.imagen_2 != blank -%}
 <style>
   #shopify-section-{{ section.id }} .hl-hero.is-alt .hl-arco__alt { opacity: 1; transform: none; }
+  #shopify-section-{{ section.id }} [data-hl-slide-btn].is-latido { animation: hlLatido 0.9s var(--hl-ease); }
+  @keyframes hlLatido { 0% { transform: scale(1); } 35% { transform: scale(1.07); box-shadow: 0 0 0 6px rgba(210, 49, 66, 0.25); } 70% { transform: scale(0.98); } 100% { transform: scale(1); } }
+  @media (prefers-reduced-motion: reduce) { #shopify-section-{{ section.id }} [data-hl-slide-btn].is-latido { animation: none; } }
   #shopify-section-{{ section.id }} [data-hl-slide-btn] { transition: background-color .5s var(--hl-ease), color .5s var(--hl-ease), border-color .5s var(--hl-ease), box-shadow .5s var(--hl-ease); }
 </style>
 <script>
@@ -106,10 +109,13 @@
     var btns = h.querySelectorAll('[data-hl-slide-btn]');
     function pintar(i) {
       h.classList.toggle('is-alt', i === 1);
+      h.classList.toggle('is-pack', i === 1);
       btns.forEach(function (b) {
         var on = b.getAttribute('data-hl-slide-btn') === String(i);
         b.classList.toggle('hl-btn--curcuma', on);
         b.classList.toggle('hl-btn--ghost', !on);
+        b.classList.remove('is-latido');
+        if (on) { void b.offsetWidth; b.classList.add('is-latido'); }
       });
     }
     var i = 0; pintar(0);
@@ -191,7 +197,7 @@
       "type": "range",
       "id": "intervalo",
       "label": "Segundos entre imágenes",
-      "min": 3,
+      "min": 2,
       "max": 10,
       "step": 1,
       "unit": "s",

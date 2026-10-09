@@ -27,8 +27,8 @@
         "btn2_texto": "Arbolito proyector",
         "btn2_url": "/products/arbolito-proyector-navideno",
         "btn1_url": "/products/casita-arbol-navidad-gatos",
-        "imagen_2": "shopify://shop_images/holly-gato-sala.webp",
-        "intervalo": 5
+        "imagen_2": "shopify://shop_images/holly-portada-casita.jpg",
+        "intervalo": 3
       },
       "blocks": {
         "b0": {
@@ -36,7 +36,7 @@
           "settings": {
             "modo": "uno",
             "icono": "copo",
-            "titulo": "Arbolito proyector",
+            "titulo": "6+ diseños",
             "texto": "Santa, copos y renos"
           }
         },
@@ -44,18 +44,18 @@
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "regalo",
-            "titulo": "Casita para mascotas",
-            "texto": "Gatos y perritos pequeños"
+            "icono": "usb",
+            "titulo": "Conexión USB",
+            "texto": "Cargador, PC o power bank"
           }
         },
         "b2": {
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "camion",
-            "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "icono": "arbol",
+            "titulo": "Cuerpo flexible",
+            "texto": "Apúntalo donde quieras"
           }
         },
         "b3": {
@@ -64,43 +64,43 @@
             "modo": "uno",
             "icono": "regalo",
             "titulo": "Regalo perfecto",
-            "texto": "Para la familia y su mascota"
+            "texto": "Para grandes y chicos"
           }
         },
         "b4": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "regalo",
-            "titulo": "Uno para regalar",
-            "texto": "El detalle de Navidad"
+            "icono": "brillo",
+            "titulo": "Tejida a mano",
+            "texto": "Felpa suave y calientita"
           }
         },
         "b5": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "brillo",
-            "titulo": "Ahorras $123.900",
-            "texto": "Frente al precio normal"
+            "icono": "casa",
+            "titulo": "50 × 60 cm",
+            "texto": "Gatos y perritos pequeños"
           }
         },
         "b6": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "casa",
-            "titulo": "2 arbolitos",
-            "texto": "Sala y cuarto de los niños"
+            "icono": "regalo",
+            "titulo": "4 colores",
+            "texto": "Verde, rojo, pino y vino"
           }
         },
         "b7": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "camion",
-            "titulo": "Un solo envío",
-            "texto": "Gratis a toda Colombia"
+            "icono": "escudo",
+            "titulo": "Cueva cerrada",
+            "texto": "Se siente seguro y feliz"
           }
         },
         "b8": {
