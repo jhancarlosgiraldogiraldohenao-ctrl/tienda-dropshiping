@@ -38,7 +38,7 @@
         {%- endif -%}
 
         <div class="hl-hero__ctas hl-reveal" style="--hl-i:4">
-          {%- if section.settings.btn1_texto != blank -%}<a class="hl-btn hl-btn--curcuma" href="{{ url_compra }}" data-hl-h-comprar><span>{{ section.settings.btn1_texto }}</span> {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
+          {%- if section.settings.btn1_texto != blank -%}<a class="hl-btn hl-btn--curcuma" href="{{ url_compra }}" data-hl-h-comprar data-hl-slide-btn="1"><span>{{ section.settings.btn1_texto }}</span> {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
           {%- assign pack = producto.variants[1] -%}
           {%- if section.settings.mostrar_pack and pack -%}
             {%- assign ahorro = pack.compare_at_price | minus: pack.price | times: 100.0 | divided_by: pack.compare_at_price | round -%}
@@ -50,7 +50,7 @@
               data-txt-comprar-uno="{{ section.settings.btn1_texto | escape }}" data-txt-comprar-pack="{{ section.settings.pack_comprar | escape }}"
               data-txt-pack="{{ section.settings.pack_texto | escape }} · {{ section.settings.pack_ahorro | escape }} {{ ahorro }}%" data-txt-volver="{{ section.settings.pack_volver | escape }}"
               data-sello-uno="{{ section.settings.sello_centro | escape }}" data-sello-pack="{{ section.settings.pack_sello | escape }}" aria-pressed="false">{{ section.settings.pack_texto }} · {{ section.settings.pack_ahorro }} {{ ahorro }}%</button>
-          {%- elsif section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
+          {%- elsif section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#ritual' }}" data-hl-slide-btn="0">{{ section.settings.btn2_texto }}</a>{%- endif -%}
         </div>
 
         {%- assign chips = section.blocks | where: 'type', 'chip' -%}
@@ -74,6 +74,9 @@
           {%- else -%}
             <img src="{{ 'hl-hero.jpg' | asset_url }}" alt="{{ section.settings.alt_imagen | escape }}" width="1024" height="1536" loading="eager" fetchpriority="high">
           {%- endif -%}
+          {%- if section.settings.imagen_2 != blank -%}
+            <img class="hl-arco__pack hl-arco__alt" src="{{ section.settings.imagen_2 | image_url: width: 1200 }}" srcset="{{ section.settings.imagen_2 | image_url: width: 600 }} 600w, {{ section.settings.imagen_2 | image_url: width: 900 }} 900w, {{ section.settings.imagen_2 | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 45vw, 90vw" alt="{{ section.settings.imagen_2.alt | escape }}" width="1024" height="1280" loading="eager">
+          {%- endif -%}
           {%- if section.settings.mostrar_pack and section.settings.imagen_pack != blank -%}
             <img class="hl-arco__pack" src="{{ section.settings.imagen_pack | image_url: width: 1200 }}" alt="{{ section.settings.imagen_pack.alt | escape }}" width="1024" height="1536" loading="lazy" aria-hidden="true">
           {%- endif -%}
@@ -89,6 +92,35 @@
     </div>
   </div>
 </section>
+
+{%- if section.settings.imagen_2 != blank -%}
+<style>
+  #shopify-section-{{ section.id }} .hl-hero.is-alt .hl-arco__alt { opacity: 1; transform: none; }
+  #shopify-section-{{ section.id }} [data-hl-slide-btn] { transition: background-color .5s var(--hl-ease), color .5s var(--hl-ease), border-color .5s var(--hl-ease), box-shadow .5s var(--hl-ease); }
+</style>
+<script>
+  (function () {
+    var s = document.getElementById('shopify-section-{{ section.id }}');
+    var h = s && s.querySelector('.hl-hero');
+    if (!h) return;
+    var btns = h.querySelectorAll('[data-hl-slide-btn]');
+    function pintar(i) {
+      h.classList.toggle('is-alt', i === 1);
+      btns.forEach(function (b) {
+        var on = b.getAttribute('data-hl-slide-btn') === String(i);
+        b.classList.toggle('hl-btn--curcuma', on);
+        b.classList.toggle('hl-btn--ghost', !on);
+      });
+    }
+    var i = 0; pintar(0);
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    var t = setInterval(function () { i = 1 - i; pintar(i); }, {{ section.settings.intervalo | times: 1000 }});
+    btns.forEach(function (b) {
+      b.addEventListener('mouseenter', function () { clearInterval(t); i = Number(b.getAttribute('data-hl-slide-btn')); pintar(i); });
+    });
+  })();
+</script>
+{%- endif -%}
 
 {% schema %}
 {
@@ -148,6 +180,22 @@
       "id": "btn1_texto",
       "label": "Botón principal – texto",
       "default": "Lo quiero"
+    },
+    {
+      "type": "image_picker",
+      "id": "imagen_2",
+      "label": "Segunda imagen (rota con la principal)",
+      "info": "Con esta imagen se ilumina el botón principal; con la principal, el secundario."
+    },
+    {
+      "type": "range",
+      "id": "intervalo",
+      "label": "Segundos entre imágenes",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "default": 5
     },
     {
       "type": "url",

@@ -26,7 +26,9 @@
         "texto_size": 18,
         "btn2_texto": "Arbolito proyector",
         "btn2_url": "/products/arbolito-proyector-navideno",
-        "btn1_url": "/products/casita-arbol-navidad-gatos"
+        "btn1_url": "/products/casita-arbol-navidad-gatos",
+        "imagen_2": "shopify://shop_images/holly-gato-sala.webp",
+        "intervalo": 5
       },
       "blocks": {
         "b0": {
