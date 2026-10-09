@@ -133,6 +133,16 @@
           sync();
         });
       });
+      // Si el cliente eligió una opción antes de que cargara la página, se respeta su elección.
+      var elegida = c.querySelector('[data-hl-oferta]:checked');
+      if (elegida && id && id.value !== elegida.value) elegida.dispatchEvent(new Event('change'));
+      // Seguro extra: justo antes de comprar, la variante siempre es la que está marcada.
+      var asegurar = function () { var r = c.querySelector('[data-hl-oferta]:checked'); if (r && id && id.value !== r.value) { id.value = r.value; } sync(); };
+      if (ahora) ahora.addEventListener('click', asegurar, true);
+      var form = c.querySelector('form[data-type="add-to-cart-form"]');
+      if (form) form.addEventListener('submit', asegurar, true);
+      var addBtn = c.querySelector('button[name="add"]');
+      if (addBtn) addBtn.addEventListener('click', asegurar, true);
       sync();
     });
     var barra = document.querySelector('[data-hl-sticky-compra]');
