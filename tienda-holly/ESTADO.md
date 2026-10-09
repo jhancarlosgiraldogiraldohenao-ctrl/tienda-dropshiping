@@ -105,3 +105,16 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Portada: carrusel arbolito/casita cada 3 s (imagen_2 = holly-portada-casita.jpg, foto del usuario), botón del producto visible se ilumina y "late", burbujas cambian (uno = arbolito, pack = casita).
 - 9-oct REVISIÓN COMPLETA: páginas, políticas y contacto 200; carrito agrega variante y precio correctos (pack 229.900, casita 259.900); checkout Colombia OK (total correcto). Arreglado: textos decían PSE/Nequi/Efecty → ahora "tarjeta de crédito" (solo tarjetas activas); fecha Navidad casita 25-nov; blindaje JS: si eligen color antes de cargar la página se respeta su elección. Errores de consola en pruebas = proxy del entorno (no de la tienda).
 - PENDIENTES del usuario: nombre "holly " → "Holly" (Configuración > General); activar Checkout Pro de Mercado Pago (PSE/Nequi/Efecty) → si se activa, volver a poner esos métodos en los textos; publicar colección Regalos (opcional).
+
+## Competencia TikTok (9-oct, datos de perfil + tiendas; los videos NO se pudieron ver: TikTok bloquea al navegador del entorno)
+| Cuenta | Seg. | Likes | Videos | Likes/video | Creada | Producto / precio |
+|---|---|---|---|---|---|---|
+| jinglenap.official | 4.908 | 125.877 | 41 | ~3.070 | may-2026 | Jingle Nap Pet Bed (trineos + ¡NUESTRA casita árbol! "only cats/small dogs") USD 59,95 (antes 89,95) |
+| viking.paws | 4.470 | 123.986 | 56 | ~2.214 | ago-2026 | Disfraz árbol de Navidad para mascotas USD 25,95 (antes 49,90) |
+| snowlit.official | 1.829 | 33.334 | 27 | ~1.235 | sep-2026 | officialmerryglow.com: proyector cielo navideño USD 39,89 (packs 1/2/4/6) |
+| magicttree | 3.882 | 19.451 | 27 | ~720 | sep-2026 | (España, +34) árbol/proyector |
+| glowora48 | 196 | 7.392 | 13 | ~569 | sep-2026 | ¡MISMO arbolito USB! tiendaglowora.com 39,95 (antes 79,95), caja de regalo |
+| nuvexa_one | 1.273 | 8.518 | 17 | ~501 | jun-2026 | regalos/Navidad/hogar |
+| naviglow3 | 3.040 | 23.733 | 50 | ~475 | sep-2026 | zyrion.store cortina de luces animadas 1.299 (antes 1.699) |
+- Conclusión: cuentas de MASCOTAS sacan 3–6x más likes por video que las de proyectores → apostar fuerte a la casita. Casita validada por jinglenap a USD 59,95 (~240k COP).
+- Bios: % descuento + "tiempo limitado" + "👇 consigue el tuyo aquí" + link directo al producto. Tiendas venden extras: protección de envío, garantía extendida, regalo sorpresa, "skip the line".
