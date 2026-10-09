@@ -118,3 +118,9 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 | naviglow3 | 3.040 | 23.733 | 50 | ~475 | sep-2026 | zyrion.store cortina de luces animadas 1.299 (antes 1.699) |
 - Conclusión: cuentas de MASCOTAS sacan 3–6x más likes por video que las de proyectores → apostar fuerte a la casita. Casita validada por jinglenap a USD 59,95 (~240k COP).
 - Bios: % descuento + "tiempo limitado" + "👇 consigue el tuyo aquí" + link directo al producto. Tiendas venden extras: protección de envío, garantía extendida, regalo sorpresa, "skip the line".
+
+## Análisis de 10 videos virales de la competencia (9-oct, descargados y vistos cuadro a cuadro)
+- Ganadores: jinglenap #3 1,8M vistas/37,9k compartidos ("Dog MOMS... This is for you 👀"), festivesl 4,2M (proyector arbolito, montaje IA, 50 s), snowlit 1,5M ("Christmas Decor in 1965 🤮 / Vs... / in 2026 😍"), jinglenap 460k/348k/340k ("The concept 😳 vs The result 🥹" caja de cartón vs cama; "Dog Moms RUN to Costco rn! 🎄😱"), starnest 191k ("NO le enseñes esto a un amante de la Navidad 🎄"). Fracasos: dali_viral 7k y 598 (título = nombre del producto, descripción larga de venta, marca de agua).
+- Fórmula común: 8–15 s · UN texto en fuente nativa de TikTok (blanco, arriba) TODO el video · arranca con acción (unboxing, enchufar, caja de cartón) · revelación/transformación a mitad · validación = mascota acostada feliz / techo lleno de figuras + familia reaccionando · final quieto (loop) · canción navideña en tendencia (All I Want for Christmas x3).
+- Ganchos: (1) llamado a identidad "Mamás de perros... esto es para ustedes 👀", (2) comparación "El concepto 😳 vs el resultado 🥹" / "Decoración 1965 🤮 vs 2026 😍", (3) urgencia FOMO "CORRAN a ... ya 😱", (4) prohibición "NO le enseñes esto a...", (5) dolor "Deja de pasar horas decorando".
+- CTA: en la descripción, corta: 'Comenta "Navidad" si quieres uno 🎄' (6/10, incluidos todos los top). Nada de tarjetas de venta dentro del video.
