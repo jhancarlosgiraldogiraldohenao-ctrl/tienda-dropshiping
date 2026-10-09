@@ -672,7 +672,8 @@
             "producto": "casita-arbol-navidad-gatos",
             "titulo": "Casita Árbol de Navidad para Mascotas",
             "frase": "Tejida a mano en forma de arbolito. Para gatos y perritos pequeños · 50 × 60 cm.",
-            "etiqueta": "Nuevo"
+            "etiqueta": "Nuevo",
+            "imagen": "shopify://shop_images/casita-gato.jpg"
           }
         }
       },
@@ -752,7 +753,8 @@
             "producto": "casita-arbol-navidad-gatos",
             "frase": "4 colores · 50 cm de ancho × 60 cm de alto · Envío gratis",
             "etiqueta": "Nuevo",
-            "titulo": "Casita Árbol de Navidad para Mascotas"
+            "titulo": "Casita Árbol de Navidad para Mascotas",
+            "imagen": "shopify://shop_images/casita-gato.jpg"
           }
         }
       },
