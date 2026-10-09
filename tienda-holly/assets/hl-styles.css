@@ -360,7 +360,10 @@ body:has(cart-drawer.active) .hl-sticky-compra { display: none !important; }
 .cart__checkout-button::after, .cart__checkout-button::before { display: none !important; }
 cart-drawer .drawer__inner { height: 100vh; height: 100dvh; }
 cart-drawer .drawer__footer { position: sticky; bottom: 0; background: inherit; padding-bottom: calc(1.5rem + env(safe-area-inset-bottom)); }
-.cart-drawer .totals__total-value, .cart__footer .totals__total-value { font-family: var(--hl-serif); font-size: 24px; }
+.cart-drawer .totals__total-value, .cart__footer .totals__total-value { font-family: var(--hl-fuente); font-size: 22px; font-weight: 700; font-variant-numeric: lining-nums tabular-nums; white-space: nowrap; letter-spacing: -0.01em; }
+.cart-drawer .totals, .cart__footer .totals { align-items: center; flex-wrap: nowrap; gap: 12px; }
+.cart-drawer .totals__total, .cart__footer .totals__total { white-space: nowrap; }
+.cart-item__price-wrapper, .cart-item__totals .price, .cart-drawer .price { font-variant-numeric: lining-nums tabular-nums; }
 .button, .shopify-payment-button__button--unbranded { border-radius: 999px !important; }
 .button::after, .button::before { border-radius: 999px !important; }
 
