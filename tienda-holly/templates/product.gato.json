@@ -388,6 +388,44 @@
         "b6",
         "b7"
       ]
+    },
+    "tambien": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Completa tu Navidad",
+        "titulo": "<p>También te va a <em>encantar</em></p>",
+        "texto": "",
+        "boton_texto": "Ver producto",
+        "ancla": "regalos",
+        "titulo_size": 56,
+        "padding_top": 64,
+        "padding_bottom": 64
+      },
+      "blocks": {
+        "arbolito": {
+          "type": "producto",
+          "settings": {
+            "producto": "arbolito-proyector-navideno",
+            "titulo": "Arbolito Proyector Navideño",
+            "frase": "Proyecta Santas, copos de nieve y renos en tu techo. Se conecta por USB.",
+            "etiqueta": "Más vendido",
+            "imagen": "shopify://shop_images/holly-ia-principal.jpg"
+          }
+        },
+        "gato": {
+          "type": "producto",
+          "settings": {
+            "producto": "casita-arbol-navidad-gatos",
+            "titulo": "Casita Árbol de Navidad para Gatos",
+            "frase": "Tejida a mano en forma de arbolito: la camita favorita de tu gato.",
+            "etiqueta": "Nuevo"
+          }
+        }
+      },
+      "block_order": [
+        "arbolito",
+        "gato"
+      ]
     }
   },
   "order": [
@@ -396,6 +434,7 @@
     "ritual",
     "zonas",
     "comparativa",
+    "tambien",
     "seguro",
     "faq"
   ]

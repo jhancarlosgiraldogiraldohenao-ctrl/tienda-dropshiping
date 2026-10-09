@@ -4,13 +4,13 @@
       "type": "hl-hero",
       "settings": {
         "eyebrow": "Holly · Navidad 2026",
-        "titulo": "<p>Convierte tu cuarto en una <em>noche de Navidad</em></p>",
-        "sub": "Un arbolito con luces que proyecta Santas, copos de nieve y renos en el techo. Lo conectas por USB y en segundos tu casa se llena de magia.",
+        "titulo": "<p>Regalos que llenan tu casa de <em>magia navideña</em></p>",
+        "sub": "El arbolito que proyecta Navidad en tu techo y la casita tejida que tu gato va a amar. Envío gratis a toda Colombia.",
         "producto": "arbolito-proyector-navideno",
-        "mostrar_precio": true,
+        "mostrar_precio": false,
         "nota_precio": "Envío gratis a toda Colombia · Pago seguro con Mercado Pago",
-        "btn1_texto": "Quiero mi arbolito",
-        "mostrar_pack": true,
+        "btn1_texto": "Ver los regalos",
+        "mostrar_pack": false,
         "pack_texto": "Pack x2 para regalar",
         "pack_ahorro": "ahorra",
         "pack_comprar": "Llevar el pack x2",
@@ -20,12 +20,13 @@
         "imagen_pack": "shopify://shop_images/holly-ia-pack2.jpg",
         "alt_imagen": "Arbolito proyector navideño iluminando una sala",
         "sello_texto": "envío gratis · navidad 2026 · ",
-        "sello_centro": "6+",
+        "sello_centro": "★",
         "alineacion": "left",
         "titulo_size": 84,
         "texto_size": 18,
-        "btn2_texto": "Cómo funciona",
-        "btn2_url": "#como-funciona"
+        "btn2_texto": "Arbolito proyector",
+        "btn2_url": "/products/arbolito-proyector-navideno",
+        "btn1_url": "/#regalos"
       },
       "blocks": {
         "b0": {
@@ -33,7 +34,7 @@
           "settings": {
             "modo": "uno",
             "icono": "copo",
-            "titulo": "6+ diseños",
+            "titulo": "Arbolito proyector",
             "texto": "Santa, copos y renos"
           }
         },
@@ -41,18 +42,18 @@
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "usb",
-            "titulo": "Conexión USB",
-            "texto": "Cargador, PC o power bank"
+            "icono": "regalo",
+            "titulo": "Casita para gatos",
+            "texto": "Tejida a mano"
           }
         },
         "b2": {
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "arbol",
-            "titulo": "Cuerpo flexible",
-            "texto": "Apúntalo donde quieras"
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
           }
         },
         "b3": {
@@ -61,7 +62,7 @@
             "modo": "uno",
             "icono": "regalo",
             "titulo": "Regalo perfecto",
-            "texto": "Para grandes y chicos"
+            "texto": "Para la familia y su mascota"
           }
         },
         "b4": {
@@ -539,22 +540,22 @@
         "b4": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cómo se conecta?",
+            "pregunta": "¿Cómo se conecta el arbolito?",
             "respuesta": "<p>Por USB. No incluye adaptador de pared: funciona con el cargador de tu celular, el computador o un power bank.</p>"
           }
         },
         "b5": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Qué diseños proyecta?",
+            "pregunta": "¿Qué diseños proyecta el arbolito?",
             "respuesta": "<p>Más de 6 escenas navideñas: Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos.</p>"
           }
         },
         "b6": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Se ve de día?",
-            "respuesta": "<p>La proyección se ve mejor con la luz apagada o en penumbra. Las lucecitas del arbolito sí se ven siempre.</p>"
+            "pregunta": "¿La casita para gatos trae cojín?",
+            "respuesta": "<p>No, el cojín interior no viene incluido. Ponle una mantica que tu gato ya conozca y se adueña de ella más rápido.</p>"
           }
         },
         "b7": {
@@ -642,16 +643,135 @@
       "block_order": [
         "a1"
       ]
+    },
+    "catalogo": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Lo más pedido esta Navidad",
+        "titulo": "<p>Regalos que <em>enamoran</em></p>",
+        "texto": "Elige el tuyo. Envío gratis a toda Colombia.",
+        "boton_texto": "Ver producto",
+        "ancla": "regalos",
+        "titulo_size": 56,
+        "padding_top": 64,
+        "padding_bottom": 64
+      },
+      "blocks": {
+        "arbolito": {
+          "type": "producto",
+          "settings": {
+            "producto": "arbolito-proyector-navideno",
+            "titulo": "Arbolito Proyector Navideño",
+            "frase": "Proyecta Santas, copos de nieve y renos en tu techo. Se conecta por USB.",
+            "etiqueta": "Más vendido",
+            "imagen": "shopify://shop_images/holly-ia-principal.jpg"
+          }
+        },
+        "gato": {
+          "type": "producto",
+          "settings": {
+            "producto": "casita-arbol-navidad-gatos",
+            "titulo": "Casita Árbol de Navidad para Gatos",
+            "frase": "Tejida a mano en forma de arbolito: la camita favorita de tu gato.",
+            "etiqueta": "Nuevo"
+          }
+        }
+      },
+      "block_order": [
+        "arbolito",
+        "gato"
+      ]
+    },
+    "casita": {
+      "type": "hl-activos",
+      "settings": {
+        "eyebrow": "Nuevo · Para tu gato",
+        "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
+        "texto": "Los gatos aman los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
+        "imagen": "shopify://shop_images/holly-gato-detalle.webp",
+        "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
+        "ancla": "casita",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "b0": {
+          "type": "activo",
+          "settings": {
+            "icono": "brillo",
+            "titulo": "Tejida a mano",
+            "texto": "Felpa gruesa y suave, con pompones de colores, estrella roja y muñequitos de Navidad."
+          }
+        },
+        "b1": {
+          "type": "activo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Cueva cerrada",
+            "texto": "Tu gato se esconde, se enrolla y duerme tranquilo. Se siente protegido."
+          }
+        },
+        "b2": {
+          "type": "activo",
+          "settings": {
+            "icono": "copo",
+            "titulo": "Calientita",
+            "texto": "Ideal para noches frías: la felpa guarda el calor de tu mascota."
+          }
+        },
+        "b3": {
+          "type": "activo",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Decora tu casa",
+            "texto": "Parece un arbolito de Navidad. Queda hermosa en la sala o junto al árbol."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "cierre_gato": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Para tu gato",
+        "titulo": "<p>La casita que <em>todos quieren</em></p>",
+        "texto": "",
+        "boton_texto": "Ver la casita",
+        "ancla": "casita-comprar",
+        "titulo_size": 48,
+        "padding_top": 0,
+        "padding_bottom": 64
+      },
+      "blocks": {
+        "gato": {
+          "type": "producto",
+          "settings": {
+            "producto": "casita-arbol-navidad-gatos",
+            "frase": "4 colores · 50 × 50 × 60 cm · Envío gratis",
+            "etiqueta": "Nuevo"
+          }
+        }
+      },
+      "block_order": [
+        "gato"
+      ]
     }
   },
   "order": [
     "hero",
+    "catalogo",
     "cinta",
     "activos",
     "ritual",
     "zonas",
     "comparativa",
     "antes_despues",
+    "casita",
+    "cierre_gato",
     "seguro",
     "faq",
     "cierre",

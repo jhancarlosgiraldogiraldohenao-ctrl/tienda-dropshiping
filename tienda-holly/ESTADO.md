@@ -94,3 +94,5 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - NO incluye cojín interior (dicho en descripción y FAQ).
 - Imágenes de secciones temporales (fotos del proveedor) en Files: holly-gato-{detalle,sala,siesta,asoma,regalo}.webp → reemplazar por las de ChatGPT.
 - Falta que el usuario active "Tienda online" en el producto y en la colección Regalos (sin scope publications).
+- 9-oct TIENDA MULTI-PRODUCTO: sección nueva hl-catalogo (tarjetas de productos; en página de producto oculta el producto actual). Inicio: hero genérico "Regalos que llenan tu casa de magia navideña" (sin precio/pack) + catálogo (#regalos) + secciones arbolito + bloque casita + tarjeta casita + seguro/faq/cierre. Plantillas product.hl y product.gato: sección "También te va a encantar" tras comparativa. Barra de anuncio → /#regalos. Menú principal: Inicio, Arbolito Proyector, Casita para Gatos, Contacto (Regalos se agrega cuando la colección esté publicada). Link universal para bio: hollycolombia.myshopify.com
+- Casita PUBLICADA en tienda online (9-oct). Colección Regalos aún sin publicar.
