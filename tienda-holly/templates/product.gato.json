@@ -4,11 +4,11 @@
       "type": "hl-producto",
       "settings": {
         "eyebrow": "Holly · Regalos para tu mascota",
-        "titulo_corto": "Casita Árbol de Navidad para Gatos",
-        "subtitulo": "Tejida a mano · Felpa suave · 4 colores",
-        "intro": "Un arbolito de Navidad tejido que es también la camita favorita de tu gato. Calientita, suave y tan linda que decora tu sala mientras él duerme adentro.",
+        "titulo_corto": "Casita Árbol de Navidad para Mascotas",
+        "subtitulo": "Tejida a mano · 50 cm × 60 cm · 4 colores",
+        "intro": "Un arbolito de Navidad tejido que es también la camita favorita de tu gato o perrito pequeño. Calientita, suave y tan linda que decora tu sala mientras él duerme adentro.",
         "nota_precio": "Envío gratis · Pago seguro con Mercado Pago",
-        "puntos": "Tejida a mano en felpa suave y calientita\nCueva cerrada: tu gato se siente seguro\nDecora tu casa en Navidad (y todo el año)\nMide 50 × 50 × 60 cm: para gatos y perritos pequeños",
+        "puntos": "Medidas: 50 cm de ancho × 50 cm de fondo × 60 cm de alto\nPara gatos y perritos pequeños\nTejida a mano en felpa suave y calientita\nCueva cerrada: tu mascota se siente segura\nDecora tu casa en Navidad (y todo el año)",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige el color",
         "oferta_1_nota": "Para tu casa",
@@ -21,7 +21,7 @@
         "comprar_nota": "Pago 100% seguro con Mercado Pago",
         "carrito_texto": "Agregar al carrito",
         "agotado_texto": "Agotado",
-        "sticky_texto": "Casita Árbol para Gatos",
+        "sticky_texto": "Casita para Mascotas",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
@@ -66,7 +66,7 @@
       "settings": {
         "eyebrow": "Hecha para consentirlo",
         "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
-        "texto": "Los gatos aman los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
+        "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
         "imagen": "shopify://shop_images/holly-gato-detalle.webp",
         "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
         "ancla": "detalles",
@@ -119,7 +119,7 @@
         "eyebrow": "Así de fácil",
         "titulo": "<p>Llega lista <em>para usar</em></p>",
         "texto": "Producto terminado: no hay que armar nada.",
-        "nota": "Mide 50 × 50 × 60 cm. Ideal para gatos y perritos pequeños.",
+        "nota": "Medidas: 50 cm de ancho × 50 cm de fondo × 60 cm de alto. Para gatos y perritos pequeños.",
         "ancla": "como-funciona",
         "titulo_size": 64
       },
@@ -142,7 +142,7 @@
           "type": "paso",
           "settings": {
             "titulo": "Míralo",
-            "texto": "Tu gato entra solito a explorar… y ya no quiere salir."
+            "texto": "Tu mascota entra solita a explorar… y ya no quiere salir."
           }
         }
       },
@@ -189,7 +189,7 @@
           "type": "zona",
           "settings": {
             "zona": "Para regalar",
-            "texto": "El regalo perfecto para quien ama a su gato.",
+            "texto": "El regalo perfecto para quien ama a su mascota.",
             "imagen": "shopify://shop_images/holly-gato-regalo.webp"
           }
         }
@@ -215,7 +215,7 @@
         "b0": {
           "type": "fila",
           "settings": {
-            "texto": "Cueva cerrada donde se siente seguro",
+            "texto": "Cueva cerrada donde se siente segura",
             "nos": true,
             "otros": false
           }
@@ -239,7 +239,7 @@
         "b3": {
           "type": "fila",
           "settings": {
-            "texto": "El regalo perfecto para un amante de gatos",
+            "texto": "El regalo perfecto para un amante de las mascotas",
             "nos": true,
             "otros": false
           }
@@ -353,21 +353,21 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Qué tamaño tiene?",
-            "respuesta": "<p>50 × 50 cm de base y 60 cm de alto. Ideal para gatos y perritos pequeños.</p>"
+            "respuesta": "<p>50 cm de ancho × 50 cm de fondo × 60 cm de alto. Ideal para gatos y perritos pequeños. Para perros medianos o grandes es muy pequeña.</p>"
           }
         },
         "b5": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Trae cojín adentro?",
-            "respuesta": "<p>No, el cojín interior no viene incluido. Pon una mantica o cojín que tu gato ya conozca: con su olor se adueña de la casita más rápido.</p>"
+            "respuesta": "<p>No, el cojín interior no viene incluido. Pon una mantica o cojín que tu mascota ya conozca: con su olor se adueña de la casita más rápido.</p>"
           }
         },
         "b6": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Y si a mi gato no le gusta?",
-            "respuesta": "<p>Dale unos días: ponla en su lugar favorito y mete adentro una manta o juguete con su olor. Los gatos aman los espacios cerrados y calientitos.</p>"
+            "pregunta": "¿Y si a mi mascota no le gusta?",
+            "respuesta": "<p>Dale unos días: ponla en su lugar favorito y mete adentro una manta o juguete con su olor. A los gatos y perritos pequeños les encantan los espacios cerrados y calientitos.</p>"
           }
         },
         "b7": {
@@ -416,7 +416,7 @@
           "type": "producto",
           "settings": {
             "producto": "casita-arbol-navidad-gatos",
-            "titulo": "Casita Árbol de Navidad para Gatos",
+            "titulo": "Casita Árbol de Navidad para Mascotas",
             "frase": "Tejida a mano en forma de arbolito: la camita favorita de tu gato.",
             "etiqueta": "Nuevo"
           }

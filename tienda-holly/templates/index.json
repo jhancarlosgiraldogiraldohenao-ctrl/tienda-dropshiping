@@ -5,11 +5,11 @@
       "settings": {
         "eyebrow": "Holly · Navidad 2026",
         "titulo": "<p>Regalos que llenan tu casa de <em>magia navideña</em></p>",
-        "sub": "El arbolito que proyecta Navidad en tu techo y la casita tejida que tu gato va a amar. Envío gratis a toda Colombia.",
+        "sub": "El arbolito que proyecta Navidad en tu techo y la casita tejida que tu gato o perrito va a amar. Envío gratis a toda Colombia.",
         "producto": "arbolito-proyector-navideno",
         "mostrar_precio": false,
         "nota_precio": "Envío gratis a toda Colombia · Pago seguro con Mercado Pago",
-        "btn1_texto": "Ver los regalos",
+        "btn1_texto": "Casita para tu mascota",
         "mostrar_pack": false,
         "pack_texto": "Pack x2 para regalar",
         "pack_ahorro": "ahorra",
@@ -26,7 +26,7 @@
         "texto_size": 18,
         "btn2_texto": "Arbolito proyector",
         "btn2_url": "/products/arbolito-proyector-navideno",
-        "btn1_url": "/#regalos"
+        "btn1_url": "/products/casita-arbol-navidad-gatos"
       },
       "blocks": {
         "b0": {
@@ -43,8 +43,8 @@
           "settings": {
             "modo": "uno",
             "icono": "regalo",
-            "titulo": "Casita para gatos",
-            "texto": "Tejida a mano"
+            "titulo": "Casita para mascotas",
+            "texto": "Gatos y perritos pequeños"
           }
         },
         "b2": {
@@ -554,7 +554,7 @@
         "b6": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿La casita para gatos trae cojín?",
+            "pregunta": "¿La casita para mascotas trae cojín?",
             "respuesta": "<p>No, el cojín interior no viene incluido. Ponle una mantica que tu gato ya conozca y se adueña de ella más rápido.</p>"
           }
         },
@@ -671,8 +671,8 @@
           "type": "producto",
           "settings": {
             "producto": "casita-arbol-navidad-gatos",
-            "titulo": "Casita Árbol de Navidad para Gatos",
-            "frase": "Tejida a mano en forma de arbolito: la camita favorita de tu gato.",
+            "titulo": "Casita Árbol de Navidad para Mascotas",
+            "frase": "Tejida a mano en forma de arbolito. Para gatos y perritos pequeños · 50 × 60 cm.",
             "etiqueta": "Nuevo"
           }
         }
@@ -685,9 +685,9 @@
     "casita": {
       "type": "hl-activos",
       "settings": {
-        "eyebrow": "Nuevo · Para tu gato",
+        "eyebrow": "Nuevo · Para tu mascota",
         "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
-        "texto": "Los gatos aman los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
+        "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
         "imagen": "shopify://shop_images/holly-gato-detalle.webp",
         "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
         "ancla": "casita",
@@ -737,7 +737,7 @@
     "cierre_gato": {
       "type": "hl-catalogo",
       "settings": {
-        "eyebrow": "Para tu gato",
+        "eyebrow": "Para tu mascota",
         "titulo": "<p>La casita que <em>todos quieren</em></p>",
         "texto": "",
         "boton_texto": "Ver la casita",
@@ -751,8 +751,9 @@
           "type": "producto",
           "settings": {
             "producto": "casita-arbol-navidad-gatos",
-            "frase": "4 colores · 50 × 50 × 60 cm · Envío gratis",
-            "etiqueta": "Nuevo"
+            "frase": "4 colores · 50 cm de ancho × 60 cm de alto · Envío gratis",
+            "etiqueta": "Nuevo",
+            "titulo": "Casita Árbol de Navidad para Mascotas"
           }
         }
       },
