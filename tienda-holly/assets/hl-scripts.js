@@ -34,22 +34,51 @@
     });
   }
 
+  // Carga una imagen en segundo plano y la muestra solo cuando ya está lista (sin congelarse).
+  var hlCache = {};
+  function hlPrecargar(src) {
+    if (!src) return null;
+    if (!hlCache[src]) { var im = new Image(); im.decoding = 'async'; im.src = src; hlCache[src] = im; }
+    return hlCache[src];
+  }
+  function hlCambiar(img, src, srcset, alt) {
+    if (!img || !src) return;
+    var token = (img.__hlToken || 0) + 1; img.__hlToken = token;
+    var pre = hlPrecargar(src);
+    img.style.opacity = 0.35;
+    var hecho = false;
+    var listo = function () {
+      if (hecho || img.__hlToken !== token) return;
+      hecho = true;
+      img.removeAttribute('srcset');
+      if (srcset) img.srcset = srcset;
+      img.src = src;
+      if (alt != null) img.alt = alt;
+      img.style.opacity = 1;
+    };
+    if (pre.complete) listo();
+    else {
+      pre.addEventListener('load', listo, { once: true });
+      pre.addEventListener('error', listo, { once: true });
+      setTimeout(listo, 2500); // nunca dejar la foto congelada
+    }
+  }
+  window.__hlCambiar = hlCambiar;
+
   function initGaleria(root) {
     (root || document).querySelectorAll('[data-hl-galeria]').forEach(function (g) {
       var principal = g.querySelector('.hl-galeria__principal img');
-      g.querySelectorAll('.hl-galeria__min').forEach(function (m) {
+      var mins = g.querySelectorAll('.hl-galeria__min');
+      mins.forEach(function (m) {
         m.addEventListener('click', function () {
-          g.querySelectorAll('.hl-galeria__min').forEach(function (x) { x.classList.remove('is-activo'); });
-          m.classList.add('is-activo');
-          principal.style.opacity = 0;
-          setTimeout(function () {
-            principal.src = m.getAttribute('data-src');
-            principal.srcset = m.getAttribute('data-srcset') || '';
-            principal.alt = m.getAttribute('data-alt') || '';
-            principal.style.opacity = 1;
-          }, 180);
+          mins.forEach(function (x) { x.classList.toggle('is-activo', x === m); });
+          hlCambiar(principal, m.getAttribute('data-src'), m.getAttribute('data-srcset') || '', m.getAttribute('data-alt') || '');
         });
       });
+      // Precarga todas las fotos cuando la página ya cargó, para que el cambio sea instantáneo.
+      var precargar = function () { mins.forEach(function (m) { hlPrecargar(m.getAttribute('data-src')); }); };
+      if (document.readyState === 'complete') setTimeout(precargar, 300);
+      else window.addEventListener('load', function () { setTimeout(precargar, 300); });
     });
   }
 
@@ -75,6 +104,7 @@
       var sComprar = document.querySelector('[data-hl-comprar-sticky]');
       var foto = document.querySelector('.hl-galeria__principal img');
       c.querySelectorAll('[data-hl-oferta]').forEach(function (r) {
+        window.addEventListener('load', function () { setTimeout(function () { hlPrecargar(r.dataset.img); }, 200); });
         r.addEventListener('change', function () {
           if (!r.checked) return;
           c.querySelectorAll('.hl-oferta').forEach(function (l) { l.classList.toggle('is-activa', l.contains(r)); });
@@ -89,16 +119,16 @@
             var labels = c.querySelectorAll('[data-hl-oferta]');
             var modo = (labels.length > 1 && r === labels[1]) ? 'pack' : 'uno';
             mins.setAttribute('data-modo', modo);
+            var primero = true;
             mins.querySelectorAll('.hl-galeria__min').forEach(function (m) {
               var gr = m.getAttribute('data-grupo');
               m.hidden = gr !== 'todos' && gr !== modo;
-              m.classList.toggle('is-activo', gr === modo);
+              var act = !m.hidden && primero && (r.dataset.img ? m.getAttribute('data-src') === r.dataset.img : true);
+              m.classList.toggle('is-activo', act);
+              if (act) primero = false;
             });
           }
-          if (foto && r.dataset.img && foto.getAttribute('src') !== r.dataset.img) {
-            foto.style.opacity = 0;
-            setTimeout(function () { foto.removeAttribute('srcset'); foto.src = r.dataset.img; foto.style.opacity = 1; }, 180);
-          }
+          if (foto && r.dataset.img && foto.getAttribute('src') !== r.dataset.img) hlCambiar(foto, r.dataset.img, '', null);
           var url = new URL(window.location.href); url.searchParams.set('variant', r.value); window.history.replaceState({}, '', url);
           sync();
         });
