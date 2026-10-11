@@ -1,3 +1,38 @@
+# Bloque 1 (v5, 11-oct) — Google Flow · Omni 1.1 Flash · Ingredientes · 9:16 · 720p · 10 s · x1
+Fotos en `fotos-videos/`. Máx. 3 ingredientes por video.
+
+## Video 1 — Gatito: "su propio árbol" (punto de venta: se acabó el gato que tumba el árbol)
+Ingredientes: REF-casita-verde · REF-gatito-bebe · REF-sala
+Texto: POV: le diste a tu gatito su PROPIO árbol de Navidad 🥹🎄 · Música: All I Want For Christmas Is You
+```
+Vertical 9:16, 10 seconds, realistic smartphone footage, handheld, authentic UGC TikTok style, natural colors, realistic physics. Setting: the cozy Christmas living room from the reference. 0-3s: the tiny orange tabby kitten from the reference playfully swats a red ornament hanging low on the big Christmas tree, the ornament swings. 3-6s: the kitten turns, trots across the rug to the knitted Christmas-tree pet cave from the reference and steps inside through the arched entrance. 6-10s: the kitten curls up inside facing the camera, eyes slowly closing, sleepy and cozy; the camera holds steady. The pet cave is an exact copy of the reference, never redesigned, empty inside with no cushion, about 50 cm tall, much bigger than the kitten. The kitten looks exactly like the reference in every frame: same orange stripes, white chest and paws, big amber eyes; only one kitten. Natural ambient sound only, no music, no voices. Avoid: text, subtitles, logos, watermark, extra paws, spots, second animal, morphing, redesigned cave.
+```
+
+## Video 2 — Golden bebé: "Mamás de perritos, CORRAN" (punto de venta: regalo + urgencia + compartible)
+Ingredientes: REF-casita-roja · REF-perrito-bebe · REF-sala
+Texto: Mamás de perritos… CORRAN 😱🎄 · Música: Rockin' Around The Christmas Tree
+```
+Vertical 9:16, 10 seconds, realistic smartphone footage, handheld, authentic UGC TikTok style, natural colors, realistic physics. Setting: the cozy Christmas living room from the reference. 0-2s: a woman's hands set the red knitted Christmas-tree pet cave from the reference down on the rug while the golden retriever puppy from the reference jumps around it excitedly, tail wagging. 2-5s: the puppy runs straight inside through the arched entrance. 5-8s: the puppy pops its head out of the entrance with a happy face and tongue out, and a hand gently pets its head. 8-10s: steady shot of the puppy peeking out, looking at the camera. The pet cave is an exact copy of the reference, never redesigned, red and white knitted, empty inside with no cushion, about 50 cm tall. The puppy looks exactly like the reference in every frame: same fluffy light golden fur, floppy ears, small baby size; only one puppy. Natural hands with five fingers. Natural ambient sound only, no music, no voices. Avoid: text, subtitles, logos, watermark, extra paws, extra fingers, second animal, morphing, redesigned cave.
+```
+
+## Video 3 — Arbolito: "Deja de pelear con las luces" (punto de venta: facilidad, cero esfuerzo)
+Ingredientes: REF-arbolito-enchufado · REF-arbolito-frente · REF-sala
+Texto: Deja de pasar horas decorando 😮‍💨🎄 · Música: Jingle Bell Rock
+```
+Vertical 9:16, 10 seconds, realistic smartphone footage, handheld, authentic UGC TikTok style, natural colors, realistic physics. Two shots with one hard cut. Shot 1, 0-3s: on the sofa of the living room from the reference, a man struggles with a huge tangled ball of old Christmas string lights, pulling them, frustrated, then drops them. Hard cut. Shot 2, 3-10s: close-up of a hand plugging the tiny Christmas tree projector from the reference directly into the small white phone charger in the wall outlet, its warm LED lights turn on; the room light switches off; the camera tilts up and the ceiling and walls of the living room fill with red, green, white and gold projected Santas, snowflakes, reindeer and Christmas trees, slowly rotating; last 2 seconds steady wide shot of the glowing room. The projector is an exact copy of the reference, never redesigned; its USB goes directly into the charger, never a cable. Natural hands with five fingers. Natural ambient sound only, no music, no voices. Avoid: text, subtitles, logos, watermark, extra fingers, cable on the projector, morphing, redesigned projector.
+```
+
+## Video 4 — Arbolito: "los niños ya no quieren dormir en otro lado" (punto de venta: emoción de los hijos)
+Ingredientes: REF-arbolito-enchufado · REF-arbolito-frente
+Texto: Mis hijos ya no quieren dormir en otro lado 😂🎄 · Música: All I Want For Christmas Is You
+```
+Vertical 9:16, 10 seconds, realistic smartphone footage, handheld, authentic UGC TikTok style, natural colors, realistic physics. One continuous shot in a cozy kids' bedroom at night with the lights off. 0-2s: the tiny Christmas tree projector from the reference glows, plugged directly into the small white phone charger in the wall next to the bed. 2-4s: the ceiling suddenly fills with red, green, white and gold projected Santas, snowflakes, reindeer, gifts and Christmas trees, slowly rotating. 4-8s: two kids in matching Christmas pajamas jump on the bed laughing and pointing up at the magical ceiling. 8-10s: the kids lie down on the bed looking up amazed while the camera holds a steady wide shot of the glowing room. The projector is an exact copy of the reference, never redesigned; its USB goes directly into the charger, never a cable. Projections appear only on the ceiling and walls. Natural ambient sound only, kids' laughter, no music, no speech. Avoid: text, subtitles, logos, watermark, extra fingers, deformed faces, cable on the projector, morphing.
+```
+
+Descripción (todos): <gancho corto> + 'Comenta "NAVIDAD" y te paso el link 🎄👇' + 'Etiqueta a quien necesita esto 👀' + #navidad #regalosnavideños #colombia + hashtags del nicho. Etiqueta IA activada. Comentario fijado con el link escrito.
+
+---
+
 # Prompts de video Holly (v4, 11-oct) — Omni 1.1 Flash, 720p, 10 s, 9:16
 Imágenes de referencia en la carpeta `fotos-videos/` (REF-*). La foto del animal la pones tú. Ajustes: 720p · 10s · 9:16 · 1. Sin audio (la música se pone en TikTok).
 
