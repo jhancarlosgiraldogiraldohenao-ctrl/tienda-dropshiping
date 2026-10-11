@@ -132,3 +132,9 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Cuentas <1000 seguidores (merry.glow65 999, zimt_pfote 957) escriben el dominio en la bio ("Type in your browser") y aun así sacan 300k–1M.
 - Propios: "El único árbol… que tu gato NO va a tumbar" 781 vistas/52 likes (6,7%, mejor) — el gato cambió de rayas a manchas a mitad (error IA); "POV: tu gato rechaza tu casita de cartón" 625/32 TikTok + 1.362 IG (mejor alcance); "Mamás de gatos… esto es para ustedes" 540/7 (1,3%, el peor). Compartidos casi 0 vs miles en competencia.
 - Instagram no se pudo abrir (pide login); se usaron los números que pasó el usuario.
+
+## Giro a nicho mascotas (11-oct)
+- Decisión: tienda y contenido 100% mascotas (casita). El arbolito sigue publicado (su página y link funcionan) pero salió de la portada, el menú, el pie de página y la venta cruzada de la casita.
+- Portada nueva: hero casita (casita-gato ↔ holly-portada-casita, botones "Quiero la casita" / "Ver los 4 colores"), cinta mascotas, "Su camita, tu arbolito", selector de 4 colores (#colores, hl-zonas con ancla), comparativa vs cama común, 3 pasos, compra tranquilo, FAQ (sin preguntas del arbolito; + tamaño de mascota, lavado), cierre casita.
+- Menú: Inicio · Casita para Mascotas · Elige su color (/#colores) · Contacto. Anuncio → página de la casita. Carrito vacío → casita. Meta descripción por defecto → casita.
+- Pendiente del usuario: cambiar en Shopify > Preferencias el título/descripción de la página de inicio a mascotas.

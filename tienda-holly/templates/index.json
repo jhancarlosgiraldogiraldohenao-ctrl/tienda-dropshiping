@@ -3,29 +3,29 @@
     "hero": {
       "type": "hl-hero",
       "settings": {
-        "eyebrow": "Holly · Navidad 2026",
-        "titulo": "<p>Regalos que llenan tu casa de <em>magia navideña</em></p>",
-        "sub": "El arbolito que proyecta Navidad en tu techo y la casita tejida que tu gato o perrito va a amar. Envío gratis a toda Colombia.",
-        "producto": "arbolito-proyector-navideno",
+        "eyebrow": "Holly · Navidad 2026 para tu mascota",
+        "titulo": "<p>La camita navideña que tu <em>mascota va a amar</em></p>",
+        "sub": "Una casita tejida en forma de arbolito de Navidad: calientita, suave y cerrada para que tu gato o perrito pequeño duerma feliz. Envío gratis a toda Colombia.",
+        "producto": "casita-arbol-navidad-gatos",
         "mostrar_precio": false,
         "nota_precio": "Envío gratis a toda Colombia · Pago seguro con Mercado Pago",
-        "btn1_texto": "Casita para tu mascota",
+        "btn1_texto": "Quiero la casita",
         "mostrar_pack": false,
         "pack_texto": "Pack x2 para regalar",
         "pack_ahorro": "ahorra",
         "pack_comprar": "Llevar el pack x2",
         "pack_volver": "← Volver a 1 arbolito",
         "pack_sello": "x2",
-        "imagen": "shopify://shop_images/holly-ia-principal.jpg",
+        "imagen": "shopify://shop_images/casita-gato.jpg",
         "imagen_pack": "shopify://shop_images/holly-ia-pack2.jpg",
-        "alt_imagen": "Arbolito proyector navideño iluminando una sala",
+        "alt_imagen": "Gatito durmiendo dentro de la casita árbol de Navidad",
         "sello_texto": "envío gratis · navidad 2026 · ",
         "sello_centro": "★",
         "alineacion": "left",
         "titulo_size": 84,
         "texto_size": 18,
-        "btn2_texto": "Arbolito proyector",
-        "btn2_url": "/products/arbolito-proyector-navideno",
+        "btn2_texto": "Ver los 4 colores",
+        "btn2_url": "/#colores",
         "btn1_url": "/products/casita-arbol-navidad-gatos",
         "imagen_2": "shopify://shop_images/holly-portada-casita.jpg",
         "intervalo": 4
@@ -35,27 +35,27 @@
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "copo",
-            "titulo": "6+ diseños",
-            "texto": "Santa, copos y renos"
+            "icono": "brillo",
+            "titulo": "Tejida a mano",
+            "texto": "Felpa suave y calientita"
           }
         },
         "b1": {
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "usb",
-            "titulo": "Conexión USB",
-            "texto": "Cargador, PC o power bank"
+            "icono": "casa",
+            "titulo": "50 × 60 cm",
+            "texto": "Gatos y perritos pequeños"
           }
         },
         "b2": {
           "type": "flotante",
           "settings": {
             "modo": "uno",
-            "icono": "arbol",
-            "titulo": "Cuerpo flexible",
-            "texto": "Apúntalo donde quieras"
+            "icono": "escudo",
+            "titulo": "Cueva cerrada",
+            "texto": "Se siente seguro y feliz"
           }
         },
         "b3": {
@@ -63,44 +63,44 @@
           "settings": {
             "modo": "uno",
             "icono": "regalo",
-            "titulo": "Regalo perfecto",
-            "texto": "Para grandes y chicos"
+            "titulo": "4 colores",
+            "texto": "Verde, rojo, pino y vino"
           }
         },
         "b4": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "brillo",
-            "titulo": "Tejida a mano",
-            "texto": "Felpa suave y calientita"
+            "icono": "copo",
+            "titulo": "Calientita",
+            "texto": "Para las noches frías"
           }
         },
         "b5": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "casa",
-            "titulo": "50 × 60 cm",
-            "texto": "Gatos y perritos pequeños"
+            "icono": "arbol",
+            "titulo": "Decora tu casa",
+            "texto": "Parece un arbolito de Navidad"
           }
         },
         "b6": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "regalo",
-            "titulo": "4 colores",
-            "texto": "Verde, rojo, pino y vino"
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "A toda Colombia"
           }
         },
         "b7": {
           "type": "flotante",
           "settings": {
             "modo": "pack",
-            "icono": "escudo",
-            "titulo": "Cueva cerrada",
-            "texto": "Se siente seguro y feliz"
+            "icono": "regalo",
+            "titulo": "Regalo perfecto",
+            "texto": "Para tu peludo"
           }
         },
         "b8": {
@@ -142,55 +142,55 @@
     "cinta": {
       "type": "hl-cinta",
       "settings": {
-        "etiqueta": "Diseños que proyecta"
+        "etiqueta": "Para tu mascota"
       },
       "blocks": {
         "b0": {
           "type": "item",
           "settings": {
-            "texto": "Santa Claus"
+            "texto": "Tejida a mano"
           }
         },
         "b1": {
           "type": "item",
           "settings": {
-            "texto": "Copos de nieve"
+            "texto": "Envío gratis a toda Colombia"
           }
         },
         "b2": {
           "type": "item",
           "settings": {
-            "texto": "Envío gratis a toda Colombia"
+            "texto": "Para gatos"
           }
         },
         "b3": {
           "type": "item",
           "settings": {
-            "texto": "Renos"
+            "texto": "Para perritos pequeños"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
-            "texto": "Muñecos de nieve"
+            "texto": "Pago seguro con Mercado Pago"
           }
         },
         "b5": {
           "type": "item",
           "settings": {
-            "texto": "Pago seguro con Mercado Pago"
+            "texto": "4 colores navideños"
           }
         },
         "b6": {
           "type": "item",
           "settings": {
-            "texto": "Campanas"
+            "texto": "Calientita y suave"
           }
         },
         "b7": {
           "type": "item",
           "settings": {
-            "texto": "Arbolitos de colores"
+            "texto": "Cueva cerrada"
           }
         }
       },
@@ -205,65 +205,13 @@
         "b7"
       ]
     },
-    "activos": {
-      "type": "hl-activos",
-      "settings": {
-        "eyebrow": "Pequeño, pero mágico",
-        "titulo": "<p>Una lucecita, <em>mucha magia</em></p>",
-        "texto": "Cabe en tu mano, pero llena todo el cuarto de Navidad. Así es el arbolito que todos quieren este diciembre.",
-        "imagen": "shopify://shop_images/holly-ia-detalle.jpg",
-        "nota": "Textura de pino realista, bolitas rojas y luces LED.",
-        "ancla": "detalles",
-        "titulo_size": 64
-      },
-      "blocks": {
-        "b0": {
-          "type": "activo",
-          "settings": {
-            "icono": "brillo",
-            "titulo": "Luces LED cálidas",
-            "texto": "El arbolito brilla con lucecitas doradas y bolitas rojas, como un pino de verdad en miniatura."
-          }
-        },
-        "b1": {
-          "type": "activo",
-          "settings": {
-            "icono": "copo",
-            "titulo": "6+ diseños navideños",
-            "texto": "Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos llenando tu techo."
-          }
-        },
-        "b2": {
-          "type": "activo",
-          "settings": {
-            "icono": "arbol",
-            "titulo": "Flexible y resistente",
-            "texto": "Dobla el cuerpo para apuntar al techo o a la pared, en el ángulo que más te guste."
-          }
-        },
-        "b3": {
-          "type": "activo",
-          "settings": {
-            "icono": "usb",
-            "titulo": "Se conecta por USB",
-            "texto": "Funciona con el cargador de tu celular, el computador o un power bank. Sin pilas ni instalación."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
     "ritual": {
       "type": "hl-ritual",
       "settings": {
         "eyebrow": "Así de fácil",
         "titulo": "<p>Tres pasos y <em>listo</em></p>",
-        "texto": "Sin apps, sin pilas y sin instalar nada.",
-        "nota": "No incluye adaptador de pared: usa el cargador USB de tu celular.",
+        "texto": "Desde tu celular, en menos de 2 minutos.",
+        "nota": "Pide antes del 25 de noviembre para recibirla antes de Navidad.",
         "ancla": "como-funciona",
         "titulo_size": 64
       },
@@ -271,22 +219,22 @@
         "b0": {
           "type": "paso",
           "settings": {
-            "titulo": "Conecta",
-            "texto": "A cualquier puerto USB: el cargador de tu celular, el computador o un power bank."
+            "titulo": "Elige su color",
+            "texto": "Verde Navidad, Rojo Santa, Verde Pino o Vino."
           }
         },
         "b1": {
           "type": "paso",
           "settings": {
-            "titulo": "Apunta",
-            "texto": "Dobla el arbolito hacia el techo o la pared, donde quieras ver la magia."
+            "titulo": "Pide con envío gratis",
+            "texto": "Pagas seguro con tarjeta y te llega a la puerta de tu casa."
           }
         },
         "b2": {
           "type": "paso",
           "settings": {
-            "titulo": "Disfruta",
-            "texto": "Apaga la luz y mira cómo todo se llena de Santas, copos y renos."
+            "titulo": "Ponla junto al árbol",
+            "texto": "Ponle una mantica que tu mascota conozca y en minutos se adueña de ella."
           }
         }
       },
@@ -299,42 +247,43 @@
     "zonas": {
       "type": "hl-zonas",
       "settings": {
-        "eyebrow": "Ideas para tu casa",
-        "titulo": "<p>Magia en <em>cada rincón</em></p>",
-        "texto": "Toca un lugar para ver la idea.",
-        "titulo_size": 64
+        "eyebrow": "Elige su color",
+        "titulo": "<p>4 colores, <em>una casita</em></p>",
+        "texto": "Toca un color para verlo.",
+        "titulo_size": 64,
+        "ancla": "colores"
       },
       "blocks": {
         "b0": {
           "type": "zona",
           "settings": {
-            "zona": "La sala",
-            "texto": "Prende la Navidad mientras ven películas en familia.",
-            "imagen": "shopify://shop_images/holly-ia-familia.jpg"
+            "zona": "Verde Navidad",
+            "texto": "El clásico: verde, blanco y estrella roja, como un arbolito de verdad.",
+            "imagen": "shopify://shop_images/casita-verde-v2.jpg"
           }
         },
         "b1": {
           "type": "zona",
           "settings": {
-            "zona": "Cuarto de los niños",
-            "texto": "Una luz de noche que los hace soñar con Santa.",
-            "imagen": "shopify://shop_images/holly-ia-nina.jpg"
+            "zona": "Rojo Santa",
+            "texto": "Rojo y blanco con la carita de Papá Noel. El favorito para perritos.",
+            "imagen": "shopify://shop_images/casita-roja.jpg"
           }
         },
         "b2": {
           "type": "zona",
           "settings": {
-            "zona": "El techo",
-            "texto": "Apúntalo hacia arriba y el techo se llena de copos y renos.",
-            "imagen": "shopify://shop_images/holly-ia-techo.jpg"
+            "zona": "Verde Pino",
+            "texto": "Un verde más profundo, elegante para cualquier sala.",
+            "imagen": "shopify://shop_images/casita-pino.jpg"
           }
         },
         "b3": {
           "type": "zona",
           "settings": {
-            "zona": "Para regalar",
-            "texto": "Un detalle diferente para el amigo secreto o la familia.",
-            "imagen": "shopify://shop_images/holly-ia-pack2.jpg"
+            "zona": "Vino",
+            "texto": "Color vino con detalles navideños, cálido y distinto.",
+            "imagen": "shopify://shop_images/casita-vino.jpg"
           }
         }
       },
@@ -349,17 +298,17 @@
       "type": "hl-comparativa",
       "settings": {
         "eyebrow": "La diferencia",
-        "titulo": "<p>Más que <em>una luz</em></p>",
-        "texto": "Frente a las instalaciones de luces de siempre.",
-        "col_nos": "Arbolito Holly",
-        "col_otros": "Luces comunes",
+        "titulo": "<p>Más que <em>una camita</em></p>",
+        "texto": "Frente a una cama de mascota común.",
+        "col_nos": "Casita Holly",
+        "col_otros": "Cama común",
         "titulo_size": 60
       },
       "blocks": {
         "b0": {
           "type": "fila",
           "settings": {
-            "texto": "Proyecta figuras navideñas en techo y paredes",
+            "texto": "Cueva cerrada donde se siente segura",
             "nos": true,
             "otros": false
           }
@@ -367,7 +316,7 @@
         "b1": {
           "type": "fila",
           "settings": {
-            "texto": "Se pone en segundos, sin escalera ni clavos",
+            "texto": "Decora tu casa como un arbolito de Navidad",
             "nos": true,
             "otros": false
           }
@@ -375,7 +324,7 @@
         "b2": {
           "type": "fila",
           "settings": {
-            "texto": "Funciona con cualquier cargador USB",
+            "texto": "Tejida a mano con detalles navideños",
             "nos": true,
             "otros": false
           }
@@ -383,7 +332,7 @@
         "b3": {
           "type": "fila",
           "settings": {
-            "texto": "Sirve como luz de noche para los niños",
+            "texto": "El regalo perfecto para tu peludo",
             "nos": true,
             "otros": false
           }
@@ -391,7 +340,7 @@
         "b4": {
           "type": "fila",
           "settings": {
-            "texto": "Le da ambiente navideño a tu casa",
+            "texto": "Un lugar cómodo para dormir",
             "nos": true,
             "otros": true
           }
@@ -404,52 +353,6 @@
         "b3",
         "b4"
       ]
-    },
-    "regalo": {
-      "type": "hl-regalo",
-      "settings": {
-        "producto": "arbolito-proyector-navideno",
-        "variante_num": 2,
-        "eyebrow": "Pack x2 · Temporada de regalos",
-        "titulo": "<p>Uno para ti, <em>otro para regalar</em></p>",
-        "texto": "Llévate dos arbolitos y ahorra. Uno para la sala y otro para el cuarto de los niños… o para ese regalo que todavía no tienes.",
-        "imagen": "shopify://shop_images/holly-ia-pack2.jpg",
-        "mostrar_precio": true,
-        "texto_ahorro": "Ahorras",
-        "nota_precio": "2 arbolitos · Envío gratis · Pago seguro",
-        "compra_directa": true,
-        "btn_texto": "Llevar el pack x2",
-        "titulo_size": 72
-      },
-      "blocks": {
-        "b0": {
-          "type": "punto",
-          "settings": {
-            "icono": "regalo",
-            "texto": "Dos arbolitos proyectores con luces LED"
-          }
-        },
-        "b1": {
-          "type": "punto",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis en un solo paquete"
-          }
-        },
-        "b2": {
-          "type": "punto",
-          "settings": {
-            "icono": "escudo",
-            "texto": "Si no llega, te devolvemos tu dinero"
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ],
-      "disabled": true
     },
     "seguro": {
       "type": "hl-seguro",
@@ -539,20 +442,6 @@
             "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
           }
         },
-        "b4": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cómo se conecta el arbolito?",
-            "respuesta": "<p>Por USB. No incluye adaptador de pared: funciona con el cargador de tu celular, el computador o un power bank.</p>"
-          }
-        },
-        "b5": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Qué diseños proyecta el arbolito?",
-            "respuesta": "<p>Más de 6 escenas navideñas: Santa, copos de nieve, renos, muñecos de nieve, campanas y arbolitos.</p>"
-          }
-        },
         "b6": {
           "type": "pregunta",
           "settings": {
@@ -566,6 +455,20 @@
             "pregunta": "¿Y si no llega o llega dañado?",
             "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
           }
+        },
+        "medidas": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Para qué tamaño de mascota sirve?",
+            "respuesta": "<p>Mide 50 cm de ancho × 50 cm de fondo × 60 cm de alto. Es ideal para gatos y perritos pequeños (hasta unos 6 kg).</p>"
+          }
+        },
+        "lavar": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se puede lavar?",
+            "respuesta": "<p>Sí, a mano con agua tibia y jabón suave. Déjala secar a la sombra.</p>"
+          }
         }
       },
       "block_order": [
@@ -573,115 +476,51 @@
         "b1",
         "b2",
         "b3",
-        "b4",
-        "b5",
+        "medidas",
         "b6",
+        "lavar",
         "b7"
       ]
     },
     "cierre": {
       "type": "hl-cierre",
       "settings": {
-        "producto": "arbolito-proyector-navideno",
+        "producto": "casita-arbol-navidad-gatos",
         "eyebrow": "Navidad 2026",
-        "titulo": "<p>Este año, <em>que brille tu casa</em></p>",
-        "texto": "Pídelo hoy con envío gratis a toda Colombia. Lleva 2 y ahorra 35%: uno para tu casa y otro para regalar.",
-        "imagen": "shopify://shop_images/holly-ia-pack2.jpg",
-        "btn_texto": "Quiero mi arbolito",
-        "titulo_size": 72
+        "titulo": "<p>Este año, <em>que también sea su Navidad</em></p>",
+        "texto": "Pídela hoy con envío gratis a toda Colombia y dale a tu mascota su propio arbolito.",
+        "imagen": "shopify://shop_images/casita-4colores.jpg",
+        "btn_texto": "Quiero la casita",
+        "titulo_size": 72,
+        "btn_url": "/products/casita-arbol-navidad-gatos"
       },
       "blocks": {
-        "b0": {
+        "c0": {
           "type": "chip",
           "settings": {
             "icono": "camion",
             "texto": "Envío gratis"
           }
         },
-        "b1": {
+        "c1": {
           "type": "chip",
           "settings": {
             "icono": "candado",
             "texto": "Pago seguro"
           }
         },
-        "b2": {
+        "c2": {
           "type": "chip",
           "settings": {
             "icono": "regalo",
-            "texto": "Lleva 2 y ahorra 35%"
+            "texto": "4 colores"
           }
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ]
-    },
-    "antes_despues": {
-      "type": "hl-antes-despues",
-      "settings": {
-        "eyebrow": "La diferencia",
-        "titulo": "<p>Antes y <em>después</em></p>",
-        "texto": "Desliza para ver cómo cambia tu sala con el arbolito Holly.",
-        "txt_antes": "Luces normales",
-        "txt_despues": "Con Holly",
-        "aviso": "Imágenes ilustrativas. La proyección se ve mejor con la luz apagada.",
-        "titulo_size": 60
-      },
-      "blocks": {
-        "a1": {
-          "type": "caso",
-          "settings": {
-            "zona": "La sala",
-            "tiempo": "En segundos",
-            "nombre": "",
-            "antes": "shopify://shop_images/holly-ia-antes.jpg",
-            "despues": "shopify://shop_images/holly-ia-sala-arbol.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "a1"
-      ]
-    },
-    "catalogo": {
-      "type": "hl-catalogo",
-      "settings": {
-        "eyebrow": "Lo más pedido esta Navidad",
-        "titulo": "<p>Regalos que <em>enamoran</em></p>",
-        "texto": "Elige el tuyo. Envío gratis a toda Colombia.",
-        "boton_texto": "Ver producto",
-        "ancla": "regalos",
-        "titulo_size": 56,
-        "padding_top": 64,
-        "padding_bottom": 64
-      },
-      "blocks": {
-        "arbolito": {
-          "type": "producto",
-          "settings": {
-            "producto": "arbolito-proyector-navideno",
-            "titulo": "Arbolito Proyector Navideño",
-            "frase": "Proyecta Santas, copos de nieve y renos en tu techo. Se conecta por USB.",
-            "etiqueta": "Más vendido"
-          }
-        },
-        "gato": {
-          "type": "producto",
-          "settings": {
-            "producto": "casita-arbol-navidad-gatos",
-            "titulo": "Casita Árbol de Navidad para Mascotas",
-            "frase": "Tejida a mano en forma de arbolito. Para gatos y perritos pequeños · 50 × 60 cm.",
-            "etiqueta": "Nuevo",
-            "imagen": "shopify://shop_images/casita-gato.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "arbolito",
-        "gato"
+        "c0",
+        "c1",
+        "c2"
       ]
     },
     "casita": {
@@ -735,50 +574,17 @@
         "b2",
         "b3"
       ]
-    },
-    "cierre_gato": {
-      "type": "hl-catalogo",
-      "settings": {
-        "eyebrow": "Para tu mascota",
-        "titulo": "<p>La casita que <em>todos quieren</em></p>",
-        "texto": "",
-        "boton_texto": "Ver la casita",
-        "ancla": "casita-comprar",
-        "titulo_size": 48,
-        "padding_top": 0,
-        "padding_bottom": 64
-      },
-      "blocks": {
-        "gato": {
-          "type": "producto",
-          "settings": {
-            "producto": "casita-arbol-navidad-gatos",
-            "frase": "4 colores · 50 cm de ancho × 60 cm de alto · Envío gratis",
-            "etiqueta": "Nuevo",
-            "titulo": "Casita Árbol de Navidad para Mascotas",
-            "imagen": "shopify://shop_images/casita-gato.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "gato"
-      ]
     }
   },
   "order": [
     "hero",
-    "catalogo",
     "cinta",
-    "activos",
-    "ritual",
+    "casita",
     "zonas",
     "comparativa",
-    "antes_despues",
-    "casita",
-    "cierre_gato",
+    "ritual",
     "seguro",
     "faq",
-    "cierre",
-    "regalo"
+    "cierre"
   ]
 }

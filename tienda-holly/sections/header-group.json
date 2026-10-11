@@ -17,10 +17,10 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🔥 Edición Navidad 2026 · ¡Pide el tuyo hoy y recíbelo a tiempo! · Envío GRATIS",
+            "text": "🐾 Navidad 2026 para tu mascota · Pídela hoy y recíbela a tiempo · Envío GRATIS",
             "text_alignment": "center",
             "color_scheme": "scheme-5",
-            "link": "/#regalos"
+            "link": "/products/casita-arbol-navidad-gatos"
           }
         }
       },
