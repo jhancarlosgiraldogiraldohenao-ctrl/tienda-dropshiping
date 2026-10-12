@@ -13,7 +13,7 @@
   #shopify-section-{{ section.id }} [data-hl-zona-img] { transition: opacity 0.25s; }
 {% endstyle %}
 
-<section class="hl-section hl-zonas" data-hl-zonas>
+<section class="hl-section hl-zonas"{% if section.settings.ancla != blank %} id="{{ section.settings.ancla }}"{% endif %} data-hl-zonas>
   <div class="hl-container">
     <div class="hl-zonas__grid">
       <div>
@@ -55,6 +55,7 @@
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Llega a donde <em>tus manos no.</em></p>" },
     { "type": "textarea", "id": "texto", "label": "Texto", "default": "Toca una zona para ver cómo te ayuda el spray." },
     { "type": "image_picker", "id": "imagen", "label": "Foto de fondo" },
+    { "type": "text", "id": "ancla", "label": "Ancla (#)" },
     { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 },
     { "type": "range", "id": "padding_top", "label": "Espacio superior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 },
     { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }

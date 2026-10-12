@@ -18,7 +18,7 @@
         "mostrar_miniaturas": true,
         "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con Mercado Pago: tarjeta, PSE, Nequi o Efecty",
+        "comprar_nota": "Pago 100% seguro con Mercado Pago",
         "carrito_texto": "Agregar al carrito",
         "agotado_texto": "Agotado",
         "sticky_texto": "Arbolito Proyector Navideño",
@@ -275,7 +275,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con Mercado Pago: tarjeta, PSE, Nequi o Efecty."
+            "texto": "Pagas con tarjeta de crédito a través de Mercado Pago, 100% seguro."
           }
         },
         "b1": {
@@ -324,7 +324,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con Mercado Pago, 100% seguro: tarjeta de crédito o débito, PSE, Nequi o efectivo en Efecty. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito, a través de Mercado Pago (100% seguro). Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {
@@ -387,6 +387,44 @@
         "b6",
         "b7"
       ]
+    },
+    "tambien": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Completa tu Navidad",
+        "titulo": "<p>También te va a <em>encantar</em></p>",
+        "texto": "",
+        "boton_texto": "Ver producto",
+        "ancla": "regalos",
+        "titulo_size": 56,
+        "padding_top": 64,
+        "padding_bottom": 64
+      },
+      "blocks": {
+        "arbolito": {
+          "type": "producto",
+          "settings": {
+            "producto": "arbolito-proyector-navideno",
+            "titulo": "Arbolito Proyector Navideño",
+            "frase": "Proyecta Santas, copos de nieve y renos en tu techo. Se conecta por USB.",
+            "etiqueta": "Más vendido"
+          }
+        },
+        "gato": {
+          "type": "producto",
+          "settings": {
+            "producto": "casita-arbol-navidad-gatos",
+            "titulo": "Casita Árbol de Navidad para Mascotas",
+            "frase": "Tejida a mano en forma de arbolito. Para gatos y perritos pequeños · 50 × 60 cm.",
+            "etiqueta": "Nuevo",
+            "imagen": "shopify://shop_images/casita-gato.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "arbolito",
+        "gato"
+      ]
     }
   },
   "order": [
@@ -395,6 +433,7 @@
     "ritual",
     "zonas",
     "comparativa",
+    "tambien",
     "seguro",
     "faq"
   ]

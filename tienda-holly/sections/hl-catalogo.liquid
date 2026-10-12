@@ -1,0 +1,104 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} { padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px; }
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+  .hl-catalogo .hl-cabecera { text-align: center; margin-inline: auto; max-width: 640px; }
+  .hl-catalogo__grid { display: grid; gap: clamp(16px, 2.4vw, 28px); grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); margin-top: clamp(24px, 4vw, 44px); }
+  .hl-catalogo__grid--uno { max-width: 520px; margin-inline: auto; grid-template-columns: 1fr; }
+  .hl-tarjeta { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--hl-linea); border-radius: var(--hl-radio); overflow: hidden; box-shadow: var(--hl-sombra); color: var(--hl-texto); text-decoration: none; transition: transform .5s var(--hl-ease); }
+  .hl-tarjeta:hover { transform: translateY(-4px); }
+  .hl-tarjeta__foto { position: relative; aspect-ratio: 4 / 5; overflow: hidden; background: var(--hl-arena); }
+  .hl-tarjeta__foto img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .8s var(--hl-ease); }
+  .hl-tarjeta:hover .hl-tarjeta__foto img { transform: scale(1.04); }
+  .hl-tarjeta__badge { position: absolute; top: 14px; left: 14px; background: var(--hl-curcuma); color: #fff; font: 600 12px/1 var(--hl-fuente); letter-spacing: .06em; text-transform: uppercase; padding: 8px 12px; border-radius: 999px; }
+  .hl-tarjeta__cuerpo { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 22px; flex: 1; }
+  .hl-tarjeta__cuerpo h3 { font: 600 clamp(22px, 2.4vw, 26px)/1.15 var(--hl-serif); margin: 0; }
+  .hl-tarjeta__cuerpo p { margin: 0; color: var(--hl-texto-suave); font-size: 15px; line-height: 1.5; }
+  .hl-tarjeta__precio { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-top: auto; padding-top: 6px; }
+  .hl-tarjeta__precio strong { font: 600 24px/1 var(--hl-serif); }
+  .hl-tarjeta__precio s { color: var(--hl-texto-suave); font-size: 15px; }
+  .hl-tarjeta__precio span { background: var(--hl-curcuma-suave); color: var(--hl-curcuma-hondo); font-size: 13px; font-weight: 600; padding: 4px 9px; border-radius: 999px; }
+  .hl-tarjeta .hl-btn { width: 100%; justify-content: center; margin-top: 6px; }
+{% endstyle %}
+
+{%- liquid
+  assign visibles = 0
+  for block in section.blocks
+    if block.settings.producto != blank and block.settings.producto.id != product.id
+      assign visibles = visibles | plus: 1
+    endif
+  endfor
+-%}
+
+{%- if visibles > 0 -%}
+<section class="hl-section hl-catalogo" id="{{ section.settings.ancla | default: 'regalos' }}">
+  <div class="hl-container">
+    <div class="hl-cabecera">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p class="hl-reveal" style="--hl-i:2">{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+    <div class="hl-catalogo__grid{% if visibles == 1 %} hl-catalogo__grid--uno{% endif %}">
+      {%- for block in section.blocks -%}
+        {%- assign p = block.settings.producto -%}
+        {%- if p == blank or p.id == product.id -%}{%- continue -%}{%- endif -%}
+        {%- assign v = p.selected_or_first_available_variant -%}
+        {%- assign foto = block.settings.imagen | default: p.featured_media -%}
+        <a class="hl-tarjeta hl-reveal" style="--hl-i:{{ forloop.index }}" href="{{ p.url }}" {{ block.shopify_attributes }}>
+          <div class="hl-tarjeta__foto">
+            {%- if foto -%}
+              <img src="{{ foto | image_url: width: 900 }}" srcset="{{ foto | image_url: width: 500 }} 500w, {{ foto | image_url: width: 900 }} 900w" sizes="(min-width: 750px) 45vw, 92vw" alt="{{ p.title | escape }}" loading="lazy" width="900" height="1125">
+            {%- endif -%}
+            {%- if block.settings.etiqueta != blank -%}<span class="hl-tarjeta__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
+          </div>
+          <div class="hl-tarjeta__cuerpo">
+            <h3>{{ block.settings.titulo | default: p.title }}</h3>
+            {%- if block.settings.frase != blank -%}<p>{{ block.settings.frase }}</p>{%- endif -%}
+            <div class="hl-tarjeta__precio">
+              <strong>{{ v.price | money_without_trailing_zeros }}</strong>
+              {%- if v.compare_at_price > v.price -%}
+                <s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>
+                <span>-{{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%</span>
+              {%- endif -%}
+            </div>
+            <span class="hl-btn hl-btn--curcuma">{{ section.settings.boton_texto }} {% render 'hl-icono', nombre: 'flecha' %}</span>
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Holly · Productos",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Texto pequeño", "default": "Lo más pedido" },
+    { "type": "richtext", "id": "titulo", "label": "Título", "default": "<p>Regalos que <em>enamoran</em></p>" },
+    { "type": "text", "id": "texto", "label": "Texto" },
+    { "type": "text", "id": "boton_texto", "label": "Texto del botón", "default": "Ver producto" },
+    { "type": "text", "id": "ancla", "label": "Ancla (#)", "default": "regalos" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 80, "step": 2, "unit": "px", "default": 56 },
+    { "type": "range", "id": "padding_top", "label": "Espacio arriba", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 64 },
+    { "type": "range", "id": "padding_bottom", "label": "Espacio abajo", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "producto",
+      "name": "Producto",
+      "settings": [
+        { "type": "product", "id": "producto", "label": "Producto" },
+        { "type": "text", "id": "titulo", "label": "Título (opcional)" },
+        { "type": "text", "id": "frase", "label": "Frase corta" },
+        { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la foto" },
+        { "type": "image_picker", "id": "imagen", "label": "Foto (opcional)" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Holly · Productos" }]
+}
+{% endschema %}

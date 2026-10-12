@@ -22,7 +22,7 @@
         <div class="hl-galeria__principal">
           {%- if section.settings.sello != blank -%}<span class="hl-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
           {%- if primera -%}
-            <img src="{{ primera | image_url: width: 1200 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
+            <img src="{{ primera | image_url: width: 900 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
           {%- else -%}
             {{ 'product-1' | placeholder_svg_tag }}
           {%- endif -%}
@@ -33,13 +33,14 @@
               {%- if media.media_type == 'image' -%}
                 {%- liquid
                   assign grupo = 'todos'
-                  if product.variants.size > 1 and media.id == id_pack
+                  if section.settings.modo_colores
+                  elsif product.variants.size > 1 and media.id == id_pack
                     assign grupo = 'pack'
-                  elsif product.variants.size > 1 and media.id == id_uno
+                  elsif product.variants.size > 1
                     assign grupo = 'uno'
                   endif
                 -%}
-                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-grupo="{{ grupo }}"{% if grupo != 'todos' and grupo != modo %} hidden{% endif %} data-src="{{ media | image_url: width: 1200 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
+                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-grupo="{{ grupo }}"{% if grupo != 'todos' and grupo != modo %} hidden{% endif %} data-src="{{ media | image_url: width: 900 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
                   <img src="{{ media | image_url: width: 180 }}" alt="" loading="lazy" width="90" height="90">
                 </button>
               {%- endif -%}
@@ -66,13 +67,16 @@
             {%- for v in product.variants -%}
               {%- liquid
                 if v.featured_image
-                  assign img_url = v.featured_image | image_url: width: 1200
+                  assign img_url = v.featured_image | image_url: width: 900
                 else
-                  assign img_url = product.featured_media | image_url: width: 1200
+                  assign img_url = product.featured_media | image_url: width: 900
                 endif
                 assign normal = v1.price | times: forloop.index
                 assign ahorro = normal | minus: v.price
-                if forloop.first
+                if section.settings.modo_colores
+                  assign nota = ''
+                  assign ahorro = 0
+                elsif forloop.first
                   assign nota = section.settings.oferta_1_nota
                 else
                   assign nota = section.settings.oferta_2_nota
@@ -91,7 +95,7 @@
                 </span>
                 {%- if ahorro > 0 -%}
                   <span class="hl-oferta__badge">{{ section.settings.texto_ahorro }} {{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%</span>
-                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank -%}
+                {%- elsif forloop.first and section.settings.oferta_1_etiqueta != blank and section.settings.modo_colores == false -%}
                   <span class="hl-oferta__badge hl-oferta__badge--suave">{{ section.settings.oferta_1_etiqueta }}</span>
                 {%- endif -%}
               </label>
@@ -240,6 +244,12 @@
       "id": "oferta_2_nota",
       "label": "Opción 2 – texto pequeño",
       "default": "Uno para ti y otro para regalar"
+    },
+    {
+      "type": "checkbox",
+      "id": "modo_colores",
+      "label": "Las opciones son colores (no packs)",
+      "default": false
     },
     {
       "type": "text",
