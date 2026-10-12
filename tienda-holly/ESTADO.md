@@ -138,3 +138,5 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Portada nueva: hero casita (casita-gato ↔ holly-portada-casita, botones "Quiero la casita" / "Ver los 4 colores"), cinta mascotas, "Su camita, tu arbolito", selector de 4 colores (#colores, hl-zonas con ancla), comparativa vs cama común, 3 pasos, compra tranquilo, FAQ (sin preguntas del arbolito; + tamaño de mascota, lavado), cierre casita.
 - Menú: Inicio · Casita para Mascotas · Elige su color (/#colores) · Contacto. Anuncio → página de la casita. Carrito vacío → casita. Meta descripción por defecto → casita.
 - Pendiente del usuario: cambiar en Shopify > Preferencias el título/descripción de la página de inicio a mascotas.
+
+- Regla de ganchos (12-oct, pedido del usuario): priorizar SIEMPRE ganchos en formato POV, son los que mejor le funcionan.
