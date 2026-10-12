@@ -150,3 +150,5 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Pendiente del usuario: cambiar en Shopify > Preferencias el título/descripción de la página de inicio a mascotas.
 
 - Regla de ganchos (12-oct, pedido del usuario): priorizar SIEMPRE ganchos en formato POV, son los que mejor le funcionan.
+
+- 12-oct: el usuario decide ELIMINAR el arbolito de todo (tienda y contenido). Recomendado archivarlo en Shopify (no borrar). Contenido solo de la casita. Ya no recordar precio de Baby Party Store.

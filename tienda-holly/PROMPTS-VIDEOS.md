@@ -1,3 +1,13 @@
+# Bloque 2 (v6, 12-oct) — Google Flow · Omni 1.1 Flash · Ingredientes · 9:16 · 720p · 10 s · x1
+Solo casita (arbolito eliminado). Ganchos POV + invitación a etiquetar (compartidos ~0 en propios).
+1. Ya no tumba el árbol — REF-casita-verde · REF-gato-adulto · REF-sala — "POV: por fin tu gato dejó de tumbar el árbol de Navidad 🎄😼" — All I Want For Christmas Is You
+2. Mamá dijo que no necesitaba regalo — REF-casita-34 · REF-gatito-bebe · REF-sala — "POV: tu mamá dijo que el gatito no necesitaba regalo de Navidad 🙄🎁" — Rockin' Around The Christmas Tree
+3. Concepto vs resultado — REF-casita-roja · REF-perrito-bebe · REF-sala — "POV: le hiciste una casita de cartón a tu perrito vs. la que le compraste 😭➡️🥹" — All I Want For Christmas Is You
+4. Vio su regalo — REF-casita-roja · REF-pomerania · REF-sala — "POV: tu perrito vio su regalo de Navidad 😱🐶🎄" — Jingle Bell Rock
+(Prompts completos entregados en el chat del 12-oct; misma plantilla que Bloque 1: cueva copia exacta, sin cojín, 50×60 cm, un solo animal idéntico a la referencia.)
+
+---
+
 # Bloque 1 (v5, 11-oct) — Google Flow · Omni 1.1 Flash · Ingredientes · 9:16 · 720p · 10 s · x1
 Fotos en `fotos-videos/`. Máx. 3 ingredientes por video.
 
