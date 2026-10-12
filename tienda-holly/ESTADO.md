@@ -11,6 +11,16 @@
 - Pagos: Mercado Pago Tarjetas activo (Shopify cobra 2% por transacción). Envío gratis Colombia. Políticas creadas.
 - Pendiente: nombre "Holly" en Configuración → General; Checkout Pro (PSE/Nequi/Efecty); acreditación al instante en Mercado Pago.
 
+## Venta internacional (dLocal Go) – 12-oct
+- Público de reels: MX 21,9 %, CL 21 %, AR 14,7 %, CO 11,8 %, ES 8,8 %.
+- Descartados: Stripe (no Colombia), PayPal (no acepta COP), Bold (app Shopify solo tarjetas colombianas).
+- dLocal Go: cuenta "Persona física", balance COP, cuenta bancaria Nu del usuario. Registro 4/4 completo → EN REVISIÓN.
+  - Cobra MX, CL, AR, PE (local + tarjeta) y EE. UU. (tarjeta). España NO.
+  - Comisión ej. Chile tarjeta ~3,55 % con impuesto + tasa de cambio + 2 % Shopify + comisión fija por retiro. Sin mensualidad. Retiro hasta 72 h hábiles.
+  - Conectar en Shopify: Configuración → Pagos → Agregar métodos → "dLocal Go Credit Cards" (no está en App Store).
+- España: usar link de afiliado AliExpress (portals.aliexpress.com).
+- Pendiente: aprobación dLocal Go; costo/tiempo de envío AliExpress a MX/CL/AR/PE/US; zonas de envío en Shopify; precios por país; textos "envío a toda Colombia".
+
 ## Proveedores AliExpress (revisión 2-oct, todos Choice, envío gratis, todos con "oferta reserva anticipada")
 OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto.
 | Tienda | Precio | Variantes | Enlace |
