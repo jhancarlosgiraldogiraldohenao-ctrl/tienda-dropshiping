@@ -152,3 +152,4 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Regla de ganchos (12-oct, pedido del usuario): priorizar SIEMPRE ganchos en formato POV, son los que mejor le funcionan.
 
 - 12-oct: el usuario decide ELIMINAR el arbolito de todo (tienda y contenido). Recomendado archivarlo en Shopify (no borrar). Contenido solo de la casita. Ya no recordar precio de Baby Party Store.
+- 12-oct REGLAS DE CONTENIDO: (1) nunca poner "TikTok" en prompts (genera marca de agua en Omni Flash); (2) ser versátil: formatos distintos cada bloque (misterio, reto "encuentra", historia, transformación, ASMR…), no repetir siempre "entra y se acuesta"; (3) REPLICAR un formato solo cuando un video llegue a ~10.000 vistas y ~1.000 likes.

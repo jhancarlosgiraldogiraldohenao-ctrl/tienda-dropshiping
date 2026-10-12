@@ -1,3 +1,12 @@
+# Bloque 3 (v7, 12-oct) — Omni 1.1 Flash · Google Flow · 9:16 · 720p · 10 s — formatos variados
+REGLA: NO escribir "TikTok", "UGC TikTok" ni "smartphone footage" en los prompts (Omni pone marca de agua de TikTok). Usar "realistic home video, natural handheld camera" + "Clean frame with no watermark, no app logo, no username, no interface and no on-screen graphics". Negativo incluye "watermark, TikTok logo, app logo, username, social media interface, timestamp".
+1. Misterio 3 a.m. — casita-verde · gatito-bebe · sala — "POV: son las 3 a.m. y algo se mueve dentro del arbolito 😳🎄" — Carol of the Bells
+2. Encuentra al gato — casita-verde · gato-adulto · sala — "Encuentra al gato en menos de 5 segundos 👀🎄" — Last Christmas
+3. Santa sí existe — casita-roja · pomerania · sala — "POV: tu perrito descubrió que Santa sí existe 🎅🐶✨" — Santa Tell Me
+4. Caja mágica (transformación; quitar "morphing" del negativo) — casita-roja · perrito-bebe · sala — "POV: le pediste a Santa algo mejor que una caja de cartón 📦➡️🎄" — Feliz Navidad
+
+---
+
 # Bloque 2 (v6, 12-oct) — Google Flow · Omni 1.1 Flash · Ingredientes · 9:16 · 720p · 10 s · x1
 Solo casita (arbolito eliminado). Ganchos POV + invitación a etiquetar (compartidos ~0 en propios).
 1. Ya no tumba el árbol — REF-casita-verde · REF-gato-adulto · REF-sala — "POV: por fin tu gato dejó de tumbar el árbol de Navidad 🎄😼" — All I Want For Christmas Is You
