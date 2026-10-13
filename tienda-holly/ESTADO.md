@@ -140,3 +140,10 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Pendiente del usuario: cambiar en Shopify > Preferencias el título/descripción de la página de inicio a mascotas.
 
 - Regla de ganchos (12-oct, pedido del usuario): priorizar SIEMPRE ganchos en formato POV, son los que mejor le funcionan.
+
+## Decisión 13-oct: personaje IA + tienda nueva (opción B)
+- Nueva marca = un personaje mascota de IA (influencer) dueño de su "tiendita". Transparente: siempre etiqueta IA.
+- Opción B: tienda Shopify NUEVA con el nombre del personaje (URL nombre.myshopify.com). Migrar: tema desde este repo (tienda-holly/), productos (casita) vía API, textos nuevos. Usuario: crear tienda, aprobar acceso CLI, reconectar dLocal Go (Conexiones → eCommerce) y DSers, cerrar la tienda vieja SOLO cuando la nueva funcione.
+- Redes nuevas (TikTok + IG) con el personaje desde el video 1. Países: México, Chile, Argentina, Colombia, EE. UU.
+- Regla acordada: última gran decisión de la temporada; después 30 días de ejecución y decisiones por números.
+- Pendiente: el usuario envía PDF de referencias del personaje → ficha oficial (prompt) → nombre (verificar TikTok/IG/myshopify) → tienda → videos de lanzamiento. En paralelo: costos DSers por país.
