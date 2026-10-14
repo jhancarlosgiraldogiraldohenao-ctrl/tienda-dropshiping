@@ -1,0 +1,69 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section tf-toffee" id="{{ section.settings.ancla | default: 'toffee' }}">
+  <div class="hl-container">
+    <div class="tf-toffee__grid">
+      <div class="tf-toffee__visual hl-reveal">
+        <div class="tf-toffee__foto">
+          {%- if section.settings.imagen != blank -%}
+            <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1340">
+          {%- endif -%}
+        </div>
+        {%- if section.settings.sello != blank -%}<div class="tf-sello tf-sello--foto" aria-hidden="true"><span>{{ section.settings.sello }}</span><b>💤</b></div>{%- endif -%}
+      </div>
+      <div class="tf-toffee__texto">
+        <div class="hl-cabecera">
+          {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
+          <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        </div>
+        {%- if section.settings.historia != blank -%}<div class="tf-toffee__historia hl-reveal" style="--hl-i:2">{{ section.settings.historia }}</div>{%- endif -%}
+        {%- if section.settings.regla != blank -%}
+          <blockquote class="tf-regla hl-reveal" style="--hl-i:3"><span>{{ section.settings.regla_titulo }}</span>“{{ section.settings.regla }}”</blockquote>
+        {%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="tf-rasgos">
+            {%- for block in section.blocks -%}
+              <li class="hl-reveal" style="--hl-i:{{ forloop.index | plus: 3 }}" {{ block.shopify_attributes }}><b>{{ block.settings.titulo }}</b> {{ block.settings.texto }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if section.settings.nota != blank -%}<p class="tf-toffee__nota hl-reveal">{{ section.settings.nota }}</p>{%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Conoce a Toffee",
+  "tag": "section",
+  "settings": [
+    { "type": "image_picker", "id": "imagen", "label": "Foto de Toffee" },
+    { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Aprobado por Toffee" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Conoce al jefe" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color caramelo)", "default": "<p>Hola, soy <em>Toffee</em></p>" },
+    { "type": "richtext", "id": "historia", "label": "Historia" },
+    { "type": "text", "id": "regla_titulo", "label": "Título de la regla", "default": "Mi única regla" },
+    { "type": "text", "id": "regla", "label": "Regla", "default": "Si yo no me duermo encima, no lo vendo." },
+    { "type": "text", "id": "nota", "label": "Nota pequeña" },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "toffee" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 }
+  ],
+  "blocks": [
+    {
+      "type": "rasgo",
+      "name": "Dato de Toffee",
+      "settings": [
+        { "type": "text", "id": "titulo", "label": "Dato", "default": "Glotón:" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "se come las galletas del inventario." }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Toffee – Conoce a Toffee" }]
+}
+{% endschema %}

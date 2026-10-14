@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🐾 Navidad 2026 para tu mascota · Pídela hoy y recíbela a tiempo · Envío GRATIS",
+            "text": "🐾 Aprobado por Toffee 💤 · Envío GRATIS · Pago seguro con tarjeta",
             "text_alignment": "center",
             "color_scheme": "scheme-5",
             "link": "/products/casita-arbol-navidad-gatos"
@@ -44,7 +44,7 @@
         "margin_bottom": 0,
         "padding_top": 16,
         "padding_bottom": 16,
-        "marca_texto": "Holly",
+        "marca_texto": "Toffee",
         "ocultar_enlaces": "/collections/all, /pages/contact",
         "mostrar_busqueda": false,
         "mostrar_cuenta": false

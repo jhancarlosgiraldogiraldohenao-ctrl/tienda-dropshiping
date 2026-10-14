@@ -1,123 +1,36 @@
 {
   "sections": {
     "hero": {
-      "type": "hl-hero",
+      "type": "tf-hero",
       "settings": {
-        "eyebrow": "Holly · Navidad 2026 para tu mascota",
-        "titulo": "<p>La camita navideña que tu <em>mascota va a amar</em></p>",
-        "sub": "Una casita tejida en forma de arbolito de Navidad: calientita, suave y cerrada para que tu gato o perrito pequeño duerma feliz. Envío gratis a toda Colombia.",
-        "producto": "casita-arbol-navidad-gatos",
-        "mostrar_precio": false,
-        "nota_precio": "Envío gratis a toda Colombia · Pago seguro con Mercado Pago",
-        "btn1_texto": "Quiero la casita",
-        "mostrar_pack": false,
-        "pack_texto": "Pack x2 para regalar",
-        "pack_ahorro": "ahorra",
-        "pack_comprar": "Llevar el pack x2",
-        "pack_volver": "← Volver a 1 arbolito",
-        "pack_sello": "x2",
-        "imagen": "shopify://shop_images/casita-gato.jpg",
-        "imagen_pack": "shopify://shop_images/holly-ia-pack2.jpg",
-        "alt_imagen": "Gatito durmiendo dentro de la casita árbol de Navidad",
-        "sello_texto": "envío gratis · navidad 2026 · ",
-        "sello_centro": "★",
-        "alineacion": "left",
-        "titulo_size": 84,
-        "texto_size": 18,
-        "btn2_texto": "Ver los 4 colores",
-        "btn2_url": "/#colores",
-        "btn1_url": "/products/casita-arbol-navidad-gatos",
-        "imagen_2": "shopify://shop_images/holly-portada-casita.jpg",
-        "intervalo": 4
+        "imagen": "shopify://shop_images/toffee-portada-horizontal.jpg",
+        "imagen_movil": "shopify://shop_images/toffee-portada-vertical.jpg",
+        "eyebrow": "La Tiendita de Toffee 🐾",
+        "titulo": "<p>Si yo no me duermo encima, <em>no lo vendo.</em></p>",
+        "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que ves aquí lo probé yo primero (y casi siempre me quedé dormido encima).",
+        "btn1_texto": "Ver lo que aprobé",
+        "btn1_url": "#aprobado",
+        "btn2_texto": "Conoce a Toffee",
+        "btn2_url": "#toffee",
+        "sello": "Aprobado por Toffee",
+        "titulo_size": 76
       },
       "blocks": {
-        "b0": {
-          "type": "flotante",
-          "settings": {
-            "modo": "uno",
-            "icono": "brillo",
-            "titulo": "Tejida a mano",
-            "texto": "Felpa suave y calientita"
-          }
-        },
-        "b1": {
-          "type": "flotante",
-          "settings": {
-            "modo": "uno",
-            "icono": "casa",
-            "titulo": "50 × 60 cm",
-            "texto": "Gatos y perritos pequeños"
-          }
-        },
-        "b2": {
-          "type": "flotante",
-          "settings": {
-            "modo": "uno",
-            "icono": "escudo",
-            "titulo": "Cueva cerrada",
-            "texto": "Se siente seguro y feliz"
-          }
-        },
-        "b3": {
-          "type": "flotante",
-          "settings": {
-            "modo": "uno",
-            "icono": "regalo",
-            "titulo": "4 colores",
-            "texto": "Verde, rojo, pino y vino"
-          }
-        },
-        "b4": {
-          "type": "flotante",
-          "settings": {
-            "modo": "pack",
-            "icono": "copo",
-            "titulo": "Calientita",
-            "texto": "Para las noches frías"
-          }
-        },
-        "b5": {
-          "type": "flotante",
-          "settings": {
-            "modo": "pack",
-            "icono": "arbol",
-            "titulo": "Decora tu casa",
-            "texto": "Parece un arbolito de Navidad"
-          }
-        },
-        "b6": {
-          "type": "flotante",
-          "settings": {
-            "modo": "pack",
-            "icono": "camion",
-            "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
-          }
-        },
-        "b7": {
-          "type": "flotante",
-          "settings": {
-            "modo": "pack",
-            "icono": "regalo",
-            "titulo": "Regalo perfecto",
-            "texto": "Para tu peludo"
-          }
-        },
-        "b8": {
+        "c0": {
           "type": "chip",
           "settings": {
             "icono": "camion",
             "texto": "Envío gratis"
           }
         },
-        "b9": {
+        "c1": {
           "type": "chip",
           "settings": {
             "icono": "candado",
-            "texto": "Pago seguro"
+            "texto": "Pago seguro con tarjeta"
           }
         },
-        "b10": {
+        "c2": {
           "type": "chip",
           "settings": {
             "icono": "escudo",
@@ -126,35 +39,27 @@
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6",
-        "b7",
-        "b8",
-        "b9",
-        "b10"
+        "c0",
+        "c1",
+        "c2"
       ]
     },
     "cinta": {
       "type": "hl-cinta",
       "settings": {
-        "etiqueta": "Para tu mascota"
+        "etiqueta": "Aprobado por Toffee"
       },
       "blocks": {
         "b0": {
           "type": "item",
           "settings": {
-            "texto": "Tejida a mano"
+            "texto": "Aprobado por Toffee 💤"
           }
         },
         "b1": {
           "type": "item",
           "settings": {
-            "texto": "Envío gratis a toda Colombia"
+            "texto": "Envío gratis"
           }
         },
         "b2": {
@@ -172,25 +77,25 @@
         "b4": {
           "type": "item",
           "settings": {
-            "texto": "Pago seguro con Mercado Pago"
+            "texto": "Pago seguro con tarjeta"
           }
         },
         "b5": {
           "type": "item",
           "settings": {
-            "texto": "4 colores navideños"
+            "texto": "Probado antes de venderse"
           }
         },
         "b6": {
           "type": "item",
           "settings": {
-            "texto": "Calientita y suave"
+            "texto": "Calientito y suave"
           }
         },
         "b7": {
           "type": "item",
           "settings": {
-            "texto": "Cueva cerrada"
+            "texto": "Garantía de entrega"
           }
         }
       },
@@ -300,7 +205,7 @@
         "eyebrow": "La diferencia",
         "titulo": "<p>Más que <em>una camita</em></p>",
         "texto": "Frente a una cama de mascota común.",
-        "col_nos": "Casita Holly",
+        "col_nos": "La casita de Toffee",
         "col_otros": "Cama común",
         "titulo_size": 60
       },
@@ -360,7 +265,7 @@
         "eyebrow": "Compra tranquilo",
         "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
         "texto": "Así funciona tu pedido, paso a paso.",
-        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
+        "aviso": "Envío con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
         "titulo_size": 56
       },
       "blocks": {
@@ -369,7 +274,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con tarjeta de crédito a través de Mercado Pago, 100% seguro."
+            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
           }
         },
         "b1": {
@@ -377,7 +282,7 @@
           "settings": {
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia, con número de rastreo en tu correo."
+            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
           }
         },
         "b2": {
@@ -418,7 +323,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito, a través de Mercado Pago (100% seguro). Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), de forma 100% segura. Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {
@@ -439,7 +344,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
+            "respuesta": "<p>Nada. El envío es gratis.</p>"
           }
         },
         "b6": {
@@ -469,9 +374,17 @@
             "pregunta": "¿Se puede lavar?",
             "respuesta": "<p>Sí, a mano con agua tibia y jabón suave. Déjala secar a la sombra.</p>"
           }
+        },
+        "toffee": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Quién es Toffee?",
+            "respuesta": "<p>Toffee es el gato jefe de la tienda: un personaje creado con inteligencia artificial que prueba y presenta los productos. Él es de mentiras, pero los productos, los pagos y los envíos son 100% reales.</p>"
+          }
         }
       },
       "block_order": [
+        "toffee",
         "b0",
         "b1",
         "b2",
@@ -488,7 +401,7 @@
         "producto": "casita-arbol-navidad-gatos",
         "eyebrow": "Navidad 2026",
         "titulo": "<p>Este año, <em>que también sea su Navidad</em></p>",
-        "texto": "Pídela hoy con envío gratis a toda Colombia y dale a tu mascota su propio arbolito.",
+        "texto": "Pídela hoy con envío gratis y dale a tu mascota su propio arbolito. Aprobada por Toffee 💤",
         "imagen": "shopify://shop_images/casita-4colores.jpg",
         "btn_texto": "Quiero la casita",
         "titulo_size": 72,
@@ -526,12 +439,12 @@
     "casita": {
       "type": "hl-activos",
       "settings": {
-        "eyebrow": "Nuevo · Para tu mascota",
-        "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
-        "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
-        "imagen": "shopify://shop_images/holly-gato-detalle.webp",
+        "eyebrow": "Aprobado por Toffee 💤",
+        "titulo": "<p>La casita que <em>aprobé este mes</em></p>",
+        "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. La probé, me metí, me dormí tres horas. Aprobada.",
+        "imagen": "shopify://shop_images/toffee-casita-verde-sentado.jpg",
         "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
-        "ancla": "casita",
+        "ancla": "aprobado",
         "titulo_size": 64
       },
       "blocks": {
@@ -574,11 +487,55 @@
         "b2",
         "b3"
       ]
+    },
+    "toffee": {
+      "type": "tf-toffee",
+      "settings": {
+        "imagen": "shopify://shop_images/toffee-jefe-cajas.jpg",
+        "sello": "Aprobado por Toffee",
+        "eyebrow": "Conoce al jefe",
+        "titulo": "<p>Hola, soy <em>Toffee</em></p>",
+        "historia": "<p>Soy un gato de casa obsesionado con la comodidad. Probé todas las camitas, cobijas y juguetes que me trajeron… y casi todos me parecieron horribles.</p><p>Cansado de que a los michis y perritos les vendan cosas incómodas, abrí mi propia tiendita. Aquí solo llega lo que yo pruebo y apruebo.</p>",
+        "regla_titulo": "Mi única regla",
+        "regla": "Si yo no me duermo encima, no lo vendo.",
+        "nota": "Toffee es un personaje creado con inteligencia artificial. Los productos y los envíos son 100% reales.",
+        "ancla": "toffee",
+        "titulo_size": 64
+      },
+      "blocks": {
+        "r0": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Jefe serio:",
+            "texto": "quiere ser un gran empresario… pero se duerme en las reuniones."
+          }
+        },
+        "r1": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Glotón:",
+            "texto": "se come las galletas del inventario."
+          }
+        },
+        "r2": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Exigente:",
+            "texto": "si algo no es cómodo, lo rechaza. 😾"
+          }
+        }
+      },
+      "block_order": [
+        "r0",
+        "r1",
+        "r2"
+      ]
     }
   },
   "order": [
     "hero",
     "cinta",
+    "toffee",
     "casita",
     "zonas",
     "comparativa",

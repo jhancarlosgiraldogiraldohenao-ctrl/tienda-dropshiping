@@ -212,7 +212,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15.5 17.5C12.5 10 5 8.5 1.5 12.5c2.8.3 3.6 2.4 2.6 4.2 2.7-.6 3.9 1.2 3.1 3.3 2.8-2 5.3-2.2 8.3-2.5z" fill="#2f7a4f"/><path d="M16.5 17.5C19.5 10 27 8.5 30.5 12.5c-2.8.3-3.6 2.4-2.6 4.2-2.7-.6-3.9 1.2-3.1 3.3-2.8-2-5.3-2.2-8.3-2.5z" fill="#3f9563"/><circle cx="12.8" cy="20.6" r="3.1" fill="#c8283a"/><circle cx="19.2" cy="20.6" r="3.1" fill="#b01f30"/><circle cx="16" cy="16.4" r="3.1" fill="#e0384a"/></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
+          <span class="hl-wordmark"><img class="tf-avatar" src="{{ 'tf-avatar.jpg' | asset_url }}" alt="" width="80" height="80">{{ section.settings.marca_texto | default: shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}
@@ -255,7 +255,7 @@
             }}
           </div>
         {%- else -%}
-          <span class="hl-wordmark"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M15.5 17.5C12.5 10 5 8.5 1.5 12.5c2.8.3 3.6 2.4 2.6 4.2 2.7-.6 3.9 1.2 3.1 3.3 2.8-2 5.3-2.2 8.3-2.5z" fill="#2f7a4f"/><path d="M16.5 17.5C19.5 10 27 8.5 30.5 12.5c-2.8.3-3.6 2.4-2.6 4.2-2.7-.6-3.9 1.2-3.1 3.3-2.8-2-5.3-2.2-8.3-2.5z" fill="#3f9563"/><circle cx="12.8" cy="20.6" r="3.1" fill="#c8283a"/><circle cx="19.2" cy="20.6" r="3.1" fill="#b01f30"/><circle cx="16" cy="16.4" r="3.1" fill="#e0384a"/></svg>{{ section.settings.marca_texto | default: shop.name }}</span>
+          <span class="hl-wordmark"><img class="tf-avatar" src="{{ 'tf-avatar.jpg' | asset_url }}" alt="" width="80" height="80">{{ section.settings.marca_texto | default: shop.name }}</span>
         {%- endif -%}
       </a>
       {%- if request.page_type == 'index' -%}

@@ -1,0 +1,77 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
+
+{% style %}
+  #shopify-section-{{ section.id }} .tf-hero__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.5 | round }}px, 5.4vw, {{ section.settings.titulo_size }}px); }
+{% endstyle %}
+
+<section class="hl-section tf-hero" aria-label="{{ section.settings.eyebrow | escape }}">
+  <picture class="tf-hero__foto">
+    {%- if section.settings.imagen_movil != blank -%}
+      <source media="(max-width: 749px)" srcset="{{ section.settings.imagen_movil | image_url: width: 800 }} 800w, {{ section.settings.imagen_movil | image_url: width: 1100 }} 1100w" sizes="100vw">
+    {%- endif -%}
+    {%- if section.settings.imagen != blank -%}
+      <img src="{{ section.settings.imagen | image_url: width: 1800 }}"
+        srcset="{{ section.settings.imagen | image_url: width: 1100 }} 1100w, {{ section.settings.imagen | image_url: width: 1800 }} 1800w, {{ section.settings.imagen | image_url: width: 2400 }} 2400w"
+        sizes="100vw" alt="{{ section.settings.imagen.alt | escape }}" width="2000" height="1124" fetchpriority="high">
+    {%- endif -%}
+  </picture>
+
+  <div class="hl-container tf-hero__capa">
+    <div class="tf-hero__texto">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h1 class="tf-hero__titulo">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h1>
+      {%- if section.settings.sub != blank -%}<p class="tf-hero__sub">{{ section.settings.sub }}</p>{%- endif -%}
+    </div>
+    <div class="tf-hero__acciones">
+      <div class="tf-hero__ctas">
+        {%- if section.settings.btn1_texto != blank -%}<a class="hl-btn hl-btn--curcuma" href="{{ section.settings.btn1_url | default: '#aprobado' }}"><span>{{ section.settings.btn1_texto }}</span> {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
+        {%- if section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#toffee' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
+      </div>
+      {%- if section.blocks.size > 0 -%}
+        <div class="tf-hero__chips">
+          {%- for block in section.blocks -%}<span class="hl-chip" {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: block.settings.icono %}{{ block.settings.texto }}</span>{%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if section.settings.sello != blank -%}
+    <div class="tf-sello" aria-hidden="true"><span>{{ section.settings.sello }}</span><b>💤</b></div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Portada",
+  "tag": "section",
+  "settings": [
+    { "type": "image_picker", "id": "imagen", "label": "Foto horizontal (computador)", "info": "Toffee a la derecha, espacio libre a la izquierda" },
+    { "type": "image_picker", "id": "imagen_movil", "label": "Foto vertical (celular)", "info": "Toffee abajo, espacio libre arriba" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "La Tiendita de Toffee" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color caramelo)", "default": "<p>Si yo no me duermo encima, <em>no lo vendo.</em></p>" },
+    { "type": "textarea", "id": "sub", "label": "Texto" },
+    { "type": "text", "id": "btn1_texto", "label": "Botón principal", "default": "Ver lo que aprobé" },
+    { "type": "url", "id": "btn1_url", "label": "Enlace botón principal" },
+    { "type": "text", "id": "btn2_texto", "label": "Botón secundario", "default": "Conoce a Toffee" },
+    { "type": "url", "id": "btn2_url", "label": "Enlace botón secundario" },
+    { "type": "text", "id": "sello", "label": "Sello", "default": "Aprobado por Toffee" },
+    { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 36, "max": 96, "step": 2, "unit": "px", "default": 76 }
+  ],
+  "blocks": [
+    {
+      "type": "chip",
+      "name": "Etiqueta",
+      "settings": [
+        { "type": "select", "id": "icono", "label": "Icono", "options": [
+          { "value": "camion", "label": "Envío" }, { "value": "candado", "label": "Pago seguro" },
+          { "value": "escudo", "label": "Garantía" }, { "value": "check", "label": "Check" },
+          { "value": "regalo", "label": "Regalo" }, { "value": "casa", "label": "Casa" }, { "value": "brillo", "label": "Brillo" }
+        ], "default": "check" },
+        { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Toffee – Portada" }]
+}
+{% endschema %}

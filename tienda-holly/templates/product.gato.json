@@ -3,11 +3,11 @@
     "principal": {
       "type": "hl-producto",
       "settings": {
-        "eyebrow": "Holly · Regalos para tu mascota",
+        "eyebrow": "Aprobado por Toffee 💤",
         "titulo_corto": "Casita Árbol de Navidad para Mascotas",
         "subtitulo": "Tejida a mano · 50 cm × 60 cm · 4 colores",
         "intro": "Un arbolito de Navidad tejido que es también la camita favorita de tu gato o perrito pequeño. Calientita, suave y tan linda que decora tu sala mientras él duerme adentro.",
-        "nota_precio": "Envío gratis · Pago seguro con Mercado Pago",
+        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
         "puntos": "Medidas: 50 cm de ancho × 50 cm de fondo × 60 cm de alto\nPara gatos y perritos pequeños\nTejida a mano en felpa suave y calientita\nCueva cerrada: tu mascota se siente segura\nDecora tu casa en Navidad (y todo el año)",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige el color",
@@ -18,14 +18,14 @@
         "mostrar_miniaturas": true,
         "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con Mercado Pago",
+        "comprar_nota": "Pago 100% seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
         "agotado_texto": "Agotado",
         "sticky_texto": "Casita para Mascotas",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 25 de noviembre para recibirla antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 25 de noviembre para recibirla antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega, te devolvemos tu dinero.",
         "titulo_size": 46,
         "modo_colores": true
       },
@@ -35,7 +35,7 @@
           "settings": {
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "texto": "Con rastreo"
           }
         },
         "b1": {
@@ -43,7 +43,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Con Mercado Pago"
+            "texto": "Con tarjeta"
           }
         },
         "b2": {
@@ -207,7 +207,7 @@
         "eyebrow": "La diferencia",
         "titulo": "<p>Más que <em>una camita</em></p>",
         "texto": "Frente a una cama de mascota común.",
-        "col_nos": "Casita Holly",
+        "col_nos": "La casita de Toffee",
         "col_otros": "Cama común",
         "titulo_size": 60
       },
@@ -276,7 +276,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con Mercado Pago, 100% seguro."
+            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
           }
         },
         "b1": {
@@ -284,7 +284,7 @@
           "settings": {
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia, con número de rastreo en tu correo."
+            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
           }
         },
         "b2": {
@@ -325,7 +325,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con Mercado Pago, 100% seguro. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), 100% seguro. Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {
@@ -346,7 +346,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
+            "respuesta": "<p>Nada. El envío es gratis.</p>"
           }
         },
         "b4": {
