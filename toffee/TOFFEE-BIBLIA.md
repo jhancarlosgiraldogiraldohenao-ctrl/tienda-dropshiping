@@ -14,7 +14,7 @@ Siempre se presenta como personaje de IA: etiqueta de IA en cada video y "Gato I
 
 ## Historia
 Toffee es un gato de casa obsesionado con la comodidad. Probó todas las camitas, cobijas y juguetes de la casa… y todos le parecieron horribles. Cansado de que a los michis y perritos les vendan cosas incómodas, abrió su propia tiendita.
-**Su regla: "Si no pasa mi prueba, no entra a mi tienda."** (vale para cualquier producto: camitas, juguetes, comederos, ropa…)
+**Su regla: "Si no pasa mi prueba, lo tiro de la mesa." 😾** (vale para cualquier producto: camitas, juguetes, comederos, ropa…)
 Es el jefe más tierno y más flojo del mundo: quiere ser un gran empresario, pero se queda dormido en las reuniones, se come las galletas del inventario y les tiene pánico a los lunes y a la aspiradora.
 
 ## Personalidad
@@ -42,7 +42,7 @@ Es el jefe más tierno y más flojo del mundo: quiere ser un gran empresario, pe
 - Usuario: **@toffee.elgato** (libre en TikTok al 14-oct; confirmar Instagram). Alternativa: @toffeeelgato.
 - Fans: **los Toffeelovers** (provisional).
 - Palabra para comentar: **"TOFFEE"** → "Comenta TOFFEE y te paso el link 🐾".
-- Bio: "Gato IA 🐾 Dueño de soytoffee.store · Si no pasa mi prueba, no entra a mi tienda 💤"
+- Bio: "Gato IA 🐾 Dueño de soytoffee.store · Si no pasa mi prueba, lo tiro de la mesa 😾"
 - Colores de marca: caramelo · azul marino · crema · verde suave (ojos).
 - Países: México, Chile, Argentina, Colombia, EE. UU.
 
