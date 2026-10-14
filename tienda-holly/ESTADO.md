@@ -154,3 +154,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Propuesta de valor: "Todo está probado y aprobado por Toffee" (sello "Aprobado por Toffee 💤"). Fans: "los Toffeelovers" (provisional). Palabra para comentar: TOFFEE.
 - Usuario TikTok libre (verificado 14-oct): @toffee.elgato (también @toffeeelgato). Revisar Instagram.
 - Formatos: Toffee prueba (aprobado/rechazado), POV de su vida, Toffee el jefe, responde comentarios, historias por capítulos.
+
+## Dominio (14-oct)
+- soytoffee.store comprado en Namecheap (1 año, USD 1,18; renueva oct-2027, auto-renew sin apagar). DNS: A @ 23.227.38.65 + CNAME www shops.myshopify.com. Conectado en Shopify con TLS; hollycolombia.myshopify.com ya redirige a https://soytoffee.store.
+- Decisión: NO tienda nueva; se transforma la tienda actual en "La Tiendita de Toffee". Fotos toffee-frente.jpg y toffee-acostado.jpg ya subidas a Archivos de Shopify.
