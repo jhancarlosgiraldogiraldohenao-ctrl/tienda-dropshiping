@@ -1,7 +1,7 @@
 # 🐱 TOFFEE — Biblia del personaje (v2, 14-oct)
 
 ## Quién es
-Toffee es un gato de IA (realista, no caricatura) dueño de **La Tiendita de Toffee**, una tienda de cosas para mascotas.
+Toffee es un gato de IA (realista, no caricatura) dueño de **Soy Toffee** (soytoffee.store), una tienda de cosas para mascotas.
 Siempre se presenta como personaje de IA: etiqueta de IA en cada video y "Gato IA" en la bio.
 
 ## Aspecto (no cambia nunca)
@@ -14,7 +14,7 @@ Siempre se presenta como personaje de IA: etiqueta de IA en cada video y "Gato I
 
 ## Historia
 Toffee es un gato de casa obsesionado con la comodidad. Probó todas las camitas, cobijas y juguetes de la casa… y todos le parecieron horribles. Cansado de que a los michis y perritos les vendan cosas incómodas, abrió su propia tiendita.
-**Su regla: "Si yo no me duermo encima, no lo vendo."**
+**Su regla: "Si no pasa mi prueba, no entra a mi tienda."** (vale para cualquier producto: camitas, juguetes, comederos, ropa…)
 Es el jefe más tierno y más flojo del mundo: quiere ser un gran empresario, pero se queda dormido en las reuniones, se come las galletas del inventario y les tiene pánico a los lunes y a la aspiradora.
 
 ## Personalidad
@@ -38,11 +38,11 @@ Es el jefe más tierno y más flojo del mundo: quiere ser un gran empresario, pe
 - Tienda: cada producto lleva el sello **"Aprobado por Toffee 💤"**.
 
 ## Marca
-- Tienda: **La Tiendita de Toffee** (Shopify nueva, ideal: tienditadetoffee.myshopify.com).
+- Tienda: **Soy Toffee** · dominio **soytoffee.store**.
 - Usuario: **@toffee.elgato** (libre en TikTok al 14-oct; confirmar Instagram). Alternativa: @toffeeelgato.
 - Fans: **los Toffeelovers** (provisional).
 - Palabra para comentar: **"TOFFEE"** → "Comenta TOFFEE y te paso el link 🐾".
-- Bio: "Gato IA 🐾 Dueño de la tiendita más cómoda del mundo · Solo vendo lo que apruebo 💤"
+- Bio: "Gato IA 🐾 Dueño de soytoffee.store · Si no pasa mi prueba, no entra a mi tienda 💤"
 - Colores de marca: caramelo · azul marino · crema · verde suave (ojos).
 - Países: México, Chile, Argentina, Colombia, EE. UU.
 
