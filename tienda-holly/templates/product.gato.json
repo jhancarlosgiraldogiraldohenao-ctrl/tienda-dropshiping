@@ -67,7 +67,7 @@
         "eyebrow": "Hecha para consentirlo",
         "titulo": "<p>Su camita, <em>tu arbolito</em></p>",
         "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. Esta casita les da justo eso, y a tu casa le da Navidad.",
-        "imagen": "shopify://shop_images/holly-gato-detalle.webp",
+        "imagen": "shopify://shop_images/toffee-dormido-casita-roja.jpg",
         "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
         "ancla": "detalles",
         "titulo_size": 64
@@ -166,7 +166,7 @@
           "settings": {
             "zona": "La sala",
             "texto": "Junto al árbol de Navidad, como un adorno más.",
-            "imagen": "shopify://shop_images/holly-gato-sala.webp"
+            "imagen": "shopify://shop_images/toffee-sala-casita-verde.jpg"
           }
         },
         "b1": {
@@ -174,7 +174,7 @@
           "settings": {
             "zona": "Su siesta",
             "texto": "Su lugar calientito para dormir todo el día.",
-            "imagen": "shopify://shop_images/holly-gato-siesta.webp"
+            "imagen": "shopify://shop_images/toffee-siesta-casita-vino.jpg"
           }
         },
         "b2": {
@@ -182,7 +182,7 @@
           "settings": {
             "zona": "Asomándose",
             "texto": "Ese momento en que saca la cabecita… 😍",
-            "imagen": "shopify://shop_images/holly-gato-asoma.webp"
+            "imagen": "shopify://shop_images/toffee-dentro-casita-verde.jpg"
           }
         },
         "b3": {
@@ -190,7 +190,7 @@
           "settings": {
             "zona": "Para regalar",
             "texto": "El regalo perfecto para quien ama a su mascota.",
-            "imagen": "shopify://shop_images/holly-gato-regalo.webp"
+            "imagen": "shopify://shop_images/toffee-regalo-casita-roja.jpg"
           }
         }
       },
