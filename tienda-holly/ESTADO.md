@@ -149,7 +149,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Pendiente: el usuario envía PDF de referencias del personaje → ficha oficial (prompt) → nombre (verificar TikTok/IG/myshopify) → tienda → videos de lanzamiento. En paralelo: costos DSers por país.
 
 ## Personaje elegido (14-oct): TOFFEE
-- Gato IA realista: British Shorthair adulto color crema-caramelo sólido (un solo tono), muy gordito y redondo, cara redonda con cachetes, ojos grandes cobre. Prenda fija: gorro de dormir tejido verde oscuro, punta caída, pompón crema.
+- Gato IA realista: British Shorthair adulto color crema-caramelo sólido (un solo tono), muy gordito y redondo, cara redonda con cachetes, ojos verdes grandes con pupilas dilatadas. Prenda fija: gorro de dormir tejido AZUL MARINO, punta caída, pompón crema. Ojos: verdes, grandes y redondos, pupilas MUY dilatadas con brillo (ficha v2 aprobada 14-oct, toffee/TOFFEE-*.jpg).
 - Personalidad: tierno, dramático, glotón, dormilón; se cree empresario serio. Historia: probó todas las camas de la casa, todas malas → abrió su tiendita. Regla: "Si yo no me duermo encima, no lo vendo".
 - Propuesta de valor: "Todo está probado y aprobado por Toffee" (sello "Aprobado por Toffee 💤"). Fans: "los Toffeelovers" (provisional). Palabra para comentar: TOFFEE.
 - Usuario TikTok libre (verificado 14-oct): @toffee.elgato (también @toffeeelgato). Revisar Instagram.
