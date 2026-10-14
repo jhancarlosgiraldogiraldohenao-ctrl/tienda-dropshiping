@@ -158,3 +158,11 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 ## Dominio (14-oct)
 - soytoffee.store comprado en Namecheap (1 año, USD 1,18; renueva oct-2027, auto-renew sin apagar). DNS: A @ 23.227.38.65 + CNAME www shops.myshopify.com. Conectado en Shopify con TLS; hollycolombia.myshopify.com ya redirige a https://soytoffee.store.
 - Decisión: NO tienda nueva; se transforma la tienda actual en "La Tiendita de Toffee". Fotos toffee-frente.jpg y toffee-acostado.jpg ya subidas a Archivos de Shopify.
+
+## 14-oct · Tienda Toffee publicada
+- Tema en vivo: "Toffee (vista previa)" #189551870241. El tema anterior "Holly Navidad" #189151379745 queda sin publicar como respaldo.
+- A partir de ahora los cambios se suben al tema #189551870241.
+- Marca: Soy Toffee · soytoffee.store · lema "Si no pasa mi prueba, lo tiro de la mesa."
+- Pagos: dLocal Go Credit Cards activo (Visa, Mastercard, Amex, Discover). Contacto del checkout = correo.
+- Menú: Inicio · Casita para Mascotas · Contacto.
+- Pendiente: nombre de la tienda en Shopify (Configuración > General) = Soy Toffee; costos DSers por país; Shopify Markets; políticas de la tienda (revisar menciones a Colombia/Mercado Pago); redes @toffee.elgato.
