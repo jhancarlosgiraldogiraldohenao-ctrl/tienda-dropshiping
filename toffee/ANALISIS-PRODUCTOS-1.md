@@ -48,3 +48,12 @@ AliExpress bloquea con captcha el acceso automático → se necesitan capturas o
 | Sudadera porta-mascota | 1005013266610124 | 214.391 → 84.514 | |
 | Sudadera porta-mascota | 1005011581803196 | 193.589 → 78.609 | anuncio patrocinado |
 Lectura preliminar: disfraz y orejeras son baratos y livianos (margen amplio); trineo, hamaca y sudadera salen caros → difícil cumplir 3× costo dentro de USD 25–70.
+
+## Disfraz árbol · revisión del video de Jay (15-oct)
+| Proveedor | Precio visto (Welcome deal) | Reseñas / vendidos | Notas |
+|---|---|---|---|
+| D1 …302319394 | 3.543 (igual en todas las tallas/colores) | 0 reseñas · 14 vendidos | Choice, envío gratis 21–28 oct, tallas S/M/L (1,5–7 kg) |
+| D2 …781973996 | 8.777–9.384 | 4,0★ · 4 reseñas · 295 vendidos | Foto real de cliente: capa delgada y arrugada, reseña "Mala calidad" ❌ |
+| D3 …156186504 | 12.361–12.414 | 4,5★ · 2 reseñas · 30 vendidos | Reseña buena ("¡Fabuloso!") pero sin foto |
+| D4 …781254048 | 11.798–14.498 | Pet Delight Store 4,2★ (+1000 vendidos de la tienda) | Tabla de tallas S/M/L en cm, poliéster |
+Conclusión: lo que venden es una CAPA plana, no el disfraz 3D del video viral. La foto real (D2) se ve barata → riesgo de "no es como en el video". Disfraz EN PAUSA hasta encontrar el modelo 3D con fotos reales buenas. Prioridad: orejeras.
