@@ -175,3 +175,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 ## DECISIÓN 15-oct: 3 productos (proveedor TeemDrop)
 1. Cama trineo (T3 $16.50, respaldo T2) — la usa Toffee. 2. Orejeras anti ruido (T10 $6.58, respaldo T12) — las usa Galleta (perro). 3. Disfraz árbol (T6 $7.44, respaldo T5) — Toffee.
 Siguiente: revisar precios competencia → Jay importa a Shopify con TeemDrop ("Lista para almacenar"/conectar tienda) → precios por país + Markets → fotos con Toffee → redes.
+
+## Países (15-oct) · dLocal Go (helpcenter oficial)
+Vende en: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, Guatemala, México, Paraguay, Panamá, Rep. Dominicana, Perú, Uruguay (+ Indonesia, Malasia, Kenia, Nigeria). EE. UU. NO aparece → confirmar con dLocal si acepta tarjetas de EE. UU.; si no, activar PayPal para EE. UU.
+Plan: Fase 1 = México, Colombia, Chile, Argentina, Perú (+ EE. UU. si se confirma pago). Fase 2 = Ecuador, Uruguay, Costa Rica, Panamá, Guatemala, Rep. Dominicana, Paraguay, Bolivia (si TeemDrop envía ≤20 días y precio da). Brasil no (portugués).
