@@ -1,14 +1,32 @@
-# Soy Toffee · Precios y ganancia neta (v3, 15-oct) — 3 productos en los 5 países
-Tasas: 1 USD ≈ 3.220 COP · 17,5 MXN · 930 CLP · 1.450 ARS · 3,5 PEN
-Costos: costo TeemDrop +15 % · 17 % del precio (dLocal 7 · Shopify 2 · Donación 3 · Colchón 5).
+# Soy Toffee · Precios finales (v4, 15-oct) — 3 productos · 4 países (MX, CO, CL, PE)
+Argentina queda fuera (el envío más caro en los 3 productos).
+Tasas: 1 USD ≈ 3.220 COP · 17,5 MXN · 930 CLP · 3,5 PEN
+Costos restados: costo TeemDrop +15 % · 17 % del precio (dLocal 7 · Shopify 2 · Donación 3 · Colchón 5).
+Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la ganancia sale de los combos.
 
-| Producto | USD | COP | MXN | CLP | ARS | PEN |
-|---|---|---|---|---|---|---|
-| Disfraz (S/M/L) | 29,95 | 96.900 | 529 | 27.990 | 43.990 | 104,90 |
-| Orejeras (S–XL) | 34,95 | 112.900 | 619 | 32.990 | 50.990 | 124,90 |
-| Trineo (S) | 99,95 | 324.900 | 1.749 | 92.990 | 144.990 | 349,90 |
+## Precios de venta
+| Producto | USD | COP | MXN | CLP | PEN |
+|---|---|---|---|---|---|
+| Disfraz árbol (S/M/L) | 22,95 | 74.900 | 399 | 21.990 | 79,90 |
+| Orejeras anti ruido (S–XL) | 22,95 | 74.900 | 399 | 21.990 | 79,90 |
+| Combo 2 iguales | 36,95 | 119.900 | 649 | 34.990 | 129,90 |
+| Kit Navidad (disfraz + orejeras para la pólvora) | 36,95 | 119.900 | 649 | 34.990 | 129,90 |
+| Trineo (S) | 74,95 | 239.900 | 1.299 | 69.990 | 259,90 |
 
-Ganancia neta orgánica (COP): 
-- Disfraz: MX 55.800 · CO 51.700 · CL 48.000 · AR 34.700 · PE 33.800
-- Orejeras: MX 69.500 · CO 65.300 · CL 61.500 · AR 48.100 · PE 47.300
-- Trineo: MX 166.800 · CO 106.500 · CL 128.300 · AR 36.800 · PE 89.900
+## Ganancia neta por venta (COP)
+| Producto | MX | CO | CL | PE |
+|---|---|---|---|---|
+| Disfraz | 36.700 | 33.800 | 31.200 | 14.800 |
+| Orejeras | 36.900 | 34.100 | 31.300 | 14.900 |
+| Combo / Kit (2 unidades) | ~51.000 | ~43.000 | ~35.500 | ~7.000 |
+| Trineo | 98.100 | 38.500 | 62.300 | 21.300 |
+
+## Competencia (TikTok, 15-oct)
+- Orejeras: Call Me Puppy 69.900 COP (CO, contra entrega) / 63.752 internacional; Palamichi 62.390 básica, 74.855 antirruido, 3x2 134.395.
+- Trineo: GingilNap USD 59,95 (mercado EE. UU.; no aplica a nuestros países). Mercado Libre ~350.000 COP.
+- Disfraz: Viking Paws 82.927 COP · 2 por 127.763 COP.
+
+## Notas
+- Perú es el país más débil (envío ~2x). Decidir después si se queda.
+- Si se abre EE. UU. con PayPal, el trineo compite con GingilNap (USD 59,95).
+- PENDIENTE página: optimizar velocidad para internet lento (imágenes comprimidas, carga diferida, pocos scripts).
