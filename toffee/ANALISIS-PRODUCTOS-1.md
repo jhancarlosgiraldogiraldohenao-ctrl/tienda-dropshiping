@@ -66,3 +66,6 @@ Conclusión: lo que venden es una CAPA plana, no el disfraz 3D del video viral. 
 | O3 …418944039 | 5.296 (pack 3) | — | No cargó (captcha de AliExpress) |
 | O4 …777159854 | — | — | No alcanzó a verse |
 Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y gatos"; costo real en DSers; ver O3/O4 como respaldo.
+
+## TeemDrop · capturas (envío a EE. UU.)
+- T1 Cama trineo Santa (rojo/beige; S 50x37x25, M 60x50x28, L 80x63x32; 750 g): envío YUN-EconoLink $19.12, 6–12 días, proc. 1–3 días → TOTAL $25.33
