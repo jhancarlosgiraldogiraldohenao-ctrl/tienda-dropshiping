@@ -94,3 +94,4 @@ Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche lat
 - Colombia: única opción Jitong Global-Sensitive 15–20 días. TOTAL L $66.12 · M $45.03 · S $43.37
 - México (talla S mostrada, envío opciones: YUN-EconoLink $17.55 8–15d · YUN-Cosmetics $23.65 · Jitong $26.27 10–20d [seleccionado, TOTAL S $35.81] · TDPacket $32.41 · HH $33.49). Jay reporta TOTAL L $70.47 · M $68.81 · S $35.81 (con Jitong). Con YUN-EconoLink S ≈ $27.09
 - Chile (opciones talla S: TDPacket Sensible $27.94 15–22d [TOTAL $37.48] · YUN-Electro $42.24 19–21d). Jay: TOTAL L $105.68 · M $68.63 · S $51.78
+- Argentina (única: TDPacket Sensible, 15–25d). TOTAL L no disponible · M $83.37 · S $62.20
