@@ -166,3 +166,8 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Pagos: dLocal Go Credit Cards activo (Visa, Mastercard, Amex, Discover). Contacto del checkout = correo.
 - Menú: Inicio · Casita para Mascotas · Contacto.
 - Pendiente: nombre de la tienda en Shopify (Configuración > General) = Soy Toffee; costos DSers por país; Shopify Markets; políticas de la tienda (revisar menciones a Colombia/Mercado Pago); redes @toffee.elgato.
+
+## REGLA FIJA (15-oct): NO hay presupuesto para muestras
+- Jay NO puede pedir muestras ni hacer compras de prueba (sin dinero). Nunca proponerlo.
+- La calidad se verifica GRATIS: fotos/videos reales de clientes, reseñas, y pedir al agente de TeemDrop fotos/video reales del producto antes de vender.
+- Productos elegidos: 1) Orejeras anti ruido para perros (las usa "Galleta"); 2) Disfraz de árbol de Navidad (lo usa Toffee) — plan B: peluche con latido.

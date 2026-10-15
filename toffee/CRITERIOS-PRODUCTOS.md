@@ -16,6 +16,7 @@ Un producto entra a la tienda solo si pasa los 4 filtros. Si falla uno, se desca
 - [ ] **Envía a los 5 países**: México, Chile, Argentina, Colombia y EE. UU.
 - [ ] Entrega **≤ 20 días hábiles** con rastreo.
 - [ ] Sin necesidad de hablar con el proveedor (no responden).
+- [ ] SIN MUESTRAS: no hay presupuesto. Calidad se verifica con fotos reales de clientes, reseñas y fotos/video reales pedidas al agente (gratis).
 
 ## Filtro 3 · ¿Deja buena ganancia?
 - [ ] Costo **siempre desde DSers** (no el "Welcome deal" ni el precio tachado de AliExpress).
