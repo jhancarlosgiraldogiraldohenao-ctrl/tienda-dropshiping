@@ -75,3 +75,4 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 - T5 Disfraz/capa árbol (verde/rojo; S/M/L; 80 g; foto con perro real): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.64
 - T6 Disfraz/capa árbol (mismo modelo T5; 80 g): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.44 (el más barato del disfraz)
 - T7 Orejeras anti ruido (producto $1.97; rojo rosa/rosa/azul cielo/verde claro/gris; S/M/L; 70 g): TDPacket, 7–15 días → TOTAL $7.34
+- T8 Orejeras acolchadas tipo casco (verde/azul/naranja; S/M/L; 75 g): TDPacket, 7–15 días, envío $5.44 → TOTAL $10.41
