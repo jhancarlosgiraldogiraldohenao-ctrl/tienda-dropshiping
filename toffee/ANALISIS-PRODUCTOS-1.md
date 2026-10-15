@@ -108,3 +108,6 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 - Argentina: S/M/L igual TOTAL $12.24 (única: TDPacket Sensible $10.31, 15–25d)
 - Perú: S/M/L igual TOTAL $12.48 (única: TDPacket Sensible $10.55, 15–25d)
 ### Conclusión disfraz: precio USD 29,95 en todos los países → ganancia MX ~$21 · CO ~$20 · CL ~$19 · AR ~$16 · PE ~$15. Todos pasan.
+
+## Envío por país · Orejeras T10
+- Colombia (Jitong Global-Sensitive 15–20d ✅): XL $7.60 · L $7.43 · M $7.33 · S $7.05
