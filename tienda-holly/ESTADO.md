@@ -171,3 +171,7 @@ OJO: "Más de X vendidos" junto al nombre = ventas de la TIENDA, no del producto
 - Jay NO puede pedir muestras ni hacer compras de prueba (sin dinero). Nunca proponerlo.
 - La calidad se verifica GRATIS: fotos/videos reales de clientes, reseñas, y pedir al agente de TeemDrop fotos/video reales del producto antes de vender.
 - Productos elegidos: 1) Orejeras anti ruido para perros (las usa "Galleta"); 2) Disfraz de árbol de Navidad (lo usa Toffee) — plan B: peluche con latido.
+
+## DECISIÓN 15-oct: 3 productos (proveedor TeemDrop)
+1. Cama trineo (T3 $16.50, respaldo T2) — la usa Toffee. 2. Orejeras anti ruido (T10 $6.58, respaldo T12) — las usa Galleta (perro). 3. Disfraz árbol (T6 $7.44, respaldo T5) — Toffee.
+Siguiente: revisar precios competencia → Jay importa a Shopify con TeemDrop ("Lista para almacenar"/conectar tienda) → precios por país + Markets → fotos con Toffee → redes.
