@@ -19,7 +19,8 @@ Un producto entra a la tienda solo si pasa los 4 filtros. Si falla uno, se desca
 
 ## Filtro 3 · ¿Deja buena ganancia?
 - [ ] Costo **siempre desde DSers** (no el "Welcome deal" ni el precio tachado de AliExpress).
-- [ ] **Precio de venta ≥ 3 × costo real** (producto + envío) en cada país.
+- [ ] **Precio de venta ≥ 3 × costo real** (producto + envío) en productos de ticket bajo.
+- [ ] Excepción (15-oct): producto **muy viral de ticket alto** (hasta ~USD 65) se acepta si la **ganancia ≥ USD 20 (~80.000 COP)** después de comisiones, el costo está **verificado en DSers**, hay **proveedor con stock y respaldo**, y la calidad real coincide con el video.
 - [ ] **Ganancia mínima ≈ USD 15 (≈ 60.000 COP) por venta** después de comisiones (Shopify 2 % + dLocal).
 - [ ] Precio final ideal entre **USD 25 y 70** (compra por impulso).
 - [ ] **Liviano y no frágil** (envío barato, pocos reclamos). Evitar vidrio, líquidos y electrónicos que requieran certificaciones.
