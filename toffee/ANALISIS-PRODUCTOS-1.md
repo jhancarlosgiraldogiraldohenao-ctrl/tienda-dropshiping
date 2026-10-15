@@ -74,3 +74,4 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 - T4 Disfraz/capa árbol de Navidad (verde/rojo; S/M/L; 78 g): TDPacket, 7–15 días, envío $5.48 → TOTAL $7.61
 - T5 Disfraz/capa árbol (verde/rojo; S/M/L; 80 g; foto con perro real): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.64
 - T6 Disfraz/capa árbol (mismo modelo T5; 80 g): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.44 (el más barato del disfraz)
+- T7 Orejeras anti ruido (producto $1.97; rojo rosa/rosa/azul cielo/verde claro/gris; S/M/L; 70 g): TDPacket, 7–15 días → TOTAL $7.34
