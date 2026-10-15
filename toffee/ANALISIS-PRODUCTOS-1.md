@@ -106,3 +106,5 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 - México: S/M/L igual TOTAL $6.54 (YUN-EconoLink $4.61, 8–15d ✅ elegir)
 - Chile: S/M/L igual TOTAL $8.65 (TDPacket Sensible $6.72, 15–22d ✅ elegir)
 - Argentina: S/M/L igual TOTAL $12.24 (única: TDPacket Sensible $10.31, 15–25d)
+- Perú: S/M/L igual TOTAL $12.48 (única: TDPacket Sensible $10.55, 15–25d)
+### Conclusión disfraz: precio USD 29,95 en todos los países → ganancia MX ~$21 · CO ~$20 · CL ~$19 · AR ~$16 · PE ~$15. Todos pasan.
