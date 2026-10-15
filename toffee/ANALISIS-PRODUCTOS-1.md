@@ -105,3 +105,4 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 - Colombia: S/M/L igual TOTAL $7.66 (Jitong Global-Sensitive $5.73, 15–20d ✅ elegir; TDPacket Electro $6.21 15–45d ❌)
 - México: S/M/L igual TOTAL $6.54 (YUN-EconoLink $4.61, 8–15d ✅ elegir)
 - Chile: S/M/L igual TOTAL $8.65 (TDPacket Sensible $6.72, 15–22d ✅ elegir)
+- Argentina: S/M/L igual TOTAL $12.24 (única: TDPacket Sensible $10.31, 15–25d)
