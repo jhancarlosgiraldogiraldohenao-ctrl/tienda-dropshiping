@@ -100,3 +100,6 @@ Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche lat
 Solo talla S es viable. Ganancia S: MX ~$29 (o ~$38 con YUN-EconoLink $27.09) · CO ~$22 · PE ~$17 · CL ~$13 (dudoso; captura mostraba $37.48 → ~$28) · AR ~$3 ❌.
 Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Argentina NO. M y L no.
 - Chile CONFIRMADO: talla S TOTAL $37.48 (TDPacket Sensible 15–22d). Jay quiere precio ESTANDARIZADO igual en todos los países; decisión de países al final tras ver los 3 productos.
+
+## Envío por país · Disfraz T6
+- Colombia: S/M/L igual TOTAL $7.66 (Jitong Global-Sensitive $5.73, 15–20d ✅ elegir; TDPacket Electro $6.21 15–45d ❌)
