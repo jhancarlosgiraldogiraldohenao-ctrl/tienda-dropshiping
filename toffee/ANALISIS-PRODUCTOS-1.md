@@ -112,3 +112,4 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 ## Envío por país · Orejeras T10
 - Colombia (Jitong Global-Sensitive 15–20d ✅): XL $7.60 · L $7.43 · M $7.33 · S $7.05
 - México (YUN-EconoLink 8–15d ✅): XL $6.47 · L $6.32 · M $6.26 · S $6.07
+- Chile (TDPacket Sensible 15–22d ✅): XL $8.61 · L $8.46 · M $8.36 · S $8.19
