@@ -70,3 +70,4 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 ## TeemDrop · capturas (envío a EE. UU.)
 - T1 Cama trineo Santa (rojo/beige; S 50x37x25, M 60x50x28, L 80x63x32; 750 g): envío YUN-EconoLink $19.12, 6–12 días, proc. 1–3 días → TOTAL $25.33
 - T2 Cama trineo (rojo/marrón reno; S/M/L; 750 g): TDPacket Promoción Ordinaria, 7–15 días, proc. 1–3 → TOTAL $20.68
+- T3 Cama trineo (rojo/marrón + nido manzana roja; S/M/L; 780 g; 'cats and dogs'): TDPacket, 7–15 días, envío $12.57 → TOTAL $16.50
