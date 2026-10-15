@@ -25,3 +25,26 @@ Propuestos por Claude: 7 hamaca de ventana para gatos · 8 árbol rascador navid
 3. Cama trineo de Santa (video 2)
 4. Hamaca de ventana para gatos (Claude)
 5. Sudadera porta-mascota (video 6)
+
+## Proveedores recibidos (15-oct) · precios leídos del link (incluyen ofertas de "usuario nuevo", NO son costo real)
+AliExpress bloquea con captcha el acceso automático → se necesitan capturas o costo en DSers.
+| Producto | ID | Precio tachado → oferta (COP) | Nota |
+|---|---|---|---|
+| Disfraz árbol | 1005013302319394 | 17.124 → 3.543 | |
+| Disfraz árbol | 1005012781973996 | 50.054 → 8.777 | |
+| Disfraz árbol | 1005013156186504 | 59.716 → 12.414 | link repetido 2 veces |
+| Disfraz árbol | 1005007781254048 | 56.338 → 11.919 | publicación antigua (2024): posible más historial |
+| Orejeras | 1005012719866784 | 49.213 → 4.912 | |
+| Orejeras | 1005012567750173 | 20.632 → 3.917 | |
+| Orejeras | 1005010418944039 | 22.072 → 5.296 | |
+| Orejeras | 1005010777159854 | 46.704 → 7.102 | |
+| Cama trineo | 1005013150536853 | 120.475 → 102.621 | |
+| Cama trineo | 1005013133007432 | 328.106 → 144.522 | link repetido 2 veces |
+| Cama trineo | 1005010205758228 | 340.810 → 150.747 | 8-oct: 4.4★, 7 reseñas, 106 vendidos, foto real OK |
+| Cama trineo | 1005013157810931 | 121.002 → 103.121 | |
+| Hamaca ventana | 1005005795918698 | 276.927 → 94.521 | publicación antigua (2023) |
+| Hamaca ventana | 1005010170373731 | 442.763 → 200.704 | |
+| Hamaca ventana | 1005011780360235 | 302.271 → 131.863 | |
+| Sudadera porta-mascota | 1005013266610124 | 214.391 → 84.514 | |
+| Sudadera porta-mascota | 1005011581803196 | 193.589 → 78.609 | anuncio patrocinado |
+Lectura preliminar: disfraz y orejeras son baratos y livianos (margen amplio); trineo, hamaca y sudadera salen caros → difícil cumplir 3× costo dentro de USD 25–70.
