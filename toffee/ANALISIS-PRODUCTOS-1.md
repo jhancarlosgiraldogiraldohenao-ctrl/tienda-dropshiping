@@ -80,3 +80,12 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 - T10 Orejeras (MISMO modelo que AliExpress …567750173 4,8★: rojo rosa, gris oscuro, versión gruesa; S/M/L/XL; 52 g; velcro, impermeable): TDPacket, 7–15 días → TOTAL $6.58 (el más barato de orejeras)
 - T11 Orejeras (7 colores incl. AZUL MARINO y negro; S/M/L; 73 g; fotos de usos: pólvora, tormenta, natación, baño): TDPacket, 7–15 días → TOTAL $7.47
 - T12 Orejeras (mismo modelo T10/AliExpress; rojo rosa/gris oscuro; S/M/L; 45 g): TDPacket, 7–15 días, envío $5.10 → TOTAL $6.75
+
+### Mejor proveedor por producto (TeemDrop, envío EE. UU.; comisiones ~7 %)
+| Producto | Principal | Respaldo | Precio sugerido | Ganancia aprox. |
+|---|---|---|---|---|
+| Cama trineo | T3 $16.50 (perros y gatos, incluye nido manzana) | T2 $20.68 | USD 44,95–49,95 | ~$25–30 |
+| Disfraz árbol | T6 $7.44 | T5 $7.64 (mismo) | USD 24,95–29,95 | ~$16–20 |
+| Orejeras | T10 $6.58 (mismo modelo 4,8★ AliExpress, S–XL) | T12 $6.75 | USD 24,95–29,95 | ~$17–21 |
+Alternativas orejeras: T11 $7.47 (7 colores, azul marino); T8 $10.41 acolchada tipo casco (más premium).
+Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche latido.
