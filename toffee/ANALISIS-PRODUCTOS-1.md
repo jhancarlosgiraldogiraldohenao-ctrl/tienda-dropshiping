@@ -92,3 +92,4 @@ Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche lat
 
 ## Envío por país · Trineo T3 (TeemDrop)
 - Colombia: única opción Jitong Global-Sensitive 15–20 días. TOTAL L $66.12 · M $45.03 · S $43.37
+- México (talla S mostrada, envío opciones: YUN-EconoLink $17.55 8–15d · YUN-Cosmetics $23.65 · Jitong $26.27 10–20d [seleccionado, TOTAL S $35.81] · TDPacket $32.41 · HH $33.49). Jay reporta TOTAL L $70.47 · M $68.81 · S $35.81 (con Jitong). Con YUN-EconoLink S ≈ $27.09
