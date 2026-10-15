@@ -89,3 +89,6 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 | Orejeras | T10 $6.58 (mismo modelo 4,8★ AliExpress, S–XL) | T12 $6.75 | USD 24,95–29,95 | ~$17–21 |
 Alternativas orejeras: T11 $7.47 (7 colores, azul marino); T8 $10.41 acolchada tipo casco (más premium).
 Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche latido.
+
+## Envío por país · Trineo T3 (TeemDrop)
+- Colombia: única opción Jitong Global-Sensitive 15–20 días. TOTAL L $66.12 · M $45.03 · S $43.37
