@@ -103,3 +103,4 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 
 ## Envío por país · Disfraz T6
 - Colombia: S/M/L igual TOTAL $7.66 (Jitong Global-Sensitive $5.73, 15–20d ✅ elegir; TDPacket Electro $6.21 15–45d ❌)
+- México: S/M/L igual TOTAL $6.54 (YUN-EconoLink $4.61, 8–15d ✅ elegir)
