@@ -57,3 +57,12 @@ Lectura preliminar: disfraz y orejeras son baratos y livianos (margen amplio); t
 | D3 …156186504 | 12.361–12.414 | 4,5★ · 2 reseñas · 30 vendidos | Reseña buena ("¡Fabuloso!") pero sin foto |
 | D4 …781254048 | 11.798–14.498 | Pet Delight Store 4,2★ (+1000 vendidos de la tienda) | Tabla de tallas S/M/L en cm, poliéster |
 Conclusión: lo que venden es una CAPA plana, no el disfraz 3D del video viral. La foto real (D2) se ve barata → riesgo de "no es como en el video". Disfraz EN PAUSA hasta encontrar el modelo 3D con fotos reales buenas. Prioridad: orejeras.
+
+## Orejeras · revisión del video de Jay (15-oct)
+| Proveedor | Precio visto (Welcome deal) | Reseñas | Notas |
+|---|---|---|---|
+| O1 …719866784 | 4.912 (solo gris, S/M) | 1,0★ · 1 reseña | Reseña: "como sujetadores rellenos de espuma" → DESCARTADO |
+| O2 …567750173 | 3.917–11.691 según color/talla (S, M, L, XL; gris, beige, azul, rosa, rojo, "thicken" gruesa) | 4,8★ · 6 reseñas | Reseñas buenas (tela suave, elástica, ajusta bien, reduce ruido, sirve en el baño); fotos reales de perro pequeño con capucha rosa → coincide. PRINCIPAL |
+| O3 …418944039 | 5.296 (pack 3) | — | No cargó (captcha de AliExpress) |
+| O4 …777159854 | — | — | No alcanzó a verse |
+Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y gatos"; costo real en DSers; ver O3/O4 como respaldo.
