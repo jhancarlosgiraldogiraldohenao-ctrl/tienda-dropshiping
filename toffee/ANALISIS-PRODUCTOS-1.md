@@ -95,3 +95,7 @@ Sin capturas: cama esponjosa, sudadera reno, sudadera porta-mascota, peluche lat
 - México (talla S mostrada, envío opciones: YUN-EconoLink $17.55 8–15d · YUN-Cosmetics $23.65 · Jitong $26.27 10–20d [seleccionado, TOTAL S $35.81] · TDPacket $32.41 · HH $33.49). Jay reporta TOTAL L $70.47 · M $68.81 · S $35.81 (con Jitong). Con YUN-EconoLink S ≈ $27.09
 - Chile (opciones talla S: TDPacket Sensible $27.94 15–22d [TOTAL $37.48] · YUN-Electro $42.24 19–21d). Jay: TOTAL L $105.68 · M $68.63 · S $51.78
 - Argentina (única: TDPacket Sensible, 15–25d). TOTAL L no disponible · M $83.37 · S $62.20
+- Perú (única: TDPacket Sensible 15–25d). TOTAL L no disponible · M $62.30 · S $47.85
+### Conclusión trineo (precio USD 69,95, comisiones ~7 %)
+Solo talla S es viable. Ganancia S: MX ~$29 (o ~$38 con YUN-EconoLink $27.09) · CO ~$22 · PE ~$17 · CL ~$13 (dudoso; captura mostraba $37.48 → ~$28) · AR ~$3 ❌.
+Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Argentina NO. M y L no.
