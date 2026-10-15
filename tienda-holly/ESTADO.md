@@ -179,3 +179,6 @@ Siguiente: revisar precios competencia → Jay importa a Shopify con TeemDrop ("
 ## Países (15-oct) · dLocal Go (helpcenter oficial)
 Vende en: Argentina, Bolivia, Brasil, Chile, Colombia, Costa Rica, Ecuador, Guatemala, México, Paraguay, Panamá, Rep. Dominicana, Perú, Uruguay (+ Indonesia, Malasia, Kenia, Nigeria). EE. UU. NO aparece → confirmar con dLocal si acepta tarjetas de EE. UU.; si no, activar PayPal para EE. UU.
 Plan: Fase 1 = México, Colombia, Chile, Argentina, Perú (+ EE. UU. si se confirma pago). Fase 2 = Ecuador, Uruguay, Costa Rica, Panamá, Guatemala, Rep. Dominicana, Paraguay, Bolivia (si TeemDrop envía ≤20 días y precio da). Brasil no (portugués).
+
+## PREFERENCIA (15-oct): tablas de precios SIEMPRE en USD + COP, y en moneda local de cada país (MXN, PEN, CLP, ARS).
+Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP · 1.450 ARS (verificar; Shopify Markets convierte con tasa del día).
