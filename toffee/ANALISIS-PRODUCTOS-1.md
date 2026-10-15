@@ -73,3 +73,4 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 - T3 Cama trineo (rojo/marrón + nido manzana roja; S/M/L; 780 g; 'cats and dogs'): TDPacket, 7–15 días, envío $12.57 → TOTAL $16.50
 - T4 Disfraz/capa árbol de Navidad (verde/rojo; S/M/L; 78 g): TDPacket, 7–15 días, envío $5.48 → TOTAL $7.61
 - T5 Disfraz/capa árbol (verde/rojo; S/M/L; 80 g; foto con perro real): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.64
+- T6 Disfraz/capa árbol (mismo modelo T5; 80 g): TDPacket, 7–15 días, envío $5.51 → TOTAL $7.44 (el más barato del disfraz)
