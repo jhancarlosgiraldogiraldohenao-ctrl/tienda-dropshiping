@@ -114,3 +114,4 @@ Vender solo S (gatos y perros pequeños) en MX, CO, PE (+CL si se confirma). Arg
 - México (YUN-EconoLink 8–15d ✅): XL $6.47 · L $6.32 · M $6.26 · S $6.07
 - Chile (TDPacket Sensible 15–22d ✅): XL $8.61 · L $8.46 · M $8.36 · S $8.19
 - Argentina (TDPacket Sensible 15–25d, única): XL $12.24 · L $12.03 · M $11.83 · S $11.47
+- Perú (TDPacket Sensible 15–25d, única): XL $12.45 · L $12.28 · M $12.15 · S $11.91
