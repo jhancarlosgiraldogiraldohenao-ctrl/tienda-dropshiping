@@ -79,3 +79,4 @@ Pendiente: confirmar que sirve para gatos (talla S) o buscar listado "perros y g
 - T9 = mismo T8 (otra foto; velcro, almohadillas sobre oídos) → TOTAL $10.41
 - T10 Orejeras (MISMO modelo que AliExpress …567750173 4,8★: rojo rosa, gris oscuro, versión gruesa; S/M/L/XL; 52 g; velcro, impermeable): TDPacket, 7–15 días → TOTAL $6.58 (el más barato de orejeras)
 - T11 Orejeras (7 colores incl. AZUL MARINO y negro; S/M/L; 73 g; fotos de usos: pólvora, tormenta, natación, baño): TDPacket, 7–15 días → TOTAL $7.47
+- T12 Orejeras (mismo modelo T10/AliExpress; rojo rosa/gris oscuro; S/M/L; 45 g): TDPacket, 7–15 días, envío $5.10 → TOTAL $6.75
