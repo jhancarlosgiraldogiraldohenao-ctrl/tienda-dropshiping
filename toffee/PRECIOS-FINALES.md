@@ -1,25 +1,23 @@
-# Soy Toffee · Precios y ganancia neta (15-oct)
+# Soy Toffee · Precios y ganancia neta (v2, 15-oct)
 Tasas: 1 USD ≈ 3.220 COP · 17,5 MXN · 930 CLP · 1.450 ARS · 3,5 PEN
 
-## Costos en % del precio (conservador) = 15 %
-- dLocal Go: comisión tarjeta + IVA local (~3,5–4,5 %) + tasa de cambio (~2,5 %) → 7 %
-- Shopify (pasarela externa): 2 %
-- Donación Toffee a animalitos de calle: 3 %
-- Colchón (reembolsos USD 1, pedidos perdidos, pago a TeemDrop): 3 %
-- TeemDrop: $0 mensualidad; costo producto+envío ya incluido.
-- Pauta (si se activa): CPA estimado USD 10 (disfraz/orejeras) y USD 15 (trineo).
+## Colchón y costos
+- Costo TeemDrop inflado +15 % (subidas de precio, envío, tasa de cambio).
+- % del precio = 17 %: dLocal 7 % · Shopify 2 % · Donación Toffee 3 % · Colchón 5 % (reembolsos, perdidos, imprevistos).
+- Pauta (si se activa): CPA estimado USD 10 (disfraz/orejeras), USD 15 (trineo).
+- Competencia: Viking Paws vende el disfraz a 82.925 COP → nuestro disfraz 79.900 COP.
 
-## Precio único por producto (todas las tallas)
+## Precios (todas las tallas)
 | Producto | USD | COP | MXN | CLP | ARS | PEN |
 |---|---|---|---|---|---|---|
-| Disfraz árbol (S/M/L) | 34,95 | 112.900 | 619 | 32.990 | 50.990 | 124,90 |
-| Orejeras (S/M/L/XL) | 34,95 | 112.900 | 619 | 32.990 | 50.990 | 124,90 |
-| Trineo (solo S) | 79,95 | 259.900 | 1.399 | 74.990 | — | 279,90 |
+| Disfraz | 24,95 | 79.900 | 439 | 23.990 | 36.990 | 89,90 |
+| Orejeras | 29,95 | 96.900 | 529 | 27.990 | 43.990 | 104,90 |
+| Trineo (S) | 79,95 | 259.900 | 1.399 | 74.990 | — | 279,90 |
 
 ## Ganancia neta USD (orgánico / con pauta)
 | Producto | MX | CO | CL | AR | PE |
 |---|---|---|---|---|---|
-| Disfraz | 23,2 / 13,2 | 22,1 / 12,1 | 21,1 / 11,1 | 17,5 / 7,5 | 17,2 / 7,2 |
-| Orejeras | 23,2 / 13,2 | 22,1 / 12,1 | 21,1 / 11,1 | 17,5 / 7,5 | 17,3 / 7,3 |
-| Trineo | 40,9 / 25,9 | 24,6 / 9,6 | 30,5 / 15,5 | ❌ | 20,1 / 5,1 |
-Pendiente: confirmar % exactos de dLocal por país (dlocalgo.com/es/cobertura/#pricing).
+| Disfraz | 13,2 / 3,2 | 11,9 / 1,9 | 10,8 / 0,8 | 6,6 / ❌ | 6,4 / ❌ |
+| Orejeras | 17,4 / 7,4 | 16,1 / 6,1 | 15,0 / 5,0 | 10,8 / 0,8 | 10,5 / 0,5 |
+| Trineo | 35,2 / 20,2 | 16,5 / 1,5 | 23,3 / 8,3 | ❌ | 11,3 / ❌ |
+Pauta recomendada solo: orejeras MX/CO/CL; trineo MX/CL; disfraz = orgánico/combos.
