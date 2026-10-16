@@ -7,15 +7,15 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 ## Precios de venta
 | Producto | USD | COP | MXN | CLP | PEN |
 |---|---|---|---|---|---|
-| Disfraz árbol (S/M/L) | 25,45 | 81.900 | 449 | 23.990 | 89,90 |
-| Orejeras anti ruido (versión engrosada S–XL) | 25,45 | 81.900 | 449 | 23.990 | 89,90 |
+| Disfraz árbol (S/M/L) | 24,95 | 79.900 | 439 | 22.990 | 86,90 |
+| Orejeras anti ruido (versión engrosada S–XL) | 24,95 | 79.900 | 439 | 22.990 | 86,90 |
 | Trineo (S) | 74,95 | 239.900 | 1.299 | 69.990 | 259,90 |
 
 ## Ganancia neta por venta (COP)
 | Producto | MX | CO | CL | PE |
 |---|---|---|---|---|
-| Disfraz | 44.400 | 39.700 | 37.000 | 22.400 |
-| Orejeras (engrosada) | 44.500 | 39.600 | 36.800 | 21.400 |
+| Disfraz | 42.900 | 38.000 | 34.100 | 20.100 |
+| Orejeras (engrosada) | 43.000 | 38.000 | 34.000 | 19.100 |
 | Trineo | 98.100 | 38.500 | 62.300 | 21.300 |
 
 ## Competencia (TikTok, 15-oct)
@@ -30,3 +30,4 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 - Orejeras: se vende la VERSIÓN ENGROSADA (más protección para la pólvora). XL engrosada: CO $7.64 (Jitong Sensitive) · PE $12.75 (TDPacket Sensible). Solo existe en GRIS OSCURO (4 variantes: engrosada S, M, L, XL). Costo TD unitario $1.76 + envío CO $5.91 = $7.67.
 - 16-oct: Perú sube a 99,90 PEN en disfraz y orejeras (precio fijo por país en Shopify Markets). Combos eliminados por ahora.
 - 16-oct (v5): MISMO precio en todos los países. Disfraz y orejeras = 81.900 COP (≈ Viking Paws 82.927 menos 1.000). Trineo sin cambios.
+- 16-oct (v6 FINAL): disfraz y orejeras = 79.900 COP (debajo de la barrera de 80 mil). Mismo precio en todos los países.
