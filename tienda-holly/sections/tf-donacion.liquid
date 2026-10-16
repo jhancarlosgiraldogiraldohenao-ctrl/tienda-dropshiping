@@ -1,0 +1,42 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+
+<section class="hl-section tf-donacion" id="{{ section.settings.ancla | default: 'donacion' }}">
+  <div class="hl-container">
+    <div class="tf-donacion__caja hl-reveal">
+      <div class="tf-donacion__huella" aria-hidden="true">
+        <svg viewBox="0 0 64 64" width="64" height="64"><g fill="currentColor"><ellipse cx="32" cy="42" rx="13" ry="11"/><ellipse cx="15" cy="27" rx="6" ry="7.5"/><ellipse cx="49" cy="27" rx="6" ry="7.5"/><ellipse cx="24" cy="15" rx="5.5" ry="7"/><ellipse cx="40" cy="15" rx="5.5" ry="7"/></g></svg>
+        {%- if section.settings.porcentaje != blank -%}<strong>{{ section.settings.porcentaje }}</strong>{%- endif -%}
+      </div>
+      <div class="tf-donacion__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto }}</p>{%- endif -%}
+        {%- if section.blocks.size > 0 -%}
+          <ul class="tf-donacion__puntos">
+            {%- for block in section.blocks -%}<li {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: 'check' %}<span>{{ block.settings.texto }}</span></li>{%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- if section.settings.firma != blank -%}<p class="tf-donacion__firma">{{ section.settings.firma }}</p>{%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Donación",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "porcentaje", "label": "Número grande", "default": "3 %" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "La regla del corazón de Toffee" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>" },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle." },
+    { "type": "text", "id": "firma", "label": "Firma", "default": "— Toffee 🐾" },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "donacion" }
+  ],
+  "blocks": [
+    { "type": "punto", "name": "Punto", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "El 3 % de cada venta se separa para donar." } ] }
+  ],
+  "presets": [{ "name": "Toffee – Donación", "blocks": [ { "type": "punto" } ] }]
+}
+{% endschema %}

@@ -14,6 +14,10 @@
         <div class="hl-arco">
           {%- if section.settings.imagen != blank -%}
             <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1333">
+          {%- elsif product and product.media.size > 0 -%}
+            {%- assign idx = section.settings.foto_producto | minus: 1 -%}
+            {%- assign fp = product.media[idx] | default: product.featured_media -%}
+            <img src="{{ fp | image_url: width: 1000 }}" alt="{{ fp.alt | default: product.title | escape }}" loading="lazy" width="1000" height="1333">
           {%- else -%}
             <img src="{{ 'hl-curcuma.jpg' | asset_url }}" alt="Detalle del arbolito proyector" loading="lazy" width="1024" height="1536">
           {%- endif -%}
@@ -70,6 +74,12 @@
       "type": "image_picker",
       "id": "imagen",
       "label": "Foto"
+    },
+    {
+      "type": "range",
+      "id": "foto_producto",
+      "label": "Si no hay imagen: usar la foto N del producto",
+      "min": 1, "max": 10, "step": 1, "default": 2
     },
     {
       "type": "text",

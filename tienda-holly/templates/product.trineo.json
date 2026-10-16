@@ -1,0 +1,398 @@
+{
+  "sections": {
+    "principal": {
+      "type": "hl-producto",
+      "settings": {
+        "eyebrow": "Aprobado por Toffee 💤",
+        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
+        "sello": "Envío gratis",
+        "ofertas_titulo": "Elige tu opción",
+        "oferta_1_nota": "",
+        "oferta_1_etiqueta": "",
+        "oferta_2_nota": "",
+        "texto_ahorro": "Ahorras",
+        "mostrar_miniaturas": true,
+        "comprar_texto": "Comprar ahora",
+        "comprar_corto": "Comprar",
+        "comprar_nota": "Pago 100% seguro con tarjeta",
+        "carrito_texto": "Agregar al carrito",
+        "agotado_texto": "Agotado",
+        "desc_titulo": "Descripción",
+        "abrir_descripcion": false,
+        "envio_titulo": "Envío y pago",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 20 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
+        "titulo_size": 44,
+        "modo_colores": true,
+        "modo_pildoras": true,
+        "titulo_corto": "Cama Trineo Navideña para mascotas",
+        "subtitulo": "50 × 38 × 26 cm · Para gatos y perritos pequeños",
+        "intro": "El trineo de Papá Noel convertido en cama. Bordes de peluche blanco, paredes altas y acolchadas, y un cojín suave para que tu mascota se acurruque. Toffee la probó por 14 horas seguidas: aprobada.",
+        "puntos": "Medidas: 50 cm de largo × 38 cm de ancho × 26 cm de alto\nPara gatos y perros pequeños (hasta unos 7 kg)\nFelpa suave con relleno de algodón\nParedes altas para apoyar la cabeza\nDecora tu casa en Navidad",
+        "sticky_texto": "Cama Trineo Navideña"
+      },
+      "blocks": {
+        "b0": {
+          "type": "confianza",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "Con rastreo"
+          }
+        },
+        "b1": {
+          "type": "confianza",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Con tarjeta"
+          }
+        },
+        "b2": {
+          "type": "confianza",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si no llega, te devolvemos tu dinero"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "donacion": {
+      "type": "tf-donacion",
+      "settings": {
+        "porcentaje": "3 %",
+        "eyebrow": "La regla del corazón de Toffee",
+        "titulo": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>",
+        "texto": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle.",
+        "firma": "— Toffee 🐾",
+        "ancla": "donacion"
+      },
+      "blocks": {
+        "b0": {
+          "type": "punto",
+          "settings": {
+            "texto": "El 3 % de cada venta se separa para donar."
+          }
+        },
+        "b1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Lo entregamos a fundaciones y rescatistas que ayudan a animales de la calle."
+          }
+        },
+        "b2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Publicamos cada donación con su comprobante en nuestras redes @toffee.elgato."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "activos": {
+      "type": "hl-activos",
+      "settings": {
+        "eyebrow": "Hecha para consentirlo",
+        "titulo": "<p>Su cama, <em>tu decoración</em></p>",
+        "texto": "A los gatos y perritos pequeños les encantan los lugares con bordes donde acurrucarse. Esta cama les da justo eso, y a tu casa le da Navidad.",
+        "nota": "Disponible en rojo y en café (estilo reno).",
+        "ancla": "detalles",
+        "titulo_size": 60,
+        "foto_producto": 2
+      },
+      "blocks": {
+        "b0": {
+          "type": "activo",
+          "settings": {
+            "icono": "copo",
+            "titulo": "Calientita",
+            "texto": "Felpa suave y bordes de peluche que guardan el calor."
+          }
+        },
+        "b1": {
+          "type": "activo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Paredes altas",
+            "texto": "Se acurruca y apoya la cabeza en el borde acolchado."
+          }
+        },
+        "b2": {
+          "type": "activo",
+          "settings": {
+            "icono": "arbol",
+            "titulo": "Decora tu casa",
+            "texto": "Parece el trineo de Papá Noel: queda hermosa junto al árbol."
+          }
+        },
+        "b3": {
+          "type": "activo",
+          "settings": {
+            "icono": "regalo",
+            "titulo": "Regalo perfecto",
+            "texto": "Para quien ama a su mascota (o para tu mascota misma)."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "ritual": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "Cuando llegue",
+        "titulo": "<p>Así la <em>preparas</em></p>",
+        "texto": "Llega comprimida al vacío para que el envío sea más rápido.",
+        "nota": "Medidas: 50 × 38 × 26 cm. Para gatos y perritos de hasta unos 7 kg.",
+        "ancla": "como-funciona",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ábrela",
+            "texto": "Sácala de la bolsa y sacúdela con las manos."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Déjala respirar",
+            "texto": "En unas horas (hasta 24 h) recupera toda su forma."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Míralo",
+            "texto": "Tu mascota se mete solita… y ya no quiere salir."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "comparativa": {
+      "type": "hl-comparativa",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Más que <em>una camita</em></p>",
+        "texto": "Frente a una cama de mascota común.",
+        "col_nos": "Trineo de Toffee",
+        "col_otros": "Cama común",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Diseño de trineo navideño que decora tu casa",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Paredes altas para acurrucarse",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Bordes de peluche suave",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b3": {
+          "type": "fila",
+          "settings": {
+            "texto": "Parte de tu compra ayuda a animales de la calle",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b4": {
+          "type": "fila",
+          "settings": {
+            "texto": "Cómoda para dormir",
+            "nos": true,
+            "otros": true
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "seguro": {
+      "type": "hl-seguro",
+      "settings": {
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
+        "texto": "Así funciona tu pedido, paso a paso.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 10 a 25 días hábiles según tu país y ciudad.",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
+          }
+        },
+        "b1": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
+          }
+        },
+        "b2": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Llega a tiempo",
+            "texto": "Pide antes del 20 de noviembre y recíbelo antes de Navidad."
+          }
+        },
+        "b3": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Lo que todos <em>preguntan</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué tamaño tiene?",
+            "respuesta": "<p>50 cm de largo × 38 cm de ancho × 26 cm de alto. Ideal para gatos y perros pequeños de hasta unos 7 kg.</p>"
+          }
+        },
+        "b1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Por qué llega aplastada?",
+            "respuesta": "<p>Viene comprimida al vacío para que el envío sea más rápido y barato. Al abrirla, sacúdela y en unas horas (hasta 24 h) recupera su forma.</p>"
+          }
+        },
+        "b2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Se puede lavar?",
+            "respuesta": "<p>Sí, a mano con agua fría y jabón suave. Déjala secar a la sombra.</p>"
+          }
+        },
+        "b3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), 100% seguro. Pagas al hacer tu pedido.</p>"
+          }
+        },
+        "b4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tarda en llegar?",
+            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+          }
+        },
+        "b5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada. El envío es gratis a México, Colombia, Chile y Perú.</p>"
+          }
+        },
+        "b6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
+          }
+        },
+        "b7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no llega o llega dañado?",
+            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+          }
+        },
+        "b8": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Toffee es un gato de verdad?",
+            "respuesta": "<p>Toffee es un personaje creado con inteligencia artificial: es nuestro jefe y la cara de la tienda. Los productos sí son 100% reales y te llegan a tu casa.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8"
+      ]
+    }
+  },
+  "order": [
+    "principal",
+    "donacion",
+    "activos",
+    "ritual",
+    "comparativa",
+    "seguro",
+    "faq"
+  ]
+}

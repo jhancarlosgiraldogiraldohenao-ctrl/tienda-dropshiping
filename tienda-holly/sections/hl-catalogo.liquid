@@ -57,7 +57,7 @@
             <h3>{{ block.settings.titulo | default: p.title }}</h3>
             {%- if block.settings.frase != blank -%}<p>{{ block.settings.frase }}</p>{%- endif -%}
             <div class="hl-tarjeta__precio">
-              <strong>{{ v.price | money_without_trailing_zeros }}</strong>
+              <strong>{{ v.price | money_without_trailing_zeros }}</strong><small class="tf-moneda">{{ cart.currency.iso_code }}</small>
               {%- if v.compare_at_price > v.price -%}
                 <s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>
                 <span>-{{ v.compare_at_price | minus: v.price | times: 100.0 | divided_by: v.compare_at_price | round }}%</span>

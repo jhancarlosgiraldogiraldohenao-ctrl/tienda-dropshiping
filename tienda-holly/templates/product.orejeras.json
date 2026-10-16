@@ -1,0 +1,407 @@
+{
+  "sections": {
+    "principal": {
+      "type": "hl-producto",
+      "settings": {
+        "eyebrow": "Aprobado por Toffee 💤",
+        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
+        "sello": "Envío gratis",
+        "ofertas_titulo": "Elige tu opción",
+        "oferta_1_nota": "",
+        "oferta_1_etiqueta": "",
+        "oferta_2_nota": "",
+        "texto_ahorro": "Ahorras",
+        "mostrar_miniaturas": true,
+        "comprar_texto": "Comprar ahora",
+        "comprar_corto": "Comprar",
+        "comprar_nota": "Pago 100% seguro con tarjeta",
+        "carrito_texto": "Agregar al carrito",
+        "agotado_texto": "Agotado",
+        "desc_titulo": "Descripción",
+        "abrir_descripcion": false,
+        "envio_titulo": "Envío y pago",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 20 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
+        "titulo_size": 44,
+        "modo_colores": true,
+        "modo_pildoras": true,
+        "titulo_corto": "Orejeras anti ruido para perros",
+        "subtitulo": "Versión engrosada · Para la pólvora, tormentas y el baño",
+        "intro": "La pólvora de diciembre es la peor noche del año para muchos perros. Estas orejeras acolchadas cubren sus oídos y amortiguan los ruidos fuertes para que esté más tranquilo.",
+        "puntos": "Versión engrosada: más tela y más relleno\nAmortigua pólvora, truenos, secador y peluquería\nSe ajusta con velcro, sin apretar\nResistente al agua: sirve también en el baño\nPara perros desde 7,5 kg (tallas S a XL)",
+        "guia_tallas": "📏 ¿No sabes su talla? Mira la guía de tallas en las fotos.",
+        "sticky_texto": "Orejeras anti ruido"
+      },
+      "blocks": {
+        "b0": {
+          "type": "confianza",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "Con rastreo"
+          }
+        },
+        "b1": {
+          "type": "confianza",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Con tarjeta"
+          }
+        },
+        "b2": {
+          "type": "confianza",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si no llega, te devolvemos tu dinero"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "donacion": {
+      "type": "tf-donacion",
+      "settings": {
+        "porcentaje": "3 %",
+        "eyebrow": "La regla del corazón de Toffee",
+        "titulo": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>",
+        "texto": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle.",
+        "firma": "— Toffee 🐾",
+        "ancla": "donacion"
+      },
+      "blocks": {
+        "b0": {
+          "type": "punto",
+          "settings": {
+            "texto": "El 3 % de cada venta se separa para donar."
+          }
+        },
+        "b1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Lo entregamos a fundaciones y rescatistas que ayudan a animales de la calle."
+          }
+        },
+        "b2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Publicamos cada donación con su comprobante en nuestras redes @toffee.elgato."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "activos": {
+      "type": "hl-activos",
+      "settings": {
+        "eyebrow": "Por qué funcionan",
+        "titulo": "<p>Menos ruido, <em>más calma</em></p>",
+        "texto": "Galleta, el empleado más miedoso de Toffee, no sale de debajo de la cama cuando hay pólvora. Por eso Toffee aprobó estas orejeras.",
+        "nota": "Versión engrosada en gris oscuro.",
+        "ancla": "detalles",
+        "titulo_size": 60,
+        "foto_producto": 2
+      },
+      "blocks": {
+        "b0": {
+          "type": "activo",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Cubre los oídos",
+            "texto": "La capucha tapa las dos orejas y amortigua los sonidos fuertes."
+          }
+        },
+        "b1": {
+          "type": "activo",
+          "settings": {
+            "icono": "capas",
+            "titulo": "Versión engrosada",
+            "texto": "Más acolchada que la orejera común para proteger mejor del ruido."
+          }
+        },
+        "b2": {
+          "type": "activo",
+          "settings": {
+            "icono": "mano",
+            "titulo": "Ajuste con velcro",
+            "texto": "Se cierra debajo de la quijada: firme pero cómoda."
+          }
+        },
+        "b3": {
+          "type": "activo",
+          "settings": {
+            "icono": "gota",
+            "titulo": "Resiste el agua",
+            "texto": "También sirve en el baño para que no le entre agua a los oídos."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "ritual": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "Antes de la noche de pólvora",
+        "titulo": "<p>Acostúmbralo <em>en 3 pasos</em></p>",
+        "texto": "Así la recibe como algo bueno y no como un castigo.",
+        "nota": "Reduce el ruido, no lo elimina por completo. Si tu perro sufre mucha ansiedad, consulta también con tu veterinario.",
+        "ancla": "como-funciona",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Preséntasela",
+            "texto": "Déjala que la huela y dale un premio."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Pruébala",
+            "texto": "Pónsela unos minutos al día con caricias y premios."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Úsala",
+            "texto": "En la noche de pólvora o tormenta, pónsela antes de que empiece el ruido."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "comparativa": {
+      "type": "hl-comparativa",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>No es una orejera <em>cualquiera</em></p>",
+        "texto": "Frente a las orejeras delgadas que venden por ahí.",
+        "col_nos": "Orejeras de Toffee",
+        "col_otros": "Orejera común",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Versión engrosada con más relleno",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Guía de tallas clara (S a XL)",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Resistente al agua",
+            "nos": true,
+            "otros": true
+          }
+        },
+        "b3": {
+          "type": "fila",
+          "settings": {
+            "texto": "Ajuste con velcro",
+            "nos": true,
+            "otros": true
+          }
+        },
+        "b4": {
+          "type": "fila",
+          "settings": {
+            "texto": "Parte de tu compra ayuda a animales de la calle",
+            "nos": true,
+            "otros": false
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "seguro": {
+      "type": "hl-seguro",
+      "settings": {
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
+        "texto": "Así funciona tu pedido, paso a paso.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 10 a 25 días hábiles según tu país y ciudad.",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "candado",
+            "titulo": "Pago seguro",
+            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
+          }
+        },
+        "b1": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "camion",
+            "titulo": "Envío gratis",
+            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
+          }
+        },
+        "b2": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "reloj",
+            "titulo": "Llega a tiempo",
+            "texto": "Pide antes del 20 de noviembre y recíbelo antes de Navidad."
+          }
+        },
+        "b3": {
+          "type": "tarjeta",
+          "settings": {
+            "icono": "escudo",
+            "titulo": "Garantía",
+            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Lo que todos <em>preguntan</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Qué talla le pido a mi perro?",
+            "respuesta": "<p>Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. S: 25–38 cm (7,5–17,5 kg) · M: 35–48 cm (17,5–30 kg) · L: 45–60 cm (30–42,5 kg) · XL: 55–71 cm (42,5–60 kg). Si queda entre dos tallas, elige la más grande.</p>"
+          }
+        },
+        "b1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para gatos o perritos muy pequeños?",
+            "respuesta": "<p>No. Está hecha para perros desde 7,5 kg. A un gato o a un chihuahua le quedaría grande.</p>"
+          }
+        },
+        "b2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Elimina el ruido por completo?",
+            "respuesta": "<p>No: lo amortigua. Ayuda mucho a que esté más tranquilo, sobre todo si se acostumbra a ella antes de la noche de pólvora.</p>"
+          }
+        },
+        "b3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Le molesta usarla?",
+            "respuesta": "<p>La mayoría se acostumbra rápido si se la presentas con premios unos días antes. Quítasela si la intenta arrancar con fuerza.</p>"
+          }
+        },
+        "b4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), 100% seguro. Pagas al hacer tu pedido.</p>"
+          }
+        },
+        "b5": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto tarda en llegar?",
+            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+          }
+        },
+        "b6": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuánto cuesta el envío?",
+            "respuesta": "<p>Nada. El envío es gratis a México, Colombia, Chile y Perú.</p>"
+          }
+        },
+        "b7": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Me llega antes de Navidad?",
+            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
+          }
+        },
+        "b8": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si no llega o llega dañado?",
+            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+          }
+        },
+        "b9": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Toffee es un gato de verdad?",
+            "respuesta": "<p>Toffee es un personaje creado con inteligencia artificial: es nuestro jefe y la cara de la tienda. Los productos sí son 100% reales y te llegan a tu casa.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4",
+        "b5",
+        "b6",
+        "b7",
+        "b8",
+        "b9"
+      ]
+    }
+  },
+  "order": [
+    "principal",
+    "donacion",
+    "activos",
+    "ritual",
+    "comparativa",
+    "seguro",
+    "faq"
+  ]
+}

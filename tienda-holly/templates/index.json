@@ -9,7 +9,7 @@
         "titulo": "<p>Si no pasa mi prueba, <em>lo tiro de la mesa.</em></p>",
         "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que llega a mi tienda pasa primero por mis patitas, y solo se queda lo que yo apruebo.",
         "btn1_texto": "Ver lo que aprobé",
-        "btn1_url": "/products/casita-arbol-navidad-gatos",
+        "btn1_url": "#aprobado",
         "btn2_texto": "Conoce a Toffee",
         "btn2_url": "#toffee",
         "sello": "Aprobado por Toffee",
@@ -65,19 +65,19 @@
         "b2": {
           "type": "item",
           "settings": {
-            "texto": "Para gatos"
+            "texto": "Para gatos y perros"
           }
         },
         "b3": {
           "type": "item",
           "settings": {
-            "texto": "Para perritos pequeños"
+            "texto": "Pago seguro con tarjeta"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
-            "texto": "Pago seguro con tarjeta"
+            "texto": "3 % para peludos de la calle"
           }
         },
         "b5": {
@@ -89,13 +89,13 @@
         "b6": {
           "type": "item",
           "settings": {
-            "texto": "Calientito y suave"
+            "texto": "Garantía de entrega"
           }
         },
         "b7": {
           "type": "item",
           "settings": {
-            "texto": "Garantía de entrega"
+            "texto": "Navidad 2026 🎄"
           }
         }
       },
@@ -110,162 +110,13 @@
         "b7"
       ]
     },
-    "ritual": {
-      "type": "hl-ritual",
-      "settings": {
-        "eyebrow": "Así de fácil",
-        "titulo": "<p>Tres pasos y <em>listo</em></p>",
-        "texto": "Desde tu celular, en menos de 2 minutos.",
-        "nota": "Pide antes del 25 de noviembre para recibirla antes de Navidad.",
-        "ancla": "como-funciona",
-        "titulo_size": 64
-      },
-      "blocks": {
-        "b0": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Elige su color",
-            "texto": "Verde Navidad, Rojo Santa, Verde Pino o Vino."
-          }
-        },
-        "b1": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Pide con envío gratis",
-            "texto": "Pagas seguro con tarjeta y te llega a la puerta de tu casa."
-          }
-        },
-        "b2": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Ponla junto al árbol",
-            "texto": "Ponle una mantica que tu mascota conozca y en minutos se adueña de ella."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ]
-    },
-    "zonas": {
-      "type": "hl-zonas",
-      "settings": {
-        "eyebrow": "Elige su color",
-        "titulo": "<p>4 colores, <em>una casita</em></p>",
-        "texto": "Toca un color para verlo.",
-        "titulo_size": 64,
-        "ancla": "colores"
-      },
-      "blocks": {
-        "b0": {
-          "type": "zona",
-          "settings": {
-            "zona": "Verde Navidad",
-            "texto": "El clásico: verde, blanco y estrella roja, como un arbolito de verdad.",
-            "imagen": "shopify://shop_images/casita-verde-v2.jpg"
-          }
-        },
-        "b1": {
-          "type": "zona",
-          "settings": {
-            "zona": "Rojo Santa",
-            "texto": "Rojo y blanco con la carita de Papá Noel. El favorito para perritos.",
-            "imagen": "shopify://shop_images/casita-roja.jpg"
-          }
-        },
-        "b2": {
-          "type": "zona",
-          "settings": {
-            "zona": "Verde Pino",
-            "texto": "Un verde más profundo, elegante para cualquier sala.",
-            "imagen": "shopify://shop_images/casita-pino.jpg"
-          }
-        },
-        "b3": {
-          "type": "zona",
-          "settings": {
-            "zona": "Vino",
-            "texto": "Color vino con detalles navideños, cálido y distinto.",
-            "imagen": "shopify://shop_images/casita-vino.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
-    "comparativa": {
-      "type": "hl-comparativa",
-      "settings": {
-        "eyebrow": "La diferencia",
-        "titulo": "<p>Más que <em>una camita</em></p>",
-        "texto": "Frente a una cama de mascota común.",
-        "col_nos": "La casita de Toffee",
-        "col_otros": "Cama común",
-        "titulo_size": 60
-      },
-      "blocks": {
-        "b0": {
-          "type": "fila",
-          "settings": {
-            "texto": "Cueva cerrada donde se siente segura",
-            "nos": true,
-            "otros": false
-          }
-        },
-        "b1": {
-          "type": "fila",
-          "settings": {
-            "texto": "Decora tu casa como un arbolito de Navidad",
-            "nos": true,
-            "otros": false
-          }
-        },
-        "b2": {
-          "type": "fila",
-          "settings": {
-            "texto": "Tejida a mano con detalles navideños",
-            "nos": true,
-            "otros": false
-          }
-        },
-        "b3": {
-          "type": "fila",
-          "settings": {
-            "texto": "El regalo perfecto para tu peludo",
-            "nos": true,
-            "otros": false
-          }
-        },
-        "b4": {
-          "type": "fila",
-          "settings": {
-            "texto": "Un lugar cómodo para dormir",
-            "nos": true,
-            "otros": true
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
-    },
     "seguro": {
       "type": "hl-seguro",
       "settings": {
         "eyebrow": "Compra tranquilo",
         "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
         "texto": "Así funciona tu pedido, paso a paso.",
-        "aviso": "Envío con rastreo. Tiempo estimado de entrega: 8 a 20 días hábiles según tu ciudad.",
+        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 10 a 25 días hábiles según tu país y ciudad.",
         "titulo_size": 56
       },
       "blocks": {
@@ -290,7 +141,7 @@
           "settings": {
             "icono": "reloj",
             "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 25 de noviembre y recíbelo antes de Navidad."
+            "texto": "Pide antes del 20 de noviembre y recíbelo antes de Navidad."
           }
         },
         "b3": {
@@ -330,28 +181,21 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 8 y 20 días hábiles según tu ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
           }
         },
         "b2": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 25 de noviembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
           }
         },
         "b3": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis.</p>"
-          }
-        },
-        "b6": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿La casita para mascotas trae cojín?",
-            "respuesta": "<p>No, el cojín interior no viene incluido. Ponle una mantica que tu gato ya conozca y se adueña de ella más rápido.</p>"
+            "respuesta": "<p>Nada. El envío es gratis a México, Colombia, Chile y Perú.</p>"
           }
         },
         "b7": {
@@ -364,15 +208,8 @@
         "medidas": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Para qué tamaño de mascota sirve?",
-            "respuesta": "<p>Mide 50 cm de ancho × 50 cm de fondo × 60 cm de alto. Es ideal para gatos y perritos pequeños (hasta unos 6 kg).</p>"
-          }
-        },
-        "lavar": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Se puede lavar?",
-            "respuesta": "<p>Sí, a mano con agua tibia y jabón suave. Déjala secar a la sombra.</p>"
+            "pregunta": "¿Cómo sé qué talla pedir?",
+            "respuesta": "<p>Cada producto tiene su guía de tallas en las fotos. El disfraz va por peso (de 1,5 a 7,5 kg), las orejeras por la medida de la cabeza (perros desde 7,5 kg) y la cama trineo mide 50 × 38 × 26 cm.</p>"
           }
         },
         "toffee": {
@@ -380,6 +217,13 @@
           "settings": {
             "pregunta": "¿Quién es Toffee?",
             "respuesta": "<p>Toffee es el gato jefe de la tienda: un personaje creado con inteligencia artificial que prueba y presenta los productos. Él es de mentiras, pero los productos, los pagos y los envíos son 100% reales.</p>"
+          }
+        },
+        "dona": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿De verdad donan el 3 %?",
+            "respuesta": "<p>Sí. Separamos el 3 % de cada venta y lo entregamos a fundaciones y rescatistas de animales de la calle. Cada donación la publicamos con su comprobante en nuestras redes @toffee.elgato.</p>"
           }
         }
       },
@@ -390,22 +234,20 @@
         "b2",
         "b3",
         "medidas",
-        "b6",
-        "lavar",
+        "dona",
         "b7"
       ]
     },
     "cierre": {
       "type": "hl-cierre",
       "settings": {
-        "producto": "casita-arbol-navidad-gatos",
         "eyebrow": "Navidad 2026",
         "titulo": "<p>Este año, <em>que también sea su Navidad</em></p>",
-        "texto": "Pídela hoy con envío gratis y dale a tu mascota su propio arbolito. Aprobada por Toffee 💤",
-        "imagen": "shopify://shop_images/casita-4colores.jpg",
-        "btn_texto": "Quiero la casita",
+        "texto": "Pide hoy con envío gratis y consiente a tu peludo con algo que yo mismo aprobé. 💤",
+        "imagen": "shopify://shop_images/toffee-acostado-horizontal.jpg",
+        "btn_texto": "Ver lo que aprobé",
         "titulo_size": 72,
-        "btn_url": "/products/casita-arbol-navidad-gatos"
+        "btn_url": "#aprobado"
       },
       "blocks": {
         "c0": {
@@ -426,7 +268,7 @@
           "type": "chip",
           "settings": {
             "icono": "regalo",
-            "texto": "4 colores"
+            "texto": "3 % para peludos de la calle"
           }
         }
       },
@@ -434,58 +276,6 @@
         "c0",
         "c1",
         "c2"
-      ]
-    },
-    "casita": {
-      "type": "hl-activos",
-      "settings": {
-        "eyebrow": "Aprobado por Toffee 💤",
-        "titulo": "<p>La casita que <em>aprobé este mes</em></p>",
-        "texto": "A los gatos y perritos pequeños les encantan los lugares cerraditos y calientes. La probé, me metí, me dormí tres horas. Aprobada.",
-        "imagen": "shopify://shop_images/toffee-casita-verde-sentado.jpg",
-        "nota": "Felpa tejida con pompones, estrella y muñequitos navideños.",
-        "ancla": "aprobado",
-        "titulo_size": 64
-      },
-      "blocks": {
-        "b0": {
-          "type": "activo",
-          "settings": {
-            "icono": "brillo",
-            "titulo": "Tejida a mano",
-            "texto": "Felpa gruesa y suave, con pompones de colores, estrella roja y muñequitos de Navidad."
-          }
-        },
-        "b1": {
-          "type": "activo",
-          "settings": {
-            "icono": "escudo",
-            "titulo": "Cueva cerrada",
-            "texto": "Tu gato se esconde, se enrolla y duerme tranquilo. Se siente protegido."
-          }
-        },
-        "b2": {
-          "type": "activo",
-          "settings": {
-            "icono": "copo",
-            "titulo": "Calientita",
-            "texto": "Ideal para noches frías: la felpa guarda el calor de tu mascota."
-          }
-        },
-        "b3": {
-          "type": "activo",
-          "settings": {
-            "icono": "arbol",
-            "titulo": "Decora tu casa",
-            "texto": "Parece un arbolito de Navidad. Queda hermosa en la sala o junto al árbol."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3"
       ]
     },
     "toffee": {
@@ -530,16 +320,95 @@
         "r1",
         "r2"
       ]
+    },
+    "aprobado": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Lo que aprobé este mes",
+        "titulo": "<p>Pasaron <em>mi prueba</em></p>",
+        "texto": "Los probé, los mordí, me dormí encima. Estos son los únicos que no tiré de la mesa.",
+        "boton_texto": "Lo quiero",
+        "ancla": "aprobado",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "p0": {
+          "type": "producto",
+          "settings": {
+            "producto": "cama-trineo-navidad-mascotas",
+            "titulo": "Cama Trineo Navideña",
+            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
+            "etiqueta": "Favorito de Toffee"
+          }
+        },
+        "p1": {
+          "type": "producto",
+          "settings": {
+            "producto": "disfraz-arbol-navidad-perros",
+            "titulo": "Disfraz Árbol de Navidad",
+            "frase": "Tu mascota convertida en el arbolito más tierno de la casa. Para gatos y perritos.",
+            "etiqueta": "El más viral"
+          }
+        },
+        "p2": {
+          "type": "producto",
+          "settings": {
+            "producto": "orejeras-anti-ruido-para-perros",
+            "titulo": "Orejeras anti ruido",
+            "frase": "Para que la pólvora de diciembre no sea la peor noche del año de tu perro.",
+            "etiqueta": "Para la pólvora"
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2"
+      ]
+    },
+    "donacion": {
+      "type": "tf-donacion",
+      "settings": {
+        "porcentaje": "3 %",
+        "eyebrow": "La regla del corazón de Toffee",
+        "titulo": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>",
+        "texto": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle.",
+        "firma": "— Toffee 🐾",
+        "ancla": "donacion"
+      },
+      "blocks": {
+        "d0": {
+          "type": "punto",
+          "settings": {
+            "texto": "El 3 % de cada venta se separa para donar."
+          }
+        },
+        "d1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Lo entregamos a fundaciones y rescatistas que ayudan a animales de la calle."
+          }
+        },
+        "d2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Publicamos cada donación con su comprobante en nuestras redes @toffee.elgato."
+          }
+        }
+      },
+      "block_order": [
+        "d0",
+        "d1",
+        "d2"
+      ]
     }
   },
   "order": [
     "hero",
     "cinta",
+    "aprobado",
     "toffee",
-    "casita",
-    "zonas",
-    "comparativa",
-    "ritual",
+    "donacion",
     "seguro",
     "faq",
     "cierre"

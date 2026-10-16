@@ -182,3 +182,16 @@ Plan: Fase 1 = México, Colombia, Chile, Argentina, Perú (+ EE. UU. si se confi
 
 ## PREFERENCIA (15-oct): tablas de precios SIEMPRE en USD + COP, y en moneda local de cada país (MXN, PEN, CLP, ARS).
 Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP · 1.450 ARS (verificar; Shopify Markets convierte con tasa del día).
+
+## 16-oct · Tienda con los 3 productos (TeemDrop)
+- Productos (importados con TeemDrop, proveedor "Soy Toffee"):
+  - Cama Trineo Navideña · /products/cama-trineo-navidad-mascotas · Rojo/Café, solo talla S 50×38×26 · 239.900 COP · plantilla product.trineo
+  - Disfraz Árbol de Navidad · /products/disfraz-arbol-navidad-perros · Verde/Rojo · S/M/L (1,5–7,5 kg) · 79.900 · product.disfraz
+  - Orejeras anti ruido (versión engrosada, solo gris oscuro) · /products/orejeras-anti-ruido-para-perros · S/M/L/XL · 79.900 · product.orejeras
+- Casita y Arbolito proyector → BORRADOR (ocultos, no borrados).
+- Portada nueva: hero → #aprobado (hl-catalogo con los 3) → Toffee → Donación 3 % (tf-donacion) → Compra tranquilo → FAQ → cierre. Respaldo de la portada vieja en scratchpad/index-backup-casita.json.
+- Menú: Inicio · Cama Trineo · Disfraz Árbol · Orejeras anti ruido · Contacto. Pie de página, anuncio y carrito vacío → /#aprobado o productos nuevos.
+- hl-producto: opción "modo_pildoras" (botones de color y talla) + texto guía de tallas. hl-activos usa foto N del producto si no hay imagen.
+- Guías de tallas (imagen) subidas a las fotos de orejeras y disfraz.
+- Envíos: zona Colombia + zona "México, Chile y Perú", gratis, "10 a 25 días hábiles". Se borró la zona International (EE. UU./Europa a 63.000).
+- PENDIENTE (Jay, en el admin): Mercados → agregar México, Chile y Perú con moneda local. La app CLI no tiene permiso de markets. Hoy todos ven COP.
