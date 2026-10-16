@@ -7,18 +7,15 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 ## Precios de venta
 | Producto | USD | COP | MXN | CLP | PEN |
 |---|---|---|---|---|---|
-| Disfraz árbol (S/M/L) | 22,95 | 74.900 | 399 | 21.990 | 79,90 |
-| Orejeras anti ruido (versión engrosada S–XL) | 22,95 | 74.900 | 399 | 21.990 | 79,90 |
-| Combo 2 iguales | 36,95 | 119.900 | 649 | 34.990 | 129,90 |
-| Kit Navidad (disfraz + orejeras para la pólvora) | 36,95 | 119.900 | 649 | 34.990 | 129,90 |
+| Disfraz árbol (S/M/L) | 22,95 | 74.900 | 399 | 21.990 | 99,90 |
+| Orejeras anti ruido (versión engrosada S–XL) | 22,95 | 74.900 | 399 | 21.990 | 99,90 |
 | Trineo (S) | 74,95 | 239.900 | 1.299 | 69.990 | 259,90 |
 
 ## Ganancia neta por venta (COP)
 | Producto | MX | CO | CL | PE |
 |---|---|---|---|---|
-| Disfraz | 36.700 | 33.800 | 31.200 | 14.800 |
-| Orejeras (engrosada) | 36.900 | 33.900 | 31.300 | 13.800 |
-| Combo / Kit (2 unidades) | ~51.000 | ~43.000 | ~35.500 | ~7.000 |
+| Disfraz | 36.700 | 33.800 | 31.200 | 30.100 |
+| Orejeras (engrosada) | 36.900 | 33.900 | 31.300 | 29.100 |
 | Trineo | 98.100 | 38.500 | 62.300 | 21.300 |
 
 ## Competencia (TikTok, 15-oct)
@@ -31,3 +28,4 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 - Si se abre EE. UU. con PayPal, el trineo compite con GingilNap (USD 59,95).
 - PENDIENTE página: optimizar velocidad para internet lento (imágenes comprimidas, carga diferida, pocos scripts).
 - Orejeras: se vende la VERSIÓN ENGROSADA (más protección para la pólvora). XL engrosada: CO $7.64 (Jitong Sensitive) · PE $12.75 (TDPacket Sensible). Solo existe en GRIS OSCURO (4 variantes: engrosada S, M, L, XL). Costo TD unitario $1.76 + envío CO $5.91 = $7.67.
+- 16-oct: Perú sube a 99,90 PEN en disfraz y orejeras (precio fijo por país en Shopify Markets). Combos eliminados por ahora.
