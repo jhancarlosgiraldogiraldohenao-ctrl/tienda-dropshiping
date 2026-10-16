@@ -1,0 +1,43 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+
+<section class="hl-section tf-paises" id="{{ section.settings.ancla | default: 'paises' }}">
+  <div class="hl-container">
+    <div class="tf-paises__caja hl-reveal">
+      <div>
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto }}</p>{%- endif -%}
+      </div>
+      <ul class="tf-paises__lista">
+        {%- for block in section.blocks -%}
+          <li class="tf-pais" {{ block.shopify_attributes }}>
+            <img src="{{ 'tf-bandera-' | append: block.settings.codigo | append: '.png' | asset_url }}" alt="Bandera de {{ block.settings.nombre | escape }}" width="34" height="34" loading="lazy">
+            <span>{{ block.settings.nombre }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Países",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Enviamos a" },
+    { "type": "richtext", "id": "titulo", "label": "Título", "default": "<p>Países donde <em>puedes comprar</em></p>" },
+    { "type": "text", "id": "texto", "label": "Texto", "default": "Envío gratis con rastreo · 10 a 25 días hábiles · Pago con tarjeta" },
+    { "type": "text", "id": "ancla", "label": "Ancla", "default": "paises" }
+  ],
+  "blocks": [
+    { "type": "pais", "name": "País", "settings": [
+      { "type": "select", "id": "codigo", "label": "País", "options": [
+        { "value": "mx", "label": "México" }, { "value": "co", "label": "Colombia" }, { "value": "cl", "label": "Chile" }, { "value": "pe", "label": "Perú" }
+      ], "default": "co" },
+      { "type": "text", "id": "nombre", "label": "Nombre visible", "default": "Colombia" }
+    ] }
+  ],
+  "presets": [{ "name": "Toffee – Países" }]
+}
+{% endschema %}

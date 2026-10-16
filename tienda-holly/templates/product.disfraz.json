@@ -307,6 +307,51 @@
       },
       "blocks": {},
       "block_order": []
+    },
+    "paises": {
+      "type": "tf-paises",
+      "settings": {
+        "eyebrow": "Enviamos a",
+        "titulo": "<p>Países donde <em>puedes comprar</em></p>",
+        "texto": "Envío gratis con rastreo · 10 a 25 días hábiles · Pago seguro con tarjeta",
+        "ancla": "paises"
+      },
+      "blocks": {
+        "p0": {
+          "type": "pais",
+          "settings": {
+            "codigo": "co",
+            "nombre": "Colombia"
+          }
+        },
+        "p1": {
+          "type": "pais",
+          "settings": {
+            "codigo": "mx",
+            "nombre": "México"
+          }
+        },
+        "p2": {
+          "type": "pais",
+          "settings": {
+            "codigo": "cl",
+            "nombre": "Chile"
+          }
+        },
+        "p3": {
+          "type": "pais",
+          "settings": {
+            "codigo": "pe",
+            "nombre": "Perú"
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ]
     }
   },
   "order": [
@@ -314,6 +359,7 @@
     "marrano",
     "activos",
     "ritual",
+    "paises",
     "seguro",
     "faq"
   ]

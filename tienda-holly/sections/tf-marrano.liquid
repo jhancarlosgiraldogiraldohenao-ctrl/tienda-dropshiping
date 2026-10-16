@@ -23,6 +23,9 @@
   <div class="hl-container">
     <div class="tf-marrano__caja hl-reveal">
       <div class="tf-marrano__cerdo" aria-hidden="true">
+        {%- if section.settings.imagen != blank -%}
+        <img class="tf-marrano__img" src="{{ section.settings.imagen | image_url: width: 720 }}" alt="" width="720" height="720" loading="lazy">
+        {%- else -%}
         <svg viewBox="0 0 220 180" class="tf-cerdo">
           <defs>
             <clipPath id="tf-cuerpo-{{ section.id }}"><ellipse cx="110" cy="100" rx="78" ry="62"/></clipPath>
@@ -42,6 +45,7 @@
           <path d="M33 96 q-18 -6 -10 -20 q8 -8 12 4" class="tf-cerdo__cola"/>
           <g class="tf-cerdo__moneda"><circle cx="110" cy="20" r="13"/><text x="110" y="25" text-anchor="middle">$</text></g>
         </svg>
+        {%- endif -%}
       </div>
 
       <div class="tf-marrano__texto">
@@ -99,6 +103,7 @@
   "tag": "section",
   "settings": [
     { "type": "paragraph", "content": "El total sale solo del dato de la tienda 'toffee.marrano' (se actualiza con cada venta pagada)." },
+    { "type": "image_picker", "id": "imagen", "label": "Imagen del marrano (vacío = dibujo)" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El 3 % de cada venta" },
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>El marrano <em>de Toffee</em></p>" },
     { "type": "textarea", "id": "mensaje", "label": "Mensaje de Toffee", "default": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾" },
