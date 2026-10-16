@@ -30,4 +30,4 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 - Perú es el país más débil (envío ~2x). Decidir después si se queda.
 - Si se abre EE. UU. con PayPal, el trineo compite con GingilNap (USD 59,95).
 - PENDIENTE página: optimizar velocidad para internet lento (imágenes comprimidas, carga diferida, pocos scripts).
-- Orejeras: se vende la VERSIÓN ENGROSADA (más protección para la pólvora). XL engrosada: CO $7.64 (Jitong Sensitive) · PE $12.75 (TDPacket Sensible). Colores gris oscuro y rojo rosa.
+- Orejeras: se vende la VERSIÓN ENGROSADA (más protección para la pólvora). XL engrosada: CO $7.64 (Jitong Sensitive) · PE $12.75 (TDPacket Sensible). Solo existe en GRIS OSCURO (4 variantes: engrosada S, M, L, XL). Costo TD unitario $1.76 + envío CO $5.91 = $7.67.
