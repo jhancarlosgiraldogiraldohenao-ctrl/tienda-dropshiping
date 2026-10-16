@@ -195,3 +195,10 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Guías de tallas (imagen) subidas a las fotos de orejeras y disfraz.
 - Envíos: zona Colombia + zona "México, Chile y Perú", gratis, "10 a 25 días hábiles". Se borró la zona International (EE. UU./Europa a 63.000).
 - PENDIENTE (Jay, en el admin): Mercados → agregar México, Chile y Perú con moneda local. La app CLI no tiene permiso de markets. Hoy todos ven COP.
+
+## 16-oct · El marrano de Toffee (3 %)
+- Sección tf-marrano: cerdito SVG que se llena + barra 0–100 % + mensaje de Toffee + historial de donaciones (bloques: fecha, fundación, monto, link comprobante). Meta = 1.000.000 COP.
+- El total sale del metacampo de tienda toffee.marrano (number_decimal, COP), hoy en 0. Lo puedo escribir por CLI (metafieldsSet ownerId gid://shopify/Shop/100306747681).
+- Ubicación: portada justo después del hero y la cinta; páginas de producto (versión compacta) debajo de la compra; barra de anuncio "🐷 El 3 % de cada venta va al marrano…" → /#marrano. tf-donacion ya no se usa.
+- Automatización: Shopify Flow (Pedido pagado → Actualizar metacampo de la tienda toffee.marrano = actual + 3 % del subtotal). Verificar con la primera venta; si falla, se actualiza a mano.
+- Al llenarse: donar, agregar bloque "Donación hecha" con link al comprobante, y poner el metacampo en 0 (o en el sobrante).

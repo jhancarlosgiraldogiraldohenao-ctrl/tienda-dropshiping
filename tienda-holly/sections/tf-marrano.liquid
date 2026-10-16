@@ -1,0 +1,124 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign total = shop.metafields.toffee.marrano.value | default: 0
+  if section.settings.total_extra > 0
+    assign total = total | plus: section.settings.total_extra
+  endif
+  assign meta = section.settings.meta | default: 1000000
+  assign pct = total | times: 100.0 | divided_by: meta
+  if pct > 100
+    assign pct = 100
+  endif
+  assign pct_txt = pct | floor
+  if pct > 0 and pct < 1
+    assign pct_txt = '<1'
+  endif
+  assign compacto = section.settings.compacto
+  assign alto = pct | times: 1.24
+  assign nivel_y = 162 | minus: alto
+-%}
+
+<section class="hl-section tf-marrano{% if compacto %} tf-marrano--compacto{% endif %}" id="{{ section.settings.ancla | default: 'marrano' }}">
+  <div class="hl-container">
+    <div class="tf-marrano__caja hl-reveal">
+      <div class="tf-marrano__cerdo" aria-hidden="true">
+        <svg viewBox="0 0 220 180" class="tf-cerdo">
+          <defs>
+            <clipPath id="tf-cuerpo-{{ section.id }}"><ellipse cx="110" cy="100" rx="78" ry="62"/></clipPath>
+          </defs>
+          <ellipse cx="110" cy="100" rx="78" ry="62" class="tf-cerdo__piel"/>
+          <g clip-path="url(#tf-cuerpo-{{ section.id }})">
+            <rect x="20" y="{{ nivel_y }}" width="180" height="140" class="tf-cerdo__lleno"/>
+          </g>
+          <ellipse cx="110" cy="100" rx="78" ry="62" class="tf-cerdo__borde"/>
+          <path d="M62 46 L54 18 L84 38 Z" class="tf-cerdo__oreja"/>
+          <path d="M128 40 L150 16 L154 46 Z" class="tf-cerdo__oreja"/>
+          <rect x="92" y="38" width="36" height="7" rx="3.5" class="tf-cerdo__ranura"/>
+          <ellipse cx="185" cy="104" rx="20" ry="16" class="tf-cerdo__hocico"/>
+          <circle cx="179" cy="104" r="3.4" class="tf-cerdo__ojo"/><circle cx="191" cy="104" r="3.4" class="tf-cerdo__ojo"/>
+          <circle cx="152" cy="80" r="5" class="tf-cerdo__ojo"/>
+          <rect x="60" y="150" width="18" height="24" rx="6" class="tf-cerdo__pata"/><rect x="138" y="150" width="18" height="24" rx="6" class="tf-cerdo__pata"/>
+          <path d="M33 96 q-18 -6 -10 -20 q8 -8 12 4" class="tf-cerdo__cola"/>
+          <g class="tf-cerdo__moneda"><circle cx="110" cy="20" r="13"/><text x="110" y="25" text-anchor="middle">$</text></g>
+        </svg>
+      </div>
+
+      <div class="tf-marrano__texto">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+
+        <div class="tf-marrano__globo">
+          <img src="{{ 'tf-avatar.jpg' | asset_url }}" alt="Toffee" width="44" height="44" loading="lazy">
+          <p>{{ section.settings.mensaje }}</p>
+        </div>
+
+        <div class="tf-marrano__barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ pct | round }}" aria-label="Avance del marrano">
+          <span class="tf-marrano__relleno" style="width: {{ pct }}%"></span>
+        </div>
+        <div class="tf-marrano__cifras">
+          <span><b data-tf-plata="{{ total | round }}">${{ total | round }}</b> {{ section.settings.moneda }} de <span data-tf-plata="{{ meta }}">${{ meta }}</span></span>
+          <strong>{{ pct_txt }} %</strong>
+        </div>
+        {%- if section.settings.nota != blank -%}<p class="tf-marrano__nota">{{ section.settings.nota }}</p>{%- endif -%}
+
+        {%- if section.blocks.size > 0 and compacto == false -%}
+          <div class="tf-marrano__historial">
+            <p class="tf-marrano__subt">{{ section.settings.historial_titulo }}</p>
+            <ul>
+              {%- for block in section.blocks -%}
+                <li {{ block.shopify_attributes }}>
+                  <span>{{ block.settings.fecha }}</span>
+                  <b>{{ block.settings.destino }}</b>
+                  <em data-tf-plata="{{ block.settings.monto }}">${{ block.settings.monto }}</em>
+                  {%- if block.settings.link != blank -%}<a href="{{ block.settings.link }}" target="_blank" rel="noopener">Ver comprobante</a>{%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- elsif compacto == false and section.settings.sin_donaciones != blank -%}
+          <p class="tf-marrano__vacio">{{ section.settings.sin_donaciones }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function () {
+    var s = document.getElementById('{{ section.settings.ancla | default: 'marrano' }}');
+    if (!s) return;
+    var f = new Intl.NumberFormat('es-CO', { maximumFractionDigits: 0 });
+    s.querySelectorAll('[data-tf-plata]').forEach(function (e) { e.textContent = '$' + f.format(Number(e.dataset.tfPlata) || 0); });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Toffee – Marrano 3 %",
+  "tag": "section",
+  "settings": [
+    { "type": "paragraph", "content": "El total sale solo del dato de la tienda 'toffee.marrano' (se actualiza con cada venta pagada)." },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El 3 % de cada venta" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>El marrano <em>de Toffee</em></p>" },
+    { "type": "textarea", "id": "mensaje", "label": "Mensaje de Toffee", "default": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾" },
+    { "type": "number", "id": "meta", "label": "Meta del marrano (COP)", "default": 1000000 },
+    { "type": "number", "id": "total_extra", "label": "Ajuste manual a sumar (COP)", "default": 0 },
+    { "type": "text", "id": "moneda", "label": "Moneda", "default": "COP" },
+    { "type": "text", "id": "nota", "label": "Nota bajo la barra", "default": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato." },
+    { "type": "text", "id": "historial_titulo", "label": "Título del historial", "default": "Marranos rotos y donados" },
+    { "type": "text", "id": "sin_donaciones", "label": "Texto si aún no hay donaciones", "default": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷" },
+    { "type": "checkbox", "id": "compacto", "label": "Versión compacta (sin historial)", "default": false },
+    { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "marrano" }
+  ],
+  "blocks": [
+    { "type": "donacion", "name": "Donación hecha", "settings": [
+      { "type": "text", "id": "fecha", "label": "Fecha", "default": "Diciembre 2026" },
+      { "type": "text", "id": "destino", "label": "Fundación o rescatista", "default": "Fundación…" },
+      { "type": "number", "id": "monto", "label": "Monto donado (COP)", "default": 1000000 },
+      { "type": "url", "id": "link", "label": "Link al comprobante (post de Instagram/TikTok)" }
+    ] }
+  ],
+  "presets": [{ "name": "Toffee – Marrano 3 %" }]
+}
+{% endschema %}

@@ -366,49 +366,31 @@
         "p2"
       ]
     },
-    "donacion": {
-      "type": "tf-donacion",
+    "marrano": {
+      "type": "tf-marrano",
       "settings": {
-        "porcentaje": "3 %",
-        "eyebrow": "La regla del corazón de Toffee",
-        "titulo": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>",
-        "texto": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle.",
-        "firma": "— Toffee 🐾",
-        "ancla": "donacion"
+        "eyebrow": "El 3 % de cada venta",
+        "titulo": "<p>El marrano <em>de Toffee</em></p>",
+        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾",
+        "meta": 1000000,
+        "total_extra": 0,
+        "moneda": "COP",
+        "nota": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato.",
+        "historial_titulo": "Marranos rotos y donados",
+        "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
+        "compacto": false,
+        "ancla": "marrano"
       },
-      "blocks": {
-        "d0": {
-          "type": "punto",
-          "settings": {
-            "texto": "El 3 % de cada venta se separa para donar."
-          }
-        },
-        "d1": {
-          "type": "punto",
-          "settings": {
-            "texto": "Lo entregamos a fundaciones y rescatistas que ayudan a animales de la calle."
-          }
-        },
-        "d2": {
-          "type": "punto",
-          "settings": {
-            "texto": "Publicamos cada donación con su comprobante en nuestras redes @toffee.elgato."
-          }
-        }
-      },
-      "block_order": [
-        "d0",
-        "d1",
-        "d2"
-      ]
+      "blocks": {},
+      "block_order": []
     }
   },
   "order": [
     "hero",
     "cinta",
+    "marrano",
     "aprobado",
     "toffee",
-    "donacion",
     "seguro",
     "faq",
     "cierre"

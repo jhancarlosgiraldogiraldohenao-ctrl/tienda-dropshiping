@@ -774,3 +774,41 @@ body { background: var(--hl-crema); }
 @media (max-width: 749px) { .tf-donacion__caja { grid-template-columns: 1fr; text-align: left; } .tf-donacion__huella { width: 110px; } }
 
 .tf-moneda { font-size: 13px; font-weight: 600; letter-spacing: .08em; color: var(--hl-texto-suave); margin-left: -4px; align-self: center; }
+
+/* ===== Toffee: marrano 3 % ===== */
+.tf-marrano__caja { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(22px, 4vw, 56px); align-items: center; padding: clamp(26px, 4.5vw, 56px); border-radius: var(--hl-radio); background: #fff; border: 1px solid var(--hl-linea); box-shadow: var(--hl-sombra); }
+.tf-cerdo { width: 100%; max-width: 320px; height: auto; display: block; margin-inline: auto; overflow: visible; }
+.tf-cerdo__piel { fill: #f7d9d2; }
+.tf-cerdo__lleno { fill: var(--hl-dorado); opacity: .9; }
+.tf-cerdo__borde { fill: none; stroke: var(--hl-cafe); stroke-width: 4; }
+.tf-cerdo__oreja { fill: #f2bfb3; stroke: var(--hl-cafe); stroke-width: 4; stroke-linejoin: round; }
+.tf-cerdo__ranura { fill: var(--hl-cafe); }
+.tf-cerdo__hocico { fill: #f2bfb3; stroke: var(--hl-cafe); stroke-width: 4; }
+.tf-cerdo__ojo { fill: var(--hl-cafe); }
+.tf-cerdo__pata { fill: #f2bfb3; stroke: var(--hl-cafe); stroke-width: 4; }
+.tf-cerdo__cola { fill: none; stroke: var(--hl-cafe); stroke-width: 4; stroke-linecap: round; }
+.tf-cerdo__moneda circle { fill: var(--hl-dorado); stroke: var(--hl-curcuma-hondo); stroke-width: 3; }
+.tf-cerdo__moneda text { font: 700 15px var(--hl-serif); fill: var(--hl-curcuma-hondo); }
+.tf-cerdo__moneda { animation: tf-moneda 2.6s var(--hl-ease, ease) infinite; }
+@keyframes tf-moneda { 0% { transform: translateY(-14px); opacity: 0; } 25% { opacity: 1; } 60% { transform: translateY(22px); opacity: 1; } 75%, 100% { transform: translateY(26px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .tf-cerdo__moneda { animation: none; } }
+.tf-marrano h2 { font-family: var(--hl-serif); font-weight: 600; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.05; margin: 10px 0 18px; }
+.tf-marrano h2 em { color: var(--hl-curcuma); font-style: italic; }
+.tf-marrano__globo { display: flex; gap: 12px; align-items: flex-start; background: var(--hl-arena); border-radius: 18px 18px 18px 4px; padding: 14px 16px; }
+.tf-marrano__globo img { width: 44px; height: 44px; border-radius: 50%; flex: none; object-fit: cover; }
+.tf-marrano__globo p { margin: 0; font-size: 16px; line-height: 1.55; color: var(--hl-texto); }
+.tf-marrano__barra { margin-top: 22px; height: 18px; border-radius: 999px; background: var(--hl-arena); overflow: hidden; border: 1px solid var(--hl-linea); }
+.tf-marrano__relleno { display: block; height: 100%; min-width: 10px; border-radius: inherit; background: linear-gradient(90deg, var(--hl-curcuma), var(--hl-dorado)); transition: width 1.2s var(--hl-ease, ease); }
+.tf-marrano__cifras { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; margin-top: 10px; font-size: 15px; color: var(--hl-texto-suave); }
+.tf-marrano__cifras b { color: var(--hl-texto); font-size: 17px; }
+.tf-marrano__cifras strong { white-space: nowrap; font-family: var(--hl-serif); font-size: 26px; color: var(--hl-curcuma-hondo); }
+.tf-marrano__nota { margin: 12px 0 0; font-size: 14px; color: var(--hl-texto-suave); }
+.tf-marrano__historial { margin-top: 22px; border-top: 1px solid var(--hl-linea); padding-top: 16px; }
+.tf-marrano__subt { margin: 0 0 10px; font-size: 13px; font-weight: 600; letter-spacing: .14em; text-transform: uppercase; color: var(--hl-texto-suave); }
+.tf-marrano__historial ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.tf-marrano__historial li { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; font-size: 15px; }
+.tf-marrano__historial em { font-style: normal; font-weight: 600; color: var(--hl-curcuma-hondo); }
+.tf-marrano__historial a { color: var(--hl-curcuma-hondo); text-decoration: underline; }
+.tf-marrano__vacio { margin: 18px 0 0; font-size: 15px; color: var(--hl-texto-suave); }
+.tf-marrano--compacto .tf-cerdo { max-width: 220px; }
+@media (max-width: 749px) { .tf-marrano__caja { grid-template-columns: 1fr; } .tf-cerdo { max-width: 220px; } }

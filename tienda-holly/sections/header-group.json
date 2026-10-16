@@ -17,10 +17,10 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "🐾 Aprobado por Toffee 💤 · Envío GRATIS · Pago seguro con tarjeta",
+            "text": "🐷 El 3 % de cada venta va al marrano de Toffee para peludos de la calle · Envío GRATIS",
             "text_alignment": "center",
             "color_scheme": "scheme-5",
-            "link": "/#aprobado"
+            "link": "/#marrano"
           }
         }
       },

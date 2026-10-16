@@ -63,42 +63,6 @@
         "b2"
       ]
     },
-    "donacion": {
-      "type": "tf-donacion",
-      "settings": {
-        "porcentaje": "3 %",
-        "eyebrow": "La regla del corazón de Toffee",
-        "titulo": "<p>Cada compra ayuda a <em>un peludo de la calle</em></p>",
-        "texto": "Toffee tiene casa, cobija y demasiadas galletas. Muchos no. Por eso el 3 % de cada venta se aparta para ayudar a perritos y gatitos en situación de calle.",
-        "firma": "— Toffee 🐾",
-        "ancla": "donacion"
-      },
-      "blocks": {
-        "b0": {
-          "type": "punto",
-          "settings": {
-            "texto": "El 3 % de cada venta se separa para donar."
-          }
-        },
-        "b1": {
-          "type": "punto",
-          "settings": {
-            "texto": "Lo entregamos a fundaciones y rescatistas que ayudan a animales de la calle."
-          }
-        },
-        "b2": {
-          "type": "punto",
-          "settings": {
-            "texto": "Publicamos cada donación con su comprobante en nuestras redes @toffee.elgato."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ]
-    },
     "activos": {
       "type": "hl-activos",
       "settings": {
@@ -393,11 +357,29 @@
         "b8",
         "b9"
       ]
+    },
+    "marrano": {
+      "type": "tf-marrano",
+      "settings": {
+        "eyebrow": "El 3 % de esta compra",
+        "titulo": "<p>Va al marrano <em>de Toffee</em></p>",
+        "mensaje": "De esta compra, el 3 % cae en mi marranito. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle. 🐷",
+        "meta": 1000000,
+        "total_extra": 0,
+        "moneda": "COP",
+        "nota": "Cada donación la publicamos con su comprobante en @toffee.elgato.",
+        "historial_titulo": "Marranos rotos y donados",
+        "sin_donaciones": "",
+        "compacto": true,
+        "ancla": "marrano"
+      },
+      "blocks": {},
+      "block_order": []
     }
   },
   "order": [
     "principal",
-    "donacion",
+    "marrano",
     "activos",
     "ritual",
     "comparativa",
