@@ -65,6 +65,7 @@
           <strong>{{ pct_txt }} %</strong>
         </div>
         {%- if section.settings.nota != blank -%}<p class="tf-marrano__nota">{{ section.settings.nota }}</p>{%- endif -%}
+        {%- if section.settings.boton_texto != blank and section.settings.boton_url != blank -%}<a class="hl-btn hl-btn--curcuma tf-marrano__btn" href="{{ section.settings.boton_url }}">{{ section.settings.boton_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
 
         {%- if section.blocks.size > 0 and compacto == false -%}
           <div class="tf-marrano__historial">
@@ -111,6 +112,8 @@
     { "type": "number", "id": "total_extra", "label": "Ajuste manual a sumar (COP)", "default": 0 },
     { "type": "text", "id": "moneda", "label": "Moneda", "default": "COP" },
     { "type": "text", "id": "nota", "label": "Nota bajo la barra", "default": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato." },
+    { "type": "text", "id": "boton_texto", "label": "Botón (vacío = sin botón)" },
+    { "type": "url", "id": "boton_url", "label": "Enlace del botón" },
     { "type": "text", "id": "historial_titulo", "label": "Título del historial", "default": "Marranos rotos y donados" },
     { "type": "text", "id": "sin_donaciones", "label": "Texto si aún no hay donaciones", "default": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷" },
     { "type": "checkbox", "id": "compacto", "label": "Versión compacta (sin historial)", "default": false },

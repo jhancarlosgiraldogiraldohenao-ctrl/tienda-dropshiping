@@ -72,7 +72,7 @@
         "nota": "Disponible en verde y en rojo.",
         "ancla": "detalles",
         "titulo_size": 60,
-        "foto_producto": 3
+        "foto_producto": 2
       },
       "blocks": {
         "b0": {
@@ -304,7 +304,9 @@
         "sin_donaciones": "",
         "compacto": true,
         "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
+        "boton_texto": "Conoce la causa",
+        "boton_url": "/pages/marrano"
       },
       "blocks": {},
       "block_order": []

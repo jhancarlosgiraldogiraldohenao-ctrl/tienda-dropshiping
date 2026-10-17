@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "marrano": {
+      "type": "tf-marrano",
+      "settings": {
+        "eyebrow": "La causa de Toffee",
+        "titulo": "<p>El marrano <em>de Toffee</em></p>",
+        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾",
+        "meta": 1000000,
+        "total_extra": 0,
+        "moneda": "COP",
+        "nota": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato.",
+        "historial_titulo": "Marranos rotos y donados",
+        "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
+        "compacto": false,
+        "ancla": "marrano",
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "pasos": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "Cómo funciona",
+        "titulo": "<p>Así se llena <em>el marrano</em></p>",
+        "texto": "Sin letra pequeña. Tú compras, Toffee guarda, los peludos reciben.",
+        "nota": "Cada donación se publica con su comprobante en @toffee.elgato.",
+        "ancla": "como-funciona",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Compras",
+            "texto": "Cada vez que alguien compra en Soy Toffee, el 3 % de la venta cae en el marrano."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Se llena",
+            "texto": "La barra sube con cada compra. La meta es 1.000.000 de pesos."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Lo rompemos",
+            "texto": "Al llenarse, donamos todo a fundaciones y rescatistas de animales de la calle… y empezamos un marrano nuevo."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "apoya": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Apoya esta causa",
+        "titulo": "<p>Compra algo lindo y <em>llena el marrano</em></p>",
+        "texto": "El 3 % de cada uno de estos productos cae directo en el marranito. Tú consientes a tu peludo y ayudas a uno que no tiene casa.",
+        "boton_texto": "Comprar y ayudar",
+        "ancla": "apoya",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "p0": {
+          "type": "producto",
+          "settings": {
+            "producto": "cama-trineo-navidad-mascotas",
+            "titulo": "Cama Trineo Navideña",
+            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
+            "etiqueta": "Favorito de Toffee"
+          }
+        },
+        "p1": {
+          "type": "producto",
+          "settings": {
+            "producto": "disfraz-arbol-navidad-perros",
+            "titulo": "Disfraz Árbol de Navidad",
+            "frase": "Tu mascota convertida en el arbolito más tierno de la casa. Para gatos y perritos.",
+            "etiqueta": "El más viral"
+          }
+        },
+        "p2": {
+          "type": "producto",
+          "settings": {
+            "producto": "orejeras-anti-ruido-para-perros",
+            "titulo": "Orejeras anti ruido",
+            "frase": "Para que la pólvora de diciembre no sea la peor noche del año de tu perro.",
+            "etiqueta": "Para la pólvora"
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2"
+      ]
+    },
+    "faq": {
+      "type": "hl-faq",
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Sobre <em>la donación</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿De verdad se dona el 3 %?",
+            "respuesta": "<p>Sí. De cada venta separamos el 3 % del valor del producto y lo guardamos en el marrano. Cuando llega a la meta, se dona completo.</p>"
+          }
+        },
+        "b1": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿A quién se le dona?",
+            "respuesta": "<p>A fundaciones y rescatistas que ayudan a perritos y gatitos en situación de calle en los países donde vendemos.</p>"
+          }
+        },
+        "b2": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo sé que es cierto?",
+            "respuesta": "<p>Cada donación la publicamos en nuestras redes @toffee.elgato con el comprobante, y queda en el historial de esta página.</p>"
+          }
+        },
+        "b3": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo recomendar una fundación?",
+            "respuesta": "<p>¡Claro! Escríbenos desde la página de contacto con el nombre y las redes de la fundación o del rescatista.</p>"
+          }
+        },
+        "b4": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Quién es Galleta?",
+            "respuesta": "<p>Es el empleado de Toffee: un perrito criollo que Toffee rescató de la calle. Por él existe este marrano.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    }
+  },
+  "order": [
+    "marrano",
+    "pasos",
+    "apoya",
+    "faq"
+  ]
+}

@@ -363,7 +363,9 @@
         "sin_donaciones": "",
         "compacto": true,
         "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
+        "boton_texto": "Conoce la causa",
+        "boton_url": "/pages/marrano"
       },
       "blocks": {},
       "block_order": []
