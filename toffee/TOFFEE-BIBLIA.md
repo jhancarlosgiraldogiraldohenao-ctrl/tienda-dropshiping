@@ -65,3 +65,11 @@ Es el jefe más tierno y más flojo del mundo: quiere ser un gran empresario, pe
 ```
 Foto realista de estudio, estilo fotografía profesional de mascotas. Hoja de personaje con 4 vistas del MISMO gato en una sola imagen, sobre fondo liso color crema claro (#F3E9D8): 1) sentado de frente mirando a la cámara, 2) de perfil lateral, 3) acostado de lado, 4) primer plano de la cara. El gato: British Shorthair adulto, color crema-caramelo sólido y uniforme (un solo tono, sin manchas ni rayas), muy gordito y redondo, pelaje denso y afelpado, cara muy redonda con cachetes grandes, orejas pequeñas, ojos grandes y redondos de color verde suave uniforme, con las pupilas negras muy dilatadas, grandes y redondas, con un brillo de luz blanco en cada ojo, expresión tierna, dulce y un poco somnolienta. Lleva SIEMPRE un gorro de dormir tejido color azul marino, con la punta caída hacia un lado y un pompón color crema en la punta. Realista, NO caricatura, NO 3D, NO ilustración. Mismo gato idéntico en las 4 vistas. Sin textos.
 ```
+
+## Galleta (17-oct) — el empleado de Toffee
+- Perro criollo (mestizo latino), flaco y patilargo, ~12 kg, rescatado de la calle por Toffee → conecta con el 3 % del marrano.
+- Color galleta (café claro dorado) con pecho, punta de la cola y patitas blancas; pelo corto un poco despeinado.
+- Una oreja parada y la otra doblada; ojos grandes cafés y nerviosos; cejas expresivas; a veces la punta de la lengua afuera.
+- Pañoleta azul marino (igual al gorro de Toffee) con placa dorada en forma de hueso.
+- Personalidad: miedoso, torpe, leal, comelón; le tiene pánico a la pólvora, las aspiradoras y el cartero. Toffee es su jefe.
+- SIEMPRE fotorrealista (nada de caricatura ni 3D animado). Pesa 12 kg: usa orejeras talla S. NO le sirve el disfraz (máx. 7,5 kg).
