@@ -13,36 +13,12 @@
         "btn2_texto": "Conoce a Toffee",
         "btn2_url": "#toffee",
         "sello": "Aprobado por Toffee",
-        "titulo_size": 76
+        "titulo_size": 76,
+        "paises_texto": "Enviamos a",
+        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú"
       },
-      "blocks": {
-        "c0": {
-          "type": "chip",
-          "settings": {
-            "icono": "camion",
-            "texto": "Envío gratis"
-          }
-        },
-        "c1": {
-          "type": "chip",
-          "settings": {
-            "icono": "candado",
-            "texto": "Pago seguro con tarjeta"
-          }
-        },
-        "c2": {
-          "type": "chip",
-          "settings": {
-            "icono": "escudo",
-            "texto": "Garantía de entrega"
-          }
-        }
-      },
-      "block_order": [
-        "c0",
-        "c1",
-        "c2"
-      ]
+      "blocks": {},
+      "block_order": []
     },
     "cinta": {
       "type": "hl-cinta",

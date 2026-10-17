@@ -14,7 +14,9 @@
         "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
         "compacto": false,
         "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
+        "boton_texto": "Apoyar al marrano 🐷",
+        "boton_url": "#apoya"
       },
       "blocks": {},
       "block_order": []

@@ -918,3 +918,18 @@ body {
 @media (max-width: 989px) { .tf-toffee__texto { padding-top: 36px; } .tf-toffee__visual { margin-bottom: 8px !important; } }
 .tf-toffee .hl-cabecera { margin-top: 0; }
 .tf-marrano__btn { margin-top: 20px; }
+
+/* ===== Ajustes 17-oct (2) ===== */
+/* banderas bajo el botón de la portada */
+.tf-hero__paises { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 22px; font-size: 14px; font-weight: 600; color: var(--hl-texto); }
+.tf-hero__paises > span:first-child { color: var(--tf-cian); letter-spacing: .08em; text-transform: uppercase; font-size: 12px; margin-right: 2px; }
+.tf-hero__pais { display: inline-flex; align-items: center; gap: 7px; padding: 6px 12px 6px 6px; border-radius: 999px; background: rgba(11, 16, 36, .6); border: 1px solid rgba(255, 255, 255, .14); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
+.tf-hero__pais img { width: 24px; height: 24px; border-radius: 50%; object-fit: cover; }
+@media (max-width: 749px) { .tf-hero__paises { justify-content: center; margin-top: 14px; gap: 6px; font-size: 12.5px; } .tf-hero__pais { padding: 4px 9px 4px 4px; } .tf-hero__pais img { width: 20px; height: 20px; } }
+/* cierre: foto con aire y bordes redondos, sin verse pegada */
+.hl-cierre__caja { align-items: center !important; }
+.hl-cierre__foto { margin: clamp(18px, 3vw, 40px); border-radius: calc(var(--hl-radio) - 4px); overflow: hidden; box-shadow: 0 30px 70px -30px rgba(255, 95, 162, .45), 0 0 0 1px rgba(255, 255, 255, .1); align-self: center !important; }
+@media (max-width: 749px) { .hl-cierre__foto { margin: 18px 18px 0; } }
+/* conoce a Toffee: más separado de los países y centrado */
+.tf-toffee { padding-top: clamp(96px, 11vw, 160px) !important; }
+.tf-toffee__grid { align-items: center !important; }
