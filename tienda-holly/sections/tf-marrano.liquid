@@ -1,7 +1,7 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
 
 {%- liquid
-  assign total = shop.metafields.toffee.marrano.value | default: 0
+  assign total = shop.metafields.custom.marrano.value | default: shop.metafields.toffee.marrano.value | default: 0
   if section.settings.total_extra > 0
     assign total = total | plus: section.settings.total_extra
   endif
