@@ -204,7 +204,7 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Al llenarse: donar, agregar bloque "Donación hecha" con link al comprobante, y poner el metacampo en 0 (o en el sobrante).
 
 ## RECORDATORIO para cuando Jay diga "la página está lista" (17-oct)
-1. Activar Shopify Flow del marrano (Pedido pagado → actualizar metacampo toffee.marrano).
+1. ✅ HECHO 17-oct: Shopify Flow activo (Order paid → Update shop metafield custom.marrano = actual + 3 % subtotal). Verificar con la 1.ª venta.
 2. Monedas por país en Configuración → Mercados (MX, CL, PE en moneda local; dLocal cobra en moneda local).
 3. Crear TikTok e Instagram @toffee.elgato y poner F15 de foto de perfil.
 (Ezequiel de dLocal: Jay ya le respondió.)
