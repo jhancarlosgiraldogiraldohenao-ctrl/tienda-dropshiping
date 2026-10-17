@@ -155,6 +155,13 @@
           </product-form>
           <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{%- if section.settings.compra_rapida -%}<span class="tf-ahora__txt">{{ section.settings.comprar_texto }}</span><span class="tf-ahora__precio"><b data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</b> <small>{{ cart.currency.iso_code }}</small></span>{%- else -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- endif -%}</a>
           {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
+          {%- if section.settings.compra_rapida -%}
+            <div class="tf-extra">
+              <p class="tf-entrega" data-tf-entrega data-min="{{ section.settings.dias_min }}" data-max="{{ section.settings.dias_max }}">📦 Envío gratis · llega en {{ section.settings.dias_min }} a {{ section.settings.dias_max }} días hábiles</p>
+              {%- if section.settings.fecha_navidad != blank -%}<p class="tf-navidad" data-tf-navidad="{{ section.settings.fecha_navidad }}" hidden></p>{%- endif -%}
+              <div class="tf-pagos" aria-label="Medios de pago">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag: class: 'tf-pago' }}{%- endfor -%}</div>
+            </div>
+          {%- endif -%}
         </div>
 
         {%- if section.blocks.size > 0 -%}
@@ -203,6 +210,27 @@
           });
         });
       });
+    })();
+  </script>
+  {%- endif -%}
+
+  {%- if section.settings.compra_rapida -%}
+  <script>
+    (function () {
+      var meses = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+      function habiles(d, n) { d = new Date(d); while (n > 0) { d.setDate(d.getDate() + 1); var w = d.getDay(); if (w !== 0 && w !== 6) n--; } return d; }
+      var hoy = new Date();
+      var e = document.querySelector('#shopify-section-{{ section.id }} [data-tf-entrega]');
+      if (e) {
+        var a = habiles(hoy, +e.dataset.min), b = habiles(hoy, +e.dataset.max);
+        e.innerHTML = '📦 Envío gratis · recíbelo entre el <b>' + a.getDate() + ' de ' + meses[a.getMonth()] + '</b> y el <b>' + b.getDate() + ' de ' + meses[b.getMonth()] + '</b>';
+      }
+      var n = document.querySelector('#shopify-section-{{ section.id }} [data-tf-navidad]');
+      if (n) {
+        var lim = new Date(n.dataset.tfNavidad + 'T23:59:59');
+        var dias = Math.ceil((lim - hoy) / 86400000);
+        if (dias > 0) { n.innerHTML = '🎄 Pídelo en los próximos <b>' + dias + (dias === 1 ? ' día' : ' días') + '</b> y llega antes de Navidad'; n.hidden = false; }
+      }
     })();
   </script>
   {%- endif -%}
@@ -303,6 +331,24 @@
       "id": "compra_rapida",
       "label": "Compra rápida: botón con precio bajo las opciones",
       "default": false
+    },
+    {
+      "type": "number",
+      "id": "dias_min",
+      "label": "Entrega mínima (días hábiles)",
+      "default": 10
+    },
+    {
+      "type": "number",
+      "id": "dias_max",
+      "label": "Entrega máxima (días hábiles)",
+      "default": 25
+    },
+    {
+      "type": "text",
+      "id": "fecha_navidad",
+      "label": "Fecha límite Navidad (AAAA-MM-DD)",
+      "default": "2026-11-20"
     },
     {
       "type": "checkbox",

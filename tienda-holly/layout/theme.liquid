@@ -21,10 +21,10 @@
     {%- endunless -%}
 
     <title>
-      {{ page_title }}
+      {%- if template.name == 'index' -%}Soy Toffee · Tienda para gatos y perros · Envío gratis{%- else -%}{{ page_title }}{%- endif -%}
       {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
-      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+      {%- unless page_title contains shop.name or template.name == 'index' %} &ndash; {{ shop.name }}{% endunless -%}
     </title>
 
     {% if page_description %}
@@ -325,6 +325,13 @@
         document.documentElement.classList.add('shopify-design-mode');
       }
     </script>
+    <style>
+      /* Carga rápida (internet lento): fondo oscuro e íconos con tamaño fijo antes de que llegue el CSS */
+      html, body { background: #070a16; color: #eef1ff; }
+      .skip-to-content-link:not(:focus) { position: absolute !important; left: -9999px !important; }
+      .announcement-bar svg, .header svg.icon, .header__icon svg, .header .svg-wrapper svg { width: 2rem; height: 2rem; max-width: 2.4rem; }
+      .tf-avatar { width: 40px; height: 40px; }
+    </style>
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

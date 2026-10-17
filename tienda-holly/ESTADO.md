@@ -208,3 +208,11 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 2. Monedas por país en Configuración → Mercados (MX, CL, PE en moneda local; dLocal cobra en moneda local).
 3. Crear TikTok e Instagram @toffee.elgato y poner F15 de foto de perfil.
 (Ezequiel de dLocal: Jay ya le respondió.)
+
+## 17-oct · Auditoría de conversión aplicada
+- Producto: fecha estimada de entrega real (10–25 días hábiles desde hoy), cuenta regresiva a Navidad (fecha límite 2026-11-20, editable), logos de tarjetas bajo el botón, sección "Completa el kit" (venta cruzada).
+- Carrito: nota de confianza bajo el botón de pago.
+- Barra de anuncio rotativa: Navidad 20-nov + marrano.
+- Título de la portada en Google y SEO de los 3 productos. Imagen para compartir (WhatsApp/redes) nueva con Toffee futurista.
+- CSS crítico para internet lento (fondo oscuro e íconos con tamaño fijo antes de cargar el CSS).
+- NO se agregaron reseñas: no hay ventas todavía y las reseñas falsas están prohibidas. Plan: app de reseñas (Judge.me gratis) después de las primeras ventas.

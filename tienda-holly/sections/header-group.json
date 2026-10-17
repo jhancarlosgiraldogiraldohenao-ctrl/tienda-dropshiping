@@ -8,7 +8,7 @@
         "color_scheme": "scheme-5",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
@@ -22,9 +22,19 @@
             "color_scheme": "scheme-5",
             "link": "/pages/marrano"
           }
+        },
+        "announcement-bar-1": {
+          "type": "announcement",
+          "settings": {
+            "text": "🎄 Pide antes del 20 de noviembre y recíbelo antes de Navidad · Envío GRATIS",
+            "text_alignment": "center",
+            "color_scheme": "scheme-5",
+            "link": "/#aprobado"
+          }
         }
       },
       "block_order": [
+        "announcement-bar-1",
         "announcement-bar-0"
       ]
     },

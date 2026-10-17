@@ -415,6 +415,51 @@
         "p2",
         "p3"
       ]
+    },
+    "tambien": {
+      "type": "hl-catalogo",
+      "settings": {
+        "eyebrow": "Completa el kit",
+        "titulo": "<p>También <em>aprobado por Toffee</em></p>",
+        "texto": "Lo que más compran junto con este producto.",
+        "boton_texto": "Ver producto",
+        "ancla": "tambien",
+        "titulo_size": 60
+      },
+      "blocks": {
+        "p0": {
+          "type": "producto",
+          "settings": {
+            "producto": "cama-trineo-navidad-mascotas",
+            "titulo": "Cama Trineo Navideña",
+            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
+            "etiqueta": "Favorito de Toffee"
+          }
+        },
+        "p1": {
+          "type": "producto",
+          "settings": {
+            "producto": "disfraz-arbol-navidad-perros",
+            "titulo": "Disfraz Árbol de Navidad",
+            "frase": "Tu mascota convertida en el arbolito más tierno de la casa. Para gatos y perritos.",
+            "etiqueta": "El más viral"
+          }
+        },
+        "p2": {
+          "type": "producto",
+          "settings": {
+            "producto": "orejeras-anti-ruido-para-perros",
+            "titulo": "Orejeras anti ruido",
+            "frase": "Para que la pólvora de diciembre no sea la peor noche del año de tu perro.",
+            "etiqueta": "Para la pólvora"
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2"
+      ]
     }
   },
   "order": [
@@ -425,6 +470,7 @@
     "comparativa",
     "paises",
     "seguro",
-    "faq"
+    "faq",
+    "tambien"
   ]
 }
