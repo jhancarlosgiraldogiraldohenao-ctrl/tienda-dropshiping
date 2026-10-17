@@ -300,10 +300,10 @@
     "aprobado": {
       "type": "hl-catalogo",
       "settings": {
-        "eyebrow": "Lo que aprobé este mes",
-        "titulo": "<p>Pasaron <em>mi prueba</em></p>",
-        "texto": "Los probé, los mordí, me dormí encima. Estos son los únicos que no tiré de la mesa.",
-        "boton_texto": "Lo quiero",
+        "eyebrow": "Comprar",
+        "titulo": "<p>Escoge tu <em>favorito</em></p>",
+        "texto": "Todo lo que pasó mi prueba. Toca el que quieras, escoge talla y color, y listo.",
+        "boton_texto": "Comprar ahora",
         "ancla": "aprobado",
         "titulo_size": 60
       },
@@ -407,15 +407,60 @@
         "p2",
         "p3"
       ]
+    },
+    "galleta": {
+      "type": "tf-toffee",
+      "settings": {
+        "imagen": "shopify://shop_images/galleta-oficial.jpg",
+        "sello": "Gerente de Seguridad",
+        "eyebrow": "Conoce al empleado",
+        "titulo": "<p>Y yo soy <em>Galleta</em></p>",
+        "historia": "<p>Soy un perrito criollo. Viví en la calle hasta el día en que Toffee me encontró temblando debajo de un carro en plena noche de pólvora.</p><p>Me llevó a su casa, me dio cobija, comida… y un trabajo: soy el Gerente de Seguridad de la tienda. Aunque, la verdad, me asusto de todo.</p><p>Por mí existe el marrano: el 3 % de cada venta es para que otros peludos de la calle tengan la misma suerte que yo.</p>",
+        "regla_titulo": "Mi trabajo",
+        "regla": "Probar todo lo que da miedo… y no salir corriendo.",
+        "nota": "Galleta es un personaje creado con inteligencia artificial. Los productos, los envíos y las donaciones son 100% reales.",
+        "ancla": "galleta",
+        "titulo_size": 64,
+        "invertir": true
+      },
+      "blocks": {
+        "g0": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Miedoso:",
+            "texto": "le tiene pánico a la pólvora, a la aspiradora y al cartero."
+          }
+        },
+        "g1": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Leal:",
+            "texto": "sigue a Toffee a todas partes (aunque Toffee lo ignore)."
+          }
+        },
+        "g2": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Probador oficial:",
+            "texto": "de las orejeras anti ruido. Desde que las usa, duerme tranquilo en Año Nuevo."
+          }
+        }
+      },
+      "block_order": [
+        "g0",
+        "g1",
+        "g2"
+      ]
     }
   },
   "order": [
     "hero",
     "cinta",
-    "marrano",
     "aprobado",
+    "marrano",
     "paises",
     "toffee",
+    "galleta",
     "seguro",
     "faq",
     "cierre"

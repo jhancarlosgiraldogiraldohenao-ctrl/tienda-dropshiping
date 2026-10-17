@@ -54,12 +54,14 @@
         <h1 class="hl-compra__titulo">{{ section.settings.titulo_corto | default: product.title }}</h1>
         {%- if section.settings.subtitulo != blank -%}<p class="hl-compra__estrellas">{{ section.settings.subtitulo }}</p>{%- endif -%}
         {%- assign v1 = product.variants.first -%}
+        {%- unless section.settings.compra_rapida -%}
         <div class="hl-precio" data-hl-precio-bloque>
           <strong data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</strong><span class="tf-moneda">{{ cart.currency.iso_code }}</span>
           <s data-hl-antes{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>{{ variante.compare_at_price | money_without_trailing_zeros }}</s>
           <span class="hl-precio__pct" data-hl-pct{% unless variante.compare_at_price > variante.price %} hidden{% endunless %}>-{{ variante.compare_at_price | minus: variante.price | times: 100.0 | divided_by: variante.compare_at_price | round }}%</span>
           {%- if section.settings.nota_precio != blank -%}<span class="hl-precio__nota">{{ section.settings.nota_precio }}</span>{%- endif -%}
         </div>
+        {%- endunless -%}
 
         {%- unless product.has_only_default_variant -%}
           {%- if section.settings.modo_pildoras -%}
@@ -122,16 +124,18 @@
           </div>
         {%- endunless -%}
 
+        {%- capture intro_puntos -%}
         {%- if section.settings.intro != blank -%}<p class="hl-compra__intro">{{ section.settings.intro | newline_to_br }}</p>{%- endif -%}
-
         {%- if section.settings.puntos != blank -%}
           <ul class="hl-compra__puntos">
             {%- assign puntos = section.settings.puntos | newline_to_br | split: '<br />' -%}
             {%- for p in puntos -%}{%- assign t = p | strip -%}{%- if t != blank -%}<li>{% render 'hl-icono', nombre: 'check' %}<span>{{ t }}</span></li>{%- endif -%}{%- endfor -%}
           </ul>
         {%- endif -%}
+        {%- endcapture -%}
+        {%- unless section.settings.compra_rapida -%}{{ intro_puntos }}{%- endunless -%}
 
-        <div class="hl-compra__form">
+        <div class="hl-compra__form{% if section.settings.compra_rapida %} tf-compra-rapida{% endif %}">
           <product-form class="product-form" data-section-id="{{ section.id }}">
             <div class="product-form__error-message-wrapper" role="alert" hidden><span class="product-form__error-message"></span></div>
             {%- form 'product', product, id: form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
@@ -149,7 +153,7 @@
               </div>
             {%- endform -%}
           </product-form>
-          <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
+          <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{%- if section.settings.compra_rapida -%}<span class="tf-ahora__txt">{{ section.settings.comprar_texto }}</span><span class="tf-ahora__precio"><b data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</b> <small>{{ cart.currency.iso_code }}</small></span>{%- else -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- endif -%}</a>
           {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
         </div>
 
@@ -160,6 +164,8 @@
             {%- endfor -%}
           </div>
         {%- endif -%}
+
+        {%- if section.settings.compra_rapida -%}<div class="tf-compra-info">{{ intro_puntos }}</div>{%- endif -%}
 
         <div class="hl-desc">
           {%- if product.description != blank -%}
@@ -290,6 +296,12 @@
       "type": "checkbox",
       "id": "modo_colores",
       "label": "Las opciones son colores (no packs)",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "compra_rapida",
+      "label": "Compra rápida: botón con precio bajo las opciones",
       "default": false
     },
     {

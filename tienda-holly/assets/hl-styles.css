@@ -933,3 +933,19 @@ body {
 /* conoce a Toffee: más separado de los países y centrado */
 .tf-toffee { padding-top: clamp(96px, 11vw, 160px) !important; }
 .tf-toffee__grid { align-items: center !important; }
+
+/* ===== Compra rápida (botón con precio) ===== */
+.tf-compra-rapida { display: flex; flex-direction: column; gap: 12px; }
+.tf-compra-rapida .hl-compra__ahora { order: -1; display: flex !important; justify-content: space-between !important; align-items: center; gap: 14px; min-height: 64px; padding: 0 26px !important; font-size: 18px !important; }
+.tf-ahora__txt { font-weight: 700; letter-spacing: .01em; }
+.tf-ahora__precio b { font-family: var(--hl-serif); font-size: 22px; font-weight: 700; }
+.tf-ahora__precio small { font-size: 11px; font-weight: 700; opacity: .7; letter-spacing: .06em; }
+.tf-compra-rapida .hl-compra__nota-ahora { order: 0; margin-top: -2px !important; }
+.tf-compra-rapida product-form { order: 1; }
+.tf-compra-info { margin-top: 22px; }
+/* cierre: foto en su tamaño natural, nunca recortada */
+.hl-cierre__foto { aspect-ratio: auto !important; }
+.hl-cierre__foto img { height: auto !important; display: block; }
+.tf-toffee--invertido .tf-toffee__visual { order: 2; }
+.tf-toffee--invertido { padding-top: clamp(40px, 6vw, 80px) !important; }
+@media (max-width: 989px) { .tf-toffee--invertido .tf-toffee__visual { order: 0; } }

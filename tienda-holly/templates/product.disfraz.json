@@ -12,7 +12,7 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Comprar ahora",
+        "comprar_texto": "Obtenlo ahora",
         "comprar_corto": "Comprar",
         "comprar_nota": "Pago 100% seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
@@ -29,7 +29,8 @@
         "intro": "Tu mascota convertida en el arbolito de Navidad más tierno de la casa. Capucha con estrella dorada, pompones de colores y volantes. Toffee lo usa (bajo protesta) y salió en todas las fotos.",
         "puntos": "Capucha con estrella dorada y pompones\nTela suave y calientita\nSe amarra con un cordón: fácil de poner y quitar\nPara gatos y perritos de 1,5 a 7,5 kg\nPerfecto para fotos y videos navideños",
         "guia_tallas": "📏 S: 1,5–2,5 kg · M: 2,5–5 kg · L: 5–7,5 kg. Mira la guía en las fotos.",
-        "sticky_texto": "Disfraz Árbol de Navidad"
+        "sticky_texto": "Disfraz Árbol de Navidad",
+        "compra_rapida": true
       },
       "blocks": {
         "b0": {

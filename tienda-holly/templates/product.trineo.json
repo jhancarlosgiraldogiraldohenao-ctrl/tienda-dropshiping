@@ -12,7 +12,7 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Comprar ahora",
+        "comprar_texto": "Obtenlo ahora",
         "comprar_corto": "Comprar",
         "comprar_nota": "Pago 100% seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
@@ -28,7 +28,8 @@
         "subtitulo": "50 × 38 × 26 cm · Para gatos y perritos pequeños",
         "intro": "El trineo de Papá Noel convertido en cama. Bordes de peluche blanco, paredes altas y acolchadas, y un cojín suave para que tu mascota se acurruque. Toffee la probó por 14 horas seguidas: aprobada.",
         "puntos": "Medidas: 50 cm de largo × 38 cm de ancho × 26 cm de alto\nPara gatos y perros pequeños (hasta unos 7 kg)\nFelpa suave con relleno de algodón\nParedes altas para apoyar la cabeza\nDecora tu casa en Navidad",
-        "sticky_texto": "Cama Trineo Navideña"
+        "sticky_texto": "Cama Trineo Navideña",
+        "compra_rapida": true
       },
       "blocks": {
         "b0": {

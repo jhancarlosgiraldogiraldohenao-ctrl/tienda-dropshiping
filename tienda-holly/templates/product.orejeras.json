@@ -12,7 +12,7 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Comprar ahora",
+        "comprar_texto": "Obtenlo ahora",
         "comprar_corto": "Comprar",
         "comprar_nota": "Pago 100% seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
@@ -29,7 +29,8 @@
         "intro": "La pólvora de diciembre es la peor noche del año para muchos perros. Estas orejeras acolchadas cubren sus oídos y amortiguan los ruidos fuertes para que esté más tranquilo.",
         "puntos": "Versión engrosada: más tela y más relleno\nAmortigua pólvora, truenos, secador y peluquería\nSe ajusta con velcro, sin apretar\nResistente al agua: sirve también en el baño\nPara perros desde 7,5 kg (tallas S a XL)",
         "guia_tallas": "📏 ¿No sabes su talla? Mira la guía de tallas en las fotos.",
-        "sticky_texto": "Orejeras anti ruido"
+        "sticky_texto": "Orejeras anti ruido",
+        "compra_rapida": true
       },
       "blocks": {
         "b0": {
