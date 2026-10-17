@@ -371,7 +371,8 @@
         "historial_titulo": "Marranos rotos y donados",
         "sin_donaciones": "",
         "compacto": true,
-        "ancla": "marrano"
+        "ancla": "marrano",
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
       },
       "blocks": {},
       "block_order": []

@@ -3,8 +3,8 @@
     "hero": {
       "type": "tf-hero",
       "settings": {
-        "imagen": "shopify://shop_images/toffee-portada-horizontal.jpg",
-        "imagen_movil": "shopify://shop_images/toffee-portada-vertical.jpg",
+        "imagen": "shopify://shop_images/F01-portada-horizontal.jpg",
+        "imagen_movil": "shopify://shop_images/F02-portada-vertical.jpg",
         "eyebrow": "Soy Toffee 🐾",
         "titulo": "<p>Si no pasa mi prueba, <em>lo tiro de la mesa.</em></p>",
         "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que llega a mi tienda pasa primero por mis patitas, y solo se queda lo que yo apruebo.",
@@ -379,7 +379,8 @@
         "historial_titulo": "Marranos rotos y donados",
         "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
         "compacto": false,
-        "ancla": "marrano"
+        "ancla": "marrano",
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg"
       },
       "blocks": {},
       "block_order": []
