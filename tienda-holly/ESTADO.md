@@ -216,3 +216,4 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Título de la portada en Google y SEO de los 3 productos. Imagen para compartir (WhatsApp/redes) nueva con Toffee futurista.
 - CSS crítico para internet lento (fondo oscuro e íconos con tamaño fijo antes de cargar el CSS).
 - NO se agregaron reseñas: no hay ventas todavía y las reseñas falsas están prohibidas. Plan: app de reseñas (Judge.me gratis) después de las primeras ventas.
+- 17-oct: Shopify NO permite moneda local sin Shopify Payments (no existe en Colombia; usamos dLocal). Se cobra en COP y dLocal/el banco convierte. Mercados separados: Colombia, México (+ crear Chile y Perú) solo para detectar el país. El tema muestra "≈ $X MXN/CLP/PEN · se cobra en COP" (snippet tf-precio-local, tasas fijas: MXN 0,005435 · CLP 0,2888 · PEN 0,001087 por COP; revisar cada mes).

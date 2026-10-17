@@ -959,3 +959,6 @@ body {
 .tf-pago { width: 38px; height: 24px; border-radius: 4px; }
 .tf-compra-rapida .tf-extra { order: 0; }
 .tf-carrito-nota { margin: 12px 0 0; text-align: center; font-size: 12.5px; opacity: .8; }
+.tf-local { display: block; width: 100%; font-size: 13px; font-weight: 600; color: var(--tf-cian); text-align: center; }
+.tf-local small { font-weight: 400; color: var(--hl-texto-suave); }
+.hl-tarjeta__precio .tf-local { text-align: left; }

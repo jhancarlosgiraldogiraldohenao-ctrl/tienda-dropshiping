@@ -154,6 +154,7 @@
             {%- endform -%}
           </product-form>
           <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{%- if section.settings.compra_rapida -%}<span class="tf-ahora__txt">{{ section.settings.comprar_texto }}</span><span class="tf-ahora__precio"><b data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</b> <small>{{ cart.currency.iso_code }}</small></span>{%- else -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- endif -%}</a>
+          {%- if section.settings.compra_rapida -%}{% render 'tf-precio-local', precio: variante.price %}{%- endif -%}
           {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
           {%- if section.settings.compra_rapida -%}
             <div class="tf-extra">

@@ -1,0 +1,24 @@
+{%- comment -%} Precio aproximado en la moneda del país del visitante (la tienda cobra en COP). Uso: render 'tf-precio-local', precio: variante.price {%- endcomment -%}
+{%- liquid
+  assign pais = localization.country.iso_code
+  assign tasa = 0
+  case pais
+    when 'MX'
+      assign tasa = 0.005435
+      assign mon = 'MXN'
+      assign dec = 0
+    when 'CL'
+      assign tasa = 0.2888
+      assign mon = 'CLP'
+      assign dec = 0
+    when 'PE'
+      assign tasa = 0.001087
+      assign mon = 'PEN'
+      assign dec = 2
+  endcase
+-%}
+{%- if tasa > 0 -%}
+  {%- assign v = precio | divided_by: 100.0 | times: tasa -%}
+  {%- if dec == 0 -%}{%- assign v = v | round -%}{%- assign txt = v | append: '' -%}{%- if v >= 1000 -%}{%- assign miles = v | divided_by: 1000 -%}{%- assign resto = v | modulo: 1000 | prepend: '00' | slice: -3, 3 -%}{%- assign txt = miles | append: '.' | append: resto -%}{%- endif -%}{%- else -%}{%- assign txt = v | round: 2 | append: '' | replace: '.', ',' -%}{%- endif -%}
+  <span class="tf-local">≈ ${{ txt }} {{ mon }}<small> · se cobra en COP, tu banco convierte</small></span>
+{%- endif -%}
