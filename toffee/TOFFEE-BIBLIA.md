@@ -69,7 +69,7 @@ Foto realista de estudio, estilo fotografía profesional de mascotas. Hoja de pe
 ## Galleta (17-oct) — el empleado de Toffee
 - Perro criollo (mestizo latino), flaco y patilargo, ~12 kg, rescatado de la calle por Toffee → conecta con el 3 % del marrano.
 - Color galleta (café claro dorado) con pecho, punta de la cola y patitas blancas; pelo corto un poco despeinado.
-- Una oreja parada y la otra doblada; ojos grandes cafés y nerviosos; cejas expresivas; a veces la punta de la lengua afuera.
+- Pelo de alambre despeinado (como grifón criollo), orejas caídas medio dobladas, barbita y cejas peludas; ojos grandes cafés y nerviosos. Referencia oficial: refs/GALLETA-oficial.jpg
 - Pañoleta azul marino (igual al gorro de Toffee) con placa dorada en forma de hueso.
 - Personalidad: miedoso, torpe, leal, comelón; le tiene pánico a la pólvora, las aspiradoras y el cartero. Toffee es su jefe.
 - SIEMPRE fotorrealista (nada de caricatura ni 3D animado). Pesa 12 kg: usa orejeras talla S. NO le sirve el disfraz (máx. 7,5 kg).
