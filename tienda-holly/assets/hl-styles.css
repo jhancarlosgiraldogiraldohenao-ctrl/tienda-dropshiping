@@ -1251,3 +1251,5 @@ a { color: var(--tf-caramelo-hondo); }
 .tf-bloque h1 { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.06; margin: 12px 0 16px; }
 .tf-oscuro h1 { color: var(--tf-crema) !important; }
 .tf-oscuro h1 em { color: var(--tf-caramelo) !important; }
+/* Hero: «lo tiro de la mesa.» en caramelo (gana a .hl-section h1 em) */
+.hl-section.tf-hero .tf-hero__titulo em { color: var(--tf-caramelo) !important; }
