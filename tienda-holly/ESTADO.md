@@ -262,3 +262,11 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Tamaños: portada 132 → 112 px (computador) y 92 → 74 px (celular); secciones Toffee/Galleta 132 → 104 px (computador) y 74 px (celular).
 - Posición: en Toffee/Galleta (portada e Historia) pasa a la esquina superior izquierda de la foto (antes abajo a la derecha, tapaba la cara de Galleta). En la portada del celular va arriba a la izquierda de la foto, sobre la pared (no tapa a Toffee). Computador de la portada: misma esquina de antes, solo más pequeño.
 - Arreglo: la etiqueta del sello se salía hacia la izquierda (una regla `inset:auto` anulaba `left:50%`); ahora va centrada bajo el círculo.
+
+## 18-oct · Tienda menos cargada
+- Copia: #189657645345 «Toffee A - menos cargada (copia)» (incluye también los cambios del sello, que no se habían publicado). Vista previa: https://soytoffee.store/?preview_theme_id=189657645345 . Publicar SOLO con «publica».
+- PORTADA (11 secciones visibles): hero · cinta · aprobado · prueba · temporada · test · equipo · marrano · faq · club · cierre (redes sigue desactivada). Quitadas: toffee, galleta, comparativa, paises, seguro.
+- Nueva sección tf-equipo («El equipo»): Toffee (toffee-jefe-cajas.jpg, sello en computador) + Galleta (galleta-oficial.jpg), nombre, rol y 2 líneas; botón «La historia de Toffee»; nota IA. Ancla #toffee (los enlaces viejos siguen funcionando). Las secciones completas de Toffee y Galleta siguen en /pages/historia-de-toffee.
+- FAQ portada: 10 → 6 (envío costo+tiempo unidos, Navidad, impuestos, pago con Discover, tallas, «no llega/dañado/retracto» unida con cambios). Datos de «Compra tranquilo» pasados a la FAQ. Se quitaron «¿Quién es Toffee?» y «¿De verdad donan?» (lo cubren el equipo y el marrano). La FAQ completa sigue en /pages/ayuda.
+- PRODUCTOS: sección marrano completa → línea «🐷 Con esta compra, $X van al marrano de Toffee» con enlace a /pages/marrano (hl-producto: marrano_linea, bajo las 3 garantías). Quitadas las secciones paises y seguro. FAQ: 5 por producto (3 propias + envío unido + «¿Y si no llega?»); en orejeras «¿Sirve para gatos?» pasó a la respuesta de tallas.
+- ALTO EN CELULAR (390×844, pantallas): portada 19,9 → 14,7 · orejeras 16,3 → 14,4 · disfraz 14,8 → 11,9 · trineo 15,7 → 12,6. Primera pantalla de portada y productos sin cambios.

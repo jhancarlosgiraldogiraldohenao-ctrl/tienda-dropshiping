@@ -38,7 +38,9 @@
         "tallas_nota": "Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. Si queda entre dos tallas, elige la más grande.",
         "tabla_tallas": "Talla|Contorno de cabeza|Peso del perro\nS|25 – 38 cm|7,5 – 17,5 kg\nM|35 – 48 cm|17,5 – 30 kg\nL|45 – 60 cm|30 – 42,5 kg\nXL|55 – 71 cm|42,5 – 60 kg",
         "aviso": "Ayudan a reducir el ruido; no son un tratamiento médico. Si tu perro sufre mucha ansiedad, consulta con tu veterinario. No lo dejes solo con ellas puestas.",
-        "fecha_navidad": "2026-11-13"
+        "fecha_navidad": "2026-11-13",
+        "marrano_linea": true,
+        "marrano_url": "/pages/marrano"
       },
       "blocks": {
         "b0": {
@@ -223,56 +225,6 @@
         "b4"
       ]
     },
-    "seguro": {
-      "type": "hl-seguro",
-      "settings": {
-        "eyebrow": "Compra tranquilo",
-        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
-        "texto": "Así funciona tu pedido, paso a paso.",
-        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 10 a 25 días hábiles según tu país y ciudad.",
-        "titulo_size": 56
-      },
-      "blocks": {
-        "b0": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "candado",
-            "titulo": "Pago seguro",
-            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
-          }
-        },
-        "b1": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "camion",
-            "titulo": "Envío gratis",
-            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
-          }
-        },
-        "b2": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "reloj",
-            "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 13 de noviembre y recíbelo antes de Navidad."
-          }
-        },
-        "b3": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "escudo",
-            "titulo": "Garantía",
-            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
     "faq": {
       "type": "hl-faq",
       "settings": {
@@ -287,14 +239,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Qué talla le pido a mi perro?",
-            "respuesta": "<p>Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. S: 25–38 cm (7,5–17,5 kg) · M: 35–48 cm (17,5–30 kg) · L: 45–60 cm (30–42,5 kg) · XL: 55–71 cm (42,5–60 kg). Si queda entre dos tallas, elige la más grande.</p>"
-          }
-        },
-        "b1": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Sirve para gatos o perritos muy pequeños?",
-            "respuesta": "<p>No. Está hecha para perros desde 7,5 kg. A un gato o a un chihuahua le quedaría grande.</p>"
+            "respuesta": "<p>Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. S: 25–38 cm (7,5–17,5 kg) · M: 35–48 cm (17,5–30 kg) · L: 45–60 cm (30–42,5 kg) · XL: 55–71 cm (42,5–60 kg). Si queda entre dos tallas, elige la más grande. Es para perros desde 7,5 kg: a un gato o a un chihuahua le quedaría grande.</p>"
           }
         },
         "b2": {
@@ -311,32 +256,11 @@
             "respuesta": "<p>La mayoría se acostumbra rápido si se la presentas con premios unos días antes. Quítasela si la intenta arrancar con fuerza.</p>"
           }
         },
-        "b4": {
+        "envio": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), 100% seguro. Pagas al hacer tu pedido.</p>"
-          }
-        },
-        "b5": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
-          }
-        },
-        "b6": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis a México, Colombia, Chile y Perú.</p>"
-          }
-        },
-        "b7": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
+            "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad. Para recibirlo antes de Navidad, pide antes del 13 de noviembre.</p>"
           }
         },
         "b8": {
@@ -345,92 +269,14 @@
             "pregunta": "¿Y si no llega o llega dañado?",
             "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
           }
-        },
-        "b9": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Toffee es un gato de verdad?",
-            "respuesta": "<p>Toffee es un personaje creado con inteligencia artificial: es nuestro jefe y la cara de la tienda. Los productos sí son 100% reales y te llegan a tu casa.</p>"
-          }
         }
       },
       "block_order": [
         "b0",
-        "b1",
         "b2",
         "b3",
-        "b4",
-        "b5",
-        "b6",
-        "b7",
-        "b8",
-        "b9"
-      ]
-    },
-    "marrano": {
-      "type": "tf-marrano",
-      "settings": {
-        "eyebrow": "El 3 % de esta compra",
-        "titulo": "<p>Va al marrano <em>de Toffee</em></p>",
-        "mensaje": "De esta compra, el 3 % cae en mi marranito. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle. 🐷",
-        "meta": 1000000,
-        "total_extra": 0,
-        "moneda": "COP",
-        "nota": "Cada donación la publicamos con su comprobante en @toffee.elgato.",
-        "historial_titulo": "Marranos rotos y donados",
-        "sin_donaciones": "",
-        "compacto": true,
-        "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
-        "boton_texto": "Conoce la causa",
-        "boton_url": "/pages/marrano"
-      },
-      "blocks": {},
-      "block_order": []
-    },
-    "paises": {
-      "type": "tf-paises",
-      "settings": {
-        "eyebrow": "Enviamos a",
-        "titulo": "<p>Países donde <em>puedes comprar</em></p>",
-        "texto": "Envío gratis con rastreo · 10 a 25 días hábiles · Pago seguro con tarjeta",
-        "ancla": "paises"
-      },
-      "blocks": {
-        "p0": {
-          "type": "pais",
-          "settings": {
-            "codigo": "co",
-            "nombre": "Colombia"
-          }
-        },
-        "p1": {
-          "type": "pais",
-          "settings": {
-            "codigo": "mx",
-            "nombre": "México"
-          }
-        },
-        "p2": {
-          "type": "pais",
-          "settings": {
-            "codigo": "cl",
-            "nombre": "Chile"
-          }
-        },
-        "p3": {
-          "type": "pais",
-          "settings": {
-            "codigo": "pe",
-            "nombre": "Perú"
-          }
-        }
-      },
-      "block_order": [
-        "p0",
-        "p1",
-        "p2",
-        "p3"
+        "envio",
+        "b8"
       ]
     },
     "tambien": {
@@ -481,12 +327,9 @@
   },
   "order": [
     "principal",
-    "marrano",
     "activos",
     "ritual",
     "comparativa",
-    "paises",
-    "seguro",
     "faq",
     "tambien"
   ]

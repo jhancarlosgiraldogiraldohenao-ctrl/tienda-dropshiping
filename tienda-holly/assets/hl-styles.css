@@ -1273,3 +1273,31 @@ a { color: var(--tf-caramelo-hondo); }
   .tf-sello--foto { left: 44px !important; }
 }
 .tf-sello .tf-sello__txt { left: 50% !important; right: auto !important; top: auto !important; }
+/* El equipo (Toffee + Galleta) */
+.tf-equipo__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(16px, 4vw, 48px); max-width: 880px; margin: clamp(24px, 4vw, 40px) auto 0; }
+.tf-equipo__visual { position: relative; }
+.tf-equipo__foto { border-radius: 200px 200px var(--hl-radio) var(--hl-radio); overflow: hidden; background: var(--tf-crema-2); box-shadow: var(--tf-sombra); aspect-ratio: 5 / 6; }
+.tf-equipo__foto img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.tf-equipo__visual .tf-chip-ia { left: 12px; bottom: 12px; }
+.tf-equipo__card h3 { font-family: var(--tf-titular); font-size: clamp(22px, 3vw, 30px); margin: 18px 0 6px; }
+.tf-equipo__card h3 span { font-family: var(--tf-cuerpo); font-size: .55em; font-weight: 600; letter-spacing: .04em; color: var(--tf-caramelo-hondo); }
+.tf-oscuro .tf-equipo__card h3 span { color: var(--tf-dorado); }
+.tf-equipo__card p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--tf-texto-suave); }
+.tf-oscuro .tf-equipo__card p { color: var(--tf-crema-suave); }
+.tf-equipo__pie { text-align: center; margin-top: clamp(24px, 4vw, 40px); }
+.tf-equipo__nota { margin: 14px auto 0; font-size: 13px; color: var(--tf-texto-suave); max-width: 560px; }
+.tf-oscuro .tf-equipo__nota { color: var(--tf-crema-suave); }
+@media (max-width: 749px) {
+  .tf-equipo__card h3 { font-size: 20px; margin-top: 14px; }
+  .tf-equipo__card h3 span { display: block; font-size: 12px; margin-top: 2px; }
+  .tf-equipo__card p { font-size: 14px; }
+  .tf-equipo .tf-sello--foto { width: 58px !important; height: 58px !important; top: -10px !important; left: 30px !important; }
+  .tf-equipo .tf-chip-ia { font-size: 10px; padding: 5px 8px; left: 8px; bottom: 8px; }
+}
+.tf-marrano-linea { margin: 14px 0 0; font-size: 15px; }
+.tf-marrano-linea a { display: inline-block; padding: 10px 14px; border-radius: 999px; background: var(--tf-rosa); color: var(--tf-marino); text-decoration: none; font-weight: 600; }
+.tf-marrano-linea a:hover { text-decoration: underline; }
+.tf-equipo .hl-cabecera h2 { font-size: clamp(30px, 5vw, 56px); }
+.tf-equipo__grid { max-width: 760px; }
+.tf-equipo__nota { display: block; margin-left: auto !important; margin-right: auto !important; }
+@media (max-width: 749px) { .tf-equipo .tf-sello--foto { display: none !important; } }

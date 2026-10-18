@@ -38,7 +38,9 @@
         "tabla_tallas": "Tamaño|Medidas|Mascota ideal\nS|50 × 38 × 26 cm|Gatos y perros pequeños hasta unos 7 kg",
         "aviso": "Lávala a mano con agua fría y jabón suave. Sécala a la sombra.",
         "guia_tallas": "",
-        "fecha_navidad": "2026-11-13"
+        "fecha_navidad": "2026-11-13",
+        "marrano_linea": true,
+        "marrano_url": "/pages/marrano"
       },
       "blocks": {
         "b0": {
@@ -223,56 +225,6 @@
         "b4"
       ]
     },
-    "seguro": {
-      "type": "hl-seguro",
-      "settings": {
-        "eyebrow": "Compra tranquilo",
-        "titulo": "<p>Pide hoy, <em>recíbelo en casa</em></p>",
-        "texto": "Así funciona tu pedido, paso a paso.",
-        "aviso": "Envío internacional con rastreo. Tiempo estimado de entrega: 10 a 25 días hábiles según tu país y ciudad.",
-        "titulo_size": 56
-      },
-      "blocks": {
-        "b0": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "candado",
-            "titulo": "Pago seguro",
-            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
-          }
-        },
-        "b1": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "camion",
-            "titulo": "Envío gratis",
-            "texto": "Con número de rastreo en tu correo apenas sale tu pedido."
-          }
-        },
-        "b2": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "reloj",
-            "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 13 de noviembre y recíbelo antes de Navidad."
-          }
-        },
-        "b3": {
-          "type": "tarjeta",
-          "settings": {
-            "icono": "escudo",
-            "titulo": "Garantía",
-            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
-          }
-        }
-      },
-      "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3"
-      ]
-    },
     "faq": {
       "type": "hl-faq",
       "settings": {
@@ -304,32 +256,11 @@
             "respuesta": "<p>Sí, a mano con agua fría y jabón suave. Déjala secar a la sombra.</p>"
           }
         },
-        "b3": {
+        "envio": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), 100% seguro. Pagas al hacer tu pedido.</p>"
-          }
-        },
-        "b4": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
-          }
-        },
-        "b5": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis a México, Colombia, Chile y Perú.</p>"
-          }
-        },
-        "b6": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
+            "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad. Para recibirlo antes de Navidad, pide antes del 13 de noviembre.</p>"
           }
         },
         "b7": {
@@ -338,91 +269,14 @@
             "pregunta": "¿Y si no llega o llega dañado?",
             "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
           }
-        },
-        "b8": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Toffee es un gato de verdad?",
-            "respuesta": "<p>Toffee es un personaje creado con inteligencia artificial: es nuestro jefe y la cara de la tienda. Los productos sí son 100% reales y te llegan a tu casa.</p>"
-          }
         }
       },
       "block_order": [
         "b0",
         "b1",
         "b2",
-        "b3",
-        "b4",
-        "b5",
-        "b6",
-        "b7",
-        "b8"
-      ]
-    },
-    "marrano": {
-      "type": "tf-marrano",
-      "settings": {
-        "eyebrow": "El 3 % de esta compra",
-        "titulo": "<p>Va al marrano <em>de Toffee</em></p>",
-        "mensaje": "De esta compra, el 3 % cae en mi marranito. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle. 🐷",
-        "meta": 1000000,
-        "total_extra": 0,
-        "moneda": "COP",
-        "nota": "Cada donación la publicamos con su comprobante en @toffee.elgato.",
-        "historial_titulo": "Marranos rotos y donados",
-        "sin_donaciones": "",
-        "compacto": true,
-        "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
-        "boton_texto": "Conoce la causa",
-        "boton_url": "/pages/marrano"
-      },
-      "blocks": {},
-      "block_order": []
-    },
-    "paises": {
-      "type": "tf-paises",
-      "settings": {
-        "eyebrow": "Enviamos a",
-        "titulo": "<p>Países donde <em>puedes comprar</em></p>",
-        "texto": "Envío gratis con rastreo · 10 a 25 días hábiles · Pago seguro con tarjeta",
-        "ancla": "paises"
-      },
-      "blocks": {
-        "p0": {
-          "type": "pais",
-          "settings": {
-            "codigo": "co",
-            "nombre": "Colombia"
-          }
-        },
-        "p1": {
-          "type": "pais",
-          "settings": {
-            "codigo": "mx",
-            "nombre": "México"
-          }
-        },
-        "p2": {
-          "type": "pais",
-          "settings": {
-            "codigo": "cl",
-            "nombre": "Chile"
-          }
-        },
-        "p3": {
-          "type": "pais",
-          "settings": {
-            "codigo": "pe",
-            "nombre": "Perú"
-          }
-        }
-      },
-      "block_order": [
-        "p0",
-        "p1",
-        "p2",
-        "p3"
+        "envio",
+        "b7"
       ]
     },
     "tambien": {
@@ -473,12 +327,9 @@
   },
   "order": [
     "principal",
-    "marrano",
     "activos",
     "ritual",
     "comparativa",
-    "paises",
-    "seguro",
     "faq",
     "tambien"
   ]

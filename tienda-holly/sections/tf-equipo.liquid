@@ -1,0 +1,57 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%} El equipo: Toffee y Galleta juntos, con foto, rol y 2 líneas cada uno. {%- endcomment -%}
+<section class="hl-section tf-equipo{% if section.settings.marino %} tf-oscuro{% endif %}" id="{{ section.settings.ancla | default: 'equipo' }}">
+  <div class="hl-container">
+    <div class="hl-cabecera hl-cabecera--centro hl-reveal">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+    </div>
+    <div class="tf-equipo__grid">
+      {%- for block in section.blocks -%}
+        <article class="tf-equipo__card hl-reveal" style="--hl-i:{{ forloop.index }}" {{ block.shopify_attributes }}>
+          <div class="tf-equipo__visual">
+            <div class="tf-equipo__foto">
+              {%- if block.settings.imagen != blank -%}
+                <img src="{{ block.settings.imagen | image_url: width: 700 }}" srcset="{{ block.settings.imagen | image_url: width: 400 }} 400w, {{ block.settings.imagen | image_url: width: 700 }} 700w" sizes="(min-width: 750px) 40vw, 45vw" alt="{{ block.settings.imagen.alt | escape }}" loading="lazy" width="700" height="840">
+              {%- endif -%}
+            </div>
+            {%- if block.settings.sello != blank -%}{% render 'tf-sello', texto: block.settings.sello, clase: 'tf-sello--foto' %}{%- endif -%}
+            {%- if block.settings.imagen != blank and block.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
+          </div>
+          <h3>{{ block.settings.nombre }}{% if block.settings.rol != blank %} <span>· {{ block.settings.rol }}</span>{% endif %}</h3>
+          <p>{{ block.settings.texto }}</p>
+        </article>
+      {%- endfor -%}
+    </div>
+    <div class="tf-equipo__pie hl-reveal">
+      {%- if section.settings.btn_texto != blank -%}<a class="hl-btn {% if section.settings.marino %}hl-btn--ghost{% else %}hl-btn--curcuma{% endif %}" href="{{ section.settings.btn_url | default: '/pages/historia-de-toffee' }}">{{ section.settings.btn_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
+      {%- if section.settings.nota != blank -%}<p class="tf-equipo__nota">{{ section.settings.nota }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Toffee – El equipo",
+  "tag": "section",
+  "settings": [
+    { "type": "checkbox", "id": "marino", "label": "Fondo azul marino", "default": true },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El equipo" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Quién está <em>detrás</em></p>" },
+    { "type": "text", "id": "btn_texto", "label": "Botón", "default": "La historia de Toffee" },
+    { "type": "url", "id": "btn_url", "label": "Enlace del botón" },
+    { "type": "text", "id": "nota", "label": "Nota pequeña" },
+    { "type": "text", "id": "ancla", "label": "Ancla", "default": "equipo" }
+  ],
+  "blocks": [
+    { "type": "miembro", "name": "Miembro", "limit": 3, "settings": [
+      { "type": "image_picker", "id": "imagen", "label": "Foto" },
+      { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
+      { "type": "text", "id": "sello", "label": "Sello sobre la foto" },
+      { "type": "text", "id": "nombre", "label": "Nombre", "default": "Toffee" },
+      { "type": "text", "id": "rol", "label": "Rol", "default": "el jefe" },
+      { "type": "textarea", "id": "texto", "label": "Texto (máximo 2 líneas)" }
+    ] }
+  ],
+  "presets": [ { "name": "Toffee – El equipo" } ]
+}
+{% endschema %}

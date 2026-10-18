@@ -176,6 +176,11 @@
           </div>
         {%- endif -%}
 
+        {%- if section.settings.marrano_linea -%}
+          {%- assign aporte = variante.price | times: 0.03 | round -%}
+          <p class="tf-marrano-linea"><a href="{{ section.settings.marrano_url | default: '/pages/marrano' }}">🐷 Con esta compra, <b>{{ aporte | money_without_trailing_zeros }}</b> van al marrano de Toffee</a></p>
+        {%- endif -%}
+
         {%- if section.settings.compra_rapida -%}<div class="tf-compra-info">{{ intro_puntos }}</div>{%- endif -%}
 
         {%- if section.settings.veredicto != blank -%}
@@ -446,6 +451,8 @@
       "label": "Botón agregar al carrito",
       "default": "Agregar al carrito"
     },
+    { "type": "checkbox", "id": "marrano_linea", "label": "Línea del marrano (3 % de esta compra)", "default": false },
+    { "type": "url", "id": "marrano_url", "label": "Enlace de la línea del marrano" },
     {
       "type": "text",
       "id": "agotado_texto",
