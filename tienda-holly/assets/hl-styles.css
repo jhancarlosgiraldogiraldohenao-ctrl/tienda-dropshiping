@@ -1253,3 +1253,23 @@ a { color: var(--tf-caramelo-hondo); }
 .tf-oscuro h1 em { color: var(--tf-caramelo) !important; }
 /* Hero: «lo tiro de la mesa.» en caramelo (gana a .hl-section h1 em) */
 .hl-section.tf-hero .tf-hero__titulo em { color: var(--tf-caramelo) !important; }
+/* Sello «Aprobado por Toffee» más pequeño y en esquinas sin personajes */
+.tf-hero .tf-sello { width: 112px !important; height: 112px !important; }
+.tf-sello--foto { width: 104px !important; height: 104px !important; top: -18px !important; left: -14px !important; right: auto !important; bottom: auto !important; z-index: 3; }
+@media (max-width: 749px) {
+  .tf-hero .tf-sello { position: relative !important; order: 3; align-self: flex-start; top: auto !important; right: auto !important; bottom: auto !important; width: 74px !important; height: 74px !important; margin: 8px 0 -82px 14px; z-index: 3; }
+  .tf-hero__foto { order: 3; }
+  .tf-sello--foto { width: 74px !important; height: 74px !important; top: -12px !important; left: -8px !important; }
+  .tf-sello__txt { font-size: 9px !important; padding: 4px 8px !important; }
+}
+@media (max-width: 749px) {
+  .tf-hero__foto { order: 4 !important; }
+  .tf-hero__paises, .tf-hero__ia, .tf-hero__chips { order: 5 !important; }
+  .tf-hero .tf-sello { margin: 6px 0 -80px 26px !important; }
+  .tf-sello--foto { left: 12px !important; }
+}
+@media (max-width: 749px) {
+  .tf-hero .tf-sello { margin-left: 52px !important; }
+  .tf-sello--foto { left: 44px !important; }
+}
+.tf-sello .tf-sello__txt { left: 50% !important; right: auto !important; top: auto !important; }

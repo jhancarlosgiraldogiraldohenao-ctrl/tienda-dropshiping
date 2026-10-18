@@ -256,3 +256,9 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - SEO: el logo de la cabecera ya no es H1 (div.header__heading). Ajuste «Título principal de la página (H1)» (es_h1) en tf-toffee, hl-faq, tf-marrano y tf-bloque; activado en Historia, Ayuda, El marrano y 404. Verificado: un solo H1 en portada, Historia, Ayuda, Marrano, 404 y producto.
 - COLOR HERO (aprobado por Jay): «lo tiro de la mesa.» vuelve a caramelo #E0954F con `.hl-section.tf-hero .tf-hero__titulo em` (antes ganaba `.hl-section h1 em` y salía #8F5527). La página /cart sigue con 2 H1 (Dawn), sin tocar.
 - 18-oct: PUBLICADO por orden de Jay. En vivo: #189657121057 «Toffee A - Noche acogedora (18-oct v3)». Respaldos: #189656531233 «Respaldo - Toffee A v2 (18-oct)», #189652074785 (v1), #189551870241 (futurista). Política de envíos aplicada (13 de noviembre). Verificado en vivo: 0 «20 de noviembre», 0 «Mercado Pago», 1 H1 por página (salvo /cart), color del hero rgb(224,149,79).
+
+## 18-oct · Sello «Aprobado por Toffee» más pequeño
+- Copia: #189657252129 «Toffee A - sello (copia)». Vista previa: https://soytoffee.store/?preview_theme_id=189657252129 . Publicar SOLO con «publica».
+- Tamaños: portada 132 → 112 px (computador) y 92 → 74 px (celular); secciones Toffee/Galleta 132 → 104 px (computador) y 74 px (celular).
+- Posición: en Toffee/Galleta (portada e Historia) pasa a la esquina superior izquierda de la foto (antes abajo a la derecha, tapaba la cara de Galleta). En la portada del celular va arriba a la izquierda de la foto, sobre la pared (no tapa a Toffee). Computador de la portada: misma esquina de antes, solo más pequeño.
+- Arreglo: la etiqueta del sello se salía hacia la izquierda (una regla `inset:auto` anulaba `left:50%`); ahora va centrada bajo el círculo.
