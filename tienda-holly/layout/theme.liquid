@@ -10,6 +10,10 @@
     <link rel="icon" type="image/png" href="{{ 'hl-favicon.png' | asset_url }}">
     <link rel="apple-touch-icon" href="{{ 'hl-favicon.png' | asset_url }}">
     {%- if template.name == 'index' -%}
+      {%- comment -%} Las secciones bajo la primera pantalla se pintan solo al acercarse (velocidad en celular). {%- endcomment -%}
+      <style>#MainContent > .shopify-section:nth-child(n+4){content-visibility:auto;contain-intrinsic-size:auto 900px}</style>
+    {%- endif -%}
+    {%- if template.name == 'index' -%}
       {%- comment -%} Precarga de la foto de portada (si cambias la foto del hero, cambia el nombre aquí). {%- endcomment -%}
       {%- assign hm = images['A02-portada-vertical.jpg'] -%}{%- assign hd = images['A01-portada-horizontal.jpg'] -%}
       <link rel="preload" as="image" media="(max-width: 749px)" imagesrcset="{{ hm | image_url: width: 600 }} 600w, {{ hm | image_url: width: 800 }} 800w, {{ hm | image_url: width: 1100 }} 1100w" imagesizes="100vw" fetchpriority="high">
@@ -78,6 +82,7 @@
     <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'standard-actions-override.js' | asset_url }}" defer="defer"></script>
+    <script src="{{ 'hl-scripts.js' | asset_url }}" defer="defer"></script>
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
@@ -312,7 +317,8 @@
 
     {%- comment -%} Fuentes de Dawn sin precarga: el tema usa Fraunces + DM Sans (assets tf-*). {%- endcomment -%}
 
-    {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
+    {%- comment -%} Sin selector de país/idioma visible: no se carga localization-form (velocidad). {%- endcomment -%}
+    {%- if settings.tf_selector_pais -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
       <script src="{{ 'localization-form.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
@@ -418,7 +424,7 @@
       };
     </script>
 
-    {%- if settings.predictive_search_enabled -%}
+    {%- if settings.predictive_search_enabled and template.name == 'search' -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 

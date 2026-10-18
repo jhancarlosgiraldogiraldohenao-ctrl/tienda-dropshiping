@@ -42,7 +42,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
   - Carrito vacío: «más vacío que mi plato a las 6 a. m. 😾».
   - Agotado: «Se acabó · Galleta está empacando más».
 - **Políticas actualizadas:**
-  - Envíos e impuestos: los impuestos los asume la tienda.
+  - Envíos e impuestos: desde el 18-oct, en México y Chile los impuestos de importación los paga el cliente.
   - Devoluciones por país: Colombia, Chile, México y Perú.
   - Términos con cláusula de IA.
 - **Para buscadores e IA:**
@@ -118,7 +118,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
 **Vista previa:** Y ya sabes lo que hago con las cosas en mi mesa.
 
 > Humano, dejaste esto en el carrito. Yo ya lo probé y lo aprobé; solo falta que lo pidas.
-> Envío gratis con rastreo y sin impuestos al recibir.
+> Envío gratis con rastreo.
 > [Volver a mi carrito]
 > — Toffee
 
@@ -131,7 +131,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
 
 > ¡Hola! Soy Galleta, Gerente de Seguridad. Tu pedido ya salió. Aquí está tu número de rastreo: {{ número }}.
 > Tarda de 10 a 25 días hábiles. Los primeros días el rastreo puede verse quieto: está saliendo del país, es normal.
-> Si alguien te pide un pago al recibir, no pagues y escríbenos: los impuestos los asumimos nosotros.
+> Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir; esos los paga el cliente. Si tienes dudas sobre un cobro, escríbenos.
 > — Galleta 🐶
 
 ### 3.4 Pedir reseña (7 días después de entregado)
@@ -166,7 +166,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
 > - Retracto: Colombia 5 días hábiles, Chile 10 días, México 5 días hábiles y Perú 7 días, desde que recibes el producto.
 > - Garantía legal según tu país.
 > - Envío gratis.
-> - Impuestos de importación a cargo de Soy Toffee.
+> - En México y Chile, los impuestos de importación (si los cobran) los paga el cliente.
 >
 > Condiciones completas: soytoffee.store/policies/refund-policy
 
@@ -184,7 +184,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
 2. **¿A qué países envían?** Colombia, México, Chile y Perú. Envío gratis con rastreo.
 3. **¿Cuánto tarda?** De 10 a 25 días hábiles según país y ciudad.
 4. **¿Llega antes de Navidad?** Sí, si pides antes del 20 de noviembre.
-5. **¿Tengo que pagar impuestos o aduana?** No. Si tu país cobra impuestos de importación, los asume Soy Toffee.
+5. **¿Tengo que pagar impuestos o aduana?** Envío gratis. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En Colombia y Perú normalmente no aplican por el valor del pedido.
 6. **¿Cómo pago?** Con tarjeta de crédito o débito a través de dLocal Go. El precio está en COP; tu banco lo convierte.
 7. **¿Qué talla de orejeras pido?** Por el contorno de cabeza: S 25–38 cm, M 35–48 cm, L 45–60 cm, XL 55–71 cm.
    Son para perros desde 7,5 kg.

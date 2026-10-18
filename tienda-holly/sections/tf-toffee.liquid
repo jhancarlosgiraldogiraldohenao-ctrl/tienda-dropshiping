@@ -1,5 +1,4 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
 
 {% style %}
   #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }

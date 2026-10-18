@@ -1,0 +1,2 @@
+{%- comment -%} Aviso de impuestos de importación. Texto en Configuración del tema → Toffee – Avisos. {%- endcomment -%}
+{%- if settings.tf_aviso_impuestos != blank -%}<p class="tf-impuestos{% if clase %} {{ clase }}{% endif %}">🧾 {{ settings.tf_aviso_impuestos }}</p>{%- endif -%}

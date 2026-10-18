@@ -1,5 +1,4 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
 
 {%- if section.settings.imagen != blank -%}
   {%- assign img_base = section.settings.imagen | image_url: width: 1100 -%}

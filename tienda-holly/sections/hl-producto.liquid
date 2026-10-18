@@ -1,5 +1,4 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- assign variante = product.selected_or_first_available_variant -%}
@@ -162,6 +161,7 @@
           {%- if section.settings.compra_rapida -%}
             <div class="tf-extra">
               <p class="tf-entrega" data-tf-entrega data-min="{{ section.settings.dias_min }}" data-max="{{ section.settings.dias_max }}">📦 Envío gratis · llega en {{ section.settings.dias_min }} a {{ section.settings.dias_max }} días hábiles</p>
+              {% render 'tf-aviso-impuestos' %}
               {%- if section.settings.fecha_navidad != blank -%}<p class="tf-navidad" data-tf-navidad="{{ section.settings.fecha_navidad }}" hidden></p>{%- endif -%}
               <div class="tf-pagos" aria-label="Medios de pago">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag: class: 'tf-pago' }}{%- endfor -%}</div>
             </div>

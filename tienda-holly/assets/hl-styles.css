@@ -1232,3 +1232,6 @@ a { color: var(--tf-caramelo-hondo); }
 @media (max-width:560px){.tf-pie__top{grid-template-columns:1fr}.tf-pie__pagos{margin-left:0}.tf-pie__libro{width:100%}}
 .tf-oscuro h1 em,.tf-oscuro h2 em,.tf-oscuro h3 em,.tf-hero h1 em,.hl-noche h2 em,.tf-oscuro .tf-texto__rte a{color:var(--tf-caramelo)}
 .tf-hero__titulo em{color:var(--tf-caramelo)!important}
+.tf-impuestos{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--tf-texto-suave)}
+.tf-impuestos--carrito{margin:10px 0 0;text-align:left}
+.tf-marrano__vacio{font-weight:600}

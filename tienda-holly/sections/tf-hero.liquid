@@ -1,5 +1,4 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
 
 {% style %}
   #shopify-section-{{ section.id }} .tf-hero__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.5 | round }}px, 5.4vw, {{ section.settings.titulo_size }}px); }
@@ -33,7 +32,7 @@
           <span>{{ section.settings.paises_texto }}</span>
           {%- assign lista = section.settings.paises | split: ',' -%}
           {%- for c in lista -%}{%- assign cod = c | strip | split: ':' -%}
-            <span class="tf-hero__pais"><img src="{{ 'tf-bandera-' | append: cod[0] | append: '.png' | asset_url }}" alt="" width="24" height="24">{{ cod[1] }}</span>
+            <span class="tf-hero__pais"><img src="{{ 'tf-bandera-' | append: cod[0] | append: '.png' | asset_url }}" alt="" width="24" height="24" decoding="async" fetchpriority="low">{{ cod[1] }}</span>
           {%- endfor -%}
         </div>
       {%- endif -%}

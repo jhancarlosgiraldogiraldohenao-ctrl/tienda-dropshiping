@@ -1466,5 +1466,22 @@
         "label": "t:settings_schema.customer_accounts.settings.customer_account_menu.label"
       }
     ]
+  },
+  {
+    "name": "Toffee – Avisos",
+    "settings": [
+      {
+        "type": "textarea",
+        "id": "tf_aviso_impuestos",
+        "label": "Aviso de impuestos (producto y carrito)",
+        "default": "Envío gratis. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En Colombia y Perú normalmente no aplican por el valor del pedido."
+      },
+      {
+        "type": "checkbox",
+        "id": "tf_selector_pais",
+        "label": "Cargar selector de país (solo si lo muestras)",
+        "default": false
+      }
+    ]
   }
 ]

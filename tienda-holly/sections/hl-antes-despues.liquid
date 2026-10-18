@@ -1,5 +1,4 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'hl-scripts.js' | asset_url }}" defer></script>
 
 {%- assign con_fotos = section.blocks | where: 'type', 'caso' -%}
 {%- assign hay = false -%}
