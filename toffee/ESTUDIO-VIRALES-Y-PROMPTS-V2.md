@@ -53,7 +53,7 @@ Datos sacados de TikTok el 18-oct-2026 (vistas, likes, compartidos, guardados) y
 - **Cortos: de 6 a 18 segundos.** Los virales de animales reales duran 6-18 s. Solo los de cuentas IA con historia (Yumbo, Emma) pasan de 25 s, y ahí ya tienen seguidores.
 - **Un ángulo que no se ve en la vida real.** Desde abajo del vidrio, desde dentro de la caja, selfie con ojo de pez, primerísimo plano del ojo, cámara en el piso. El ángulo raro es lo que detiene el dedo.
 - **El sonido hace la mitad del chiste.** Casi ninguno tiene voz propia: usan un audio en tendencia ('Estoy loco', 'debería irme a vivir al monte', funk lento, canción acelerada) y la cara del gato lo actúa.
-- **Una línea de texto, arriba, que te identifica.** 'Mi gato cada que lo empiezo a grabar', 'Cuando le toca irse con su papá'. Letra blanca pequeña, sin cajas. Habla de algo que el que mira también vive.
+- **Casi nunca llevan texto.** 9 de los 12 virales no tienen ni una palabra en pantalla, y los 5 más vistos tampoco. La imagen y el sonido hacen todo y la frase va en la descripción. El texto solo aparece cuando el chiste lo necesita: una situación ('Mi gato cada que lo empiezo a grabar') o un diálogo con subtítulos, como Jake.
 - **Personaje con un rasgo fijo.** Jake y su mochila de Elmo, Emma y sus audífonos, Yumbo gordo y naranja. Toffee ya tiene el suyo: el gorro de dormir azul. Nunca se lo quites.
 - **Siempre un dúo.** Jake y su dueña, Yumbo y Shoan, Molang y Piu Piu, la foca y el oso. La relación entre dos personajes es lo que hace que la gente siga la cuenta. Toffee y Galleta ya son ese dúo.
 - **Lo local vende más que lo perfecto.** Emma come esquite en el Kitty Tianguis y Jake usa memes chilenos. La gente de ese país siente el video como suyo y lo comparte. Toffee tiene café, arepa, bandeja paisa, alumbrados y Día de las Velitas.
@@ -74,7 +74,7 @@ Datos sacados de TikTok el 18-oct-2026 (vistas, likes, compartidos, guardados) y
 2. 6 a 10 segundos. Si es loop, que el último cuadro sea igual al primero.
 3. Un solo plano. La cámara rara (desde abajo, dentro de algo, selfie, en el piso) vale más que muchos cortes.
 4. Siempre el gorro. Es la firma de Toffee, como la mochila de Jake.
-5. Una línea de texto arriba, blanca y pequeña, que hable de algo que el que mira vive.
+5. Sin texto en el video por defecto. Solo se pone cuando el chiste no se entiende sin él (diálogos, situaciones) y la frase va en la descripción.
 6. El audio en tendencia se elige en TikTok el día que publicas, no en Flow.
 7. Cada video debe dar ganas de mandárselo a alguien. Si no se te ocurre a quién, no lo publiques.
 8. Toffee y Galleta juntos al menos en 1 de cada 3 videos.
@@ -109,7 +109,7 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba, pequeño): Es muy redondo desde abajo 😭🐾
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Una canción suave y alegre en tendencia (estilo lo-fi coreano o piano tierno). Volumen del clip original al 30 %.
 
@@ -135,7 +135,7 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): yo con un funk sonando en mi cabeza todo el día
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un phonk o funk lento en tendencia (busca 'funk slowed' o 'dream funk' en sonidos de TikTok). El balanceo tiene que caer en el golpe.
 
@@ -161,7 +161,7 @@ Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): Esos ojitos 🥺
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Una canción romántica o tierna acelerada en tendencia (sped up). El original usó 'Cupid' acelerada.
 
@@ -187,7 +187,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 ```
 
 **Textos en pantalla:**
-- 0-4 s (abajo, sobre el cartón): POV: eres un juguete escondido en la caja 📦
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un audio tierno o divertido en tendencia. El original no tiene voz, solo música alegre.
 
@@ -243,7 +243,7 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 ```
 
 **Textos en pantalla:**
-- Sin texto, o al final (arriba): el gorro empezó 😤
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** El audio 'Estoy loco' (busca 'estoy loco' en sonidos) u otro audio de locura en tendencia. El grito tiene que caer cuando abre la boca.
 
@@ -269,7 +269,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): cuando el jefe viene a revisar si ya vendiste algo
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un audio serio o de suspenso en tendencia, o un 'hmm hmm hmm' como el original. Música de entrada de jefe.
 
@@ -295,7 +295,7 @@ Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): mi humano ama jugar conmigo 😸
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un audio corto con un golpe fuerte al final ('BOOM' o similar) que caiga justo cuando la cara aplasta la cámara.
 
@@ -440,7 +440,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): La almohada favorita de Galleta tiene patas 🐾
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un piano o música tierna y emotiva en tendencia.
 
@@ -467,7 +467,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): Demasiado amor para un gato gruñón 😾💛
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Música tierna en tendencia, o un audio de 'ayúdenme' al principio.
 
@@ -494,7 +494,7 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: 
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): Nunca comas al lado de Toffee 🍽️
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un audio de 'sigilo' o de ladrón en tendencia (tipo Pink Panther o 'sneaky').
 
@@ -579,7 +579,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 ```
 
 **Textos en pantalla:**
-- Todo el video (arriba): Toffee tomando el turno de la noche 🎤
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Una canción conocida en tendencia con letra (en TikTok elige una con ritmo marcado, como reguetón viejo o un clásico de los 2000). La boca no va a coincidir perfecto; el original tampoco.
 
@@ -632,8 +632,7 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: 
 ```
 
 **Textos en pantalla:**
-- 0-4 s (arriba): Galleta intentando asustarme 👻
-- 4-8 s: la cola te delata, Galleta 😐
+- Sin texto en el video, como el original. La frase va en la descripción.
 
 **Sonido:** Un audio de terror en tendencia que termine en algo ridículo, o la canción de Halloween del momento.
 
