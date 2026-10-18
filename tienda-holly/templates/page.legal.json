@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "texto": {
+      "type": "tf-texto",
+      "settings": {
+        "fondo": "crema",
+        "mostrar_titulo": true,
+        "contenido_pagina": true
+      }
+    }
+  },
+  "order": [
+    "texto"
+  ]
+}

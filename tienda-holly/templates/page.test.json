@@ -1,0 +1,132 @@
+{
+  "sections": {
+    "test": {
+      "type": "tf-test",
+      "blocks": {
+        "r0": {
+          "type": "regla",
+          "settings": {
+            "problema": "ruido",
+            "especie": "perro",
+            "peso_min": 7.5,
+            "peso_max": 17.5,
+            "producto": "orejeras-anti-ruido-para-perros",
+            "talla": "S",
+            "frase": "Galleta las usó en Año Nuevo y durmió como yo un domingo."
+          }
+        },
+        "r1": {
+          "type": "regla",
+          "settings": {
+            "problema": "ruido",
+            "especie": "perro",
+            "peso_min": 17.5,
+            "peso_max": 30,
+            "producto": "orejeras-anti-ruido-para-perros",
+            "talla": "M",
+            "frase": "Talla M: cubre bien sin apretar. Aprobado."
+          }
+        },
+        "r2": {
+          "type": "regla",
+          "settings": {
+            "problema": "ruido",
+            "especie": "perro",
+            "peso_min": 30,
+            "peso_max": 42.5,
+            "producto": "orejeras-anti-ruido-para-perros",
+            "talla": "L",
+            "frase": "Perro grande, orejas grandes, talla L. Fácil."
+          }
+        },
+        "r3": {
+          "type": "regla",
+          "settings": {
+            "problema": "ruido",
+            "especie": "perro",
+            "peso_min": 42.5,
+            "peso_max": 999,
+            "producto": "orejeras-anti-ruido-para-perros",
+            "talla": "XL",
+            "frase": "XL para el gigante de la casa. Que duerma tranquilo."
+          }
+        },
+        "r4": {
+          "type": "regla",
+          "settings": {
+            "problema": "ruido",
+            "especie": "ambos",
+            "peso_min": 0,
+            "peso_max": 7.5,
+            "producto": "cama-trineo-navidad-mascotas",
+            "talla": "S",
+            "frase": "No tengo orejeras de tu tamaño todavía, pero esta cama es mi búnker cuando suena la pólvora."
+          }
+        },
+        "r5": {
+          "type": "regla",
+          "settings": {
+            "problema": "calor",
+            "especie": "ambos",
+            "peso_min": 0,
+            "peso_max": 7.5,
+            "producto": "cama-trineo-navidad-mascotas",
+            "talla": "S",
+            "frase": "Dormí 14 horas seguidas. Ni Galleta pudo sacarme."
+          }
+        },
+        "r6": {
+          "type": "regla",
+          "settings": {
+            "problema": "fotos",
+            "especie": "ambos",
+            "peso_min": 0,
+            "peso_max": 2.5,
+            "producto": "disfraz-arbol-navidad-perros",
+            "talla": "S",
+            "frase": "Talla S para los chiquitos. Las fotos salen solas."
+          }
+        },
+        "r7": {
+          "type": "regla",
+          "settings": {
+            "problema": "fotos",
+            "especie": "ambos",
+            "peso_min": 2.5,
+            "peso_max": 5,
+            "producto": "disfraz-arbol-navidad-perros",
+            "talla": "M",
+            "frase": "Talla M: la de un gato adulto normal. Bajo protesta, pero aprobado."
+          }
+        },
+        "r8": {
+          "type": "regla",
+          "settings": {
+            "problema": "fotos",
+            "especie": "ambos",
+            "peso_min": 5,
+            "peso_max": 7.5,
+            "producto": "disfraz-arbol-navidad-perros",
+            "talla": "L",
+            "frase": "Talla L, la mía. Sí, soy un gato grande. ¿Y?"
+          }
+        }
+      },
+      "block_order": [
+        "r0",
+        "r1",
+        "r2",
+        "r3",
+        "r4",
+        "r5",
+        "r6",
+        "r7",
+        "r8"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "test"
+  ]
+}

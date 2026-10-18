@@ -1,0 +1,102 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%} Formulario por correo: contacto, PQR (con radicado) o Libro de Reclamaciones (Perú). Llega al correo de la tienda. {%- endcomment -%}
+{%- assign modo = section.settings.modo -%}
+{%- assign form_id = 'tf-form-' | append: section.id -%}
+<section class="hl-section tf-form-sec" id="{{ section.settings.ancla | default: modo }}">
+  <div class="hl-container tf-texto__caja">
+    {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    {%- if section.settings.titulo != blank -%}<h2 class="tf-texto__titulo">{{ section.settings.titulo }}</h2>{%- endif -%}
+    {%- if section.settings.texto != blank -%}<div class="rte tf-texto__rte">{{ section.settings.texto }}</div>{%- endif -%}
+
+    {%- form 'contact', id: form_id, class: 'tf-form' -%}
+      {%- if form.posted_successfully? -%}
+        <div class="tf-form__ok" role="status" data-tf-ok>
+          <p><strong>{{ section.settings.ok }}</strong></p>
+          {%- if modo != 'contacto' -%}<p>Tu número de {% if modo == 'libro' %}hoja de reclamación{% else %}radicado{% endif %} es <b data-tf-radicado-ok>—</b>. Guárdalo. También te llega una copia a tu correo cuando respondamos.</p>{%- endif -%}
+        </div>
+      {%- else -%}
+        {%- if form.errors -%}<p class="tf-form__error" role="alert">{{ section.settings.error }}</p>{%- endif -%}
+        <input type="hidden" name="contact[Formulario]" value="{% case modo %}{% when 'pqr' %}PQR{% when 'libro' %}Libro de Reclamaciones (Perú){% else %}Contacto{% endcase %}">
+        {%- if modo != 'contacto' -%}
+          <input type="hidden" name="contact[Radicado]" value="" data-tf-radicado>
+          <input type="hidden" name="contact[Fecha]" value="" data-tf-fecha>
+          <p class="tf-form__radicado">{% if modo == 'libro' %}Hoja de reclamación{% else %}Radicado{% endif %} N.º <b data-tf-radicado-ver>—</b> · <span data-tf-fecha-ver></span></p>
+        {%- endif -%}
+        {%- if modo == 'libro' -%}<h3 class="tf-form__h">1. Identificación del consumidor</h3>{%- endif -%}
+        <div class="tf-form__grid">
+          <label>Nombre completo<input type="text" name="contact[name]" required autocomplete="name"></label>
+          <label>Correo<input type="email" name="contact[email]" required autocomplete="email"></label>
+          {%- if modo != 'contacto' -%}
+            <label>{% if modo == 'libro' %}DNI / CE{% else %}Documento de identidad{% endif %}<input type="text" name="contact[Documento]" required></label>
+            {%- if modo == 'pqr' -%}<label>Teléfono <small>(opcional)</small><input type="tel" name="contact[phone]" autocomplete="tel"></label>{%- endif -%}
+          {%- endif -%}
+          {%- if modo == 'libro' -%}
+            <label class="tf-form__full">Domicilio<input type="text" name="contact[Domicilio]" required autocomplete="street-address"></label>
+            <label class="tf-form__full">Si eres menor de edad: nombre del padre, madre o apoderado<input type="text" name="contact[Apoderado]"></label>
+          {%- endif -%}
+          <label>N.º de pedido{% if modo == 'contacto' %} <small>(si tienes)</small>{% endif %}<input type="text" name="contact[Pedido]" placeholder="#1001"{% if modo == 'libro' %} required{% endif %}></label>
+          {%- case modo -%}
+            {%- when 'pqr' -%}
+              <label>Tipo<select name="contact[Tipo]" required><option value="">Elige</option><option>Petición</option><option>Queja</option><option>Reclamo</option><option>Sugerencia</option><option>Garantía</option><option>Retracto</option><option>Reversión del pago</option></select></label>
+            {%- when 'libro' -%}
+              <label>Monto pagado<input type="text" name="contact[Monto]" required placeholder="S/ 0,00"></label>
+            {%- else -%}
+              <label>Tema<select name="contact[Tema]"><option>Mi pedido</option><option>Tallas</option><option>Cambio o devolución</option><option>Pagos</option><option>Otro</option></select></label>
+          {%- endcase -%}
+        </div>
+        {%- if modo == 'libro' -%}
+          <h3 class="tf-form__h">2. Identificación del bien contratado</h3>
+          <div class="tf-form__grid">
+            <label>Tipo<select name="contact[Bien]" required><option>Producto</option><option>Servicio</option></select></label>
+            <label>Descripción<input type="text" name="contact[Descripcion del bien]" required></label>
+          </div>
+          <h3 class="tf-form__h">3. Detalle de la reclamación</h3>
+          <fieldset class="tf-form__radios"><legend class="visually-hidden">Tipo</legend>
+            <label><input type="radio" name="contact[Tipo]" value="Reclamo" required> <b>Reclamo:</b> disconformidad con el producto o servicio.</label>
+            <label><input type="radio" name="contact[Tipo]" value="Queja"> <b>Queja:</b> disconformidad con la atención, no con el producto.</label>
+          </fieldset>
+        {%- endif -%}
+        <label class="tf-form__full">{% if modo == 'libro' %}Detalle{% else %}Cuéntanos{% endif %}<textarea name="contact[body]" rows="5" required></textarea></label>
+        {%- if modo == 'libro' -%}<label class="tf-form__full">Pedido del consumidor (qué solicitas)<textarea name="contact[Pedido del consumidor]" rows="3" required></textarea></label>{%- endif -%}
+        {%- if modo == 'libro' -%}<p class="tf-form__legal">Usamos estos datos solo para atender tu reclamo, según la <a href="{{ routes.root_url }}pages/tratamiento-de-datos" target="_blank">Política de tratamiento de datos</a>.</p>{%- else -%}
+        <label class="tf-consent"><input type="checkbox" required> <span>Autorizo a Soy Toffee a tratar mis datos para atender esta solicitud, según la <a href="{{ routes.root_url }}pages/tratamiento-de-datos" target="_blank">Política de tratamiento de datos</a>.</span></label>{%- endif -%}
+        <button type="submit" class="hl-btn hl-btn--curcuma">{{ section.settings.boton }}</button>
+        {%- if modo == 'libro' -%}<p class="tf-form__legal">La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia ante el INDECOPI. El proveedor responderá en un plazo no mayor a quince (15) días hábiles.</p>{%- endif -%}
+        {%- if modo == 'pqr' -%}<p class="tf-form__legal">Respondemos en máximo quince (15) días hábiles. Si no quedas conforme, puedes acudir a la Superintendencia de Industria y Comercio: <a href="https://www.sic.gov.co" target="_blank" rel="noopener">sic.gov.co</a>.</p>{%- endif -%}
+      {%- endif -%}
+    {%- endform -%}
+  </div>
+</section>
+{%- if modo != 'contacto' -%}
+<script>
+(function () {
+  var f = document.getElementById('tf-form-{{ section.id }}'); if (!f) return;
+  var k = 'tf-rad-{{ modo }}', pre = '{% if modo == "libro" %}LR{% else %}PQR{% endif %}';
+  var ok = f.querySelector('[data-tf-radicado-ok]');
+  if (ok) { try { ok.textContent = sessionStorage.getItem(k) || '—'; } catch (e) {} return; }
+  var d = new Date(), z = function (n) { return (n < 10 ? '0' : '') + n; };
+  var rad = pre + '-' + d.getFullYear() + z(d.getMonth() + 1) + z(d.getDate()) + '-' + z(d.getHours()) + z(d.getMinutes()) + '-' + Math.random().toString(36).slice(2, 6).toUpperCase();
+  var fecha = z(d.getDate()) + '/' + z(d.getMonth() + 1) + '/' + d.getFullYear() + ' ' + z(d.getHours()) + ':' + z(d.getMinutes());
+  f.querySelector('[data-tf-radicado]').value = rad; f.querySelector('[data-tf-fecha]').value = fecha;
+  f.querySelector('[data-tf-radicado-ver]').textContent = rad; f.querySelector('[data-tf-fecha-ver]').textContent = fecha;
+  f.addEventListener('submit', function () { try { sessionStorage.setItem(k, rad); } catch (e) {} });
+})();
+</script>
+{%- endif -%}
+{% schema %}
+{
+  "name": "Toffee – Formulario",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "modo", "label": "Tipo", "options": [ { "value": "contacto", "label": "Contacto" }, { "value": "pqr", "label": "PQR (Colombia)" }, { "value": "libro", "label": "Libro de Reclamaciones (Perú)" } ], "default": "contacto" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo" },
+    { "type": "text", "id": "titulo", "label": "Título" },
+    { "type": "richtext", "id": "texto", "label": "Texto" },
+    { "type": "text", "id": "boton", "label": "Botón", "default": "Enviar" },
+    { "type": "text", "id": "ok", "label": "Mensaje de éxito", "default": "¡Recibido! Galleta ya lo está leyendo. Te respondemos por correo." },
+    { "type": "text", "id": "error", "label": "Mensaje de error", "default": "Algo no cuadra. Revisa los campos, humano." },
+    { "type": "text", "id": "ancla", "label": "Ancla" }
+  ],
+  "presets": [ { "name": "Toffee – Formulario" } ]
+}
+{% endschema %}

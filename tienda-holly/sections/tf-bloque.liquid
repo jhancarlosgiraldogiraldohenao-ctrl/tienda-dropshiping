@@ -1,0 +1,105 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- liquid
+  assign fondo = section.settings.fondo
+  assign oscuro = false
+  if fondo == 'marino'
+    assign oscuro = true
+  endif
+-%}
+<section class="hl-section tf-bloque tf-bloque--{{ fondo }}{% if oscuro %} tf-oscuro{% endif %}{% if section.settings.invertir %} tf-bloque--invertido{% endif %}" id="{{ section.settings.ancla | default: section.id }}">
+  <div class="hl-container">
+    <div class="tf-bloque__grid{% if section.settings.imagen == blank %} tf-bloque__grid--solo{% endif %}">
+      {%- if section.settings.imagen != blank -%}
+        <div class="tf-bloque__foto hl-reveal">
+          <img src="{{ section.settings.imagen | image_url: width: 1000 }}" srcset="{{ section.settings.imagen | image_url: width: 600 }} 600w, {{ section.settings.imagen | image_url: width: 1000 }} 1000w" sizes="(min-width: 990px) 45vw, 92vw" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="{{ 1000 | divided_by: section.settings.imagen.aspect_ratio | round }}">
+          {%- if section.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
+        </div>
+      {%- endif -%}
+      <div class="tf-bloque__texto hl-reveal">
+        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- if section.settings.texto != blank -%}<div class="tf-bloque__cuerpo">{{ section.settings.texto }}</div>{%- endif -%}
+        {%- if section.settings.nota_toffee != blank -%}<p class="tf-nota-toffee"><span>Nota de Toffee</span>{{ section.settings.nota_toffee }}</p>{%- endif -%}
+        {%- assign hay_puntos = false -%}{%- for block in section.blocks -%}{%- if block.type == 'punto' -%}{%- assign hay_puntos = true -%}{%- endif -%}{%- endfor -%}
+        {%- if hay_puntos -%}
+          <ul class="tf-bloque__puntos">
+            {%- for block in section.blocks -%}{%- if block.type == 'punto' -%}<li {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: 'check' %}<span>{{ block.settings.texto }}</span></li>{%- endif -%}{%- endfor -%}
+          </ul>
+        {%- endif -%}
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'correo' -%}
+              <div class="tf-club" {{ block.shopify_attributes }}>
+                {%- form 'customer', id: 'tf-club-form', class: 'tf-club__form' -%}
+                  <input type="hidden" name="contact[tags]" value="{{ block.settings.etiqueta }}">
+                  {%- if form.posted_successfully? -%}
+                    <p class="tf-club__ok" role="status">{{ block.settings.ok }}</p>
+                  {%- else -%}
+                    {%- if form.errors -%}<p class="tf-club__error" role="alert">{{ block.settings.error }}</p>{%- endif -%}
+                    <div class="tf-club__fila">
+                      <label class="visually-hidden" for="tf-club-email-{{ section.id }}">Correo</label>
+                      <input id="tf-club-email-{{ section.id }}" type="email" name="contact[email]" required autocomplete="email" placeholder="{{ block.settings.placeholder }}">
+                      <button type="submit" class="hl-btn hl-btn--curcuma">{{ block.settings.boton }}</button>
+                    </div>
+                    <label class="tf-consent"><input type="checkbox" required> <span>{{ block.settings.consentimiento }} <a href="{{ routes.root_url }}pages/tratamiento-de-datos" target="_blank">Ver política</a></span></label>
+                  {%- endif -%}
+                {%- endform -%}
+              </div>
+            {%- when 'redes' -%}
+              {%- if block.settings.tiktok != blank or block.settings.instagram != blank -%}
+                <div class="tf-redes" {{ block.shopify_attributes }}>
+                  {%- if block.settings.tiktok != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ block.settings.tiktok }}" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'tiktok' %} TikTok</a>{%- endif -%}
+                  {%- if block.settings.instagram != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ block.settings.instagram }}" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'instagram' %} Instagram</a>{%- endif -%}
+                </div>
+              {%- endif -%}
+          {%- endcase -%}
+        {%- endfor -%}
+        {%- if section.settings.btn_texto != blank -%}
+          <div class="tf-bloque__ctas">
+            <a class="hl-btn {% if section.settings.btn_principal %}hl-btn--curcuma{% else %}hl-btn--ghost{% endif %}" href="{{ section.settings.btn_url | default: '#' }}">{{ section.settings.btn_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>
+            {%- if section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Bloque",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "fondo", "label": "Fondo", "options": [ { "value": "crema", "label": "Crema" }, { "value": "crema2", "label": "Crema 2" }, { "value": "marino", "label": "Azul marino" } ], "default": "crema" },
+    { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
+    { "type": "checkbox", "id": "invertir", "label": "Foto a la derecha", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Título</p>" },
+    { "type": "richtext", "id": "texto", "label": "Texto" },
+    { "type": "text", "id": "nota_toffee", "label": "Nota de Toffee" },
+    { "type": "text", "id": "btn_texto", "label": "Botón" },
+    { "type": "url", "id": "btn_url", "label": "Enlace del botón" },
+    { "type": "checkbox", "id": "btn_principal", "label": "Botón principal (caramelo)", "default": true },
+    { "type": "text", "id": "btn2_texto", "label": "Botón secundario" },
+    { "type": "url", "id": "btn2_url", "label": "Enlace botón secundario" },
+    { "type": "text", "id": "ancla", "label": "Ancla" }
+  ],
+  "blocks": [
+    { "type": "punto", "name": "Punto con ✓", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "Beneficio" } ] },
+    { "type": "correo", "name": "Formulario de correo", "limit": 1, "settings": [
+      { "type": "text", "id": "placeholder", "label": "Texto del campo", "default": "Tu correo" },
+      { "type": "text", "id": "boton", "label": "Botón", "default": "Quiero el regalo" },
+      { "type": "text", "id": "etiqueta", "label": "Etiqueta del cliente", "default": "newsletter, toffeelovers" },
+      { "type": "text", "id": "consentimiento", "label": "Texto de autorización", "default": "Autorizo el tratamiento de mis datos según la Política de privacidad." },
+      { "type": "text", "id": "ok", "label": "Mensaje de éxito", "default": "¡Listo, humano! Ya eres Toffeelover. Revisa tu correo 💌" },
+      { "type": "text", "id": "error", "label": "Mensaje de error", "default": "Ese correo no me cuadra, humano. ¿Lo revisas?" }
+    ] },
+    { "type": "redes", "name": "Botones de redes", "limit": 1, "settings": [
+      { "type": "url", "id": "tiktok", "label": "TikTok (vacío = oculto)" },
+      { "type": "url", "id": "instagram", "label": "Instagram (vacío = oculto)" }
+    ] }
+  ],
+  "presets": [{ "name": "Toffee – Bloque" }]
+}
+{% endschema %}

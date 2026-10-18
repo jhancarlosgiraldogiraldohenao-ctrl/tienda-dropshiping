@@ -52,10 +52,17 @@
               <img src="{{ foto | image_url: width: 900 }}" srcset="{{ foto | image_url: width: 500 }} 500w, {{ foto | image_url: width: 900 }} 900w" sizes="(min-width: 750px) 45vw, 92vw" alt="{{ p.title | escape }}" loading="lazy" width="900" height="1125">
             {%- endif -%}
             {%- if block.settings.etiqueta != blank -%}<span class="hl-tarjeta__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
+            {%- if block.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
           </div>
           <div class="hl-tarjeta__cuerpo">
             <h3>{{ block.settings.titulo | default: p.title }}</h3>
             {%- if block.settings.frase != blank -%}<p>{{ block.settings.frase }}</p>{%- endif -%}
+            {%- if block.settings.veredicto != blank -%}
+              <ul class="tf-veredicto-mini" aria-label="Calificación de Toffee">
+                {%- assign filas = block.settings.veredicto | newline_to_br | split: '<br />' -%}
+                {%- for f in filas -%}{%- assign par = f | strip | split: '|' -%}{%- if par[0] != blank -%}<li><span>{{ par[0] }}</span><b>{{ par[1] }}</b></li>{%- endif -%}{%- endfor -%}
+              </ul>
+            {%- endif -%}
             <div class="hl-tarjeta__precio">
               <strong>{{ v.price | money_without_trailing_zeros }}</strong><small class="tf-moneda">{{ cart.currency.iso_code }}</small>{% render 'tf-precio-local', precio: v.price %}
               {%- if v.compare_at_price > v.price -%}
@@ -92,6 +99,8 @@
       "name": "Producto",
       "settings": [
         { "type": "product", "id": "producto", "label": "Producto" },
+        { "type": "textarea", "id": "veredicto", "label": "Calificación de Toffee (Criterio|Nota, uno por línea)" },
+        { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
         { "type": "text", "id": "titulo", "label": "Título (opcional)" },
         { "type": "text", "id": "frase", "label": "Frase corta" },
         { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la foto" },

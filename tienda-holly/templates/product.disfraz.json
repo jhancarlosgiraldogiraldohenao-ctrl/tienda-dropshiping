@@ -4,7 +4,7 @@
       "type": "hl-producto",
       "settings": {
         "eyebrow": "Aprobado por Toffee 💤",
-        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
+        "nota_precio": "",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige tu opción",
         "oferta_1_nota": "",
@@ -12,11 +12,11 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Obtenlo ahora",
+        "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con tarjeta",
+        "comprar_nota": "Pago 100 % seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
-        "agotado_texto": "Agotado",
+        "agotado_texto": "Se acabó · Galleta está empacando más",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
@@ -24,13 +24,20 @@
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
-        "titulo_corto": "Disfraz Árbol de Navidad para mascotas",
-        "subtitulo": "Para gatos y perritos pequeños · Verde o rojo",
+        "titulo_corto": "Disfraz Árbol de Navidad para gatos y perros pequeños",
+        "subtitulo": "Capa con capucha · Verde o rojo · 1,5 a 7,5 kg",
         "intro": "Tu mascota convertida en el arbolito de Navidad más tierno de la casa. Capucha con estrella dorada, pompones de colores y volantes. Toffee lo usa (bajo protesta) y salió en todas las fotos.",
         "puntos": "Capucha con estrella dorada y pompones\nTela suave y calientita\nSe amarra con un cordón: fácil de poner y quitar\nPara gatos y perritos de 1,5 a 7,5 kg\nPerfecto para fotos y videos navideños",
-        "guia_tallas": "📏 S: 1,5–2,5 kg · M: 2,5–5 kg · L: 5–7,5 kg. Mira la guía en las fotos.",
+        "guia_tallas": "📏 S: 1,5–2,5 kg · M: 2,5–5 kg · L: 5–7,5 kg",
         "sticky_texto": "Disfraz Árbol de Navidad",
-        "compra_rapida": true
+        "compra_rapida": true,
+        "frase_toffee": "Me lo puse bajo protesta. Las fotos salieron demasiado bonitas.",
+        "veredicto": "Ternura|★★★★★\nComodidad|★★★★☆\nFotos navideñas|✓\n¿Lo tiré de la mesa?|No (lo pensé)",
+        "nota_toffee": "Me veo ridículo y adorable al mismo tiempo. Eso vende. Aprobado.",
+        "tallas_titulo": "Guía de tallas",
+        "tallas_nota": "Elige la talla por el peso de tu mascota. Si queda entre dos tallas, elige la más grande.",
+        "tabla_tallas": "Talla|Peso de la mascota|Ejemplos\nS|1,5 – 2,5 kg|Gatito, chihuahua\nM|2,5 – 5 kg|Gato adulto, yorkie\nL|5 – 7,5 kg|Gato grande (Toffee), pug",
+        "aviso": "Supervisa a tu mascota mientras lo usa y quítaselo para dormir. No lo uses cerca de velas o luces calientes."
       },
       "blocks": {
         "b0": {
@@ -54,7 +61,7 @@
           "settings": {
             "icono": "escudo",
             "titulo": "Garantía",
-            "texto": "Si no llega, te devolvemos tu dinero"
+            "texto": "Si no te llega, te devolvemos tu dinero"
           }
         }
       },

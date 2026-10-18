@@ -4,14 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="theme-color" content="#070A16">
+    <meta name="theme-color" content="#16213E">
     <link rel="canonical" href="{{ canonical_url }}">
 
     <link rel="icon" type="image/png" href="{{ 'hl-favicon.png' | asset_url }}">
     <link rel="apple-touch-icon" href="{{ 'hl-favicon.png' | asset_url }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="{{ 'tf-fraunces-latin-600-normal.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="{{ 'tf-dm-sans-latin-400-normal.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
+    <style>
+      @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 600; font-display: swap; src: url({{ 'tf-fraunces-latin-600-normal.woff2' | asset_url }}) format('woff2'); }
+      @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 700 800; font-display: swap; src: url({{ 'tf-fraunces-latin-700-normal.woff2' | asset_url }}) format('woff2'); }
+      @font-face { font-family: 'Fraunces'; font-style: italic; font-weight: 500 700; font-display: swap; src: url({{ 'tf-fraunces-latin-600-italic.woff2' | asset_url }}) format('woff2'); }
+      @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 400; font-display: swap; src: url({{ 'tf-dm-sans-latin-400-normal.woff2' | asset_url }}) format('woff2'); }
+      @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 500 600; font-display: swap; src: url({{ 'tf-dm-sans-latin-500-normal.woff2' | asset_url }}) format('woff2'); }
+      @font-face { font-family: 'DM Sans'; font-style: normal; font-weight: 700 800; font-display: swap; src: url({{ 'tf-dm-sans-latin-700-normal.woff2' | asset_url }}) format('woff2'); }
+    </style>
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
@@ -29,6 +36,8 @@
 
     {% if page_description %}
       <meta name="description" content="{{ page_description | escape }}">
+    {% elsif template.name == 'index' %}
+      <meta name="description" content="Tienda para gatos y perros donde todo lo aprueba Toffee: orejeras anti ruido, disfraces y camas de Navidad. Envío gratis con rastreo a Colombia, México, Chile y Perú.">
     {% endif %}
 
     {% render 'meta-tags' %}
@@ -129,12 +138,12 @@
       }
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+        --font-body-family: 'DM Sans', system-ui, sans-serif;
         --font-body-style: {{ settings.type_body_font.style }};
         --font-body-weight: {{ settings.type_body_font.weight }};
         --font-body-weight-bold: {{ settings.type_body_font.weight | plus: 300 | at_most: 1000 }};
 
-        --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
+        --font-heading-family: 'Fraunces', Georgia, serif;
         --font-heading-style: {{ settings.type_header_font.style }};
         --font-heading-weight: {{ settings.type_header_font.weight }};
 
@@ -295,16 +304,7 @@
       {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
     {%- endif -%}
 
-    {%- unless settings.type_body_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      {% comment %}theme-check-disable AssetPreload{% endcomment %}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-      {% comment %}theme-check-enable AssetPreload{% endcomment %}
-    {%- endunless -%}
+    {%- comment -%} Fuentes de Dawn sin precarga: el tema usa Fraunces + DM Sans (assets tf-*). {%- endcomment -%}
 
     {%- if localization.available_countries.size > 1 or localization.available_languages.size > 1 -%}
       {{ 'component-localization-form.css' | asset_url | stylesheet_tag: preload: true }}
@@ -327,11 +327,16 @@
     </script>
     <style>
       /* Carga rápida (internet lento): fondo oscuro e íconos con tamaño fijo antes de que llegue el CSS */
-      html, body { background: #070a16; color: #eef1ff; }
+      html, body { background: #FBF6EE; color: #2B2118; }
       .skip-to-content-link:not(:focus) { position: absolute !important; left: -9999px !important; }
       .announcement-bar svg, .header svg.icon, .header__icon svg, .header .svg-wrapper svg { width: 2rem; height: 2rem; max-width: 2.4rem; }
       .tf-avatar { width: 40px; height: 40px; }
     </style>
+    {%- if template.name == 'index' -%}
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Organization","name":"Soy Toffee","url":"{{ shop.url }}","logo":"https:{{ 'tf-avatar.jpg' | asset_url }}","email":"{{ shop.email }}","sameAs":[{%- if settings.social_tiktok_link != blank -%}"{{ settings.social_tiktok_link }}"{%- endif -%}{%- if settings.social_instagram_link != blank -%}{%- if settings.social_tiktok_link != blank -%},{%- endif -%}"{{ settings.social_instagram_link }}"{%- endif -%}]}
+    </script>
+    {%- endif -%}
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

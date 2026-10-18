@@ -11,6 +11,7 @@
   #shopify-section-{{ section.id }} .hl-compra__intro, #shopify-section-{{ section.id }} .hl-compra__puntos li { font-size: {{ section.settings.texto_size }}px; }
 {% endstyle %}
 
+<script type="application/ld+json">{{ product | structured_data }}</script>
 <section class="hl-section hl-producto">
   <div class="hl-container">
     <div class="hl-producto__grid">
@@ -21,8 +22,9 @@
         {%- if variante.id == product.variants[1].id -%}{%- assign modo = 'pack' -%}{%- else -%}{%- assign modo = 'uno' -%}{%- endif -%}
         <div class="hl-galeria__principal">
           {%- if section.settings.sello != blank -%}<span class="hl-galeria__sello">{{ section.settings.sello }}</span>{%- endif -%}
+          <span class="tf-chip-ia" data-tf-chip{% unless primera.alt contains '(escena IA)' %} hidden{% endunless %}>Escena creada con IA</span>
           {%- if primera -%}
-            <img src="{{ primera | image_url: width: 900 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
+            <img src="{{ primera | image_url: width: 900 }}" srcset="{{ primera | image_url: width: 600 }} 600w, {{ primera | image_url: width: 900 }} 900w, {{ primera | image_url: width: 1200 }} 1200w" sizes="(min-width: 990px) 50vw, 100vw" alt="{{ primera.alt | default: product.title | remove: ' (escena IA)' | escape }}" width="1024" height="1280" loading="eager" fetchpriority="high">
           {%- else -%}
             {{ 'product-1' | placeholder_svg_tag }}
           {%- endif -%}
@@ -40,7 +42,7 @@
                     assign grupo = 'uno'
                   endif
                 -%}
-                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-grupo="{{ grupo }}"{% if grupo != 'todos' and grupo != modo %} hidden{% endif %} data-src="{{ media | image_url: width: 900 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | escape }}" aria-label="Ver foto {{ forloop.index }}">
+                <button type="button" class="hl-galeria__min{% if media.id == primera.id %} is-activo{% endif %}" data-grupo="{{ grupo }}"{% if grupo != 'todos' and grupo != modo %} hidden{% endif %} data-src="{{ media | image_url: width: 900 }}" data-srcset="{{ media | image_url: width: 600 }} 600w, {{ media | image_url: width: 900 }} 900w, {{ media | image_url: width: 1200 }} 1200w" data-alt="{{ media.alt | default: product.title | remove: ' (escena IA)' | escape }}" data-ia="{% if media.alt contains '(escena IA)' %}1{% endif %}" aria-label="Ver foto {{ forloop.index }}">
                   <img src="{{ media | image_url: width: 180 }}" alt="" loading="lazy" width="90" height="90">
                 </button>
               {%- endif -%}
@@ -50,9 +52,10 @@
       </div>
 
       <div class="hl-compra" data-hl-compra>
-        {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+        {%- if section.settings.eyebrow != blank -%}<span class="tf-aprobado">{% render 'hl-icono', nombre: 'check' %}{{ section.settings.eyebrow }}</span>{%- endif -%}
         <h1 class="hl-compra__titulo">{{ section.settings.titulo_corto | default: product.title }}</h1>
         {%- if section.settings.subtitulo != blank -%}<p class="hl-compra__estrellas">{{ section.settings.subtitulo }}</p>{%- endif -%}
+        {%- if section.settings.frase_toffee != blank -%}<p class="tf-frase-toffee">“{{ section.settings.frase_toffee }}” <span>— Toffee</span></p>{%- endif -%}
         {%- assign v1 = product.variants.first -%}
         {%- unless section.settings.compra_rapida -%}
         <div class="hl-precio" data-hl-precio-bloque>
@@ -80,7 +83,7 @@
                   <div class="tf-opcion" data-tf-opcion="{{ forloop.index0 }}" hidden><button type="button" class="tf-pildora is-activa" data-tf-valor="{{ opt.values.first | escape }}"></button></div>
                 {%- endif -%}
               {%- endfor -%}
-              {%- if section.settings.guia_tallas != blank -%}<p class="tf-guia-link">{{ section.settings.guia_tallas }}</p>{%- endif -%}
+              {%- if section.settings.guia_tallas != blank -%}<p class="tf-guia-link"><a href="#guia-tallas">{{ section.settings.guia_tallas }}</a> · <a href="{{ routes.root_url }}pages/test-de-toffee">Haz el test de Toffee</a></p>{%- endif -%}
             </div>
           {%- endif -%}
           <div class="hl-ofertas{% if section.settings.modo_pildoras %} tf-oculto{% endif %}" role="radiogroup" aria-label="{{ product.options.first | escape }}">
@@ -146,14 +149,14 @@
                   <input type="number" name="quantity" value="1" min="1" aria-label="Cantidad">
                   <button type="button" data-hl-cant="1" aria-label="Más">+</button>
                 </div>
-                <button type="submit" name="add" class="hl-btn hl-btn--ghost product-form__submit" {% unless variante.available %}disabled{% endunless %}>
-                  <span>{% if variante.available %}{{ section.settings.carrito_texto }}{% else %}{{ section.settings.agotado_texto }}{% endif %}</span>
+                <button type="submit" name="add" class="hl-btn {% if section.settings.compra_rapida %}hl-btn--curcuma tf-btn-agregar{% else %}hl-btn--ghost{% endif %} product-form__submit" {% unless variante.available %}disabled{% endunless %}>
+                  <span>{% if variante.available %}{{ section.settings.carrito_texto }}{% if section.settings.compra_rapida %} · <b data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</b>{% endif %}{% else %}{{ section.settings.agotado_texto }}{% endif %}</span>
                   <div class="loading__spinner hidden"><svg aria-hidden="true" focusable="false" class="spinner" viewBox="0 0 66 66"><circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle></svg></div>
                 </button>
               </div>
             {%- endform -%}
           </product-form>
-          <a class="hl-btn hl-btn--curcuma hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{%- if section.settings.compra_rapida -%}<span class="tf-ahora__txt">{{ section.settings.comprar_texto }}</span><span class="tf-ahora__precio"><b data-hl-precio>{{ variante.price | money_without_trailing_zeros }}</b> <small>{{ cart.currency.iso_code }}</small></span>{%- else -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- endif -%}</a>
+          <a class="hl-btn {% if section.settings.compra_rapida %}hl-btn--ghost{% else %}hl-btn--curcuma{% endif %} hl-compra__ahora" data-hl-comprar href="{{ routes.cart_url }}/{{ variante.id }}:1"{% unless variante.available %} aria-disabled="true"{% endunless %}>{%- if section.settings.compra_rapida -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- else -%}{{ section.settings.comprar_texto }} {% render 'hl-icono', nombre: 'flecha' %}{%- endif -%}</a>
           {%- if section.settings.compra_rapida -%}{% render 'tf-precio-local', precio: variante.price %}{%- endif -%}
           {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
           {%- if section.settings.compra_rapida -%}
@@ -174,6 +177,30 @@
         {%- endif -%}
 
         {%- if section.settings.compra_rapida -%}<div class="tf-compra-info">{{ intro_puntos }}</div>{%- endif -%}
+
+        {%- if section.settings.veredicto != blank -%}
+          <div class="tf-veredicto">
+            <div class="tf-veredicto__cabeza">{% render 'tf-sello', texto: 'Aprobado', clase: 'tf-sello--inline' %}<div><span class="hl-eyebrow">El veredicto de Toffee</span><p>Así le fue en mi prueba:</p></div></div>
+            <ul>
+              {%- assign filas = section.settings.veredicto | newline_to_br | split: '<br />' -%}
+              {%- for f in filas -%}{%- assign par = f | strip | split: '|' -%}{%- if par[0] != blank -%}<li><span>{{ par[0] }}</span><b>{{ par[1] }}</b></li>{%- endif -%}{%- endfor -%}
+            </ul>
+            {%- if section.settings.nota_toffee != blank -%}<p class="tf-nota-toffee"><span>Nota de Toffee</span>{{ section.settings.nota_toffee }}</p>{%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.tabla_tallas != blank -%}
+          <div class="tf-tallas" id="guia-tallas">
+            <h2>{{ section.settings.tallas_titulo }}</h2>
+            {%- if section.settings.tallas_nota != blank -%}<p>{{ section.settings.tallas_nota }}</p>{%- endif -%}
+            <div class="tf-tallas__scroll"><table>
+              {%- assign filas = section.settings.tabla_tallas | newline_to_br | split: '<br />' -%}
+              {%- for f in filas -%}{%- assign celdas = f | strip | split: '|' -%}{%- if celdas[0] != blank -%}
+                <tr>{%- for c in celdas -%}{%- if forloop.parentloop.first -%}<th scope="col">{{ c }}</th>{%- elsif forloop.first -%}<th scope="row">{{ c }}</th>{%- else -%}<td>{{ c }}</td>{%- endif -%}{%- endfor -%}</tr>
+              {%- endif -%}{%- endfor -%}
+            </table></div>
+          </div>
+        {%- endif -%}
+        {%- if section.settings.aviso != blank -%}<p class="tf-aviso">{% render 'hl-icono', nombre: 'escudo' %}<span>{{ section.settings.aviso }}</span></p>{%- endif -%}
 
         <div class="hl-desc">
           {%- if product.description != blank -%}
@@ -235,6 +262,16 @@
     })();
   </script>
   {%- endif -%}
+
+  <script>
+    (function () {
+      var g = document.querySelector('#shopify-section-{{ section.id }} [data-hl-galeria]'); if (!g) return;
+      var img = g.querySelector('.hl-galeria__principal img'), chip = g.querySelector('[data-tf-chip]'); if (!img || !chip) return;
+      var base = function (u) { return (u || '').split('?')[0].split('/').pop(); };
+      var revisar = function () { var b = base(img.getAttribute('src')), ia = false; g.querySelectorAll('.hl-galeria__min').forEach(function (m) { if (base(m.dataset.src) === b && m.dataset.ia) ia = true; }); chip.hidden = !ia; };
+      new MutationObserver(revisar).observe(img, { attributes: true, attributeFilter: ['src'] });
+    })();
+  </script>
 
   <div class="hl-sticky-compra" data-hl-sticky-compra>
     <div><small>{{ section.settings.sticky_texto }}</small><strong data-hl-sticky-precio>{{ variante.price | money_without_trailing_zeros }}</strong></div>
@@ -327,6 +364,13 @@
       "label": "Las opciones son colores (no packs)",
       "default": false
     },
+    { "type": "text", "id": "frase_toffee", "label": "Frase de Toffee bajo el título" },
+    { "type": "textarea", "id": "veredicto", "label": "Veredicto de Toffee (Criterio|Nota)" },
+    { "type": "text", "id": "nota_toffee", "label": "Nota de Toffee (veredicto)" },
+    { "type": "text", "id": "tallas_titulo", "label": "Título guía de tallas", "default": "Guía de tallas" },
+    { "type": "text", "id": "tallas_nota", "label": "Nota guía de tallas" },
+    { "type": "textarea", "id": "tabla_tallas", "label": "Tabla de tallas (columnas con |, primera fila = encabezado)" },
+    { "type": "text", "id": "aviso", "label": "Aviso de seguridad" },
     {
       "type": "checkbox",
       "id": "compra_rapida",

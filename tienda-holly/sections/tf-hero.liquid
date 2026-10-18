@@ -8,7 +8,7 @@
 <section class="hl-section tf-hero" aria-label="{{ section.settings.eyebrow | escape }}">
   <picture class="tf-hero__foto">
     {%- if section.settings.imagen_movil != blank -%}
-      <source media="(max-width: 749px)" srcset="{{ section.settings.imagen_movil | image_url: width: 800 }} 800w, {{ section.settings.imagen_movil | image_url: width: 1100 }} 1100w" sizes="100vw">
+      <source media="(max-width: 749px)" srcset="{{ section.settings.imagen_movil | image_url: width: 600 }} 600w, {{ section.settings.imagen_movil | image_url: width: 800 }} 800w, {{ section.settings.imagen_movil | image_url: width: 1100 }} 1100w" sizes="100vw">
     {%- endif -%}
     {%- if section.settings.imagen != blank -%}
       <img src="{{ section.settings.imagen | image_url: width: 1800 }}"
@@ -19,7 +19,7 @@
 
   <div class="hl-container tf-hero__capa">
     <div class="tf-hero__texto">
-      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      {%- if section.settings.eyebrow != blank -%}<span class="tf-hero__kicker">{{ section.settings.eyebrow }}</span>{%- endif -%}
       <h1 class="tf-hero__titulo">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h1>
       {%- if section.settings.sub != blank -%}<p class="tf-hero__sub">{{ section.settings.sub }}</p>{%- endif -%}
     </div>
@@ -37,6 +37,7 @@
           {%- endfor -%}
         </div>
       {%- endif -%}
+      {%- if section.settings.nota_ia != blank -%}<span class="tf-hero__ia">{{ section.settings.nota_ia }}</span>{%- endif -%}
       {%- if section.blocks.size > 0 -%}
         <div class="tf-hero__chips">
           {%- for block in section.blocks -%}<span class="hl-chip" {{ block.shopify_attributes }}>{% render 'hl-icono', nombre: block.settings.icono %}{{ block.settings.texto }}</span>{%- endfor -%}
@@ -46,7 +47,7 @@
   </div>
 
   {%- if section.settings.sello != blank -%}
-    <div class="tf-sello" aria-hidden="true"><span>{{ section.settings.sello }}</span><b>💤</b></div>
+    {% render 'tf-sello', texto: section.settings.sello %}
   {%- endif -%}
 </section>
 
@@ -65,6 +66,7 @@
     { "type": "text", "id": "btn2_texto", "label": "Botón secundario", "default": "Conoce a Toffee" },
     { "type": "url", "id": "btn2_url", "label": "Enlace botón secundario" },
     { "type": "text", "id": "sello", "label": "Sello", "default": "Aprobado por Toffee" },
+    { "type": "text", "id": "nota_ia", "label": "Aviso de IA", "default": "Toffee es un personaje de IA · sus siestas son reales" },
     { "type": "text", "id": "paises_texto", "label": "Texto antes de las banderas", "default": "Enviamos a" },
     { "type": "text", "id": "paises", "label": "Países (código:nombre, separados por coma)", "default": "co:Colombia, mx:México, cl:Chile, pe:Perú" },
     { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 36, "max": 96, "step": 2, "unit": "px", "default": 76 }

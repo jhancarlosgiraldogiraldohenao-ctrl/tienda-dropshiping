@@ -4,7 +4,7 @@
       "type": "hl-producto",
       "settings": {
         "eyebrow": "Aprobado por Toffee 💤",
-        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
+        "nota_precio": "",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige tu opción",
         "oferta_1_nota": "",
@@ -12,11 +12,11 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Obtenlo ahora",
+        "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con tarjeta",
+        "comprar_nota": "Pago 100 % seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
-        "agotado_texto": "Agotado",
+        "agotado_texto": "Se acabó · Galleta está empacando más",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
@@ -24,13 +24,20 @@
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
-        "titulo_corto": "Orejeras anti ruido para perros",
-        "subtitulo": "Versión engrosada · Para la pólvora, tormentas y el baño",
+        "titulo_corto": "Orejeras anti ruido para perros · versión engrosada",
+        "subtitulo": "Para pólvora, tormentas, secador y baño · Tallas S a XL",
         "intro": "La pólvora de diciembre es la peor noche del año para muchos perros. Estas orejeras acolchadas cubren sus oídos y amortiguan los ruidos fuertes para que esté más tranquilo.",
         "puntos": "Versión engrosada: más tela y más relleno\nAmortigua pólvora, truenos, secador y peluquería\nSe ajusta con velcro, sin apretar\nResistente al agua: sirve también en el baño\nPara perros desde 7,5 kg (tallas S a XL)",
-        "guia_tallas": "📏 ¿No sabes su talla? Mira la guía de tallas en las fotos.",
+        "guia_tallas": "📏 ¿No sabes su talla? Mira la guía",
         "sticky_texto": "Orejeras anti ruido",
-        "compra_rapida": true
+        "compra_rapida": true,
+        "frase_toffee": "Galleta las usó en Año Nuevo y durmió como yo un domingo.",
+        "veredicto": "Calma con pólvora|★★★★★\nComodidad|★★★★☆\nProbado por Galleta|✓\n¿Lo tiré de la mesa?|No",
+        "nota_toffee": "Galleta ya no se esconde debajo de mi cama en Año Nuevo. Eso, para mí, vale cinco estrellas.",
+        "tallas_titulo": "Guía de tallas",
+        "tallas_nota": "Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. Si queda entre dos tallas, elige la más grande.",
+        "tabla_tallas": "Talla|Contorno de cabeza|Peso del perro\nS|25 – 38 cm|7,5 – 17,5 kg\nM|35 – 48 cm|17,5 – 30 kg\nL|45 – 60 cm|30 – 42,5 kg\nXL|55 – 71 cm|42,5 – 60 kg",
+        "aviso": "Ayudan a reducir el ruido; no son un tratamiento médico. Si tu perro sufre mucha ansiedad, consulta con tu veterinario. No lo dejes solo con ellas puestas."
       },
       "blocks": {
         "b0": {
@@ -54,7 +61,7 @@
           "settings": {
             "icono": "escudo",
             "titulo": "Garantía",
-            "texto": "Si no llega, te devolvemos tu dinero"
+            "texto": "Si no te llega, te devolvemos tu dinero"
           }
         }
       },

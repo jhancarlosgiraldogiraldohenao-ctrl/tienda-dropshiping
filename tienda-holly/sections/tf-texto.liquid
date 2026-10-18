@@ -1,0 +1,32 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%} Página de texto (legales, ayuda, IA): título + contenido de la página o texto propio. {%- endcomment -%}
+<section class="hl-section tf-texto{% if section.settings.fondo == 'crema2' %} tf-bloque--crema2{% endif %}"{% if section.settings.ancla != blank %} id="{{ section.settings.ancla }}"{% endif %}>
+  <div class="hl-container tf-texto__caja">
+    {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+    {%- if section.settings.mostrar_titulo -%}<h1 class="tf-texto__titulo">{{ section.settings.titulo | default: page.title }}</h1>{%- endif -%}
+    {%- if section.settings.nota_toffee != blank -%}<p class="tf-frase-toffee">“{{ section.settings.nota_toffee }}” — Toffee</p>{%- endif -%}
+    <div class="tf-texto__rte rte">
+      {%- if section.settings.texto != blank -%}{{ section.settings.texto }}{%- endif -%}
+      {%- if section.settings.contenido_pagina -%}{{ page.content }}{%- endif -%}
+    </div>
+    {%- if section.settings.actualizado != blank -%}<p class="tf-texto__fecha">{{ section.settings.actualizado }}</p>{%- endif -%}
+  </div>
+</section>
+{% schema %}
+{
+  "name": "Toffee – Texto",
+  "tag": "section",
+  "settings": [
+    { "type": "select", "id": "fondo", "label": "Fondo", "options": [ { "value": "crema", "label": "Crema" }, { "value": "crema2", "label": "Crema 2" } ], "default": "crema" },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo" },
+    { "type": "checkbox", "id": "mostrar_titulo", "label": "Mostrar título", "default": true },
+    { "type": "text", "id": "titulo", "label": "Título (vacío = título de la página)" },
+    { "type": "text", "id": "nota_toffee", "label": "Nota de Toffee" },
+    { "type": "richtext", "id": "texto", "label": "Texto" },
+    { "type": "checkbox", "id": "contenido_pagina", "label": "Mostrar el contenido de la página (Tienda online > Páginas)", "default": true },
+    { "type": "text", "id": "actualizado", "label": "Fecha de actualización" },
+    { "type": "text", "id": "ancla", "label": "Ancla" }
+  ],
+  "presets": [ { "name": "Toffee – Texto" } ]
+}
+{% endschema %}

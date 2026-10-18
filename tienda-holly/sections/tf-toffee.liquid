@@ -5,7 +5,7 @@
   #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
 {% endstyle %}
 
-<section class="hl-section tf-toffee{% if section.settings.invertir %} tf-toffee--invertido{% endif %}" id="{{ section.settings.ancla | default: 'toffee' }}">
+<section class="hl-section tf-toffee{% if section.settings.marino %} tf-oscuro{% endif %}{% if section.settings.invertir %} tf-toffee--invertido{% endif %}" id="{{ section.settings.ancla | default: 'toffee' }}">
   <div class="hl-container">
     <div class="tf-toffee__grid">
       <div class="tf-toffee__visual hl-reveal">
@@ -14,7 +14,8 @@
             <img src="{{ section.settings.imagen | image_url: width: 1000 }}" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="1340">
           {%- endif -%}
         </div>
-        {%- if section.settings.sello != blank -%}<div class="tf-sello tf-sello--foto" aria-hidden="true"><span>{{ section.settings.sello }}</span><b>💤</b></div>{%- endif -%}
+        {%- if section.settings.sello != blank -%}{% render 'tf-sello', texto: section.settings.sello, clase: 'tf-sello--foto' %}{%- endif -%}
+        {%- if section.settings.imagen != blank -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
       </div>
       <div class="tf-toffee__texto">
         <div class="hl-cabecera">
@@ -32,6 +33,7 @@
             {%- endfor -%}
           </ul>
         {%- endif -%}
+        {%- if section.settings.link_texto != blank -%}<a class="hl-btn hl-btn--ghost tf-toffee__link" href="{{ section.settings.link_url | default: '#' }}">{{ section.settings.link_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
         {%- if section.settings.nota != blank -%}<p class="tf-toffee__nota hl-reveal">{{ section.settings.nota }}</p>{%- endif -%}
       </div>
     </div>
@@ -53,6 +55,9 @@
     { "type": "text", "id": "nota", "label": "Nota pequeña" },
     { "type": "text", "id": "ancla", "label": "Nombre del ancla", "default": "toffee" },
     { "type": "checkbox", "id": "invertir", "label": "Foto a la derecha", "default": false },
+    { "type": "checkbox", "id": "marino", "label": "Fondo azul marino (Toffee HQ)", "default": false },
+    { "type": "text", "id": "link_texto", "label": "Enlace (texto)" },
+    { "type": "url", "id": "link_url", "label": "Enlace (URL)" },
     { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 28, "max": 96, "step": 2, "unit": "px", "default": 64 }
   ],
   "blocks": [

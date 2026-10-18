@@ -217,3 +217,17 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - CSS crítico para internet lento (fondo oscuro e íconos con tamaño fijo antes de cargar el CSS).
 - NO se agregaron reseñas: no hay ventas todavía y las reseñas falsas están prohibidas. Plan: app de reseñas (Judge.me gratis) después de las primeras ventas.
 - 17-oct: Shopify NO permite moneda local sin Shopify Payments (no existe en Colombia; usamos dLocal). Se cobra en COP y dLocal/el banco convierte. Mercados separados: Colombia, México (+ crear Chile y Perú) solo para detectar el país. El tema muestra "≈ $X MXN/CLP/PEN · se cobra en COP" (snippet tf-precio-local, tasas fijas: MXN 0,005435 · CLP 0,2888 · PEN 0,001087 por COP; revisar cada mes).
+
+## 18-oct · Rediseño A «Noche acogedora» (borrador, SIN publicar)
+- Tema borrador #189652074785 «Toffee A - Noche acogedora (borrador)». Vista previa: https://soytoffee.store/?preview_theme_id=189652074785 . El tema en vivo #189551870241 (futurista) queda de respaldo. Publicar SOLO cuando Jay diga «publica».
+- Paleta A en `:root` (--tf-crema, --tf-marino, --tf-caramelo…; --hl-* apuntan a --tf-*). Fuentes locales Fraunces + DM Sans (assets tf-*.woff2). Se borró un `:root` futurista que pisaba los colores y las precargas de Inter/Playfair.
+- Secciones nuevas: tf-bloque (genérica), tf-test (Test de Toffee, reglas por bloques → ?variant=ID), tf-texto (páginas de texto/legales), tf-formulario (contacto / PQR con radicado / Libro de Reclamaciones), tf-pie (pie marino con menús). Snippet tf-sello (sello SVG).
+- Plantillas de página: page.historia, page.test, page.ayuda, page.rastreo, page.legal, page.pqr, page.libro; 404 con tf-bloque.
+- Páginas creadas (Shopify): historia-de-toffee, test-de-toffee, ayuda, rastrea-tu-pedido, contenido-con-ia, datos-del-vendedor, politica-del-marrano, pqr, libro-de-reclamaciones, tratamiento-de-datos. Los datos personales del vendedor viven SOLO en Shopify (no en git).
+- Menús nuevos: menu-toffee-a (cabecera del borrador), pie-tienda, pie-ayuda, pie-legal. El main-menu en vivo no se tocó.
+- Políticas actualizadas: envíos (impuestos los asume la tienda), devoluciones por país, términos con cláusula IA. Privacidad: Shopify la gestiona en automático → Jay debe desactivarlo y pegar el texto de la página tratamiento-de-datos.
+- Productos: categoría estándar, tipo, etiquetas y metacampos `mascota.*` (especie, peso_min_kg, peso_max_kg, tallas, material, medidas, temporada). Alt completo en todas las fotos.
+- Regalo del club: fondo-toffee-celular.jpg y fondo-toffee-computador.jpg en Archivos (local: toffee/web/regalo/). Imagen para compartir: soytoffee-compartir-1200x630.jpg.
+- Textos de correos, Knowledge Base (15 FAQ), medición y pendientes del panel: ver ENTREGA-A.md.
+- Lighthouse móvil en vista previa: portada 74 / acc 94 / SEO 100; producto 73 / 97 / 100. Repetir al publicar.
+- PENDIENTE: foto real de orejeras (agente TeemDrop), teléfono en Datos del vendedor, ajustar precios por impuestos (proponer primero), mercados Chile/Perú, redes.

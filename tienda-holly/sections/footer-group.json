@@ -2,27 +2,19 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
-    "footer": {
-      "type": "footer",
+    "pie": {
+      "type": "tf-pie",
       "settings": {
-        "marca_texto": "Soy Toffee",
-        "tagline": "La tienda para mascotas donde todo pasa por mi prueba primero. — Toffee 🐾",
-        "nav_titulo": "Tienda",
-        "nav_1_label": "Inicio",
-        "nav_1_url": "/",
-        "nav_2_label": "Cama Trineo Navideña",
-        "nav_2_url": "/products/cama-trineo-navidad-mascotas",
-        "nav_3_label": "Disfraz Árbol de Navidad",
-        "nav_3_url": "/products/disfraz-arbol-navidad-perros",
-        "nav_4_label": "Orejeras anti ruido",
-        "nav_4_url": "/products/orejeras-anti-ruido-para-perros",
-        "info_titulo": "Compra tranquilo",
-        "info_texto": "Envío gratis, con número de rastreo.\nPago 100% seguro con tarjeta (Visa, Mastercard o American Express).\nSi tu pedido no llega, te devolvemos tu dinero.",
-        "texto_gigante": "Toffee"
+        "titulo_1": "Tienda",
+        "menu_1": "pie-tienda",
+        "titulo_2": "Ayuda",
+        "menu_2": "pie-ayuda",
+        "titulo_3": "Legal",
+        "menu_3": "pie-legal"
       }
     }
   },
   "order": [
-    "footer"
+    "pie"
   ]
 }

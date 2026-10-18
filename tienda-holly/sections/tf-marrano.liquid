@@ -57,6 +57,10 @@
           <p>{{ section.settings.mensaje }}</p>
         </div>
 
+        {%- if compacto and product -%}
+          {%- assign aporte = product.selected_or_first_available_variant.price | times: 0.03 | round -%}
+          <p class="tf-marrano__aporte">🐷 Con esta compra, <b>{{ aporte | money_without_trailing_zeros }}</b> van al marrano.</p>
+        {%- endif -%}
         <div class="tf-marrano__barra" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ pct | round }}" aria-label="Avance del marrano">
           <span class="tf-marrano__relleno" style="width: {{ pct }}%"></span>
         </div>

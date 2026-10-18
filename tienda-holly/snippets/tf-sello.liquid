@@ -1,0 +1,23 @@
+{%- comment -%} Sello "Aprobado por Toffee" (SVG + texto en HTML). Uso: render 'tf-sello', texto: 'Aprobado por Toffee', tipo: 'rechazado' {%- endcomment -%}
+{%- assign rechazado = false -%}{%- if tipo == 'rechazado' -%}{%- assign rechazado = true -%}{%- endif -%}
+<div class="tf-sello{% if clase %} {{ clase }}{% endif %}{% if rechazado %} tf-sello--no{% endif %}" role="img" aria-label="{{ texto | default: 'Aprobado por Toffee' | escape }}">
+  <svg viewBox="0 0 120 120" aria-hidden="true" focusable="false">
+    <circle cx="60" cy="60" r="58" fill="{% if rechazado %}#5B2B2B{% else %}#16213E{% endif %}"/>
+    <circle cx="60" cy="60" r="52" fill="none" stroke="#FFD27A" stroke-width="1.5" stroke-dasharray="2 4" opacity=".8"/>
+    <circle cx="60" cy="50" r="31" fill="#E0954F"/>
+    <path d="M42 50 L39 36 L50 43 Z M78 50 L81 36 L70 43 Z" fill="#F3D2A8"/>
+    <circle cx="60" cy="54" r="19" fill="#F3D2A8"/>
+    <path d="M41 46 C44 31 70 28 79 40 C86 40 92 46 93 53 L89 55 C86 49 82 46 77 46 Z" fill="#16213E"/>
+    <circle cx="91" cy="57" r="4.5" fill="#FBF6EE"/>
+    {%- if rechazado -%}
+      <path d="M50 51 l6 3 M70 51 l-6 3" stroke="#16213E" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M55 64 q5 -4 10 0" stroke="#16213E" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    {%- else -%}
+      <path d="M50 54 q3 -3 6 0 M64 54 q3 -3 6 0" stroke="#16213E" stroke-width="2" fill="none" stroke-linecap="round"/>
+      <path d="M57 61 l3 2 l3 -2" stroke="#C97A6D" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+      <text x="80" y="30" font-family="Georgia, serif" font-size="9" font-weight="700" fill="#FFD27A">z</text>
+      <text x="86" y="23" font-family="Georgia, serif" font-size="7" font-weight="700" fill="#FFD27A">z</text>
+    {%- endif -%}
+  </svg>
+  <span class="tf-sello__txt">{{ texto | default: 'Aprobado por Toffee' }}{% unless rechazado %} 💤{% else %} 😾{% endunless %}</span>
+</div>

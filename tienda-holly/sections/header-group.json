@@ -5,7 +5,7 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "settings": {
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
@@ -19,7 +19,7 @@
           "settings": {
             "text": "🐷 El 3 % de cada venta va al marrano de Toffee para peludos de la calle · Envío GRATIS",
             "text_alignment": "center",
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-4",
             "link": "/pages/marrano"
           }
         },
@@ -28,7 +28,7 @@
           "settings": {
             "text": "🎄 Pide antes del 20 de noviembre y recíbelo antes de Navidad · Envío GRATIS",
             "text_alignment": "center",
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-4",
             "link": "/#aprobado"
           }
         }
@@ -44,7 +44,7 @@
         "color_scheme": "scheme-3",
         "menu_color_scheme": "scheme-3",
         "logo_position": "middle-left",
-        "menu": "main-menu",
+        "menu": "menu-toffee-a",
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,

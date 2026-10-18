@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "texto": {
+      "type": "tf-texto",
+      "settings": {
+        "mostrar_titulo": true,
+        "contenido_pagina": true
+      }
+    },
+    "form": {
+      "type": "tf-formulario",
+      "settings": {
+        "modo": "libro",
+        "eyebrow": "Hoja de reclamación virtual",
+        "titulo": "",
+        "boton": "Enviar hoja de reclamación",
+        "ok": "Hoja de reclamación recibida. Te respondemos en máximo 15 días hábiles."
+      }
+    }
+  },
+  "order": [
+    "texto",
+    "form"
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "sections": {
+    "toffee": {
+      "type": "tf-toffee",
+      "settings": {
+        "imagen": "shopify://shop_images/toffee-jefe-cajas.jpg",
+        "sello": "Aprobado por Toffee",
+        "eyebrow": "La historia de Toffee",
+        "titulo": "<p>Hola, soy <em>Toffee</em></p>",
+        "historia": "<p>Soy un gato de casa muy exigente. Probé todas las camitas, juguetes, comederos y cobijas que me trajeron… y casi todos me parecieron horribles.</p><p>Cansado de que a los michis y perritos les vendan cosas que no sirven, abrí mi propia tienda. Aquí solo llega lo que yo pruebo y apruebo.</p>",
+        "regla_titulo": "Mi única regla",
+        "regla": "Si no pasa mi prueba, lo tiro de la mesa. 😾",
+        "nota": "Toffee es un personaje creado con inteligencia artificial. Los productos y los envíos son 100% reales.",
+        "ancla": "toffee",
+        "titulo_size": 64,
+        "marino": true,
+        "link_texto": "",
+        "link_url": ""
+      },
+      "blocks": {
+        "r0": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Jefe serio:",
+            "texto": "quiere ser un gran empresario… pero se duerme en las reuniones."
+          }
+        },
+        "r1": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Glotón:",
+            "texto": "se come las galletas del inventario."
+          }
+        },
+        "r2": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Exigente:",
+            "texto": "si algo no es cómodo, lo rechaza. 😾"
+          }
+        }
+      },
+      "block_order": [
+        "r0",
+        "r1",
+        "r2"
+      ]
+    },
+    "prueba": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema",
+        "imagen": "shopify://shop_images/A04-toffee-carta.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Cómo apruebo las cosas",
+        "titulo": "<p>Mi prueba tiene <em>tres pasos</em></p>",
+        "texto": "<p>Antes de que algo llegue a la tienda, tiene que pasar por mí. No es fácil.</p>",
+        "nota_toffee": "Lo que no pasa, lo tiro de la mesa.",
+        "btn_texto": "",
+        "btn_url": "",
+        "btn_principal": true,
+        "btn2_texto": "",
+        "btn2_url": ""
+      },
+      "blocks": {
+        "p0": {
+          "type": "punto",
+          "settings": {
+            "texto": "¿Es cómodo? Si no me dan ganas de dormir encima, fuera."
+          }
+        },
+        "p1": {
+          "type": "punto",
+          "settings": {
+            "texto": "¿Es seguro? Nada que se rompa, pique o lastime."
+          }
+        },
+        "p2": {
+          "type": "punto",
+          "settings": {
+            "texto": "¿Vale lo que cuesta? Si no lo pagaría con mis galletas, no lo vendo."
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2"
+      ]
+    },
+    "galleta": {
+      "type": "tf-toffee",
+      "settings": {
+        "imagen": "shopify://shop_images/A05-toffee-galleta-caja.jpg",
+        "sello": "Gerente de Seguridad",
+        "eyebrow": "Conoce al empleado",
+        "titulo": "<p>Y yo soy <em>Galleta</em></p>",
+        "historia": "<p>Soy un perrito criollo. Viví en la calle hasta el día en que Toffee me encontró temblando debajo de un carro en plena noche de pólvora.</p><p>Me llevó a su casa, me dio cobija, comida… y un trabajo: soy el Gerente de Seguridad de la tienda. Aunque, la verdad, me asusto de todo.</p><p>Por mí existe el marrano: el 3 % de cada venta es para que otros peludos de la calle tengan la misma suerte que yo.</p>",
+        "regla_titulo": "Mi trabajo",
+        "regla": "Probar todo lo que da miedo… y no salir corriendo.",
+        "nota": "Galleta es un personaje creado con inteligencia artificial. Los productos, los envíos y las donaciones son 100% reales.",
+        "ancla": "galleta",
+        "titulo_size": 64,
+        "invertir": true,
+        "link_texto": "",
+        "link_url": ""
+      },
+      "blocks": {
+        "g0": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Miedoso:",
+            "texto": "le tiene pánico a la pólvora, a la aspiradora y al cartero."
+          }
+        },
+        "g1": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Leal:",
+            "texto": "sigue a Toffee a todas partes (aunque Toffee lo ignore)."
+          }
+        },
+        "g2": {
+          "type": "rasgo",
+          "settings": {
+            "titulo": "Probador oficial:",
+            "texto": "de las orejeras anti ruido. Desde que las usa, duerme tranquilo en Año Nuevo."
+          }
+        }
+      },
+      "block_order": [
+        "g0",
+        "g1",
+        "g2"
+      ]
+    },
+    "marrano": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema2",
+        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
+        "escena_ia": true,
+        "invertir": true,
+        "eyebrow": "Por qué existe el marrano",
+        "titulo": "<p>El 3 % es <em>por Galleta</em></p>",
+        "texto": "<p>Galleta tuvo suerte. Muchos peludos de la calle no. Por eso el 3 % de cada venta va a un marrano que, cuando se llena, rompemos y donamos a rescatistas y fundaciones.</p>",
+        "nota_toffee": "",
+        "btn_texto": "Conoce el marrano",
+        "btn_url": "/pages/marrano",
+        "btn_principal": true,
+        "btn2_texto": "",
+        "btn2_url": ""
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "transparencia": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/A03-toffee-plato.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Te lo decimos claro",
+        "titulo": "<p>¿Quién está <em>detrás?</em></p>",
+        "texto": "<p>Toffee y Galleta son personajes creados con inteligencia artificial. Detrás de la tienda hay una persona real desde Colombia que escoge los productos, atiende los correos y responde por cada pedido.</p><p>Los productos, los pagos, los envíos y las donaciones son 100 % reales.</p>",
+        "nota_toffee": "",
+        "btn_texto": "Ver lo que aprobé",
+        "btn_url": "/#aprobado",
+        "btn_principal": true,
+        "btn2_texto": "Cómo usamos la IA",
+        "btn2_url": "/pages/contenido-con-ia"
+      },
+      "blocks": {},
+      "block_order": []
+    }
+  },
+  "order": [
+    "toffee",
+    "prueba",
+    "galleta",
+    "marrano",
+    "transparencia"
+  ]
+}

@@ -4,7 +4,7 @@
       "type": "hl-producto",
       "settings": {
         "eyebrow": "Aprobado por Toffee 💤",
-        "nota_precio": "Envío gratis · Pago seguro con tarjeta",
+        "nota_precio": "",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige tu opción",
         "oferta_1_nota": "",
@@ -12,11 +12,11 @@
         "oferta_2_nota": "",
         "texto_ahorro": "Ahorras",
         "mostrar_miniaturas": true,
-        "comprar_texto": "Obtenlo ahora",
+        "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con tarjeta",
+        "comprar_nota": "Pago 100 % seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
-        "agotado_texto": "Agotado",
+        "agotado_texto": "Se acabó · Galleta está empacando más",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
@@ -24,12 +24,20 @@
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
-        "titulo_corto": "Cama Trineo Navideña para mascotas",
-        "subtitulo": "50 × 38 × 26 cm · Para gatos y perritos pequeños",
+        "titulo_corto": "Cama Trineo Navideña para gatos y perros pequeños",
+        "subtitulo": "50 × 38 × 26 cm · Rojo o café · Hasta unos 7 kg",
         "intro": "El trineo de Papá Noel convertido en cama. Bordes de peluche blanco, paredes altas y acolchadas, y un cojín suave para que tu mascota se acurruque. Toffee la probó por 14 horas seguidas: aprobada.",
         "puntos": "Medidas: 50 cm de largo × 38 cm de ancho × 26 cm de alto\nPara gatos y perros pequeños (hasta unos 7 kg)\nFelpa suave con relleno de algodón\nParedes altas para apoyar la cabeza\nDecora tu casa en Navidad",
         "sticky_texto": "Cama Trineo Navideña",
-        "compra_rapida": true
+        "compra_rapida": true,
+        "frase_toffee": "Dormí 14 horas seguidas. Ni Galleta pudo sacarme.",
+        "veredicto": "Comodidad|★★★★★\nSiesta-prueba|14 h ✓\nResistencia a Galleta|✓\n¿Lo tiré de la mesa?|No",
+        "nota_toffee": "Paredes altas para apoyar la cara y peluche suave. Es oficialmente mi oficina.",
+        "tallas_titulo": "Medidas",
+        "tallas_nota": "Llega comprimida al vacío: sacúdela y espera unas horas (hasta 24 h) a que recupere su forma.",
+        "tabla_tallas": "Tamaño|Medidas|Mascota ideal\nS|50 × 38 × 26 cm|Gatos y perros pequeños hasta unos 7 kg",
+        "aviso": "Lávala a mano con agua fría y jabón suave. Sécala a la sombra.",
+        "guia_tallas": ""
       },
       "blocks": {
         "b0": {
@@ -53,7 +61,7 @@
           "settings": {
             "icono": "escudo",
             "titulo": "Garantía",
-            "texto": "Si no llega, te devolvemos tu dinero"
+            "texto": "Si no te llega, te devolvemos tu dinero"
           }
         }
       },

@@ -1,0 +1,57 @@
+{
+  "sections": {
+    "galleta": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/galleta-oficial.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Rastrea tu pedido",
+        "titulo": "<p>Galleta busca <em>tu caja</em></p>",
+        "texto": "<p>¡Hola, humano! Soy Galleta, Gerente de Seguridad. Así encuentras tu pedido:</p>",
+        "nota_toffee": "Yo vigilo cada caja. Bueno, cuando no me asusta el cartero.",
+        "btn_texto": "Escríbenos",
+        "btn_url": "/pages/ayuda#contacto",
+        "btn_principal": true,
+        "btn2_texto": "Volver a la tienda",
+        "btn2_url": "/"
+      },
+      "blocks": {
+        "p0": {
+          "type": "punto",
+          "settings": {
+            "texto": "Cuando tu pedido sale, te llega un correo con el número de rastreo. Revisa también la carpeta de spam o promociones."
+          }
+        },
+        "p1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Abre ese correo y toca «Ver tu pedido» o «Rastrear envío». Ahí ves dónde va."
+          }
+        },
+        "p2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Tarda de 10 a 25 días hábiles. Los primeros días puede verse quieto: está saliendo del país, es normal."
+          }
+        },
+        "p3": {
+          "type": "punto",
+          "settings": {
+            "texto": "¿Pasaron 25 días hábiles y nada? Escríbenos con tu número de pedido y lo buscamos."
+          }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1",
+        "p2",
+        "p3"
+      ]
+    }
+  },
+  "order": [
+    "galleta"
+  ]
+}

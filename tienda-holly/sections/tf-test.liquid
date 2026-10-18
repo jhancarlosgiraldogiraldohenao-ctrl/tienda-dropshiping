@@ -1,0 +1,161 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%} Test de Toffee: 4 preguntas → producto + talla + variante. Reglas editables con bloques. {%- endcomment -%}
+<section class="hl-section tf-test" id="test">
+  <div class="hl-container">
+    <div class="tf-test__caja" data-tf-test>
+      <div class="tf-test__cabeza">
+        {% render 'tf-sello', texto: '', clase: 'tf-sello--inline' %}
+        <span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>
+        <h1>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h1>
+        <p>{{ section.settings.texto }}</p>
+        <div class="tf-test__progreso" aria-hidden="true"><span data-tf-barra></span></div>
+      </div>
+
+      <form class="tf-test__form" data-tf-form onsubmit="return false">
+        <fieldset class="tf-test__paso is-activo" data-paso="1">
+          <legend>1. ¿Tu peludo es gato o perro?</legend>
+          <div class="tf-test__ops">
+            <button type="button" class="tf-pildora" data-q="especie" data-v="gato">🐱 Gato</button>
+            <button type="button" class="tf-pildora" data-q="especie" data-v="perro">🐶 Perro</button>
+          </div>
+        </fieldset>
+        <fieldset class="tf-test__paso" data-paso="2" hidden>
+          <legend>2. ¿Cuánto pesa más o menos?</legend>
+          <div class="tf-test__ops">
+            <button type="button" class="tf-pildora" data-q="peso" data-v="2">Menos de 2,5 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="3.7">2,5 a 5 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="6.2">5 a 7,5 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="12">7,5 a 17,5 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="24">17,5 a 30 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="36">30 a 42,5 kg</button>
+            <button type="button" class="tf-pildora" data-q="peso" data-v="50">Más de 42,5 kg</button>
+          </div>
+        </fieldset>
+        <fieldset class="tf-test__paso" data-paso="3" hidden>
+          <legend>3. ¿Qué necesita tu peludo?</legend>
+          <div class="tf-test__ops tf-test__ops--col">
+            <button type="button" class="tf-pildora" data-q="problema" data-v="ruido">🎆 Le asustan la pólvora y los ruidos fuertes</button>
+            <button type="button" class="tf-pildora" data-q="problema" data-v="calor">💤 Quiero que esté calientito y cómodo</button>
+            <button type="button" class="tf-pildora" data-q="problema" data-v="fotos">🎄 Quiero fotos de Navidad divertidas</button>
+          </div>
+        </fieldset>
+        <fieldset class="tf-test__paso" data-paso="4" hidden>
+          <legend>4. ¿Cómo se llama? <small>(opcional)</small></legend>
+          <div class="tf-test__nombre">
+            <label class="visually-hidden" for="tf-test-nombre">Nombre de tu peludo</label>
+            <input id="tf-test-nombre" type="text" maxlength="30" placeholder="Ej.: Luna" data-tf-nombre>
+            <button type="button" class="hl-btn hl-btn--curcuma" data-tf-ver>Ver mi resultado</button>
+          </div>
+        </fieldset>
+        <button type="button" class="tf-test__atras" data-tf-atras hidden>← Atrás</button>
+      </form>
+
+      <div class="tf-test__resultado" data-tf-resultado hidden aria-live="polite">
+        <div class="tf-test__res-foto"><img alt="" data-r-img width="600" height="600"><span class="tf-chip-ia" data-r-chip hidden>Escena creada con IA</span></div>
+        <div class="tf-test__res-texto">
+          <span class="tf-aprobado">{% render 'hl-icono', nombre: 'check' %}<span data-r-titulo>Toffee aprobó esto</span></span>
+          <h2 data-r-producto></h2>
+          <p class="tf-test__talla" data-r-talla></p>
+          <p class="tf-frase-toffee" data-r-frase></p>
+          <div class="tf-test__ctas">
+            <a class="hl-btn hl-btn--curcuma" data-r-link href="#">Ver con esta talla {% render 'hl-icono', nombre: 'flecha' %}</a>
+            <button type="button" class="hl-btn hl-btn--ghost" data-tf-otra>Hacer el test otra vez</button>
+          </div>
+          {%- if section.settings.mostrar_correo -%}
+          <div class="tf-club">
+            <p class="tf-test__correo-t">{{ section.settings.correo_texto }}</p>
+            {%- form 'customer', class: 'tf-club__form' -%}
+              <input type="hidden" name="contact[tags]" value="newsletter, test-toffee">
+              <input type="hidden" name="contact[note]" value="" data-tf-nota>
+              {%- if form.posted_successfully? -%}<p class="tf-club__ok" role="status">¡Listo, humano! Revisa tu correo 💌</p>{%- else -%}
+              <div class="tf-club__fila">
+                <label class="visually-hidden" for="tf-test-email">Correo</label>
+                <input id="tf-test-email" type="email" name="contact[email]" required autocomplete="email" placeholder="Tu correo">
+                <button type="submit" class="hl-btn hl-btn--ghost">Enviármelo</button>
+              </div>
+              <label class="tf-consent"><input type="checkbox" required> <span>Autorizo a Soy Toffee a tratar mis datos para enviarme correos, según la <a href="{{ routes.root_url }}pages/tratamiento-de-datos" target="_blank">Política de tratamiento de datos</a>.</span></label>
+              {%- endif -%}
+            {%- endform -%}
+          </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script type="application/json" data-tf-reglas>[
+  {%- for block in section.blocks -%}
+    {%- assign p = block.settings.producto -%}{%- if p == blank -%}{%- continue -%}{%- endif -%}
+    {%- assign vid = p.selected_or_first_available_variant.id -%}
+    {%- if block.settings.talla != blank -%}{%- for v in p.variants -%}{%- if v.options contains block.settings.talla and v.available -%}{%- assign vid = v.id -%}{%- break -%}{%- endif -%}{%- endfor -%}{%- endif -%}
+    {%- assign img = block.settings.imagen | default: p.featured_media -%}
+    {"problema": {{ block.settings.problema | json }}, "especie": {{ block.settings.especie | json }}, "min": {{ block.settings.peso_min | default: 0 }}, "max": {{ block.settings.peso_max | default: 999 }},
+     "producto": {{ p.title | json }}, "talla": {{ block.settings.talla | json }}, "frase": {{ block.settings.frase | json }}, "url": {{ p.url | append: '?variant=' | append: vid | json }},
+     "img": {{ img | image_url: width: 700 | json }}, "ia": {% if img.alt contains '(escena IA)' %}true{% else %}false{% endif %}}{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+]</script>
+<script type="application/json" data-tf-sinresultado>{{ section.settings.sin_resultado | json }}</script>
+
+<script>
+(function () {
+  var c = document.querySelector('[data-tf-test]'); if (!c) return;
+  var reglas = []; try { reglas = JSON.parse(document.querySelector('[data-tf-reglas]').textContent); } catch (e) {}
+  var nada = JSON.parse(document.querySelector('[data-tf-sinresultado]').textContent);
+  var r = {}, paso = 1, pasos = c.querySelectorAll('[data-paso]'), barra = c.querySelector('[data-tf-barra]'), atras = c.querySelector('[data-tf-atras]');
+  function ir(n, sinFoco) { paso = n; pasos.forEach(function (p) { var on = +p.dataset.paso === n; p.hidden = !on; p.classList.toggle('is-activo', on); }); atras.hidden = n === 1; barra.style.width = (n - 1) / 4 * 100 + '%'; var b = c.querySelector('[data-paso="' + n + '"] button, [data-paso="' + n + '"] input'); if (b && !sinFoco) b.focus({ preventScroll: true }); }
+  c.querySelectorAll('[data-q]').forEach(function (b) { b.addEventListener('click', function () { r[b.dataset.q] = b.dataset.v; b.parentNode.querySelectorAll('.tf-pildora').forEach(function (x) { x.classList.toggle('is-activa', x === b); }); ir(paso + 1); }); });
+  atras.addEventListener('click', function () { if (paso > 1) ir(paso - 1); });
+  function ver() {
+    var nombre = (c.querySelector('[data-tf-nombre]').value || '').trim(), peso = parseFloat(r.peso || 0);
+    var hit = reglas.filter(function (x) { return x.problema === r.problema && (x.especie === 'ambos' || x.especie === r.especie) && peso >= x.min && peso < x.max; })[0];
+    c.querySelector('[data-tf-form]').hidden = true; barra.style.width = '100%';
+    var res = c.querySelector('[data-tf-resultado]'); res.hidden = false;
+    var q = function (s) { return res.querySelector(s); };
+    q('[data-r-titulo]').textContent = nombre ? 'Toffee aprobó esto para ' + nombre : 'Toffee aprobó esto para tu peludo';
+    if (hit) {
+      q('[data-r-producto]').textContent = hit.producto; q('[data-r-talla]').textContent = hit.talla ? 'Talla recomendada: ' + hit.talla : '';
+      q('[data-r-frase]').textContent = '“' + hit.frase + '” — Toffee'; q('[data-r-link]').href = hit.url; q('[data-r-link]').hidden = false;
+      q('[data-r-img]').src = hit.img; q('[data-r-img]').alt = hit.producto; q('[data-r-chip]').hidden = !hit.ia; q('.tf-test__res-foto').hidden = false;
+    } else {
+      q('[data-r-titulo]').textContent = 'Toffee lo pensó mucho…'; q('[data-r-producto]').textContent = 'Todavía no tengo algo para tu peludo';
+      q('[data-r-talla]').textContent = ''; q('[data-r-frase]').textContent = '“' + nada + '” — Toffee'; q('[data-r-link]').href = '{{ routes.root_url }}#aprobado'; q('[data-r-link]').firstChild.textContent = 'Ver lo que aprobé ';
+      q('.tf-test__res-foto').hidden = true;
+    }
+    var nota = res.querySelector('[data-tf-nota]'); if (nota) nota.value = 'Test: ' + JSON.stringify({ especie: r.especie, peso: r.peso, problema: r.problema, nombre: nombre, resultado: hit ? hit.producto + ' ' + hit.talla : 'sin resultado' });
+    try { window.Shopify && Shopify.analytics && Shopify.analytics.publish('test_completado', { resultado: hit ? hit.producto : 'ninguno' }); } catch (e) {}
+    res.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+  c.querySelector('[data-tf-ver]').addEventListener('click', ver);
+  c.querySelector('[data-tf-otra]').addEventListener('click', function () { r = {}; c.querySelector('[data-tf-resultado]').hidden = true; c.querySelector('[data-tf-form]').hidden = false; c.querySelectorAll('.tf-pildora').forEach(function (x) { x.classList.remove('is-activa'); }); ir(1); });
+  if (location.search.indexOf('customer_posted=true') > -1) { var res = c.querySelector('[data-tf-resultado]'); res.hidden = false; c.querySelector('[data-tf-form]').hidden = true; c.querySelector('.tf-test__res-foto').hidden = true; res.querySelector('[data-r-producto]').textContent = '¡Te lo mandé al correo!'; res.querySelector('[data-r-link]').href = '{{ routes.root_url }}#aprobado'; }
+  ir(1, true);
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Toffee – Test",
+  "tag": "section",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Test de Toffee" },
+    { "type": "richtext", "id": "titulo", "label": "Título", "default": "<p>¿Qué aprobaría Toffee <em>para tu peludo?</em></p>" },
+    { "type": "text", "id": "texto", "label": "Texto", "default": "Responde 4 preguntas y te digo qué y en qué talla." },
+    { "type": "textarea", "id": "sin_resultado", "label": "Mensaje si no hay producto", "default": "Por ahora no tengo nada que le quede perfecto. Estoy probando cosas nuevas: vuelve pronto." },
+    { "type": "checkbox", "id": "mostrar_correo", "label": "Ofrecer enviar el resultado por correo", "default": true },
+    { "type": "text", "id": "correo_texto", "label": "Texto del correo", "default": "¿Te mando el resultado y mi regalo al correo?" }
+  ],
+  "blocks": [
+    { "type": "regla", "name": "Regla de resultado", "settings": [
+      { "type": "select", "id": "problema", "label": "Necesidad", "options": [ { "value": "ruido", "label": "Ruidos / pólvora" }, { "value": "calor", "label": "Calientito y cómodo" }, { "value": "fotos", "label": "Fotos de Navidad" } ], "default": "ruido" },
+      { "type": "select", "id": "especie", "label": "Especie", "options": [ { "value": "ambos", "label": "Gato o perro" }, { "value": "perro", "label": "Solo perro" }, { "value": "gato", "label": "Solo gato" } ], "default": "ambos" },
+      { "type": "number", "id": "peso_min", "label": "Peso mínimo (kg, incluido)", "default": 0 },
+      { "type": "number", "id": "peso_max", "label": "Peso máximo (kg, no incluido)", "default": 999 },
+      { "type": "product", "id": "producto", "label": "Producto" },
+      { "type": "text", "id": "talla", "label": "Talla a seleccionar (igual que en el producto)" },
+      { "type": "image_picker", "id": "imagen", "label": "Foto (vacío = foto del producto)" },
+      { "type": "text", "id": "frase", "label": "Frase de Toffee" }
+    ] }
+  ]
+}
+{% endschema %}

@@ -7,7 +7,7 @@
   #shopify-section-{{ section.id }} .hl-paso p { font-size: {{ section.settings.texto_size }}px; }
 {% endstyle %}
 
-<section class="hl-section hl-ritual hl-oscuro hl-noche" id="{{ section.settings.ancla | default: 'ritual' }}">
+<section class="hl-section hl-ritual{% unless section.settings.fondo_crema %} hl-oscuro hl-noche{% endunless %}" id="{{ section.settings.ancla | default: 'ritual' }}">
   <div class="hl-nieve" aria-hidden="true"></div>
   <div class="hl-container hl-ritual__wrap">
     <div class="hl-cabecera hl-cabecera--centro">
@@ -35,6 +35,7 @@
   "name": "KF – El ritual",
   "tag": "section",
   "settings": [
+    { "type": "checkbox", "id": "fondo_crema", "label": "Fondo crema (en vez de azul noche)", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El ritual" },
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = color cúrcuma)", "default": "<p>Tres pasos. <em>Cero complicaciones.</em></p>" },
     { "type": "textarea", "id": "texto", "label": "Texto", "default": "En la ducha, en menos de lo que tarda una canción." },

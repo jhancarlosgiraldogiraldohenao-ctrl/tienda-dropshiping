@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "texto": {
+      "type": "tf-texto",
+      "settings": {
+        "mostrar_titulo": true,
+        "contenido_pagina": true
+      }
+    },
+    "form": {
+      "type": "tf-formulario",
+      "settings": {
+        "modo": "pqr",
+        "eyebrow": "Formulario",
+        "titulo": "",
+        "boton": "Radicar PQR",
+        "ok": "¡Radicada! Te respondemos por correo en máximo 15 días hábiles."
+      }
+    }
+  },
+  "order": [
+    "texto",
+    "form"
+  ]
+}

@@ -28,7 +28,7 @@
         "tiktok": "TikTok"
       }
     },
-    "continue_shopping": "Seguir comprando",
+    "continue_shopping": "Ver lo que aprobé",
     "pagination": {
       "label": "Paginación",
       "page": "Página {{ number }}",
@@ -271,8 +271,8 @@
       }
     },
     "404": {
-      "title": "Página no encontrada",
-      "subtext": "404"
+      "title": "Esta página me la comí",
+      "subtext": "Error 404"
     }
   },
   "sections": {
@@ -291,7 +291,7 @@
       "remove_title": "Eliminar {{ title }}",
       "note": "Instrucciones especiales del pedido",
       "checkout": "Finalizar compra →",
-      "empty": "Tu carrito esta vacío",
+      "empty": "Tu carrito está más vacío que mi plato a las 6 a. m. 😾",
       "product_disclosure": "Aviso sobre el producto",
       "product_disclosures": "Avisos sobre el producto",
       "cart_error": "Hubo un error al actualizar tu carrito de compra. Inténtalo de nuevo.",

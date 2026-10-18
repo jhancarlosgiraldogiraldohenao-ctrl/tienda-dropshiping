@@ -3,19 +3,20 @@
     "hero": {
       "type": "tf-hero",
       "settings": {
-        "imagen": "shopify://shop_images/F01-portada-horizontal.jpg",
-        "imagen_movil": "shopify://shop_images/F02-portada-vertical.jpg",
+        "imagen": "shopify://shop_images/A01-portada-horizontal.jpg",
+        "imagen_movil": "shopify://shop_images/A02-portada-vertical.jpg",
         "eyebrow": "Tienda para gatos y perros 🐾",
         "titulo": "<p>Si no pasa mi prueba, <em>lo tiro de la mesa.</em></p>",
-        "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que llega a mi tienda pasa primero por mis patitas, y solo se queda lo que yo apruebo.",
+        "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que llega a mi tienda pasa primero por mis patitas.",
         "btn1_texto": "Ver lo que aprobé",
         "btn1_url": "#aprobado",
         "btn2_texto": "Conoce a Toffee",
-        "btn2_url": "#toffee",
+        "btn2_url": "/pages/historia-de-toffee",
         "sello": "Aprobado por Toffee",
         "titulo_size": 76,
         "paises_texto": "Enviamos a",
-        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú"
+        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú",
+        "nota_ia": "Toffee es un personaje de IA · sus siestas son reales"
       },
       "blocks": {},
       "block_order": []
@@ -29,49 +30,31 @@
         "b0": {
           "type": "item",
           "settings": {
-            "texto": "Aprobado por Toffee 💤"
+            "texto": "Envío gratis con rastreo"
           }
         },
         "b1": {
           "type": "item",
           "settings": {
-            "texto": "Envío gratis"
+            "texto": "Pago seguro con tarjeta"
           }
         },
         "b2": {
           "type": "item",
           "settings": {
-            "texto": "Para gatos y perros"
+            "texto": "Si no te llega, te devolvemos tu dinero"
           }
         },
         "b3": {
           "type": "item",
           "settings": {
-            "texto": "Pago seguro con tarjeta"
+            "texto": "3 % para peludos de la calle"
           }
         },
         "b4": {
           "type": "item",
           "settings": {
-            "texto": "3 % para peludos de la calle"
-          }
-        },
-        "b5": {
-          "type": "item",
-          "settings": {
-            "texto": "Probado antes de venderse"
-          }
-        },
-        "b6": {
-          "type": "item",
-          "settings": {
-            "texto": "Garantía de entrega"
-          }
-        },
-        "b7": {
-          "type": "item",
-          "settings": {
-            "texto": "Navidad 2026 🎄"
+            "texto": "Aprobado por Toffee 💤"
           }
         }
       },
@@ -80,10 +63,7 @@
         "b1",
         "b2",
         "b3",
-        "b4",
-        "b5",
-        "b6",
-        "b7"
+        "b4"
       ]
     },
     "seguro": {
@@ -101,7 +81,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con tarjeta (Visa, Mastercard o American Express), 100% seguro."
+            "texto": "Pagas con tarjeta (Visa, Mastercard, American Express o Discover), 100 % seguro."
           }
         },
         "b1": {
@@ -124,8 +104,8 @@
           "type": "tarjeta",
           "settings": {
             "icono": "escudo",
-            "titulo": "Garantía",
-            "texto": "Si tu pedido no llega o llega dañado, te devolvemos tu dinero."
+            "titulo": "Retracto y garantía",
+            "texto": "Si no llega o llega dañado, te devolvemos tu dinero. Tienes derecho de retracto según la ley de tu país."
           }
         }
       },
@@ -201,6 +181,20 @@
             "pregunta": "¿De verdad donan el 3 %?",
             "respuesta": "<p>Sí. Separamos el 3 % de cada venta y lo entregamos a fundaciones y rescatistas de animales de la calle. Cada donación la publicamos con su comprobante en nuestras redes @toffee.elgato.</p>"
           }
+        },
+        "impuestos": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Tengo que pagar impuestos o aduana?",
+            "respuesta": "<p>No. El precio que ves es el final: si tu país cobra impuestos de importación por tu pedido, los asumimos nosotros.</p>"
+          }
+        },
+        "cambios": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Puedo devolverlo o cambiarlo?",
+            "respuesta": "<p>Sí. Tienes derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile). Mira todos los detalles en la <a href=\"/policies/refund-policy\">política de devoluciones</a>.</p>"
+          }
         }
       },
       "block_order": [
@@ -209,7 +203,9 @@
         "b1",
         "b2",
         "b3",
+        "impuestos",
         "medidas",
+        "cambios",
         "dona",
         "b7"
       ]
@@ -220,7 +216,7 @@
         "eyebrow": "Navidad 2026",
         "titulo": "<p>Este año, <em>que también sea su Navidad</em></p>",
         "texto": "Pide hoy con envío gratis y consiente a tu peludo con algo que yo mismo aprobé. 💤",
-        "imagen": "shopify://shop_images/F14-cierre-toffee.jpg",
+        "imagen": "shopify://shop_images/F04-trineo-rojo-toffee.jpg",
         "btn_texto": "Ver lo que aprobé",
         "titulo_size": 72,
         "btn_url": "#aprobado"
@@ -266,7 +262,10 @@
         "regla": "Si no pasa mi prueba, lo tiro de la mesa. 😾",
         "nota": "Toffee es un personaje creado con inteligencia artificial. Los productos y los envíos son 100% reales.",
         "ancla": "toffee",
-        "titulo_size": 64
+        "titulo_size": 64,
+        "marino": true,
+        "link_texto": "Lee mi historia",
+        "link_url": "/pages/historia-de-toffee"
       },
       "blocks": {
         "r0": {
@@ -300,9 +299,9 @@
     "aprobado": {
       "type": "hl-catalogo",
       "settings": {
-        "eyebrow": "Comprar",
-        "titulo": "<p>Escoge tu <em>favorito</em></p>",
-        "texto": "Todo lo que pasó mi prueba. Toca el que quieras, escoge talla y color, y listo.",
+        "eyebrow": "Aprobado por Toffee",
+        "titulo": "<p>Pasaron <em>mi prueba</em></p>",
+        "texto": "Los olí, les hice la siesta-prueba y no los tiré de la mesa. Son los únicos que están en mi tienda.",
         "boton_texto": "Comprar ahora",
         "ancla": "aprobado",
         "titulo_size": 60
@@ -313,8 +312,10 @@
           "settings": {
             "producto": "cama-trineo-navidad-mascotas",
             "titulo": "Cama Trineo Navideña",
-            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
-            "etiqueta": "Favorito de Toffee"
+            "frase": "El trineo de Papá Noel convertido en cama. Dormí 14 horas seguidas: aprobado.",
+            "etiqueta": "Favorito de Toffee",
+            "veredicto": "Comodidad|★★★★★\nSiesta-prueba|14 h ✓\n¿Lo tiró de la mesa?|No",
+            "escena_ia": true
           }
         },
         "p1": {
@@ -322,8 +323,10 @@
           "settings": {
             "producto": "disfraz-arbol-navidad-perros",
             "titulo": "Disfraz Árbol de Navidad",
-            "frase": "Tu mascota convertida en el arbolito más tierno de la casa. Para gatos y perritos.",
-            "etiqueta": "El más viral"
+            "frase": "Me lo puse bajo protesta. Las fotos salieron demasiado bonitas: aprobado.",
+            "etiqueta": "El más viral",
+            "veredicto": "Ternura|★★★★★\nFotos navideñas|✓\n¿Lo tiró de la mesa?|No (lo pensó)",
+            "escena_ia": true
           }
         },
         "p2": {
@@ -331,8 +334,10 @@
           "settings": {
             "producto": "orejeras-anti-ruido-para-perros",
             "titulo": "Orejeras anti ruido",
-            "frase": "Para que la pólvora de diciembre no sea la peor noche del año de tu perro.",
-            "etiqueta": "Para la pólvora"
+            "frase": "Galleta las usó en Año Nuevo y durmió como yo un domingo.",
+            "etiqueta": "Para la pólvora",
+            "veredicto": "Calma con pólvora|★★★★★\nProbado por Galleta|✓\n¿Lo tiró de la mesa?|No",
+            "escena_ia": true
           }
         }
       },
@@ -345,7 +350,7 @@
     "marrano": {
       "type": "tf-marrano",
       "settings": {
-        "eyebrow": "El 3 % de cada venta",
+        "eyebrow": "El marrano de Toffee",
         "titulo": "<p>El marrano <em>de Toffee</em></p>",
         "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾",
         "meta": 1000000,
@@ -411,7 +416,7 @@
     "galleta": {
       "type": "tf-toffee",
       "settings": {
-        "imagen": "shopify://shop_images/galleta-oficial.jpg",
+        "imagen": "shopify://shop_images/A05-toffee-galleta-caja.jpg",
         "sello": "Gerente de Seguridad",
         "eyebrow": "Conoce al empleado",
         "titulo": "<p>Y yo soy <em>Galleta</em></p>",
@@ -421,7 +426,9 @@
         "nota": "Galleta es un personaje creado con inteligencia artificial. Los productos, los envíos y las donaciones son 100% reales.",
         "ancla": "galleta",
         "titulo_size": 64,
-        "invertir": true
+        "invertir": true,
+        "link_texto": "Conoce al equipo",
+        "link_url": "/pages/historia-de-toffee"
       },
       "blocks": {
         "g0": {
@@ -451,18 +458,218 @@
         "g1",
         "g2"
       ]
+    },
+    "prueba": {
+      "type": "hl-ritual",
+      "settings": {
+        "eyebrow": "La prueba de Toffee",
+        "titulo": "<p>Así decido qué <em>entra a mi tienda</em></p>",
+        "texto": "Nada llega a la tienda sin pasar por mis patitas.",
+        "nota": "Por eso en mi tienda hay poquitas cosas: solo las que aprobé.",
+        "ancla": "la-prueba",
+        "titulo_size": 56,
+        "fondo_crema": true
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Lo huelo y lo inspecciono",
+            "texto": "Costuras, tela, olor raro. Si algo no me convence, ni lo toco."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Le hago la siesta-prueba",
+            "texto": "Mínimo 3 horas encima. Si me levanto incómodo, perdió."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Lo apruebo… o lo tiro de la mesa",
+            "texto": "Si me gusta, le pongo mi sello. Si no, ya sabes qué pasa. 😾"
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2"
+      ]
+    },
+    "temporada": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/F11-orejeras-galleta-polvora.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Temporada de pólvora 🎆",
+        "titulo": "<p>Galleta le tenía pánico a la pólvora. <em>Este diciembre lo pasa tranquilo.</em></p>",
+        "texto": "<p>Las orejeras anti ruido engrosadas cubren sus oídos y amortiguan el estruendo de Navidad y Año Nuevo. Ayudan a reducir el ruido; no son un tratamiento médico.</p>",
+        "nota_toffee": "Por fin un Año Nuevo sin Galleta escondido debajo de mi cama. Mi cama.",
+        "btn_texto": "Ver las orejeras",
+        "btn_url": "/products/orejeras-anti-ruido-para-perros",
+        "btn_principal": true,
+        "btn2_texto": "",
+        "btn2_url": "",
+        "ancla": "temporada"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "test": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema2",
+        "imagen": "shopify://shop_images/A04-toffee-carta.jpg",
+        "escena_ia": true,
+        "invertir": true,
+        "eyebrow": "Test de Toffee",
+        "titulo": "<p>¿Qué aprobaría Toffee <em>para tu peludo?</em></p>",
+        "texto": "<p>Responde 4 preguntas y te digo qué producto le sirve y en qué talla. Tarda menos que una de mis siestas.</p>",
+        "nota_toffee": "",
+        "btn_texto": "Hacer el test",
+        "btn_url": "/pages/test-de-toffee",
+        "btn_principal": true,
+        "ancla": "test"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "redes": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema",
+        "eyebrow": "Toffee en redes",
+        "titulo": "<p>Sígueme en <em>@toffee.elgato</em></p>",
+        "texto": "<p>Mis pruebas, mis siestas y los dramas de Galleta, todos los días. Comenta <b>TOFFEE</b> y te respondo.</p>",
+        "btn_texto": "",
+        "ancla": "redes"
+      },
+      "blocks": {
+        "r": {
+          "type": "redes",
+          "settings": {
+            "tiktok": "",
+            "instagram": ""
+          }
+        }
+      },
+      "block_order": [
+        "r"
+      ],
+      "disabled": true
+    },
+    "comparativa": {
+      "type": "hl-comparativa",
+      "settings": {
+        "eyebrow": "La diferencia",
+        "titulo": "<p>Aprobado por Toffee <em>vs. lo de cualquier lado</em></p>",
+        "texto": "Sin nombrar a nadie. Solo hechos.",
+        "col_nos": "Aprobado por Toffee",
+        "col_otros": "Lo de cualquier lado",
+        "titulo_size": 52
+      },
+      "blocks": {
+        "b0": {
+          "type": "fila",
+          "settings": {
+            "texto": "Telas suaves revisadas con fotos reales",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b1": {
+          "type": "fila",
+          "settings": {
+            "texto": "Guía de tallas clara por peso",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b2": {
+          "type": "fila",
+          "settings": {
+            "texto": "Envío con número de rastreo",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b3": {
+          "type": "fila",
+          "settings": {
+            "texto": "Si no te llega, te devolvemos tu dinero",
+            "nos": true,
+            "otros": false
+          }
+        },
+        "b4": {
+          "type": "fila",
+          "settings": {
+            "texto": "3 % de cada compra para peludos de la calle",
+            "nos": true,
+            "otros": false
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3",
+        "b4"
+      ]
+    },
+    "club": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/A03-toffee-plato.jpg",
+        "escena_ia": true,
+        "invertir": true,
+        "eyebrow": "Club Toffeelovers",
+        "titulo": "<p>Únete a los <em>Toffeelovers</em></p>",
+        "texto": "<p>Humano, déjame tu correo y te mando mi regalo: fondos de pantalla de Toffee y Galleta. No, no es una bola de pelos.</p>",
+        "btn_texto": "",
+        "ancla": "club"
+      },
+      "blocks": {
+        "c": {
+          "type": "correo",
+          "settings": {
+            "placeholder": "Tu correo",
+            "boton": "Quiero el regalo",
+            "etiqueta": "newsletter, toffeelovers",
+            "consentimiento": "Autorizo a Soy Toffee a tratar mis datos para enviarme correos, según la Política de tratamiento de datos.",
+            "ok": "¡Listo, humano! Ya eres Toffeelover. Revisa tu correo 💌",
+            "error": "Ese correo no me cuadra, humano. ¿Lo revisas?"
+          }
+        }
+      },
+      "block_order": [
+        "c"
+      ]
     }
   },
   "order": [
     "hero",
     "cinta",
     "aprobado",
+    "prueba",
+    "temporada",
+    "test",
     "marrano",
-    "paises",
     "toffee",
     "galleta",
+    "redes",
+    "comparativa",
+    "paises",
     "seguro",
     "faq",
+    "club",
     "cierre"
   ]
 }
