@@ -52,7 +52,17 @@
               <img src="{{ foto | image_url: width: 900 }}" srcset="{{ foto | image_url: width: 500 }} 500w, {{ foto | image_url: width: 900 }} 900w" sizes="(min-width: 750px) 45vw, 92vw" alt="{{ p.title | escape }}" loading="lazy" width="900" height="1125">
             {%- endif -%}
             {%- if block.settings.etiqueta != blank -%}<span class="hl-tarjeta__badge">{{ block.settings.etiqueta }}</span>{%- endif -%}
-            {%- if block.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
+            {%- liquid
+              if block.settings.imagen != blank
+                assign es_ia = block.settings.escena_ia
+              else
+                assign es_ia = false
+                if foto.alt contains '(escena IA)'
+                  assign es_ia = true
+                endif
+              endif
+            -%}
+            {%- if es_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
           </div>
           <div class="hl-tarjeta__cuerpo">
             <h3>{{ block.settings.titulo | default: p.title }}</h3>
@@ -100,7 +110,7 @@
       "settings": [
         { "type": "product", "id": "producto", "label": "Producto" },
         { "type": "textarea", "id": "veredicto", "label": "Calificación de Toffee (Criterio|Nota, uno por línea)" },
-        { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
+        { "type": "checkbox", "id": "escena_ia", "label": "La foto elegida es una escena creada con IA (sin foto: automático)", "default": true },
         { "type": "text", "id": "titulo", "label": "Título (opcional)" },
         { "type": "text", "id": "frase", "label": "Frase corta" },
         { "type": "text", "id": "etiqueta", "label": "Etiqueta sobre la foto" },
