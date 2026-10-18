@@ -9,6 +9,12 @@
 
     <link rel="icon" type="image/png" href="{{ 'hl-favicon.png' | asset_url }}">
     <link rel="apple-touch-icon" href="{{ 'hl-favicon.png' | asset_url }}">
+    {%- if template.name == 'index' -%}
+      {%- comment -%} Precarga de la foto de portada (si cambias la foto del hero, cambia el nombre aquí). {%- endcomment -%}
+      {%- assign hm = images['A02-portada-vertical.jpg'] -%}{%- assign hd = images['A01-portada-horizontal.jpg'] -%}
+      <link rel="preload" as="image" media="(max-width: 749px)" imagesrcset="{{ hm | image_url: width: 600 }} 600w, {{ hm | image_url: width: 800 }} 800w, {{ hm | image_url: width: 1100 }} 1100w" imagesizes="100vw" fetchpriority="high">
+      <link rel="preload" as="image" media="(min-width: 750px)" imagesrcset="{{ hd | image_url: width: 1100 }} 1100w, {{ hd | image_url: width: 1800 }} 1800w, {{ hd | image_url: width: 2400 }} 2400w" imagesizes="100vw" fetchpriority="high">
+    {%- endif -%}
     <link rel="preload" href="{{ 'tf-fraunces-latin-600-normal.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="{{ 'tf-dm-sans-latin-400-normal.woff2' | asset_url }}" as="font" type="font/woff2" crossorigin>
     <style>

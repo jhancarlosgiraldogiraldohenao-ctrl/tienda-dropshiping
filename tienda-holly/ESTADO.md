@@ -218,7 +218,7 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - NO se agregaron reseñas: no hay ventas todavía y las reseñas falsas están prohibidas. Plan: app de reseñas (Judge.me gratis) después de las primeras ventas.
 - 17-oct: Shopify NO permite moneda local sin Shopify Payments (no existe en Colombia; usamos dLocal). Se cobra en COP y dLocal/el banco convierte. Mercados separados: Colombia, México (+ crear Chile y Perú) solo para detectar el país. El tema muestra "≈ $X MXN/CLP/PEN · se cobra en COP" (snippet tf-precio-local, tasas fijas: MXN 0,005435 · CLP 0,2888 · PEN 0,001087 por COP; revisar cada mes).
 
-## 18-oct · Rediseño A «Noche acogedora» (borrador, SIN publicar)
+## 18-oct · Rediseño A «Noche acogedora» (PUBLICADO 18-oct)
 - Tema borrador #189652074785 «Toffee A - Noche acogedora (borrador)». Vista previa: https://soytoffee.store/?preview_theme_id=189652074785 . El tema en vivo #189551870241 (futurista) queda de respaldo. Publicar SOLO cuando Jay diga «publica».
 - Paleta A en `:root` (--tf-crema, --tf-marino, --tf-caramelo…; --hl-* apuntan a --tf-*). Fuentes locales Fraunces + DM Sans (assets tf-*.woff2). Se borró un `:root` futurista que pisaba los colores y las precargas de Inter/Playfair.
 - Secciones nuevas: tf-bloque (genérica), tf-test (Test de Toffee, reglas por bloques → ?variant=ID), tf-texto (páginas de texto/legales), tf-formulario (contacto / PQR con radicado / Libro de Reclamaciones), tf-pie (pie marino con menús). Snippet tf-sello (sello SVG).
@@ -231,3 +231,6 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Textos de correos, Knowledge Base (15 FAQ), medición y pendientes del panel: ver ENTREGA-A.md.
 - Lighthouse móvil en vista previa: portada 74 / acc 94 / SEO 100; producto 73 / 97 / 100. Repetir al publicar.
 - PENDIENTE: foto real de orejeras (agente TeemDrop), teléfono en Datos del vendedor, ajustar precios por impuestos (proponer primero), mercados Chile/Perú, redes.
+- 18-oct: PUBLICADO por orden de Jay («publícalo»). Tema en vivo #189652074785 «Toffee A - Noche acogedora». Respaldo: #189551870241 «Respaldo - Toffee futurista (17-oct)» (para volver: shopify theme publish --theme 189551870241).
+- Precarga de la foto de portada en layout/theme.liquid usa los nombres de archivo A02-portada-vertical.jpg / A01-portada-horizontal.jpg: si cambias la foto del hero, cambia ahí también.
+- Lighthouse en vivo (móvil): portada ~57 (LCP real ~3,8 s; el simulado sube por scripts de Shopify/checkout), producto 76–80, accesibilidad 97–100, SEO 100. Verificar en pagespeed.web.dev.
