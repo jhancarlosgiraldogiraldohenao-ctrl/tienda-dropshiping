@@ -7,7 +7,7 @@
         "titulo_corto": "Arbolito Proyector Navideño",
         "subtitulo": "Luces LED · 6+ diseños · Conexión USB",
         "intro": "Conéctalo, apúntalo al techo y tu cuarto se llena de Santas, copos de nieve y renos. El detalle que convierte cualquier noche en Navidad.",
-        "nota_precio": "Envío gratis · Pago seguro con Mercado Pago",
+        "nota_precio": "Envío gratis · Pago 100 % seguro con tarjeta",
         "puntos": "Proyecta más de 6 diseños navideños\nArbolito con luces LED y textura de pino\nCuerpo flexible para apuntar donde quieras\nFunciona con cualquier cargador USB",
         "sello": "Envío gratis",
         "ofertas_titulo": "Elige tu opción",
@@ -18,15 +18,16 @@
         "mostrar_miniaturas": true,
         "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100% seguro con Mercado Pago",
+        "comprar_nota": "Pago 100 % seguro con tarjeta",
         "carrito_texto": "Agregar al carrito",
         "agotado_texto": "Se acabó · Galleta está empacando más",
         "sticky_texto": "Arbolito Proyector Navideño",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis a toda Colombia con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 25 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con Mercado Pago. Si no llega, te devolvemos tu dinero.",
-        "titulo_size": 46
+        "envio": "Envío gratis a Colombia, México, Chile y Perú con número de rastreo.\nEntrega estimada: 8 a 20 días hábiles según tu ciudad.\nPide antes del 13 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega, te devolvemos tu dinero.",
+        "titulo_size": 46,
+        "fecha_navidad": "2026-11-13"
       },
       "blocks": {
         "b0": {
@@ -34,7 +35,7 @@
           "settings": {
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia"
+            "texto": "A Colombia, México, Chile y Perú"
           }
         },
         "b1": {
@@ -42,7 +43,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Con Mercado Pago"
+            "texto": "Con tarjeta"
           }
         },
         "b2": {
@@ -275,7 +276,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Pagas con tarjeta de crédito a través de Mercado Pago, 100% seguro."
+            "texto": "Pagas con tarjeta de crédito o débito, 100 % seguro."
           }
         },
         "b1": {
@@ -283,7 +284,7 @@
           "settings": {
             "icono": "camion",
             "titulo": "Envío gratis",
-            "texto": "A toda Colombia, con número de rastreo en tu correo."
+            "texto": "A Colombia, México, Chile y Perú, con número de rastreo en tu correo."
           }
         },
         "b2": {
@@ -291,7 +292,7 @@
           "settings": {
             "icono": "reloj",
             "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 25 de noviembre y recíbelo antes de Navidad."
+            "texto": "Pide antes del 13 de noviembre y recíbelo antes de Navidad."
           }
         },
         "b3": {
@@ -324,7 +325,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito, a través de Mercado Pago (100% seguro). Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito o débito (100 % seguro). Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {
@@ -338,14 +339,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 25 de noviembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
           }
         },
         "b3": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada. El envío es gratis a toda Colombia.</p>"
+            "respuesta": "<p>Nada. El envío es gratis a Colombia, México, Chile y Perú.</p>"
           }
         },
         "b4": {

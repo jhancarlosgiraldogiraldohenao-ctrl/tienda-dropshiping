@@ -7,7 +7,8 @@
         "titulo": "<p>¿En qué te <em>ayudo,</em> humano?</p>",
         "texto": "",
         "abrir_primera": true,
-        "titulo_size": 56
+        "titulo_size": 56,
+        "es_h1": true
       },
       "blocks": {
         "b0": {
@@ -28,7 +29,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
           }
         },
         "b3": {

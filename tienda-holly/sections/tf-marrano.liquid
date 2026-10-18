@@ -50,7 +50,12 @@
 
       <div class="tf-marrano__texto">
         {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
-        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- liquid
+  assign htag = 'h2'
+  if section.settings.es_h1
+    assign htag = 'h1'
+  endif
+-%}<{{ htag }}>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>
 
         <div class="tf-marrano__globo">
           <img src="{{ 'tf-avatar.jpg' | asset_url }}" alt="Toffee" width="44" height="44" loading="lazy">
@@ -111,6 +116,7 @@
   "name": "Toffee – Marrano 3 %",
   "tag": "section",
   "settings": [
+    { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
     { "type": "paragraph", "content": "El total sale solo del dato de la tienda 'toffee.marrano' (se actualiza con cada venta pagada)." },
     { "type": "image_picker", "id": "imagen", "label": "Imagen del marrano (vacío = dibujo)" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "El 3 % de cada venta" },

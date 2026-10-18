@@ -15,7 +15,8 @@
         "btn_url": "/#aprobado",
         "btn_principal": true,
         "btn2_texto": "Necesito ayuda",
-        "btn2_url": "/pages/ayuda"
+        "btn2_url": "/pages/ayuda",
+        "es_h1": true
       },
       "blocks": {},
       "block_order": []

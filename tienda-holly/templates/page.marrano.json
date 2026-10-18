@@ -16,7 +16,8 @@
         "ancla": "marrano",
         "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
         "boton_texto": "Apoyar al marrano 🐷",
-        "boton_url": "#apoya"
+        "boton_url": "#apoya",
+        "es_h1": true
       },
       "blocks": {},
       "block_order": []

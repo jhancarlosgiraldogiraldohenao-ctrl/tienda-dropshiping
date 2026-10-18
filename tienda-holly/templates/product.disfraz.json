@@ -20,7 +20,7 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 20 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 13 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
@@ -37,7 +37,8 @@
         "tallas_titulo": "Guía de tallas",
         "tallas_nota": "Elige la talla por el peso de tu mascota. Si queda entre dos tallas, elige la más grande.",
         "tabla_tallas": "Talla|Peso de la mascota|Ejemplos\nS|1,5 – 2,5 kg|Gatito, chihuahua\nM|2,5 – 5 kg|Gato adulto, yorkie\nL|5 – 7,5 kg|Gato grande (Toffee), pug",
-        "aviso": "Supervisa a tu mascota mientras lo usa y quítaselo para dormir. No lo uses cerca de velas o luces calientes."
+        "aviso": "Supervisa a tu mascota mientras lo usa y quítaselo para dormir. No lo uses cerca de velas o luces calientes.",
+        "fecha_navidad": "2026-11-13"
       },
       "blocks": {
         "b0": {
@@ -193,7 +194,7 @@
           "settings": {
             "icono": "reloj",
             "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 20 de noviembre y recíbelo antes de Navidad."
+            "texto": "Pide antes del 13 de noviembre y recíbelo antes de Navidad."
           }
         },
         "b3": {
@@ -268,7 +269,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
           }
         },
         "b7": {

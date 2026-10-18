@@ -1235,3 +1235,19 @@ a { color: var(--tf-caramelo-hondo); }
 .tf-impuestos{margin:6px 0 0;font-size:13.5px;line-height:1.5;color:var(--tf-texto-suave)}
 .tf-impuestos--carrito{margin:10px 0 0;text-align:left}
 .tf-marrano__vacio{font-weight:600}
+/* Portada en celular: botones justo bajo el subtítulo (visibles sin scroll); países y nota IA bajo la foto. Escritorio sin cambios. */
+@media (max-width: 749px) {
+  .tf-hero__acciones { display: contents !important; }
+  .tf-hero__ctas { order: 2; padding: 14px 16px 18px; position: relative; z-index: 2; }
+  .tf-hero__foto { order: 3; }
+  .tf-hero__paises, .tf-hero__ia, .tf-hero__chips { order: 4; position: relative; z-index: 2; margin-left: 16px; margin-right: 16px; }
+  .tf-hero__paises { margin-top: -40px; }
+  .tf-hero__ia { align-self: center; margin-bottom: 30px; }
+}
+/* Títulos marcados como H1 (Historia, Ayuda, Marrano, 404): mismo aspecto que el H2 de la sección */
+.hl-cabecera h1 { margin-top: 16px; }
+.tf-marrano h1 { font-family: var(--hl-serif); font-weight: 600; font-size: clamp(30px, 4.4vw, 52px); line-height: 1.05; margin: 10px 0 18px; }
+.tf-marrano h1 em { color: var(--hl-curcuma); font-style: italic; }
+.tf-bloque h1 { font-size: clamp(30px, 4.4vw, 50px); line-height: 1.06; margin: 12px 0 16px; }
+.tf-oscuro h1 { color: var(--tf-crema) !important; }
+.tf-oscuro h1 em { color: var(--tf-caramelo) !important; }

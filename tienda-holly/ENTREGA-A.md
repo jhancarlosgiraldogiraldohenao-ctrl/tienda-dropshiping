@@ -183,7 +183,7 @@ La tienda en vivo **no se tocó**. El tema A se publica solo cuando digas «publ
    desde Colombia; los productos, pagos y envíos son reales.
 2. **¿A qué países envían?** Colombia, México, Chile y Perú. Envío gratis con rastreo.
 3. **¿Cuánto tarda?** De 10 a 25 días hábiles según país y ciudad.
-4. **¿Llega antes de Navidad?** Sí, si pides antes del 20 de noviembre.
+4. **¿Llega antes de Navidad?** Sí, si pides antes del 13 de noviembre.
 5. **¿Tengo que pagar impuestos o aduana?** Envío gratis. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En Colombia y Perú normalmente no aplican por el valor del pedido.
 6. **¿Cómo pago?** Con tarjeta de crédito o débito a través de dLocal Go. El precio está en COP; tu banco lo convierte.
 7. **¿Qué talla de orejeras pido?** Por el contorno de cabeza: S 25–38 cm, M 35–48 cm, L 45–60 cm, XL 55–71 cm.

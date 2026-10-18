@@ -1,7 +1,7 @@
 {{ 'hl-styles.css' | asset_url | stylesheet_tag }}
 
 {% style %}
-  #shopify-section-{{ section.id }} .hl-cabecera h2 { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
+  #shopify-section-{{ section.id }} .hl-cabecera :is(h1, h2) { font-size: clamp({{ section.settings.titulo_size | times: 0.55 | round }}px, 5vw, {{ section.settings.titulo_size }}px); }
 {% endstyle %}
 
 <section class="hl-section tf-toffee{% if section.settings.marino %} tf-oscuro{% endif %}{% if section.settings.invertir %} tf-toffee--invertido{% endif %}" id="{{ section.settings.ancla | default: 'toffee' }}">
@@ -19,7 +19,12 @@
       <div class="tf-toffee__texto">
         <div class="hl-cabecera">
           {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow hl-reveal">{{ section.settings.eyebrow }}</span>{%- endif -%}
-          <h2 class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+          {%- liquid
+  assign htag = 'h2'
+  if section.settings.es_h1
+    assign htag = 'h1'
+  endif
+-%}<{{ htag }} class="hl-reveal" style="--hl-i:1">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>
         </div>
         {%- if section.settings.historia != blank -%}<div class="tf-toffee__historia hl-reveal" style="--hl-i:2">{{ section.settings.historia }}</div>{%- endif -%}
         {%- if section.settings.regla != blank -%}
@@ -44,6 +49,7 @@
   "name": "Toffee – Conoce a Toffee",
   "tag": "section",
   "settings": [
+    { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
     { "type": "image_picker", "id": "imagen", "label": "Foto de Toffee" },
     { "type": "text", "id": "sello", "label": "Sello sobre la foto", "default": "Aprobado por Toffee" },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Conoce al jefe" },

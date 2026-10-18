@@ -15,7 +15,8 @@
         "titulo_size": 64,
         "marino": true,
         "link_texto": "",
-        "link_url": ""
+        "link_url": "",
+        "es_h1": true
       },
       "blocks": {
         "r0": {

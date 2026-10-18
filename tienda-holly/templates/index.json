@@ -48,8 +48,7 @@
         "b3": {
           "type": "item",
           "settings": {
-            "texto": "3 % para peludos de la calle",
-            "respuesta": "<p>Nada: el envío es gratis a México, Colombia, Chile y Perú. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete (los paga el cliente).</p>"
+            "texto": "3 % para peludos de la calle"
           }
         },
         "b4": {
@@ -98,7 +97,7 @@
           "settings": {
             "icono": "reloj",
             "titulo": "Llega a tiempo",
-            "texto": "Pide antes del 20 de noviembre y recíbelo antes de Navidad."
+            "texto": "Pide antes del 13 de noviembre y recíbelo antes de Navidad."
           }
         },
         "b3": {
@@ -106,8 +105,7 @@
           "settings": {
             "icono": "escudo",
             "titulo": "Retracto y garantía",
-            "texto": "Si no llega o llega dañado, te devolvemos tu dinero. Tienes derecho de retracto según la ley de tu país.",
-            "respuesta": "<p>Nada: el envío es gratis a México, Colombia, Chile y Perú. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete (los paga el cliente).</p>"
+            "texto": "Si no llega o llega dañado, te devolvemos tu dinero. Tienes derecho de retracto según la ley de tu país."
           }
         }
       },
@@ -146,7 +144,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 20 de noviembre.</p>"
+            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
           }
         },
         "b3": {
@@ -605,8 +603,7 @@
           "settings": {
             "texto": "Si no te llega, te devolvemos tu dinero",
             "nos": true,
-            "otros": false,
-            "respuesta": "<p>Nada: el envío es gratis a México, Colombia, Chile y Perú. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete (los paga el cliente).</p>"
+            "otros": false
           }
         },
         "b4": {

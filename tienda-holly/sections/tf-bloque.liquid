@@ -17,7 +17,12 @@
       {%- endif -%}
       <div class="tf-bloque__texto hl-reveal">
         {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
-        <h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>
+        {%- liquid
+  assign htag = 'h2'
+  if section.settings.es_h1
+    assign htag = 'h1'
+  endif
+-%}<{{ htag }}>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>
         {%- if section.settings.texto != blank -%}<div class="tf-bloque__cuerpo">{{ section.settings.texto }}</div>{%- endif -%}
         {%- if section.settings.nota_toffee != blank -%}<p class="tf-nota-toffee"><span>Nota de Toffee</span>{{ section.settings.nota_toffee }}</p>{%- endif -%}
         {%- assign hay_puntos = false -%}{%- for block in section.blocks -%}{%- if block.type == 'punto' -%}{%- assign hay_puntos = true -%}{%- endif -%}{%- endfor -%}
@@ -70,6 +75,7 @@
   "name": "Toffee – Bloque",
   "tag": "section",
   "settings": [
+    { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
     { "type": "select", "id": "fondo", "label": "Fondo", "options": [ { "value": "crema", "label": "Crema" }, { "value": "crema2", "label": "Crema 2" }, { "value": "marino", "label": "Azul marino" } ], "default": "crema" },
     { "type": "image_picker", "id": "imagen", "label": "Foto" },
     { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
