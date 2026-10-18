@@ -230,7 +230,7 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Regalo del club: fondo-toffee-celular.jpg y fondo-toffee-computador.jpg en Archivos (local: toffee/web/regalo/). Imagen para compartir: soytoffee-compartir-1200x630.jpg.
 - Textos de correos, Knowledge Base (15 FAQ), medición y pendientes del panel: ver ENTREGA-A.md.
 - Lighthouse móvil en vista previa: portada 74 / acc 94 / SEO 100; producto 73 / 97 / 100. Repetir al publicar.
-- PENDIENTE: foto real de orejeras (agente TeemDrop), teléfono en Datos del vendedor, ajustar precios por impuestos (proponer primero), mercados Chile/Perú, redes.
+- PENDIENTE: teléfono en Datos del vendedor, redes. (Fotos reales y mercados: hechos.)
 - 18-oct: PUBLICADO por orden de Jay («publícalo»). Tema en vivo #189652074785 «Toffee A - Noche acogedora». Respaldo: #189551870241 «Respaldo - Toffee futurista (17-oct)» (para volver: shopify theme publish --theme 189551870241).
 - Precarga de la foto de portada en layout/theme.liquid usa los nombres de archivo A02-portada-vertical.jpg / A01-portada-horizontal.jpg: si cambias la foto del hero, cambia ahí también.
 - Lighthouse en vivo (móvil): portada ~57 (LCP real ~3,8 s; el simulado sube por scripts de Shopify/checkout), producto 76–80, accesibilidad 97–100, SEO 100. Verificar en pagespeed.web.dev.
@@ -245,3 +245,4 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - VELOCIDAD (sin cambiar diseño): hl-scripts.js se cargaba 9 veces → 1 vez desde theme.liquid; no se cargan cart-notification (el carrito es lateral), búsqueda predictiva (la búsqueda está oculta; solo en /search) ni selector de país (opción tf_selector_pais); secciones de la portada bajo la primera pantalla con content-visibility:auto; avatar 20 KB → 6 KB; banderas con prioridad baja.
   Lighthouse móvil portada (vista previa, 3 medidas): antes 66/66/70 · LCP 4,1–4,4 s · TBT 250–400 ms → después 71/72/72 · LCP 3,7–4,2 s · TBT 200–260 ms. Lo que sigue pesando son scripts de Shopify (checkout, píxeles), fuera del tema.
 - 18-oct: PUBLICADO por orden de Jay («publícala»). En vivo: #189656531233 «Toffee A - Noche acogedora (18-oct v2)». Respaldos: #189652074785 «Respaldo - Toffee A v1 (18-oct)» y #189551870241 (futurista). Políticas de Envíos y Términos actualizadas (impuestos MX/CL los paga el cliente). Verificado en vivo: ningún texto dice ya que la tienda asume los impuestos; carrito OK.
+- 18-oct: Jay creó los mercados Chile y Perú (moneda COP, sin recaudación de impuestos). Verificado: el disfraz (79.900 COP) muestra ≈ $434 MXN, ≈ $23.075 CLP, ≈ S/ 86,85 PEN; Colombia sin conversión. Sin app de conversión de moneda (decisión: el tema ya lo hace y cobrar en COP con dLocal).
