@@ -111,7 +111,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Una canción suave y alegre en tendencia (estilo lo-fi coreano o piano tierno). Volumen del clip original al 30 %.
+**Canción o sonido:** 내 입맛에 딱 맞는 하루 · 풀먼트 (Pullment). Es la del original de 39 M; búscala como "Pullment"
+
+**Si no la encuentras:** Comptine d'un autre été: L'après-midi · Yann Tiersen
+
+**Cómo ponerlo:** Una canción suave y alegre en tendencia (estilo lo-fi coreano o piano tierno). Volumen del clip original al 30 %.
 
 **Descripción:** Es muy redondo desde abajo 😭🐾 #gato #gatogordo #gatosdetiktok #gatoIA #ToffeeyGalleta
 
@@ -137,7 +141,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un phonk o funk lento en tendencia (busca 'funk slowed' o 'dream funk' en sonidos de TikTok). El balanceo tiene que caer en el golpe.
+**Canción o sonido:** DREAM FUNK (Slowed) · LUMIX & KXRSED. Es la del original de 144 M
+
+**Si no la encuentras:** Montagem Coma · el phonk lento que esté en tendencia (busca "funk slowed")
+
+**Cómo ponerlo:** Un phonk o funk lento en tendencia (busca 'funk slowed' o 'dream funk' en sonidos de TikTok). El balanceo tiene que caer en el golpe.
 
 **Descripción:** funk sonando en mi cabeza 24/7 🎧 #gato #gatosgraciosos #funk #gatoIA #ToffeeyGalleta
 
@@ -163,7 +171,11 @@ Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Una canción romántica o tierna acelerada en tendencia (sped up). El original usó 'Cupid' acelerada.
+**Canción o sonido:** Cupid (Twin Version) sped up · FIFTY FIFTY. Es la del original de 32 M
+
+**Si no la encuentras:** Amor · Emmanuel Cortés
+
+**Cómo ponerlo:** Una canción romántica o tierna acelerada en tendencia (sped up). El original usó 'Cupid' acelerada.
 
 **Descripción:** ¿Cómo le dices que no a esos ojitos? 🥺 #gato #ojitos #gatostiernos #gatoIA #ToffeeyGalleta
 
@@ -189,7 +201,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un audio tierno o divertido en tendencia. El original no tiene voz, solo música alegre.
+**Canción o sonido:** Sneaky Snitch · Kevin MacLeod
+
+**Si no la encuentras:** Pink Panther Theme · Henry Mancini
+
+**Cómo ponerlo:** Un audio tierno o divertido en tendencia. El original no tiene voz, solo música alegre.
 
 **Descripción:** me encontró 😳📦 #gato #pov #gatoscuriosos #gatoIA #ToffeeyGalleta
 
@@ -219,7 +235,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Todo el video (arriba, letra blanca pequeña como el original): Toffee cada que lo empiezo a grabar
 
-**Sonido:** Un audio de alguien quejándose en español en tendencia. Ejemplos: 'debería irme a vivir al monte', 'ay no, qué pereza', 'déjenme en paz'. Busca en Sonidos > Tendencias el que esté sonando esa semana.
+**Canción o sonido:** El audio "debería irme a vivir al monte, al desierto, sin vecinos" (sonido original de chanell_nj)
+
+**Si no la encuentras:** Cualquier audio de queja en español en tendencia, por ejemplo "ay no, qué pereza"
+
+**Cómo ponerlo:** Un audio de alguien quejándose en español en tendencia. Ejemplos: 'debería irme a vivir al monte', 'ay no, qué pereza', 'déjenme en paz'. Busca en Sonidos > Tendencias el que esté sonando esa semana.
 
 **Descripción:** ya no se puede ni descansar 😒 #gato #gatofastidiado #gatosgraciosos #gatoIA #ToffeeyGalleta
 
@@ -245,7 +265,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** El audio 'Estoy loco' (busca 'estoy loco' en sonidos) u otro audio de locura en tendencia. El grito tiene que caer cuando abre la boca.
+**Canción o sonido:** El audio "Estoy loco" (sonido original de Spanish for Everyday, el del video de 22 M)
+
+**Si no la encuentras:** Busca "estoy loco" y usa el que más videos tenga
+
+**Cómo ponerlo:** El audio 'Estoy loco' (busca 'estoy loco' en sonidos) u otro audio de locura en tendencia. El grito tiene que caer cuando abre la boca.
 
 **Descripción:** estoy loco 🤪 #gato #gatoloco #gatosgraciosos #paratii #gatoIA #ToffeeyGalleta
 
@@ -271,7 +295,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un audio serio o de suspenso en tendencia, o un 'hmm hmm hmm' como el original. Música de entrada de jefe.
+**Canción o sonido:** The Imperial March (Darth Vader's Theme) · John Williams
+
+**Si no la encuentras:** El audio "hmm hmm hmm" del original (sonido original de Diva Pixel)
+
+**Cómo ponerlo:** Un audio serio o de suspenso en tendencia, o un 'hmm hmm hmm' como el original. Música de entrada de jefe.
 
 **Descripción:** el jefe pasó revisión 😼📋 #gato #jefe #gatosdetiktok #emprendimiento #gatoIA #ToffeeyGalleta
 
@@ -297,7 +325,11 @@ Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un audio corto con un golpe fuerte al final ('BOOM' o similar) que caiga justo cuando la cara aplasta la cámara.
+**Canción o sonido:** Vine Boom Sound Effect: busca "vine boom" (el golpe tiene que caer cuando la cara aplasta la cámara)
+
+**Si no la encuentras:** El sonido original de Chonk The Fat Wizard Cat (el del "BOOM" de 12 M)
+
+**Cómo ponerlo:** Un audio corto con un golpe fuerte al final ('BOOM' o similar) que caiga justo cuando la cara aplasta la cámara.
 
 **Descripción:** me ama demasiado 😸 #gato #gatogordo #gatosgraciosos #gatoIA #ToffeeyGalleta
 
@@ -328,7 +360,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 - Subtítulos de cada frase abajo-centro, letra blanca pequeña (como Jake)
 - Todo el video (arriba): Le pregunté a Toffee por qué siempre usa gorro
 
-**Sonido:** La voz que genera Flow. Si la voz sale mal, quita el audio y pon los subtítulos: el formato funciona igual leído.
+**Canción o sonido:** Sin canción: solo la voz de Toffee
+
+**Si no la encuentras:** Si quieres fondo: Sneaky Snitch · Kevin MacLeod al 10 %
+
+**Cómo ponerlo:** La voz que genera Flow. Si la voz sale mal, quita el audio y pon los subtítulos: el formato funciona igual leído.
 
 **Descripción:** es por respeto 😌🧢 #gato #gatosgraciosos #mascotas #humor #gatoIA #ToffeeyGalleta
 
@@ -355,7 +391,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 - 0-3 s (arriba): ASMR | Toffee prueba una bandeja paisa 🇨🇴
 - Subtítulos de lo que dice, abajo
 
-**Sonido:** Solo el audio del clip (voz suave y sonidos de comer). En ASMR no se pone música.
+**Canción o sonido:** Sin canción: en ASMR solo va la voz y los sonidos de comer
+
+**Si no la encuentras:** Ninguna
+
+**Cómo ponerlo:** Solo el audio del clip (voz suave y sonidos de comer). En ASMR no se pone música.
 
 **Descripción:** ASMR | Me pedí una bandeja paisa versión gato 🇨🇴🐟 #ASMR #asmrsounds #gato #bandejapaisa #colombia #gatoIA #ToffeeyGalleta
 
@@ -383,7 +423,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 - 0-3 s (arriba): Vlog | Toffee va a ver los alumbrados ✨
 - Subtítulos abajo
 
-**Sonido:** El audio del clip. Si quieres, una canción navideña colombiana suave de fondo (al 15 %).
+**Canción o sonido:** Mi Burrito Sabanero · versión que esté en tendencia, al 15 % de fondo
+
+**Si no la encuentras:** Los Peces en el Río (villancico) al 15 %
+
+**Cómo ponerlo:** El audio del clip. Si quieres, una canción navideña colombiana suave de fondo (al 15 %).
 
 **Descripción:** Vlog | Fui a ver los alumbrados ✨🎄 ¿Cuál es el mejor de Colombia? 👇 #alumbrados #navidad #colombia #vlog #gatoIA #ToffeeyGalleta
 
@@ -410,7 +454,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 - 0-5 s (abajo del celular): dicen que Toffee se parece a este gato 🙄
 - 5-8 s: subtítulo de lo que dice
 
-**Sonido:** La voz de Flow, o un audio meme de 'ofendido' en tendencia.
+**Canción o sonido:** Sin canción: solo la voz de Toffee
+
+**Si no la encuentras:** El sonido "Oh no, no, no, no, no" (Oh No · Kreepa) si no usas voz
+
+**Cómo ponerlo:** La voz de Flow, o un audio meme de 'ofendido' en tendencia.
 
 **Descripción:** me ofendieron 🙄 ¿Se parecen? #gato #gatosgraciosos #meme #gatoIA #ToffeeyGalleta
 
@@ -442,7 +490,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un piano o música tierna y emotiva en tendencia.
+**Canción o sonido:** Comptine d'un autre été: L'après-midi · Yann Tiersen
+
+**Si no la encuentras:** Experience · Ludovico Einaudi
+
+**Cómo ponerlo:** Un piano o música tierna y emotiva en tendencia.
 
 **Descripción:** La almohada favorita de Galleta tiene patas 🐾 #ToffeeyGalleta #gatoyperro #perrocriollo #amistad #gatoIA
 
@@ -469,7 +521,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Música tierna en tendencia, o un audio de 'ayúdenme' al principio.
+**Canción o sonido:** Love You So · The King Khan & BBQ Show
+
+**Si no la encuentras:** Comptine d'un autre été: L'après-midi · Yann Tiersen
+
+**Cómo ponerlo:** Música tierna en tendencia, o un audio de 'ayúdenme' al principio.
 
 **Descripción:** Demasiado amor para un gato gruñón 😾💛 #ToffeeyGalleta #gatoyperro #perrocriollo #gatogruñon #gatoIA
 
@@ -496,7 +552,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: 
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un audio de 'sigilo' o de ladrón en tendencia (tipo Pink Panther o 'sneaky').
+**Canción o sonido:** Pink Panther Theme · Henry Mancini
+
+**Si no la encuentras:** Sneaky Snitch · Kevin MacLeod
+
+**Cómo ponerlo:** Un audio de 'sigilo' o de ladrón en tendencia (tipo Pink Panther o 'sneaky').
 
 **Descripción:** Nunca comas al lado de Toffee 🍽️😼 Etiqueta al que te roba la comida 👇 #ToffeeyGalleta #gatoyperro #gatosgraciosos #gatoIA
 
@@ -524,7 +584,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 - 0-5 s (arriba): Cuando a Galleta le toca irse a la finca 🥺
 - 5-10 s: …y la casa vuelve a ser mía 😌
 
-**Sonido:** Una canción triste y dramática en tendencia que cambie a una alegre cuando se cierra la puerta (o dos sonidos distintos, yo los uno).
+**Canción o sonido:** Primera parte: el sonido "sad violin" (busca "sad violin meme"). Cuando se cierra la puerta: Happy · Pharrell Williams. Mándame los dos y yo los uno
+
+**Si no la encuentras:** Una sola canción: Happy · Pharrell Williams desde el segundo 5
+
+**Cómo ponerlo:** Una canción triste y dramática en tendencia que cambie a una alegre cuando se cierra la puerta (o dos sonidos distintos, yo los uno).
 
 **Descripción:** No lo voy a extrañar… (sí lo voy a extrañar) 🥺😌 #ToffeeyGalleta #gatoyperro #perrocriollo #mascotas #gatoIA
 
@@ -555,7 +619,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby
 - 0-2 s (arriba, grande): ☕ + 🥛 =
 - 4-8 s: Toffee 🧡
 
-**Sonido:** Un audio corto y alegre en tendencia, o un 'ta-da' al aparecer Toffee.
+**Canción o sonido:** death bed (coffee for your head) · Powfu ft. beabadoobee
+
+**Si no la encuentras:** Coffee · beabadoobee
+
+**Cómo ponerlo:** Un audio corto y alegre en tendencia, o un 'ta-da' al aparecer Toffee.
 
 **Descripción:** ☕ + 🥛 = 🧡 Por eso soy de este color. Hecho en Pereira 🇨🇴 #cafe #colombia #pereira #gato #gatoIA #ToffeeyGalleta
 
@@ -581,7 +649,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Una canción conocida en tendencia con letra (en TikTok elige una con ritmo marcado, como reguetón viejo o un clásico de los 2000). La boca no va a coincidir perfecto; el original tampoco.
+**Canción o sonido:** I Wanna Love You · Akon ft. Snoop Dogg. Es la del original de 6,2 M
+
+**Si no la encuentras:** Smack That · Akon ft. Eminem
+
+**Cómo ponerlo:** Una canción conocida en tendencia con letra (en TikTok elige una con ritmo marcado, como reguetón viejo o un clásico de los 2000). La boca no va a coincidir perfecto; el original tampoco.
 
 **Descripción:** cantando mi canción en el parque 🎤😼 ¿Qué canción crees que es? 👇 #gato #gatocantando #gatoIA #ToffeeyGalleta
 
@@ -607,7 +679,11 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Toffee (the chubb
 **Textos en pantalla:**
 - Todo el video (arriba): Pónselo a tu gato y graba su reacción 👀🐟
 
-**Sonido:** Solo el sonido del clip (burbujas y pajaritos). No pongas música: distrae a las mascotas.
+**Canción o sonido:** Sin canción: solo el sonido del clip (burbujas). La música distrae a las mascotas
+
+**Si no la encuentras:** Ninguna
+
+**Cómo ponerlo:** Solo el sonido del clip (burbujas y pajaritos). No pongas música: distrae a las mascotas.
 
 **Descripción:** Pónselo a tu gato o a tu perro y mándame su reacción 👀🐟 #paragatos #videoparagatos #gato #perro #ToffeeyGalleta
 
@@ -634,7 +710,11 @@ Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: 
 **Textos en pantalla:**
 - Sin texto en el video, como el original. La frase va en la descripción.
 
-**Sonido:** Un audio de terror en tendencia que termine en algo ridículo, o la canción de Halloween del momento.
+**Canción o sonido:** Spooky Scary Skeletons · Andrew Gold
+
+**Si no la encuentras:** Monster Mash · Bobby "Boris" Pickett
+
+**Cómo ponerlo:** Un audio de terror en tendencia que termine en algo ridículo, o la canción de Halloween del momento.
 
 **Descripción:** la cola te delata 😐👻 #halloween #gatoyperro #perrocriollo #ToffeeyGalleta #gatoIA
 
