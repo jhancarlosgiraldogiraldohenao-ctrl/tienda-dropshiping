@@ -122,19 +122,33 @@ Texto: Sin texto en el video.
 Canción: Sin canción: deja el ronroneo, es el ASMR (alternativa: Un lo-fi suave al 15 % debajo del ronroneo)
 Descripción: haciendo pancitos 🥖🐾 ¿Tu gato también lo hace? 👇 #gato #gatoamasando #ASMR #gatoIA #ToffeeyGalleta
 
-#### M3 · Así quedó Galleta con sus orejeras (producto · Orejeras)
-Formato: Prueba de una sola toma · Basado en: Prueba de una sola toma (dálmata 1,1 M)
+#### E1 · Así escucha tu perro la pólvora (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I1 · Curiosidad con IA
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A · lo que tú escuchas** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin. Scene: night, a Colombian living room, fireworks flashing through the window behind him. The video starts mid-action. 0-10s: Galleta sits facing the camera completely relaxed, eyes half closed, slowly blinking, swaying slightly as if about to fall asleep sitting up, with a peaceful, slightly goofy face, while bright fireworks explode behind him; at the end his head slowly drops and he lies down. Camera: static, phone propped on a table, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks that sound muffled, a sleepy dog breath. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a Colombian street at night seen from a balcony, colorful fireworks in the sky, Galleta sitting on the balcony floor. The video starts mid-action. 0-4s: normal view of the fireworks, Galleta looks up, ears twitching. 4-8s: the camera slowly pushes in toward Galleta's ear as the picture becomes slightly shaky and the fireworks flashes become brighter and more intense, as if entering his perception. Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: normal fireworks that get louder and sharper toward the end. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Todo el video (arriba): Le puse sus orejeras a Galleta y así quedó con la pólvora 😂
-Canción: Sin canción: deja la pólvora apagada de fondo (alternativa: Weightless · Marconi Union)
-Descripción: Antes temblaba, ahora esto 😂🎆 Orejeras anti ruido para perros. Comenta CALMA y te paso el enlace 🐾 #perromiedopolvora #orejerasparaperros #polvora #perros #ToffeeyGalleta
+**Toma B · lo que escucha él** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: inside a living room at night, from Galleta's point of view at floor level: the window shakes with every firework, the whole frame vibrates, light flashes fill the room, then cut to Galleta hiding under the sofa with wide eyes, trembling. The video starts mid-action. Camera: low, shaky, dramatic. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: very loud, distorted, overwhelming firework booms and a high ringing tone. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C · la solución** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: the same living room at night, fireworks flashing. The video starts mid-action. 0-4s: Galleta lies calmly on a blanket wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin; the fireworks are still flashing. 4-8s: Toffee sits next to him and looks into the lens, slow blink; Galleta closes his eyes. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld phone, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks that now sound soft and muffled. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-5 s: Toffee: "Esto es lo que tú escuchas el 7 de diciembre." / Contexto 5-12 s: Toffee: "Y esto es lo que escucha tu perro. Ellos oyen mucho más que nosotros: más lejos y más agudo." / Moraleja 12-18 s: Toffee: "Por eso tiembla. No es exagerado: le duele." / Venta + llamado 18-24 s: Toffee: "Galleta usa estas orejeras. Comenta CALMA y te paso el enlace." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: el contraste de sonido es el gancho (alternativa: Experience · Ludovico Einaudi al 10 %)
+Descripción: Así escucha tu perro la pólvora 🎆😣 Comenta CALMA y te paso el enlace de las orejeras 🐾 #perromiedopolvora #polvora #perros #orejerasparaperros #ToffeeyGalleta
 
 ### Jueves 22 oct
 
@@ -152,19 +166,33 @@ Texto: Todo el video (arriba): Cuando me despiertan de mi siesta de 6 horas
 Canción: Un audio de queja en español en tendencia (busca 'qué pereza' o 'déjenme dormir') (alternativa: Oh No · Kreepa)
 Descripción: es que nadie respeta mis horarios 😒 #gato #gatosgraciosos #siesta #gatoIA #ToffeeyGalleta
 
-#### M4 · Toffee estrena el trineo (sin palabras) (producto · Cama)
-Formato: Demostración sin palabras · Basado en: Demostración sin palabras (35 M)
+#### E2 · '¿Por qué los perros odian la pólvora?' (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I1 · POV entrevista
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a cozy living room corner with Christmas lights, the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front on a rug. The video starts mid-action. 0-3s: a person's hand (only the hand) presses into the cushion of the sleigh bed so we see how thick and soft it is, then fluffs the white trim. 3-6s: Toffee walks in, sniffs the edge, steps inside, turns around once. 6-10s: he flops down and sinks deep into the plush bed, stretches one paw over the fluffy trim, and closes his eyes with a content face. Camera: handheld phone, close, low angle. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft cushion squish, fabric rustle, a big content sigh and purr. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits on a sofa at night, fireworks visible through the window behind him. The video starts mid-action. 0-8s: Toffee looks at the microphone, then at the camera, thoughtful, ears turning at each distant boom, then a slow serious blink. Camera: handheld, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: distant fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Sin texto en el video. El llamado va en la descripción.
-Canción: Last Christmas · Wham! (alternativa: Santa Tell Me · Ariana Grande)
-Descripción: Prueba de comodidad: aprobada 😴🛷 Cama trineo navideña para gatos y perros pequeños. Comenta TRINEO y te paso el enlace 🐾 #camaparagato #navidad #gatos #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, Galleta hiding under a table, trembling, ears flat, fireworks flashing through the window. The video starts mid-action. 0-8s: he flinches at every boom and looks at the camera with scared eyes. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: loud fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-8s: Galleta sleeps calmly wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin while fireworks flash outside; Toffee sits next to him facing the microphone and gives one slow blink. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿por qué los perros odian la pólvora?" / Contexto 4-12 s: Toffee: "Porque oyen mucho más que tú. Para ti es un ¡pum! Para ellos es como tenerlo pegado a la oreja." / Moraleja 12-18 s: Toffee: "Galleta no es miedoso. Le duele." / Venta + llamado 18-24 s: Toffee: "Por eso este diciembre usa estas. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen al 10 %)
+Descripción: ¿Por qué los perros odian la pólvora? Toffee responde 🎆🐾 Comenta CALMA y te paso el enlace de las orejeras #perromiedopolvora #polvora #perros #ToffeeyGalleta
 
 ### Viernes 23 oct
 
@@ -182,26 +210,33 @@ Texto: Sin texto en el video.
 Canción: Comptine d'un autre été: L'après-midi · Yann Tiersen (alternativa: Love You So · The King Khan & BBQ Show)
 Descripción: La almohada de Galleta tiene patas (y opinión) 😾🐾 #gatoyperro #perrocriollo #amistad #gatoIA #ToffeeyGalleta
 
-#### M5 · La mejor compra para Galleta (producto · Orejeras)
-Formato: Unboxing con la mascota mirando · Basado en: Unboxing con la mascota mirando (602 mil, 267 mil)
+#### E3 · 'Ese perro es muy nervioso' (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I2 · Personajes
 
-**Toma A · el paquete** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: Galleta sits on a rug looking curiously at the camera. The video starts mid-action. 0-6s: a person's hands (only hands) in the foreground tear open a light-blue tissue paper package and pull out the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin, while Galleta watches with a tilted head and ears up. Camera: handheld phone at the hands, Galleta in focus behind them. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paper rustle, a curious dog sniff. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B · el problema y la prueba** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, a bed by a window with fireworks flashing outside. The video starts mid-action. 0-2s: Galleta is hiding under a blanket, only his scared eyes visible. 2-4s: a person's hands put the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin on him and close the velcro. 4-8s: Galleta sleeps on the bed with the earmuffs on, deeply calm, chin on a pillow, while fireworks keep flashing outside. Camera: handheld phone, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks that sound muffled, a soft snore. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a living room in the evening; Galleta sits looking sad and ashamed at the camera, ears down; Toffee sits next to him and turns to look at him. The video starts mid-action. 0-8s: Galleta lowers his head; Toffee puts one paw on Galleta's paw, then looks at the camera, serious. Camera: eye level, steady. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: quiet room, a distant firework. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): La mejor compra que le hice a Galleta 🥹 / Toma B, 0-4 s: Le daba pánico la pólvora… / Toma B, 4-6 s: Ahora duerme así 😴 / Toma B, 6-8 s: Comenta CALMA si tu perro las necesita 🐾
-Canción: Golden Hour · JVKE (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen)
-Descripción: La mejor compra para Galleta este diciembre 🥹🎆 Orejeras anti ruido, tallas S a XL. Comenta CALMA y te paso el enlace 🐾 #orejerasparaperros #perromiedopolvora #polvora #perros #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, a bedroom; Galleta sleeps on a bed, a huge firework explodes right outside the window lighting the whole room. The video starts mid-action. 0-8s: Galleta wakes up in panic, jumps off the bed and runs to hide in the closet, trembling. Camera: handheld, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a very loud close firework explosion, panting. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: the same bedroom at night, fireworks flashing. The video starts mid-action. 0-8s: Galleta sleeps peacefully on the bed wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin; Toffee curls up against him and slowly blinks at the camera. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, a soft snore. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-5 s: Galleta (voz): "Me dicen que soy nervioso." / Contexto 5-12 s: Toffee: "No es nervioso. Imagínate que te explotan una bomba al lado de la cama… cada noche de diciembre." / Moraleja 12-18 s: Toffee: "No es miedo. Es dolor. Y se puede evitar." / Venta + llamado 18-24 s: Toffee: "Ahora duerme con esto. Comenta CALMA y te paso el enlace." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo las voces (alternativa: Experience · Ludovico Einaudi al 10 %)
+Descripción: Tu perro no es nervioso: la pólvora le duele 🥺🎆 Comenta CALMA y te paso el enlace de las orejeras 🐾 #perromiedopolvora #perros #polvora #ToffeeyGalleta
 
 ### Sábado 24 oct
 
@@ -219,19 +254,33 @@ Texto: Sin texto en el video.
 Canción: Sin canción: deja la lluvia, es el ASMR (alternativa: Un lo-fi suave al 15 %)
 Descripción: sábado de lluvia, plan perfecto 🌧️😌 #gato #lluvia #ASMR #gatoIA #ToffeeyGalleta
 
-#### M6 · Galleta se cree un árbol de verdad (producto · Disfraz)
-Formato: Prueba de una sola toma · Basado en: Prueba de una sola toma (1,1 M)
+#### E4 · 'Mi perro es miedoso' vs. la verdad (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I2 · Curiosidad con IA
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. Scene: next to a real decorated Christmas tree in a living room at night. The video starts mid-action. 0-10s: Galleta stands perfectly still and stiff right next to the real tree, chin up, not moving at all, as if he were a second Christmas tree; only his eyes move to the camera; at the end his tail starts wagging and gives him away. Camera: static, phone propped up, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: quiet room, a tiny jingle when the tail starts wagging. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, Galleta shaking behind a sofa while fireworks flash; a person's legs walk in and a hand points at him as if scolding. The video starts mid-action. 0-8s: Galleta shrinks further down, ears flat, looking up with sad eyes. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks booms. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Todo el video (arriba): Le puse el disfraz a Galleta y ahora se cree un árbol 😂🎄
-Canción: Feliz Navidad · José Feliciano (alternativa: All I Want for Christmas Is You · Mariah Carey)
-Descripción: Tenemos dos árboles este año 🎄🐶 Disfraz de árbol para perros, verde o rojo. Comenta ÁRBOL y te paso el enlace 🐾 #disfrazperro #navidad #perros #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Extreme close-up of Galleta's ear in slow motion while a firework flashes: the fur on his ear vibrates with the sound wave, his eye squints in pain. Then the camera pulls back to show him trembling. Camera: macro, slow motion, then pull back. Style: photorealistic, cinematic macro. Sound design: a deep booming firework in slow motion with a high ringing tone. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-3s: a person's hands gently put the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin on Galleta and close the velcro. 3-8s: Galleta lies down, relaxed, and closes his eyes while fireworks flash behind him; a hand pets his back. The earmuffs stay on his head until the very last frame. Camera: handheld, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, a relieved sigh. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Texto + Toffee: "Lo que tú crees: 'mi perro es miedoso'." / Contexto 4-12 s: Toffee: "Lo que pasa de verdad: su oído es mucho más fino que el tuyo. Cada ¡pum! le llega el doble de fuerte." / Moraleja 12-18 s: Toffee: "No lo regañes. Protégelo." / Venta + llamado 18-24 s: Toffee: "Orejeras para la pólvora. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen al 10 %)
+Descripción: No lo regañes: protégelo 🥺🎆 Orejeras anti ruido para perros. Comenta CALMA y te paso el enlace 🐾 #perromiedopolvora #perros #polvora #ToffeeyGalleta
 
 ### Domingo 25 oct
 
@@ -249,26 +298,33 @@ Texto: Subtítulos de cada frase, abajo-centro.
 Canción: Sin canción: solo la voz (alternativa: Si la voz no sale bien: subtítulos y Sneaky Snitch · Kevin MacLeod)
 Descripción: trabajo duro, la verdad 😌 ¿Tú qué harías con este trabajo? 👇 #gato #humor #gatoIA #ToffeeyGalleta
 
-#### M7 · Toffee cuenta lo de Galleta (producto · Orejeras)
-Formato: Toffee lo cuenta con su voz · Basado en: Voz en off en primera persona (17,7 M, 519 mil)
+#### E5 · ¿Prohibir la pólvora? Toffee y Galleta no se ponen de acuerdo (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I3 · Personajes
 
-**Toma A · el problema** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a living room at night, fireworks flashing through the window. Toffee does not move his mouth: his line is an inner voice-over. The video starts mid-action. 0-6s: Galleta hides trembling under the table; Toffee sits next to him looking at the camera, worried. Voice-over: "Cada diciembre, Galleta se escondía debajo de la mesa." Camera: low, handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. Sound design: fireworks booms. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: both sit side by side on a sofa facing the camera like hosts of a TV debate, a window with distant fireworks behind them. The video starts mid-action. 0-8s: Toffee looks at the camera very seriously; Galleta nods eagerly and wags his tail, then flinches at a distant boom. Camera: static, eye level, both centered. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: distant fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma B · la solución y la prueba** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Same sofa. The video starts mid-action. 0-4s: Toffee turns to Galleta with a calm, reasoning face. 4-8s: a loud firework booms; Galleta jumps and hides behind Toffee, trembling; Toffee looks at the camera, deadpan. Camera: static. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: a loud firework boom. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Toffee does not move his mouth: his lines are an inner voice-over. The video starts mid-action. 0-3s: Galleta wears the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin, lying on a blanket. Voice-over: "Le conseguí estas orejeras." 3-6s: Galleta sleeps peacefully while fireworks keep flashing outside; Toffee curls up next to him. Voice-over: "Ahora el que no duerme soy yo." 6-8s: Toffee looks into the lens, slow blink. Voice-over: "Comenta CALMA y te paso el enlace." Camera: handheld phone, close, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. Sound design: fireworks that sound muffled, a soft snore. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Same sofa, night, fireworks flashing. The video starts mid-action. 0-8s: Galleta now wears the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin and sits calmly, even happy, while fireworks explode; Toffee looks at him, then at the camera, and gives one slow blink. The earmuffs stay on Galleta's head until the very last frame. Camera: static. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: muffled fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Subtítulos de la voz, abajo-centro, palabra por palabra.
-Canción: Sin canción: solo la voz y la pólvora (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen al 10 %)
-Descripción: Galleta ya no se esconde en diciembre 🥹🎆 Orejeras anti ruido, tallas S a XL, envío gratis. Comenta CALMA y te paso el enlace 🐾 #orejerasparaperros #perromiedopolvora #polvora #ToffeeyGalleta
+Texto: Gancho 0-4 s: Toffee: "Pregunta seria: ¿deberían prohibir la pólvora?" / Contexto 4-12 s: Galleta: "¡Sí! ¡Ya!" Toffee: "Pero a los humanos les gusta…" Galleta: "¡A mí me tiembla todo!" / Moraleja 12-18 s: Toffee: "Mientras ustedes deciden en los comentarios, Galleta ya resolvió." / Venta + llamado 18-24 s: Toffee: "Comenta CALMA y te paso sus orejeras. Y di: ¿sí o no?" / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo las voces (alternativa: Jeopardy Think Music al 10 %)
+Descripción: ¿Deberían prohibir la pólvora? 🎆 Toffee y Galleta no se ponen de acuerdo. Di sí o no en los comentarios 👇 Y si tu perro sufre, comenta CALMA 🐾 #polvora #perros #navidad #colombia #ToffeeyGalleta
 
 ### Lunes 26 oct
 
@@ -286,26 +342,33 @@ Texto: Sin texto en el video.
 Canción: Experience · Ludovico Einaudi (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen)
 Descripción: Algunas amistades no necesitan palabras 🐾 #gatoyperro #perrocriollo #amistad #gatoIA #ToffeeyGalleta
 
-#### M8 · Toffee dormía en la ropa limpia (producto · Cama)
-Formato: Historia problema → solución · Basado en: Historia problema → solución
+#### E6 · 'Toffee, ¿pólvora sí o no?' (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I3 · POV entrevista
 
-**Toma A · el problema** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a laundry basket full of freshly folded clothes on a bed. The video starts mid-action. 0-6s: Toffee is curled up right on top of the clean folded clothes in the basket, fur everywhere on a dark shirt; a person's hand (only the hand) picks up a shirt covered in cream fur and Toffee looks at the camera, unbothered. Camera: handheld phone, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fabric rustle, a lazy purr. No music, no speech. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits on a window sill at night, fireworks exploding in the sky behind him. The video starts mid-action. 0-8s: Toffee looks at the microphone, unbothered, then turns his head toward something off camera to the side. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks outside. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma B · la solución y la prueba** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: the same bedroom, the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front on the floor next to the bed. The video starts mid-action. 0-3s: Toffee sniffs the sleigh bed and steps in. 3-8s: he curls up deep inside the plush bed, kneads the fluffy trim, and falls asleep with a content face, the clean clothes basket untouched in the background. Camera: handheld phone, low, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft kneading, a deep purr. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The microphone now points at Galleta, who is hiding under a bed, trembling, only his scared face visible, fireworks flashing on the wall. The video starts mid-action. 0-8s: he pulls back further under the bed. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks booms, a whimper. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Toffee dormía en la ropa limpia todos los días 🙄 / Toma B, 0-3 s: Le conseguí su propia cama… / Toma B, 3-6 s: No ha vuelto a la ropa 😌 / Toma B, 6-8 s: Comenta TRINEO y te paso el enlace 🐾
-Canción: Sneaky Snitch · Kevin MacLeod (alternativa: Last Christmas · Wham!)
-Descripción: Problema resuelto 😌🛷 Cama trineo navideña, suave y con borde esponjoso. Comenta TRINEO y te paso el enlace 🐾 #camaparagato #gatos #navidad #ToffeeyGalleta
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-8s: Galleta lies on the bed wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin, calm, eyes closing; Toffee sits beside him and looks at the microphone with a slow blink. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿pólvora en diciembre: sí o no?" / Contexto 4-12 s: Toffee: "A mí me da igual. Pero mira a Galleta." / Moraleja 12-18 s: Toffee: "Si a ti te gusta, está bien. Pero piensa en el que tiembla debajo de la cama." / Venta + llamado 18-24 s: Toffee: "Por lo menos dale esto. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen al 10 %)
+Descripción: ¿Pólvora sí o no? 🎆 Toffee opina. ¿Y tú? 👇 Si tu perro sufre, comenta CALMA y te paso el enlace de las orejeras 🐾 #polvora #perros #ToffeeyGalleta
 
 ### Martes 27 oct
 
@@ -323,26 +386,33 @@ Texto: Sin texto en el video.
 Canción: Sin canción: deja el crunch, es el ASMR (alternativa: Un lo-fi suave al 15 %)
 Descripción: ASMR del jefe almorzando 🐟🎧 #ASMR #gato #asmreating #gatoIA #ToffeeyGalleta
 
-#### M9 · Año Nuevo: antes y ahora (producto · Orejeras)
-Formato: Historia problema → solución · Basado en: Historia problema → solución (antes y después)
+#### E7 · '¿Qué es lo más caro de tu casa, Toffee?' (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I4 · POV recorrido
 
-**Toma A · antes** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: New Year's Eve, a Colombian living room, fireworks exploding outside the window. The video starts mid-action. 0-6s: Galleta pants and paces back and forth in panic, ears back, tail tucked, trying to squeeze behind the sofa. Camera: handheld phone, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: loud fireworks, panting. No music, no speech. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B · ahora** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin. Scene: the same living room, New Year's Eve, fireworks exploding outside. The video starts mid-action. 0-8s: Galleta lies on the sofa on a blanket, calm, head resting on a person's lap (only legs and one hand visible), slowly closing his eyes as the hand pets him, completely relaxed while the fireworks flash. Camera: handheld phone, close, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, slow calm breathing. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: a cozy Latin American living room. The video starts mid-action. 0-8s: Toffee walks slowly across the room like a house tour guide, the hand with the microphone following him; he stops next to a sofa, looks at it, then walks on. Camera: handheld, following. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft paw steps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Año Nuevo pasado 😰 / Toma B, 0-5 s: Este Año Nuevo 😴 / Toma B, 5-8 s: Comenta CALMA y te paso el enlace 🐾
-Canción: Golden Hour · JVKE (alternativa: Experience · Ludovico Einaudi)
-Descripción: Año Nuevo pasado vs. este Año Nuevo 🥹🎆 Orejeras anti ruido para perros. Pídelas antes del 13 de noviembre para que lleguen a tiempo. Comenta CALMA 🐾 #orejerasparaperros #perromiedopolvora #añonuevo #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-4s: Toffee passes the TV and looks at it unimpressed. 4-8s: he stops next to a stack of empty cardboard boxes and pats them proudly with one paw. Camera: handheld, following. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, a cardboard pat. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-8s: Toffee arrives at the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front in a corner with Christmas lights, steps in, turns once, flops down, and looks at the microphone with a proud slow blink. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a soft cushion squish, a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿qué es lo más caro de tu casa?" / Contexto 4-14 s: Toffee: "Este sofá… no. La tele… tampoco. Mi colección de cajas… casi." / Moraleja 14-19 s: Toffee: "Lo más caro de una casa es donde duermes bien." / Venta + llamado 19-24 s: Toffee: "Mi trineo. Comenta TRINEO y te paso el enlace." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Investigations · Kevin MacLeod al 15 % (alternativa: Sneaky Snitch · Kevin MacLeod al 15 %)
+Descripción: Lo más caro de mi casa 🛷😼 ¿Y de la tuya? 👇 Comenta TRINEO y te paso el enlace de la cama #gatos #casa #navidad #camaparagato #ToffeeyGalleta
 
 ### Miércoles 28 oct
 
@@ -360,26 +430,33 @@ Texto: Todo el video (arriba): Yo durmiendo vs. yo cuando abren una lata
 Canción: Un audio de sorpresa o suspenso en tendencia (alternativa: The Imperial March · John Williams)
 Descripción: dormido pero no sordo 👀🥫 #gato #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M10 · Llegó el disfraz de Galleta (producto · Disfraz)
-Formato: Unboxing con la mascota mirando · Basado en: Unboxing con la mascota mirando
+#### E8 · Galleta le muestra la casa a un invitado (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I4 · Personajes
 
-**Toma A · el paquete** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: Galleta sits on a rug next to a small open shipping box, watching. The video starts mid-action. 0-6s: a person's hands (only hands) pull the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood out of the box and hold it up; Galleta sniffs it, tail wagging, ears up. Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paper rustle, tail thumps, a curious sniff. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B · puesto** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. Scene: next to a decorated Christmas tree, warm lights. The video starts mid-action. 0-8s: Galleta trots happily toward the camera in the costume, the ruffled tiers bouncing and the star on his hood wobbling, then sits and tilts his head at the lens, tail wagging. Camera: handheld phone, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, a light jingle. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a Colombian apartment entrance; the camera is the point of view of a visitor walking in. The video starts mid-action. 0-8s: Galleta greets the camera happily, tail wagging, then turns and trots toward the kitchen, looking back as if saying 'follow me'. Camera: handheld, visitor POV. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, a door closing. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Llegó el disfraz de Galleta 📦 / Toma B, 0-5 s: Y le quedó así 🥹🎄 / Toma B, 5-8 s: Comenta ÁRBOL y te paso el enlace 🐾
-Canción: Feliz Navidad · José Feliciano (alternativa: All I Want for Christmas Is You · Mariah Carey)
-Descripción: Llegó y le quedó perfecto 🎄🐶 Disfraz de árbol para perros, tallas S a L, rojo o verde. Comenta ÁRBOL y te paso el enlace 🐾 #disfrazperro #navidad #perros #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Visitor POV. The video starts mid-action. 0-4s: Galleta sits in front of the fridge and stares at it with love. 4-8s: he runs to the front door and wags his tail at it excitedly. Camera: handheld, following. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fridge hum, tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-rojo-producto.jpg: la cama trineo roja
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Visitor POV. The video starts mid-action. 0-8s: Galleta stops in front of the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front with Christmas lights; Toffee is inside it, lifts his head and gives the camera a serious, protective stare, then a slow blink; Galleta backs away respectfully. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a tiny grumpy cat 'mrr'. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Galleta: "Bienvenido. Te muestro lo más caro de la casa." / Contexto 4-14 s: Galleta: "La nevera: ahí vive el jamón. La puerta: ahí llega el domiciliario." / Moraleja 14-19 s: Galleta: "Y esto… esto es lo más importante." / Venta + llamado 19-24 s: Toffee (desde el trineo): "No se toca. Si quieres uno, comenta TRINEO." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Monkeys Spinning Monkeys · Kevin MacLeod al 15 % (alternativa: Sneaky Snitch · Kevin MacLeod al 15 %)
+Descripción: El tour de Galleta por la casa 🏠🐶 ¿Qué es lo más caro de la tuya? 👇 Comenta TRINEO y te paso el enlace #perros #gatos #casa #ToffeeyGalleta
 
 ### Jueves 29 oct
 
@@ -397,19 +474,33 @@ Texto: Sin texto en el video.
 Canción: Monkeys Spinning Monkeys · Kevin MacLeod (alternativa: Sneaky Snitch · Kevin MacLeod)
 Descripción: el alumno del mes… no era Galleta 😼 #gatoyperro #perrocriollo #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M11 · Las orejeras de cerca (sin palabras) (producto · Orejeras)
-Formato: Demostración sin palabras · Basado en: Demostración sin palabras (35 M, 10,3 M)
+#### E9 · ¿Gato o perro? El debate (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I5 · Personajes
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-4s: close-up: a person's hands (only hands) squeeze the thick padded ear cups of the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin to show how soft and thick they are, then open and close the velcro strap. 4-7s: the hands put them on Galleta, who sits calmly on a rug, and close the strap under his chin; a quick close shot of the snug fit over his ears. 7-10s: Galleta lies down and rests his chin on his paws, relaxed, eyes closing. Camera: handheld phone, close-ups, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft fabric squeeze, crisp velcro, a calm dog sigh. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: both sit facing each other on a rug like two debaters, a living room behind them. The video starts mid-action. 0-8s: Toffee looks at the camera, very serious; Galleta wags his tail and leans toward the camera, excited. Camera: static, side view of both. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: quiet room, tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Sin texto en el video. El llamado va en la descripción.
-Canción: Sin canción: deja los sonidos del velcro y la tela (ASMR) (alternativa: Un lo-fi suave al 15 %)
-Descripción: Gruesas, suavecitas y con velcro 🎧🐶 Orejeras anti ruido para perros, tallas S a XL. Comenta CALMA y te paso el enlace 🐾 #orejerasparaperros #perromiedopolvora #ASMR #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-4s: Galleta runs to the front door and waits there wagging, then runs back. 4-8s: Toffee slowly turns his back to the camera and looks away with elegance, ignoring everything. Camera: handheld, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-rojo-producto.jpg: la cama trineo roja
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-8s: both end up squeezed together inside the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front, Galleta half hanging out of it, both falling asleep; Toffee opens one eye at the camera and slowly blinks. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft snores, a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Toffee: "Vamos a resolverlo: ¿qué es mejor, gato o perro?" / Contexto 4-14 s: Galleta: "¡Perro! Te cuido, te quiero, te espero en la puerta." Toffee: "Gato. Te ignoro con elegancia." / Moraleja 14-19 s: Toffee: "En lo único que estamos de acuerdo: dormir bien." / Venta + llamado 19-24 s: Toffee: "Comenta GATO o PERRO. Y si quieres su cama, comenta TRINEO." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo las voces (alternativa: Monkeys Spinning Monkeys · Kevin MacLeod al 10 %)
+Descripción: ¿Gato o perro? Comenta GATO o PERRO 👇 Y si quieres la cama donde terminan los dos, comenta TRINEO 🛷 #gatoyperro #gatos #perros #debate #ToffeeyGalleta
 
 ### Viernes 30 oct
 
@@ -427,19 +518,33 @@ Texto: Sin texto en el video.
 Canción: Careless Whisper · George Michael (el saxofón) (alternativa: Weightless · Marconi Union)
 Descripción: viernes 😮‍💨 #gato #bostezo #gatogordo #gatoIA #ToffeeyGalleta
 
-#### M12 · Le compré la cama a Galleta y mira quién la usa (producto · Cama)
-Formato: Prueba de una sola toma · Basado en: Prueba de una sola toma (1,1 M)
+#### E10 · '¿Quién manda en esta casa?' (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I5 · POV entrevista
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a living room with Christmas lights, the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front on a rug. The video starts mid-action. 0-10s: Toffee is fully stretched out inside the sleigh bed, belly up, paws in the air, sound asleep; Galleta sits right next to the bed, looking at the camera with sad puppy eyes, then back at Toffee, then at the camera again. Camera: static, phone propped up, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a soft cat snore, a tiny dog sigh. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: both sit side by side on a rug; the microphone moves from Galleta to Toffee. The video starts mid-action. 0-4s: Galleta barks happily once at the microphone, tail wagging. 4-8s: the microphone moves to Toffee, who looks at it with a superior calm face. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: one happy bark. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Todo el video (arriba): Le compré esta cama a Galleta y mira quién la usa 🙄
-Canción: Oh No · Kreepa (alternativa: Sneaky Snitch · Kevin MacLeod)
-Descripción: Pobre Galleta 😂🛷 Cama trineo navideña. Comenta TRINEO y te paso el enlace 🐾 #camaparagato #gatoyperro #navidad #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-8s: Galleta sits proudly guarding the front door, chest out, then jumps at a sound and barks once, very serious. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a doorbell, one bark. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-8s: Toffee lies like a king inside the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front under Christmas lights, stretches one paw over the fluffy trim, and gives the microphone a slow, superior blink. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "¿Quién manda en esta casa, el gato o el perro?" / Contexto 4-14 s: Galleta: "¡Yo cuido la puerta!" Toffee: "Y yo tengo la mejor cama. Eso es mandar." / Moraleja 14-19 s: Toffee: "Manda el que duerme mejor." / Venta + llamado 19-24 s: Toffee: "Comenta TRINEO si quieres mandar tú también." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo las voces (alternativa: The Imperial March · John Williams al 10 %)
+Descripción: ¿Quién manda en tu casa? 👇 En la mía, el que duerme mejor 😼🛷 Comenta TRINEO y te paso el enlace #gatoyperro #gatos #perros #ToffeeyGalleta
 
 ### Sábado 31 oct
 
@@ -457,19 +562,33 @@ Texto: Sin texto en el video.
 Canción: Spooky Scary Skeletons · Andrew Gold (alternativa: Monster Mash · Bobby 'Boris' Pickett)
 Descripción: encuentra la calabaza más redonda 🎃😼 Feliz Halloween #halloween #gato #gatogordo #gatoIA #ToffeeyGalleta
 
-#### M13 · Todos en Halloween… y Galleta ya en Navidad (producto · Disfraz)
-Formato: Demostración sin palabras · Basado en: Caminata con revelación (tendencia de octubre)
+#### E11 · Tu gato no odia la cama: odia esa cama (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I6 · Curiosidad
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a Colombian street at dusk with Halloween pumpkins on the doorsteps. The video starts mid-action. 0-3s: low camera at sidewalk level: only Galleta's white paws and the green ruffled hem walking toward the camera past a glowing pumpkin. 3-6s: the camera tilts up and reveals Galleta wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood, walking proudly, the star bouncing. 6-10s: he stops in front of the camera and sits, the whole costume visible, pumpkins glowing behind him. Camera: low, handheld, smooth tilt up. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, a soft jingle. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a living room floor with a flat, thin pet mat that is empty, and right next to it a small cardboard box with Toffee squeezed inside it. The video starts mid-action. 0-8s: Toffee looks at the camera from inside the tight box, then glances at the empty flat mat with disdain. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: cardboard creak. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Sin texto en el video. El llamado va en la descripción.
-Canción: Ramalama (Bang Bang) · Róisín Murphy (alternativa: All I Want for Christmas Is You · Mariah Carey)
-Descripción: Todos en Halloween… y Galleta ya en Navidad 🎃🎄 Disfraz de árbol para perros. Comenta ÁRBOL y te paso el enlace 🐾 #disfrazperro #halloween #navidad #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: top-down view: Toffee curled inside the cardboard box, the four walls around him. The video starts mid-action. 0-8s: he rests his chin on the edge of the box and slowly closes his eyes, safe and relaxed; the camera slowly circles above, showing the walls around him. Camera: top-down, slow rotation. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). The video starts mid-action. 0-8s: Toffee steps out of the box and into the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front, curls up inside with the raised fluffy edges around him, rests his chin on the edge exactly like in the box, and slowly blinks at the camera. Camera: handheld, low, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a content sigh, a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Toffee: "¿Le compraste una cama a tu gato y duerme en la caja?" / Contexto 4-14 s: Toffee: "No es capricho. A los gatos nos gusta tener paredes alrededor: nos hace sentir seguros. Por eso la caja." / Moraleja 14-19 s: Toffee: "Una cama plana es como dormir en la mitad de la calle." / Venta + llamado 19-24 s: Toffee: "Esta tiene bordes. Comenta TRINEO." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Investigations · Kevin MacLeod al 10 %)
+Descripción: Tu gato no odia la cama: odia esa cama 😼📦 Comenta TRINEO y te paso el enlace de una con bordes 🛷 #gatos #camaparagato #datosdegatos #ToffeeyGalleta
 
 ### Domingo 1 nov
 
@@ -487,19 +606,33 @@ Texto: Sin texto en el video.
 Canción: Jeopardy Think Music (alternativa: The Imperial March · John Williams)
 Descripción: la reunión más importante del día 🧊👀 #gatoyperro #perrocriollo #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M14 · 1 de noviembre: modo Navidad (producto · Cama)
-Formato: Demostración sin palabras · Basado en: Tendencia del 1 de noviembre (meme de Mariah Carey)
+#### E12 · '¿Por qué los gatos aman las cajas?' (producto · Cama)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I6 · POV entrevista
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a dark living room corner at midnight. The video starts mid-action. 0-3s: total darkness; Toffee sleeps deep inside the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front; suddenly his eyes snap open. 3-6s: he sits up slowly and stretches, and the Christmas lights around the room turn on one by one behind him. 6-10s: the corner glows; Toffee sits proudly in the red sleigh bed, its fluffy trim and embroidery lit by the warm lights, and slowly blinks at the camera. Camera: static, eye level, slow push-in. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: silence, a soft chime as each light turns on, a purr. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits inside a cardboard box on the floor, only his head and nightcap above the edge. The video starts mid-action. 0-8s: he looks at the microphone, then at the camera, serious, like an expert being interviewed. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: quiet room. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: 0-3 s (arriba): 31 de octubre, 11:59 pm / 3-10 s: 1 de noviembre 🎄 It's time
-Canción: All I Want for Christmas Is You · Mariah Carey (alternativa: Santa Tell Me · Ariana Grande)
-Descripción: It's time 🎄✨ Cama trineo navideña. Comenta TRINEO y te paso el enlace. Pide antes del 13 de noviembre para que llegue en Navidad 🐾 #itstime #mariahcarey #navidad #camaparagato #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: Toffee inside the box; a toy suddenly rolls past behind him. The video starts mid-action. 0-8s: he doesn't flinch, he only turns his ears, totally calm and protected by the walls, and slowly sinks lower into the box. Camera: handheld, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a toy rolling. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-cafe-producto.jpg: la cama trineo café
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The video starts mid-action. 0-8s: Toffee lies curled inside the brown sleigh-shaped pet bed from the reference image: plush brown body with small reindeer antlers, fluffy cream trim and striped runners, the raised fluffy edges around him, chin on the edge, and gives the microphone a slow approving blink. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a purr. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿por qué los gatos aman las cajas?" / Contexto 4-14 s: Toffee (desde una caja): "Porque tienen paredes. Nadie me sorprende por la espalda. Es seguridad." / Moraleja 14-19 s: Toffee: "Si tu gato no usa su cama, la cama no tiene paredes." / Venta + llamado 19-24 s: Toffee: "Esta sí. Comenta TRINEO." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Investigations · Kevin MacLeod al 10 %)
+Descripción: ¿Por qué los gatos aman las cajas? 📦 Toffee responde. Comenta TRINEO y te paso el enlace de una cama con bordes 🛷 #gatos #datosdegatos #camaparagato #ToffeeyGalleta
 
 ### Lunes 2 nov
 
@@ -517,33 +650,33 @@ Texto: Sin texto en el video.
 Canción: Flight of the Bumblebee · Rimsky-Kórsakov (alternativa: Investigations · Kevin MacLeod)
 Descripción: modo cazador: activado 🪰👀 #gato #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M15 · 3 cosas que le compré a Galleta para diciembre (producto · Orejeras)
-Formato: 'Cosas que le compré a Galleta' · Basado en: Lista de productos (10,3 M)
+#### E13 · ¿Disfrazar a tu perro es maltrato? (producto · Disfraz)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I7 · Personajes
 
-**Toma A · orejeras** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-6s: a person's hands (only hands) put the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin on Galleta and close the velcro; Galleta lies down calm while fireworks flash through the window. Camera: handheld phone, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: velcro, muffled fireworks. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: Toffee sits on a table like a judge in front of a small pile of colorful dog costumes. The video starts mid-action. 0-8s: he looks at the costumes, then at the camera with a very serious face, one paw resting on the table. Camera: eye level, static. Style: photorealistic phone video, real dense fur, realistic anatomy, natural subtle expressions; not cartoon. Sound design: quiet room. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma B · disfraz** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 4 s · x2 (14 créditos)
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
 
 ```
-Vertical 9:16 video, 4 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. The video starts mid-action. 0-4s: Galleta trots toward the camera next to a Christmas tree, pom-poms bouncing, and sits proudly. Camera: handheld phone, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, a jingle. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood; the hood leaves his eyes and ears free. The video starts mid-action. 0-8s: Galleta walks, sits, lies down and gets up again easily in the costume, comfortable, the ruffles moving freely. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paw steps, soft jingle. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma C · cama** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-6s: Galleta walks toward the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front to lie down, but Toffee is already inside it, curled up, and gives him a slow serious blink; Galleta looks at the camera. Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft purr, a dog sigh. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog costume. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. The video starts mid-action. 0-8s: close shot of Galleta's tail wagging happily behind the green ruffles; the camera rises to his happy face; Toffee sits next to him and slowly blinks at the camera. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: happy tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): 3 cosas que le compré a Galleta para diciembre 🎄 / Toma A: 1. Orejeras para la pólvora / Toma B: 2. Disfraz de árbol / Toma C: 3. Cama trineo… que usa Toffee 🙄 / Toma C, final: Comenta cuál quieres y te paso el enlace 🐾
-Canción: Feliz Navidad · José Feliciano (alternativa: Last Christmas · Wham!)
-Descripción: Lo que le compré a Galleta para diciembre 🎄🐶 Orejeras, disfraz y cama trineo, envío gratis. Comenta cuál quieres y te paso el enlace 🐾 #regalosparaperros #navidad #perros #ToffeeyGalleta
+Texto: Gancho 0-4 s: Toffee: "¿Disfrazar a tu perro es maltrato?" / Contexto 4-14 s: Toffee: "Depende. Si le aprieta, si le tapa los ojos o si lo dejas horas: sí. Si es suave, lo deja moverse y es para la foto: no." / Moraleja 14-19 s: Toffee: "Mira la cola. La cola no miente." / Venta + llamado 19-24 s: Toffee: "El de Galleta es suave y no tapa nada. Comenta ÁRBOL." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Feliz Navidad · José Feliciano al 10 %)
+Descripción: ¿Disfrazar a tu perro es maltrato? Toffee responde 👇 Opina en los comentarios. Y si quieres el de Galleta, comenta ÁRBOL 🎄 #disfrazperro #perros #navidad #debate #ToffeeyGalleta
 
 ### Martes 3 nov
 
@@ -561,19 +694,33 @@ Texto: Todo el video (arriba): Cuando te comes la arepa y no le das ni un pedaci
 Canción: Un audio de 'decepción' en español en tendencia (alternativa: Oh No · Kreepa)
 Descripción: ni un pedacito, qué falta de respeto 😒 #gato #gatosgraciosos #arepa #gatoIA #ToffeeyGalleta
 
-#### M16 · El único que duerme con pólvora (producto · Orejeras)
-Formato: Prueba de una sola toma · Basado en: Prueba de una sola toma (1,1 M)
+#### E14 · '¿A Galleta le gusta su disfraz?' (producto · Disfraz)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I7 · POV entrevista
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, a living room, fireworks exploding outside the window. The video starts mid-action. 0-10s: Galleta sleeps deeply on a blanket wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin, snoring softly, belly up; Toffee sits right next to him wide awake, flinching at every boom, staring at the sleeping Galleta and then at the camera with pure envy. Camera: static, phone propped up, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: loud fireworks, a soft dog snore. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: next to a Christmas tree. The video starts mid-action. 0-8s: Galleta looks at the microphone, tilts his head, and wags his tail. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Todo el video (arriba): Galleta con sus orejeras vs. yo con la pólvora 😩
-Canción: Sin canción: deja la pólvora y el ronquido (alternativa: Oh No · Kreepa)
-Descripción: Necesito unas para mí 😩🎆 Orejeras anti ruido para perros, tallas S a XL. Comenta CALMA y te paso el enlace 🐾 #perromiedopolvora #orejerasparaperros #gatoyperro #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog costume. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. The microphone moves to Toffee, who sits next to Galleta like a translator. The video starts mid-action. 0-8s: Toffee looks at Galleta, then at the microphone, nodding slowly; Galleta spins happily in place in the costume. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a jingle. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. The video starts mid-action. 0-8s: Galleta poses for a photo next to the tree, a phone (in a person's hand) takes the picture with a flash; Galleta stays happy, tail wagging. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a camera shutter, a jingle. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Galleta, ¿de verdad te gusta el disfraz?" / Contexto 4-14 s: Toffee: "Yo traduzco. Dice que no le aprieta, que ve todo y que se siente un árbol de verdad." / Moraleja 14-19 s: Toffee: "Si tu perro está incómodo, quítaselo. Si está así, déjaselo para la foto." / Venta + llamado 19-24 s: Toffee: "Comenta ÁRBOL y te paso el enlace." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Feliz Navidad · José Feliciano al 10 %)
+Descripción: ¿A Galleta le gusta su disfraz? Toffee traduce 🎄🐶 Comenta ÁRBOL y te paso el enlace #disfrazperro #navidad #perros #ToffeeyGalleta
 
 ### Miércoles 4 nov
 
@@ -591,26 +738,33 @@ Texto: Subtítulos de cada frase, abajo-centro.
 Canción: Sin canción: solo la voz (alternativa: Si no usas voz: subtítulos y Sneaky Snitch · Kevin MacLeod)
 Descripción: control de calidad, se llama 😌 ¿Qué tira tu gato? 👇 #gato #gatosgraciosos #humor #gatoIA #ToffeeyGalleta
 
-#### M17 · Este año el árbol lo puse yo (producto · Disfraz)
-Formato: Toffee lo cuenta con su voz · Basado en: Voz en off en primera persona
+#### E15 · 5 cosas para que tu perro tenga la mejor Navidad (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I8 · Lista
 
-**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a living room with a Christmas tree; ornaments and a tree topper star scattered on the floor, the tree half decorated. Toffee does not move his mouth: his line is an inner voice-over. The video starts mid-action. 0-6s: Toffee sits among the scattered ornaments, one ornament under his paw, looking at the camera. Voice-over: "Este año me tocó armar el árbol." Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. Sound design: a tiny ornament jingle. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog costume. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Toffee does not move his mouth: his lines are an inner voice-over. The video starts mid-action. 0-4s: Galleta stands proudly next to the half-decorated tree wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood, perfectly still. Voice-over: "Y quedó mejor que el de verdad." 4-8s: Toffee sits next to Galleta and slowly blinks at the camera. Voice-over: "Comenta ÁRBOL y te paso el enlace." Camera: handheld phone, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. Sound design: tail wagging, a jingle. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-4s: Galleta walks happily on a leash in a Colombian park at sunset. 4-8s: back home, Galleta sniffs a plate of natilla and buñuelos on a coffee table and a person's hand gently moves the plate away. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: park ambience, then a plate sliding. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Subtítulos de la voz, abajo-centro.
-Canción: Sin canción: solo la voz (alternativa: Feliz Navidad · José Feliciano al 10 %)
-Descripción: El árbol más bonito de la casa 🎄🐶 Disfraz de árbol para perros, verde o rojo. Comenta ÁRBOL y te paso el enlace 🐾 #disfrazperro #navidad #perros #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-4s: Galleta chews his favorite rope toy on a rug. 4-8s: Galleta lies in a quiet corner on a soft blanket, dim warm light, relaxed. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft chewing, quiet room. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Night, fireworks flashing through the window. The video starts mid-action. 0-8s: Galleta sleeps in the quiet corner wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin; Toffee sits next to him and slowly blinks at the camera. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-3 s: Toffee: "5 cosas para que tu perro tenga la mejor Navidad." / Contexto 3-16 s: Toffee: "Uno: un paseo largo antes de la noche. Dos: nada de natilla ni buñuelos, mucha grasa y azúcar. Tres: su juguete favorito cerca. Cuatro: un rincón tranquilo." / Moraleja 16-20 s: Toffee: "Y la quinta, la más importante:" / Venta + llamado 20-24 s: Toffee: "orejeras para la pólvora. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Feliz Navidad · José Feliciano al 10 % (alternativa: Last Christmas · Wham! al 10 %)
+Descripción: Guárdalo para diciembre 📌🎄 5 cosas para que tu perro tenga la mejor Navidad. La quinta: comenta CALMA y te paso el enlace 🐾 #perros #navidad #consejos #ToffeeyGalleta
 
 ### Jueves 5 nov
 
@@ -628,26 +782,33 @@ Texto: Sin texto en el video.
 Canción: Un sonido de susto o 'vine boom' en el estornudo (alternativa: Oh No · Kreepa)
 Descripción: salud, Galleta 🤧😂 #gatoyperro #perrocriollo #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M18 · Le compré una cama y se metió en la caja… ¿o no? (producto · Cama)
-Formato: Unboxing con la mascota mirando · Basado en: Unboxing con giro
+#### E16 · 'Toffee, ¿qué le regalo a mi perro?' (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I8 · POV entrevista
 
-**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a living room floor with an open brown shipping box that is clearly too small. The video starts mid-action. 0-6s: Toffee squeezes his round body into the small box, cheeks and belly spilling over the edges, and looks at the camera, stubborn. Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: cardboard creaking. No music, no speech. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits next to a small decorated Christmas tree with wrapped gifts. The video starts mid-action. 0-8s: Toffee looks at the gifts, then at the microphone, thinking, tail tip moving. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft ambience. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; REF-trineo-rojo-producto.jpg: la cama trineo roja
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: the same floor, the small box now empty next to the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front. The video starts mid-action. 0-3s: Toffee climbs out of the box and looks at the sleigh bed. 3-8s: he steps in, turns around once and flops down with a huge content sigh, sinking into the fluffy trim, paws tucked in. Camera: handheld phone, low, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a soft thud, a big sigh, a purr. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-4s: Galleta rips apart a stuffed toy, fluff everywhere. 4-8s: he wriggles out of a small sweater and leaves it on the floor, proud. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: tearing fabric, a happy grunt. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Le compré una cama y se metió en la caja 🙄 / Toma B, 0-3 s: …por 4 segundos / Toma B, 3-6 s: La cama gana 😌 / Toma B, 6-8 s: Comenta TRINEO y te paso el enlace 🐾
-Canción: Oh No · Kreepa (alternativa: Monkeys Spinning Monkeys · Kevin MacLeod)
-Descripción: La caja perdió 😹🛷 Cama trineo navideña. Comenta TRINEO y te paso el enlace 🐾 #camaparagato #gatosgraciosos #navidad #ToffeeyGalleta
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin. Night, next to the Christmas tree, fireworks flashing outside. The video starts mid-action. 0-8s: Galleta sleeps peacefully under the tree among the gifts, totally calm. The earmuffs stay on his head until the very last frame. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, a soft snore. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿qué le regalo a mi perro en Navidad?" / Contexto 4-14 s: Toffee: "¿Un juguete? Lo destruye en un día. ¿Ropa? Se la quita. ¿Comida? Se acaba." / Moraleja 14-19 s: Toffee: "Regálale una noche de diciembre sin miedo." / Venta + llamado 19-24 s: Toffee: "Comenta CALMA y te paso las de Galleta." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Feliz Navidad · José Feliciano al 10 %)
+Descripción: ¿Qué le regalo a mi perro en Navidad? 🎁 Toffee responde. Comenta CALMA y te paso el enlace 🐾 #regalosparaperros #navidad #perros #ToffeeyGalleta
 
 ### Viernes 6 nov
 
@@ -665,26 +826,33 @@ Texto: Sin texto en el video.
 Canción: 내 입맛에 딱 맞는 하루 · Pullment (alternativa: Investigations · Kevin MacLeod)
 Descripción: no estoy, deje su mensaje 📦👀 #gato #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M19 · Una semana para pedir (producto · Orejeras)
-Formato: Historia problema → solución · Basado en: Historia problema → solución con fecha límite
+#### E17 · ¿Le das regalo de Navidad a tu mascota? (producto · Disfraz)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I9 · Personajes
 
-**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: night, a bathroom; Galleta hides behind the toilet, trembling, while fireworks flash through the small window. The video starts mid-action. 0-6s: he looks at the camera with scared eyes, ears flat, shaking. Camera: handheld phone, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: fireworks booms, a whimper. No music, no speech. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin. Scene: the living room at night, fireworks flashing outside. The video starts mid-action. 0-8s: Galleta lies on his bed calmly chewing a toy, ears covered by the earmuffs, then rests his head and closes his eyes while the fireworks keep flashing. Camera: handheld phone, close, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, a calm sigh. No music, no speech. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: under a Christmas tree with wrapped gifts. The video starts mid-action. 0-8s: Galleta excitedly sniffs and pushes the gifts with his nose, tail wagging fast; Toffee lies next to the tree, half asleep, unimpressed. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paper crinkle, tail thumps. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Si tu perro pasa así diciembre… 😰 / Toma B, 0-4 s: Esto le cambió todo a Galleta / Toma B, 4-6 s: Quedan 7 días para pedir y que llegue en diciembre / Toma B, 6-8 s: Comenta CALMA y te paso el enlace 🐾
-Canción: Experience · Ludovico Einaudi (alternativa: Golden Hour · JVKE)
-Descripción: Quedan 7 días para pedir y que lleguen antes de Navidad ⏳🎆 Orejeras anti ruido para perros. Comenta CALMA y te paso el enlace 🐾 #perromiedopolvora #orejerasparaperros #polvora #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-8s: a person's hands open a gift box and pull out the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood; they put it on Galleta, who spins happily. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: paper rustle, jingle. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog costume. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. Scene: a Colombian family Christmas photo on a sofa (people visible only from the shoulders down, no faces). The video starts mid-action. 0-8s: Galleta sits in the middle of the family photo in his costume; Toffee sits on the armrest and slowly blinks at the camera as the phone flash goes off. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a camera shutter, laughter. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Toffee: "¿Le das regalo de Navidad a tu mascota? Galleta dice que es obligatorio." / Contexto 4-14 s: Galleta: "¡Obvio! Somos familia." Toffee: "Yo solo pido que no me despierten." / Moraleja 14-19 s: Toffee: "Al final, el regalo es que esté en la foto familiar." / Venta + llamado 19-24 s: Toffee: "Galleta ya tiene su traje. Comenta ÁRBOL." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo las voces (alternativa: Mi Burrito Sabanero al 10 %)
+Descripción: ¿Le das regalo de Navidad a tu mascota? 🎁👇 Galleta dice que es obligatorio. Comenta ÁRBOL y te paso el enlace de su disfraz 🎄 #navidad #perros #regalos #ToffeeyGalleta
 
 ### Sábado 7 nov
 
@@ -702,19 +870,33 @@ Texto: Sin texto en el video.
 Canción: Love You So · The King Khan & BBQ Show (alternativa: Comptine d'un autre été: L'après-midi · Yann Tiersen)
 Descripción: dice que no lo quiere, pero 🥹🐾 #gatoyperro #perrocriollo #amistad #gatoIA #ToffeeyGalleta
 
-#### M20 · Galleta en la novena (sin palabras) (producto · Disfraz)
-Formato: Demostración sin palabras · Basado en: Demostración sin palabras + algo muy colombiano
+#### E18 · '¿Tu mascota sale en la foto de Navidad?' (producto · Disfraz)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I9 · POV encuesta
 
-**Clip** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 10 s · x2 (30 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-disfraz-verde.jpg: el disfraz verde
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog costume. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a Colombian 'novena de aguinaldos' at night: a lit nativity scene, a table with natilla and buñuelos, a family singing softly in the blurred background (no faces in focus). The video starts mid-action. 0-4s: Galleta sits in the middle of the room wearing the green Christmas-tree dog costume from the reference image: a green hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood, tail wagging to the singing, pom-poms bouncing. 4-7s: close shot of the costume in the warm lights, the star on his hood shining. 7-10s: behind him, Toffee slowly reaches a paw toward a buñuelo and freezes when he notices the camera. Camera: handheld phone, natural. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft family singing a carol in Spanish (no clear words), maracas, tail thumps. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits on a sofa decorated for Christmas. The video starts mid-action. 0-8s: Toffee looks at the microphone with a proud face, then yawns. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: soft ambience. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Sin texto en el video. El llamado va en la descripción.
-Canción: Mi Burrito Sabanero (alternativa: Los Peces en el Río (villancico))
-Descripción: Novena con Galleta modo árbol 🎄🙏 y Toffee vigilando los buñuelos 👀 Disfraz de árbol para perros. Comenta ÁRBOL y te paso el enlace 🐾 #novena #navidad #colombia #disfrazperro #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: a family Christmas photo moment (people only from the shoulders down). The video starts mid-action. 0-8s: Toffee sleeps right in the middle of the family's laps while the phone takes the photo with a flash; he doesn't wake up. Camera: handheld, from the photographer's side. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a shutter, soft laughter. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; REF-disfraz-rojo.jpg: el disfraz rojo
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog costume. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the red Christmas-tree dog costume from the reference image: a red hooded cape with layered ruffled tiers, small colorful pom-pom ornaments, a white cord and a yellow star on top of the hood. The video starts mid-action. 0-8s: Galleta poses next to the Christmas tree for the family photo, chin up, perfectly still, then wags his tail as the flash goes off. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a shutter, a jingle. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿las mascotas salen en la foto de Navidad?" / Contexto 4-14 s: Toffee: "Claro. Somos de la familia. Yo salgo dormido, pero salgo." / Moraleja 14-19 s: Toffee: "Galleta sale así todos los años." / Venta + llamado 19-24 s: Toffee: "Comenta ÁRBOL si quieres que el tuyo salga igual." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Mi Burrito Sabanero al 10 %)
+Descripción: ¿Tu mascota sale en la foto de Navidad? 📸👇 Comenta ÁRBOL y te paso el enlace del disfraz de Galleta 🎄 #navidad #perros #gatos #ToffeeyGalleta
 
 ### Domingo 8 nov
 
@@ -732,26 +914,33 @@ Texto: 0-4 s (arriba): Cuando me llaman por mi nombre / 4-8 s: Cuando dicen 'com
 Canción: Un audio de 'cambio de actitud' en tendencia (alternativa: Oh No · Kreepa)
 Descripción: prioridades claras 🐟😼 #gato #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M21 · '¿Y sí sirven?' Toffee responde (producto · Orejeras)
-Formato: Toffee lo cuenta con su voz · Basado en: Voz en off que resuelve la duda
+#### E19 · El error del 31 de diciembre: las 12 uvas (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I10 · Personajes
 
-**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: New Year's Eve in a Colombian home, a table with bowls of 12 grapes for each person (people visible only from the waist down). The video starts mid-action. 0-8s: one grape falls from the table and rolls on the floor; Galleta runs toward it; Toffee jumps in front of Galleta and blocks him with one paw, very serious. Camera: low, handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: festive voices counting, a grape bouncing. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). Scene: Toffee sits on a desk next to a phone showing a comment notification (screen blurred, no readable text). Toffee does not move his mouth: his line is an inner voice-over. The video starts mid-action. 0-6s: he looks at the phone, then at the camera. Voice-over: "Me preguntan si las orejeras sí sirven." Camera: handheld phone, eye level. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). The video starts mid-action. 0-8s: close-up: Toffee pushes the fallen grape away under the sofa with his paw, then looks at the camera with a 'not today' face. Camera: low, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a grape rolling. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Toffee does not move his mouth: his lines are an inner voice-over. Scene: night, fireworks flashing through the window. The video starts mid-action. 0-5s: Galleta sleeps deeply wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin while a big firework booms outside; he doesn't even move. Voice-over: "Esto fue anoche. Ni se movió." 5-8s: Toffee looks into the lens, slow blink. Voice-over: "Comenta CALMA y te paso el enlace." Camera: handheld phone, close. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Toffee's voice: a calm, low, slightly sleepy young man's voice with dry deadpan humor, Latin American Spanish with a soft Colombian paisa accent, slow relaxed pace. Sound design: a big firework boom, muffled. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the dog earmuffs. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Midnight, New Year's fireworks exploding outside the window. The video starts mid-action. 0-8s: Galleta lies calmly on a blanket wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin, eyes closing; Toffee sits next to him and slowly blinks at the camera. The earmuffs stay on Galleta's head until the very last frame. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, distant 'feliz año'. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Subtítulos de la voz, abajo-centro.
-Canción: Sin canción: solo la voz (alternativa: Experience · Ludovico Einaudi al 10 %)
-Descripción: ¿Sí sirven? Esto fue anoche 🎆😴 Orejeras anti ruido para perros. Quedan 5 días para pedir y que lleguen en diciembre. Comenta CALMA 🐾 #orejerasparaperros #perromiedopolvora #ToffeeyGalleta
+Texto: Gancho 0-4 s: Toffee: "El 31 de diciembre todos cometen el mismo error con su perro." / Contexto 4-14 s: Toffee: "Las 12 uvas. A las 12 se cae una al piso y el perro se la come. Las uvas son tóxicas para los perros. Ni una." / Moraleja 14-19 s: Toffee: "Y el segundo error: dejarlo solo con la pólvora." / Venta + llamado 19-24 s: Toffee: "Galleta pasa el Año Nuevo así. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Faltan Cinco Pa' Las Doce al 10 %)
+Descripción: Guárdalo para el 31 📌 Las uvas son tóxicas para los perros 🍇🚫 Y si tu perro sufre con la pólvora, comenta CALMA y te paso el enlace 🐾 #añonuevo #perros #12uvas #ToffeeyGalleta
 
 ### Lunes 9 nov
 
@@ -769,26 +958,33 @@ Texto: Sin texto en el video.
 Canción: 내 입맛에 딱 맞는 하루 · Pullment (alternativa: Weightless · Marconi Union)
 Descripción: lunes, después del almuerzo 😌 #gato #gatogordo #gatosgraciosos #gatoIA #ToffeeyGalleta
 
-#### M22 · Galleta quería la cama del jefe (producto · Cama)
-Formato: Historia problema → solución · Basado en: Historia problema → solución
+#### E20 · 'Toffee, ¿qué no puede comer un perro en diciembre?' (producto · Orejeras)
+Formato: Método Víctor: entretener y terminar en el producto · Basado en: Idea I10 · POV entrevista
 
-**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x2 (20 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-rojo-producto.jpg: la cama trineo roja
-
-```
-Vertical 9:16 video, 6 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: a living room with Christmas lights. The video starts mid-action. 0-6s: Toffee sleeps in the red sleigh-shaped pet bed from the reference image: plush red body, fluffy white trim, 'Merry Christmas' embroidery, red-and-white striped runners and a small rope at the front; Galleta puts one paw on the edge, hopeful; Toffee opens one eye and pushes the paw away. Camera: handheld phone. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a small whine, a grumpy cat grumble. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
-```
-
-**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x2 (24 créditos)
-Referencias: TOFFEE-ficha.jpg: Toffee; GALLETA-oficial.jpg: Galleta; REF-trineo-cafe-producto.jpg: la cama trineo café
+**Toma A** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: TOFFEE-ficha.jpg: Toffee
 
 ```
-Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Toffee, one is Galleta, one is the brown pet bed. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom) and Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). Scene: the same living room; now the brown sleigh-shaped pet bed from the reference image: plush brown body with small reindeer antlers, fluffy cream trim and striped runners sits next to the red one. The video starts mid-action. 0-8s: Galleta curls up happily in the brown sleigh bed, tail wagging, and closes his eyes; Toffee looks over from the red bed and gives one slow approving blink at the camera. Camera: handheld phone, low, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a happy dog sigh, a purr. No music, no speech. The product must look exactly like its reference image and be clearly visible. The nightcap stays on Toffee's head the entire time. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Toffee (the chubby round cream-caramel British Shorthair cat from the reference image, solid color, no stripes, big round green eyes, round cheeks, wearing a navy blue knitted nightcap with a drooping tip and a cream pompom). POV format: a person's hand (only the hand, no face) holds a small microphone toward the animal from the bottom-right corner of the frame, as if interviewing it; wide 0.5x phone lens, handheld, natural home light. Scene: Toffee sits on a kitchen counter next to a bowl of grapes, a chocolate bar, natilla and buñuelos. The video starts mid-action. 0-8s: Toffee looks at each food and pushes the bowl of grapes away from the edge with one paw, serious, then looks at the microphone. Camera: handheld. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a bowl sliding. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The nightcap stays on Toffee's head the entire time. No text, no letters, no logos, no watermark, no other animals.
 ```
 
-Texto: Toma A (arriba): Galleta quería la cama del jefe 🥺 / Toma B, 0-4 s: Ahora tiene la suya 😌 / Toma B, 4-8 s: Comenta TRINEO y te paso el enlace 🐾
-Canción: Love You So · The King Khan & BBQ Show (alternativa: Last Christmas · Wham!)
-Descripción: Cada uno con su trineo 🛷🛷 Roja o café, envío gratis. Comenta TRINEO y te paso el enlace. Quedan 4 días para pedir y que llegue en Navidad 🐾 #camaparagato #camaparaperro #navidad #ToffeeyGalleta
+**Toma B** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag). The video starts mid-action. 0-8s: Galleta sits under the kitchen counter looking up hopefully, licking his lips; a person's hand gives him a dog treat instead of the human food. Camera: handheld, low. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: a treat crunch. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+**Toma C** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
+Referencias: GALLETA-oficial.jpg: Galleta; orejeras-real-abierta.jpg: las orejeras reales
+
+```
+Vertical 9:16 video, 8 seconds. One continuous shot, no cuts. Reference images: one is Galleta, one is the dog earmuffs. Galleta (the exact same dog from the reference image: scruffy wiry golden-brown Latin American criollo mutt, floppy ears, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wearing the anti-noise dog earmuffs from the reference image: padded dark heather-grey fabric that covers both ears like a soft hood, thick rounded ear cups and a black velcro strap under the chin. Night, fireworks flashing outside. The video starts mid-action. 0-8s: Galleta sleeps calmly on his bed. The earmuffs stay on his head until the very last frame. Camera: handheld, slow push-in. Style: looks like a real video filmed by a pet owner on a phone, natural home light, slightly imperfect handheld framing, photorealistic, real dense fur, realistic animal anatomy and natural expressions; not an ad, not cinematic, not cartoon. Sound design: muffled fireworks, a soft snore. No speech in the clip: the voice is added later. Characters do not move their mouths. No music. The product must look exactly like its reference image and be clearly visible. The bandana stays on Galleta the entire time. No text, no letters, no logos, no watermark, no other animals.
+```
+
+Texto: Gancho 0-4 s: Voz de la mano: "Toffee, ¿qué no puede comer un perro en diciembre?" / Contexto 4-14 s: Toffee: "Uvas: tóxicas. Chocolate: tóxico. Natilla y buñuelos: mucha grasa y azúcar." / Moraleja 14-19 s: Toffee: "Y lo que no se come pero también le hace daño: la pólvora." / Venta + llamado 19-24 s: Toffee: "Para eso, Galleta usa esto. Comenta CALMA." / Voz: guion en ElevenLabs con la voz de Toffee. Si no la tienes, van solo subtítulos.
+Canción: Sin canción: solo la voz (alternativa: Feliz Navidad · José Feliciano al 10 %)
+Descripción: Guárdalo 📌 Lo que tu perro NO puede comer en diciembre 🍇🍫 Y si sufre con la pólvora, comenta CALMA y te paso el enlace 🐾 #perros #navidad #consejos #ToffeeyGalleta
 
 ### Martes 10 nov
 
