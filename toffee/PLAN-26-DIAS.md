@@ -373,7 +373,7 @@ Vertical 9:16 video, 10 seconds. One continuous shot, no cuts. Reference images:
 
 **Descripción:** Novena con Galleta modo árbol 🎄🙏 y Toffee vigilando los buñuelos 👀 Disfraz en soytoffee.store #novena #navidad #colombia #perros #ToffeeyGalleta
 
-**Consejo:** Muy colombiano: es de los que más se van a compartir en grupos de WhatsApp familiares.
+**Consejo:** Muy colombiano: es de los que la gente más comparte en diciembre.
 
 ## P10 · Desfile navideño: Galleta en pasarela (Disfraz)
 
