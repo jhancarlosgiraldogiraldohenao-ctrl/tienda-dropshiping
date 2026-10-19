@@ -5,19 +5,19 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Lunes 19 oct
 - 12:30 · Viral: **R1** · Toffee visto desde abajo de la mesa de vidrio · 🎵 내 입맛에 딱 맞는 하루 · 풀먼트 (Pullment). Es la del original de 39 M; búscala como "Pullment"
 - 7:30 pm · Producto: **V1** · Hola, soy Toffee: mi regla · 🎵 Monkeys Spinning Monkeys · Kevin MacLeod
-- Tarea de ventas: Arregla los perfiles (nombre y biografía). Crea un WhatsApp Business. Manda el mensaje de lanzamiento a 20 contactos que tengan mascota.
+- Tarea de ventas: Arregla los perfiles (nombre y biografía). Crea una Página de Facebook 'Toffee el Gato' y una cuenta de Pinterest empresa 'Soy Toffee'. Nadie ve quién las administra.
 - Generar hoy en Flow: P1
 
 ## Martes 20 oct
 - 12:30 · Viral: **R2** · Funk en la cabeza (lengüita afuera) · 🎵 DREAM FUNK (Slowed) · LUMIX & KXRSED. Es la del original de 144 M
 - 7:30 pm · Producto: **V3** · Galleta y la pólvora · Cap. 1: El miedo · 🎵 Comptine d'un autre été: L'après-midi · Yann Tiersen
-- Tarea de ventas: Únete a 10 grupos de Facebook de mascotas de Colombia. Comparte V3 en 2 de ellos con el texto modelo.
+- Tarea de ventas: Desde la Página de Toffee, únete a 10 grupos de Facebook de mascotas que acepten páginas. Comparte V3 en 2 de ellos con el texto modelo.
 - Generar hoy en Flow: nada nuevo
 
 ## Miércoles 21 oct
 - 12:30 · Viral: **T2** · Galleta y Toffee bailando sincronizados · 🎵 Cumbia sobre el río · Celso Piña
 - 7:30 pm · Producto: **V4** · Galleta y la pólvora · Cap. 2: La pata no alcanza · 🎵 Experience · Ludovico Einaudi
-- Tarea de ventas: Publica las orejeras y el disfraz en Facebook Marketplace (Pereira, Dosquebradas, Manizales, Armenia).
+- Tarea de ventas: Pinterest: sube 5 pines (fotos de las orejeras y cuadros de V3 y V5) con el enlace a la tienda y palabras como 'orejeras perro pólvora'.
 - Generar hoy en Flow: S1, P4
 
 ## Jueves 22 oct
@@ -29,7 +29,7 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Viernes 23 oct
 - 12:30 · Viral: **T1** · Toffee cabeceando serio (loop de cabeceo) · 🎵 Pedro · Jaxomy, Agatino Romero, Raffaella Carrà
 - 7:30 pm · Producto: **P1** · POV: tu perro el 7 de diciembre · 🎵 Comptine d'un autre été: L'après-midi · Yann Tiersen
-- Tarea de ventas: Historia en Instagram y WhatsApp con encuesta: '¿Tu perro le tiene miedo a la pólvora?'. Escríbele a cada persona que vote 'sí'.
+- Tarea de ventas: Historia en Instagram con encuesta: '¿Tu perro le tiene miedo a la pólvora?'. Escríbele por mensaje como Toffee a cada persona que vote 'sí'.
 - Generar hoy en Flow: S2, P2
 
 ## Sábado 24 oct
@@ -41,13 +41,13 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Domingo 25 oct
 - 12:30 · Viral: **S1** · Toffee cada que lo empiezo a grabar · 🎵 El audio "debería irme a vivir al monte, al desierto, sin vecinos" (sonido original de chanell_nj)
 - 7:30 pm · Producto: **P4** · Galleta se prueba las orejeras · 🎵 Monkeys Spinning Monkeys · Kevin MacLeod
-- Tarea de ventas: Revisión 1: mándame capturas de las estadísticas de los 14 videos y de Shopify. Escríbele a todos los que comentaron o preguntaron.
+- Tarea de ventas: Revisión 1: mándame capturas de las estadísticas de los 14 videos y de Shopify. Escríbele como Toffee a todos los que comentaron o preguntaron.
 - Generar hoy en Flow: D2, P11
 
 ## Lunes 26 oct
 - 12:30 · Viral: **D1** · La almohada favorita de Galleta tiene patas · 🎵 Comptine d'un autre été: L'après-midi · Yann Tiersen
 - 7:30 pm · Producto: **P7** · Galleta se convierte en árbol de Navidad · 🎵 All I Want for Christmas Is You · Mariah Carey
-- Tarea de ventas: Comparte en 2 grupos nuevos. Responde todos los comentarios con video cuando pregunten algo.
+- Tarea de ventas: Comparte D1 desde la Página de Toffee en 2 grupos nuevos. Responde todos los comentarios con video cuando pregunten algo.
 - Generar hoy en Flow: H1, P3
 
 ## Martes 27 oct
@@ -59,7 +59,7 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Miércoles 28 oct
 - 12:30 · Viral: **T7** · POV: llegó la aspiradora · 🎵 Mission: Impossible Theme · Lalo Schifrin
 - 7:30 pm · Producto: **V6** · Costume walk: Toffee el árbol rey · 🎵 Ramalama (Bang Bang) · Róisín Murphy
-- Tarea de ventas: Marketplace: renueva las publicaciones y publica la cama trineo.
+- Tarea de ventas: Pinterest: 5 pines de la cama trineo y el disfraz (Pinterest es donde la gente busca regalos de Navidad).
 - Generar hoy en Flow: D3, T9
 
 ## Jueves 29 oct
@@ -95,7 +95,7 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Martes 3 nov
 - 12:30 · Viral: **G1** · Tinto + leche = Toffee · 🎵 death bed (coffee for your head) · Powfu ft. beabadoobee
 - 7:30 pm · Producto: **P5** · '¿Qué tienes puesto, Galleta?' · 🎵 Sin canción: solo las voces
-- Tarea de ventas: Comparte en 2 grupos nuevos. Escribe otra vez a quien preguntó y no compró.
+- Tarea de ventas: Responde con video (la opción 'responder con video') a los 3 comentarios con más likes de la semana.
 - Generar hoy en Flow: G2, P9
 
 ## Miércoles 4 nov
@@ -125,13 +125,13 @@ Ver la página del plan para las tablas completas. Resumen día por día:
 ## Domingo 8 nov
 - 12:30 · Viral: **T3** · Galleta intenta bailar (y Toffee lo rechaza) · 🎵 Gasolina · Daddy Yankee
 - 7:30 pm · Producto: **V10** · El marrano recibe su primera moneda · 🎵 Experience · Ludovico Einaudi
-- Tarea de ventas: Manda a tus 20 contactos: 'quedan 5 días para pedir y que llegue en Navidad'.
+- Tarea de ventas: Pinterest: 5 pines nuevos con 'Últimos días para que llegue en Navidad'.
 - Generar hoy en Flow: T8
 
 ## Lunes 9 nov
 - 12:30 · Viral: **H4** · Dicen que me parezco a este gato · 🎵 Sin canción: solo la voz de Toffee
 - 7:30 pm · Producto: **P10** · Desfile navideño: Galleta en pasarela · 🎵 Ramalama (Bang Bang) · Róisín Murphy
-- Tarea de ventas: Marketplace: renueva todo con 'Últimos días para Navidad'.
+- Tarea de ventas: Comparte P10 desde la Página de Toffee en los grupos donde te dejaron publicar.
 - Generar hoy en Flow: T6
 
 ## Martes 10 nov
