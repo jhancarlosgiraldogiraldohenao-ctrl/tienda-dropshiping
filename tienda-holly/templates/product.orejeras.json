@@ -20,7 +20,7 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 13 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
@@ -32,15 +32,17 @@
         "sticky_texto": "Orejeras anti ruido",
         "compra_rapida": true,
         "frase_toffee": "Galleta las usó en Año Nuevo y durmió como yo un domingo.",
-        "veredicto": "Calma con pólvora|★★★★★\nComodidad|★★★★☆\nProbado por Galleta|✓\n¿Lo tiré de la mesa?|No",
-        "nota_toffee": "Galleta ya no se esconde debajo de mi cama en Año Nuevo. Eso, para mí, vale cinco estrellas.",
+        "veredicto": "Calma con pólvora|Aprobada 💤\n¿Galleta se las deja puestas?|Sí\n¿Lo tiré de la mesa?|No",
+        "nota_toffee": "Galleta ya no se esconde debajo de mi cama en Año Nuevo. Para mí, eso es aprobado.",
         "tallas_titulo": "Guía de tallas",
         "tallas_nota": "Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. Si queda entre dos tallas, elige la más grande.",
         "tabla_tallas": "Talla|Contorno de cabeza|Peso del perro\nS|25 – 38 cm|7,5 – 17,5 kg\nM|35 – 48 cm|17,5 – 30 kg\nL|45 – 60 cm|30 – 42,5 kg\nXL|55 – 71 cm|42,5 – 60 kg",
         "aviso": "Ayudan a reducir el ruido; no son un tratamiento médico. Si tu perro sufre mucha ansiedad, consulta con tu veterinario. No lo dejes solo con ellas puestas.",
-        "fecha_navidad": "2026-11-13",
         "marrano_linea": true,
-        "marrano_url": "/pages/marrano"
+        "marrano_url": "/pages/marrano",
+        "frase_firma": "— Toffee, personaje de IA",
+        "veredicto_titulo": "La opinión de Toffee",
+        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas."
       },
       "blocks": {
         "b0": {
@@ -63,8 +65,8 @@
           "type": "confianza",
           "settings": {
             "icono": "escudo",
-            "titulo": "Garantía",
-            "texto": "Si no te llega, te devolvemos tu dinero"
+            "titulo": "Palabra de Toffee",
+            "texto": "Si no llega o llega dañado, otro o tu dinero"
           }
         }
       },
@@ -260,14 +262,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad. Para recibirlo antes de Navidad, pide antes del 13 de noviembre.</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad.</p><p>[fecha-limite]</p>"
           }
         },
         "b8": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Y si no llega o llega dañado?",
-            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+            "respuesta": "<p>Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Escríbenos desde <a href=\"/pages/ayuda\">Ayuda</a> con tu número de pedido y una foto.</p>"
           }
         }
       },
@@ -295,7 +297,7 @@
           "settings": {
             "producto": "cama-trineo-navidad-mascotas",
             "titulo": "Cama Trineo Navideña",
-            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
+            "frase": "El trineo de Papá Noel convertido en cama. La oficina favorita de Toffee.",
             "etiqueta": "Favorito de Toffee"
           }
         },
@@ -319,9 +321,9 @@
         }
       },
       "block_order": [
+        "p2",
         "p0",
-        "p1",
-        "p2"
+        "p1"
       ]
     }
   },

@@ -42,8 +42,8 @@
                   {{- 'icon-close.svg' | inline_asset_content -}}
                 </span>
               </button>
-              <a href="/#aprobado" class="button">
-                {{ 'general.continue_shopping' | t }}
+              <a href="/products/orejeras-anti-ruido-para-perros" class="button">
+                Ver las orejeras de Galleta
               </a>
 
               {%- if false -%}
@@ -587,7 +587,7 @@
           >
             {{ 'sections.cart.checkout' | t }}
           </button>
-          <p class="tf-carrito-nota">🔒 Pago seguro con tarjeta · 🚚 Envío gratis · 🐷 3 % al marrano</p>
+          {% render 'tf-carrito-extra' %}
           {% render 'tf-aviso-impuestos', clase: 'tf-impuestos--carrito' %}
         </div>
       </div>

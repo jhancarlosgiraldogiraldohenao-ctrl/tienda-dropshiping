@@ -83,6 +83,7 @@
     <script src="{{ 'search-form.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'standard-actions-override.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'hl-scripts.js' | asset_url }}" defer="defer"></script>
+    {% render 'tf-fechas-datos' %}
 
     {%- if settings.animations_reveal_on_scroll -%}
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>

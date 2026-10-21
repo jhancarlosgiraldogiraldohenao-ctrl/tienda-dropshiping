@@ -23,7 +23,12 @@
     assign htag = 'h1'
   endif
 -%}<{{ htag }}>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>
-        {%- if section.settings.texto != blank -%}<div class="tf-bloque__cuerpo">{{ section.settings.texto }}</div>{%- endif -%}
+        {%- if section.settings.texto != blank -%}
+          {%- assign cuerpo = section.settings.texto -%}
+          {%- if cuerpo contains '[fecha-limite]' -%}{%- capture corte -%}{% render 'tf-corte' %}{%- endcapture -%}{%- assign cuerpo = cuerpo | replace: '[fecha-limite]', corte -%}{%- endif -%}
+          {%- if cuerpo contains '[fechas]' -%}{%- capture cortes -%}{% render 'tf-corte', lista: true %}{%- endcapture -%}{%- assign cuerpo = cuerpo | replace: '[fechas]', cortes -%}{%- endif -%}
+          <div class="tf-bloque__cuerpo">{{ cuerpo }}</div>
+        {%- endif -%}
         {%- if section.settings.nota_toffee != blank -%}<p class="tf-nota-toffee"><span>Nota de Toffee</span>{{ section.settings.nota_toffee }}</p>{%- endif -%}
         {%- assign hay_puntos = false -%}{%- for block in section.blocks -%}{%- if block.type == 'punto' -%}{%- assign hay_puntos = true -%}{%- endif -%}{%- endfor -%}
         {%- if hay_puntos -%}
@@ -51,10 +56,11 @@
                 {%- endform -%}
               </div>
             {%- when 'redes' -%}
-              {%- if block.settings.tiktok != blank or block.settings.instagram != blank -%}
+              {%- if block.settings.tiktok != blank or block.settings.instagram != blank or block.settings.youtube != blank -%}
                 <div class="tf-redes" {{ block.shopify_attributes }}>
                   {%- if block.settings.tiktok != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ block.settings.tiktok }}" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'tiktok' %} TikTok</a>{%- endif -%}
                   {%- if block.settings.instagram != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ block.settings.instagram }}" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'instagram' %} Instagram</a>{%- endif -%}
+                  {%- if block.settings.youtube != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ block.settings.youtube }}" target="_blank" rel="noopener">{% render 'hl-icono', nombre: 'youtube' %} YouTube</a>{%- endif -%}
                 </div>
               {%- endif -%}
           {%- endcase -%}
@@ -82,7 +88,7 @@
     { "type": "checkbox", "id": "invertir", "label": "Foto a la derecha", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo" },
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Título</p>" },
-    { "type": "richtext", "id": "texto", "label": "Texto" },
+    { "type": "richtext", "id": "texto", "label": "Texto", "info": "Escribe [fecha-limite] para la próxima fecha límite de entrega o [fechas] para todas." },
     { "type": "text", "id": "nota_toffee", "label": "Nota de Toffee" },
     { "type": "text", "id": "btn_texto", "label": "Botón" },
     { "type": "url", "id": "btn_url", "label": "Enlace del botón" },
@@ -103,7 +109,8 @@
     ] },
     { "type": "redes", "name": "Botones de redes", "limit": 1, "settings": [
       { "type": "url", "id": "tiktok", "label": "TikTok (vacío = oculto)" },
-      { "type": "url", "id": "instagram", "label": "Instagram (vacío = oculto)" }
+      { "type": "url", "id": "instagram", "label": "Instagram (vacío = oculto)" },
+      { "type": "url", "id": "youtube", "label": "YouTube (vacío = oculto)" }
     ] }
   ],
   "presets": [{ "name": "Toffee – Bloque" }]

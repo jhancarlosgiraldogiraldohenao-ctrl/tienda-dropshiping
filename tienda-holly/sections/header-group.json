@@ -8,34 +8,24 @@
         "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": true,
+        "auto_rotate": false,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
       },
       "blocks": {
-        "announcement-bar-0": {
+        "anuncio-temporada": {
           "type": "announcement",
           "settings": {
-            "text": "🐷 El 3 % de cada venta va al marrano de Toffee para peludos de la calle · Envío GRATIS",
+            "text": "[fecha-limite] · Envío GRATIS",
             "text_alignment": "center",
             "color_scheme": "scheme-4",
-            "link": "/pages/marrano"
-          }
-        },
-        "announcement-bar-1": {
-          "type": "announcement",
-          "settings": {
-            "text": "🎄 Pide antes del 13 de noviembre y recíbelo antes de Navidad · Envío GRATIS",
-            "text_alignment": "center",
-            "color_scheme": "scheme-4",
-            "link": "/#aprobado"
+            "link": "/products/orejeras-anti-ruido-para-perros"
           }
         }
       },
       "block_order": [
-        "announcement-bar-1",
-        "announcement-bar-0"
+        "anuncio-temporada"
       ]
     },
     "header": {

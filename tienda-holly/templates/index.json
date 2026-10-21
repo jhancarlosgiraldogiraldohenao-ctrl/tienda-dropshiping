@@ -19,7 +19,8 @@
         "nota_ia": "Toffee es un personaje de IA · sus siestas son reales"
       },
       "blocks": {},
-      "block_order": []
+      "block_order": [],
+      "disabled": true
     },
     "cinta": {
       "type": "hl-cinta",
@@ -42,7 +43,7 @@
         "b2": {
           "type": "item",
           "settings": {
-            "texto": "Si no te llega, te devolvemos tu dinero"
+            "texto": "Palabra de Toffee: si no llega, te devolvemos tu dinero"
           }
         },
         "b3": {
@@ -80,14 +81,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>El envío es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo en tu correo apenas sale tu pedido. Llega en 10 a 25 días hábiles según tu país y ciudad.</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo en tu correo apenas sale tu pedido. Llega en 10 a 25 días hábiles según tu país y ciudad.</p>"
           }
         },
         "b2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
+            "pregunta": "¿Me llega a tiempo para diciembre?",
+            "respuesta": "<p>Sí, si pides a tiempo. Fechas límite según la noche:</p><p>[fechas]</p>"
           }
         },
         "impuestos": {
@@ -115,7 +116,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Y si no llega, llega dañado o me arrepiento?",
-            "respuesta": "<p>Si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Además tienes derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile). Detalles en la <a href=\"/policies/refund-policy\">política de devoluciones</a>.</p>"
+            "respuesta": "<p>Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Además tienes derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile). Detalles en la <a href=\"/policies/refund-policy\">política de devoluciones</a>.</p>"
           }
         }
       },
@@ -172,11 +173,12 @@
       "type": "hl-catalogo",
       "settings": {
         "eyebrow": "Aprobado por Toffee",
-        "titulo": "<p>Pasaron <em>mi prueba</em></p>",
-        "texto": "Los olí, les hice la siesta-prueba y no los tiré de la mesa. Son los únicos que están en mi tienda.",
-        "boton_texto": "Comprar ahora",
+        "titulo": "<p>¿Qué le pasa <em>a tu peludo?</em></p>",
+        "texto": "Empieza por el problema. Solo hay tres cosas en mi tienda: las que aprobé.",
+        "boton_texto": "Ver producto",
         "ancla": "aprobado",
-        "titulo_size": 60
+        "titulo_size": 60,
+        "rotulo_opinion": "Opinión de Toffee, personaje de IA · no es una reseña de clientes"
       },
       "blocks": {
         "p0": {
@@ -184,9 +186,9 @@
           "settings": {
             "producto": "cama-trineo-navidad-mascotas",
             "titulo": "Cama Trineo Navideña",
-            "frase": "El trineo de Papá Noel convertido en cama. Dormí 14 horas seguidas: aprobado.",
-            "etiqueta": "Favorito de Toffee",
-            "veredicto": "Comodidad|★★★★★\nSiesta-prueba|14 h ✓\n¿Lo tiró de la mesa?|No",
+            "frase": "El trineo de Papá Noel convertido en cama, con paredes altas para apoyar la cara.",
+            "etiqueta": "Duerme en cualquier lado",
+            "veredicto": "Comodidad|Aprobada 💤\n¿Lo tiró de la mesa?|No",
             "escena_ia": true
           }
         },
@@ -195,9 +197,9 @@
           "settings": {
             "producto": "disfraz-arbol-navidad-perros",
             "titulo": "Disfraz Árbol de Navidad",
-            "frase": "Me lo puse bajo protesta. Las fotos salieron demasiado bonitas: aprobado.",
-            "etiqueta": "El más viral",
-            "veredicto": "Ternura|★★★★★\nFotos navideñas|✓\n¿Lo tiró de la mesa?|No (lo pensó)",
+            "frase": "Tu gato o perrito pequeño convertido en el arbolito de la casa.",
+            "etiqueta": "Quiere su foto navideña",
+            "veredicto": "Ternura|Aprobada 💤\n¿Lo tiró de la mesa?|No (lo pensó)",
             "escena_ia": true
           }
         },
@@ -206,17 +208,17 @@
           "settings": {
             "producto": "orejeras-anti-ruido-para-perros",
             "titulo": "Orejeras anti ruido",
-            "frase": "Galleta las usó en Año Nuevo y durmió como yo un domingo.",
-            "etiqueta": "Para la pólvora",
-            "veredicto": "Calma con pólvora|★★★★★\nProbado por Galleta|✓\n¿Lo tiró de la mesa?|No",
+            "frase": "Orejeras acolchadas para la noche de pólvora, las tormentas y el secador.",
+            "etiqueta": "Le teme a la pólvora",
+            "veredicto": "Calma con pólvora|Aprobada 💤\n¿Lo tiró de la mesa?|No",
             "escena_ia": true
           }
         }
       },
       "block_order": [
-        "p0",
+        "p2",
         "p1",
-        "p2"
+        "p0"
       ]
     },
     "marrano": {
@@ -278,7 +280,8 @@
         "b0",
         "b1",
         "b2"
-      ]
+      ],
+      "disabled": true
     },
     "temporada": {
       "type": "tf-bloque",
@@ -299,7 +302,8 @@
         "ancla": "temporada"
       },
       "blocks": {},
-      "block_order": []
+      "block_order": [],
+      "disabled": true
     },
     "test": {
       "type": "tf-bloque",
@@ -324,9 +328,9 @@
       "type": "tf-bloque",
       "settings": {
         "fondo": "crema",
-        "eyebrow": "Toffee en redes",
+        "eyebrow": "Sigue a Toffee",
         "titulo": "<p>Sígueme en <em>@toffee.elgato</em></p>",
-        "texto": "<p>Mis pruebas, mis siestas y los dramas de Galleta, todos los días. Comenta <b>TOFFEE</b> y te respondo.</p>",
+        "texto": "<p>Mis opiniones, mis siestas y los dramas de Galleta, en video. Si no compras hoy, por lo menos sígueme. 😾</p>",
         "btn_texto": "",
         "ancla": "redes"
       },
@@ -334,15 +338,15 @@
         "r": {
           "type": "redes",
           "settings": {
-            "tiktok": "",
-            "instagram": ""
+            "tiktok": "https://www.tiktok.com/@toffee.elgato",
+            "instagram": "https://www.instagram.com/toffee.elgato",
+            "youtube": "https://www.youtube.com/@toffee.elgato"
           }
         }
       },
       "block_order": [
         "r"
-      ],
-      "disabled": true
+      ]
     },
     "club": {
       "type": "tf-bloque",
@@ -413,20 +417,58 @@
         "toffee",
         "galleta"
       ]
+    },
+    "portada": {
+      "type": "tf-portada",
+      "settings": {
+        "producto": "orejeras-anti-ruido-para-perros",
+        "imagen": "shopify://shop_images/F11-orejeras-galleta-polvora.jpg",
+        "escena_ia": true,
+        "sello": "Aprobado por Toffee",
+        "eyebrow": "Temporada de pólvora 🎆",
+        "titulo": "<p>Que la pólvora no le arruine diciembre <em>a tu perro</em></p>",
+        "sub": "Orejeras anti ruido engrosadas: amortiguan la pólvora, los truenos y el secador. Tallas S a XL, envío gratis.",
+        "btn_texto": "Ver las orejeras",
+        "btn_precio": true,
+        "frase": "Galleta duerme con estas en Año Nuevo. Yo las aprobé.",
+        "frase_firma": "— Toffee, personaje de IA",
+        "titulo_size": 60
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "fechas": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema2",
+        "imagen": "shopify://shop_images/A05-toffee-galleta-caja.jpg",
+        "escena_ia": true,
+        "invertir": true,
+        "eyebrow": "¿Llega a tiempo?",
+        "titulo": "<p>Las fechas límite <em>de diciembre</em></p>",
+        "texto": "<p>Calculadas con el peor caso de entrega (25 días hábiles) y los festivos de Colombia. Cuando una fecha ya no alcanza, desaparece de aquí ese mismo día.</p><p>[fechas]</p>",
+        "nota_toffee": "Galleta empaca, yo superviso. Pide con tiempo, humano.",
+        "btn_texto": "",
+        "ancla": "fechas"
+      },
+      "blocks": {},
+      "block_order": []
     }
   },
   "order": [
-    "hero",
+    "portada",
     "cinta",
     "aprobado",
-    "prueba",
-    "temporada",
+    "fechas",
     "test",
     "equipo",
-    "marrano",
     "redes",
+    "marrano",
     "faq",
     "club",
-    "cierre"
+    "cierre",
+    "hero",
+    "temporada",
+    "prueba"
   ]
 }

@@ -15,21 +15,21 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard o American Express), de forma 100% segura. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard, American Express o Discover), 100 % seguro. Pagas al hacer tu pedido.</p>"
           }
         },
         "b1": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p>"
+            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p><p>[fecha-limite]</p>"
           }
         },
         "b2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Me llega antes de Navidad?",
-            "respuesta": "<p>Sí, si haces tu pedido antes del 13 de noviembre.</p>"
+            "pregunta": "¿Me llega a tiempo para diciembre?",
+            "respuesta": "<p>Sí, si pides a tiempo. Estas son las fechas límite, calculadas con el peor caso de entrega (25 días hábiles) y los festivos de Colombia:</p><p>[fechas]</p>"
           }
         },
         "b3": {
@@ -43,7 +43,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Y si no llega o llega dañado?",
-            "respuesta": "<p>Te devolvemos tu dinero o te enviamos otro. Escríbenos abajo con tu número de pedido y una foto.</p>"
+            "respuesta": "<p>Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Escríbenos abajo con tu número de pedido y una foto.</p>"
           }
         },
         "medidas": {
@@ -57,7 +57,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Quién es Toffee?",
-            "respuesta": "<p>Toffee es el gato jefe de la tienda: un personaje creado con inteligencia artificial que prueba y presenta los productos. Él es de mentiras, pero los productos, los pagos y los envíos son 100% reales.</p>"
+            "respuesta": "<p>Toffee es el gato jefe de la tienda: un personaje creado con inteligencia artificial que presenta los productos y da su opinión de personaje (no es una reseña de clientes). Él es de mentiras, pero los productos, los pagos y los envíos son 100% reales.</p>"
           }
         },
         "dona": {

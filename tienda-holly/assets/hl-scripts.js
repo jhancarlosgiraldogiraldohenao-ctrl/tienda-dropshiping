@@ -97,7 +97,7 @@
         });
       });
       if (q) q.addEventListener('change', sync);
-      var precio = c.querySelector('[data-hl-precio]');
+      var precios = c.querySelectorAll('[data-hl-precio]');
       var antes = c.querySelector('[data-hl-antes]');
       var pct = c.querySelector('[data-hl-pct]');
       var sPrecio = document.querySelector('[data-hl-sticky-precio]');
@@ -109,7 +109,7 @@
           if (!r.checked) return;
           c.querySelectorAll('.hl-oferta').forEach(function (l) { l.classList.toggle('is-activa', l.contains(r)); });
           if (id) id.value = r.value;
-          if (precio) precio.textContent = r.dataset.price;
+          precios.forEach(function (el) { el.textContent = r.dataset.price; });
           if (sPrecio) sPrecio.textContent = r.dataset.price;
           if (antes) { antes.textContent = r.dataset.compare; antes.hidden = !r.dataset.compare; }
           if (pct) { pct.textContent = r.dataset.pct; pct.hidden = !r.dataset.pct; }
@@ -188,7 +188,43 @@
     });
   }
 
-  function initTodo(root) { initComparador(root); initReveals(root); initZonas(root); initGaleria(root); initCompra(root); initHeroPack(root); }
+  // Fechas de entrega: una sola fuente (Configuración del tema → Toffee – Fechas y garantía, ver snippets/tf-fechas-datos).
+  var MESES = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+  var MES_CORTO = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+  function tfDatos() {
+    if (window.__tfFechas !== undefined) return window.__tfFechas;
+    var el = document.getElementById('tf-fechas');
+    try { window.__tfFechas = el ? JSON.parse(el.textContent) : null; } catch (e) { window.__tfFechas = null; }
+    return window.__tfFechas;
+  }
+  function tfIso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }
+  function tfHabiles(d, n, festivos) {
+    d = new Date(d);
+    while (n > 0) { d.setDate(d.getDate() + 1); var w = d.getDay(); if (w !== 0 && w !== 6 && festivos.indexOf(tfIso(d)) === -1) n--; }
+    return d;
+  }
+  function initFechas(root) {
+    var datos = tfDatos(); if (!datos) return;
+    var hoy = tfIso(new Date());
+    var vigentes = (datos.cortes || []).filter(function (c) { return c.f >= hoy; });
+    var fecha = function (iso) { var p = iso.split('-'); return (+p[2]) + ' de ' + MESES[+p[1] - 1]; };
+    (root || document).querySelectorAll('[data-tf-corte]').forEach(function (el) {
+      var c = vigentes[0];
+      el.innerHTML = c ? (c.e ? c.e + ' ' : '') + 'Para ' + c.n + ', pide hasta el <b>' + fecha(c.f) + '</b>' : datos.vencido;
+    });
+    (root || document).querySelectorAll('[data-tf-cortes]').forEach(function (ul) {
+      var alguna = false;
+      ul.querySelectorAll('[data-corte]').forEach(function (li) { var ok = li.getAttribute('data-corte') >= hoy; li.hidden = !ok; if (ok) alguna = true; });
+      var v = ul.querySelector('[data-corte-vencido]'); if (v) v.hidden = alguna;
+    });
+    (root || document).querySelectorAll('[data-tf-entrega]').forEach(function (e) {
+      var fest = datos.festivos || [];
+      var a = tfHabiles(new Date(), datos.min, fest), b = tfHabiles(new Date(), datos.max, fest);
+      e.innerHTML = '📦 Envío gratis · recíbelo entre el <b>' + a.getDate() + ' de ' + MES_CORTO[a.getMonth()] + '</b> y el <b>' + b.getDate() + ' de ' + MES_CORTO[b.getMonth()] + '</b>';
+    });
+  }
+
+  function initTodo(root) { initComparador(root); initReveals(root); initZonas(root); initGaleria(root); initCompra(root); initHeroPack(root); initFechas(root); }
   document.addEventListener('DOMContentLoaded', function () { initTodo(document); });
   document.addEventListener('shopify:section:load', function (e) { initTodo(e.target); });
 })();

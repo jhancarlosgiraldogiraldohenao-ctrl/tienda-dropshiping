@@ -1,0 +1,42 @@
+{%- comment -%}
+  Fecha límite de entrega. Única fuente: Configuración del tema → Toffee – Fechas y garantía.
+  render 'tf-corte'              → la próxima fecha: «🕯️ Para las velitas (7 de diciembre), pide hasta el 26 de octubre»
+  render 'tf-corte', lista: true → todas las fechas que siguen vigentes
+  El servidor la calcula con la fecha de hoy; hl-scripts.js la recalcula en el navegador por si la página quedó en caché.
+{%- endcomment -%}
+{%- liquid
+  assign meses = 'enero,febrero,marzo,abril,mayo,junio,julio,agosto,septiembre,octubre,noviembre,diciembre' | split: ','
+  assign hoy = 'now' | date: '%Y%m%d' | plus: 0
+  assign lineas = settings.tf_cortes | newline_to_br | split: '<br />'
+  assign hay = false
+-%}
+{%- if lista -%}
+  <span class="tf-cortes" data-tf-cortes>
+    {%- for l in lineas -%}
+      {%- assign p = l | strip | split: '|' -%}
+      {%- if p.size < 2 -%}{%- continue -%}{%- endif -%}
+      {%- assign fecha = p[0] | strip -%}
+      {%- assign num = fecha | remove: '-' | plus: 0 -%}
+      {%- assign partes = fecha | split: '-' -%}
+      {%- assign m = partes[1] | plus: 0 | minus: 1 -%}
+      <span class="tf-cortes__fila" data-corte="{{ fecha }}"{% if num < hoy %} hidden{% endif %}><span>{{ p[2] | strip }} Para {{ p[1] | strip }}</span><b>Pide hasta el {{ partes[2] | plus: 0 }} de {{ meses[m] }}</b></span>
+      {%- if num >= hoy -%}{%- assign hay = true -%}{%- endif -%}
+    {%- endfor -%}
+    <span class="tf-cortes__fila" data-corte-vencido{% if hay %} hidden{% endif %}><span>{{ settings.tf_corte_vencido }}</span></span>
+  </span>
+{%- else -%}
+  {%- capture frase -%}{{ settings.tf_corte_vencido }}{%- endcapture -%}
+  {%- for l in lineas -%}
+    {%- assign p = l | strip | split: '|' -%}
+    {%- if p.size < 2 -%}{%- continue -%}{%- endif -%}
+    {%- assign fecha = p[0] | strip -%}
+    {%- assign num = fecha | remove: '-' | plus: 0 -%}
+    {%- if num >= hoy -%}
+      {%- assign partes = fecha | split: '-' -%}
+      {%- assign m = partes[1] | plus: 0 | minus: 1 -%}
+      {%- capture frase -%}{{ p[2] | strip }} Para {{ p[1] | strip }}, pide hasta el <b>{{ partes[2] | plus: 0 }} de {{ meses[m] }}</b>{%- endcapture -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+  <span class="tf-corte" data-tf-corte>{{ frase }}</span>
+{%- endif -%}

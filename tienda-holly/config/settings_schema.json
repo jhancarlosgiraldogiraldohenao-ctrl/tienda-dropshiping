@@ -1468,6 +1468,68 @@
     ]
   },
   {
+    "name": "Toffee – Fechas y garantía",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Única fuente de las fechas de entrega: la barra de anuncios, la ficha, las preguntas y el carrito leen de aquí. Si una fecha ya no alcanza, se quita sola el día siguiente."
+      },
+      {
+        "type": "range",
+        "id": "tf_dias_min",
+        "label": "Entrega mínima (días hábiles)",
+        "min": 1,
+        "max": 30,
+        "step": 1,
+        "default": 10
+      },
+      {
+        "type": "range",
+        "id": "tf_dias_max",
+        "label": "Entrega máxima (días hábiles)",
+        "min": 5,
+        "max": 40,
+        "step": 1,
+        "default": 25
+      },
+      {
+        "type": "textarea",
+        "id": "tf_cortes",
+        "label": "Fechas límite (AAAA-MM-DD|para qué noche|emoji, una por línea)",
+        "info": "Último día para pedir. Calculadas con el peor caso (entrega máxima) y festivos de Colombia, con 3 días hábiles de margen.",
+        "default": "2026-10-26|las velitas (7 dic)|🕯️\n2026-11-13|Navidad|🎄\n2026-11-20|Año Nuevo|🎆"
+      },
+      {
+        "type": "text",
+        "id": "tf_corte_vencido",
+        "label": "Texto cuando ya no queda ninguna fecha",
+        "default": "📦 Envío gratis · llega en 10 a 25 días hábiles"
+      },
+      {
+        "type": "textarea",
+        "id": "tf_festivos",
+        "label": "Festivos que no cuentan como día hábil (AAAA-MM-DD, uno por línea)",
+        "default": "2026-11-02\n2026-11-16\n2026-12-08\n2026-12-25\n2027-01-01\n2027-01-11"
+      },
+      {
+        "type": "header",
+        "content": "Garantía"
+      },
+      {
+        "type": "text",
+        "id": "tf_garantia_nombre",
+        "label": "Nombre de la garantía",
+        "default": "Palabra de Toffee"
+      },
+      {
+        "type": "text",
+        "id": "tf_garantia_texto",
+        "label": "Texto de la garantía",
+        "default": "Si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero."
+      }
+    ]
+  },
+  {
     "name": "Toffee – Avisos",
     "settings": [
       {

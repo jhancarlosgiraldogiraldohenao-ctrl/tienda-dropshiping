@@ -20,27 +20,29 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\nPide antes del 13 de noviembre para recibirlo antes de Navidad.\nPagas al hacer tu pedido con tarjeta. Si no llega o llega dañado, te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
         "titulo_corto": "Disfraz Árbol de Navidad para gatos y perros pequeños",
         "subtitulo": "Capa con capucha · Verde o rojo · 1,5 a 7,5 kg",
-        "intro": "Tu mascota convertida en el arbolito de Navidad más tierno de la casa. Capucha con estrella dorada, pompones de colores y volantes. Toffee lo usa (bajo protesta) y salió en todas las fotos.",
+        "intro": "Tu mascota convertida en el arbolito de Navidad más tierno de la casa. Capucha con estrella dorada, pompones de colores y volantes. En las historias de Toffee, él lo usa bajo protesta.",
         "puntos": "Capucha con estrella dorada y pompones\nTela suave y calientita\nSe amarra con un cordón: fácil de poner y quitar\nPara gatos y perritos de 1,5 a 7,5 kg\nPerfecto para fotos y videos navideños",
         "guia_tallas": "📏 S: 1,5–2,5 kg · M: 2,5–5 kg · L: 5–7,5 kg",
         "sticky_texto": "Disfraz Árbol de Navidad",
         "compra_rapida": true,
         "frase_toffee": "Me lo puse bajo protesta. Las fotos salieron demasiado bonitas.",
-        "veredicto": "Ternura|★★★★★\nComodidad|★★★★☆\nFotos navideñas|✓\n¿Lo tiré de la mesa?|No (lo pensé)",
+        "veredicto": "Ternura|Aprobada 💤\nFotos navideñas|✓\n¿Lo tiré de la mesa?|No (lo pensé)",
         "nota_toffee": "Me veo ridículo y adorable al mismo tiempo. Eso vende. Aprobado.",
         "tallas_titulo": "Guía de tallas",
         "tallas_nota": "Elige la talla por el peso de tu mascota. Si queda entre dos tallas, elige la más grande.",
         "tabla_tallas": "Talla|Peso de la mascota|Ejemplos\nS|1,5 – 2,5 kg|Gatito, chihuahua\nM|2,5 – 5 kg|Gato adulto, yorkie\nL|5 – 7,5 kg|Gato grande (Toffee), pug",
         "aviso": "Supervisa a tu mascota mientras lo usa y quítaselo para dormir. No lo uses cerca de velas o luces calientes.",
-        "fecha_navidad": "2026-11-13",
         "marrano_linea": true,
-        "marrano_url": "/pages/marrano"
+        "marrano_url": "/pages/marrano",
+        "frase_firma": "— Toffee, personaje de IA",
+        "veredicto_titulo": "La opinión de Toffee",
+        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas."
       },
       "blocks": {
         "b0": {
@@ -63,8 +65,8 @@
           "type": "confianza",
           "settings": {
             "icono": "escudo",
-            "titulo": "Garantía",
-            "texto": "Si no te llega, te devolvemos tu dinero"
+            "titulo": "Palabra de Toffee",
+            "texto": "Si no llega o llega dañado, otro o tu dinero"
           }
         }
       },
@@ -200,14 +202,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad. Para recibirlo antes de Navidad, pide antes del 13 de noviembre.</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad.</p><p>[fecha-limite]</p>"
           }
         },
         "b7": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Y si no llega o llega dañado?",
-            "respuesta": "<p>Te devolvemos tu dinero. Escríbenos desde la página de contacto con tu número de pedido.</p>"
+            "respuesta": "<p>Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Escríbenos desde <a href=\"/pages/ayuda\">Ayuda</a> con tu número de pedido y una foto.</p>"
           }
         }
       },
@@ -235,7 +237,7 @@
           "settings": {
             "producto": "cama-trineo-navidad-mascotas",
             "titulo": "Cama Trineo Navideña",
-            "frase": "El trineo de Papá Noel convertido en cama. Toffee durmió 14 horas seguidas en él.",
+            "frase": "El trineo de Papá Noel convertido en cama. La oficina favorita de Toffee.",
             "etiqueta": "Favorito de Toffee"
           }
         },
@@ -259,9 +261,9 @@
         }
       },
       "block_order": [
+        "p2",
         "p0",
-        "p1",
-        "p2"
+        "p1"
       ]
     }
   },

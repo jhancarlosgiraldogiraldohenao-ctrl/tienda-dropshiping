@@ -23,7 +23,10 @@
         {%- for block in section.blocks -%}
           <details {{ block.shopify_attributes }}{% if forloop.first and section.settings.abrir_primera %} open{% endif %}>
             <summary>{{ block.settings.pregunta }}<i aria-hidden="true"></i></summary>
-            <div>{{ block.settings.respuesta }}</div>
+            {%- assign resp = block.settings.respuesta -%}
+            {%- if resp contains '[fecha-limite]' -%}{%- capture corte -%}{% render 'tf-corte' %}{%- endcapture -%}{%- assign resp = resp | replace: '[fecha-limite]', corte -%}{%- endif -%}
+            {%- if resp contains '[fechas]' -%}{%- capture cortes -%}{% render 'tf-corte', lista: true %}{%- endcapture -%}{%- assign resp = resp | replace: '[fechas]', cortes -%}{%- endif -%}
+            <div>{{ resp }}</div>
           </details>
         {%- endfor -%}
       </div>
@@ -46,7 +49,7 @@
     { "type": "range", "id": "padding_bottom", "label": "Espacio inferior", "min": 0, "max": 160, "step": 8, "unit": "px", "default": 0 }
   ],
   "blocks": [
-    { "type": "pregunta", "name": "Pregunta", "settings": [ { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" }, { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>En efectivo, cuando recibes el pedido.</p>" } ] }
+    { "type": "pregunta", "name": "Pregunta", "settings": [ { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Cómo pago?" }, { "type": "richtext", "id": "respuesta", "label": "Respuesta", "info": "Escribe [fecha-limite] para la próxima fecha límite de entrega o [fechas] para todas.", "default": "<p>En efectivo, cuando recibes el pedido.</p>" } ] }
   ],
   "presets": [ { "name": "KF – Preguntas frecuentes", "blocks": [ { "type": "pregunta" } ] } ]
 }

@@ -118,6 +118,7 @@
                   {{ 'sections.cart.checkout' | t }}
                 </button>
               </div>
+              {% render 'tf-carrito-extra' %}
 
               {% render 'tf-aviso-impuestos', clase: 'tf-impuestos--carrito' %}
               {%- if additional_checkout_buttons -%}
