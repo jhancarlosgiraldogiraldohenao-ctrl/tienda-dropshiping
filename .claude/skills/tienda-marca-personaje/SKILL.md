@@ -43,7 +43,8 @@ esfuerzo cuesta. El impacto es cualitativo (alto, medio, bajo) y explicado: no p
 
 ### 3. Construir
 Página por página, con los patrones de abajo y de `references/patrones.md`. Escribe los textos con la voz del
-personaje (guía en `references/plantillas.md`) y deja el botón de compra siempre claro.
+personaje (guía en `references/plantillas.md`) y deja el botón de compra siempre claro. Para colores, letras y
+contrastes de cualquier página, banner o correo, sigue `references/colorimetria.md` (paleta oficial y reglas).
 
 ### 4. Verificar
 Antes de publicar, pasa la sección J del checklist: celular real, fechas y cifras iguales en todas las páginas,
