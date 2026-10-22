@@ -316,3 +316,8 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Pendiente Jay: menú «Tienda» → /collections/all (ya se puede: la cabecera nueva no lo oculta).
 - 22-oct · Prueba de pago (autorizada por Jay) desde la nube con dirección de Pereira: «dLocal Go Local Payments» → «Se produjo un error al procesar tu pago» (2 intentos, correos pruebas@…). Prueba con México bloqueada por verificación Cloudflare. No se puede concluir si falla para clientes reales (IP de servidor). Jay debe probar desde su celular; si falla igual → escribir a dLocal. Quedaron 3–4 pagos abandonados de prueba en el panel (Prueba Toffee), ignorarlos.
 - Checkout: la casilla «Enviarme novedades y ofertas» viene MARCADA por defecto → desmarcar en Configuración → Pantalla de pago → Opciones de marketing.
+
+## 22-oct · URGENTE: dLocal Go rechazó la cuenta (correo de Ezequiel del 20-oct, antes de la prueba)
+- dLocal Go: «luego de un análisis de tu sitio web hemos tomado la decisión de no brindarte nuestros servicios» (sección 11 de sus términos). Panel: «No pudimos validar tus datos… tu cuenta quedó bloqueada».
+- Consecuencia: la tienda NO puede cobrar (por eso falló «Local Payments» en la prueba). Las 2 opciones del checkout son de dLocal.
+- Plan propuesto a Jay: 1) Mercado Pago (ya se usó en la etapa Holly; Checkout Pro trae PSE, tarjetas, Efecty); 2) Bold (PSE, tarjetas, Bre-B); 3) apelar a dLocal por el chat. Quitar los métodos de dLocal del checkout cuando haya reemplazo. No mandar tráfico de videos hasta que se pueda cobrar.
