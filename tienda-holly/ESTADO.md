@@ -297,3 +297,10 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - assets: tf-carrito-vacio.jpg (carrito vacío), tf-404.jpg (404.json), tf-orejeras-usos.jpg (product.orejeras sección «usos»), tf-tiendita.jpg (collection.json cabecera). Originales en toffee/web/fotos-22oct/.
 - tf-bloque y tf-tienda: ajuste nuevo imagen_tema (+ _alt) para fotos guardadas en el tema.
 - Pendiente con acceso: subir O1 al producto y ponerla de foto 2.
+
+## 22-oct · SUBIDO como copia sin publicar
+- Tema «Toffee B - Temporada de pólvora (22-oct)» #189777641761 (unpublished). Vista previa: https://soytoffee.store/?preview_theme_id=189777641761 . En vivo sigue #189657645345 (v4). Publicar SOLO con «publica».
+- Antes de subir se bajó el tema en vivo y se comparó con la v4 del repositorio: solo diferencias de formato.
+- Revisado en la vista previa a 390 px: portada, 3 fichas, catálogo, filtro gatos, carrito vacío y 404 sin errores de Liquid, 1 H1 (salvo /cart, de Dawn). Arreglado al revisar: barra de anuncios con un solo mensaje mostraba «[fecha-limite]» (otro camino del código).
+- «También aprobado» de las 3 fichas → tf-tienda (excluye el producto actual).
+- orejeras orden_fotos «3,8,7,1»: la foto 8 aún no existe; cuando Jay suba el collage O1 al producto quedará de foto 2 sola.

@@ -40,7 +40,9 @@
             >
           {%- endif -%}
           <p class="announcement-bar__message h5">
-            <span>{{ section.blocks.first.settings.text | escape }}</span>
+            {%- assign texto_anuncio = section.blocks.first.settings.text | escape -%}
+            {%- if texto_anuncio contains '[fecha-limite]' -%}{%- capture corte -%}{% render 'tf-corte' %}{%- endcapture -%}{%- assign texto_anuncio = texto_anuncio | replace: '[fecha-limite]', corte -%}{%- endif -%}
+            <span>{{ texto_anuncio }}</span>
             {%- if section.blocks.first.settings.link != blank -%}
               {{- 'icon-arrow.svg' | inline_asset_content -}}
             {%- endif -%}
