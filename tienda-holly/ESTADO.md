@@ -309,3 +309,8 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - hl-styles.css «CAPA C»: cursivas sobre claro → caramelo tostado #9C5A1B; sobre marino → caramelo #E0954F. Nota de Toffee: borde tostado (dorado sobre marino). Foco de teclado tostado/dorado. Filtros, barra del test e íconos de la cinta sin caramelo. Marrano sin rosa (línea crema pelaje, barra verde).
 - Medido en la vista previa (390 y 1440 px, 10 páginas): 0 textos caramelo sobre fondo claro; los avisos restantes son secciones con degradado marino (correctas).
 - Guía guardada en toffee/COLORIMETRIA.md (+ PDF).
+
+## 22-oct · PUBLICADO por orden de Jay («publícala»)
+- En vivo: #189777641761 «Toffee B - Temporada de pólvora (22-oct)». Respaldo: #189657645345 «Respaldo - Toffee A v4 (18-oct)» (volver: shopify theme publish --theme 189657645345). Verificado en vivo sin vista previa: portada, ficha orejeras, catálogo y carrito con el tema nuevo, sin errores, barra «Para las velitas (7 dic), pide hasta el 26 de octubre».
+- Pagos vistos en el checkout en vivo (22-oct): «Tarjeta de crédito» (dLocal Go, en la misma página, pide país y documento) y «dLocal Go Local Payments» (redirige a dLocal). No se probó qué métodos muestra Local Payments para Colombia (habría que crear un intento de pago): PSE posible, SIN CONFIRMAR. Alternativa con PSE confirmado en su ficha: app «Bold» (apps.shopify.com/bold-1: tarjetas, PSE, Bre-B, billeteras).
+- Pendiente Jay: menú «Tienda» → /collections/all (ya se puede: la cabecera nueva no lo oculta).
