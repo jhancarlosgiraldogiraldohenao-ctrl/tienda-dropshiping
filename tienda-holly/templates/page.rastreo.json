@@ -15,7 +15,8 @@
         "btn_url": "/pages/ayuda#contacto",
         "btn_principal": true,
         "btn2_texto": "Volver a la tienda",
-        "btn2_url": "/"
+        "btn2_url": "/",
+        "es_h1": true
       },
       "blocks": {
         "p0": {

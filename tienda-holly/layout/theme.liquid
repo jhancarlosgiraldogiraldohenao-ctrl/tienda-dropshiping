@@ -48,6 +48,8 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% elsif template.name == 'index' %}
       <meta name="description" content="Tienda para gatos y perros donde todo lo aprueba Toffee: orejeras anti ruido, disfraces y camas de Navidad. Envío gratis con rastreo a Colombia, México, Chile y Perú.">
+    {% else %}
+      <meta name="description" content="{{ page_title | escape }} · Soy Toffee, la tienda para gatos y perros donde todo lo aprueba Toffee. Envío gratis con rastreo a Colombia, México, Chile y Perú.">
     {% endif %}
 
     {% render 'meta-tags' %}

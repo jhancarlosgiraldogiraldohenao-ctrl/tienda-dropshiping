@@ -305,7 +305,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con <strong>PSE</strong> desde tu banco, con transferencia <strong>Bancolombia</strong>, en efectivo en <strong>Efecty</strong> o con tarjeta de crédito, débito o prepago (Visa, Mastercard, American Express o Diners), a través de Mercado Pago. Es 100 % seguro, puedes pagar como invitado sin crear cuenta y en cuotas si tu banco lo permite. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>En Colombia: con <strong>PSE</strong>, <strong>Nequi</strong>, <strong>Bre-B</strong>, transferencia <strong>Bancolombia</strong>, en efectivo en <strong>Efecty</strong> o con tarjeta de crédito, débito o prepago (Visa, Mastercard, American Express o Diners). Desde otros países: con tu tarjeta de crédito internacional. Los pagos los procesan Mercado Pago y Bold: es 100 % seguro, no tienes que crear cuenta y puedes pagar en cuotas si tu banco lo permite.</p>"
           }
         }
       },
