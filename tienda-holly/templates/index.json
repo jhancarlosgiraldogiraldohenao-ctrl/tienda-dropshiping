@@ -40,7 +40,7 @@
         "b1": {
           "type": "item",
           "settings": {
-            "texto": "Pago seguro con tarjeta"
+            "texto": "Pago seguro con tarjeta o PSE"
           }
         },
         "b2": {
@@ -105,7 +105,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard, American Express o Diners) a través de Mercado Pago, 100 % seguro. Puedes pagarlo en cuotas si tu banco lo permite. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con <strong>PSE</strong> desde tu banco, con el botón <strong>Bancolombia</strong> o con tarjeta de crédito o débito (Visa, Mastercard, American Express o Diners), a través de Mercado Pago. Es 100 % seguro, puedes pagar como invitado sin crear cuenta y en cuotas si tu banco lo permite. Pagas al hacer tu pedido.</p>"
           }
         },
         "medidas": {

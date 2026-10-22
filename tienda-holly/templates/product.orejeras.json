@@ -14,13 +14,13 @@
         "mostrar_miniaturas": true,
         "comprar_texto": "Comprar ahora",
         "comprar_corto": "Comprar",
-        "comprar_nota": "Pago 100 % seguro con tarjeta",
+        "comprar_nota": "Pago 100 % seguro con tarjeta o PSE",
         "carrito_texto": "Agregar al carrito",
         "agotado_texto": "Se acabó · Galleta está empacando más",
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta o PSE. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
@@ -59,7 +59,7 @@
           "settings": {
             "icono": "candado",
             "titulo": "Pago seguro",
-            "texto": "Con tarjeta"
+            "texto": "Tarjeta o PSE"
           }
         },
         "b2": {
@@ -305,7 +305,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard, American Express o Diners) a través de Mercado Pago, 100 % seguro. Puedes pagarlo en cuotas si tu banco lo permite. Pagas al hacer tu pedido.</p>"
+            "respuesta": "<p>Con <strong>PSE</strong> desde tu banco, con el botón <strong>Bancolombia</strong> o con tarjeta de crédito o débito (Visa, Mastercard, American Express o Diners), a través de Mercado Pago. Es 100 % seguro, puedes pagar como invitado sin crear cuenta y en cuotas si tu banco lo permite. Pagas al hacer tu pedido.</p>"
           }
         }
       },
@@ -410,7 +410,7 @@
         "p3": {
           "type": "punto",
           "settings": {
-            "texto": "Pago 100 % seguro con tarjeta"
+            "texto": "Pago 100 % seguro con tarjeta o PSE"
           }
         },
         "p4": {
