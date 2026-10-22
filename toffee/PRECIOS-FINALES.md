@@ -31,3 +31,4 @@ Ganancia = orgánica (sin pauta). Con pauta (~USD 10 = 32.000 COP por venta) la 
 - 16-oct: Perú sube a 99,90 PEN en disfraz y orejeras (precio fijo por país en Shopify Markets). Combos eliminados por ahora.
 - 16-oct (v5): MISMO precio en todos los países. Disfraz y orejeras = 81.900 COP (≈ Viking Paws 82.927 menos 1.000). Trineo sin cambios.
 - 16-oct (v6 FINAL): disfraz y orejeras = 79.900 COP (debajo de la barrera de 80 mil). Mismo precio en todos los países.
+- 22-oct (v7): pasarela cambia de dLocal (7 %) a **Bold**. Pagos en línea: tarjetas nacionales, PSE, Nequi y Botón Bancolombia 3,59 % + $900; tarjetas internacionales 4,59 % + $900; QR Online (Bre-B) 2,89 %. Las tarjetas tienen además retenciones; PSE, Nequi, Bancolombia y QR no. Ganancia neta estimada en Colombia (con pago nacional): orejeras y disfraz ≈ 39.800 COP (50 %), trineo ≈ 45.800 COP (19 %). Con tarjeta internacional: orejeras ≈ 39.000, trineo ≈ 43.400 (antes de retenciones).
