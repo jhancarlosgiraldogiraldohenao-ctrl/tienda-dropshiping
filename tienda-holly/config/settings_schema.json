@@ -1530,6 +1530,27 @@
     ]
   },
   {
+    "name": "Toffee – Fichas de producto",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "Cómo sale cada producto en las tarjetas de la tienda (portada y catálogo). Un producto por línea: handle|nombre corto|etiqueta|frase de Toffee|opinión de Toffee. Un producto nuevo sin línea sale igual, con su nombre y su foto."
+      },
+      {
+        "type": "textarea",
+        "id": "tf_fichas",
+        "label": "Fichas (handle|nombre corto|etiqueta|frase|opinión)",
+        "default": "orejeras-anti-ruido-para-perros|Orejeras anti ruido|Le teme a la pólvora|Galleta duerme con estas en Año Nuevo. Aprobadas.|Calma con pólvora: aprobada 💤\ndisfraz-arbol-navidad-perros|Disfraz Árbol de Navidad|Foto navideña|Me lo puse bajo protesta. Las fotos salieron demasiado bonitas.|Ternura: aprobada 💤\ncama-trineo-navidad-mascotas|Cama Trineo Navideña|Favorito de Toffee|Mi oficina oficial. Paredes altas para apoyar la cara.|Siesta: aprobada 💤"
+      },
+      {
+        "type": "text",
+        "id": "tf_rotulo_opinion",
+        "label": "Aviso bajo la opinión de Toffee en las tarjetas",
+        "default": "Opinión de personaje IA, no de clientes"
+      }
+    ]
+  },
+  {
     "name": "Toffee – Avisos",
     "settings": [
       {

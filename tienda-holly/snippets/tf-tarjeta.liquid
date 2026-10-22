@@ -1,0 +1,45 @@
+{%- comment -%}
+  Tarjeta de producto de la tienda de Toffee. Uso: render 'tf-tarjeta', p: product, i: forloop.index
+  Nombre corto, etiqueta, frase y opinión salen de Configuración del tema → Toffee – Fichas de producto.
+{%- endcomment -%}
+{%- liquid
+  assign v = p.selected_or_first_available_variant
+  assign nombre = p.title
+  assign etiqueta = ''
+  assign frase = ''
+  assign opinion = ''
+  assign lineas = settings.tf_fichas | newline_to_br | split: '<br />'
+  for l in lineas
+    assign c = l | strip | split: '|'
+    assign h = c[0] | strip
+    if h == p.handle
+      if c[1] != blank
+        assign nombre = c[1] | strip
+      endif
+      assign etiqueta = c[2] | strip
+      assign frase = c[3] | strip
+      assign opinion = c[4] | strip
+      break
+    endif
+  endfor
+  assign foto = p.featured_media
+-%}
+<a class="hl-tarjeta tf-tarjeta hl-reveal" style="--hl-i:{{ i | default: 1 }}" href="{{ p.url }}">
+  <div class="hl-tarjeta__foto">
+    {%- if foto -%}
+      <img src="{{ foto | image_url: width: 700 }}" srcset="{{ foto | image_url: width: 400 }} 400w, {{ foto | image_url: width: 700 }} 700w" sizes="(min-width: 990px) 30vw, (min-width: 750px) 45vw, 50vw" alt="{{ foto.alt | default: p.title | remove: ' (escena IA)' | escape }}" loading="lazy" width="700" height="875">
+      {%- if foto.alt contains '(escena IA)' -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
+    {%- endif -%}
+    {%- if etiqueta != blank -%}<span class="hl-tarjeta__badge">{{ etiqueta }}</span>{%- endif -%}
+    {%- unless p.available -%}<span class="hl-tarjeta__badge tf-tarjeta__agotado">Galleta está empacando más</span>{%- endunless -%}
+  </div>
+  <div class="hl-tarjeta__cuerpo">
+    <h3>{{ nombre }}</h3>
+    {%- if frase != blank -%}<p class="tf-tarjeta__frase">“{{ frase }}” <span>— Toffee</span></p>{%- endif -%}
+    {%- if opinion != blank -%}<p class="tf-tarjeta__opinion" title="{{ settings.tf_rotulo_opinion | escape }}">{{ opinion }}<small>{{ settings.tf_rotulo_opinion }}</small></p>{%- endif -%}
+    <div class="hl-tarjeta__precio">
+      <strong>{{ v.price | money_without_trailing_zeros }}</strong><small class="tf-moneda">{{ cart.currency.iso_code }}</small>
+      {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+    </div>
+  </div>
+</a>

@@ -10,15 +10,15 @@
   #shopify-section-{{ section.id }} .tf-portada__titulo { font-size: clamp({{ section.settings.titulo_size | times: 0.5 | round }}px, 4.6vw, {{ section.settings.titulo_size }}px); }
 {% endstyle %}
 
-<section class="hl-section tf-portada tf-oscuro" aria-label="{{ section.settings.eyebrow | escape }}">
+<section class="hl-section tf-portada tf-oscuro" id="{{ section.settings.ancla | default: 'temporada' }}" aria-label="{{ section.settings.eyebrow | escape }}">
   <div class="hl-container tf-portada__grid">
     <div class="tf-portada__foto">
       {%- if section.settings.imagen != blank -%}
         <img src="{{ section.settings.imagen | image_url: width: 900 }}"
           srcset="{{ section.settings.imagen | image_url: width: 500 }} 500w, {{ section.settings.imagen | image_url: width: 700 }} 700w, {{ section.settings.imagen | image_url: width: 900 }} 900w, {{ section.settings.imagen | image_url: width: 1200 }} 1200w"
-          sizes="(min-width: 990px) 46vw, 100vw" alt="{{ section.settings.imagen.alt | escape }}" width="1024" height="1024" fetchpriority="high">
+          sizes="(min-width: 990px) 46vw, 100vw" alt="{{ section.settings.imagen.alt | escape }}" width="1024" height="1024"{% if section.settings.es_h1 %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>
       {%- elsif p.featured_media -%}
-        <img src="{{ p.featured_media | image_url: width: 900 }}" alt="{{ p.title | escape }}" width="900" height="900" fetchpriority="high">
+        <img src="{{ p.featured_media | image_url: width: 900 }}" alt="{{ p.title | escape }}" width="900" height="900"{% if section.settings.es_h1 %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>
       {%- endif -%}
       {%- if section.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
       {%- if section.settings.sello != blank -%}{% render 'tf-sello', texto: section.settings.sello, clase: 'tf-portada__sello' %}{%- endif -%}
@@ -26,7 +26,13 @@
 
     <div class="tf-portada__texto">
       {%- if section.settings.eyebrow != blank -%}<span class="tf-portada__kicker">{{ section.settings.eyebrow }}</span>{%- endif -%}
-      <h1 class="tf-portada__titulo">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h1>
+      {%- liquid
+        assign htag = 'h2'
+        if section.settings.es_h1
+          assign htag = 'h1'
+        endif
+      -%}
+      <{{ htag }} class="tf-portada__titulo">{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>
       {%- if section.settings.sub != blank -%}<p class="tf-portada__sub">{{ section.settings.sub }}</p>{%- endif -%}
       {%- if p != blank and section.settings.btn_texto != blank -%}
         <a class="hl-btn hl-btn--curcuma tf-portada__btn" href="{{ p.url }}">
@@ -49,7 +55,9 @@
   "name": "Toffee – Portada de temporada",
   "tag": "section",
   "settings": [
-    { "type": "paragraph", "content": "Primer pantallazo: personaje + producto en uso + problema de la temporada + un solo botón. Cambia la temporada aquí (y su fecha en Configuración del tema → Toffee – Fechas y garantía)." },
+    { "type": "paragraph", "content": "Temporada: personaje + producto en uso + problema de la temporada + un solo botón. Cambia la temporada aquí (y su fecha en Configuración del tema → Toffee – Fechas y garantía)." },
+    { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "info": "Actívalo solo si esta sección es la primera de la página.", "default": false },
+    { "type": "text", "id": "ancla", "label": "Ancla", "default": "temporada" },
     { "type": "product", "id": "producto", "label": "Producto de la temporada" },
     { "type": "image_picker", "id": "imagen", "label": "Foto del producto en uso (cuadrada)" },
     { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },

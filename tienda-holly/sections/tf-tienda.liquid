@@ -1,0 +1,88 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%}
+  La tiendita de Toffee: filtros por etiqueta (gatos, perros, temporada…) + cuadrícula de productos.
+  En la portada muestra los productos de la colección elegida (o todos); en una página de colección muestra esa
+  colección con paginación. Crece sola cuando entran productos nuevos.
+{%- endcomment -%}
+{%- liquid
+  assign en_coleccion = false
+  if template.name == 'collection' and collection
+    assign en_coleccion = true
+    assign fuente = collection
+  elsif section.settings.coleccion != blank
+    assign fuente = section.settings.coleccion
+  else
+    assign fuente = collections.all
+  endif
+  assign base = fuente.url | default: '/collections/all'
+  assign filtros = section.settings.filtros | newline_to_br | split: '<br />'
+-%}
+
+<section class="hl-section tf-tienda" id="{{ section.settings.ancla | default: 'tienda' }}">
+  <div class="hl-container">
+    <div class="hl-cabecera tf-tienda__cabecera">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      {%- liquid
+        assign htag = 'h2'
+        if section.settings.es_h1
+          assign htag = 'h1'
+        endif
+      -%}
+      {%- if section.settings.titulo != blank -%}<{{ htag }}>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</{{ htag }}>{%- endif -%}
+      {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto }}</p>{%- endif -%}
+    </div>
+
+    {%- if section.settings.filtros != blank -%}
+      <nav class="tf-filtros" aria-label="Filtrar la tienda">
+        <a class="tf-filtro{% if current_tags == blank and en_coleccion %} is-activo{% endif %}" href="{{ base }}">Todo</a>
+        {%- for f in filtros -%}
+          {%- assign par = f | strip | split: '|' -%}
+          {%- if par[0] == blank -%}{%- continue -%}{%- endif -%}
+          {%- assign tag = par[0] | strip -%}
+          {%- assign activo = false -%}
+          {%- for t in current_tags -%}{%- if t == tag -%}{%- assign activo = true -%}{%- endif -%}{%- endfor -%}
+          <a class="tf-filtro{% if activo %} is-activo{% endif %}" href="{{ base }}/{{ tag | handleize }}">{{ par[1] | default: tag | strip }}</a>
+        {%- endfor -%}
+      </nav>
+    {%- endif -%}
+
+    {%- if en_coleccion -%}
+      {%- paginate collection.products by 24 -%}
+        <div class="tf-tienda__grid">
+          {%- for p in collection.products -%}{% render 'tf-tarjeta', p: p, i: forloop.index %}{%- endfor -%}
+        </div>
+        {%- if collection.products.size == 0 -%}
+          <p class="tf-tienda__vacio">Aquí no hay nada todavía. Estoy probando cosas nuevas (y tirando otras de la mesa). 😾 <a href="{{ base }}">Ver toda la tienda</a></p>
+        {%- endif -%}
+        {%- if paginate.pages > 1 -%}{{ 'component-pagination.css' | asset_url | stylesheet_tag }}{% render 'pagination', paginate: paginate %}{%- endif -%}
+      {%- endpaginate -%}
+    {%- else -%}
+      <div class="tf-tienda__grid">
+        {%- for p in fuente.products limit: section.settings.limite -%}{% render 'tf-tarjeta', p: p, i: forloop.index %}{%- endfor -%}
+      </div>
+      {%- if section.settings.boton_texto != blank -%}
+        <div class="tf-tienda__pie"><a class="hl-btn hl-btn--curcuma" href="{{ base }}">{{ section.settings.boton_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a></div>
+      {%- endif -%}
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Tienda",
+  "tag": "div",
+  "settings": [
+    { "type": "paragraph", "content": "Nombre, etiqueta y opinión de cada tarjeta: Configuración del tema → Toffee – Fichas de producto." },
+    { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "La tiendita de Toffee" },
+    { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Todo lo que <em>aprobé</em></p>" },
+    { "type": "text", "id": "texto", "label": "Texto" },
+    { "type": "collection", "id": "coleccion", "label": "Colección (vacío = todos los productos)", "info": "En la página de una colección se usa esa colección." },
+    { "type": "range", "id": "limite", "label": "Productos en la portada", "min": 2, "max": 12, "step": 1, "default": 8 },
+    { "type": "textarea", "id": "filtros", "label": "Filtros (etiqueta|texto, uno por línea)", "default": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora" },
+    { "type": "text", "id": "boton_texto", "label": "Botón (solo en la portada)", "default": "Ver toda la tienda" },
+    { "type": "text", "id": "ancla", "label": "Ancla", "default": "tienda" }
+  ],
+  "presets": [{ "name": "Toffee – Tienda" }]
+}
+{% endschema %}

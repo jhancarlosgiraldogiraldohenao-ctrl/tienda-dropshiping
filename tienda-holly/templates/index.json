@@ -5,10 +5,10 @@
       "settings": {
         "imagen": "shopify://shop_images/A01-portada-horizontal.jpg",
         "imagen_movil": "shopify://shop_images/A02-portada-vertical.jpg",
-        "eyebrow": "Tienda para gatos y perros 🐾",
+        "eyebrow": "La tienda de Toffee 🐾",
         "titulo": "<p>Si no pasa mi prueba, <em>lo tiro de la mesa.</em></p>",
-        "sub": "Soy Toffee: gato, jefe y probador oficial. Todo lo que llega a mi tienda pasa primero por mis patitas.",
-        "btn1_texto": "Ver lo que aprobé",
+        "sub": "Soy Toffee: gato, jefe y dormilón profesional. En mi tienda solo entra lo que yo apruebo para gatos y perros.",
+        "btn1_texto": "Entrar a la tienda",
         "btn1_url": "#aprobado",
         "btn2_texto": "Conoce a Toffee",
         "btn2_url": "/pages/historia-de-toffee",
@@ -16,11 +16,13 @@
         "titulo_size": 76,
         "paises_texto": "Enviamos a",
         "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú",
-        "nota_ia": "Toffee es un personaje de IA · sus siestas son reales"
+        "nota_ia": "Toffee es un personaje de IA · sus siestas son reales",
+        "temporada_texto": "🎆 Temporada de pólvora: orejeras para tu perro",
+        "temporada_url": "/products/orejeras-anti-ruido-para-perros",
+        "temporada_imagen": "shopify://shop_images/F11-orejeras-galleta-polvora.jpg"
       },
       "blocks": {},
-      "block_order": [],
-      "disabled": true
+      "block_order": []
     },
     "cinta": {
       "type": "hl-cinta",
@@ -167,7 +169,8 @@
         "c0",
         "c1",
         "c2"
-      ]
+      ],
+      "disabled": true
     },
     "aprobado": {
       "type": "hl-catalogo",
@@ -219,7 +222,8 @@
         "p2",
         "p1",
         "p0"
-      ]
+      ],
+      "disabled": true
     },
     "marrano": {
       "type": "tf-marrano",
@@ -432,7 +436,9 @@
         "btn_precio": true,
         "frase": "Galleta duerme con estas en Año Nuevo. Yo las aprobé.",
         "frase_firma": "— Toffee, personaje de IA",
-        "titulo_size": 60
+        "titulo_size": 60,
+        "es_h1": false,
+        "ancla": "temporada"
       },
       "blocks": {},
       "block_order": []
@@ -452,23 +458,109 @@
         "ancla": "fechas"
       },
       "blocks": {},
+      "block_order": [],
+      "disabled": true
+    },
+    "categorias": {
+      "type": "tf-categorias",
+      "settings": {
+        "eyebrow": "Compra por mascota o por momento",
+        "titulo": "<p>¿Para quién <em>es?</em></p>",
+        "ancla": "categorias"
+      },
+      "blocks": {
+        "gatos": {
+          "type": "categoria",
+          "settings": {
+            "titulo": "Gatos",
+            "texto": "Como yo, pero menos guapos",
+            "url": "/collections/all/gatos",
+            "imagen": "shopify://shop_images/A03-toffee-plato.jpg",
+            "escena_ia": true
+          }
+        },
+        "perros": {
+          "type": "categoria",
+          "settings": {
+            "titulo": "Perros",
+            "texto": "Como Galleta",
+            "url": "/collections/all/perros",
+            "imagen": "shopify://shop_images/galleta-oficial.jpg",
+            "escena_ia": true
+          }
+        },
+        "dormir": {
+          "type": "categoria",
+          "settings": {
+            "titulo": "Para dormir",
+            "texto": "Mi especialidad",
+            "url": "/collections/all/descanso",
+            "imagen": "shopify://shop_images/F04-trineo-rojo-toffee.jpg",
+            "escena_ia": true
+          }
+        },
+        "navidad": {
+          "type": "categoria",
+          "settings": {
+            "titulo": "Navidad",
+            "texto": "Fotos y regalos",
+            "url": "/collections/all/navidad",
+            "producto": "disfraz-arbol-navidad-perros",
+            "foto_n": 3,
+            "escena_ia": true
+          }
+        },
+        "polvora": {
+          "type": "categoria",
+          "settings": {
+            "titulo": "Pólvora",
+            "texto": "Noches tranquilas",
+            "url": "/collections/all/polvora",
+            "imagen": "shopify://shop_images/F11-orejeras-galleta-polvora.jpg",
+            "escena_ia": true
+          }
+        }
+      },
+      "block_order": [
+        "gatos",
+        "perros",
+        "dormir",
+        "navidad",
+        "polvora"
+      ]
+    },
+    "tienda": {
+      "type": "tf-tienda",
+      "settings": {
+        "es_h1": false,
+        "eyebrow": "La tiendita de Toffee",
+        "titulo": "<p>Todo lo que <em>aprobé</em></p>",
+        "texto": "Lo olí, le hice la siesta-prueba y no lo tiré de la mesa. Por eso está aquí.",
+        "limite": 8,
+        "filtros": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora",
+        "boton_texto": "Ver toda la tienda",
+        "ancla": "aprobado"
+      },
+      "blocks": {},
       "block_order": []
     }
   },
   "order": [
-    "portada",
+    "hero",
     "cinta",
-    "aprobado",
-    "fechas",
-    "test",
+    "categorias",
+    "tienda",
+    "portada",
     "equipo",
+    "test",
     "redes",
     "marrano",
     "faq",
     "club",
     "cierre",
-    "hero",
+    "aprobado",
+    "prueba",
     "temporada",
-    "prueba"
+    "fechas"
   ]
 }

@@ -1,0 +1,64 @@
+{{ 'hl-styles.css' | asset_url | stylesheet_tag }}
+{%- comment -%} Entrar por la mascota o por el problema (patrón Farmer's Dog / Petco). Cada tarjeta lleva a la tienda filtrada. {%- endcomment -%}
+<section class="hl-section tf-categorias" id="{{ section.settings.ancla | default: 'categorias' }}">
+  <div class="hl-container">
+    <div class="hl-cabecera tf-tienda__cabecera">
+      {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
+      {%- if section.settings.titulo != blank -%}<h2>{{ section.settings.titulo | remove: '<p>' | remove: '</p>' }}</h2>{%- endif -%}
+    </div>
+    <div class="tf-categorias__grid">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign foto = block.settings.imagen
+          assign es_ia = block.settings.escena_ia
+          if foto == blank and block.settings.producto != blank
+            assign n = block.settings.foto_n | minus: 1
+            assign foto = block.settings.producto.images[n] | default: block.settings.producto.featured_image
+            assign es_ia = false
+            if foto.alt contains '(escena IA)'
+              assign es_ia = true
+            endif
+          endif
+        -%}
+        <a class="tf-categoria hl-reveal" style="--hl-i:{{ forloop.index }}" href="{{ block.settings.url | default: '/collections/all' }}" {{ block.shopify_attributes }}>
+          <div class="tf-categoria__foto">
+            {%- if foto != blank -%}
+              <img src="{{ foto | image_url: width: 600 }}" srcset="{{ foto | image_url: width: 360 }} 360w, {{ foto | image_url: width: 600 }} 600w" sizes="(min-width: 990px) 20vw, 45vw" alt="" loading="lazy" width="600" height="600">
+            {%- endif -%}
+            {%- if es_ia -%}<span class="tf-chip-ia">IA</span>{%- endif -%}
+          </div>
+          <strong>{{ block.settings.titulo }}</strong>
+          {%- if block.settings.texto != blank -%}<span>{{ block.settings.texto }}</span>{%- endif -%}
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Toffee – Categorías",
+  "tag": "div",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "Compra por mascota" },
+    { "type": "richtext", "id": "titulo", "label": "Título", "default": "<p>¿Qué le pasa <em>a tu peludo?</em></p>" },
+    { "type": "text", "id": "ancla", "label": "Ancla", "default": "categorias" }
+  ],
+  "blocks": [
+    {
+      "type": "categoria",
+      "name": "Categoría",
+      "settings": [
+        { "type": "text", "id": "titulo", "label": "Título", "default": "Gatos" },
+        { "type": "text", "id": "texto", "label": "Texto corto" },
+        { "type": "url", "id": "url", "label": "Enlace", "info": "Tienda filtrada: /collections/all/gatos" },
+        { "type": "image_picker", "id": "imagen", "label": "Foto (cuadrada)" },
+        { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
+        { "type": "product", "id": "producto", "label": "O usar una foto de este producto" },
+        { "type": "range", "id": "foto_n", "label": "Número de la foto del producto", "min": 1, "max": 12, "step": 1, "default": 1 }
+      ]
+    }
+  ],
+  "presets": [{ "name": "Toffee – Categorías" }]
+}
+{% endschema %}

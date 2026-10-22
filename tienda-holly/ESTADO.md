@@ -280,3 +280,9 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Garantía «Palabra de Toffee» (ajuste global) en ficha, FAQ y carrito; carrito muestra $ al marrano (3 % del subtotal).
 - Redes: social_tiktok/instagram/youtube = @toffee.elgato (YouTube verificado; TikTok/Instagram sin confirmar).
 - PARA SUBIR: iniciar sesión con Shopify CLI, duplicar el tema en vivo, `theme push` a la copia (sin --allow-live), revisar vista previa a 390 px y publicar solo con «publica».
+
+## 22-oct · Diseño B ajustado: «La tienda de Toffee» (pedido de Jay: más tienda, Toffee protagonista) — SOLO EN GIT
+- Portada: tf-hero (Toffee) + enlace pequeño de temporada (temporada_texto/url/imagen) · cinta · tf-categorias (Gatos, Perros, Para dormir, Navidad, Pólvora → /collections/all/<etiqueta>) · tf-tienda (ancla «aprobado» para que el menú «Tienda» siga funcionando) · tf-portada como sección de temporada (H2) · equipo · test · redes · marrano · faq · club. Desactivadas: aprobado, fechas, temporada, prueba, cierre.
+- Catálogo /collections/all: tf-tienda (H1, filtros, paginación de 24) + equipo. Tarjetas: snippet tf-tarjeta; textos por producto en Configuración del tema → «Toffee – Fichas de producto» (tf_fichas: handle|nombre|etiqueta|frase|opinión).
+- Cabecera: ya no oculta /collections/all. Pendiente Jay: menú «Tienda» → /collections/all.
+- Fotos pedidas a Jay: T01 portada vertical, T02 portada horizontal, T03 carrito vacío, T04 404 (prompts en ENTREGA-B.md).

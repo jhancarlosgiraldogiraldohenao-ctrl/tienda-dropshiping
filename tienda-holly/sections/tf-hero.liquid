@@ -27,6 +27,13 @@
         {%- if section.settings.btn1_texto != blank -%}<a class="hl-btn hl-btn--curcuma" href="{{ section.settings.btn1_url | default: '#aprobado' }}"><span>{{ section.settings.btn1_texto }}</span> {% render 'hl-icono', nombre: 'flecha' %}</a>{%- endif -%}
         {%- if section.settings.btn2_texto != blank -%}<a class="hl-btn hl-btn--ghost" href="{{ section.settings.btn2_url | default: '#toffee' }}">{{ section.settings.btn2_texto }}</a>{%- endif -%}
       </div>
+      {%- if section.settings.temporada_texto != blank -%}
+        <a class="tf-hero__temporada" href="{{ section.settings.temporada_url | default: '#temporada' }}">
+          {%- if section.settings.temporada_imagen != blank -%}<img src="{{ section.settings.temporada_imagen | image_url: width: 120 }}" alt="" width="44" height="44" loading="eager">{%- endif -%}
+          <span><b>{{ section.settings.temporada_texto }}</b><small>{% render 'tf-corte' %}</small></span>
+          {% render 'hl-icono', nombre: 'flecha' %}
+        </a>
+      {%- endif -%}
       {%- if section.settings.paises != blank -%}
         <div class="tf-hero__paises">
           <span>{{ section.settings.paises_texto }}</span>
@@ -64,6 +71,10 @@
     { "type": "url", "id": "btn1_url", "label": "Enlace botón principal" },
     { "type": "text", "id": "btn2_texto", "label": "Botón secundario", "default": "Conoce a Toffee" },
     { "type": "url", "id": "btn2_url", "label": "Enlace botón secundario" },
+    { "type": "header", "content": "Temporada (enlace bajo los botones)" },
+    { "type": "text", "id": "temporada_texto", "label": "Texto de la temporada", "info": "Vacío = no se muestra. Debajo sale sola la próxima fecha límite." },
+    { "type": "url", "id": "temporada_url", "label": "Enlace de la temporada" },
+    { "type": "image_picker", "id": "temporada_imagen", "label": "Miniatura de la temporada" },
     { "type": "text", "id": "sello", "label": "Sello", "default": "Aprobado por Toffee" },
     { "type": "text", "id": "nota_ia", "label": "Aviso de IA", "default": "Toffee es un personaje de IA · sus siestas son reales" },
     { "type": "text", "id": "paises_texto", "label": "Texto antes de las banderas", "default": "Enviamos a" },

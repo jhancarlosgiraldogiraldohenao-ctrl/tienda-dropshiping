@@ -1,36 +1,63 @@
 {
   "sections": {
-    "banner": {
-      "type": "main-collection-banner",
+    "tienda": {
+      "type": "tf-tienda",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1"
-      }
+        "es_h1": true,
+        "eyebrow": "La tiendita de Toffee",
+        "titulo": "<p>Todo lo que <em>aprobé</em></p>",
+        "texto": "Aquí solo entra lo que pasó mi prueba. Lo demás, lo tiré de la mesa. 😾",
+        "limite": 8,
+        "filtros": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora",
+        "boton_texto": "",
+        "ancla": "tienda"
+      },
+      "blocks": {},
+      "block_order": []
     },
-    "product-grid": {
-      "type": "main-collection-product-grid",
+    "equipo": {
+      "type": "tf-equipo",
       "settings": {
-        "products_per_page": 16,
-        "columns_desktop": 4,
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "enable_filtering": true,
-        "filter_type": "horizontal",
-        "enable_sorting": true,
-        "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
+        "marino": true,
+        "eyebrow": "El equipo",
+        "titulo": "<p>Quién está <em>detrás</em></p>",
+        "btn_texto": "La historia de Toffee",
+        "btn_url": "/pages/historia-de-toffee",
+        "nota": "Toffee y Galleta son personajes creados con IA. Los productos, los envíos y las donaciones son 100 % reales.",
+        "ancla": "toffee"
+      },
+      "blocks": {
+        "toffee": {
+          "type": "miembro",
+          "settings": {
+            "imagen": "shopify://shop_images/toffee-jefe-cajas.jpg",
+            "escena_ia": true,
+            "sello": "Aprobado por Toffee",
+            "nombre": "Toffee",
+            "rol": "el jefe",
+            "texto": "Prueba todo lo que llega a la tienda. Si no le gusta, lo tira de la mesa. 😾"
+          }
+        },
+        "galleta": {
+          "type": "miembro",
+          "settings": {
+            "imagen": "shopify://shop_images/galleta-oficial.jpg",
+            "escena_ia": true,
+            "sello": "",
+            "nombre": "Galleta",
+            "rol": "Gerente de Seguridad",
+            "texto": "Criollo rescatado de la calle en una noche de pólvora. Por él existe el marrano."
+          }
+        }
+      },
+      "block_order": [
+        "toffee",
+        "galleta"
+      ]
     }
   },
   "order": [
-    "banner",
-    "product-grid"
+    "tienda",
+    "equipo"
   ]
 }

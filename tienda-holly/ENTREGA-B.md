@@ -1,4 +1,4 @@
-# Entrega · Diseño B «Temporada de pólvora» (21-oct-2026)
+# Entrega · Diseño B «La tienda de Toffee» (21 y 22-oct-2026)
 
 Hecho con la skill **tienda-marca-personaje**: lo que funciona en las mejores tiendas (Chewy, Farmer's Dog, BARK,
 Zesty Paws, Pusheen, Love Nala…) aplicado a Soy Toffee. Se parte del tema en vivo v4
@@ -10,7 +10,68 @@ Zesty Paws, Pusheen, Love Nala…) aplicado a Soy Toffee. Se parte del tema en v
 
 ---
 
-## 1. Qué cambió (simple)
+## 0. Cambio del 22-oct: Toffee primero, la tienda después, la temporada como invitada
+
+Por pedido de Jay, la portada deja de ser la página de un solo producto y pasa a ser **la tienda de Toffee**:
+
+1. **Portada con Toffee** (personaje principal): «Si no pasa mi prueba, lo tiro de la mesa», botón «Entrar a la
+   tienda» y debajo un enlace pequeño a la temporada (foto de Galleta + «Temporada de pólvora: orejeras para tu
+   perro» + la próxima fecha límite).
+2. **¿Para quién es?**: círculos Gatos · Perros · Para dormir · Navidad · Pólvora. Cada uno abre la tienda filtrada
+   (salen solos de las etiquetas de los productos).
+3. **La tiendita de Toffee**: todos los productos en cuadrícula (2 por fila en el celular) con filtros. **Crece sola**:
+   cada producto nuevo aparece sin tocar el diseño. Nombre corto, etiqueta, frase y opinión de Toffee de cada uno se
+   escriben en *Configuración del tema → Toffee – Fichas de producto* (un producto por línea).
+4. **Temporada de pólvora** (Galleta + orejeras) como sección destacada en la mitad de la portada.
+5. El equipo · Test de Toffee · Sigue a Toffee · Marrano · Preguntas · Club.
+6. **Catálogo (/collections/all)** con el mismo diseño: «Todo lo que aprobé», filtros y tarjetas (antes era la lista
+   genérica de Shopify con precios «$79.900,00»).
+
+**Por qué así y no un solo producto de primero:** quien llega de un video sobre las orejeras debe caer **directo en
+la ficha de las orejeras** (el enlace que Toffee responde a «Comenta CALMA» va a la ficha, no a la portada). La
+portada la ven los que quieren conocer la marca: a ellos se les muestra Toffee y la tienda, y la temporada sigue a
+un toque. Así cada temporada nueva solo cambia el enlace pequeño y la sección destacada.
+
+**Pendiente en el panel:** en *Tienda online → Navegación → menú de la cabecera*, cambia el enlace «Tienda» de
+`/#aprobado` a `/collections/all`. (Mientras tanto `/#aprobado` lleva a la tiendita de la portada, no se rompe.)
+
+## Fotos que necesito (en orden de importancia)
+
+Mismo estilo de siempre: foto real de iPhone, hogar latino acogedor, nada de 3D ni neón, **sin texto en la imagen**.
+Sube como referencia `TOFFEE-ficha.jpg` (y `GALLETA-oficial.jpg` cuando sale Galleta).
+
+**T01 · Portada vertical (celular) · 9:16 (768 × 1376)** — reemplaza la portada actual. *Referencias:* TOFFEE-ficha +
+GALLETA-oficial + fotos reales de la cama trineo roja, el disfraz verde y las orejeras.
+```
+Vertical 9:16. Toffee (an adult British Shorthair cat, solid cream-caramel color in one single tone, very chubby and round, round face with big cheeks, large green eyes with very dilated pupils, wearing a knitted navy blue sleeping cap with a drooping tip and a cream pompom, exactly like the reference image) sits like a serious little shop owner on a small wooden counter of a tiny cozy pet shop at night. Behind him, simple wooden shelves show the products from the references: the RED Christmas sleigh pet bed, the GREEN Christmas-tree cape costume on a tiny hanger, and the DARK GRAY padded dog ear muffs (exact copies). Galleta (the exact dog from the reference: scruffy golden-brown criollo mutt, bushy eyebrows and beard, white chest, navy bandana with golden bone tag) peeks from behind the counter. Warm lamp light, deep navy blue wall. The top 40% of the image is calm empty navy wall (space for text); Toffee and the counter are in the lower half. Real candid photograph taken with an iPhone, natural light, real fur and fabric textures, slight phone-camera grain. NOT 3D, NOT render, NOT CGI, NOT illustration, NOT futuristic, no neon. No text, no letters, no logos, no watermark.
+```
+
+**T02 · Portada horizontal (computador) · 16:9 (2000 × 1124)** — la misma escena, con Toffee y el mostrador **a la
+derecha** y la mitad izquierda libre (pared azul marino) para el texto. Usa el mismo prompt cambiando la primera
+línea por «Horizontal 16:9» y la del espacio por «The left half of the image is calm empty navy wall (space for
+text); Toffee, Galleta and the counter are on the right half.»
+
+**T03 · Carrito vacío · cuadrada 1:1** — Toffee sentado junto a un plato vacío, mirando a la cámara ofendido.
+```
+Square 1:1. Toffee (same description as above, with his navy sleeping cap) sits next to a completely empty ceramic food bowl on a kitchen floor, staring at the camera, deeply offended. Real candid iPhone photo, cozy Latin American home, natural light. NOT 3D, NOT render, NOT illustration, no neon. No text, no letters, no logos, no watermark.
+```
+
+**T04 · Página no encontrada (404) · cuadrada 1:1** — Toffee con un pedazo de papel arrugado en la boca, cara de
+«yo no fui».
+```
+Square 1:1. Toffee (same description as above, with his navy sleeping cap) on a desk with a crumpled torn piece of paper in his mouth, looking at the camera with a guilty "it wasn't me" face, scattered paper pieces around. Real candid iPhone photo, cozy home, warm lamp light. NOT 3D, NOT render, NOT illustration, no neon. No text, no letters, no logos, no watermark.
+```
+
+**Por cada producto nuevo que entre a la tienda:** 1) foto real del producto sobre fondo crema `#F3E9D8` (de la
+tienda del proveedor), 2) una escena con Toffee o Galleta usándolo (4:5 vertical), 3) la guía de tallas si tiene
+tallas. Con eso la tarjeta y la ficha salen completas.
+
+Las fotos de las categorías (Gatos, Perros, Para dormir, Navidad, Pólvora) ya están: uso las que tenemos.
+
+
+---
+
+## 1. Qué cambió el 21-oct (simple)
 
 ### Portada: ahora abre con el problema de la temporada
 - **Primer pantallazo en el celular:** Galleta con las orejeras y la pólvora en la ventana, el título
