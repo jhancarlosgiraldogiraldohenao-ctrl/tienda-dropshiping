@@ -10,6 +10,21 @@ Zesty Paws, Pusheen, Love Nala…) aplicado a Soy Toffee. Se parte del tema en v
 
 ---
 
+## 000. Fotos de Jay recibidas (22-oct) y dónde quedaron
+Originales en `toffee/web/fotos-22oct/`; versión liviana dentro del tema (`assets/`), así funcionan sin subirlas a Archivos.
+
+| Foto | Archivo del tema | Dónde sale |
+|---|---|---|
+| T03 · Toffee con el plato vacío | `tf-carrito-vacio.jpg` | Carrito vacío (cajón y página) |
+| T04 · Toffee con el papel en la boca | `tf-404.jpg` | Página no encontrada (404) |
+| O1 · Galleta: pólvora, tormenta, secador, baño | `tf-orejeras-usos.jpg` | Ficha de las orejeras, sección nueva «Para qué sirven», justo bajo la compra |
+| T01 · Toffee en su tiendita (cuadrada) | `tf-tiendita.jpg` | Cabecera del catálogo «Todo lo que aprobé»; en enero sirve de portada |
+
+Pendiente al tener acceso a Shopify: subir **O1 como foto del producto** y ponerla de 2.ª en la galería
+(«Orden de las fotos» = `3,<número nuevo>,7,1`).
+
+---
+
 ## 00. Decisión final (22-oct, tarde): la temporada manda arriba, la tienda va debajo
 
 Siguiendo la skill (Zesty, Pusheen y Sanrio cambian el primer pantallazo con la temporada; BARK hace de la ficha de su

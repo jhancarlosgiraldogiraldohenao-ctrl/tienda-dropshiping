@@ -292,3 +292,8 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - product.orejeras: orden_fotos «3,1,7» (Galleta en uso, real, guía) + secciones nuevas fechas · galleta · garantia; FAQ de 5 → 10.
 - hl-producto: ajuste nuevo orden_fotos. tf-tienda: ajuste nuevo excluir.
 - Foto pedida a Jay: O1 collage de usos de las orejeras (prompt en ENTREGA-B.md).
+
+## 22-oct (noche) · Fotos T01, T03, T04 y O1 de Jay en el tema
+- assets: tf-carrito-vacio.jpg (carrito vacío), tf-404.jpg (404.json), tf-orejeras-usos.jpg (product.orejeras sección «usos»), tf-tiendita.jpg (collection.json cabecera). Originales en toffee/web/fotos-22oct/.
+- tf-bloque y tf-tienda: ajuste nuevo imagen_tema (+ _alt) para fotos guardadas en el tema.
+- Pendiente con acceso: subir O1 al producto y ponerla de foto 2.

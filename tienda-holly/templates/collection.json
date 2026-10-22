@@ -10,7 +10,9 @@
         "limite": 8,
         "filtros": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora",
         "boton_texto": "",
-        "ancla": "tienda"
+        "ancla": "tienda",
+        "imagen_tema": "tf-tiendita.jpg",
+        "imagen_tema_alt": "Toffee sentado en el mostrador de su tiendita, con la cama trineo, el disfraz y las orejeras en la repisa y Galleta al lado"
       },
       "blocks": {},
       "block_order": []

@@ -4,19 +4,20 @@
       "type": "tf-bloque",
       "settings": {
         "fondo": "crema",
-        "imagen": "shopify://shop_images/A03-toffee-plato.jpg",
         "escena_ia": true,
         "invertir": false,
         "eyebrow": "Error 404",
         "titulo": "<p>Esta página <em>me la comí</em></p>",
         "texto": "<p>La busqué debajo de la cama, en las cajas y en el plato de Galleta. Nada. Puede que el enlace esté mal escrito o que la hayamos movido.</p>",
         "nota_toffee": "No fui yo. Bueno, tal vez sí.",
-        "btn_texto": "Ver lo que aprobé",
-        "btn_url": "/#aprobado",
+        "btn_texto": "Ir a la tienda",
+        "btn_url": "/collections/all",
         "btn_principal": true,
         "btn2_texto": "Necesito ayuda",
         "btn2_url": "/pages/ayuda",
-        "es_h1": true
+        "es_h1": true,
+        "imagen_tema": "tf-404.jpg",
+        "imagen_tema_alt": "Toffee en un escritorio con un papel roto en la boca, cara de yo no fui"
       },
       "blocks": {},
       "block_order": []

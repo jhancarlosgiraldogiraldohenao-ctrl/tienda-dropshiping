@@ -20,6 +20,12 @@
 
 <section class="hl-section tf-tienda" id="{{ section.settings.ancla | default: 'tienda' }}">
   <div class="hl-container">
+    {%- if section.settings.imagen_tema != blank -%}
+      <div class="tf-tienda__foto">
+        <img src="{{ section.settings.imagen_tema | asset_url }}" alt="{{ section.settings.imagen_tema_alt | escape }}" width="900" height="900"{% if section.settings.es_h1 %} fetchpriority="high"{% else %} loading="lazy"{% endif %}>
+        <span class="tf-chip-ia">Escena creada con IA</span>
+      </div>
+    {%- endif -%}
     <div class="hl-cabecera tf-tienda__cabecera">
       {%- if section.settings.eyebrow != blank -%}<span class="hl-eyebrow">{{ section.settings.eyebrow }}</span>{%- endif -%}
       {%- liquid
@@ -75,6 +81,8 @@
     { "type": "paragraph", "content": "Nombre, etiqueta y opinión de cada tarjeta: Configuración del tema → Toffee – Fichas de producto." },
     { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo", "default": "La tiendita de Toffee" },
+    { "type": "text", "id": "imagen_tema", "label": "O foto guardada en el tema (nombre del archivo en assets)", "info": "Ej.: tf-404.jpg. Se usa solo si no eliges una foto arriba." },
+    { "type": "text", "id": "imagen_tema_alt", "label": "Descripción de la foto del tema (para buscadores y lectores de pantalla)" },
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Todo lo que <em>aprobé</em></p>" },
     { "type": "text", "id": "texto", "label": "Texto" },
     { "type": "collection", "id": "coleccion", "label": "Colección (vacío = todos los productos)", "info": "En la página de una colección se usa esa colección." },

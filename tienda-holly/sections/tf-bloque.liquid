@@ -8,10 +8,15 @@
 -%}
 <section class="hl-section tf-bloque tf-bloque--{{ fondo }}{% if oscuro %} tf-oscuro{% endif %}{% if section.settings.invertir %} tf-bloque--invertido{% endif %}" id="{{ section.settings.ancla | default: section.id }}">
   <div class="hl-container">
-    <div class="tf-bloque__grid{% if section.settings.imagen == blank %} tf-bloque__grid--solo{% endif %}">
+    <div class="tf-bloque__grid{% if section.settings.imagen == blank and section.settings.imagen_tema == blank %} tf-bloque__grid--solo{% endif %}">
       {%- if section.settings.imagen != blank -%}
         <div class="tf-bloque__foto hl-reveal">
           <img src="{{ section.settings.imagen | image_url: width: 1000 }}" srcset="{{ section.settings.imagen | image_url: width: 600 }} 600w, {{ section.settings.imagen | image_url: width: 1000 }} 1000w" sizes="(min-width: 990px) 45vw, 92vw" alt="{{ section.settings.imagen.alt | escape }}" loading="lazy" width="1000" height="{{ 1000 | divided_by: section.settings.imagen.aspect_ratio | round }}">
+          {%- if section.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
+        </div>
+      {%- elsif section.settings.imagen_tema != blank -%}
+        <div class="tf-bloque__foto hl-reveal">
+          <img src="{{ section.settings.imagen_tema | asset_url }}" alt="{{ section.settings.imagen_tema_alt | escape }}" loading="lazy" width="1000" height="1000">
           {%- if section.settings.escena_ia -%}<span class="tf-chip-ia">Escena creada con IA</span>{%- endif -%}
         </div>
       {%- endif -%}
@@ -84,6 +89,8 @@
     { "type": "checkbox", "id": "es_h1", "label": "Título principal de la página (H1)", "default": false },
     { "type": "select", "id": "fondo", "label": "Fondo", "options": [ { "value": "crema", "label": "Crema" }, { "value": "crema2", "label": "Crema 2" }, { "value": "marino", "label": "Azul marino" } ], "default": "crema" },
     { "type": "image_picker", "id": "imagen", "label": "Foto" },
+    { "type": "text", "id": "imagen_tema", "label": "O foto guardada en el tema (nombre del archivo en assets)", "info": "Ej.: tf-404.jpg. Se usa solo si no eliges una foto arriba." },
+    { "type": "text", "id": "imagen_tema_alt", "label": "Descripción de la foto del tema (para buscadores y lectores de pantalla)" },
     { "type": "checkbox", "id": "escena_ia", "label": "La foto es una escena creada con IA", "default": true },
     { "type": "checkbox", "id": "invertir", "label": "Foto a la derecha", "default": false },
     { "type": "text", "id": "eyebrow", "label": "Antetítulo" },

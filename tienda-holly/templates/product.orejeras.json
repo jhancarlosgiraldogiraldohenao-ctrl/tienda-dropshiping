@@ -446,10 +446,59 @@
         "p3",
         "p4"
       ]
+    },
+    "usos": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema",
+        "imagen_tema": "tf-orejeras-usos.jpg",
+        "imagen_tema_alt": "Galleta con las orejeras anti ruido en cuatro momentos: pólvora, tormenta, secador y baño",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Para qué sirven",
+        "titulo": "<p>No son solo <em>para la pólvora</em></p>",
+        "texto": "<p>Galleta las usa cada vez que el mundo se pone ruidoso (o mojado):</p>",
+        "nota_toffee": "Yo no las necesito. Yo duermo con cualquier ruido. Es un talento.",
+        "btn_texto": "",
+        "ancla": "usos"
+      },
+      "blocks": {
+        "u0": {
+          "type": "punto",
+          "settings": {
+            "texto": "Noche de pólvora: velitas, Navidad y Año Nuevo"
+          }
+        },
+        "u1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Tormentas y truenos"
+          }
+        },
+        "u2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Secador y peluquería"
+          }
+        },
+        "u3": {
+          "type": "punto",
+          "settings": {
+            "texto": "Baño: no le entra agua a los oídos"
+          }
+        }
+      },
+      "block_order": [
+        "u0",
+        "u1",
+        "u2",
+        "u3"
+      ]
     }
   },
   "order": [
     "principal",
+    "usos",
     "activos",
     "ritual",
     "fechas",
