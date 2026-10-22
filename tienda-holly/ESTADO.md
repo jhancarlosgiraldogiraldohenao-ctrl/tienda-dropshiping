@@ -286,3 +286,9 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Catálogo /collections/all: tf-tienda (H1, filtros, paginación de 24) + equipo. Tarjetas: snippet tf-tarjeta; textos por producto en Configuración del tema → «Toffee – Fichas de producto» (tf_fichas: handle|nombre|etiqueta|frase|opinión).
 - Cabecera: ya no oculta /collections/all. Pendiente Jay: menú «Tienda» → /collections/all.
 - Fotos pedidas a Jay: T01 portada vertical, T02 portada horizontal, T03 carrito vacío, T04 404 (prompts en ENTREGA-B.md).
+
+## 22-oct (tarde) · Decisión: temporada arriba, tienda debajo; ficha de orejeras como página de venta (BARK)
+- Portada: portada(tf-portada, H1) · cinta · equipo · categorias · tienda (excluir = orejeras) · test · redes · marrano · faq · club. hero (Toffee) desactivado para enero.
+- product.orejeras: orden_fotos «3,1,7» (Galleta en uso, real, guía) + secciones nuevas fechas · galleta · garantia; FAQ de 5 → 10.
+- hl-producto: ajuste nuevo orden_fotos. tf-tienda: ajuste nuevo excluir.
+- Foto pedida a Jay: O1 collage de usos de las orejeras (prompt en ENTREGA-B.md).

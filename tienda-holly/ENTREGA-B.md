@@ -10,6 +10,46 @@ Zesty Paws, Pusheen, Love Nala…) aplicado a Soy Toffee. Se parte del tema en v
 
 ---
 
+## 00. Decisión final (22-oct, tarde): la temporada manda arriba, la tienda va debajo
+
+Siguiendo la skill (Zesty, Pusheen y Sanrio cambian el primer pantallazo con la temporada; BARK hace de la ficha de su
+producto estrella una página de venta completa):
+
+**Portada** (`templates/index.json`):
+1. **Primer pantallazo = temporada**: Galleta con las orejeras y la pólvora, «Que la pólvora no le arruine diciembre a
+   tu perro», un botón directo a las orejeras con precio, la próxima fecha límite y el sello y la frase de Toffee.
+2. Cinta de confianza → **El equipo** (Toffee y Galleta) → **¿Para quién es?** (categorías) → **La tiendita de
+   Toffee** con «Lo demás que aprobé» (**sin las orejeras**, para no repetirlas: ajuste «No mostrar este producto») →
+   Test · Sigue a Toffee · Marrano · Preguntas · Club.
+3. La portada de marca con Toffee grande (`hero`) queda **guardada y desactivada**. **En enero**: se desactiva
+   «Toffee – Portada de temporada», se activa la de Toffee (o la temporada que siga) y se quita el «No mostrar» de
+   la tiendita.
+
+**Ficha de las orejeras = página de venta completa** (`templates/product.orejeras.json`), en este orden:
+1. Compra: frase de Toffee → precio → talla → botón → fecha de entrega → fecha límite → «Palabra de Toffee» →
+   marrano. Botón fijo abajo en el celular.
+   Galería reordenada desde el tema (ajuste «Orden de las fotos» = `3,1,7`): **foto 1 Galleta con las orejeras en
+   la pólvora**, foto 2 el producto real, **foto 3 la guía de tallas**; las demás después.
+2. Por qué funcionan → Acostúmbralo en 3 pasos.
+3. **¿Llega antes de tu noche de pólvora?** — las fechas límite por noche (velitas, Navidad, Año Nuevo).
+4. **Galleta llegó a la casa una noche de pólvora** — la historia, con aviso de personaje de IA y el porqué del marrano.
+5. La diferencia frente a la orejera común.
+6. **Palabra de Toffee** — garantía, rastreo, retracto por país, pago seguro, 3 % al marrano.
+7. **10 preguntas**: talla, gatos y perros pequeños, ruido, si le molesta, cuándo ponérsela, hasta cuándo pedir, envío,
+   si la talla no le queda, cómo pago y si no llega.
+8. También aprobado por Toffee (los otros productos).
+
+**Foto que más falta en la ficha — O1 · Usos de las orejeras · cuadrada 1:1** (iría de foto 2): un collage de 4
+escenas de Galleta con las orejeras, **sin texto**: pólvora en la ventana, tormenta con lluvia, secador de pelo en la
+peluquería y en la bañera. *Referencias:* GALLETA-oficial + REF-orejeras-gris.
+```
+Square 1:1 photo collage split into 4 equal squares with thin cream borders. In all four, Galleta (the exact dog from the reference: scruffy wiry golden-brown Latin American criollo mutt, bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) wears the DARK GRAY padded ear muffs from the reference (EXACT copy, velcro under the chin). Top left: calm on a sofa at night, colorful fireworks outside the window. Top right: calm next to a window during a heavy rainstorm with lightning. Bottom left: being dried with a hair dryer by a groomer, relaxed. Bottom right: in a bathtub with soap foam, ears dry and covered. Real candid iPhone photos, cozy Latin American home, natural light, real fur textures. NOT 3D, NOT render, NOT illustration, no neon. No text, no letters, no logos, no watermark.
+```
+Las fotos T01 y T02 (portada de marca con Toffee) siguen sirviendo para **enero**, cuando termine la temporada de
+pólvora.
+
+---
+
 ## 0. Cambio del 22-oct: Toffee primero, la tienda después, la temporada como invitada
 
 Por pedido de Jay, la portada deja de ser la página de un solo producto y pasa a ser **la tienda de Toffee**:

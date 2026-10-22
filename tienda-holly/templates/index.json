@@ -22,7 +22,8 @@
         "temporada_imagen": "shopify://shop_images/F11-orejeras-galleta-polvora.jpg"
       },
       "blocks": {},
-      "block_order": []
+      "block_order": [],
+      "disabled": true
     },
     "cinta": {
       "type": "hl-cinta",
@@ -437,7 +438,7 @@
         "frase": "Galleta duerme con estas en Año Nuevo. Yo las aprobé.",
         "frase_firma": "— Toffee, personaje de IA",
         "titulo_size": 60,
-        "es_h1": false,
+        "es_h1": true,
         "ancla": "temporada"
       },
       "blocks": {},
@@ -464,7 +465,7 @@
     "categorias": {
       "type": "tf-categorias",
       "settings": {
-        "eyebrow": "Compra por mascota o por momento",
+        "eyebrow": "Toda la tienda",
         "titulo": "<p>¿Para quién <em>es?</em></p>",
         "ancla": "categorias"
       },
@@ -534,29 +535,30 @@
       "settings": {
         "es_h1": false,
         "eyebrow": "La tiendita de Toffee",
-        "titulo": "<p>Todo lo que <em>aprobé</em></p>",
-        "texto": "Lo olí, le hice la siesta-prueba y no lo tiré de la mesa. Por eso está aquí.",
+        "titulo": "<p>Lo demás que <em>aprobé</em></p>",
+        "texto": "Para gatos y perros, todo con mi sello. Lo que no pasó mi prueba, lo tiré de la mesa.",
         "limite": 8,
         "filtros": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora",
         "boton_texto": "Ver toda la tienda",
-        "ancla": "aprobado"
+        "ancla": "aprobado",
+        "excluir": "orejeras-anti-ruido-para-perros"
       },
       "blocks": {},
       "block_order": []
     }
   },
   "order": [
-    "hero",
+    "portada",
     "cinta",
+    "equipo",
     "categorias",
     "tienda",
-    "portada",
-    "equipo",
     "test",
     "redes",
     "marrano",
     "faq",
     "club",
+    "hero",
     "cierre",
     "aprobado",
     "prueba",

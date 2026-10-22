@@ -42,7 +42,8 @@
         "marrano_url": "/pages/marrano",
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",
-        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas."
+        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas.",
+        "orden_fotos": "3,1,7"
       },
       "blocks": {
         "b0": {
@@ -241,7 +242,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Qué talla le pido a mi perro?",
-            "respuesta": "<p>Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. S: 25–38 cm (7,5–17,5 kg) · M: 35–48 cm (17,5–30 kg) · L: 45–60 cm (30–42,5 kg) · XL: 55–71 cm (42,5–60 kg). Si queda entre dos tallas, elige la más grande. Es para perros desde 7,5 kg: a un gato o a un chihuahua le quedaría grande.</p>"
+            "respuesta": "<p>Mide la cabeza con un metro de costura, por encima de las orejas y bajo la quijada. S: 25–38 cm (7,5–17,5 kg) · M: 35–48 cm (17,5–30 kg) · L: 45–60 cm (30–42,5 kg) · XL: 55–71 cm (42,5–60 kg). Si queda entre dos tallas, elige la más grande.</p>"
           }
         },
         "b2": {
@@ -271,22 +272,62 @@
             "pregunta": "¿Y si no llega o llega dañado?",
             "respuesta": "<p>Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero. Escríbenos desde <a href=\"/pages/ayuda\">Ayuda</a> con tu número de pedido y una foto.</p>"
           }
+        },
+        "gatos": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Sirve para gatos o perros muy pequeños?",
+            "respuesta": "<p>No. Es para perros desde 7,5 kg: a un gato o a un chihuahua le quedaría grande. (Toffee lo intentó y quedó como un casco de astronauta.)</p>"
+          }
+        },
+        "cuando": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Hasta cuándo puedo pedirla para que llegue a tiempo?",
+            "respuesta": "<p>Depende de la noche:</p><p>[fechas]</p>"
+          }
+        },
+        "ponerla": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cuándo se la pongo?",
+            "respuesta": "<p>Antes de que empiece el ruido, no cuando ya está asustado. Acostúmbralo unos días antes con premios (mira los 3 pasos más arriba) y no lo dejes solo con ellas puestas.</p>"
+          }
+        },
+        "talla_mal": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Y si la talla no le queda?",
+            "respuesta": "<p>Tienes derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile). Detalles en la <a href=\"/policies/refund-policy\">política de devoluciones</a>. Para acertar, mide la cabeza con la guía de tallas antes de pedir.</p>"
+          }
+        },
+        "pago": {
+          "type": "pregunta",
+          "settings": {
+            "pregunta": "¿Cómo pago?",
+            "respuesta": "<p>Con tarjeta de crédito o débito (Visa, Mastercard, American Express o Discover), 100 % seguro. Pagas al hacer tu pedido.</p>"
+          }
         }
       },
       "block_order": [
         "b0",
+        "gatos",
         "b2",
         "b3",
+        "ponerla",
+        "cuando",
         "envio",
+        "talla_mal",
+        "pago",
         "b8"
       ]
     },
     "tambien": {
       "type": "hl-catalogo",
       "settings": {
-        "eyebrow": "Completa el kit",
+        "eyebrow": "Completa la tienda",
         "titulo": "<p>También <em>aprobado por Toffee</em></p>",
-        "texto": "Lo que más compran junto con este producto.",
+        "texto": "Para el resto de la casa (incluido el gato).",
         "boton_texto": "Ver producto",
         "ancla": "tambien",
         "titulo_size": 60
@@ -309,21 +350,101 @@
             "frase": "Tu mascota convertida en el arbolito más tierno de la casa. Para gatos y perritos.",
             "etiqueta": "El más viral"
           }
+        }
+      },
+      "block_order": [
+        "p0",
+        "p1"
+      ]
+    },
+    "fechas": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema2",
+        "escena_ia": false,
+        "invertir": false,
+        "eyebrow": "Fechas límite",
+        "titulo": "<p>¿Llega antes de <em>tu noche de pólvora?</em></p>",
+        "texto": "<p>Calculadas con el peor caso de entrega (25 días hábiles) y los festivos de Colombia. Cuando una fecha ya no alcanza, desaparece de aquí ese mismo día.</p><p>[fechas]</p>",
+        "nota_toffee": "Galleta ya está empacando. Tú solo pide a tiempo, humano.",
+        "btn_texto": "",
+        "ancla": "fechas"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "galleta": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/galleta-oficial.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Por qué existen",
+        "titulo": "<p>Galleta llegó a la casa <em>una noche de pólvora</em></p>",
+        "texto": "<p>En la historia de Toffee, Galleta es un criollo rescatado de la calle un 31 de diciembre, temblando debajo de un carro. Desde entonces el ruido era su peor enemigo… hasta que Toffee le aprobó estas orejeras.</p><p>Galleta y Toffee son personajes creados con IA. El miedo de los perros a la pólvora sí es real: por eso existen estas orejeras y por eso el 3 % de cada venta va al marrano para peludos de la calle.</p>",
+        "nota_toffee": "No le digan que lo dije, pero es el empleado más valiente que tengo. Con orejeras.",
+        "btn_texto": "Conoce a Toffee y Galleta",
+        "btn_url": "/pages/historia-de-toffee",
+        "btn_principal": false,
+        "ancla": "galleta"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "garantia": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema",
+        "imagen": "shopify://shop_images/A05-toffee-galleta-caja.jpg",
+        "escena_ia": true,
+        "invertir": true,
+        "eyebrow": "Compra tranquilo",
+        "titulo": "<p>Palabra <em>de Toffee</em></p>",
+        "texto": "<p>Yo no firmo nada (no tengo pulgares), pero esto te lo prometo:</p>",
+        "btn_texto": "Ver la política de devoluciones",
+        "btn_url": "/policies/refund-policy",
+        "btn_principal": false,
+        "ancla": "garantia"
+      },
+      "blocks": {
+        "p0": {
+          "type": "punto",
+          "settings": {
+            "texto": "Si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero"
+          }
+        },
+        "p1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Número de rastreo en tu correo apenas sale tu pedido"
+          }
         },
         "p2": {
-          "type": "producto",
+          "type": "punto",
           "settings": {
-            "producto": "orejeras-anti-ruido-para-perros",
-            "titulo": "Orejeras anti ruido",
-            "frase": "Para que la pólvora de diciembre no sea la peor noche del año de tu perro.",
-            "etiqueta": "Para la pólvora"
+            "texto": "Derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile)"
+          }
+        },
+        "p3": {
+          "type": "punto",
+          "settings": {
+            "texto": "Pago 100 % seguro con tarjeta"
+          }
+        },
+        "p4": {
+          "type": "punto",
+          "settings": {
+            "texto": "El 3 % de tu compra va al marrano para peludos de la calle"
           }
         }
       },
       "block_order": [
-        "p2",
         "p0",
-        "p1"
+        "p1",
+        "p2",
+        "p3",
+        "p4"
       ]
     }
   },
@@ -331,7 +452,10 @@
     "principal",
     "activos",
     "ritual",
+    "fechas",
+    "galleta",
     "comparativa",
+    "garantia",
     "faq",
     "tambien"
   ]

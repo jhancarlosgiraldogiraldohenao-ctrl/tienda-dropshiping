@@ -15,7 +15,30 @@
   <div class="hl-container">
     <div class="hl-producto__grid">
       <div class="hl-galeria" data-hl-galeria>
-        {%- assign primera = variante.featured_media | default: product.featured_media -%}
+        {%- liquid
+          # Orden de la galería (ajuste «orden_fotos»): primero los números elegidos, luego el resto en su orden.
+          assign lista = section.settings.orden_fotos | remove: ' '
+          for media in product.media
+            assign con = ',' | append: lista | append: ','
+            assign buscar = ',' | append: forloop.index | append: ','
+            unless con contains buscar
+              assign lista = lista | append: ',' | append: forloop.index
+            endunless
+          endfor
+          assign indices = lista | split: ','
+          assign primera = variante.featured_media | default: product.featured_media
+          if section.settings.orden_fotos != blank and product.selected_variant == nil
+            for n in indices
+              if n != blank
+                assign i = n | plus: 0 | minus: 1
+                if product.media[i] != blank
+                  assign primera = product.media[i]
+                  break
+                endif
+              endif
+            endfor
+          endif
+        -%}
         {%- assign id_uno = product.variants[0].featured_media.id -%}
         {%- assign id_pack = product.variants[1].featured_media.id -%}
         {%- if variante.id == product.variants[1].id -%}{%- assign modo = 'pack' -%}{%- else -%}{%- assign modo = 'uno' -%}{%- endif -%}
@@ -30,8 +53,11 @@
         </div>
         {%- if product.media.size > 1 and section.settings.mostrar_miniaturas -%}
           <div class="hl-galeria__mins" data-modo="{{ modo }}">
-            {%- for media in product.media -%}
-              {%- if media.media_type == 'image' -%}
+            {%- for n in indices -%}
+              {%- if n == blank -%}{%- continue -%}{%- endif -%}
+              {%- assign i = n | plus: 0 | minus: 1 -%}
+              {%- assign media = product.media[i] -%}
+              {%- if media != blank and media.media_type == 'image' -%}
                 {%- liquid
                   assign grupo = 'todos'
                   if section.settings.modo_colores
@@ -368,6 +394,12 @@
     {
       "type": "paragraph",
       "content": "Días de entrega, fechas límite y garantía: Configuración del tema → Toffee – Fechas y garantía."
+    },
+    {
+      "type": "text",
+      "id": "orden_fotos",
+      "label": "Orden de las fotos (números separados por coma)",
+      "info": "Ej.: 3,1,7 → la foto 3 primero (en uso), luego la 1 y la 7 (guía de tallas); las demás siguen en su orden. Vacío = orden del producto."
     },
     {
       "type": "checkbox",

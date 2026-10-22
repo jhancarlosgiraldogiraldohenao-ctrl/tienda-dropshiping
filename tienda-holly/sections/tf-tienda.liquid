@@ -58,7 +58,7 @@
       {%- endpaginate -%}
     {%- else -%}
       <div class="tf-tienda__grid">
-        {%- for p in fuente.products limit: section.settings.limite -%}{% render 'tf-tarjeta', p: p, i: forloop.index %}{%- endfor -%}
+        {%- for p in fuente.products limit: section.settings.limite -%}{%- if p.id == section.settings.excluir.id -%}{%- continue -%}{%- endif -%}{% render 'tf-tarjeta', p: p, i: forloop.index %}{%- endfor -%}
       </div>
       {%- if section.settings.boton_texto != blank -%}
         <div class="tf-tienda__pie"><a class="hl-btn hl-btn--curcuma" href="{{ base }}">{{ section.settings.boton_texto }} {% render 'hl-icono', nombre: 'flecha' %}</a></div>
@@ -78,6 +78,7 @@
     { "type": "richtext", "id": "titulo", "label": "Título (cursiva = caramelo)", "default": "<p>Todo lo que <em>aprobé</em></p>" },
     { "type": "text", "id": "texto", "label": "Texto" },
     { "type": "collection", "id": "coleccion", "label": "Colección (vacío = todos los productos)", "info": "En la página de una colección se usa esa colección." },
+    { "type": "product", "id": "excluir", "label": "No mostrar este producto (solo en la portada)", "info": "Útil cuando el producto de la temporada ya está arriba." },
     { "type": "range", "id": "limite", "label": "Productos en la portada", "min": 2, "max": 12, "step": 1, "default": 8 },
     { "type": "textarea", "id": "filtros", "label": "Filtros (etiqueta|texto, uno por línea)", "default": "gatos|🐱 Gatos\nperros|🐶 Perros\ndescanso|💤 Para dormir\nnavidad|🎄 Navidad\npólvora|🎆 Pólvora" },
     { "type": "text", "id": "boton_texto", "label": "Botón (solo en la portada)", "default": "Ver toda la tienda" },
