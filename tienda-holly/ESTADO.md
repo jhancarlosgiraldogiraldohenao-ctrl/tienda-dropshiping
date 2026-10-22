@@ -304,3 +304,8 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Revisado en la vista previa a 390 px: portada, 3 fichas, catálogo, filtro gatos, carrito vacío y 404 sin errores de Liquid, 1 H1 (salvo /cart, de Dawn). Arreglado al revisar: barra de anuncios con un solo mensaje mostraba «[fecha-limite]» (otro camino del código).
 - «También aprobado» de las 3 fichas → tf-tienda (excluye el producto actual).
 - orejeras orden_fotos «3,8,7,1»: la foto 8 aún no existe; cuando Jay suba el collage O1 al producto quedará de foto 2 sola.
+
+## 22-oct · Colorimetría oficial aplicada (PDF de Jay) — en la copia #189777641761
+- hl-styles.css «CAPA C»: cursivas sobre claro → caramelo tostado #9C5A1B; sobre marino → caramelo #E0954F. Nota de Toffee: borde tostado (dorado sobre marino). Foco de teclado tostado/dorado. Filtros, barra del test e íconos de la cinta sin caramelo. Marrano sin rosa (línea crema pelaje, barra verde).
+- Medido en la vista previa (390 y 1440 px, 10 páginas): 0 textos caramelo sobre fondo claro; los avisos restantes son secciones con degradado marino (correctas).
+- Guía guardada en toffee/COLORIMETRIA.md (+ PDF).
