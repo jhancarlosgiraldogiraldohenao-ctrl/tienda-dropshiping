@@ -72,7 +72,11 @@ Descripción: lunes 😴 Comenta FONDO y te mando fondos de Toffee #gato #gatosd
 
 #### 7:30 pm · P1 · Tu perro no le tiene miedo a la pólvora
 
-Guion: Gancho: Toffee: "Tu perro no le tiene miedo a la pólvora." / Contexto: Toffee: "Le duele. Su oído es mucho más fino que el tuyo: lo que para ti es un ¡pum!, para él es como tenerlo pegado a la oreja." / Enseñanza: Toffee: "Por eso tiembla. No lo regañes: protégelo." / Llamado: Toffee: "Galleta duerme con estas. Comenta CALMA y te paso el enlace."
+Voz de Toffee (ElevenLabs):
+
+```
+Tu perro no le tiene miedo a la pólvora... le duele. Su oído es mucho más fino que el tuyo. Por eso tiembla. No lo regañes... protégelo. Galleta duerme con estas. Comenta CALMA y te paso el enlace.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: GALLETA-oficial.jpg (Galleta)
@@ -114,7 +118,11 @@ Descripción: haciendo pancitos 🥖 Comenta FONDO y te mando fondos #gato #ASMR
 
 #### 7:30 pm · P5 · Tu gato no odia su cama: odia esa cama
 
-Guion: Gancho: Toffee: "Tu gato no odia la cama que le compraste." / Contexto: Toffee: "Odia que sea plana. A los gatos nos gusta tener paredes alrededor: nadie nos sorprende por la espalda. Por eso la caja." / Enseñanza: Toffee: "Una cama sin bordes es como dormir en la mitad de la calle." / Llamado: Toffee: "Esta tiene bordes. Comenta TRINEO."
+Voz de Toffee (ElevenLabs):
+
+```
+Tu gato no odia la cama que le compraste... odia que sea plana. Los gatos queremos paredes alrededor: nadie nos sorprende por la espalda. Por eso la caja. Esta sí tiene bordes... Comenta TRINEO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -156,7 +164,11 @@ Descripción: la almohada de Galleta tiene patas 😾 Comenta FONDO #gatoyperro 
 
 #### 7:30 pm · P3 · Lo que nunca le debes dar a tu perro el 31
 
-Guion: Gancho: Toffee: "Hay algo en tu mesa del 31 que puede enfermar a tu perro. Y no es lo que crees." / Contexto: Toffee: "No es la natilla. No es el buñuelo. Son las 12 uvas: a las doce se cae una al piso y el perro se la come." / Enseñanza: Toffee: "Las uvas son tóxicas para los perros. Ni una sola." / Llamado: Toffee: "Y si además sufre con la pólvora, comenta CALMA."
+Voz de Toffee (ElevenLabs):
+
+```
+Hay algo en tu mesa del 31 que puede enfermar a tu perro. No es la natilla... son las uvas. A las doce se cae una y se la come. Ni una sola, ¿ok? Y si sufre con la pólvora... comenta CALMA.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -209,7 +221,11 @@ Descripción: jueves 😮‍💨 #gato #bostezo #ToffeeyGalleta
 
 #### 7:30 pm · P9 · ¿Disfrazar a tu perro es maltrato?
 
-Guion: Gancho: Toffee: "¿Disfrazar a tu perro es maltrato? La respuesta no es sí ni no." / Contexto: Toffee: "Si le aprieta, si le tapa los ojos o las orejas, o si lo dejas horas: sí. Si es suave, lo deja moverse y es para la foto: no." / Enseñanza: Toffee: "Mira la cola. La cola no miente." / Llamado: Toffee: "El de Galleta es suave y no tapa nada. Comenta ÁRBOL."
+Voz de Toffee (ElevenLabs):
+
+```
+¿Disfrazar a tu perro es maltrato? Si le aprieta, le tapa los ojos o lo dejas horas... sí. Si es suave y es solo para la foto... no. Mira la cola: la cola no miente. Comenta ÁRBOL.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -251,7 +267,11 @@ Descripción: me queda justo 😌 #gato #gatogordo #ToffeeyGalleta
 
 #### 7:30 pm · P13 · ¿Cuántas horas duerme un gato? Lo medí
 
-Guion: Gancho: Toffee: "¿Cuántas horas duerme un gato? Me puse a prueba." / Contexto: Toffee: "Ocho de la mañana: me acuesto. Mediodía: sigo. Cuatro de la tarde: sigo. Diez de la noche…" / Enseñanza: Toffee: "Catorce horas. Los gatos dormimos entre doce y dieciséis al día. No es pereza: es naturaleza." / Llamado: Toffee: "Dormí todo eso aquí. Comenta TRINEO."
+Voz de Toffee (ElevenLabs):
+
+```
+¿Cuántas horas duerme un gato? Me puse a prueba. Ocho de la mañana... me acuesto. Mediodía... sigo. Diez de la noche... Catorce horas. No es pereza: es naturaleza. Lo dormí todo aquí. Comenta TRINEO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); REF-trineo-rojo-producto.jpg (la cama trineo roja)
@@ -309,7 +329,11 @@ Descripción: plan perfecto 🌧️ #gato #lluvia #ToffeeyGalleta
 
 #### 7:30 pm · P7 · Lo que hace tu perro cuando te vas
 
-Guion: Gancho: Toffee: "¿Quieres saber qué hace tu perro cuando te vas? Yo lo vi todo." / Contexto: Toffee: "Galleta se sienta en la puerta. A la hora, sigue ahí. A las tres horas, duerme con tu media." / Enseñanza: Toffee: "Un estudio vio que te reciben más feliz mientras más tiempo te vas. Te extrañan de verdad." / Llamado: Toffee: "Comenta FONDO y te mando fondos de pantalla de nosotros dos."
+Voz de Toffee (ElevenLabs):
+
+```
+¿Quieres saber qué hace tu perro cuando te vas? Yo lo vi todo. Se sienta en la puerta... y ahí se queda. Te extraña de verdad. Y cuando vuelves... mira. Comenta FONDO y te mando fondos de nosotros.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -351,7 +375,11 @@ Descripción: salud, Galleta 🤧 #gatoyperro #gatosgraciosos #ToffeeyGalleta
 
 #### 7:30 pm · P11 · ¿Gato o perro? El debate
 
-Guion: Gancho: Toffee: "Hoy se acaba la pelea: ¿gato o perro?" / Contexto: Galleta: "¡Perro! Te cuido, te quiero, te espero en la puerta." Toffee: "Gato. Te ignoro con elegancia y aun así me amas." / Enseñanza: Toffee: "La verdad: los dos terminamos durmiendo juntos." / Llamado: Toffee: "Comenta GATO o PERRO. Y FONDO si quieres fondos de los dos."
+Voz de Toffee (ElevenLabs):
+
+```
+Hoy se acaba la pelea: ¿gato o perro? Galleta dice que perro, porque te cuida y te espera en la puerta. Yo digo gato... te ignoro con elegancia y aun así me amas. Comenta GATO o PERRO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -393,7 +421,13 @@ Descripción: modo cazador 🪰👀 #gato #gatosgraciosos #ToffeeyGalleta
 
 #### 7:30 pm · P2 · 'Toffee, ¿qué siente un perro con la pólvora?'
 
-Guion: Gancho: Mano: "Toffee, ¿qué siente un perro con la pólvora?" Toffee: "Te lo muestro, pero no te va a gustar." / Contexto: Toffee: "Oyen más lejos y más agudo. Cada ¡pum! les llega como un golpe. Galleta pasaba la noche entera así." / Enseñanza: Toffee: "No es exagerado. Es un oído distinto." / Llamado: Toffee: "Esto le cambió diciembre. Comenta CALMA."
+Texto en pantalla al inicio: Toffee, ¿qué siente un perro con la pólvora?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Te lo muestro... pero no te va a gustar. Oyen más lejos y más agudo. Cada pum les llega como un golpe. Galleta pasaba así toda la noche... hasta esto. Comenta CALMA.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -435,7 +469,11 @@ Descripción: el mejor empleado del mes 🥹 #gatoyperro #ToffeeyGalleta
 
 #### 7:30 pm · P17 · ¿Prohibir la pólvora? Toffee y Galleta no se ponen de acuerdo
 
-Guion: Gancho: Toffee: "El tema que divide a Colombia cada diciembre: ¿prohibir la pólvora?" / Contexto: Galleta: "¡Sí! ¡Ya!" Toffee: "Pero a mucha gente le gusta…" Galleta: "¡A mí me tiembla todo!" / Enseñanza: Toffee: "Mientras ustedes deciden en los comentarios, Galleta ya resolvió." / Llamado: Toffee: "Comenta CALMA y te paso sus orejeras. Y dime: ¿sí o no?"
+Voz de Toffee (ElevenLabs):
+
+```
+El tema que divide a Colombia cada diciembre: ¿prohibir la pólvora? Galleta dice que sí, ya. A mucha gente le gusta... pero a él le tiembla todo. Galleta ya resolvió. ¿Y tú? Sí o no... y comenta CALMA.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -488,7 +526,13 @@ Descripción: no estoy, deje su mensaje 📦 #gato #ToffeeyGalleta
 
 #### 7:30 pm · P6 · 'Toffee, ¿por qué los gatos aman las cajas?'
 
-Guion: Gancho: Mano: "Toffee, ¿por qué los gatos aman las cajas?" Toffee: "Es un secreto de gatos. Pero te lo digo." / Contexto: Toffee: "Paredes. Nos sentimos seguros. Por eso dejamos la cama nueva y nos metemos en la caja donde venía." / Enseñanza: Toffee: "Si tu gato no usa su cama, a la cama le faltan paredes." / Llamado: Toffee: "La mía sí las tiene. Comenta TRINEO."
+Texto en pantalla al inicio: Toffee, ¿por qué los gatos aman las cajas?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Es un secreto de gatos... pero te lo digo. Paredes. Nos sentimos seguros. Si tu gato no usa su cama... a la cama le faltan paredes. La mía sí las tiene. Comenta TRINEO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -530,7 +574,13 @@ Descripción: encuentra la calabaza más redonda 🎃 #halloween #gato #ToffeeyG
 
 #### 7:30 pm · P19 · 'Toffee, ¿qué le regalo a mi perro en Navidad?'
 
-Guion: Gancho: Mano: "Toffee, ¿qué le regalo a mi perro en Navidad?" Toffee: "Lo que todos regalan está mal." / Contexto: Toffee: "¿Un juguete? Lo destruye en un día. ¿Ropa? Se la quita. ¿Comida? Se acaba." / Enseñanza: Toffee: "Regálale salir en la foto familiar. Eso sí se queda." / Llamado: Toffee: "Galleta sale así. Comenta ÁRBOL."
+Texto en pantalla al inicio: Toffee, ¿qué le regalo a mi perro en Navidad?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Lo que todos regalan está mal. ¿Un juguete? Lo destruye. ¿Ropa? Se la quita. Regálale salir en la foto familiar... eso sí se queda. Galleta sale así. Comenta ÁRBOL.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -588,7 +638,11 @@ Descripción: dice que no lo quiere, pero 🥹 #gatoyperro #ToffeeyGalleta
 
 #### 7:30 pm · P15 · Por qué los gatos tiramos cosas de la mesa
 
-Guion: Gancho: Toffee: "Me preguntan por qué los gatos tiramos cosas de la mesa. Hoy lo confieso." / Contexto: Toffee: "Uno: probamos si se mueve, como si fuera una presa. Dos: queremos que nos mires. Tres…" / Enseñanza: Toffee: "…y tres: control de calidad. Lo que no pasa mi prueba, al piso." / Llamado: Toffee: "Comenta FONDO y te mando fondos de pantalla del jefe."
+Voz de Toffee (ElevenLabs):
+
+```
+¿Por qué los gatos tiramos cosas de la mesa? Hoy lo confieso. Uno: probamos si se mueve. Dos: queremos que nos mires. Y tres... control de calidad. Comenta FONDO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -630,7 +684,13 @@ Descripción: después del almuerzo 😌 #gato #gatogordo #ToffeeyGalleta
 
 #### 7:30 pm · P10 · 'Galleta, ¿te gusta tu disfraz?' (Toffee traduce)
 
-Guion: Gancho: Mano: "Galleta, ¿de verdad te gusta el disfraz?" Toffee: "Yo traduzco. Y te va a sorprender." / Contexto: Toffee: "Dice que no le aprieta, que ve todo y que se siente un árbol de verdad. Y que quiere salir en la foto." / Enseñanza: Toffee: "Si está incómodo, quítaselo. Si está así, déjaselo para la foto." / Llamado: Toffee: "Comenta ÁRBOL y te paso el enlace."
+Texto en pantalla al inicio: Galleta, ¿te gusta tu disfraz?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Yo traduzco. Dice que no le aprieta, que ve todo... y que quiere salir en la foto. Si está incómodo, quítaselo. Si está así... déjaselo. Comenta ÁRBOL y te paso el enlace.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: GALLETA-oficial.jpg (Galleta); REF-disfraz-rojo.jpg (el disfraz rojo)
@@ -672,7 +732,11 @@ Descripción: el alumno del mes no era Galleta 😼 #gatoyperro #ToffeeyGalleta
 
 #### 7:30 pm · P4 · 3 cosas de diciembre que tu perro no puede comer
 
-Guion: Gancho: Toffee: "Tres cosas de tu Navidad que tu perro no puede comer." / Contexto: Toffee: "Uno: chocolate, es tóxico. Dos: uvas, también. Tres: natilla y buñuelos: mucha grasa y azúcar." / Enseñanza: Toffee: "Dale lo suyo y cuídalo también de lo que no se come: la pólvora." / Llamado: Toffee: "Comenta CALMA y te paso sus orejeras."
+Voz de Toffee (ElevenLabs):
+
+```
+Tres cosas de tu Navidad que tu perro no puede comer. Chocolate. Uvas. Y natilla con buñuelos... mucha grasa. Dale lo suyo... y cuídalo también de la pólvora. Comenta CALMA.
+```
 
 **Toma A · gancho visual** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x1 (10 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -714,7 +778,13 @@ Descripción: algunas amistades no necesitan palabras 🐾 #gatoyperro #ToffeeyG
 
 #### 7:30 pm · P14 · '¿Tu gato es perezoso?'
 
-Guion: Gancho: Mano: "Toffee, ¿por qué eres tan perezoso?" Toffee: "No soy perezoso. Estoy cargando energía." / Contexto: Toffee: "Los gatos cazamos en ráfagas cortas. Por eso dormimos de doce a dieciséis horas: para estar listos." / Enseñanza: Toffee: "Si tu gato duerme mucho, está bien. Lo que importa es dónde duerme." / Llamado: Toffee: "Yo duermo aquí. Comenta TRINEO."
+Texto en pantalla al inicio: Toffee, ¿por qué eres tan perezoso?
+
+Voz de Toffee (ElevenLabs):
+
+```
+No soy perezoso... estoy cargando energía. Los gatos cazamos en ráfagas cortas, por eso dormimos tanto. Si tu gato duerme mucho, está bien. Lo que importa es dónde. Comenta TRINEO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -767,7 +837,11 @@ Descripción: si un gato te parpadea lento, te dice 'te quiero' 🥹 Devuélvese
 
 #### 7:30 pm · P21 · Por qué tu perro te sigue al baño
 
-Guion: Gancho: Toffee: "Tu perro te sigue al baño por una razón que nadie te dice." / Contexto: Toffee: "No es que sea chismoso. Para él eres su manada: si cierras la puerta, quiere saber que estás bien." / Enseñanza: Toffee: "Te está cuidando. Déjalo." / Llamado: Toffee: "Comenta FONDO y te mando fondos de pantalla de nosotros."
+Voz de Toffee (ElevenLabs):
+
+```
+Tu perro te sigue al baño por una razón que nadie te dice. Para él eres su manada: si cierras la puerta, quiere saber que estás bien. Te está cuidando... déjalo. Comenta FONDO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: GALLETA-oficial.jpg (Galleta)
@@ -809,7 +883,11 @@ Descripción: esperando a Papá Noel 🎅😴 Comenta TRINEO #navidad #gato #Tof
 
 #### 7:30 pm · P20 · Galleta se convierte en árbol
 
-Guion: Gancho: Toffee: "Este año el árbol de Navidad lo puso Galleta." / Contexto: Toffee: "Gira una vez… y listo." / Enseñanza: Toffee: "Suave, no le tapa los ojos ni las orejas, y sale en todas las fotos." / Llamado: Toffee: "Comenta ÁRBOL y te paso el enlace."
+Voz de Toffee (ElevenLabs):
+
+```
+Este año el árbol de Navidad... lo puso Galleta. Gira una vez y listo. Suave, no le tapa los ojos ni las orejas. Comenta ÁRBOL y te paso el enlace.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x1 (10 créditos)
 Imágenes: GALLETA-oficial.jpg (Galleta)
@@ -867,7 +945,11 @@ Descripción: ya huele a diciembre 🎄 #gatoyperro #navidad #ToffeeyGalleta
 
 #### 7:30 pm · P23 · ¿Un perro y un gato se pueden llevar bien?
 
-Guion: Gancho: Toffee: "Dicen que perros y gatos se odian. Nosotros dormimos juntos." / Contexto: Toffee: "Al principio Galleta me perseguía. Yo lo ignoraba. Poco a poco, cada uno con su espacio." / Enseñanza: Toffee: "El secreto: presentarlos despacio y que cada uno tenga su rincón." / Llamado: Toffee: "Comenta FONDO y te mando fondos de los dos."
+Voz de Toffee (ElevenLabs):
+
+```
+Dicen que perros y gatos se odian... nosotros dormimos juntos. Al principio Galleta me perseguía. Yo lo ignoraba. El secreto: presentarlos despacio, y que cada uno tenga su rincón. Comenta FONDO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -909,7 +991,13 @@ Descripción: lo tenía todo bajo control 😐 #gato #gatosgraciosos #ToffeeyGal
 
 #### 7:30 pm · P18 · 'Toffee, ¿pólvora sí o no?'
 
-Guion: Gancho: Mano: "Toffee, ¿pólvora en diciembre: sí o no?" Toffee: "Mi respuesta te va a sorprender." / Contexto: Toffee: "A mí me da igual. Pero mira a Galleta." / Enseñanza: Toffee: "Si a ti te gusta, está bien. Pero piensa en el que tiembla debajo de la cama." / Llamado: Toffee: "Por lo menos dale esto. Comenta CALMA."
+Texto en pantalla al inicio: Toffee, ¿pólvora en diciembre: sí o no?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Mi respuesta te va a sorprender. A mí me da igual... pero mira a Galleta. Si a ti te gusta, está bien. Piensa en el que tiembla debajo de la cama. Por lo menos dale esto. Comenta CALMA.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee)
@@ -951,7 +1039,13 @@ Descripción: necesito unas para mí 😩 Comenta CALMA #perromiedopolvora #Toff
 
 #### 7:30 pm · P12 · '¿Quién manda en esta casa?'
 
-Guion: Gancho: Mano: "¿Quién manda en esta casa?" / Contexto: Galleta: "¡Yo cuido la puerta!" Toffee: "Y yo decido dónde duerme todo el mundo. Eso es mandar." / Enseñanza: Toffee: "En una casa con gato, manda el gato. Siempre." / Llamado: Toffee: "Comenta GATO o PERRO. Te leo."
+Texto en pantalla al inicio: ¿Quién manda en esta casa?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Galleta cree que manda porque cuida la puerta. Pero yo decido dónde duerme todo el mundo... eso es mandar. En una casa con gato, manda el gato. Comenta GATO o PERRO.
+```
 
 **Toma A · gancho visual** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x1 (10 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
@@ -993,7 +1087,11 @@ Descripción: los mejores amigos terminan durmiendo igual 😴 Etiqueta al tuyo 
 
 #### 7:30 pm · P24 · Cómo conocí a Galleta
 
-Guion: Gancho: Toffee: "Galleta llegó a esta casa una noche de pólvora. Y no era cualquier noche." / Contexto: Toffee: "Estaba en la calle, temblando debajo de un carro. Nuestro humano lo trajo empapado." / Enseñanza: Toffee: "Por eso cuidamos a los de la calle: el 3 % de cada venta va al marrano para ellos." / Llamado: Toffee: "Comenta FONDO y te mando fondos de Galleta."
+Voz de Toffee (ElevenLabs):
+
+```
+Galleta llegó una noche de pólvora. Estaba en la calle, solito, debajo de un carro. Hoy duerme conmigo. Por eso el tres por ciento de cada venta va a los peludos de la calle. Comenta FONDO.
+```
 
 **Toma A · gancho** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 8 s · x1 (12 créditos)
 Imágenes: GALLETA-oficial.jpg (Galleta)
@@ -1046,7 +1144,13 @@ Descripción: Hoy es el último día para pedir y que llegue en Navidad ⏳ Come
 
 #### 7:30 pm · P22 · 'Toffee, ¿por qué no me dejan ir solo al baño?'
 
-Guion: Gancho: Mano: "¿Por qué no me dejan ir solo al baño?" / Contexto: Toffee: "Galleta te cuida. Yo vigilo que Galleta te cuide bien." / Enseñanza: Toffee: "En esta casa nadie va solo a ningún lado." / Llamado: Toffee: "Comenta FONDO y te mando fondos."
+Texto en pantalla al inicio: ¿Por qué no me dejan ir solo al baño?
+
+Voz de Toffee (ElevenLabs):
+
+```
+Galleta te cuida... y yo vigilo que te cuide bien. En esta casa nadie va solo a ningún lado. Comenta FONDO y te mando fondos.
+```
 
 **Toma A · gancho visual** · Video · Ingredientes · 9:16 · Omni 1.1 Flash · 720p · 6 s · x1 (10 créditos)
 Imágenes: TOFFEE-ficha.jpg (Toffee); GALLETA-oficial.jpg (Galleta)
