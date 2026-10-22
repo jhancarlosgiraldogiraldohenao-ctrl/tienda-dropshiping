@@ -334,3 +334,11 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Ruido de la revisión (no son errores): bloqueo de shop.app/analytics desde la nube, /policies/legal-notice no existe (no está enlazada), sic.gov.co no abre desde la nube.
 - 23-oct: acceso por `shopify store auth` (scopes read/write_content, read/write_legal_policies; se completa pegando la URL 127.0.0.1:13387/auth/callback que devuelve el navegador; el CLI necesita un xdg-open falso que escriba la URL). Hecho por API: «Tratamiento de datos» y «Términos del servicio» ya dicen Mercado Pago y Bold (0 menciones a dLocal, verificado en vivo). Respaldo previo en el scratchpad de la sesión (no en git: tiene datos personales). Falta: teléfono en Datos del vendedor (Jay debe dar el número) y casilla de marketing del checkout (solo desde el panel).
 - 23-oct: teléfono agregado en Datos del vendedor por API (el número vive solo en Shopify, no en git).
+
+## 23-oct · TeemDrop (productos conectados) y Estados Unidos
+- Productos de la tienda en TeemDrop (seller.teemdrop.com/products/store-products):
+  - Cama Trineo Navideña (Shopify 10592300630305) → TD SPU SUPEFDB00073 «Nido de mascotas navideño» (S 50x38x26 / M 65x52x30), producto $3.93–12.86.
+  - Disfraz Árbol (Shopify 10592277332257) → TD SPU SUPEGDA00200 «Capa navideña», S/M/L verde y roja, producto $1.93–2.6.
+  - Orejeras (Shopify 10592260358433) → TD SPU SUPTODR00060, variantes rosa/azul cielo/rojo rosa/gris oscuro, producto $1.46–1.76.
+- Envío a EE. UU. visto hoy (YUN-EconoLink, 6–12 días + 1–3 de preparación): orejeras $7.44 total (envío $5.98, 70 g), disfraz $7.82 ($5.89, 80 g), trineo $30.97 ($27.04, 780 g). Ganancia aprox. a precios actuales: ~44k / ~43k / ~100k COP.
+- Jay quiere abrir EE. UU. Pendiente: TeemDrop confirma si YUN-EconoLink a EE. UU. incluye aranceles (DDP). Si sí: permiso de mercados y envíos (store auth con write_markets/write_shipping), mercado EE. UU., zona de envío, «≈ USD» en tf-precio-local, textos y políticas con EE. UU. Recomendación: abrir en español (latinos en EE. UU.); temporada allá = 31-dic y 4-jul.
