@@ -360,3 +360,16 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - tf-marrano: siempre muestra «Llevamos $X de $1.000.000 COP» + % + barra + escala 0 % · 50 % · 100 % (aunque esté en $0); colores oficiales (sin rosa/rojo). Ajuste nuevo texto_llevamos. En portada: antetítulo «La causa de Toffee», sin la frase duplicada de «primer marrano».
 - Aviso de impuestos por país (snippet tf-aviso-impuestos): MX/CL → tf_aviso_impuestos; US → tf_aviso_impuestos_us; CO/PE → nada.
 - Textos recortados (solo repetidos): fichas (rótulo de opinión corto, puntos sin repetir el subtítulo), orejeras (sin frase de Galleta en «Por qué funcionan», historia de Galleta en 1 párrafo corto, garantía sin 2 puntos repetidos, nota del ritual sin veterinario repetido), FAQ «¿Cómo pago?» e «¿Impuestos?» cortas en portada/Ayuda/orejeras, Ayuda «¿Cuánto cuesta el envío?» sin repetir impuestos, mensaje del marrano. Orejeras en celular: 13.462 → 12.841 px (y menos en Colombia, sin aviso de impuestos).
+
+## 23-oct · Vista previa «Plan pólvora» (sin publicar)
+- Copia sin publicar #189813391649 «Vista previa – Plan pólvora (23-oct)», hecha a partir del tema en vivo #189777641761.
+- Nueva plantilla `page.plan-polvora.json` con 4 partes:
+  - intro (H1)
+  - «Días antes»: 4 pasos
+  - «La noche de pólvora»: 4 pasos
+  - «Al día siguiente», con un botón a las orejeras
+- En la ficha de las orejeras, nuevo bloque `dato` después de «usos»: «Entre 2 y 5 de cada 10 perros sufren con la pólvora», con las fuentes Riemer 2019 y Storengen y Lingaas 2015, y un botón a /pages/plan-polvora.
+- Al publicar:
+  1. Crear la página «Plan pólvora» (handle `plan-polvora`, plantilla `plan-polvora`).
+  2. Publicar o copiar los cambios al tema en vivo.
+- Mientras tanto, la vista previa de la guía se ve con `?view=plan-polvora`.

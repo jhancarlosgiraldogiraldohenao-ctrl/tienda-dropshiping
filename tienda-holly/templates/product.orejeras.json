@@ -438,11 +438,29 @@
         "u2",
         "u3"
       ]
+    },
+    "dato": {
+      "type": "tf-bloque",
+      "settings": {
+        "fondo": "crema2",
+        "escena_ia": false,
+        "invertir": false,
+        "eyebrow": "Dato real",
+        "titulo": "<p>Entre 2 y 5 de cada 10 perros <em>sufren con la pólvora</em></p>",
+        "texto": "<p>Lo muestran estudios con miles de perros: en uno de 2019 con 1.225 perros, más de la mitad se afectaba con la pólvora, y en otro de Noruega con 5.257 perros, 2 de cada 10 le tenían un miedo fuerte.</p><p>Señales: tiembla, jadea, se esconde, no quiere comer o intenta escaparse.</p><p>Fuentes: <a href=\"https://pubmed.ncbi.nlm.nih.gov/31490926/\" target=\"_blank\">Riemer, 2019</a> · <a href=\"https://avsab.org/science-friday-noise-sensitivity-in-17-dog-breeds/\" target=\"_blank\">Storengen y Lingaas, 2015</a></p>",
+        "btn_texto": "Ver el plan pólvora gratis",
+        "btn_url": "/pages/plan-polvora",
+        "btn_principal": false,
+        "ancla": "dato"
+      },
+      "blocks": {},
+      "block_order": []
     }
   },
   "order": [
     "principal",
     "usos",
+    "dato",
     "activos",
     "ritual",
     "galleta",

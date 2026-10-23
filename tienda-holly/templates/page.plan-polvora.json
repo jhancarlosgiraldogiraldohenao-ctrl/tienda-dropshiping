@@ -1,0 +1,167 @@
+{
+  "sections": {
+    "intro": {
+      "type": "tf-bloque",
+      "settings": {
+        "es_h1": true,
+        "fondo": "marino",
+        "imagen": "shopify://shop_images/galleta-oficial.jpg",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "Guía gratis de Toffee y Galleta",
+        "titulo": "<p>Plan pólvora <em>en 5 minutos</em></p>",
+        "texto": "<p>Velitas, Navidad y Año Nuevo pueden ser las noches más duras del año para tu perro. Esto es lo que hacemos en casa con Galleta. Guárdalo y compártelo con alguien que tenga perro.</p><p>Toffee y Galleta son personajes creados con IA. Son consejos generales: si tu perro sufre mucho, consulta a tu veterinario.</p>",
+        "nota_toffee": "Yo soy gato: la pólvora me da igual. A Galleta no, así que esto me lo tomo en serio.",
+        "btn_texto": "Empezar",
+        "btn_url": "#antes",
+        "btn_principal": true,
+        "ancla": "plan"
+      },
+      "blocks": {},
+      "block_order": []
+    },
+    "antes": {
+      "type": "hl-ritual",
+      "settings": {
+        "fondo_crema": true,
+        "eyebrow": "Días antes",
+        "titulo": "<p>Prepara la casa <em>antes del ruido</em></p>",
+        "texto": "Hazlo con tiempo, no la misma noche.",
+        "nota": "Si tu perro tiembla, jadea o se esconde mucho, habla con tu veterinario antes de diciembre.",
+        "ancla": "antes",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Placa con tu número",
+            "texto": "Ponle collar con placa y tu teléfono. Si se asusta y se escapa, así te lo pueden devolver."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Su refugio",
+            "texto": "Elige un rincón adentro, lejos de las ventanas, con su cama y una manta. Que sea suyo desde ya."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Orejeras con premio",
+            "texto": "Si va a usar orejeras, pónselas unos minutos al día con caricias y premios, para que las sienta como algo bueno."
+          }
+        },
+        "b3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Paseo temprano",
+            "texto": "Ese día sácalo antes de que oscurezca y con correa, para que haga sus necesidades tranquilo."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "durante": {
+      "type": "hl-ritual",
+      "settings": {
+        "fondo_crema": false,
+        "eyebrow": "La noche de pólvora",
+        "titulo": "<p>Cuando empiece <em>el ruido</em></p>",
+        "texto": "Lo más importante: que esté adentro y contigo.",
+        "nota": "Nunca lo dejes amarrado afuera ni solo en la terraza.",
+        "ancla": "durante",
+        "titulo_size": 56
+      },
+      "blocks": {
+        "b0": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Todo cerrado",
+            "texto": "Puertas, ventanas y cortinas cerradas. Revisa que no haya por dónde salir."
+          }
+        },
+        "b1": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Ruido de fondo",
+            "texto": "Música suave o la tele prendida ayudan a tapar los estallidos."
+          }
+        },
+        "b2": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Acompáñalo",
+            "texto": "Quédate cerca y háblale tranquilo. Nunca lo regañes por tener miedo."
+          }
+        },
+        "b3": {
+          "type": "paso",
+          "settings": {
+            "titulo": "Orejeras antes",
+            "texto": "Pónselas antes de que empiece la pólvora, no en pleno estallido."
+          }
+        }
+      },
+      "block_order": [
+        "b0",
+        "b1",
+        "b2",
+        "b3"
+      ]
+    },
+    "despues": {
+      "type": "tf-bloque",
+      "settings": {
+        "es_h1": false,
+        "fondo": "crema",
+        "escena_ia": false,
+        "invertir": false,
+        "eyebrow": "Al día siguiente",
+        "titulo": "<p>Si se perdió <em>o sigue asustado</em></p>",
+        "texto": "<p>A veces el susto dura más que la noche.</p>",
+        "btn_texto": "Ver las orejeras de Galleta",
+        "btn_url": "/products/orejeras-anti-ruido-para-perros",
+        "btn_principal": true,
+        "ancla": "despues"
+      },
+      "blocks": {
+        "d0": {
+          "type": "punto",
+          "settings": {
+            "texto": "Búscalo cerca de la casa: muchos perros asustados se esconden a pocas cuadras"
+          }
+        },
+        "d1": {
+          "type": "punto",
+          "settings": {
+            "texto": "Publica su foto en los grupos de mascotas perdidas de tu barrio y avisa a veterinarias y refugios cercanos"
+          }
+        },
+        "d2": {
+          "type": "punto",
+          "settings": {
+            "texto": "Si sigue con miedo varios días, llévalo al veterinario"
+          }
+        }
+      },
+      "block_order": [
+        "d0",
+        "d1",
+        "d2"
+      ]
+    }
+  },
+  "order": [
+    "intro",
+    "antes",
+    "durante",
+    "despues"
+  ]
+}
