@@ -121,6 +121,7 @@
               {% render 'tf-carrito-extra' %}
 
               {% render 'tf-aviso-impuestos', clase: 'tf-impuestos--carrito' %}
+              {% render 'tf-aviso-moneda', clase: 'tf-impuestos--carrito' %}
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
                   {{ content_for_additional_checkout_buttons }}

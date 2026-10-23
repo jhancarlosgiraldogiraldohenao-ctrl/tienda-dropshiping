@@ -8,7 +8,7 @@
         "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
@@ -22,10 +22,20 @@
             "color_scheme": "scheme-4",
             "link": "/products/orejeras-anti-ruido-para-perros"
           }
+        },
+        "anuncio-eeuu": {
+          "type": "announcement",
+          "settings": {
+            "text": "Ahora también enviamos a Estados Unidos 🇺🇸",
+            "text_alignment": "center",
+            "color_scheme": "scheme-4",
+            "link": "/policies/shipping-policy"
+          }
         }
       },
       "block_order": [
-        "anuncio-temporada"
+        "anuncio-temporada",
+        "anuncio-eeuu"
       ]
     },
     "header": {

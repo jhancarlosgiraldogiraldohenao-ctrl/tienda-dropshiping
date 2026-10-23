@@ -15,7 +15,7 @@
         "sello": "Aprobado por Toffee",
         "titulo_size": 76,
         "paises_texto": "Enviamos a",
-        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú",
+        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos",
         "nota_ia": "Toffee es un personaje de IA · sus siestas son reales",
         "temporada_texto": "🎆 Temporada de pólvora: orejeras para tu perro",
         "temporada_url": "/products/orejeras-anti-ruido-para-perros",
@@ -84,7 +84,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo en tu correo apenas sale tu pedido. Llega en 10 a 25 días hábiles según tu país y ciudad.</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile, Perú y Estados Unidos, con número de rastreo en tu correo apenas sale tu pedido. Llega en 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).</p>"
           }
         },
         "b2": {
@@ -98,7 +98,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Tengo que pagar impuestos o aduana?",
-            "respuesta": "<p>Envío gratis. Si compras desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican por el valor del pedido.</p>"
+            "respuesta": "<p>Envío gratis. A <strong>Estados Unidos</strong> los impuestos de importación ya están incluidos: no pagas nada extra al recibir. Si compras desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican por el valor del pedido.</p>"
           }
         },
         "b0": {
@@ -439,7 +439,9 @@
         "frase_firma": "— Toffee, personaje de IA",
         "titulo_size": 60,
         "es_h1": true,
-        "ancla": "temporada"
+        "ancla": "temporada",
+        "paises_texto": "Enviamos a",
+        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos"
       },
       "blocks": {},
       "block_order": []

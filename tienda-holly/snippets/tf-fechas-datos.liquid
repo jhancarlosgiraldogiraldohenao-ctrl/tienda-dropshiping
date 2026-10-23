@@ -1,6 +1,18 @@
-{%- comment -%} Datos de entrega para hl-scripts.js (fechas límite, días hábiles y festivos). Se carga una vez en theme.liquid. {%- endcomment -%}
+{%- comment -%} Datos de entrega para hl-scripts.js (país del visitante, días hábiles, fechas límite y festivos). Se carga una vez en theme.liquid. {%- endcomment -%}
 {%- liquid
+  assign pais = localization.country.iso_code | default: 'CO'
+  assign dmin = settings.tf_dias_min | default: 10
+  assign dmax = settings.tf_dias_max | default: 25
+  assign por_pais = settings.tf_dias_pais | newline_to_br | split: '<br />'
+  for l in por_pais
+    assign c = l | strip | split: '|'
+    assign cod = c[0] | strip
+    if cod == pais and c.size >= 3
+      assign dmin = c[1] | strip | plus: 0
+      assign dmax = c[2] | strip | plus: 0
+    endif
+  endfor
   assign lineas = settings.tf_cortes | newline_to_br | split: '<br />'
   assign festivos = settings.tf_festivos | newline_to_br | split: '<br />'
 -%}
-<script type="application/json" id="tf-fechas">{"min":{{ settings.tf_dias_min | default: 10 }},"max":{{ settings.tf_dias_max | default: 25 }},"vencido":{{ settings.tf_corte_vencido | json }},"festivos":[{%- assign coma = false -%}{%- for f in festivos -%}{%- assign t = f | strip -%}{%- if t != blank -%}{% if coma %},{% endif %}{{ t | json }}{%- assign coma = true -%}{%- endif -%}{%- endfor -%}],"cortes":[{%- assign coma = false -%}{%- for l in lineas -%}{%- assign p = l | strip | split: '|' -%}{%- if p.size >= 2 -%}{% if coma %},{% endif %}{"f":{{ p[0] | strip | json }},"n":{{ p[1] | strip | json }},"e":{{ p[2] | strip | json }}}{%- assign coma = true -%}{%- endif -%}{%- endfor -%}]}</script>
+<script type="application/json" id="tf-fechas">{"pais":{{ pais | json }},"min":{{ dmin }},"max":{{ dmax }},"vencido":{{ settings.tf_corte_vencido | json }},"festivos":[{%- assign coma = false -%}{%- for f in festivos -%}{%- assign t = f | strip -%}{%- if t != blank -%}{% if coma %},{% endif %}{{ t | json }}{%- assign coma = true -%}{%- endif -%}{%- endfor -%}],"cortes":[{%- assign coma = false -%}{%- for l in lineas -%}{%- assign p = l | strip | split: '|' -%}{%- if p.size >= 2 -%}{% if coma %},{% endif %}{"f":{{ p[0] | strip | json }},"n":{{ p[1] | strip | json }},"e":{{ p[2] | strip | json }},"p":{{ p[3] | strip | remove: ' ' | json }}}{%- assign coma = true -%}{%- endif -%}{%- endfor -%}]}</script>

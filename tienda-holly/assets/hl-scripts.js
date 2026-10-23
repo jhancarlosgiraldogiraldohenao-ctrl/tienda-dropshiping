@@ -206,7 +206,15 @@
   function initFechas(root) {
     var datos = tfDatos(); if (!datos) return;
     var hoy = tfIso(new Date());
-    var vigentes = (datos.cortes || []).filter(function (c) { return c.f >= hoy; });
+    var pais = datos.pais || 'CO';
+    var aplica = function (regla) {
+      regla = (regla || '').replace(/\s/g, '');
+      if (!regla) return true;
+      var excluye = regla.charAt(0) === '-';
+      var lista = (',' + regla.replace('-', '') + ',').indexOf(',' + pais + ',') !== -1;
+      return excluye ? !lista : lista;
+    };
+    var vigentes = (datos.cortes || []).filter(function (c) { return c.f >= hoy && aplica(c.p); });
     var fecha = function (iso) { var p = iso.split('-'); return (+p[2]) + ' de ' + MESES[+p[1] - 1]; };
     (root || document).querySelectorAll('[data-tf-corte]').forEach(function (el) {
       var c = vigentes[0];
@@ -214,7 +222,7 @@
     });
     (root || document).querySelectorAll('[data-tf-cortes]').forEach(function (ul) {
       var alguna = false;
-      ul.querySelectorAll('[data-corte]').forEach(function (li) { var ok = li.getAttribute('data-corte') >= hoy; li.hidden = !ok; if (ok) alguna = true; });
+      ul.querySelectorAll('[data-corte]').forEach(function (li) { var ok = li.getAttribute('data-corte') >= hoy && aplica(li.getAttribute('data-paises')); li.hidden = !ok; if (ok) alguna = true; });
       var v = ul.querySelector('[data-corte-vencido]'); if (v) v.hidden = alguna;
     });
     (root || document).querySelectorAll('[data-tf-entrega]').forEach(function (e) {

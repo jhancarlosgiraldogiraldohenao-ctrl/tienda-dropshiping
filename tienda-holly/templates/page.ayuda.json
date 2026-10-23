@@ -22,7 +22,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto tarda en llegar?",
-            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad. Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p><p>[fecha-limite]</p>"
+            "respuesta": "<p>Entre 10 y 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15). Apenas sale tu pedido te enviamos el número de rastreo a tu correo.</p><p>[fecha-limite]</p>"
           }
         },
         "b2": {
@@ -36,7 +36,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta el envío?",
-            "respuesta": "<p>Nada: el envío es gratis a México, Colombia, Chile y Perú. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete (los paga el cliente).</p>"
+            "respuesta": "<p>Nada: el envío es gratis a Colombia, México, Chile, Perú y Estados Unidos. A Estados Unidos los impuestos ya están incluidos. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete (los paga el cliente).</p>"
           }
         },
         "b7": {
@@ -71,7 +71,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Tengo que pagar impuestos o aduana?",
-            "respuesta": "<p>Envío gratis. Si compras desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican por el valor del pedido.</p>"
+            "respuesta": "<p>Envío gratis. A <strong>Estados Unidos</strong> los impuestos de importación ya están incluidos: no pagas nada extra al recibir. Si compras desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican por el valor del pedido.</p>"
           }
         },
         "cambios": {

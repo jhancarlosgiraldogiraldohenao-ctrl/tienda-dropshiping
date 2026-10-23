@@ -15,6 +15,10 @@
       assign tasa = 0.001087
       assign mon = 'PEN'
       assign dec = 2
+    when 'US'
+      assign tasa = 0.0003106
+      assign mon = 'USD'
+      assign dec = 2
   endcase
 -%}
 {%- if tasa > 0 -%}

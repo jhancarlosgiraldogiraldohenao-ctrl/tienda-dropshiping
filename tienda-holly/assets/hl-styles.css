@@ -1463,3 +1463,11 @@ a { color: var(--tf-caramelo-hondo); }
 /* Marrano: sin rosa (fuera de la paleta). Línea en crema pelaje, barra en verde de confirmación */
 .tf-marrano-linea a { background: var(--tf-crema-2) !important; color: var(--tf-marino) !important; border: 1px solid var(--tf-linea); }
 .tf-marrano__relleno { background: var(--tf-verde) !important; }
+
+/* Banderas «Enviamos a» en la portada de temporada (23-oct, EE. UU.) */
+.tf-portada__paises { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; margin-top: 16px; font-size: 13px; font-weight: 600; color: var(--tf-crema); }
+.tf-portada__paises > span:first-child { color: var(--tf-dorado); letter-spacing: .08em; text-transform: uppercase; font-size: 11.5px; margin-right: 2px; }
+.tf-portada__pais { display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px 4px 4px; border-radius: 999px; background: rgba(251, 246, 238, .08); border: 1px solid rgba(251, 246, 238, .16); }
+.tf-portada__pais img { width: 20px; height: 20px; border-radius: 50%; object-fit: cover; }
+@media (max-width: 749px) { .tf-portada__paises { justify-content: center; margin-top: 12px; font-size: 12px; gap: 6px; } }
+.tf-moneda-aviso { font-size: 13px; }

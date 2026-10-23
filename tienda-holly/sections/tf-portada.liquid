@@ -40,6 +40,15 @@
         </a>
       {%- endif -%}
       <p class="tf-portada__corte">{% render 'tf-corte' %}</p>
+      {%- if section.settings.paises != blank -%}
+        <div class="tf-portada__paises">
+          <span>{{ section.settings.paises_texto }}</span>
+          {%- assign lista = section.settings.paises | split: ',' -%}
+          {%- for c in lista -%}{%- assign cod = c | strip | split: ':' -%}
+            <span class="tf-portada__pais"><img src="{{ 'tf-bandera-' | append: cod[0] | append: '.png' | asset_url }}" alt="" width="20" height="20" decoding="async" fetchpriority="low">{{ cod[1] }}</span>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
       {%- if section.settings.frase != blank -%}
         <p class="tf-portada__frase">
           <img class="tf-avatar" src="{{ 'tf-avatar.jpg' | asset_url }}" alt="" width="40" height="40" decoding="async">
@@ -67,6 +76,8 @@
     { "type": "textarea", "id": "sub", "label": "Texto" },
     { "type": "text", "id": "btn_texto", "label": "Botón", "default": "Ver las orejeras" },
     { "type": "checkbox", "id": "btn_precio", "label": "Mostrar el precio en el botón", "default": true },
+    { "type": "text", "id": "paises_texto", "label": "Texto antes de las banderas", "default": "Enviamos a" },
+    { "type": "text", "id": "paises", "label": "Países (código:nombre, separados por coma)", "info": "Banderas en assets: tf-bandera-co, mx, cl, pe, us.", "default": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos" },
     { "type": "text", "id": "frase", "label": "Frase del personaje" },
     { "type": "text", "id": "frase_firma", "label": "Firma de la frase", "default": "— Toffee, personaje de IA" },
     { "type": "range", "id": "titulo_size", "label": "Tamaño del título", "min": 32, "max": 80, "step": 2, "unit": "px", "default": 60 }

@@ -184,8 +184,22 @@
           {%- if section.settings.comprar_nota != blank -%}<p class="hl-compra__nota-ahora">{% render 'hl-icono', nombre: 'candado' %}{{ section.settings.comprar_nota }}</p>{%- endif -%}
           {%- if section.settings.compra_rapida -%}
             <div class="tf-extra">
-              <p class="tf-entrega" data-tf-entrega>📦 Envío gratis · llega en {{ settings.tf_dias_min }} a {{ settings.tf_dias_max }} días hábiles</p>
+              {%- liquid
+                assign dmin = settings.tf_dias_min
+                assign dmax = settings.tf_dias_max
+                assign por_pais = settings.tf_dias_pais | newline_to_br | split: '<br />'
+                for l in por_pais
+                  assign c = l | strip | split: '|'
+                  assign cod = c[0] | strip
+                  if cod == localization.country.iso_code and c.size >= 3
+                    assign dmin = c[1] | strip
+                    assign dmax = c[2] | strip
+                  endif
+                endfor
+              -%}
+              <p class="tf-entrega" data-tf-entrega>📦 Envío gratis · llega en {{ dmin }} a {{ dmax }} días hábiles</p>
               {% render 'tf-aviso-impuestos' %}
+              {% render 'tf-aviso-moneda' %}
               <p class="tf-navidad">{% render 'tf-corte' %}</p>
               <div class="tf-pagos" aria-label="Medios de pago">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag: class: 'tf-pago' }}{%- endfor -%}</div>
             </div>
@@ -492,7 +506,7 @@
       "type": "textarea",
       "id": "envio",
       "label": "Texto envío",
-      "default": "Envío gratis a Colombia, México, Chile y Perú, con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad."
+      "default": "Envío gratis a Colombia, México, Chile, Perú y Estados Unidos, con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15)."
     },
     {
       "type": "header",
@@ -615,7 +629,7 @@
           "type": "text",
           "id": "texto",
           "label": "Texto",
-          "default": "A Colombia, México, Chile y Perú"
+          "default": "A Colombia, México, Chile, Perú y Estados Unidos"
         }
       ]
     }

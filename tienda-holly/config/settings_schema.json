@@ -1494,22 +1494,29 @@
       },
       {
         "type": "textarea",
+        "id": "tf_dias_pais",
+        "label": "Días de entrega por país (CÓDIGO|mín|máx, uno por línea)",
+        "info": "Los países que no estén aquí usan la entrega mínima y máxima de arriba.",
+        "default": "US|7|15"
+      },
+      {
+        "type": "textarea",
         "id": "tf_cortes",
-        "label": "Fechas límite (AAAA-MM-DD|para qué noche|emoji, una por línea)",
-        "info": "Último día para pedir. Calculadas con el peor caso (entrega máxima) y festivos de Colombia, con 3 días hábiles de margen.",
-        "default": "2026-10-26|las velitas (7 dic)|🕯️\n2026-11-13|Navidad|🎄\n2026-11-20|Año Nuevo|🎆"
+        "label": "Fechas límite (AAAA-MM-DD|noche|emoji|países, una por línea)",
+        "info": "Último día para pedir. Países (opcional): CO = solo Colombia; US = solo Estados Unidos; -US = todos menos Estados Unidos; vacío = todos.",
+        "default": "2026-10-26|las velitas (7 dic)|🕯️|CO\n2026-11-13|Navidad|🎄|-US\n2026-11-20|Año Nuevo|🎆|-US\n2026-12-05|Navidad|🎄|US\n2026-12-12|Año Nuevo|🎆|US"
       },
       {
         "type": "text",
         "id": "tf_corte_vencido",
         "label": "Texto cuando ya no queda ninguna fecha",
-        "default": "📦 Envío gratis · llega en 10 a 25 días hábiles"
+        "default": "📦 Envío gratis con rastreo"
       },
       {
         "type": "textarea",
         "id": "tf_festivos",
         "label": "Festivos que no cuentan como día hábil (AAAA-MM-DD, uno por línea)",
-        "default": "2026-11-02\n2026-11-16\n2026-12-08\n2026-12-25\n2027-01-01\n2027-01-11"
+        "default": "2026-11-02\n2026-11-16\n2026-11-26\n2026-12-08\n2026-12-25\n2027-01-01\n2027-01-11"
       },
       {
         "type": "header",
@@ -1557,7 +1564,13 @@
         "type": "textarea",
         "id": "tf_aviso_impuestos",
         "label": "Aviso de impuestos (producto y carrito)",
-        "default": "Envío gratis. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En Colombia y Perú normalmente no aplican por el valor del pedido."
+        "default": "Envío gratis. A Estados Unidos los impuestos de importación ya están incluidos: no pagas nada extra al recibir. Si compras desde México o Chile, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En Colombia y Perú normalmente no aplican por el valor del pedido."
+      },
+      {
+        "type": "textarea",
+        "id": "tf_aviso_moneda",
+        "label": "Aviso de moneda (solo fuera de Colombia: producto y carrito)",
+        "default": "Precios en pesos colombianos (COP). Tu banco lo convierte a tu moneda (unas orejeras ≈ US$25). Si estás fuera de Colombia y te pide documento, elige ‘Otro’."
       },
       {
         "type": "checkbox",

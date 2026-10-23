@@ -1,0 +1,3 @@
+{%- comment -%} Aviso de moneda: solo a visitantes fuera de Colombia. Texto en Configuración del tema → Toffee – Avisos. {%- endcomment -%}
+{%- assign pais = localization.country.iso_code | default: 'CO' -%}
+{%- if pais != 'CO' and settings.tf_aviso_moneda != blank -%}<p class="tf-impuestos tf-moneda-aviso{% if clase %} {{ clase }}{% endif %}">💱 {{ settings.tf_aviso_moneda }}</p>{%- endif -%}

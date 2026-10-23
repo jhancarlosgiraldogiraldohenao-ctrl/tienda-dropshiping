@@ -20,7 +20,7 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad.\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta o PSE. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta o PSE. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
@@ -202,7 +202,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile y Perú, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad.</p><p>[fecha-limite]</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile, Perú y Estados Unidos, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).</p><p>[fecha-limite]</p>"
           }
         },
         "b7": {

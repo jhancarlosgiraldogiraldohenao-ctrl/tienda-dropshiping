@@ -342,3 +342,11 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
   - Orejeras (Shopify 10592260358433) → TD SPU SUPTODR00060, variantes rosa/azul cielo/rojo rosa/gris oscuro, producto $1.46–1.76.
 - Envío a EE. UU. visto hoy (YUN-EconoLink, 6–12 días + 1–3 de preparación): orejeras $7.44 total (envío $5.98, 70 g), disfraz $7.82 ($5.89, 80 g), trineo $30.97 ($27.04, 780 g). Ganancia aprox. a precios actuales: ~44k / ~43k / ~100k COP.
 - Jay quiere abrir EE. UU. Pendiente: TeemDrop confirma si YUN-EconoLink a EE. UU. incluye aranceles (DDP). Si sí: permiso de mercados y envíos (store auth con write_markets/write_shipping), mercado EE. UU., zona de envío, «≈ USD» en tf-precio-local, textos y políticas con EE. UU. Recomendación: abrir en español (latinos en EE. UU.); temporada allá = 31-dic y 4-jul.
+
+## 23-oct · ESTADOS UNIDOS ABIERTO (Jay lo abrió en Shopify: envío gratis, 7–15 días hábiles; impuestos incluidos según Jay/TeemDrop)
+- Tema en vivo: banderas «Enviamos a» (con 🇺🇸, asset tf-bandera-us.png) bajo el botón de la portada de temporada; barra con 2 mensajes (fecha límite + «Ahora también enviamos a Estados Unidos 🇺🇸» → política de envíos).
+- Fechas por país (una sola fuente): tf_cortes ahora tiene 4.º campo de países (CO / US / -US). Velitas solo CO; Navidad 13-nov y Año Nuevo 20-nov para todos menos US; US: Navidad 5-dic (pedido de Jay) y Año Nuevo 12-dic (mismo margen, propuesto por Claude). tf_dias_pais «US|7|15» → ficha y JS usan 7–15 en EE. UU. Festivo 26-nov (Acción de Gracias) agregado.
+- Aviso de moneda (tf_aviso_moneda, snippet tf-aviso-moneda) solo fuera de Colombia, en ficha y carrito. tf-precio-local muestra «≈ $X USD» (tasa 0.0003106 = 1/3220).
+- Textos con «Colombia, México, Chile, Perú y Estados Unidos» y «(a Estados Unidos, 7 a 15)» en FAQ, fichas, Ayuda, Rastreo, locales y meta; impuestos: «A Estados Unidos ya están incluidos».
+- Políticas por API: Envíos (EE. UU. 7–15 días, impuestos incluidos, Navidad 5-dic, 15 días para reclamar) y Devoluciones (fila EE. UU.: 7 días calendario voluntarios, como Perú). Copia en politicas/SHIPPING_POLICY.html. Respaldo previo en el scratchpad.
+- Verificado en vivo como visitante US y CO.
