@@ -10,8 +10,10 @@ G_FULL = ("the scruffy golden-brown criollo dog from the reference (thin and lon
 G_CALLE = ("the scruffy golden-brown criollo dog from the reference (thin and long-legged, wiry messy fur, bushy "
            "eyebrows and a little beard, floppy half-folded ears, white chest and paws, big nervous brown eyes), "
            "dirty and wet, WITHOUT bandana")
-O_FULL = ("the dark gray padded dog ear muffs from the reference (exact copy: thick dark gray fabric hood covering "
-          "both ears, velcro strap under the chin, muzzle and eyes free)")
+O_FULL = ("the dark gray padded ear muff HOOD from the reference (exact copy: one piece of thick dark gray fabric "
+          "that wraps over the top and back of the head like a snood and completely covers BOTH ears; the ears are "
+          "tucked inside and NOT visible; thin black elastic trim around the face opening; velcro strap under the "
+          "chin; muzzle and eyes free; it is NOT headphones, NOT a headband and NOT straps)")
 TR_FULL = ("the red plush sleigh-shaped pet bed from the reference (exact copy: red velvet body with a high curved "
            "back, white fluffy faux-fur trim on the edges, white snowflake prints, black runners)")
 D_FULL = ("the green Christmas tree pet costume from the reference (exact copy: soft green ruffled cape with small "
@@ -51,7 +53,9 @@ def prompt(dur, escena, cast, sonido='', voz=False, evitar=''):
     s = f" ({sonido})" if sonido else ''
     p.append(f"Natural ambient sound only{s}, no voices, no talking, no music.")
     p.append("Avoid: on-screen text, subtitles, logos, watermark, cartoon, 3D render, extra paws, extra animals, "
-             "morphing, changing colors" + (", cat without nightcap" if gato else '') + (', ' + evitar if evitar else '') + '.')
+             "morphing, changing colors" + (", cat without nightcap" if gato else '')
+             + (", dog ears visible outside the hood, headphones, headband, thin straps" if 'O' in cast else '')
+             + (', ' + evitar if evitar else '') + '.')
     return ' '.join(p)
 
 
@@ -78,11 +82,12 @@ DIAS.append(dict(n=1, fecha='Sábado 24 de octubre', videos=[
   porque='Idea ganadora I2 (contracorriente) + problema real de diciembre. Útil para mandarle a alguien con perro.',
   tomas=[
    toma(8, ['G', 'T'],
-    "Night in a cozy Latin American living room; colorful fireworks flash through the window. From the first frame: close-up of {G} hiding under a wooden table, trembling, ears pinned back, eyes wide, looking toward the window; each flash lights his face. Slow handheld push-in. On a chair beside the table, {T} sits calmly, looking down at the dog with a serious, sleepy face.",
+    "Night in a cozy Latin American living room; colorful fireworks flash through the window behind. Close-up shot at floor level: {G} is terrified and HIDING completely UNDER a wooden dining table, crouched low on the floor with his whole body under the table top, between the chair legs. He is visibly trembling and shaking the whole time, ears flat back against his head, tail tucked between his legs, eyes wide and scared, panting. His scared face fills the lower half of the frame from the first frame; each colorful flash lights his face. In the background, on a chair next to the table, {T} sits calmly, looking down at the dog with a serious, sleepy face. Slow handheld push-in toward the dog.",
     sonido='distant fireworks', voz='«Humano, tu perro no es miedoso. Su oído es mucho más fino que el tuyo.»',
+    evitar='calm dog, dog sitting upright next to the table, relaxed ears',
     texto='0–3 s: «Tu perro NO es miedoso 🎆»'),
    toma(8, ['G', 'T', 'O'],
-    "Same living room at night, fireworks still flashing through the window. {G} now lies calm and relaxed on a worn patterned sofa wearing {O}; his eyes slowly close. The cat from the reference climbs onto the sofa and curls up against the dog's side, then looks straight into the camera and slowly blinks. Gentle handheld camera.",
+    "Same living room at night, fireworks still flashing through the window. From the first frame: {G} lies calm and relaxed on a worn patterned sofa wearing {O}; the dark gray hood clearly covers both of his ears, which are hidden inside it; his eyes slowly close. From the first frame, {T} is already lying curled up against the dog's side on the sofa, facing the camera; near the end the cat looks straight into the camera and slowly blinks. Medium shot, both animals fully visible, gentle handheld camera.",
     sonido='distant fireworks, softer', voz='«Mételo a la casa, acompáñalo y ponle orejeras antes del ruido. Comenta CALMA.»',
     texto='«✔ Adentro  ✔ Acompáñalo  ✔ Orejeras ANTES del ruido» · al final: «Comenta CALMA 🐾»')],
   edicion='Uno las 2 tomas, subtítulos de la voz y la lista en pantalla.',
