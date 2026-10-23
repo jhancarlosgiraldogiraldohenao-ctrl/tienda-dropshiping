@@ -352,6 +352,6 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 - Verificado en vivo como visitante US y CO.
 
 ## 23-oct · Sin fechas límite (decisión de Jay)
-- Quitadas de la tienda todas las fechas límite: barra → «🎆 Temporada de pólvora · Envío GRATIS con rastreo · Paga con PSE, Nequi o tarjeta en cuotas» (→ orejeras); portada: nota «🐷 Recuerda: el 3 % de cada compra va al marrano…» (→ /pages/marrano) en vez de la fecha; fichas sin línea de fecha (ajuste mostrar_corte = false); sección «fechas» de orejeras eliminada; FAQ «¿Me llega a tiempo…?» / «¿Hasta cuándo…?» quitadas o cambiadas por «¿A dónde va el 3 %?»; tokens [fecha-limite] retirados; política de envíos: «pídelo con tiempo» sin fechas.
+- Quitadas de la tienda todas las fechas límite: barra → «🎆 Envío GRATIS · Paga con PSE, Nequi o en cuotas» (→ orejeras); portada: nota «🐷 Recuerda: el 3 % de cada compra va al marrano…» (→ /pages/marrano) en vez de la fecha; fichas sin línea de fecha (ajuste mostrar_corte = false); sección «fechas» de orejeras eliminada; FAQ «¿Me llega a tiempo…?» / «¿Hasta cuándo…?» quitadas o cambiadas por «¿A dónde va el 3 %?»; tokens [fecha-limite] retirados; política de envíos: «pídelo con tiempo» sin fechas.
 - NO usar «últimas unidades» ni escasez inventada (no hay stock limitado; Ley 1480/SIC). Incentivos permitidos: envío gratis, cuotas, PSE/Nequi, garantía, marrano.
 - El sistema de fechas (tf_cortes, tf-corte, JS) sigue en el tema por si se quiere volver a activar (portada: mostrar_corte; ficha: mostrar_corte).
