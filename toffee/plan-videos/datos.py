@@ -63,14 +63,14 @@ DIAS = []
 
 # ---------------------------------------------------------------- DÍA 1 · sábado 24-oct
 DIAS.append(dict(n=1, fecha='Sábado 24 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Hola, humano»', palabra='FONDO',
+ dict(letra='A', red='TikTok', titulo='«Hola, humano»', palabra='TRINEO',
   porque='Formato Chonk: cámara en el piso, la cara llena la pantalla, la pata toca el lente y el final empalma con el inicio. Tu video de Toffee moviendo la cabecita fue el de mejor retención.',
   tomas=[toma(8, ['T'],
    "Camera POV: a phone lying face-up on the wooden floor of a cozy Colombian living room, ultra-wide 0.5x lens pointing up at the ceiling and a hanging lamp. From the very first frame, the round face of {T} fills the upper half of the frame, looking down into the lens with huge curious eyes. He slowly lowers his face until his nose almost touches the lens, taps the lens twice with one soft round paw, tilts his head, then lifts his face back to exactly the same position as in the first frame (seamless loop). One single continuous shot, no cuts.",
    sonido='quiet room, soft paw taps on the phone',
    texto='Sticker que gira con la cámara (lo pongo yo): «hola, humano 👋»')],
   edicion='Sin voz. Recorto el final para que empalme perfecto con el inicio. El audio en tendencia lo eliges tú en TikTok al publicar (sonido de Flow bajito).',
-  desc='hola, humano 👋 soy Toffee. me dicen gordo; yo digo esponjoso.\nComenta FONDO y te mando un fondo de pantalla mío 🐾',
+  desc='hola, humano 👋 soy Toffee. me dicen gordo; yo digo esponjoso.\nDuermo 14 horas en mi cama trineo. Comenta TRINEO y te la paso 🛷',
   yt='Hola, humano 👋 Soy Toffee, el gato esponjoso',
   tags='#ToffeeyGalleta #gatos #britishshorthair #gatosdetiktok'),
 
@@ -116,13 +116,13 @@ DIAS.append(dict(n=1, fecha='Sábado 24 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 2 · domingo 25-oct
 DIAS.append(dict(n=2, fecha='Domingo 25 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«La pata que salva la Navidad»', palabra='FONDO',
+ dict(letra='A', red='TikTok', titulo='«La pata que salva la Navidad»', palabra='CALMA',
   porque='Gancho visual del estudio: la pata de Toffee frena el plato de uvas frente a la cámara. Un solo plano, 6 segundos.',
   tomas=[toma(6, ['T', 'G'],
    "Phone resting on a dining table with a Christmas tablecloth, very close, at table level. From the very first frame: a small bowl of green grapes in the center of the frame. The nose and beard of {G} slowly rise from the bottom edge, sniffing toward the bowl. The round cream paw of {T} enters from the side and calmly slides the bowl out of the dog's reach. Then the cat's round face leans into the frame and stares into the lens with total seriousness. One continuous shot.",
    sonido='quiet dining room, bowl sliding on fabric')],
   edicion='Sin voz. Corte justo cuando Toffee mira al lente, para que se repita. Audio en tendencia en TikTok.',
-  desc='yo no tiro cosas de la mesa por gusto. bueno, sí. pero esta vez fue por Galleta 🍇🚫\nComenta FONDO y te mando un fondo de los dos 🐾',
+  desc='yo no tiro cosas de la mesa por gusto. bueno, sí. pero esta vez fue por Galleta 🍇🚫\ny si tu perro sufre con la pólvora, comenta CALMA 🎆',
   yt='Mi gato le salvó la Navidad a mi perro 🍇',
   tags='#ToffeeyGalleta #gatos #perros #navidad'),
 
@@ -142,7 +142,7 @@ DIAS.append(dict(n=2, fecha='Domingo 25 de octubre', videos=[
   yt='¿Los perros pueden comer uvas? 🍇 El error del 31 de diciembre',
   tags='#ToffeeyGalleta #añonuevo #perros #mascotas #Colombia'),
 
- dict(letra='C', red='YouTube', titulo='El diario de Galleta, cap. 2: «El primer día»', palabra='FONDO',
+ dict(letra='C', red='YouTube', titulo='El diario de Galleta, cap. 2: «El primer día»', palabra='CALMA',
   porque='Sigue la serie. Enseña algo útil (a un perro asustado no se le obliga) dentro de la historia.',
   tomas=[
    toma(8, ['T', 'G'],
@@ -158,25 +158,25 @@ DIAS.append(dict(n=2, fecha='Domingo 25 de octubre', videos=[
     sonido='quiet afternoon', voz='«En la tarde salió. Y se durmió cerca de mí. Mañana: su primera pólvora en casa.»',
     texto='Al final: «Cap. 3 mañana 🐾»', evitar='bandana on the dog')],
   edicion='Uno las 3 tomas (24 s) y pongo subtítulos.',
-  desc='Galleta pasó su primer día escondido debajo de la cama. Toffee no lo obligó: le dejó agua, espacio y paciencia 🐶 Capítulo 2.\n¿Adoptaste un perro? Cuéntale a Toffee cómo fue su primer día. Comenta FONDO y te llega un fondo de los dos.',
+  desc='Galleta pasó su primer día escondido debajo de la cama. Toffee no lo obligó: le dejó agua, espacio y paciencia 🐶 Capítulo 2.\n¿Adoptaste un perro? Cuéntale a Toffee cómo fue su primer día. Y si tu perro sufre con la pólvora, comenta CALMA.',
   yt='Perro rescatado: su primer día en casa 🐶 El diario de Galleta, cap. 2',
   tags='#ToffeeyGalleta #DiarioDeGalleta #adopta #perrorescatado'),
 ]))
 
 # ---------------------------------------------------------------- DÍA 3 · lunes 26-oct
 DIAS.append(dict(n=3, fecha='Lunes 26 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Los lunes»', palabra='FONDO',
+ dict(letra='A', red='TikTok', titulo='«Los lunes»', palabra='TRINEO',
   porque='Personaje congruente (Toffee les tiene pánico a los lunes) y algo que todos viven. Cámara pegada a la cara, como Chonk.',
   tomas=[toma(8, ['T'],
    "Early morning bedroom with soft gray light. Camera POV from the pillow, very close. From the first frame: {T} lies in a messy bed under a blanket, eyes half closed. A phone on the nightstand next to him lights up and buzzes with an alarm. Without opening his eyes, the cat slowly extends one paw, pushes the phone off the edge of the nightstand, pulls the paw back under the blanket and goes back to sleep. Single continuous shot.",
    sonido='phone alarm buzzing, then a soft thud, then silence',
    texto='Una palabra arriba: «lunes.»')],
   edicion='Sin voz. Audio en tendencia en TikTok.',
-  desc='no sé qué es un lunes y no quiero saber 😾\nComenta FONDO y te mando un fondo para tu lunes 🐾',
+  desc='no sé qué es un lunes y no quiero saber 😾\nPara los lunes, mi cama trineo. Comenta TRINEO 🛷',
   yt='Mi gato y los lunes 😾',
   tags='#ToffeeyGalleta #lunes #gatos #gatosgraciosos'),
 
- dict(letra='B', red='Instagram', titulo='«¿Por qué tu perro te sigue al baño?»', palabra='FONDO',
+ dict(letra='B', red='Instagram', titulo='«¿Por qué tu perro te sigue al baño?»', palabra='CALMA',
   porque='Idea K: todos lo viven y les da risa. Es el «esto es mi perro» que se manda por mensaje.',
   tomas=[
    toma(8, ['G'],
@@ -188,7 +188,7 @@ DIAS.append(dict(n=3, fecha='Lunes 26 de octubre', videos=[
     sonido='small bathroom echo', voz='«Yo también lo sigo, pero es para vigilar. Etiqueta a alguien que no va al baño solo.»',
     texto='Al final: «Etiqueta a esa persona 👇»')],
   edicion='Uno las 2 tomas y pongo subtítulos.',
-  desc='Galleta sigue a su humano hasta el baño. Toffee dice que él solo va a vigilar 🐶🐱\nEtiqueta a alguien que no puede ir al baño solo. Comenta FONDO y Toffee te manda un fondo de pantalla.',
+  desc='Galleta sigue a su humano hasta el baño. Toffee dice que él solo va a vigilar 🐶🐱\nEtiqueta a alguien que no puede ir al baño solo. Y si tu perro sufre con la pólvora, comenta CALMA.',
   yt='¿Por qué mi perro me sigue al baño? 🚽🐶',
   tags='#ToffeeyGalleta #perros #gatos #mascotas #humor'),
 
@@ -267,18 +267,18 @@ DIAS.append(dict(n=4, fecha='Martes 27 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 5 · miércoles 28-oct
 DIAS.append(dict(n=5, fecha='Miércoles 28 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Tinto y arepa»', palabra='FONDO',
+ dict(letra='A', red='TikTok', titulo='«Tinto y arepa»', palabra='CALMA',
   porque='Algo colombiano cada semana (regla 9 del estudio). Toffee y Galleta juntos, un gesto, un solo plano.',
   tomas=[toma(8, ['T', 'G'],
    "Colombian morning kitchen: a wooden table with a small cup of steaming black coffee and a white arepa on a plate. Camera very close at table level. From the first frame: {T} sits behind the plate with half-closed sleepy eyes. The nose of {G} rises slowly from below the table edge toward the arepa. Without opening his eyes, the cat slides the plate away from the dog with one paw. The dog's nose slowly sinks back down. Single continuous shot.",
    sonido='morning kitchen, plate sliding on wood',
    texto='Arriba: «mi desayuno, Galleta.»')],
   edicion='Sin voz. Audio en tendencia en TikTok.',
-  desc='el tinto lo huelo, la arepa la cuido. prioridades ☕\nComenta FONDO y te mando un fondo de los dos 🐾',
+  desc='el tinto lo huelo, la arepa la cuido. prioridades ☕\ny si tu perro sufre con la pólvora en diciembre, comenta CALMA 🎆',
   yt='Mi gato no comparte su arepa ☕',
   tags='#ToffeeyGalleta #Colombia #arepa #gatos #perros'),
 
- dict(letra='B', red='Instagram', titulo='«¿Gato o perro?»', palabra='FONDO',
+ dict(letra='B', red='Instagram', titulo='«¿Gato o perro?»', palabra='TRINEO o CALMA',
   porque='Idea F: el debate más grande de las mascotas, actuado por Toffee y Galleta. La gente opina y etiqueta a su amigo «del otro equipo».',
   tomas=[
    toma(8, ['T', 'G'],
@@ -290,7 +290,7 @@ DIAS.append(dict(n=5, fecha='Miércoles 28 de octubre', videos=[
     sonido='quiet room', voz='«Dicen que nos odiamos. Nosotros dormimos juntos. ¿Equipo Toffee o equipo Galleta?»',
     texto='Al final: «Comenta tu equipo 👇»')],
   edicion='Uno las 2 tomas y pongo subtítulos.',
-  desc='Dicen que perros y gatos se odian. Toffee y Galleta duermen juntos 🐱🐶\n¿Equipo Toffee o equipo Galleta? Etiqueta a tu amigo del otro equipo. Comenta FONDO y te llega un fondo de los dos.',
+  desc='Dicen que perros y gatos se odian. Toffee y Galleta duermen juntos 🐱🐶\n¿Equipo Toffee o equipo Galleta? Etiqueta a tu amigo del otro equipo. Equipo Toffee: comenta TRINEO (su cama). Equipo Galleta: comenta CALMA (sus orejeras).',
   yt='¿Gato o perro? El debate 🐱🐶',
   tags='#ToffeeyGalleta #gatovsperro #gatos #perros'),
 
@@ -346,7 +346,7 @@ DIAS.append(dict(n=6, fecha='Jueves 29 de octubre', videos=[
   yt='¿Disfrazar a tu perro o gato es maltrato? 🎄',
   tags='#ToffeeyGalleta #navidad #mascotas #disfrazparaperros'),
 
- dict(letra='C', red='YouTube', titulo='El diario de Galleta, cap. 6: «La aspiradora»', palabra='FONDO',
+ dict(letra='C', red='YouTube', titulo='El diario de Galleta, cap. 6: «La aspiradora»', palabra='CALMA',
   porque='Pregunta común (#40 de tus 100: «¿Por qué mi perro le tiene miedo a la aspiradora?») contada como capítulo.',
   tomas=[
    toma(8, ['T', 'G'],
@@ -360,21 +360,21 @@ DIAS.append(dict(n=6, fecha='Jueves 29 de octubre', videos=[
     sonido='vacuum running far away', voz='«Días después, ni la mira. Yo sigo sin perdonarla. Mañana, el final de temporada.»',
     texto='Al final: «Cap. 7 mañana 🐾»')],
   edicion='Uno las 3 tomas (24 s) y pongo subtítulos.',
-  desc='Galleta le tiene miedo a la aspiradora. Toffee lo ayudó así: apagada, de lejos y con premios 🐶 Capítulo 6.\nComenta FONDO y te llega un fondo de los dos.',
+  desc='Galleta le tiene miedo a la aspiradora. Toffee lo ayudó así: apagada, de lejos y con premios 🐶 Capítulo 6.\nY para la pólvora de diciembre, comenta CALMA.',
   yt='Mi perro le tiene miedo a la aspiradora 😱 El diario de Galleta, cap. 6',
   tags='#ToffeeyGalleta #DiarioDeGalleta #perros #consejos'),
 ]))
 
 # ---------------------------------------------------------------- DÍA 7 · viernes 30-oct
 DIAS.append(dict(n=7, fecha='Viernes 30 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Halloween: Toffee no se disfrazó»', palabra='FONDO',
+ dict(letra='A', red='TikTok', titulo='«Halloween: Toffee no se disfrazó»', palabra='ÁRBOL',
   porque='Surfear la tendencia de la semana (Halloween es mañana), como hace Molang. Chiste visual: Toffee parece una calabaza más.',
   tomas=[toma(8, ['T', 'G'],
    "Night, living room decorated for Halloween with carved pumpkins glowing with LED candles and paper bats hanging from the ceiling. From the first frame: {T} sits perfectly still among the pumpkins, his round face glowing orange like another pumpkin. A paper bat drops from the ceiling right in front of {G}, who jumps backward and hides behind the cat. The cat doesn't move at all and slowly blinks at the camera. Single continuous shot.",
    sonido='quiet night, paper rustle',
    texto='Arriba: «el disfraz de calabaza me salió natural 🎃»')],
   edicion='Sin voz. Audio en tendencia de Halloween en TikTok.',
-  desc='no me disfracé. así de redondo soy 🎃\nComenta FONDO y te mando un fondo de Halloween 🐾',
+  desc='no me disfracé. así de redondo soy 🎃\npara Navidad sí me dejo: comenta ÁRBOL y te paso el disfraz 🎄',
   yt='Mi gato es la mejor calabaza de Halloween 🎃',
   tags='#ToffeeyGalleta #Halloween #gatos #perros'),
 

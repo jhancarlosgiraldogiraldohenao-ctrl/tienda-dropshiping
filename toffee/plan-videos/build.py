@@ -178,7 +178,6 @@ pre.prompt {{ white-space: pre-wrap; word-wrap: break-word; font-family: 'DejaVu
 <p class="resp"><b>CALMA:</b> ¡Humano! Aquí Toffee 😼 Las orejeras de Galleta están en soytoffee.store (el enlace está en mi perfil). Envío gratis y pagas con PSE, Nequi o tarjeta en cuotas. Y el 3 % va a mi marrano para perritos de la calle 🐷 ¿Desde qué país me escribes?</p>
 <p class="resp"><b>ÁRBOL:</b> ¡Humano! Aquí Toffee 😼 El disfraz de árbol está en soytoffee.store (el enlace está en mi perfil). Es para mascotas de 1,5 a 7,5 kg. Envío gratis y pagas con PSE, Nequi o en cuotas 🎄 ¿Desde qué país me escribes?</p>
 <p class="resp"><b>TRINEO:</b> ¡Humano! Aquí Toffee 😼 Mi cama trineo está en soytoffee.store (el enlace está en mi perfil). Mide 50 × 38 × 26 cm y tiene bordes altos, como me gusta. Envío gratis y pagas con PSE, Nequi o en cuotas 🛷 ¿Desde qué país me escribes?</p>
-<p class="resp"><b>FONDO:</b> ¡Humano! Aquí Toffee 😼 Te mandé tu fondo de pantalla por mensaje 🐾 Si no te llega, sígueme y escríbeme «FONDO» por mensaje.</p>
 </div>
 
 <h2 class="salto">Lo que aprendí de Chonk (@fatchonkywizardcat)</h2>
@@ -228,7 +227,7 @@ pre.prompt {{ white-space: pre-wrap; word-wrap: break-word; font-family: 'DejaVu
 <tr><td>TikTok</td><td>% que lo vio completo y tiempo promedio</td><td>Video → Estadísticas</td></tr>
 <tr><td>Instagram</td><td>Veces compartido y guardados</td><td>Reel → Ver estadísticas</td></tr>
 <tr><td>YouTube</td><td>«Lo vieron» contra «Lo deslizaron»</td><td>YouTube Studio → Contenido → el Short</td></tr>
-<tr><td>Las 3</td><td>Comentarios con CALMA, ÁRBOL, TRINEO o FONDO</td><td>Comentarios</td></tr>
+<tr><td>Las 3</td><td>Comentarios con CALMA, ÁRBOL o TRINEO</td><td>Comentarios</td></tr>
 </table>
 <p style="margin-top:6px">Anota cuál de los 3 videos (A, B o C) ganó en cada red. Con eso, la semana 2 hacemos más del que ganó (tu estudio: el 80 % no funciona; se repite el 20 % que sí, con otro gancho).</p></div>
 </body></html>'''
