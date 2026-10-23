@@ -98,14 +98,14 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Tengo que pagar impuestos o aduana?",
-            "respuesta": "<p>Envío gratis. A <strong>Estados Unidos</strong> los impuestos de importación ya están incluidos: no pagas nada extra al recibir. Si compras desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir el paquete; esos impuestos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican por el valor del pedido.</p>"
+            "respuesta": "<p>Envío gratis. A <strong>Estados Unidos</strong>, impuestos incluidos. Desde <strong>México o Chile</strong>, tu país puede cobrar impuestos de importación al recibir; esos los paga el cliente. En <strong>Colombia y Perú</strong> normalmente no aplican.</p>"
           }
         },
         "b0": {
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>En Colombia: con <strong>PSE</strong>, <strong>Nequi</strong>, <strong>Bre-B</strong>, transferencia <strong>Bancolombia</strong>, en efectivo en <strong>Efecty</strong> o con tarjeta de crédito, débito o prepago (Visa, Mastercard, American Express o Diners). Desde otros países: con tu tarjeta de crédito internacional. Los pagos los procesan Mercado Pago y Bold: es 100 % seguro, no tienes que crear cuenta y puedes pagar en cuotas si tu banco lo permite.</p>"
+            "respuesta": "<p>En Colombia: <strong>PSE</strong>, <strong>Nequi</strong>, <strong>Bre-B</strong>, Bancolombia, <strong>Efecty</strong> o tarjeta (también en cuotas). Desde otros países: tarjeta de crédito internacional. Pagos seguros con Mercado Pago y Bold, sin crear cuenta.</p>"
           }
         },
         "medidas": {
@@ -229,15 +229,15 @@
     "marrano": {
       "type": "tf-marrano",
       "settings": {
-        "eyebrow": "El marrano de Toffee",
+        "eyebrow": "La causa de Toffee",
         "titulo": "<p>El marrano <em>de Toffee</em></p>",
-        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾",
+        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y lo dono a perritos y gatitos de la calle. Y no, no me voy a comer las monedas. 😾",
         "meta": 1000000,
         "total_extra": 0,
         "moneda": "COP",
         "nota": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato.",
         "historial_titulo": "Marranos rotos y donados",
-        "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
+        "sin_donaciones": "",
         "compacto": false,
         "ancla": "marrano",
         "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",

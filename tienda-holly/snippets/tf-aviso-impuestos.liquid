@@ -1,2 +1,14 @@
-{%- comment -%} Aviso de impuestos de importación. Texto en Configuración del tema → Toffee – Avisos. {%- endcomment -%}
-{%- if settings.tf_aviso_impuestos != blank -%}<p class="tf-impuestos{% if clase %} {{ clase }}{% endif %}">🧾 {{ settings.tf_aviso_impuestos }}</p>{%- endif -%}
+{%- comment -%}
+  Aviso de impuestos de importación según el país del visitante (Configuración del tema → Toffee – Avisos).
+  México y Chile: el cliente paga los impuestos al recibir. Estados Unidos: incluidos. Colombia y Perú: no se muestra nada.
+{%- endcomment -%}
+{%- liquid
+  assign pais = localization.country.iso_code | default: 'CO'
+  assign texto = ''
+  if pais == 'MX' or pais == 'CL'
+    assign texto = settings.tf_aviso_impuestos
+  elsif pais == 'US'
+    assign texto = settings.tf_aviso_impuestos_us
+  endif
+-%}
+{%- if texto != blank -%}<p class="tf-impuestos{% if clase %} {{ clase }}{% endif %}">🧾 {{ texto }}</p>{%- endif -%}

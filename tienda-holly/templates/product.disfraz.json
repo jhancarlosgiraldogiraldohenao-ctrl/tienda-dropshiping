@@ -42,7 +42,7 @@
         "marrano_url": "/pages/marrano",
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",
-        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas.",
+        "veredicto_rotulo": "Opinión de Toffee, personaje de IA: no es una reseña de clientes.",
         "mostrar_corte": false
       },
       "blocks": {

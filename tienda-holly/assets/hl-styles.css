@@ -1472,3 +1472,12 @@ a { color: var(--tf-caramelo-hondo); }
 @media (max-width: 749px) { .tf-portada__paises { justify-content: center; margin-top: 12px; font-size: 12px; gap: 6px; } }
 .tf-moneda-aviso { font-size: 13px; }
 .tf-portada__corte a { color: var(--tf-crema); text-decoration: underline; text-decoration-color: rgba(251, 246, 238, .35); text-underline-offset: 3px; }
+
+/* Marrano: cifra siempre visible, escala de 0 a 100 % y colores oficiales (sin rosa ni rojo) */
+.tf-marrano__cifras { margin-top: 18px !important; }
+.tf-marrano__barra { margin-top: 10px !important; background: var(--tf-crema-2) !important; border: 1px solid var(--tf-linea) !important; }
+.tf-marrano__relleno { min-width: 0 !important; }
+.tf-marrano__cifras strong { color: var(--tf-verde) !important; }
+.tf-marrano__escala { display: flex; justify-content: space-between; margin-top: 6px; font-size: 12px; font-weight: 600; color: var(--tf-texto-suave); font-variant-numeric: tabular-nums; }
+.tf-oscuro .tf-marrano__escala, .tf-oscuro .tf-marrano__cifras { color: var(--tf-crema-suave); }
+.tf-marrano__vacio { margin-top: 10px !important; font-size: 14px !important; }

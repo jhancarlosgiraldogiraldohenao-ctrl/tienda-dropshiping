@@ -26,8 +26,8 @@
         "modo_pildoras": true,
         "titulo_corto": "Orejeras anti ruido para perros · versión engrosada",
         "subtitulo": "Para pólvora, tormentas, secador y baño · Tallas S a XL",
-        "intro": "La pólvora de diciembre es la peor noche del año para muchos perros. Estas orejeras acolchadas cubren sus oídos y amortiguan los ruidos fuertes para que esté más tranquilo.",
-        "puntos": "Versión engrosada: más tela y más relleno\nAmortigua pólvora, truenos, secador y peluquería\nSe ajusta con velcro, sin apretar\nResistente al agua: sirve también en el baño\nPara perros desde 7,5 kg (tallas S a XL)",
+        "intro": "La pólvora de diciembre es la peor noche del año para muchos perros. Estas orejeras acolchadas amortiguan el ruido para que esté más tranquilo.",
+        "puntos": "Versión engrosada: más tela y más relleno\nSe ajusta con velcro, sin apretar\nResistente al agua: sirve también en el baño\nPara perros desde 7,5 kg (tallas S a XL)",
         "guia_tallas": "📏 ¿No sabes su talla? Mira la guía",
         "sticky_texto": "Orejeras anti ruido",
         "compra_rapida": true,
@@ -42,7 +42,7 @@
         "marrano_url": "/pages/marrano",
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",
-        "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas.",
+        "veredicto_rotulo": "Opinión de Toffee, personaje de IA: no es una reseña de clientes.",
         "orden_fotos": "3,8,7,1",
         "mostrar_corte": false
       },
@@ -83,7 +83,7 @@
       "settings": {
         "eyebrow": "Por qué funcionan",
         "titulo": "<p>Menos ruido, <em>más calma</em></p>",
-        "texto": "Galleta, el empleado más miedoso de Toffee, no sale de debajo de la cama cuando hay pólvora. Por eso Toffee aprobó estas orejeras.",
+        "texto": "",
         "nota": "Versión engrosada en gris oscuro.",
         "ancla": "detalles",
         "titulo_size": 60,
@@ -136,7 +136,7 @@
         "eyebrow": "Antes de la noche de pólvora",
         "titulo": "<p>Acostúmbralo <em>en 3 pasos</em></p>",
         "texto": "Así la recibe como algo bueno y no como un castigo.",
-        "nota": "Reduce el ruido, no lo elimina por completo. Si tu perro sufre mucha ansiedad, consulta también con tu veterinario.",
+        "nota": "Reduce el ruido, no lo elimina por completo.",
         "ancla": "como-funciona",
         "titulo_size": 60
       },
@@ -299,7 +299,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cómo pago?",
-            "respuesta": "<p>En Colombia: con <strong>PSE</strong>, <strong>Nequi</strong>, <strong>Bre-B</strong>, transferencia <strong>Bancolombia</strong>, en efectivo en <strong>Efecty</strong> o con tarjeta de crédito, débito o prepago (Visa, Mastercard, American Express o Diners). Desde otros países: con tu tarjeta de crédito internacional. Los pagos los procesan Mercado Pago y Bold: es 100 % seguro, no tienes que crear cuenta y puedes pagar en cuotas si tu banco lo permite.</p>"
+            "respuesta": "<p>En Colombia: <strong>PSE</strong>, <strong>Nequi</strong>, <strong>Bre-B</strong>, Bancolombia, <strong>Efecty</strong> o tarjeta (también en cuotas). Desde otros países: tarjeta de crédito internacional. Pagos seguros con Mercado Pago y Bold, sin crear cuenta.</p>"
           }
         }
       },
@@ -340,7 +340,7 @@
         "invertir": false,
         "eyebrow": "Por qué existen",
         "titulo": "<p>Galleta llegó a la casa <em>una noche de pólvora</em></p>",
-        "texto": "<p>En la historia de Toffee, Galleta es un criollo rescatado de la calle un 31 de diciembre, temblando debajo de un carro. Desde entonces el ruido era su peor enemigo… hasta que Toffee le aprobó estas orejeras.</p><p>Galleta y Toffee son personajes creados con IA. El miedo de los perros a la pólvora sí es real: por eso existen estas orejeras y por eso el 3 % de cada venta va al marrano para peludos de la calle.</p>",
+        "texto": "<p>En la historia de Toffee, Galleta llegó un 31 de diciembre, temblando debajo de un carro. El ruido era su peor enemigo… hasta estas orejeras.</p><p>Toffee y Galleta son personajes creados con IA; el miedo de los perros a la pólvora sí es real.</p>",
         "nota_toffee": "No le digan que lo dije, pero es el empleado más valiente que tengo. Con orejeras.",
         "btn_texto": "Conoce a Toffee y Galleta",
         "btn_url": "/pages/historia-de-toffee",
@@ -383,26 +383,12 @@
           "settings": {
             "texto": "Derecho de retracto según la ley de tu país (5 días hábiles en Colombia, 10 días en Chile)"
           }
-        },
-        "p3": {
-          "type": "punto",
-          "settings": {
-            "texto": "Pago 100 % seguro con tarjeta o PSE"
-          }
-        },
-        "p4": {
-          "type": "punto",
-          "settings": {
-            "texto": "El 3 % de tu compra va al marrano para peludos de la calle"
-          }
         }
       },
       "block_order": [
         "p0",
         "p1",
-        "p2",
-        "p3",
-        "p4"
+        "p2"
       ]
     },
     "usos": {
