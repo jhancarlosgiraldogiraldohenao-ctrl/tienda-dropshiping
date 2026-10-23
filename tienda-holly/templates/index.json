@@ -90,8 +90,8 @@
         "b2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Me llega a tiempo para diciembre?",
-            "respuesta": "<p>Sí, si pides a tiempo. Fechas límite según la noche:</p><p>[fechas]</p>"
+            "pregunta": "¿A dónde va el 3 % de mi compra?",
+            "respuesta": "<p>Al <a href=\"/pages/marrano\">marrano de Toffee</a>: separamos el 3 % de cada venta para perritos y gatitos de la calle. Cuando se llena, lo donamos a fundaciones y rescatistas y publicamos el comprobante.</p>"
           }
         },
         "impuestos": {
@@ -441,7 +441,9 @@
         "es_h1": true,
         "ancla": "temporada",
         "paises_texto": "Enviamos a",
-        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos"
+        "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos",
+        "nota_boton": "🐷 Recuerda: el 3 % de cada compra va al marrano de Toffee para ayudar a perritos y gatitos de la calle.",
+        "nota_url": "/pages/marrano"
       },
       "blocks": {},
       "block_order": []

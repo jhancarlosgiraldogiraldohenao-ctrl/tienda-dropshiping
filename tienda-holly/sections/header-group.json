@@ -17,7 +17,7 @@
         "anuncio-temporada": {
           "type": "announcement",
           "settings": {
-            "text": "[fecha-limite] · Envío GRATIS",
+            "text": "🎆 Temporada de pólvora · Envío GRATIS con rastreo · Paga con PSE, Nequi o tarjeta en cuotas",
             "text_alignment": "center",
             "color_scheme": "scheme-4",
             "link": "/products/orejeras-anti-ruido-para-perros"

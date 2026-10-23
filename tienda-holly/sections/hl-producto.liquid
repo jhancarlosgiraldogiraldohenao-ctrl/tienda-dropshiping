@@ -200,7 +200,7 @@
               <p class="tf-entrega" data-tf-entrega>📦 Envío gratis · llega en {{ dmin }} a {{ dmax }} días hábiles</p>
               {% render 'tf-aviso-impuestos' %}
               {% render 'tf-aviso-moneda' %}
-              <p class="tf-navidad">{% render 'tf-corte' %}</p>
+              {%- if section.settings.mostrar_corte -%}<p class="tf-navidad">{% render 'tf-corte' %}</p>{%- endif -%}
               <div class="tf-pagos" aria-label="Medios de pago">{%- for type in shop.enabled_payment_types -%}{{ type | payment_type_svg_tag: class: 'tf-pago' }}{%- endfor -%}</div>
             </div>
           {%- endif -%}
@@ -408,6 +408,12 @@
     {
       "type": "paragraph",
       "content": "Días de entrega, fechas límite y garantía: Configuración del tema → Toffee – Fechas y garantía."
+    },
+    {
+      "type": "checkbox",
+      "id": "mostrar_corte",
+      "label": "Mostrar la fecha límite de entrega",
+      "default": false
     },
     {
       "type": "text",

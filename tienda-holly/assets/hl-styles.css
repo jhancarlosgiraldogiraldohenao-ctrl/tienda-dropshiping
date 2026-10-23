@@ -1471,3 +1471,4 @@ a { color: var(--tf-caramelo-hondo); }
 .tf-portada__pais img { width: 20px; height: 20px; border-radius: 50%; object-fit: cover; }
 @media (max-width: 749px) { .tf-portada__paises { justify-content: center; margin-top: 12px; font-size: 12px; gap: 6px; } }
 .tf-moneda-aviso { font-size: 13px; }
+.tf-portada__corte a { color: var(--tf-crema); text-decoration: underline; text-decoration-color: rgba(251, 246, 238, .35); text-underline-offset: 3px; }

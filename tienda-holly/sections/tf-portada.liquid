@@ -39,7 +39,11 @@
           <span>{{ section.settings.btn_texto }}{% if section.settings.btn_precio %} · {{ v.price | money_without_trailing_zeros }}{% endif %}</span> {% render 'hl-icono', nombre: 'flecha' %}
         </a>
       {%- endif -%}
-      <p class="tf-portada__corte">{% render 'tf-corte' %}</p>
+      {%- if section.settings.nota_boton != blank -%}
+        <p class="tf-portada__corte">{% if section.settings.nota_url != blank %}<a href="{{ section.settings.nota_url }}">{{ section.settings.nota_boton }}</a>{% else %}{{ section.settings.nota_boton }}{% endif %}</p>
+      {%- elsif section.settings.mostrar_corte -%}
+        <p class="tf-portada__corte">{% render 'tf-corte' %}</p>
+      {%- endif -%}
       {%- if section.settings.paises != blank -%}
         <div class="tf-portada__paises">
           <span>{{ section.settings.paises_texto }}</span>
@@ -76,6 +80,9 @@
     { "type": "textarea", "id": "sub", "label": "Texto" },
     { "type": "text", "id": "btn_texto", "label": "Botón", "default": "Ver las orejeras" },
     { "type": "checkbox", "id": "btn_precio", "label": "Mostrar el precio en el botón", "default": true },
+    { "type": "text", "id": "nota_boton", "label": "Nota bajo el botón", "default": "🐷 Recuerda: el 3 % de cada compra va al marrano de Toffee para ayudar a perritos y gatitos de la calle." },
+    { "type": "url", "id": "nota_url", "label": "Enlace de la nota" },
+    { "type": "checkbox", "id": "mostrar_corte", "label": "Sin nota: mostrar la fecha límite de entrega", "default": false },
     { "type": "text", "id": "paises_texto", "label": "Texto antes de las banderas", "default": "Enviamos a" },
     { "type": "text", "id": "paises", "label": "Países (código:nombre, separados por coma)", "info": "Banderas en assets: tf-bandera-co, mx, cl, pe, us.", "default": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos" },
     { "type": "text", "id": "frase", "label": "Frase del personaje" },

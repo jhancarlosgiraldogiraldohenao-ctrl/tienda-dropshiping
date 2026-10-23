@@ -21,16 +21,14 @@ uses), **siempre con la misma voz**:
 1. Activa la etiqueta **«Contenido generado con IA»** al publicar en TikTok, Instagram y YouTube.
 2. Las orejeras **amortiguan** el ruido; **nunca** decir que lo eliminan, que curan la ansiedad ni que lo
    recomienda un veterinario.
-3. **La fecha límite NO va en la voz ni en el video** (el video dura meses; la fecha cambia). Va en la
-   descripción y en el comentario fijado.
+3. **Nada de fechas límite ni de «últimas unidades»** (decisión del 23-oct): no hay escasez real y las fechas
+   cambian. Para animar a comprar se usa lo que es verdad: envío gratis, pago en cuotas, PSE y Nequi, la garantía
+   «Palabra de Toffee» y el 3 % para el marrano.
 4. Cada video termina con **«Comenta CALMA»** y el enlace va en el perfil.
 
 **Respuesta fija a cada «CALMA»** (pegar como Toffee):
 > ¡Humano! Aquí Toffee 😼 Las orejeras de Galleta están en **soytoffee.store** (el enlace está en mi perfil).
-> Envío gratis. Para que lleguen antes de las velitas, pídelas hasta el **domingo 26 de octubre** 🕯️ ¿Desde qué país me escribes?
-
-(Después del 26 de octubre cambia la línea de la fecha por: «Para que lleguen antes de Navidad, pídelas hasta el
-**13 de noviembre** 🎄».)
+> Envío gratis y pagas con PSE, Nequi o tarjeta en cuotas. Y el 3 % va a mi marrano para perritos de la calle 🐷 ¿Desde qué país me escribes?
 
 ---
 
@@ -129,13 +127,13 @@ Vertical 9:16, 10 seconds, realistic smartphone footage, authentic UGC style, re
 **Texto en pantalla:** Mi empresa en temporada de pólvora 📦😾
 **Voz de Toffee:**
 - (0–5 s) «Llegaron pedidos. Galleta empaca. Yo superviso.»
-- (5–10 s) «Supervisar es agotador. Si las quieres a tiempo, pide con tiempo. Comenta CALMA.»
+- (5–10 s) «Supervisar es agotador. Envío gratis, y el 3 % va a mi marrano. Comenta CALMA.»
 
 ```
 Vertical 9:16, 10 seconds, realistic smartphone footage, handheld, cozy home at night with warm lamp light, realistic physics, funny moment. 0-5s: the scruffy golden-brown criollo dog from the reference (bushy eyebrows and beard, white chest and paws, navy blue bandana with a golden bone tag) pushes a small cardboard shipping box with his nose across the floor; next to the box lie the dark gray padded dog ear muffs from the reference (exact copy). 5-10s: the chubby round cream-caramel British Shorthair cat from the reference (solid color, no stripes, big round green eyes with very dilated pupils, navy blue knitted nightcap with a drooping tip and a cream pompom) sits on top of a stack of cardboard boxes watching like a boss, then slowly yawns and lies down on the top box. The dog and the cat look exactly like the references in every frame; only one dog and one cat. Natural ambient sound only, no music, no voices. Avoid: text, labels with readable words, subtitles, logos, watermark, cartoon, 3D render, extra paws, morphing, redesigned ear muffs, cat without nightcap.
 ```
-**Descripción:** Temporada de pólvora en la empresa de Toffee 📦 Envío gratis con rastreo. Fecha límite en el comentario fijado 🕯️ Comenta CALMA 🐾 (Personajes IA, productos reales.) #emprendimiento #mascotas #pólvora
-**Comentario fijado:** 🕯️ Velitas (7 dic): pide hasta el domingo 26 de octubre · 🎄 Navidad: hasta el 13 de noviembre · 🎆 Año Nuevo: hasta el 20 de noviembre.
+**Descripción:** Temporada de pólvora en la empresa de Toffee 📦 Envío gratis con rastreo a Colombia, México, Chile, Perú y Estados Unidos. Comenta CALMA 🐾 (Personajes IA, productos reales.) #emprendimiento #mascotas #pólvora
+**Comentario fijado:** 🐷 El 3 % de cada compra va al marrano de Toffee para perritos y gatitos de la calle.
 
 ---
 

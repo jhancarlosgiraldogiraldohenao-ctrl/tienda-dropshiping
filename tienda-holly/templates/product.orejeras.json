@@ -20,7 +20,7 @@
         "desc_titulo": "Descripción",
         "abrir_descripcion": false,
         "envio_titulo": "Envío y pago",
-        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).\n[fecha-limite]\nPagas al hacer tu pedido con tarjeta o PSE. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
+        "envio": "Envío gratis con número de rastreo.\nEntrega estimada: 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).\nPagas al hacer tu pedido con tarjeta o PSE. Palabra de Toffee: si no llega o llega dañado, te enviamos otro o te devolvemos tu dinero.",
         "titulo_size": 44,
         "modo_colores": true,
         "modo_pildoras": true,
@@ -43,7 +43,8 @@
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",
         "veredicto_rotulo": "Toffee es un personaje creado con IA: esto es su opinión de personaje, no una reseña de clientes. Las reseñas reales de compradores llegarán con las primeras entregas.",
-        "orden_fotos": "3,8,7,1"
+        "orden_fotos": "3,8,7,1",
+        "mostrar_corte": false
       },
       "blocks": {
         "b0": {
@@ -263,7 +264,7 @@
           "type": "pregunta",
           "settings": {
             "pregunta": "¿Cuánto cuesta y cuánto tarda el envío?",
-            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile, Perú y Estados Unidos, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).</p><p>[fecha-limite]</p>"
+            "respuesta": "<p>Es <strong>gratis</strong> a Colombia, México, Chile, Perú y Estados Unidos, con número de rastreo. Llega en 10 a 25 días hábiles según tu país y ciudad (a Estados Unidos, 7 a 15).</p>"
           }
         },
         "b8": {
@@ -278,13 +279,6 @@
           "settings": {
             "pregunta": "¿Sirve para gatos o perros muy pequeños?",
             "respuesta": "<p>No. Es para perros desde 7,5 kg: a un gato o a un chihuahua le quedaría grande. (Toffee lo intentó y quedó como un casco de astronauta.)</p>"
-          }
-        },
-        "cuando": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Hasta cuándo puedo pedirla para que llegue a tiempo?",
-            "respuesta": "<p>Depende de la noche:</p><p>[fechas]</p>"
           }
         },
         "ponerla": {
@@ -315,7 +309,6 @@
         "b2",
         "b3",
         "ponerla",
-        "cuando",
         "envio",
         "talla_mal",
         "pago",
@@ -334,22 +327,6 @@
         "filtros": "",
         "boton_texto": "Ver toda la tienda",
         "ancla": "tambien"
-      },
-      "blocks": {},
-      "block_order": []
-    },
-    "fechas": {
-      "type": "tf-bloque",
-      "settings": {
-        "fondo": "crema2",
-        "escena_ia": false,
-        "invertir": false,
-        "eyebrow": "Fechas límite",
-        "titulo": "<p>¿Llega antes de <em>tu noche de pólvora?</em></p>",
-        "texto": "<p>Calculadas con el peor caso de entrega (25 días hábiles) y los festivos de Colombia. Cuando una fecha ya no alcanza, desaparece de aquí ese mismo día.</p><p>[fechas]</p>",
-        "nota_toffee": "Galleta ya está empacando. Tú solo pide a tiempo, humano.",
-        "btn_texto": "",
-        "ancla": "fechas"
       },
       "blocks": {},
       "block_order": []
@@ -482,7 +459,6 @@
     "usos",
     "activos",
     "ritual",
-    "fechas",
     "galleta",
     "comparativa",
     "garantia",
