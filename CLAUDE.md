@@ -24,3 +24,8 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Tienda: soytoffee.store (Shopify `a1fcei-t6.myshopify.com`). Tema en `tienda-holly/`; estado y decisiones en `tienda-holly/ESTADO.md`.
 - Colores: `toffee/COLORIMETRIA.md`. Entregas y pendientes del panel: `tienda-holly/ENTREGA-B.md`.
 - Jay no es técnico: explicar en palabras simples, en español, paso a paso.
+
+## Videos de Toffee: si no salió como el prompt, se repite (pedido de Jay, 23-oct-2026)
+- Al revisar cada clip que manda Jay, compararlo con la idea del prompt (encuadre, acción, personajes, gorro, producto).
+- Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
+- Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
