@@ -373,3 +373,7 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
   1. Crear la página «Plan pólvora» (handle `plan-polvora`, plantilla `plan-polvora`).
   2. Publicar o copiar los cambios al tema en vivo.
 - Mientras tanto, la vista previa de la guía se ve con `?view=plan-polvora`.
+- **Publicado el 23-oct** (Jay dijo «publícalas»):
+  - Las 2 plantillas se subieron al tema en vivo #189777641761. Antes se revisó que la ficha en vivo no hubiera cambiado.
+  - Se creó la página «Plan pólvora en 5 minutos» (`/pages/plan-polvora`, plantilla `plan-polvora`).
+  - Se verificó en el celular: responde 200, tiene 1 H1, no hay errores y el bloque «dato» se ve en la ficha.
