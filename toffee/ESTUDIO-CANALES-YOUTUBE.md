@@ -223,3 +223,54 @@
 - **Toffee con una cámara en su gorro de dormir**, haciendo vlogs.
 - Las tomas en primera persona **esconden la boca**, así que la voz en off se ve natural.
 - Vlogs de mundos de mascotas y de Colombia, con la misión de buscar su millón.
+
+---
+
+## Parte 5 · Estudio a fondo de Gnomo Palomo (6 videos analizados cuadro por cuadro y con su audio, 24-oct-2026)
+
+| Video (TikTok) | Fecha | Duración | Cortes | Vistas | Likes / vistas | Compartidos / vistas |
+|---|---|---|---|---|---|---|
+| Polvos mágicos («vaya viaje me ha pegado») | 30-jun-2025 | 77 s | 15 | **22,7 M** | 11,0 % | 2,6 % |
+| El Humanificador | 6-jul-2025 | 112 s | 17 | 2,2 M | 11,8 % | 1,6 % |
+| Fruta del diablo (One Piece) | 26-ago-2025 | 126 s | 24 | **15,9 M** | 10,7 % | 2,0 % |
+| Máquina de videoclips (Aitana) | 19-nov-2025 | 74 s | 12 | 3,3 M | 8,9 % | 0,5 % |
+| SUPERGORDITA (canción) | 20-nov-2025 | 134 s | 44 | 0,7 M | 8,0 % | 3,3 % |
+| Ticket dorado → fábrica de Santa (parte 1) | 29-dic-2025 | 171 s | 44 | **8,8 M** | 7,5 % | 0,7 % |
+
+**Cuenta:** 949.800 seguidores y 10,3 M de likes con **21 videos**. La creó el 23-jun-2025 y no publica desde enero de 2026.
+
+### Por qué se volvió viral
+1. **El gancho está en la primera frase y en el texto de arriba:** «Probando los nuevos polvos mágicos», «Esto convierte los animales en humanos», «Probando una fruta del diablo», «Me toca el ticket dorado y voy a la fábrica de Santa Claus». Nombra **el objeto mágico y la promesa**: qué va a pasar.
+2. **Siempre la misma estructura:**
+   - Consigue algo mágico, casi siempre en el «mercado negro».
+   - «Vamos a casa a probarlo».
+   - Lo prueba y **todo se sale de control, cada vez peor**.
+   - Aparece un personaje que ya conocemos.
+   - Cierre con suspenso y una pregunta a la comunidad.
+3. **Su mundo se repite:** el mercado negro, Peter Chunk (el vendedor), los polvos mágicos, «Alzheimerdinger». Hay frases fijas: «**mis locos / loquitos**», «¡Ostias!», «Tengo hambre», «¡Bomba!». Quien vuelve, se siente de adentro.
+4. **La comunidad decide el siguiente:** «ponedme en los comentarios si queréis ver el mercado negro», «me habéis bombardeado en los comentarios con la fruta del diablo», «¿qué objetos queréis que aplaste?». Los comentarios **piden el siguiente video**.
+5. **Parodia de la cultura pop:**
+   - Mario Kart, One Piece, Messi («loco blanco»), Aitana, Harry Potter y el tren a Hogwarts.
+   - El ticket dorado de Willy Wonka.
+   - El tren de El viaje de Chihiro, con el personaje «Sin Cara» sentado.
+   - Cada referencia trae a los fans de esa saga (el 71 % ve contenido sobre lo que le gusta).
+6. **Un corte cada 3 a 5 segundos** (de 12 a 44 cortes en cada video).
+   - Selfie con ojo de pez y la GoPro en la gorra.
+   - Tomas en primera persona con el palo de selfie.
+   - Tomas de dron.
+   - Lugares de película: nieve con aurora boreal, tren sobre el mar.
+7. **Subtítulos de 1 a 3 palabras** en el centro (blanco con borde), más un título arriba los primeros segundos con la palabra clave en color.
+8. **Un momento de corazón en medio del caos.** En el de Santa, un niño elfo que **nunca recibió un regalo de Navidad** le da su carta para Santa. Termina en «parte 1» para que la gente espere la parte 2.
+9. **Otros personajes hablan con la boca sincronizada.** Cada uno tiene su voz (el cajero, el niño, el elfo, la novia). Sin eso, sus diálogos no funcionarían.
+10. **Cómo gana plata:**
+    - «Si queréis saber cómo hago estos vídeos, mirad el enlace de mi perfil» (vende su método: [Patreon](https://www.patreon.com/posts/la-clave-que-uso-139743475)).
+    - Colaboraciones, como la canción con Aitana.
+
+### Ojo: su video de Navidad se parece a nuestra idea
+- Él va a la fábrica de Santa y encuentra a un niño que nunca recibió regalo.
+- **Lo nuestro tiene que verse distinto desde el primer segundo:**
+  - Personajes animales (Toffee y Galleta).
+  - Colombia.
+  - Una misión real con donación de verdad.
+  - Los productos dentro de la historia.
+- Nada de ticket dorado ni del tren de Chihiro.
