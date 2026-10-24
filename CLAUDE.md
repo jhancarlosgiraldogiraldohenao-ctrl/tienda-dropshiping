@@ -29,3 +29,4 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Al revisar cada clip que manda Jay, compararlo con la idea del prompt (encuadre, acción, personajes, gorro, producto).
 - Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
 - Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
+- **Subtítulos de la voz: siempre en inglés** (pedido de Jay, 24-oct-2026), bien traducidos y con buena gramática. La voz sigue en español. Los textos grandes en pantalla (gancho, lista, «Comenta CALMA») siguen en español.
