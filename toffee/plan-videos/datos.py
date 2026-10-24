@@ -121,7 +121,7 @@ DIAS.append(dict(n=1, fecha='Sábado 24 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 2 · domingo 25-oct
 DIAS.append(dict(n=2, fecha='Domingo 25 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«La pata que salva la Navidad»', palabra='CALMA',
+ dict(letra='A', red='TikTok', titulo='«La pata que salva la Navidad»', audio='«Chopin» (piano dramático, de RYOpianoforte): convierte el plato de uvas en una escena de película. Alternativa: «Sey Mami» (Cinco Suave).', palabra='CALMA',
   porque='Gancho visual del estudio: la pata de Toffee frena el plato de uvas frente a la cámara. Un solo plano, 6 segundos.',
   tomas=[toma(6, ['T', 'G'],
    "The camera sits directly on a dining table with a Christmas tablecloth, very close, at table level (no phone or device visible in the frame). From the very first frame: a small bowl of green grapes in the center of the frame. The nose and beard of {G} slowly rise from the bottom edge, sniffing toward the bowl. The round cream paw of {T} enters from the side and calmly slides the bowl out of the dog's reach. Then the cat's round face leans into the frame and stares into the lens with total seriousness. One continuous shot.",
@@ -170,7 +170,7 @@ DIAS.append(dict(n=2, fecha='Domingo 25 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 3 · lunes 26-oct
 DIAS.append(dict(n=3, fecha='Lunes 26 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Los lunes»', palabra='TRINEO',
+ dict(letra='A', red='TikTok', titulo='«Los lunes»', audio='«we fell in love in october» (girl in red): suave y de cama, perfecto para Toffee que no quiere levantarse. Alternativa: «Hello, October» (Tung Tulip).', palabra='TRINEO',
   porque='Personaje congruente (Toffee les tiene pánico a los lunes) y algo que todos viven. Cámara pegada a la cara, como Chonk.',
   tomas=[toma(8, ['T'],
    "Early morning bedroom with soft gray light. Camera POV from the pillow, very close. From the first frame: {T} lies in a messy bed under a blanket, eyes half closed. A phone on the nightstand next to him lights up and buzzes with an alarm. Without opening his eyes, the cat slowly extends one paw, pushes the phone off the edge of the nightstand, pulls the paw back under the blanket and goes back to sleep. Single continuous shot.",
@@ -221,7 +221,7 @@ DIAS.append(dict(n=3, fecha='Lunes 26 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 4 · martes 27-oct
 DIAS.append(dict(n=4, fecha='Martes 27 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«La caja contra el trineo»', palabra='TRINEO',
+ dict(letra='A', red='TikTok', titulo='«La caja contra el trineo»', audio='«Ramalama (Bang Bang)» (Róisín Murphy): es el sonido de las «revelaciones»; que el golpe de la canción caiga cuando Toffee se tira al trineo.', palabra='TRINEO',
   porque='Idea C: todo dueño de gato ha visto que prefiere la caja. El giro: el trineo le gana a la caja.',
   tomas=[toma(10, ['T', 'TR'],
    "Cozy living room in the afternoon, camera on the floor, wide shot. From the first frame: {T} sits inside an empty cardboard box, only his round head and nightcap visible, staring at the camera. Next to the box stands {TR}, empty. The cat slowly looks at the sleigh bed, looks back at the camera, then climbs out of the box, walks into the sleigh bed, turns around once and flops down with a big satisfied sigh, chin resting on the fluffy edge. Single continuous shot.",
@@ -382,7 +382,7 @@ DIAS.append(dict(n=6, fecha='Jueves 29 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 7 · viernes 30-oct
 DIAS.append(dict(n=7, fecha='Viernes 30 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Halloween: Toffee no se disfrazó»', palabra='ÁRBOL',
+ dict(letra='A', red='TikTok', titulo='«Halloween: Toffee no se disfrazó»', audio='«Halloween ・ cute horror song» (PeriTune): terror tierno. Alternativa: «Ramalama (Bang Bang)», que también se está usando en Halloween.', palabra='ÁRBOL',
   porque='Surfear la tendencia de la semana (Halloween es mañana), como hace Molang. Chiste visual: Toffee parece una calabaza más.',
   tomas=[toma(8, ['T', 'G'],
    "Night, living room decorated for Halloween with carved pumpkins glowing with LED candles and paper bats hanging from the ceiling. From the first frame: {T} sits perfectly still among the pumpkins, his round face glowing orange like another pumpkin. A paper bat drops from the ceiling right in front of {G}, who jumps backward and hides behind the cat. The cat doesn't move at all and slowly blinks at the camera. Single continuous shot.",

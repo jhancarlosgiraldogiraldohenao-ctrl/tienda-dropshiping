@@ -51,6 +51,13 @@ def video_html(dia, v, primero=False):
     h.append(f'<div><span>Descripción (TikTok e Instagram)</span><p>{e(v["desc"]).replace(chr(10), "<br>")}</p></div>')
     h.append(f'<div><span>Título (YouTube Shorts)</span><p>{e(v["yt"])}</p></div>')
     h.append(f'<div><span>Hashtags (en las 3 redes)</span><p class="tags">{e(v["tags"])}</p></div>')
+    if v.get('audio'):
+        aud = v['audio']
+    elif con_voz:
+        aud = 'Ninguno: lleva la voz de Toffee. Si quieres, una música suave de fondo muy bajita (5–10 %).'
+    else:
+        aud = 'Uno en tendencia ese día (mira la sección de audios al inicio del PDF).'
+    h.append(f'<div><span>🎵 Audio en TikTok</span><p>{e(aud)}</p></div>')
     h.append('</div></section>')
     return '\n'.join(h)
 
@@ -176,6 +183,17 @@ pre.prompt {{ white-space: pre-wrap; word-wrap: break-word; font-family: 'DejaVu
 <li>Nada de fechas límite ni «últimas unidades». Las orejeras <b>amortiguan</b>: nunca decir que eliminan el ruido o curan el miedo.</li>
 <li>No compartas tus videos en grupos ni pidas likes; no pongas anuncios.</li>
 </ul></div>
+<div class="caja"><b>🎵 Audios en tendencia (revisado el 24-oct)</b>
+<p>Los saqué de listas de tendencias de esta semana (Revid, Buffer, Metricool y que.es). TikTok no deja ver su lista oficial desde mi computador, así que <b>antes de publicar confirma en tu app</b> que el audio siga subiendo: en «Agregar sonido», mira que tenga muchos videos y, si aparece, la flecha de tendencia.</p>
+<ul>
+<li><b>Ramalama (Bang Bang)</b> · Róisín Murphy: revelaciones y Halloween; es el más usado este mes.</li>
+<li><b>we fell in love in october</b> · girl in red: suave, de otoño, para escenas tranquilas.</li>
+<li><b>Hello, October</b> · Tung Tulip: de los más usados a mitad de mes.</li>
+<li><b>Chopin</b> · RYOpianoforte: piano dramático, sube rápido.</li>
+<li><b>Sey Mami</b> · Cinco Suave: de los que más suben esta semana.</li>
+<li><b>Halloween ・ cute horror song</b> · PeriTune: terror tierno, hasta el 31.</li>
+</ul>
+<p><b>Truco para buscarlos tú mismo:</b> en el celular, abre el TikTok Creative Center (ads.tiktok.com → Creative Center → Canciones), elige región <b>Colombia</b> y «últimos 7 días». Usa uno que esté subiendo, no uno que ya bajó.</p></div>
 <div class="caja salvia"><b>Respuestas a las palabras clave (cópialas como Toffee)</b>
 <p class="resp"><b>CALMA:</b> ¡Humano! Aquí Toffee 😼 Las orejeras de Galleta están en soytoffee.store (el enlace está en mi perfil). Envío gratis y pagas con PSE, Nequi o tarjeta en cuotas. Y el 3 % va a mi marrano para perritos de la calle 🐷 ¿Desde qué país me escribes?</p>
 <p class="resp"><b>ÁRBOL:</b> ¡Humano! Aquí Toffee 😼 El disfraz de árbol está en soytoffee.store (el enlace está en mi perfil). Es para mascotas de 1,5 a 7,5 kg. Envío gratis y pagas con PSE, Nequi o en cuotas 🎄 ¿Desde qué país me escribes?</p>
