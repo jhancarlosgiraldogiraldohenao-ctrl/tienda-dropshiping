@@ -164,10 +164,12 @@ pre.prompt {{ white-space: pre-wrap; word-wrap: break-word; font-family: 'DejaVu
 <ul>
 <li>La pones tú, con tu voz de siempre. Flow solo pone el sonido del ambiente; todos los prompts le piden «sin voces» y que los animales tengan la boca cerrada (es <b>voz en off</b>, como la de Jake el perro).</li>
 <li>El guion de cada toma dura lo que la toma (unos 8 s). Si al leerlo no cabe, súbele un poquito la velocidad (1,1×) o mándamelo y lo ajusto.</li>
-<li>Los videos A no llevan voz: el sonido lo pone el <b>audio en tendencia que eliges en TikTok el día que publicas</b> (regla 6 de tu estudio).</li>
+<li>Los videos A no llevan voz (menos los de «Toffee trabaja en Colombia»): el sonido lo pone el <b>audio en tendencia que eliges en TikTok el día que publicas</b> (regla 6 de tu estudio).</li>
+<li><b>Subtítulos de la voz en inglés</b> (los pongo yo); los textos grandes en pantalla, en español.</li>
 </ul></div>
 <div class="caja"><b>Al publicar (de tu estudio)</b>
 <ul>
+<li><b>Horario (hora de Colombia):</b> 8:30 a. m. el chiste (A) · 12:30 p. m. la historia (C) · 7:30 p. m. el consejo (B). Desde la semana 2 rotamos el orden para comparar.</li>
 <li>Sube el <b>archivo limpio que yo te devuelvo</b> en las 3 redes. Nunca bajes el de TikTok para subirlo a otra red: lleva marca de agua y lo castigan.</li>
 <li>Instagram: cuenta de creador; publica tú a mano (el programador de Instagram le quita alcance) o con Metricool.</li>
 <li>Activa siempre la etiqueta de <b>contenido creado con IA</b>.</li>

@@ -272,16 +272,21 @@ DIAS.append(dict(n=4, fecha='Martes 27 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 5 · miércoles 28-oct
 DIAS.append(dict(n=5, fecha='Miércoles 28 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Tinto y arepa»', palabra='CALMA',
-  porque='Algo colombiano cada semana (regla 9 del estudio). Toffee y Galleta juntos, un gesto, un solo plano.',
-  tomas=[toma(8, ['T', 'G'],
-   "Colombian morning kitchen: a wooden table with a small cup of steaming black coffee and a white arepa on a plate. Camera very close at table level. From the first frame: {T} sits behind the plate with half-closed sleepy eyes. The nose of {G} rises slowly from below the table edge toward the arepa. Without opening his eyes, the cat slides the plate away from the dog with one paw. The dog's nose slowly sinks back down. Single continuous shot.",
-   sonido='morning kitchen, plate sliding on wood',
-   texto='Arriba: «mi desayuno, Galleta.»')],
-  edicion='Sin voz. Audio en tendencia en TikTok.',
-  desc='el tinto lo huelo, la arepa la cuido. prioridades ☕\ny si tu perro sufre con la pólvora en diciembre, comenta CALMA 🎆',
-  yt='Mi gato no comparte su arepa ☕',
-  tags='#ToffeeyGalleta #Colombia #arepa #gatos #perros'),
+ dict(letra='A', red='TikTok', titulo='Toffee trabaja en Colombia: «Vendedor de tintos»', palabra='TRINEO',
+  porque='Formato de @just.monki (191 mil seguidores en 7 semanas): el personaje hace un oficio local, visto desde los ojos del cliente. Toffee «el jefe» probando trabajos es una serie que no se acaba. Algo colombiano de la semana.',
+  tomas=[
+   toma(8, ['T', 'G'],
+    "Sunny morning on a busy street in a Colombian city center, colorful old buildings. First-person POV of a customer standing in front of a small street coffee cart with big steel thermoses and tiny plastic cups. From the first frame: behind the cart, {T} sits on a stool wearing a tiny white apron, half asleep, like a bored street vendor. The customer's hand enters the frame holding a coin; the cat slowly slides a small steaming plastic cup of black coffee across the cart toward the hand with one paw, without changing his sleepy expression. Under the cart, {G} lies on the sidewalk, watching. Handheld phone footage.",
+    sonido='busy street, cars, distant vendors', voz='«Tinto: mil pesos. La sonrisa no viene incluida.»',
+    texto='Arriba: «Toffee trabaja en Colombia ☕» · subtítulos en inglés'),
+   toma(8, ['T', 'G'],
+    "Same street coffee cart, same first-person customer POV. On the cart there is a small plate with one golden buñuelo (round fried cheese bread). The customer's hand slowly reaches for the buñuelo; {T}, wearing the tiny white apron, slowly pulls the plate away with one paw and stares into the camera with total seriousness. From under the cart, the nose of {G} rises toward the plate. Handheld phone footage.",
+    sonido='busy street', voz='«El buñuelo no está a la venta. Es mi desayuno.»',
+    texto='Al final: «Mañana: otro trabajo 🐾»')],
+  edicion='Uno las 2 tomas, subtítulos en inglés y el texto de arriba en español. Sin audio en tendencia: lleva voz.',
+  desc='Toffee probó trabajar vendiendo tintos. Duró poco: no quiso vender el buñuelo ☕😾\n¿Qué trabajo le pongo mañana? Y si quieres la cama donde Toffee se recupera de trabajar, comenta TRINEO.',
+  yt='Mi gato vende tintos en Colombia ☕ Toffee trabaja, cap. 1',
+  tags='#ToffeeyGalleta #Colombia #tinto #gatos'),
 
  dict(letra='B', red='Instagram', titulo='«¿Gato o perro?»', palabra='TRINEO o CALMA',
   porque='Idea F: el debate más grande de las mascotas, actuado por Toffee y Galleta. La gente opina y etiqueta a su amigo «del otro equipo».',
@@ -324,16 +329,21 @@ DIAS.append(dict(n=5, fecha='Miércoles 28 de octubre', videos=[
 
 # ---------------------------------------------------------------- DÍA 6 · jueves 29-oct
 DIAS.append(dict(n=6, fecha='Jueves 29 de octubre', videos=[
- dict(letra='A', red='TikTok', titulo='«Dos árboles»', palabra='ÁRBOL',
-  porque='Situación absurda de una sola toma. Galleta confundido entre el árbol de verdad y Toffee disfrazado.',
-  tomas=[toma(8, ['T', 'G', 'D'],
-   "Living room with a decorated real Christmas tree with warm lights. From the first frame: next to the tree sits {T}, also wearing {D} on his body (the hood lying down on his back, his navy nightcap still on his head), perfectly still like a decoration. {G} walks in, sniffs the real tree, then sniffs the cat, looks back and forth between the two 'trees' and tilts his head, confused. The cat slowly blinks at the camera. Single continuous shot.",
-   sonido='quiet room, Christmas lights humming softly',
-   texto='Arriba: «encuentra el árbol que juzga 🎄»')],
-  edicion='Sin voz. Audio en tendencia en TikTok.',
-  desc='este año el árbol de la casa soy yo. no me pongan bolas 🎄😼\nComenta ÁRBOL y te paso el disfraz',
-  yt='Mi perro no sabe cuál es el árbol 🎄',
-  tags='#ToffeeyGalleta #navidad #gatos #disfraz'),
+ dict(letra='A', red='TikTok', titulo='Toffee trabaja en Colombia: «Peluquero de perros»', palabra='CALMA',
+  porque='Segundo oficio de la serie, estilo @just.monki. Cliente: Galleta. Muestra un uso real de las orejeras (el secador de la peluquería) sin que parezca anuncio.',
+  tomas=[
+   toma(8, ['T', 'G', 'O'],
+    "Small, cozy Colombian pet grooming salon with tiled walls and a stainless steel grooming table. First-person POV of the groomer's assistant. From the first frame: {G} stands on the grooming table, wet after a bath, looking nervous. Next to him on the table, {T} sits like the boss of the salon with a small towel over his shoulder. On the table lies {O}; the cat slowly pushes it toward the dog with one paw, then looks at the camera as if giving an order. Handheld phone footage.",
+    sonido='small salon, water dripping, distant radio', voz='«Primer cliente del día. Antes del secador: orejeras. Regla de la casa.»',
+    texto='Arriba: «Toffee trabaja en Colombia ✂️»'),
+   toma(8, ['T', 'G', 'O'],
+    "Same grooming salon. Two human hands blow-dry the fur of {G}, who now wears {O} and stands calm and relaxed on the grooming table, eyes half closed, enjoying it. {T} sits next to him with the towel on his shoulder, supervising, and slowly blinks at the camera. Handheld phone footage.",
+    sonido='hair dryer running', voz='«Ni se inmutó. Si el tuyo odia el secador, comenta CALMA.»',
+    texto='Al final: «Comenta CALMA 🐾»')],
+  edicion='Uno las 2 tomas, subtítulos en inglés y los textos en español.',
+  desc='Hoy Toffee fue peluquero de perros. Su primer cliente: Galleta. La regla de la casa: orejeras antes del secador ✂️🐶\nSi tu perro odia el secador o la pólvora, comenta CALMA.',
+  yt='Mi gato es peluquero de perros ✂️ Toffee trabaja, cap. 2',
+  tags='#ToffeeyGalleta #peluqueriacanina #perros #gatos'),
 
  dict(letra='B', red='Instagram', titulo='«¿Disfrazar a tu mascota es maltrato?»', palabra='ÁRBOL',
   porque='Idea I7: polémica de verdad. Toffee da una respuesta responsable y termina en el disfraz suave.',
