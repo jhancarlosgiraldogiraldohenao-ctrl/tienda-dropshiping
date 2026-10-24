@@ -159,3 +159,40 @@
 4. **A probar más adelante:**
    - **Una canción de Toffee** (Mikecrack, Glorb).
    - **El diario de Galleta como microdrama con cliffhanger** en cada capítulo.
+
+---
+
+## Parte 3 · Qué ve y qué busca la gente en YouTube (24-oct-2026)
+
+**Los videos más vistos de la historia**
+- Casi todos son **canciones infantiles** o **videoclips**.
+- Los tres primeros:
+  1. «Baby Shark Dance», unos 17.000 millones de vistas.
+  2. «Wheels on the Bus» de CoComelon, unos 9.300 millones.
+  3. «Despacito», unos 9.100 millones.
+- Fuentes: [Wikipedia](https://en.wikipedia.org/wiki/List_of_most-viewed_YouTube_videos), [SocialCrawl](https://www.socialcrawl.dev/data/most-viewed-youtube-video).
+- Una base de datos con los 1.000 videos más vistos confirma lo mismo: **primero música y después contenido infantil** ([Kaggle](https://www.kaggle.com/datasets/mubashirsidiki/most-watched-yt-videos-rankings-2026)).
+
+**Lo que más busca la gente**
+- **«asmr» es la búsqueda número 1 del mundo**: entre 53 y 68 millones de búsquedas al mes, según la herramienta ([Exploding Topics](https://explodingtopics.com/blog/top-youtube-searches), [Pagetraffic](https://www.pagetraffic.com/blog/top-youtube-searches/)).
+- Después vienen «song», «music», «karaoke», «lofi», MrBeast, Minecraft, GTA 6 y el fútbol (Real Madrid).
+- Son estimaciones de herramientas de palabras clave, no datos oficiales de YouTube.
+
+**Lo que más crece en 2026**
+- Lo infantil, el ASMR y la IA ([Air.io](https://air.io/en/audience-growth/whos-growing-fastest-on-youtube-and-which-niches-are-hot-in-2025)).
+- 39 de los 50 canales con más vistas viven sobre todo de Shorts ([TubeAnalytics](https://www.tubeanalytics.net/blog/youtube-most-viewed-videos-all-time)).
+
+**La comunidad pesa**
+- Según el informe de cultura de YouTube de 2026, **71 %** de las personas ha visto videos que explican el mundo de algo de lo que es fan.
+- Y **60 %** se siente orgulloso cuando un creador que apoya «la rompe», porque siente que ayudó ([Buzzincontent](https://www.buzzincontent.com/insight/how-creators-and-fandoms-are-reshaping-mainstream-culture-12530068); cifras de segunda mano).
+
+### Lo que se puede cruzar con Toffee
+
+| Lo que la gente ama | Cruce con Toffee | Ejemplo |
+|---|---|---|
+| **ASMR y relajación** (búsqueda #1) | Toffee es un gato dormilón | «ASMR: Toffee ronronea para que duermas», o la música para calmar perros en la pólvora |
+| **Música** | Una canción de Toffee | Mikecrack (34 M) y Glorb (28 M) |
+| **Infantil y familias** | Personajes tiernos que gustan a niños y padres | «Cuentos de Toffee y Galleta». Ojo: si se marca «hecho para niños», YouTube quita los comentarios y limita los anuncios |
+| **Retos** (MrBeast) | Toffee contra Galleta | «¿Quién gana: el gato o el perro?» |
+| **Fútbol** (Latinoamérica) | Toffee y la Selección | Ya lo usamos en el capítulo 3 |
+| **Comunidad y fans** | El mundo de Toffee: personajes, historia, marrano | Que la gente sienta que ayudó a hacer grande a Toffee |
