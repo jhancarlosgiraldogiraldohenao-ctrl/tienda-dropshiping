@@ -196,3 +196,30 @@
 | **Retos** (MrBeast) | Toffee contra Galleta | «¿Quién gana: el gato o el perro?» |
 | **Fútbol** (Latinoamérica) | Toffee y la Selección | Ya lo usamos en el capítulo 3 |
 | **Comunidad y fans** | El mundo de Toffee: personajes, historia, marrano | Que la gente sienta que ayudó a hacer grande a Toffee |
+
+---
+
+## Parte 4 · Gnomo Palomo (estudiado el 24-oct-2026, a pedido de Jay)
+
+**Los números**
+- **Instagram** [@gnomopalomo](https://www.instagram.com/gnomopalomo/): unos 554 mil seguidores con solo 25 publicaciones.
+- **TikTok:** unos 886 mil ([TikTok](https://www.tiktok.com/discover/gnomo-palomo)).
+- **YouTube** ([canal](https://www.youtube.com/channel/UCAFz6fQGA3sjopdlYrmslTA)): 54,5 mil suscriptores, 4 videos largos y 12 Shorts.
+  - Su video largo más visto es **«TODAS las aventuras del Gnomo Palomo [Vlog 1 al 10]»**: 1,4 M de vistas y 18 minutos, una **recopilación de sus vlogs**.
+  - La canción «SUPERGORDITA» con McAitana (805 mil) y «Visité la Fábrica de SANTA CLAUS y… (no es lo que esperaba 😭)» (475 mil).
+  - El Short típico saca 181 mil.
+- Su creador dice en Patreon que llegó a 632 mil en TikTok y 324 mil en Instagram en 3 meses. Otra página dice que facturó 150.000 € con 7 videos. **Ninguna de las dos cifras está verificada** ([Patreon](https://www.patreon.com/posts/la-clave-que-uso-139743475)).
+
+**La fórmula** (revisada con las miniaturas de sus 10 videos más vistos)
+1. **Un personaje de IA con un sello fijo:** un gnomo viejo con gorra roja y **una GoPro en la gorra**.
+2. **Formato vlog:** selfie con lente de ojo de pez y un palo de selfie, más tomas en primera persona («lo que ve la GoPro»).
+3. **Explora mundos fantásticos o de la cultura pop:** la fábrica de Santa Claus, un mercado negro, Minecraft, One Piece, Mario Kart, una casa del terror.
+4. **Títulos de curiosidad:** «Visité X y… (no es lo que esperaba)», «Probando la fruta del diablo», «Tour por el mercado negro», «Mi house tour».
+5. **Texto grande en pantalla** con la acción del momento.
+6. **Colaboraciones con artistas**: canción con Aitana. Esa es la monetización por marcas.
+7. **El video largo de YouTube es la recopilación** de sus vlogs cortos.
+
+**Qué tomar para Toffee**
+- **Toffee con una cámara en su gorro de dormir**, haciendo vlogs.
+- Las tomas en primera persona **esconden la boca**, así que la voz en off se ve natural.
+- Vlogs de mundos de mascotas y de Colombia, con la misión de buscar su millón.
