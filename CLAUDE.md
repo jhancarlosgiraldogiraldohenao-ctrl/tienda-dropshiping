@@ -30,3 +30,16 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
 - Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
 - **Subtítulos de la voz: siempre en inglés** (pedido de Jay, 24-oct-2026), bien traducidos y con buena gramática. La voz sigue en español. Los textos grandes en pantalla (gancho, lista, «Comenta CALMA») siguen en español.
+
+## Videos del viaje de Toffee: cómo se generan (pedido de Jay, 24-oct-2026)
+- **Modelo: siempre Omni 1.1 Flash** (Google Flow). Tomas de 4, 6, 8 o 10 s según el momento; cortes cada 3–5 s como Gnomo Palomo. Si una toma sigue a otra, indicar «usar el último cuadro de la toma X como primer cuadro». Toma aprobada → mejorarla a 1080p en Flow si se puede.
+- **Referencias:** `toffee/refs/TOFFEE-viajero.jpg` (gorro + cámara encima) y `toffee/refs/GALLETA-viajero.jpg` (pañoleta, mochila). Galleta es mudo. Personaje que aparece por 2.ª vez → foto propia y voz fija en ElevenLabs.
+- **Voz de Toffee:** la de ElevenLabs de Jay (Eleven v4, estabilidad ~75 %, similitud 90 %, idioma Español). Si Toffee habla en cámara, el prompt lleva la frase exacta y Claude reemplaza el audio por el de ElevenLabs.
+- **Reglas de prompt para evitar errores** (cada prompt debe cumplirlas):
+  - Lente normal: nada de ojo de pez, viñeta ni esquinas oscuras; no se ve ningún celular ni palo de selfie.
+  - Nada de vista en primera persona con patas visibles (crea un segundo gato). Toffee siempre visto desde afuera.
+  - La cabeza, el gorro y la cámara de Toffee siempre completos dentro del cuadro. Un solo gato y un solo perro.
+  - Pólvora solo lejos, afuera; nunca chispas ni explosiones cerca de los animales.
+  - Orejeras = capucha acolchada gris tipo balaclava, NUNCA aro, dona, diadema o audífonos.
+  - Una sola acción clara por toma; frases cortas; describir quién está a la izquierda o a la derecha cuando hay dos personajes.
+- Prompts del vlog en `toffee/viaje/VLOG-XX.md`; estudio de referencia en `toffee/ESTUDIO-CANALES-YOUTUBE.md`.
