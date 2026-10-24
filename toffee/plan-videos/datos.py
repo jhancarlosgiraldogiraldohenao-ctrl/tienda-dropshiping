@@ -111,7 +111,7 @@ DIAS.append(dict(n=1, fecha='Sábado 24 de octubre', videos=[
     evitar='bandana on the dog'),
    toma(8, ['T', 'G'],
     "Inside a bedroom at night, warm dim light, faint fireworks flashes on the wall. The camera is on the floor facing the side of a bed: between the floor and the bed frame there is a low dark gap. The dog, {GC}, is hidden INSIDE that dark gap UNDER the bed: we only see his two scared eyes shining and the tip of his nose in the shadow; the rest of his body is hidden under the bed and he never comes out. In front of the bed, on the floor, {T} lies like a loaf, facing the camera, guarding the dog, and slowly blinks at the camera. Static camera.",
-    sonido='muffled fireworks', voz='«Fue la peor noche de su vida. Mañana, el día dos. Soy Toffee, y él es Galleta.»',
+    sonido='muffled fireworks', voz='«Esa fue la peor noche de su vida.»',
     texto='Al final: «Cap. 2 mañana 🐾»', evitar='bandana on the dog, dog outside the bed, dog standing, dog body visible, dog next to the bed')],
   edicion='Uno las 4 tomas (32 s), subtítulos de la narración y el cierre «Cap. 2 mañana».',
   desc='Así llegó Galleta a la vida de Toffee: un 31 de diciembre, temblando debajo de un carro 🎆🐶 Capítulo 1 de su diario.\n¿Tu perro también sufre con la pólvora? Comenta CALMA.',
