@@ -1,6 +1,6 @@
 # Vlog 1 · prompts v4 optimizados para Omni 1.1 Flash (25-oct)
 
-Estado 25-oct: aprobadas tomas 1, 2, 3 y 4. Toma 5 se repite con v5.
+Estado 25-oct (tanda 2): aprobadas 1, 2, 3, 4 y 6. Repetir 5, 7, 8; la 9 se divide en 9a + 9b. Ver «Repeticiones» al final.
 
 ## Toma 1 · Omni 1.1 Flash · 6 s
 Fotos: TOFFEE-viajero.jpg
@@ -76,4 +76,59 @@ Toffee dice: «¿Y tú… quién eres?»
 
 ```
 Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Dark, foggy, snowy forest at night, blue moonlight. The red plush sleigh-shaped pet bed from the reference (red velvet, white fluffy trim, black runners) lands softly in deep snow, throwing up a cloud of snow. The cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap lifts his head out of the snow, snow on his nightcap; the scruffy golden-brown criollo dog from the reference (wiry fur, bushy eyebrows, white chest and paws), with his navy bandana with a gold bone tag and a small caramel-brown backpack peeks out behind him, shaking. Between the dark trees, two big glowing golden eyes open and come closer; only the eyes are visible. The cat stares toward them, scared. He whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y tú... quién eres?" His lips move in sync with every word. The dog stays silent. Exactly one cat and one dog, identical to the references; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind and crunching snow in the background. No phone, no selfie stick, no text, no music.
+```
+
+
+# Repeticiones 25-oct (tanda 2)
+Aprobadas: 1, 2, 3, 4, 6. Galleta va SIN mochila en todo el vlog 1 (todavía no sabe que viaja). Trineo descrito como el producto real (bastones rayados, sin letras, sin patas).
+
+## Toma 5 (v6) · Omni 1.1 Flash · 8 s
+Fotos: TOFFEE-viajero.jpg + GALLETA-viajero.jpg
+
+Toffee dice: «Galleta viene conmigo. Él todavía no lo sabe.» (voz en off)
+
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Bedroom at night, static camera at floor level, a bed on the right side of the frame with a dark gap under it. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap, sits next to a small packed brown suitcase and gently nudges it a little toward the right with one paw. On the right, right in front of the bed, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack), sees the suitcase, his eyes go wide, he lies down flat and slowly crawls backwards under the bed until only his face and eyes peek out from the dark gap. He never stands up or walks away. Then the cat turns to the camera with a tiny smug face. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. No one speaks; only soft room ambience. No phone, no selfie stick, no text, no music.
+```
+
+## Toma 7 (v2) · Omni 1.1 Flash · 10 s
+Fotos: TOFFEE-viajero.jpg + GALLETA-viajero.jpg + REF-trineo-rojo.jpg
+
+Primer cuadro: el ÚLTIMO cuadro de la toma 6 aprobada (obligatorio).
+
+Toffee dice: «Díganme en los comentarios qué animalito de la calle merece un regalo. ¡Despegamos!» (voz en off)
+
+```
+Vertical 9:16, 10 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Continue exactly from the first frame: same living room, same sleigh, the cat and the dog in the same places. the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) starts to glow with warm golden sparkles under its runners and slowly lifts off the floor. The window behind them swings open and the sleigh floats out through it. The camera follows them outside: they fly over a Colombian city at night, city lights on green mountains, colorful fireworks far away in the sky. The cat sits at the front, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) sits behind him. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. No one speaks; only a soft whoosh and distant fireworks. No phone, no selfie stick, no text, no music.
+```
+
+## Toma 8 (v2) · Omni 1.1 Flash · 6 s
+Fotos: TOFFEE-viajero.jpg + GALLETA-viajero.jpg + REF-trineo-rojo.jpg
+
+Primer cuadro (si se puede): el último cuadro de la toma 7 nueva.
+
+Toffee dice: «Creo que… no sé manejar esto.»
+
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Night sky high above a Colombian city, fireworks far away. The camera flies backwards in front of them at the same speed. the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) flies toward the camera and wobbles left and right in the wind. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sits at the front, eyes wide, ears flat, clearly panicked, his pompom flapping. Behind him, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) hides his face behind the cat. He says in Latin American Spanish, in a deep, slow, sleepy male voice: "Creo que... no sé manejar esto." His lips move in sync with every word. The dog stays silent. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with strong wind in the background. No phone, no selfie stick, no text, no music.
+```
+
+## Toma 9a (nueva) · Omni 1.1 Flash · 6 s
+Fotos: TOFFEE-viajero.jpg + GALLETA-viajero.jpg + REF-trineo-rojo.jpg
+
+Toffee dice: (sin voz)
+
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Dark snowy forest at night, blue moonlight, tall pine trees. the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it), with the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap at the front and the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) behind him, already inside it from the first frame, drops down from the sky and crash-lands in deep snow, throwing up a big cloud of snow. When the snow settles, both are still sitting inside the sleigh, with snow on their heads, dazed. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. No one speaks; only a soft thud and wind. No phone, no selfie stick, no text, no music.
+```
+
+## Toma 9b (nueva) · Omni 1.1 Flash · 8 s
+Fotos: TOFFEE-viajero.jpg + GALLETA-viajero.jpg + REF-trineo-rojo.jpg
+
+Primer cuadro: el último cuadro de la toma 9a.
+
+Toffee dice: «¿Y tú… quién eres?»
+
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Continue exactly from the first frame: same snowy forest at night, same sleigh in the snow, the cat at the front and the dog behind him. Static camera, no cuts, no zoom. Far away in the darkness between the trees, two small glowing golden eyes open, blink once and slowly come a little closer, but stay far in the background; only the eyes are visible. The cat turns his head toward them, scared, ears flat; the dog hides behind the cat. He whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y tú... quién eres?" His lips move in sync with every word. The dog stays silent. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
 ```
