@@ -1,6 +1,6 @@
 # Vlog 1 · prompts v4 optimizados para Omni 1.1 Flash (25-oct)
 
-Estado 25-oct (tanda 6): aprobadas 1–8 y 9a. Falta 9b (solo ojos, 4 s) + 9c (reacción, 6 s). Ver «Tanda 6» al final.
+Estado 25-oct: TODAS las tomas aprobadas (ver tabla al final). Faltan las voces de ElevenLabs.
 
 ## Toma 1 · Omni 1.1 Flash · 6 s
 Fotos: TOFFEE-viajero.jpg
@@ -147,3 +147,19 @@ Toffee dice (susurro): «¿Y tú… quién eres?»
 ```
 Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Continue exactly from the first frame: same snowy forest at night, same red sleigh pet bed, same cat and dog in the same places, same snow on their heads. Static camera, no cuts, no zoom. The cat slowly turns his head to look off-screen to the right, his ears go flat and his eyes go wide, clearly scared; the dog ducks down behind the rim of the sleigh. The cat whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y tú... quién eres?" His lips move in sync with every word. The dog stays silent. Nothing appears in the trees behind them. Exactly one cat and one dog for the whole video; no other animals, eyes or shapes appear; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with soft wind in the background. No phone, no selfie stick, no text, no music.
 ```
+
+# ✅ Vlog 1: todas las tomas aprobadas (25-oct)
+| Toma | Archivo aprobado (uploads de Jay) |
+|---|---|
+| 1 | 87a69091-Cat_speaks_about_North_Pole |
+| 2 | V1-2b.mp4 (scratchpad/edit/v1) |
+| 3 | d6a53e37-Cat_speaks_about_Santa_in |
+| 4 | c44dc50c-Cat_packing_suitcase_in_bedroom |
+| 5 | 77863214-Cat_nudges_suitcase_past_dog |
+| 6 | 3df0cecf-Cat_and_dog_in_bed |
+| 7 | 6147563d-Cat_and_dog_flying_sleigh |
+| 8 | c15dc591-Cat_and_dog_in_wind |
+| 9a | 62b063bb-Cat_and_dog_crash_sleigh |
+| 9b | cade6887-Glowing_eyes_in_snowy_forest (en edición: zoom a los ojos, son pequeños) |
+| 9c | 0bdeb0e1-Cat_and_dog_in_snow |
+Falta: voces de ElevenLabs de las tomas 3, 4, 5, 6, 7, 8 y 9c.
