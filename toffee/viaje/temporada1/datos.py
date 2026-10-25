@@ -516,3 +516,6 @@ todos los animales merecen un regalo… ¡y ya!
 
 [Final]
 ¡Miau! (hablado, Toffee) «Feliz Halloween, humanos.»"""
+
+GANCHO = {2:2, 3:1, 4:1, 5:1, 6:1, 7:1, 8:3, 9:1, 10:5, 11:4, 12:4, 13:3, 14:2, 15:2}
+for _v in VLOGS: _v['gancho'] = GANCHO[_v['n']]

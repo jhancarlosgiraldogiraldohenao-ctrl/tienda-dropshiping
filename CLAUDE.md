@@ -45,4 +45,5 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
   - Pólvora solo lejos, afuera; nunca chispas ni explosiones cerca de los animales.
   - Orejeras = capucha acolchada gris tipo balaclava, NUNCA aro, dona, diadema o audífonos.
   - Una sola acción clara por toma; frases cortas; describir quién está a la izquierda o a la derecha cuando hay dos personajes.
-- Prompts del vlog en `toffee/viaje/VLOG-XX.md`; estudio de referencia en `toffee/ESTUDIO-CANALES-YOUTUBE.md`.
+- Prompts del vlog 1 en `toffee/viaje/VLOG-01.md`; vlogs 2–15 (sección 1) en `toffee/viaje/temporada1/datos.py` → PDF `toffee/VIAJE-ESTUDIO-Y-SECCION-1.pdf` (`python3 toffee/viaje/temporada1/build.py`). Estudio: `toffee/ESTUDIO-GNOMO-Y-LOCO-BLANCO.md` y `toffee/ESTUDIO-CANALES-YOUTUBE.md`.
+- Cada vlog trae una toma GANCHO que va primero en la edición. Nada de personajes famosos con dueño (Disney, Warner…): usar dominio público, leyendas latinas o guiños sin nombre.

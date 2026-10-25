@@ -8,6 +8,7 @@ CSS = """
 body{font-family:Inter,sans-serif;color:#2B211C;font-size:10.5pt;line-height:1.45;margin:0}
 h1{font-size:26pt;color:#16213E;margin:0 0 6px}
 h2{font-size:17pt;color:#16213E;border-bottom:3px solid #E0954F;padding-bottom:4px;margin:22px 0 8px;page-break-before:always}
+h4{font-size:11pt;color:#B2541A;margin:10px 0 3px}
 h3{font-size:12pt;color:#16213E;margin:14px 0 4px}
 .sub{color:#6E5F56}
 .box{background:#FFF6EC;border-left:4px solid #E0954F;padding:8px 12px;margin:8px 0;border-radius:4px}
@@ -22,7 +23,7 @@ table{border-collapse:collapse;width:100%;font-size:9.5pt}td,th{border:1px solid
 
 def build():
     o = [f"<html><head><meta charset='utf-8'><style>{CSS}</style></head><body>"]
-    o.append("<h1>El viaje de Toffee · Sección 1</h1><p class='sub'>Vlogs 2 al 15 · 26 de octubre al 8 de noviembre de 2026 · Halloween → Día de Muertos → América</p>")
+    o.append("<h1>El viaje de Toffee · Estudio + Sección 1</h1><p class='sub'>Vlogs 2 al 15 · 26 de octubre al 8 de noviembre de 2026 · Halloween → Día de Muertos → América</p>")
     o.append("""<div class='box'><b>Cómo usar este PDF (igual que el vlog 1)</b><ol>
 <li><b>Antes de cada vlog</b>, si tiene un personaje nuevo, haz primero su ficha en Nano Banana Pro (página «Personajes nuevos») y guárdala.</li>
 <li>Cada toma: <b>Omni 1.1 Flash · 9:16 · los segundos que dice</b>. Sube las fotos que dice (TOFFEE = TOFFEE-viajero.jpg, GALLETA = GALLETA-viajero.jpg, TRINEO = REF-trineo-rojo.jpg, OREJERAS = REF-orejeras-gris.jpg, DISFRAZ = REF-disfraz-verde.jpg).</li>
@@ -30,6 +31,16 @@ def build():
 <li>Copia el prompt completo. Si la toma no sale como dice, <b>se repite</b> (mándamela y te digo qué falló).</li>
 <li>Voces: genera en ElevenLabs <b>todas las frases de Toffee de un vlog juntas</b> (cuadro «Voces de Toffee» al final de cada vlog) y aparte las de cada personaje con su voz fija.</li>
 <li>Me mandas las tomas aprobadas + las voces y yo edito: subtítulos en español, título arriba, cortes, boca sincronizada.</li></ol></div>""")
+    import markdown
+    est = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..', 'ESTUDIO-GNOMO-Y-LOCO-BLANCO.md')).read()
+    import re
+    L = est.split('\n'); F = []
+    for ln in L:
+        isl = bool(re.match(r'\s*([-*]|\d+\.) ', ln))
+        if isl and F and F[-1].strip() and not re.match(r'\s*([-*]|\d+\.) ', F[-1]) and not F[-1].startswith('  '): F.append('')
+        F.append(re.sub(r'^  (?=[-*] )', '    ', ln))
+    est = '\n'.join(F)
+    o.append("<div class='estudio'>" + markdown.markdown(est, extensions=['tables']).replace('h3>', 'h4>').replace('h2>', 'h3>').replace('h1>', 'h2>') + "</div>")
     o.append("<h2>Personajes nuevos (fichas para Nano Banana Pro · formato 1:1)</h2>")
     for nom, arch, desc, p in D.FICHAS:
         o.append(f"<div class='toma'><span class='meta'>{E(nom)}</span> → guárdala como <b>{E(arch)}</b><br><span class='sub'>{E(desc)}</span><pre>{E(p)}</pre></div>")
@@ -42,7 +53,8 @@ def build():
         o.append(f"<div class='box'><b>La historia:</b> {E(v['resumen'])}<br><b>Texto arriba (lo pongo yo):</b> {E(v['arriba'][0])} <b style='color:#E0954F'>{E(v['arriba'][1])}</b></div>")
         toff = []
         for i, (s, fotos, cont, p, vt, vo) in enumerate(v['tomas'], 1):
-            o.append(f"<div class='toma'><span class='meta'>Toma {i} · Omni 1.1 Flash · {s} s</span> · Fotos: <b>{E(fotos)}</b>"
+            gz = " <span class='chip' style='background:#E0954F'>⭐ GANCHO: va primero en la edición</span>" if i == v['gancho'] else ""
+            o.append(f"<div class='toma'><span class='meta'>Toma {i} · Omni 1.1 Flash · {s} s</span>{gz} · Fotos: <b>{E(fotos)}</b>"
                      + (f"<br><span class='cont'>Primer cuadro: {E(cont)}</span>" if cont else "") + f"<pre>{E(p)}</pre>")
             if vt: o.append(f"<div class='voz'>🎙️ Toffee: {E(vt)}</div>")
             if vo: o.append(f"<div class='voz'>🎙️ {E(vo)}</div>")
