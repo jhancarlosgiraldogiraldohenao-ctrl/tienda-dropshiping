@@ -160,11 +160,11 @@
 
 | Sección | Fechas | Tema |
 |---|---|---|
-| **1** (prompts listos) | 26-oct → 8-nov | Valle de Octubre: Halloween y los 5 cascabeles. Día de Muertos. Colombia, Perú, Chile y México con el mapa encantado |
-| 2 | 9-nov → 22-nov | El barco de hielo y los animales que ayudan. Estados Unidos: Acción de Gracias, con un pavo que no se quiere dejar comer |
-| 3 | 23-nov → 6-dic | Black Friday (viernes 27). Rumbo al norte: Canadá, auroras, el pueblo de los renos |
-| 4 | 7-dic → 20-dic | Velitas (7-dic). Llegada al Polo Norte y el taller de Santa, distinto al de Gnomo: aquí lo atienden los animales |
-| 5 | 21-dic → 31-dic | Toffee le entrega a Santa la lista. Entrega real de regalos el 24. Pólvora del 31 con las orejeras. Año viejo |
+| **1** (prompts listos) | 26-oct → 8-nov | Valle de Octubre: Halloween y los 5 cascabeles. Día de Muertos. Colombia, Perú, Chile y México con el mapa encantado. Llegada a Nueva York |
+| 2 | 9-nov → 22-nov | Estados Unidos: Nueva York, Gran Cañón, Hollywood (el «ratón famoso» que resulta ser un ratón callejero disfrazado). El barco de hielo |
+| 3 | 23-nov → 6-dic | Acción de Gracias con el pavo que se escapa (canción «No me coman»). Black Friday (27). 1-dic: la «funa» a Santa (canción polémica). Canadá y auroras |
+| 4 | 7-dic → 20-dic | Velitas (7-dic). Llegada al Polo Norte; el taller de Santa atendido por animales. Santa responde la funa |
+| 5 | 21-dic → 31-dic | Santa recibe la lista. Entrega real de regalos el 24 («Villancico de la calle»). Pólvora del 31 con las orejeras. Año viejo |
 
 Las secciones 2 a 5 se escriben cuando termine cada una, según lo que pida el público.
 

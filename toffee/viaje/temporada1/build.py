@@ -63,7 +63,24 @@ def build():
             if vt and vt.startswith('«'):
                 toff.append(vt.split('»')[0].strip('«'))
         o.append("<div class='box'><b>Voces de Toffee de este vlog (copiar todo junto en ElevenLabs):</b><pre>" + E("\n\n".join(toff)) + "</pre></div>")
-    o.append("<h2>Canción del vlog 7: «La Noche del Miau»</h2><pre>" + E(D.CANCION) + "</pre>")
+    import musica as M
+    o.append("<h2>Ruta del viaje hasta el 31 de diciembre</h2><table><tr><th>Sección</th><th>Fechas</th><th>Lugares y temas</th><th>Canciones</th></tr>")
+    for a, b_, c, d in M.RUTA: o.append(f"<tr><td>{E(a)}</td><td>{E(b_)}</td><td>{E(c)}</td><td>{E(d)}</td></tr>")
+    o.append(f"</table><div class='box'>{E(M.MICKEY)}</div>")
+    o.append("<h2>Música y sonidos para hacer en ElevenLabs</h2>")
+    o.append(f"<div class='box'><b>Cómo hacer cada canción:</b> {E(M.AJUSTES_MUSICA)}</div>")
+    for c in M.CANCIONES:
+        o.append(f"<div class='toma'><span class='meta'>🎵 {E(c['titulo'])}</span> <span class='chip'>{E(c['estado'])}</span><br><b>Para:</b> {E(c['uso'])}<br><span class='sub'>{E(c['porque'])}</span>")
+        if c['estilo']:
+            o.append(f"<pre>{E(c['estilo'])} Use these exact lyrics:\n\n{E(c['letra'])}</pre>")
+        o.append("</div>")
+    o.append("<h3>Jingles</h3><table><tr><th>Nombre del archivo</th><th>Qué escribir (Efectos de sonido o Música)</th></tr>")
+    for n, f, p in M.JINGLES: o.append(f"<tr><td>{E(n)}<br><b>{E(f)}</b></td><td><code>{E(p)}</code></td></tr>")
+    o.append("</table><h3>Efectos de sonido (ElevenLabs › Efectos de sonido)</h3><p class='sub'>Genera cada uno, descárgalo con el nombre de la izquierda y mándamelos todos juntos. Cuestan muy poco.</p><table><tr><th>Archivo</th><th>Qué escribir</th></tr>")
+    for f, p in M.SFX: o.append(f"<tr><td><b>{E(f)}</b></td><td><code>{E(p)}</code></td></tr>")
+    o.append("</table><h3>Más cosas de ElevenLabs para aprovechar</h3><table>")
+    for n, d in M.EXTRAS: o.append(f"<tr><td><b>{E(n)}</b></td><td>{E(d)}</td></tr>")
+    o.append("</table>")
     o.append("</body></html>")
     return "\n".join(o)
 
