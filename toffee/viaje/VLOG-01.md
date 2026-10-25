@@ -1,6 +1,6 @@
 # Vlog 1 · prompts v4 optimizados para Omni 1.1 Flash (25-oct)
 
-Estado 25-oct (tanda 5): aprobadas 1–8 y 9a. Repetir 9b con cuadros/V1-toma9a-ULTIMO-CUADRO.jpg como primer cuadro (la anterior no arrancó del 9a y Toffee no se asusta).
+Estado 25-oct (tanda 6): aprobadas 1–8 y 9a. Falta 9b (solo ojos, 4 s) + 9c (reacción, 6 s). Ver «Tanda 6» al final.
 
 ## Toma 1 · Omni 1.1 Flash · 6 s
 Fotos: TOFFEE-viajero.jpg
@@ -131,4 +131,19 @@ Toffee dice: «¿Y tú… quién eres?»
 
 ```
 Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Continue exactly from the first frame: same snowy forest at night, same sleigh in the snow, the cat at the front and the dog behind him. Static camera, no cuts, no zoom. Far away in the darkness between the trees, two small glowing golden eyes open, blink once and slowly come a little closer, but stay far in the background; only the eyes are visible. The cat turns his head toward them, scared, ears flat; the dog hides behind the cat. He whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y tú... quién eres?" His lips move in sync with every word. The dog stays silent. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+
+# Tanda 6 (25-oct): la 9b se divide en 9b (solo ojos) + 9c (reacción)
+La 9b v2 falló: apareció un gato negro entero detrás de ellos (segundo gato), se movía de lado a lado, y Toffee no volteó a mirarlo.
+Lección: Omni no logra «solo ojos lejos» si en la misma toma hay personajes. Separar: plano del bosque sin animales + plano de reacción.
+
+## Toma 9b · Omni 1.1 Flash · 4 s · sin fotos de referencia · sin voz
+```
+Vertical 9:16, 4 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners). Static shot of a dark, snowy pine forest at night, blue moonlight, deep black darkness between the tree trunks. In the darkness between two tree trunks in the far background, two small glowing golden eyes slowly open, blink once and stay still. Only the two glowing eyes are visible: no body, no head, no ears, no silhouette, no animal shape. No animals in the shot. No one speaks; only soft wind. No text, no music.
+```
+
+## Toma 9c · Omni 1.1 Flash · 6 s · primer cuadro: cuadros/V1-toma9a-ULTIMO-CUADRO.jpg
+Toffee dice (susurro): «¿Y tú… quién eres?»
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Continue exactly from the first frame: same snowy forest at night, same red sleigh pet bed, same cat and dog in the same places, same snow on their heads. Static camera, no cuts, no zoom. The cat slowly turns his head to look off-screen to the right, his ears go flat and his eyes go wide, clearly scared; the dog ducks down behind the rim of the sleigh. The cat whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y tú... quién eres?" His lips move in sync with every word. The dog stays silent. Nothing appears in the trees behind them. Exactly one cat and one dog for the whole video; no other animals, eyes or shapes appear; the cat's whole head, nightcap and camera always in frame. Only the cat speaks, with soft wind in the background. No phone, no selfie stick, no text, no music.
 ```
