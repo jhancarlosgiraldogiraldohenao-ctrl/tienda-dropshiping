@@ -1,7 +1,7 @@
 import subprocess, sys
 exec(open('../d1b/armar.py').read().split('W=(255,255,255,255)')[0])
 W=(255,255,255,255)
-VOZ2 = 'voz2.mp3' if len(sys.argv)>1 else None   # línea de la toma 2 (pendiente)
+VOZ2=None   # línea de la toma 2 (pendiente)
 # segmentos: (clip, ini, fin, zoom, cx, cy, vol_ambiente)
 S=[('t1',0,2.0,1.0,.5,.4,0),('t1',2.0,5.0,1.18,.5,.32,0),
    ('t2',0,3.2,1.0,.5,.5,.35),('t2',3.2,6.4,1.2,.55,.55,.35),
@@ -21,75 +21,55 @@ def seg_t(clip,x):  # tiempo del clip -> tiempo en la línea de tiempo
     for i,s in enumerate(S):
         if s[0]==clip and s[1]<=x<s[2]+1e-6: return T[i]+x-s[1]
     raise ValueError((clip,x))
-import json
-WJ=json.load(open('words.json')); EW=WJ['voz']
-def ew(i0,i1): return EW[i0:i1]
-# líneas: (índices de palabras EL [i0,i1), clip, desfase voz-en-off o None si habla en cámara)
-LN=[((0,7),'t1',None),((7,23),'t3',None),((23,36),'t4',0.4),((36,43),'t5',2.6),((43,56),'t6',None),
-    ((56,69),'t7',0.4),((69,75),'t8',None),((75,79),'t9c',None)]
 import subprocess as sp
-subtxt=[]
-CH={
- 't1':[(0.06,0.60,0.97,1.54,'¡Humanos!'),(1.16,2.92,2.12,4.08,'Mañana me voy al |Polo Norte.')],
- 't3':[(3.41,3.96,1.28,2.04,'Y me enteré'),(3.96,4.58,2.46,3.26,'de que |Santa'),(4.58,5.12,3.46,4.04,'nunca'),(5.12,7.30,4.20,6.37,'les trae |regalos|a los |animales|de la calle.')],
- 't6':[(16.35,17.25,0.13,1.11,'Nuestro vehículo:'),(17.62,18.19,1.53,2.15,'mi |trineo.'),(18.89,19.19,3.13,3.37,'Bueno…'),(19.75,20.31,3.87,4.44,'es mi cama.'),(20.75,22.12,5.19,6.79,'Pero tiene forma |de |trineo.')],
- 't8':[(27.95,28.72,2.25,3.27,'Creo que…'),(29.32,30.66,3.80,5.30,'no sé |manejar esto.')],
- 't9c':[(31.24,31.87,3.00,3.58,'¿Y tú…'),(32.38,32.82,3.90,4.37,'quién eres?')]}
-placed=[]   # (wav, inicio en línea de tiempo)
-subw_chunks=[]
-subw=[]     # (palabra, ini, fin) en línea de tiempo
-for n,((i0,i1),c,off) in enumerate(LN):
-    E=EW[i0:i1]; out=f'l{n}.wav'
-    if off is None:
-        fl=[]; 
-        for j,(ea,eb,fa,fb,txt) in enumerate(CH[c]):
-            tp=max(0.75,min(1.3,(eb-ea)/(fb-fa))); d=(eb-ea)/tp
-            ms=int((seg_t(c,fa)-seg_t(c,CH[c][0][2]))*1000)
-            fl.append(f'[0:a]atrim={ea}:{eb},asetpts=PTS-STARTPTS,atempo={tp:.4f},afade=t=in:d=0.01,afade=t=out:st={d-0.03:.3f}:d=0.03,adelay={ms}|{ms}[q{j}]')
-            subtxt.append((txt,seg_t(c,fa),seg_t(c,fa)+d))
-        fl.append(''.join(f'[q{j}]' for j in range(len(CH[c])))+f'amix=inputs={len(CH[c])}:normalize=0[o]')
-        sp.run(['ffmpeg','-v','error','-y','-i','voz.mp3','-filter_complex',';'.join(fl),'-map','[o]','-ar','48000',out],check=True)
-        placed.append((out,seg_t(c,CH[c][0][2])))
+# Cortes SOLO en silencios del audio de ElevenLabs (nunca dentro de una palabra).
+# (archivo, ini_corte, fin_corte, inicio_voz, fin_voz, clip, boca_ini, boca_fin, subtítulo)  boca=None -> voz en off (boca_ini = desfase)
+VO=[('voz.mp3',0.00,0.98,0.00,0.85,'t1',0.97,1.54,'¡Humanos!'),
+    ('voz.mp3',0.98,3.22,1.14,3.04,'t1',2.12,4.08,'Mañana me voy|al Polo Norte.'),
+    ('voz.mp3',3.22,4.02,3.40,3.98,'t3',1.28,2.04,'Y me enteré'),
+    ('voz.mp3',4.02,7.52,4.06,7.34,'t3',2.46,6.37,'de que Santa|nunca les trae|regalos|a los animales|de la calle.'),
+    ('voz2.mp3',0.00,5.72,0.00,5.63,'t2',0.40,None,'Este es|Galleta.|Su primera|Navidad|la pasó|temblando|debajo de|un carro.'),
+    ('voz.mp3',7.52,12.63,7.69,12.44,'t4',0.40,None,'Así que voy|a pedírselo|en persona.|Todos los|animales|merecen|un regalo.'),
+    ('voz.mp3',12.63,16.13,12.82,15.92,'t5',2.60,None,'Galleta|viene conmigo.|Él todavía|no lo sabe.'),
+    ('voz.mp3',16.13,17.45,16.34,17.29,'t6',0.13,1.11,'Nuestro vehículo:'),
+    ('voz.mp3',17.45,18.55,17.61,18.36,'t6',1.53,2.15,'mi trineo.'),
+    ('voz.mp3',18.55,19.51,18.74,19.37,'t6',3.13,3.37,'Bueno…'),
+    ('voz.mp3',19.51,20.57,19.66,20.41,'t6',3.87,4.44,'es mi cama.'),
+    ('voz.mp3',20.57,22.31,20.74,22.13,'t6',5.19,6.79,'Pero tiene|forma de trineo.'),
+    ('voz.mp3',22.31,27.78,22.49,27.61,'t7',0.40,None,'Díganme en|los comentarios|qué animalito|de la calle|merece|un regalo.|¡Despegamos!'),
+    ('voz.mp3',27.78,28.99,27.94,28.82,'t8',2.25,3.27,'Creo que…'),
+    ('voz.mp3',28.99,30.97,29.16,30.71,'t8',3.87,5.10,'no sé|manejar esto.'),
+    ('voz.mp3',30.97,32.08,31.23,31.89,'t9c',3.00,3.58,'¿Y tú…'),
+    ('voz.mp3',32.08,33.15,32.27,33.03,'t9c',3.90,4.37,'quién eres?')]
+VO.sort(key=lambda v: seg_t(v[5],v[6]))
+placed=[]; subtxt=[]; last_end=-1
+for n,(src,cs,ce,von,voff,c,b0,b1,txt) in enumerate(VO):
+    if b1 is None: tempo=1.0; onset_tl=seg_t(c,b0)+(von-cs)
     else:
-        st=seg_t(c,off); a0=E[0][1]; b0=E[-1][2]+0.1
-        sp.run(['ffmpeg','-v','error','-y','-i','voz.mp3','-af',f'atrim={a0}:{b0},asetpts=PTS-STARTPTS,afade=t=out:st={b0-a0-0.05:.2f}:d=0.05','-ar','48000',out],check=True)
-        for k,w in enumerate(E):
-            subw.append((w[0],st+w[1]-a0,st+(E[k+1][1] if k+1<len(E) else w[2])-a0))
-        placed.append((out,st))
-for txt,a0,b0 in subtxt:
-    ps=[p for p in txt.split('|')]; L=sum(len(p) for p in ps); x0=a0
-    for p in ps:
-        x1=x0+(b0-a0)*len(p)/L; subw_chunks.append((p.strip(),x0,x1)); x0=x1
-# subtítulos en español: grupos de 1-3 palabras, cortando en puntuación
-KEY={'polo','norte','santa','regalo','regalos','galleta','trineo','animales','animalito','despegamos'}
-FIX={'¡Humanos!':'¡Humanos!','Norte.':'Norte.','que':'que'}
+        tempo=max(0.92,min(1.08,(voff-von)/(b1-b0))); onset_tl=seg_t(c,b0)
+    start_tl=onset_tl-(von-cs)/tempo
+    if start_tl<last_end: shift=last_end-start_tl; start_tl+=shift; onset_tl+=shift
+    d=(ce-cs)/tempo; last_end=start_tl+d
+    out=f'k{n}.wav'
+    sp.run(['ffmpeg','-v','error','-y','-i',src,'-af',f'atrim={cs}:{ce},asetpts=PTS-STARTPTS'+(f',atempo={tempo:.4f}' if tempo!=1 else '')+f',afade=t=in:d=0.005,afade=t=out:st={d-0.006:.3f}:d=0.005','-ar','48000',out],check=True)
+    placed.append((out,start_tl))
+    subtxt.append((txt,onset_tl,onset_tl+(voff-von)/tempo))
+    print(f'{c} {txt[:22]:22s} tempo={tempo:.3f} en {start_tl:.2f}')
+KEY={'polo','norte','santa','regalo','regalos','galleta','trineo','animales','animalito','despegamos','navidad'}
 ov=[]
 def add(name,img,a,b,y): img.save(name); ov.append((name,a,b,y))
-grp=[];k=0
-def flush():
-    global grp,k
-    if not grp: return
-    parts=[]
-    for i,(w,a,b) in enumerate(grp):
-        base=w.strip('¡!¿?.,:…').lower()
-        parts.append((w+(' ' if i<len(grp)-1 else ''), CAR if base in KEY else W))
-    add(f'o_s{k}.png',linea(parts,76,8),grp[0][1],grp[-1][2]+0.05,1400); k+=1; grp=[]
-for i,(w,a,b) in enumerate(subw):
-    grp.append((w,a,b))
-    nxt=subw[i+1][1] if i+1<len(subw) else None
-    if len(grp)==3 or w[-1] in '.,!?:' or nxt is None or nxt-b>0.35: flush()
-flush()
-for p,a0,b0 in subw_chunks:
-    parts=[]
-    for i,w in enumerate(p.split(' ')):
-        base=w.strip('¡!¿?.,:…').lower(); parts.append((w+(' ' if i<len(p.split(' '))-1 else ''),CAR if base in KEY else W))
-    add(f'o_s{k}.png',linea(parts,76,8),a0,b0+0.05,1400); k+=1
-# cerrar huecos pequeños entre grupos para que no parpadee
-ov.sort(key=lambda o:o[1])
-for j in range(len(ov)-1):
-    if 0<ov[j+1][1]-ov[j][2]<0.25: ov[j]=(ov[j][0],ov[j][1],ov[j+1][1],ov[j][3])
-if VOZ2:
-    pass
+k=0; subs=[]
+for txt,a0,b0 in subtxt:
+    ps=txt.split('|'); L=sum(len(p) for p in ps); x0=a0
+    for p in ps:
+        x1=x0+(b0-a0)*len(p)/L; subs.append((p,x0,x1)); x0=x1
+for i,(p,a0,b0) in enumerate(subs):
+    nxt=subs[i+1][1] if i+1<len(subs) else 1e9
+    b0=min(nxt,b0+0.35) if nxt-b0<0.6 else b0+0.2
+    ws=p.split(' '); parts=[]
+    for j,w in enumerate(ws):
+        parts.append((w+(' ' if j<len(ws)-1 else ''),CAR if w.strip('¡!¿?.,:…').lower() in KEY else W))
+    add(f'o_s{k}.png',linea(parts,76,8),a0,b0,1400); k+=1
 add('o_tit.png',bloque([linea([('El viaje de Toffee al ',W),('Polo Norte',CAR)],66,7),linea([('Vlog 1 ',W),('EMO','🛷')],80,8)]),0,3.2,230)
 t7=seg_t('t7',0.4)
 add('o_cta.png',bloque([linea([('Comenta ',W),('EMO','👇')],70,7),linea([('¿Qué animalito merece un regalo?',W)],52,6)]),t7,t7+4.3,260)
@@ -123,5 +103,5 @@ for i,(w,st) in enumerate(placed):
 if VOZ2:
     ms=int((T[2]+0.4)*1000); fc.append(f'[{VI+len(placed)}:a]adelay={ms}|{ms}[p2x]'); vs.append('[p2x]')
 fc.append(f'[amb]{"".join(vs)}amix=inputs={len(vs)+1}:duration=first:normalize=0,alimiter=limit=0.95,afade=t=out:st={TOT-0.6:.2f}:d=0.6[aout]')
-subprocess.run(['ffmpeg','-v','error','-y']+inp+['-filter_complex',';'.join(fc),'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart','VLOG1-v3.mp4'],check=True)
+subprocess.run(['ffmpeg','-v','error','-y']+inp+['-filter_complex',';'.join(fc),'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart','VLOG1-v5.mp4'],check=True)
 print('ok',TOT,'toma2 en',T[2])
