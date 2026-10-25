@@ -1,6 +1,6 @@
 # Vlog 1 · prompts v4 optimizados para Omni 1.1 Flash (25-oct)
 
-Estado 25-oct (tanda 4): aprobadas 1, 2, 3, 4, 5, 6 y 7 (versión 6147563d). Faltan 8 (primer cuadro: cuadros/V1-toma7-ULTIMO-CUADRO.jpg), 9a, 9b.
+Estado 25-oct (tanda 5): aprobadas 1–8 y 9a. Repetir 9b con cuadros/V1-toma9a-ULTIMO-CUADRO.jpg como primer cuadro (la anterior no arrancó del 9a y Toffee no se asusta).
 
 ## Toma 1 · Omni 1.1 Flash · 6 s
 Fotos: TOFFEE-viajero.jpg
