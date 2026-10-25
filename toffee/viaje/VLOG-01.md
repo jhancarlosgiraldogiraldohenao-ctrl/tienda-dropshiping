@@ -1,6 +1,6 @@
 # Vlog 1 · prompts v4 optimizados para Omni 1.1 Flash (25-oct)
 
-Toma 2: aprobada.
+Estado 25-oct: aprobadas tomas 1, 2, 3 y 4. Toma 5 se repite con v5.
 
 ## Toma 1 · Omni 1.1 Flash · 6 s
 Fotos: TOFFEE-viajero.jpg
@@ -31,13 +31,13 @@ Toffee dice: «Así que voy a pedírselo en persona. Todos los animales merecen 
 Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Bedroom at night, warm Christmas lights. Front view: the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap stands behind a small open brown suitcase on the bed, which holds a red scarf and a bag of dog treats. With one paw he pushes the dark gray padded ear muff hood from the reference (a soft balaclava-style dog hood with an oval face opening; not a ring, not headphones) into the suitcase, pats it twice, and looks at the camera, proud. Exactly one cat, identical to the references; the cat's whole head, nightcap and camera always in frame. No one speaks; only soft room ambience. No phone, no selfie stick, no text, no music.
 ```
 
-## Toma 5 · Omni 1.1 Flash · 8 s
+## Toma 5 · Omni 1.1 Flash · 8 s · v5 (la v4 falló: el perro se fue caminando en vez de esconderse, la mochila apareció a mitad de toma y al final salió un segundo perro)
 Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
 
 Toffee dice: «Galleta viene conmigo. Él todavía no lo sabe.»  (voz en off)
 
 ```
-Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Bedroom at night, camera at floor level, both animals fully visible. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap pushes a small packed suitcase with his paw toward the right. On the right, the scruffy golden-brown criollo dog from the reference (wiry fur, bushy eyebrows, white chest and paws), with his navy bandana with a gold bone tag and a small caramel-brown backpack sees it coming, freezes with wide worried eyes, then backs away and hides under the bed until only his eyes peek out. The cat looks at the camera with a tiny smug face. Exactly one cat and one dog, identical to the references; the cat's whole head, nightcap and camera always in frame. No one speaks; only soft room ambience. No phone, no selfie stick, no text, no music.
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. Bedroom at night, static camera at floor level, a bed on the right side of the frame with a dark gap under it. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap, sits next to a small packed brown suitcase and gently nudges it a little toward the right with one paw. On the right, right in front of the bed, the scruffy golden-brown criollo dog from the reference (wiry fur, bushy eyebrows, white chest and paws), with his navy bandana with a gold bone tag and his small caramel-brown backpack already on his back from the first frame, sees the suitcase, his eyes go wide, he lies down flat and slowly crawls backwards under the bed until only his face and eyes peek out from the dark gap. He never stands up or walks away. Then the cat turns to the camera with a tiny smug face. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame. No one speaks; only soft room ambience. No phone, no selfie stick, no text, no music.
 ```
 
 ## Toma 6 · Omni 1.1 Flash · 8 s
