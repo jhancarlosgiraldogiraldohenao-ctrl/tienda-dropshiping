@@ -7,7 +7,7 @@ S=[('t1',0,2.0,1.0,.5,.4,0),('t1',2.0,5.0,1.18,.5,.32,0),
    ('t2',0,3.2,1.0,.5,.5,.35),('t2',3.2,6.4,1.2,.55,.55,.35),
    ('t3',0.6,4.0,1.0,.5,.4,0),('t3',4.0,7.4,1.2,.5,.33,0),
    ('t4',0,6.0,1.0,.5,.5,.35),
-   ('t5',0,4.0,1.0,.5,.5,.35),('t5',4.0,8.0,1.15,.7,.6,.35),
+   ('t5',0,4.0,1.0,.5,.5,.6),('t5',4.0,8.0,1.0,.5,.5,1.8),
    ('t6',0,3.0,1.0,.5,.5,0),('t6',3.0,7.3,1.15,.4,.5,0),
    ('t7',0,4.5,1.0,.5,.5,.35),('t7',4.5,9.2,1.0,.5,.5,.35),
    ('t8',1.4,5.8,1.0,.5,.5,0),
@@ -26,8 +26,7 @@ import subprocess as sp
 # (archivo, ini_corte, fin_corte, inicio_voz, fin_voz, clip, boca_ini, boca_fin, subtítulo)  boca=None -> voz en off (boca_ini = desfase)
 VO=[('voz.mp3',0.00,0.98,0.00,0.85,'t1',0.97,1.54,'¡Humanos!'),
     ('voz.mp3',0.98,3.22,1.14,3.04,'t1',2.12,4.08,'Mañana me voy|al Polo Norte.'),
-    ('voz.mp3',3.22,4.02,3.40,3.98,'t3',1.28,2.04,'Y me enteré'),
-    ('voz.mp3',4.02,7.52,4.06,7.34,'t3',2.46,6.37,'de que Santa|nunca les trae|regalos|a los animales|de la calle.'),
+    ('voz.mp3',3.22,7.52,3.40,7.34,'t3',1.28,6.37,'Y me enteré|de que Santa|nunca les trae|regalos|a los animales|de la calle.'),
     ('voz2.mp3',0.00,5.72,0.00,5.63,'t2',0.40,None,'Este es|Galleta.|Su primera|Navidad|la pasó|temblando|debajo de|un carro.'),
     ('voz.mp3',7.52,12.63,7.69,12.44,'t4',0.40,None,'Así que voy|a pedírselo|en persona.|Todos los|animales|merecen|un regalo.'),
     ('voz.mp3',12.63,16.13,12.82,15.92,'t5',2.60,None,'Galleta|viene conmigo.|Él todavía|no lo sabe.'),
@@ -42,11 +41,21 @@ VO=[('voz.mp3',0.00,0.98,0.00,0.85,'t1',0.97,1.54,'¡Humanos!'),
     ('voz.mp3',30.97,32.08,31.23,31.89,'t9c',3.00,3.58,'¿Y tú…'),
     ('voz.mp3',32.08,33.15,32.27,33.03,'t9c',3.90,4.37,'quién eres?')]
 VO.sort(key=lambda v: seg_t(v[5],v[6]))
+import numpy as np
+_cache={}
+def _db(src,t):
+    if src not in _cache:
+        _cache[src]=np.frombuffer(sp.run(['ffmpeg','-v','error','-i',src,'-ac','1','-ar','16000','-f','s16le','-'],capture_output=True).stdout,np.int16).astype(np.float32)
+    a=_cache[src]; i=int(t*16000); w=a[max(i-240,0):i+240]
+    return 20*np.log10(np.sqrt((w**2).mean())+1e-9) if len(w) else -99
+for v in VO:
+    for t in (v[1],v[2]):
+        d=_db(v[0],t); assert d<20, f'CORTE EN SONIDO: {v[0]} {t} nivel {d:.0f} dB ({v[8][:20]})'
 placed=[]; subtxt=[]; last_end=-1
 for n,(src,cs,ce,von,voff,c,b0,b1,txt) in enumerate(VO):
     if b1 is None: tempo=1.0; onset_tl=seg_t(c,b0)+(von-cs)
     else:
-        tempo=max(0.92,min(1.08,(voff-von)/(b1-b0))); onset_tl=seg_t(c,b0)
+        tempo=1.0; onset_tl=seg_t(c,b0)
     start_tl=onset_tl-(von-cs)/tempo
     if start_tl<last_end: shift=last_end-start_tl; start_tl+=shift; onset_tl+=shift
     d=(ce-cs)/tempo; last_end=start_tl+d
@@ -103,5 +112,5 @@ for i,(w,st) in enumerate(placed):
 if VOZ2:
     ms=int((T[2]+0.4)*1000); fc.append(f'[{VI+len(placed)}:a]adelay={ms}|{ms}[p2x]'); vs.append('[p2x]')
 fc.append(f'[amb]{"".join(vs)}amix=inputs={len(vs)+1}:duration=first:normalize=0,alimiter=limit=0.95,afade=t=out:st={TOT-0.6:.2f}:d=0.6[aout]')
-subprocess.run(['ffmpeg','-v','error','-y']+inp+['-filter_complex',';'.join(fc),'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart','VLOG1-v5.mp4'],check=True)
+subprocess.run(['ffmpeg','-v','error','-y']+inp+['-filter_complex',';'.join(fc),'-map','[vout]','-map','[aout]','-c:v','libx264','-preset','slow','-crf','17','-profile:v','high','-c:a','aac','-b:a','192k','-ar','48000','-movflags','+faststart','VLOG1-v7.mp4'],check=True)
 print('ok',TOT,'toma2 en',T[2])
