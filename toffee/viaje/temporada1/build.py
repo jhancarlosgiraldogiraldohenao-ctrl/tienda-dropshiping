@@ -1,7 +1,7 @@
 import html, sys, subprocess, os
 sys.path.insert(0, os.path.dirname(__file__))
 import datos as D, re
-cap = lambda p: re.sub(r'([.;:!?] )the ', lambda m: m.group(1)+'The ', p)
+cap = lambda p: re.sub(r'([.!?] )the ', lambda m: m.group(1)+'The ', p)
 E = html.escape
 
 CSS = """
