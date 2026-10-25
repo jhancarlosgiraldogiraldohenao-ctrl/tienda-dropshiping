@@ -1,6 +1,7 @@
 import html, sys, subprocess, os
 sys.path.insert(0, os.path.dirname(__file__))
-import datos as D
+import datos as D, re
+cap = lambda p: re.sub(r'([.;:!?] )the ', lambda m: m.group(1)+'The ', p)
 E = html.escape
 
 CSS = """
@@ -55,7 +56,7 @@ def build():
         for i, (s, fotos, cont, p, vt, vo) in enumerate(v['tomas'], 1):
             gz = " <span class='chip' style='background:#E0954F'>⭐ GANCHO: va primero en la edición</span>" if i == v['gancho'] else ""
             o.append(f"<div class='toma'><span class='meta'>Toma {i} · Omni 1.1 Flash · {s} s</span>{gz} · Fotos: <b>{E(fotos)}</b>"
-                     + (f"<br><span class='cont'>Primer cuadro: {E(cont)}</span>" if cont else "") + f"<pre>{E(p)}</pre>")
+                     + (f"<br><span class='cont'>Primer cuadro: {E(cont)}</span>" if cont else "") + f"<pre>{E(cap(p))}</pre>")
             if vt: o.append(f"<div class='voz'>🎙️ Toffee: {E(vt)}</div>")
             if vo: o.append(f"<div class='voz'>🎙️ {E(vo)}</div>")
             o.append("</div>")

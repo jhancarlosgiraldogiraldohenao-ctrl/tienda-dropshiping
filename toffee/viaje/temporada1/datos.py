@@ -65,7 +65,9 @@ VC = "in a high, shaky, nervous young male voice"
 VM = "in a deep, dramatic, theatrical male voice"
 
 def END(cast, speaker=None, amb="soft ambience"):
-    s = f"Exactly {cast} for the whole video, identical to the references; no other animals appear; the cat's whole head, nightcap and camera always in frame; the dog never speaks."
+    s = f"Exactly {cast} for the whole video, identical to the references; no other animals appear."
+    if "cat" in cast: s += " The cat's whole head, nightcap and camera always in frame."
+    if "one dog" in cast and "chihuahua" not in cast: s += " The dog never speaks."
     s += f" Only {speaker} speaks, with {amb} in the background." if speaker else f" No one speaks; only {amb}."
     return s + " No phone, no selfie stick, no text, no music."
 
@@ -80,7 +82,7 @@ VLOGS.append(dict(n=2, fecha="Dom 26-oct", titulo="Los ojos del bosque", arriba=
  (6,"TOFFEE + GALLETA + TRINEO","Último cuadro de la toma 9c del vlog 1",
   f"{ST(6)} Continue exactly from the first frame: same snowy forest at night, same sleigh, same cat and dog. Static camera. The cat slowly leans forward toward the dark trees, scared, ears flat; the dog hides behind the sleigh rim. A warm lantern light slowly appears between the trees. {END(C2, amb='wind')}",
   "(sin voz)", None),
- (8,"TOFFEE + LECHUZA",None,
+ (8,"LECHUZA",None,
   f"{ST(8)} Snowy forest at night, warm lantern light. {LE} lands on a snowy branch right in front of the camera, her golden eyes glowing, and looks down at the camera. {H('¡Por fin! Llevo tres siglos esperando visitas.', 'owl', VL)} {END('one owl', 'the owl', 'wind')}",
   None, "LECHUZA: «¡Por fin! Llevo tres siglos esperando visitas.»"),
  (6,"TOFFEE",None,
