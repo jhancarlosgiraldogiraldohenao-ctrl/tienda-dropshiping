@@ -29,7 +29,8 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Al revisar cada clip que manda Jay, compararlo con la idea del prompt (encuadre, acción, personajes, gorro, producto).
 - Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
 - Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
-- **Subtítulos de la voz: siempre en inglés** (pedido de Jay, 24-oct-2026), bien traducidos y con buena gramática. La voz sigue en español. Los textos grandes en pantalla (gancho, lista, «Comenta CALMA») siguen en español.
+- **Subtítulos de la voz: en español, pegados en el video** (cambio decidido el 25-oct-2026; antes eran en inglés). Estilo Gnomo Palomo: 1 a 3 palabras, centrados y sincronizados palabra por palabra. El **inglés va aparte**, como subtítulos .srt en YouTube (y la traducción automática de TikTok/Instagram).
+- **Boca sincronizada:** cuando Toffee habla en cámara, la voz de ElevenLabs se ajusta palabra por palabra a la boca de la toma de Flow (o se usa el Voice Changer de ElevenLabs sobre el audio de Flow).
 
 ## Videos del viaje de Toffee: cómo se generan (pedido de Jay, 24-oct-2026)
 - **Modelo: siempre Omni 1.1 Flash** (Google Flow). Tomas de 4, 6, 8 o 10 s según el momento; cortes cada 3–5 s como Gnomo Palomo. Si una toma sigue a otra, indicar «usar el último cuadro de la toma X como primer cuadro». Toma aprobada → mejorarla a 1080p en Flow si se puede.
