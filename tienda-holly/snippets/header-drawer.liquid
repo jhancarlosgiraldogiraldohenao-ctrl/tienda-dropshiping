@@ -37,6 +37,18 @@
         endfor
       -%}
       {%- if kf_skip -%}{%- continue -%}{%- endif -%}
+      {%- liquid
+        assign kf_url = link.url
+        assign kf_title = link.title
+        assign kf_cambios = section.settings.cambiar_enlaces | newline_to_br | split: '<br />'
+        for c in kf_cambios
+          assign cp = c | strip | split: '|'
+          if cp.size == 3 and cp[0] == link.url
+            assign kf_title = cp[1]
+            assign kf_url = cp[2]
+          endif
+        endfor
+      -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
@@ -137,13 +149,13 @@
                   {%- else -%}
                     <a
                       id="HeaderDrawer-{{ link.handle }}"
-                      href="{{ link.url }}"
+                      href="{{ kf_url }}"
                       class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.current %} menu-drawer__menu-item--active{% endif %}"
                       {% if link.current %}
                         aria-current="page"
                       {% endif %}
                     >
-                      {{ link.title | escape }}
+                      {{ kf_title | escape }}
                     </a>
                   {%- endif -%}
                 </li>

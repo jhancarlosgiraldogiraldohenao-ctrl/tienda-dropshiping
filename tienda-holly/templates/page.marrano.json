@@ -1,74 +1,94 @@
 {
   "sections": {
-    "marrano": {
-      "type": "tf-marrano",
-      "settings": {
-        "eyebrow": "La causa de Toffee",
-        "titulo": "<p>El marrano <em>de Toffee</em></p>",
-        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y dono todo a perritos y gatitos de la calle… y volvemos a empezar. Y no, no me voy a comer las monedas. 😾",
-        "meta": 1000000,
-        "total_extra": 0,
-        "moneda": "COP",
-        "nota": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato.",
-        "historial_titulo": "Marranos rotos y donados",
-        "sin_donaciones": "Este es el primer marrano. ¡Ayúdanos a llenarlo! 🐷",
-        "compacto": false,
-        "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
-        "boton_texto": "Apoyar al marrano 🐷",
-        "boton_url": "#apoya",
-        "es_h1": true
-      },
-      "blocks": {},
-      "block_order": []
-    },
-    "pasos": {
-      "type": "hl-ritual",
-      "settings": {
-        "eyebrow": "Cómo funciona",
-        "titulo": "<p>Así se llena <em>el marrano</em></p>",
-        "texto": "Sin letra pequeña. Tú compras, Toffee guarda, los peludos reciben.",
-        "nota": "Cada donación se publica con su comprobante en @toffee.elgato.",
-        "ancla": "como-funciona",
-        "titulo_size": 60
-      },
+    "intro": {
+      "type": "tf-bloque",
       "blocks": {
-        "b0": {
-          "type": "paso",
+        "r": {
+          "type": "redes",
           "settings": {
-            "titulo": "Compras",
-            "texto": "Cada vez que alguien compra en Soy Toffee, el 3 % de la venta cae en el marrano."
-          }
-        },
-        "b1": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Se llena",
-            "texto": "La barra sube con cada compra. La meta es 1.000.000 de pesos."
-          }
-        },
-        "b2": {
-          "type": "paso",
-          "settings": {
-            "titulo": "Lo rompemos",
-            "texto": "Al llenarse, donamos todo a fundaciones y rescatistas de animales de la calle… y empezamos un marrano nuevo."
+            "tiktok": "https://www.tiktok.com/@toffee.elgato",
+            "instagram": "https://www.instagram.com/toffee.elgato",
+            "youtube": "https://www.youtube.com/@toffee.elgato"
           }
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2"
-      ]
+        "r"
+      ],
+      "settings": {
+        "es_h1": true,
+        "fondo": "marino",
+        "imagen_tema": "tf-viaje.jpg",
+        "imagen_tema_alt": "Toffee y Galleta volando en su cama-trineo sobre una ciudad de noche",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "El viaje de Toffee 🛷",
+        "titulo": "<p>Rumbo al <em>Polo Norte</em></p>",
+        "texto": "<p>Toffee se enteró de que Santa nunca les trae regalos a los animales de la calle. Así que se subió a su cama-trineo, se llevó a Galleta (sin preguntarle) y salió a pedírselo en persona.</p><p>En el camino el trineo se cayó en un valle donde siempre es Halloween, conoció a una lechuza bruja, a una calabaza miedosa y a un vampiro que solo toma jugo de mora… y cada día sube un vlog nuevo.</p><p>🎁 <strong>Y les tenemos una sorpresa en el camino.</strong> Síguelos para enterarte primero.</p>",
+        "nota_toffee": "Todos los animales merecen un regalo. Hasta Galleta.",
+        "btn_texto": "Ver los vlogs en TikTok",
+        "btn_url": "https://www.tiktok.com/@toffee.elgato",
+        "btn_principal": true,
+        "btn2_texto": "",
+        "btn2_url": "",
+        "ancla": "viaje"
+      }
     },
-    "apoya": {
+    "ruta": {
+      "type": "hl-ritual",
+      "blocks": {
+        "a": {
+          "type": "paso",
+          "settings": {
+            "titulo": "🎃 Halloween y Día de Muertos",
+            "texto": "El Valle de Octubre: una lechuza bruja, cinco cascabeles perdidos, monstruos que no son lo que parecen y un puente de flores."
+          }
+        },
+        "c": {
+          "type": "paso",
+          "settings": {
+            "titulo": "🌎 Colombia, Perú, Chile y México",
+            "texto": "Un Willys en Salento, una alpaca que escupe, un ovni en Atacama y lucha libre."
+          }
+        },
+        "d": {
+          "type": "paso",
+          "settings": {
+            "titulo": "🇺🇸 Estados Unidos",
+            "texto": "Nueva York, Hollywood y un pavo que no se quiere dejar comer."
+          }
+        },
+        "e": {
+          "type": "paso",
+          "settings": {
+            "titulo": "🎅 El Polo Norte",
+            "texto": "La lista de Toffee llega a Santa. ¿La va a leer?"
+          }
+        }
+      },
+      "block_order": [
+        "a",
+        "c",
+        "d",
+        "e"
+      ],
+      "settings": {
+        "eyebrow": "La ruta",
+        "titulo": "<p>Por dónde <em>van a pasar</em></p>",
+        "texto": "Un lugar nuevo cada día. Tú decides parte del camino en los comentarios.",
+        "nota": "Toffee y Galleta son personajes creados con IA. Los productos y los envíos son reales.",
+        "ancla": "ruta",
+        "titulo_size": 60
+      }
+    },
+    "trineo": {
       "type": "hl-catalogo",
       "settings": {
-        "eyebrow": "Apoya esta causa",
-        "titulo": "<p>Compra algo lindo y <em>llena el marrano</em></p>",
-        "texto": "El 3 % de cada uno de estos productos cae directo en el marranito. Tú consientes a tu peludo y ayudas a uno que no tiene casa.",
-        "boton_texto": "Comprar y ayudar",
-        "ancla": "apoya",
+        "eyebrow": "El vehículo oficial",
+        "titulo": "<p>El trineo del viaje <em>es una cama</em></p>",
+        "texto": "Toffee viaja en la Cama Trineo Navideña. Para volar no sirve (nos consta), pero para dormir es la mejor.",
+        "boton_texto": "Ver producto",
+        "ancla": "tienda",
         "titulo_size": 60
       },
       "blocks": {
@@ -108,63 +128,47 @@
     },
     "faq": {
       "type": "hl-faq",
-      "settings": {
-        "eyebrow": "Preguntas",
-        "titulo": "<p>Sobre <em>la donación</em></p>",
-        "texto": "",
-        "abrir_primera": true,
-        "titulo_size": 56
-      },
       "blocks": {
-        "b0": {
+        "q1": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿De verdad se dona el 3 %?",
-            "respuesta": "<p>Sí. De cada venta separamos el 3 % del valor del producto y lo guardamos en el marrano. Cuando llega a la meta, se dona completo.</p>"
+            "pregunta": "¿Dónde veo los vlogs?",
+            "respuesta": "<p>Un vlog nuevo cada día en <a href=\"https://www.tiktok.com/@toffee.elgato\">TikTok</a>, <a href=\"https://www.instagram.com/toffee.elgato\">Instagram</a> y <a href=\"https://www.youtube.com/@toffee.elgato\">YouTube</a> (@toffee.elgato).</p>"
           }
         },
-        "b1": {
+        "q2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿A quién se le dona?",
-            "respuesta": "<p>A fundaciones y rescatistas que ayudan a perritos y gatitos en situación de calle en los países donde vendemos.</p>"
+            "pregunta": "¿Toffee y Galleta son reales?",
+            "respuesta": "<p>Son personajes creados con IA. Lo que sí es real: los productos de la tienda, los envíos y la persona que responde cada correo.</p>"
           }
         },
-        "b2": {
+        "q3": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿Cómo sé que es cierto?",
-            "respuesta": "<p>Cada donación la publicamos en nuestras redes @toffee.elgato con el comprobante, y queda en el historial de esta página.</p>"
-          }
-        },
-        "b3": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Puedo recomendar una fundación?",
-            "respuesta": "<p>¡Claro! Escríbenos desde la página de contacto con el nombre y las redes de la fundación o del rescatista.</p>"
-          }
-        },
-        "b4": {
-          "type": "pregunta",
-          "settings": {
-            "pregunta": "¿Quién es Galleta?",
-            "respuesta": "<p>Es el empleado de Toffee: un perrito criollo que Toffee rescató de la calle. Por él existe este marrano.</p>"
+            "pregunta": "¿Cuál es la sorpresa?",
+            "respuesta": "<p>Si te la contamos, deja de ser sorpresa 🤫. Síguelos y te enteras primero.</p>"
           }
         }
       },
       "block_order": [
-        "b0",
-        "b1",
-        "b2",
-        "b3",
-        "b4"
-      ]
+        "q1",
+        "q2",
+        "q3"
+      ],
+      "settings": {
+        "eyebrow": "Preguntas",
+        "titulo": "<p>Sobre <em>el viaje</em></p>",
+        "texto": "",
+        "abrir_primera": true,
+        "titulo_size": 56
+      }
     }
   },
   "order": [
-    "marrano",
-    "pasos",
-    "apoya",
+    "intro",
+    "ruta",
+    "trineo",
     "faq"
   ]
 }

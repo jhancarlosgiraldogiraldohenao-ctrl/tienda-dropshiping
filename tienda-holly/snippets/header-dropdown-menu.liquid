@@ -19,6 +19,18 @@
         endfor
       -%}
       {%- if kf_skip -%}{%- continue -%}{%- endif -%}
+      {%- liquid
+        assign kf_url = link.url
+        assign kf_title = link.title
+        assign kf_cambios = section.settings.cambiar_enlaces | newline_to_br | split: '<br />'
+        for c in kf_cambios
+          assign cp = c | strip | split: '|'
+          if cp.size == 3 and cp[0] == link.url
+            assign kf_title = cp[1]
+            assign kf_url = cp[2]
+          endif
+        endfor
+      -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>
@@ -93,7 +105,7 @@
         {%- else -%}
           <a
             id="HeaderMenu-{{ link.handle }}"
-            href="{{ link.url }}"
+            href="{{ kf_url }}"
             class="header__menu-item list-menu__item link link--text focus-inset"
             {% if link.current %}
               aria-current="page"
@@ -104,7 +116,7 @@
                 class="header__active-menu-item"
               {% endif %}
             >
-              {{- link.title | escape -}}
+              {{- kf_title | escape -}}
             </span>
           </a>
         {%- endif -%}

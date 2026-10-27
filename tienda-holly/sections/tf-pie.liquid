@@ -20,7 +20,7 @@
         {%- if menu.links.size > 0 -%}
           <nav class="tf-pie__col" aria-label="{{ section.settings[kt] | escape }}">
             <h2>{{ section.settings[kt] }}</h2>
-            <ul>{%- for l in menu.links -%}<li><a href="{{ l.url }}">{{ l.title }}</a></li>{%- endfor -%}</ul>
+            <ul>{%- for l in menu.links -%}{%- if section.settings.ocultar_marrano and l.url contains 'marrano' -%}{%- continue -%}{%- endif -%}<li><a href="{{ l.url }}">{{ l.title }}</a></li>{%- endfor -%}</ul>
           </nav>
         {%- endif -%}
       {%- endfor -%}
@@ -51,6 +51,7 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    { "type": "checkbox", "id": "ocultar_marrano", "label": "Ocultar enlaces del marrano (programa en pausa)", "default": true },
     { "type": "text", "id": "frase", "label": "Frase", "default": "La tienda para mascotas donde todo pasa por mi prueba primero. — Toffee 🐾" },
     { "type": "text", "id": "contacto", "label": "Contacto", "default": "soytoffee.store@gmail.com · atención solo por correo" },
     { "type": "text", "id": "titulo_1", "label": "Título columna 1", "default": "Tienda" },

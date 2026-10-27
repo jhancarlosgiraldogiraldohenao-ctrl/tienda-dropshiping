@@ -1,7 +1,5 @@
-{%- comment -%} Bajo el botón de pago: garantía con nombre, aporte al marrano de este pedido y pago seguro. {%- endcomment -%}
-{%- assign aporte = cart.items_subtotal_price | times: 0.03 | round -%}
+{%- comment -%} Bajo el botón de pago: garantía con nombre, pago seguro. {%- endcomment -%}
 <div class="tf-carrito-extra">
   {%- if settings.tf_garantia_nombre != blank -%}<p>🛡️ <b>{{ settings.tf_garantia_nombre }}:</b> {{ settings.tf_garantia_texto }}</p>{%- endif -%}
-  {%- if aporte > 0 -%}<p>🐷 Con este pedido, <b>{{ aporte | money_without_trailing_zeros }}</b> van al marrano de Toffee</p>{%- endif -%}
   <p>🔒 Pago seguro con tarjeta o PSE · 🚚 Envío gratis</p>
 </div>

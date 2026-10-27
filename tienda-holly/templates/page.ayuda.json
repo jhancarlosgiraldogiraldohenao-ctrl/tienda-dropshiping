@@ -56,8 +56,8 @@
         "dona": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿De verdad donan el 3 %?",
-            "respuesta": "<p>Sí. Separamos el 3 % de cada venta y lo entregamos a fundaciones y rescatistas de animales de la calle. Cada donación la publicamos con su comprobante en nuestras redes @toffee.elgato.</p>"
+            "pregunta": "¿Qué es el viaje de Toffee?",
+            "respuesta": "<p>Toffee y Galleta (personajes creados con IA) viajan en su cama-trineo hacia el Polo Norte para pedirle a Santa un regalo para todos los animales de la calle. Cada día sale un vlog nuevo en <a href=\"https://www.tiktok.com/@toffee.elgato\">TikTok</a>, <a href=\"https://www.instagram.com/toffee.elgato\">Instagram</a> y <a href=\"https://www.youtube.com/@toffee.elgato\">YouTube</a>. <a href=\"/pages/viaje\">Ver el viaje</a>.</p>"
           }
         },
         "impuestos": {

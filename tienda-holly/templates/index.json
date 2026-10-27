@@ -52,7 +52,7 @@
         "b3": {
           "type": "item",
           "settings": {
-            "texto": "3 % para peludos de la calle"
+            "texto": "Toffee y Galleta, rumbo al Polo Norte 🛷"
           }
         },
         "b4": {
@@ -90,8 +90,8 @@
         "b2": {
           "type": "pregunta",
           "settings": {
-            "pregunta": "¿A dónde va el 3 % de mi compra?",
-            "respuesta": "<p>Al <a href=\"/pages/marrano\">marrano de Toffee</a>: separamos el 3 % de cada venta para perritos y gatitos de la calle. Cuando se llena, lo donamos a fundaciones y rescatistas y publicamos el comprobante.</p>"
+            "pregunta": "¿Qué es el viaje de Toffee?",
+            "respuesta": "<p>Toffee y Galleta (personajes creados con IA) viajan en su cama-trineo hacia el Polo Norte para pedirle a Santa un regalo para todos los animales de la calle. Cada día sale un vlog nuevo en <a href=\"https://www.tiktok.com/@toffee.elgato\">TikTok</a>, <a href=\"https://www.instagram.com/toffee.elgato\">Instagram</a> y <a href=\"https://www.youtube.com/@toffee.elgato\">YouTube</a>. <a href=\"/pages/viaje\">Ver el viaje</a>.</p>"
           }
         },
         "impuestos": {
@@ -162,7 +162,7 @@
           "type": "chip",
           "settings": {
             "icono": "regalo",
-            "texto": "3 % para peludos de la calle"
+            "texto": "Rumbo al Polo Norte 🛷"
           }
         }
       },
@@ -225,27 +225,6 @@
         "p0"
       ],
       "disabled": true
-    },
-    "marrano": {
-      "type": "tf-marrano",
-      "settings": {
-        "eyebrow": "La causa de Toffee",
-        "titulo": "<p>El marrano <em>de Toffee</em></p>",
-        "mensaje": "En este marranito guardo el 3 % de cada venta. Cuando se llene, lo rompo y lo dono a perritos y gatitos de la calle. Y no, no me voy a comer las monedas. 😾",
-        "meta": 1000000,
-        "total_extra": 0,
-        "moneda": "COP",
-        "nota": "Se suma solo con cada compra. Cada donación la publicamos con su comprobante en @toffee.elgato.",
-        "historial_titulo": "Marranos rotos y donados",
-        "sin_donaciones": "",
-        "compacto": false,
-        "ancla": "marrano",
-        "imagen": "shopify://shop_images/F03-marrano-cristal.jpg",
-        "boton_texto": "Ver el marrano",
-        "boton_url": "/pages/marrano"
-      },
-      "blocks": {},
-      "block_order": []
     },
     "prueba": {
       "type": "hl-ritual",
@@ -329,30 +308,6 @@
       "blocks": {},
       "block_order": []
     },
-    "redes": {
-      "type": "tf-bloque",
-      "settings": {
-        "fondo": "crema",
-        "eyebrow": "Sigue a Toffee",
-        "titulo": "<p>Sígueme en <em>@toffee.elgato</em></p>",
-        "texto": "<p>Mis opiniones, mis siestas y los dramas de Galleta, en video. Si no compras hoy, por lo menos sígueme. 😾</p>",
-        "btn_texto": "",
-        "ancla": "redes"
-      },
-      "blocks": {
-        "r": {
-          "type": "redes",
-          "settings": {
-            "tiktok": "https://www.tiktok.com/@toffee.elgato",
-            "instagram": "https://www.instagram.com/toffee.elgato",
-            "youtube": "https://www.youtube.com/@toffee.elgato"
-          }
-        }
-      },
-      "block_order": [
-        "r"
-      ]
-    },
     "club": {
       "type": "tf-bloque",
       "settings": {
@@ -414,7 +369,7 @@
             "sello": "",
             "nombre": "Galleta",
             "rol": "Gerente de Seguridad",
-            "texto": "Criollo rescatado de la calle en una noche de pólvora. Por él existe el marrano."
+            "texto": "Criollo rescatado de la calle en una noche de pólvora. Ahora viaja con Toffee al Polo Norte (aunque le da miedo volar)."
           }
         }
       },
@@ -442,8 +397,8 @@
         "ancla": "temporada",
         "paises_texto": "Enviamos a",
         "paises": "co:Colombia, mx:México, cl:Chile, pe:Perú, us:Estados Unidos",
-        "nota_boton": "🐷 Recuerda: el 3 % de cada compra va al marrano de Toffee para ayudar a perritos y gatitos de la calle.",
-        "nota_url": "/pages/marrano"
+        "nota_boton": "🛷 Toffee y Galleta van rumbo al Polo Norte: mira su viaje",
+        "nota_url": "/pages/viaje"
       },
       "blocks": {},
       "block_order": []
@@ -549,17 +504,49 @@
       },
       "blocks": {},
       "block_order": []
+    },
+    "viaje": {
+      "type": "tf-bloque",
+      "blocks": {
+        "r": {
+          "type": "redes",
+          "settings": {
+            "tiktok": "https://www.tiktok.com/@toffee.elgato",
+            "instagram": "https://www.instagram.com/toffee.elgato",
+            "youtube": "https://www.youtube.com/@toffee.elgato"
+          }
+        }
+      },
+      "block_order": [
+        "r"
+      ],
+      "settings": {
+        "fondo": "marino",
+        "imagen_tema": "tf-viaje.jpg",
+        "imagen_tema_alt": "Toffee y Galleta volando en su cama-trineo sobre una ciudad de noche con pólvora a lo lejos",
+        "escena_ia": true,
+        "invertir": false,
+        "eyebrow": "El viaje de Toffee 🛷",
+        "titulo": "<p>Toffee y Galleta van <em>rumbo al Polo Norte</em></p>",
+        "texto": "<p>Se subieron a su cama-trineo (sí, la de la tienda) para pedirle a Santa, en persona, un regalo para <strong>todos los animales de la calle</strong>. Cada día suben un vlog desde un lugar nuevo: el Valle de Octubre, el Día de Muertos, Colombia, México, Perú, Chile y Estados Unidos.</p><p>🎁 Y en el camino les tenemos una sorpresa. Síguelos para no perdértela.</p>",
+        "nota_toffee": "Galleta no sabía que venía. Ahora no se quiere bajar.",
+        "btn_texto": "Ver el viaje",
+        "btn_url": "/pages/viaje",
+        "btn_principal": true,
+        "btn2_texto": "Conoce la cama-trineo",
+        "btn2_url": "/products/cama-trineo-navidad-mascotas",
+        "ancla": "viaje"
+      }
     }
   },
   "order": [
     "portada",
     "cinta",
+    "viaje",
     "equipo",
     "categorias",
     "tienda",
     "test",
-    "redes",
-    "marrano",
     "faq",
     "club",
     "hero",

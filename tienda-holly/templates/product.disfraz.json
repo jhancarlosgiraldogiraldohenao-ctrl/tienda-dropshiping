@@ -38,7 +38,7 @@
         "tallas_nota": "Elige la talla por el peso de tu mascota. Si queda entre dos tallas, elige la más grande.",
         "tabla_tallas": "Talla|Peso de la mascota|Ejemplos\nS|1,5 – 2,5 kg|Gatito, chihuahua\nM|2,5 – 5 kg|Gato adulto, yorkie\nL|5 – 7,5 kg|Gato grande (Toffee), pug",
         "aviso": "Supervisa a tu mascota mientras lo usa y quítaselo para dormir. No lo uses cerca de velas o luces calientes.",
-        "marrano_linea": true,
+        "marrano_linea": false,
         "marrano_url": "/pages/marrano",
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",

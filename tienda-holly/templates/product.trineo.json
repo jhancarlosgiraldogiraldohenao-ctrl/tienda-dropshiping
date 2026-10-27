@@ -38,7 +38,7 @@
         "tabla_tallas": "Tamaño|Medidas|Mascota ideal\nS|50 × 38 × 26 cm|Gatos y perros pequeños hasta unos 7 kg",
         "aviso": "Lávala a mano con agua fría y jabón suave. Sécala a la sombra.",
         "guia_tallas": "",
-        "marrano_linea": true,
+        "marrano_linea": false,
         "marrano_url": "/pages/marrano",
         "frase_firma": "— Toffee, personaje de IA",
         "veredicto_titulo": "La opinión de Toffee",

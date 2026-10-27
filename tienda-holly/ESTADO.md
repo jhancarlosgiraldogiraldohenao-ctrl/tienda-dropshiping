@@ -377,3 +377,14 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
   - Las 2 plantillas se subieron al tema en vivo #189777641761. Antes se revisó que la ficha en vivo no hubiera cambiado.
   - Se creó la página «Plan pólvora en 5 minutos» (`/pages/plan-polvora`, plantilla `plan-polvora`).
   - Se verificó en el celular: responde 200, tiene 1 H1, no hay errores y el bloque «dato» se ve en la ficha.
+
+## 27-oct · Vista previa «El viaje» (sin 3 % ni marrano) — SIN PUBLICAR
+- Copia #189944561953 «Vista previa – El viaje (27-oct)» hecha del tema en vivo #189777641761 (verificado igual al repo antes de subir). Vista previa: https://soytoffee.store/?preview_theme_id=189944561953 . Publicar SOLO con «publica».
+- Tema: portada sin sección marrano ni «redes» (unidas en nueva sección «viaje», tf-bloque con imagen tf-viaje.jpg, redes y botones); cinta, FAQ, nota de portada y textos de Galleta sin 3 %; fichas con marrano_linea=false; carrito sin aporte; Historia y Ayuda sin 3 %; plantilla nueva page.viaje.json (y page.marrano.json muestra lo mismo para enlaces viejos); menú: ajuste nuevo «cambiar_enlaces» en el header (/pages/marrano → «El viaje 🛷» /pages/viaje); pie: ocultar_marrano (oculta enlaces con «marrano»).
+- Imagen tf-viaje.jpg = cuadro de la toma 7 del vlog 1 (provisional hasta que Jay mande la imagen nueva).
+- AL PUBLICAR (contenido de la tienda, por API, en vivo al instante):
+  1. Crear página «El viaje de Toffee» handle viaje, plantilla viaje.
+  2. Despublicar «Política del marrano» (ya no está enlazada).
+  3. Términos del servicio: quitar la sección 6 «El marrano (3 %)». Reembolsos: quitar «El aporte de un pedido devuelto se descuenta del marrano».
+  4. Página «Contenido con IA»: quitar «Las donaciones del marrano, que publicamos con su comprobante».
+  5. Si hubo ventas pagadas mientras regía el 3 %, ese 3 % se dona igual.
