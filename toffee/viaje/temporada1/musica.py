@@ -5,10 +5,10 @@ AJUSTES_MUSICA = ("En ElevenLabs › Música: borra todo el cuadro, pega el bloq
                   "(≈ 900 créditos). Descarga en WAV y mándamela. Si cambia la letra, apaga el ícono ✎ «Activado».")
 
 CANCIONES = [
- dict(titulo="La Noche del Miau", estado="✅ HECHA", uso="Vlog 7 (31-oct, Halloween) y sonido de TikTok",
+ dict(titulo="La Noche del Miau", estado="✅ HECHA", uso="Episodio 4 (31-oct, Halloween), corto de la semana 1 y sonido de TikTok",
       porque="Canción de fiesta pegajosa para que la gente la use en sus videos de Halloween.", estilo=None, letra=None),
 
- dict(titulo="El Corrido del Chupacabras", estado="Hacer antes del 1-nov", uso="Final del vlog 8 (1-nov) + recorte de las 7:30 p. m.",
+ dict(titulo="El Corrido del Chupacabras", estado="Hacer antes del 2-nov", uso="Episodio 5 (2-nov, Chupacabras) de fondo en la búsqueda",
       porque="Los corridos tumbados están de moda en México. El chiste: un corrido de «malandro» para un cachorrito que tiembla de miedo. Contraste = risa y compartidos en México.",
       estilo="Funny Mexican corrido tumbado parody, acoustic requinto guitar, tololoche bass, trumpets, male singer with a slightly raspy cool voice, Latin American Spanish, 1 minute.",
       letra="""[Intro]
@@ -38,7 +38,7 @@ tú solo querías tener un regalo.
 Tiemblas de frío, no muerdes a nadie,
 puro corazón, compa, puro detalle."""),
 
- dict(titulo="La Cumbia del Willys", estado="Hacer antes del 4-nov", uso="Vlog 11 (4-nov, Salento, Colombia)",
+ dict(titulo="La Cumbia del Willys", estado="Hacer antes del 4-nov", uso="Episodio 7 (5-nov, Willys en Salento)",
       porque="Orgullo colombiano: Willys, palmas de cera y cumbia. Galleta manejando sin saber. Es para que los colombianos la compartan.",
       estilo="Happy Colombian cumbia with accordion, gaita flutes, guacharaca and tambora drums, festive group vocals, funny, Latin American Spanish, 1 minute.",
       letra="""[Verso 1]
@@ -194,11 +194,9 @@ EXTRAS = [
 ]
 
 RUTA = [
- ("1", "26-oct → 8-nov", "Valle de Octubre (Halloween y los 5 cascabeles) · Día de Muertos · Colombia · Perú · Chile · México · llegada a Nueva York (Estados Unidos)", "Noche del Miau · Corrido del Chupacabras · Cumbia del Willys"),
- ("2", "9-nov → 22-nov", "Estados Unidos: Nueva York, el Gran Cañón, Hollywood (Toffee quiere ser estrella de cine; hace fila 3 horas para la foto con «un ratón famoso» y resulta ser un ratón callejero con un disfraz barato: chiste sin usar personajes con dueño) · el barco de hielo · la comunidad ayuda con la lista", "(1 canción nueva según lo que pida el público)"),
- ("3", "23-nov → 6-dic", "Acción de Gracias (26-nov) con el pavo Tomás que se escapa · Black Friday (27-nov) · 1-dic: Toffee le hace la «funa» a Santa · Canadá y las auroras", "No Me Coman · Santa, Te Vamos a Funar"),
- ("4", "7-dic → 20-dic", "Velitas (7-dic) · llegada al Polo Norte · el taller de Santa atendido por animales · Santa responde la funa", "—"),
- ("5", "21-dic → 31-dic", "Santa recibe la lista · 24-dic: entrega de regalos (real) · 31-dic: pólvora con las orejeras y año viejo", "Villancico de la Calle"),
+ ("1", "27-oct → 19-nov (14 episodios)", "Valle de Octubre (Halloween, 3 cascabeles) · Día de Muertos · el mapa · Colombia · Perú · Chile · México · Nueva York (Don Turbio) · Los Ángeles (Ratoncio) · Gran Cañón · el barco de hielo", "Noche del Miau · Corrido del Chupacabras · Cumbia del Willys"),
+ ("2", "21-nov → 14-dic", "El barco de hielo y quién lo maneja · Acción de Gracias (26-nov) con el pavo Tomás · Black Friday (28-nov) · 1-dic: Toffee le hace la «funa» a Santa · Velitas (7-dic) · Canadá y las auroras · superhéroe incompetente y explorador perdido", "No Me Coman · Santa, Te Vamos a Funar"),
+ ("3", "15-dic → 31-dic", "Llegada al Polo Norte · el taller atendido por animales · Santa lee la lista (los nombres del público) · le entrega a Toffee la alcancía · 24-dic: entrega real de regalos · 31-dic: pólvora y año viejo", "Villancico de la Calle"),
 ]
 
 MICKEY = ("¿Y Mickey Mouse? La versión de 1928 («Steamboat Willie») ya es de dominio público, pero Disney sigue siendo "
