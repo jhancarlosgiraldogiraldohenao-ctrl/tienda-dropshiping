@@ -20,8 +20,8 @@ VO=[(L,0.00,4.25,0.10,'t1.mp4',1.52,None,'¡Por fin!|Llevo tres siglos|esperando
     (T3,0.00,1.06,0.00,'s5.mp4',1.02,None,'¿Monstruos?'),
     (T3,1.06,2.53,1.23,'s5.mp4',2.13,None,'Yo no tengo miedo.'),
     (T3,2.53,4.68,2.75,'s5.mp4',3.73,None,'Estoy evaluando|la situación.')]
-VO+=[('a_280eedd3.mp3',0.00,3.33,0.09,'t7.mp4',None,1.2,'¿Qué monstruo|creen que|nos espera?|Los leo.')]
+VO+=[('a_07905d6e.mp3',0.00,4.78,0.0,'t6.mp4',None,0.4,'Galleta encontró|el camino.|Fue suerte.|Yo lo tenía|calculado.'),('a_280eedd3.mp3',0.00,3.33,0.09,'t7.mp4',None,1.2,'¿Qué monstruo|creen que|nos espera?|Los leo.')]
 KEY={'bruja','cascabeles','galleta','monstruos','valle','octubre','miedo'}
 tit=bloque([linea([('Nos encontró una',W)],66,7),linea([('BRUJA EN EL BOSQUE ',CAR),('EMO','🦉')],76,8)])
 fin=bloque([linea([('Episodio 3: el miércoles ',W),('EMO','🎃')],78,8),linea([('Sígueme para no perdértelo',W)],56,6)])
-print('total',armar(S,VO,KEY,tit,fin,'EP02-borrador.mp4',WD))
+print('total',armar(S,VO,KEY,tit,fin,'EP02-final.mp4',WD))
