@@ -38,7 +38,7 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 ## Videos del viaje de Toffee: cómo se generan (pedido de Jay, 24-oct-2026)
 - **Modelo: siempre Omni 1.1 Flash** (Google Flow). Tomas de 4, 6, 8 o 10 s según el momento; cortes cada 3–5 s como Gnomo Palomo. Si una toma sigue a otra, indicar «usar el último cuadro de la toma X como primer cuadro». Toma aprobada → mejorarla a 1080p en Flow si se puede.
 - **Referencias:** `toffee/refs/TOFFEE-viajero.jpg` (gorro + cámara encima) y `toffee/refs/GALLETA-viajero.jpg` (pañoleta, mochila). Galleta es mudo. Personaje que aparece por 2.ª vez → foto propia y voz fija en ElevenLabs.
-- **Voz de Toffee:** la de ElevenLabs de Jay (Eleven v4, estabilidad ~75 %, similitud 90 %, idioma Español). Si Toffee habla en cámara, el prompt lleva la frase exacta y Claude reemplaza el audio por el de ElevenLabs.
+- **Voz de Toffee:** la de ElevenLabs de Jay (Eleven v4, estabilidad 35–45 %, similitud 85 %, idioma Español). Texto con actuación entre corchetes en inglés ([shouting], [whispers], [sighs], [nervous laugh]…) para que suba, baje, grite y respire como Gnomo; generar 2–3 versiones. Primero la voz, después la toma de Flow con la duración de esa voz. Volumen final del video: −14 LUFS. Revisar cada frase transcrita (ElevenLabs puede cambiar palabras: «Yo NO tenía» en vez de «Yo LO tenía»). Si Toffee habla en cámara, el prompt lleva la frase exacta y Claude reemplaza el audio por el de ElevenLabs.
 - **Reglas de prompt para evitar errores** (cada prompt debe cumplirlas):
   - Lente normal: nada de ojo de pez, viñeta ni esquinas oscuras; no se ve ningún celular ni palo de selfie.
   - Nada de vista en primera persona con patas visibles (crea un segundo gato). Toffee siempre visto desde afuera.
