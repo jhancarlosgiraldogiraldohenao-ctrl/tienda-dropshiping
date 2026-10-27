@@ -2,7 +2,7 @@
 # Todo en Omni 1.1 Flash (Google Flow), 9:16. Este archivo genera los prompts; build.py arma el PDF.
 
 ST = lambda s: (f"Vertical 9:16, {s} seconds. Photorealistic smartphone video, normal lens "
-                "(no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics.")
+                "(no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts.")
 
 T = ("the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), "
      "wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap")
