@@ -388,3 +388,8 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
   3. Términos del servicio: quitar la sección 6 «El marrano (3 %)». Reembolsos: quitar «El aporte de un pedido devuelto se descuenta del marrano».
   4. Página «Contenido con IA»: quitar «Las donaciones del marrano, que publicamos con su comprobante».
   5. Si hubo ventas pagadas mientras regía el 3 %, ese 3 % se dona igual.
+- **27-oct: PUBLICADO por orden de Jay («publícala»; no hubo ventas con el 3 %).** En vivo: #189944561953 «Toffee C - El viaje (27-oct)». Respaldo: #189777641761 «Respaldo - Toffee B pólvora (22-oct)» (volver: shopify theme publish --theme 189777641761).
+- Contenido por API: la página del marrano pasó a «El viaje de Toffee», handle viaje, plantilla viaje, con redirección automática /pages/marrano → /pages/viaje; «Política del marrano» despublicada (404); Términos sin la sección del marrano (renumerados 1–7); Reembolsos sin la línea del aporte; «Contenido con IA» sin la frase de donaciones. Respaldo previo en el scratchpad (no en git: incluye datos del vendedor).
+- Arreglos en vivo tras publicar: el menú y el pie mostraban «El marrano» con enlace a /pages/viaje (Shopify actualizó la URL del enlace pero no el título) → cambiar_enlaces y tf-pie lo muestran como «El viaje 🛷». Error de Liquid oculto en la ficha (porcentaje de descuento con precio de comparación vacío) → solo se calcula si hay descuento.
+- Verificado en vivo (12 URLs): 0 menciones de «3 %» o «marrano», 0 errores de Liquid.
+- Pendiente opcional (panel de Jay): cambiar el título del enlace «El marrano» a «El viaje» en Tienda online → Menús (el tema ya lo muestra bien).

@@ -20,7 +20,7 @@
         {%- if menu.links.size > 0 -%}
           <nav class="tf-pie__col" aria-label="{{ section.settings[kt] | escape }}">
             <h2>{{ section.settings[kt] }}</h2>
-            <ul>{%- for l in menu.links -%}{%- if section.settings.ocultar_marrano and l.url contains 'marrano' -%}{%- continue -%}{%- endif -%}<li><a href="{{ l.url }}">{{ l.title }}</a></li>{%- endfor -%}</ul>
+            <ul>{%- for l in menu.links -%}{%- if section.settings.ocultar_marrano and l.url contains 'marrano' -%}{%- continue -%}{%- endif -%}{%- assign lt = l.title -%}{%- if l.url contains '/pages/viaje' -%}{%- assign lt = 'El viaje 🛷' -%}{%- endif -%}<li><a href="{{ l.url }}">{{ lt }}</a></li>{%- endfor -%}</ul>
           </nav>
         {%- endif -%}
       {%- endfor -%}
