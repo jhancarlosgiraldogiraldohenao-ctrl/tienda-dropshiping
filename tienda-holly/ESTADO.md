@@ -381,7 +381,7 @@ Tasas aproximadas usadas: 1 USD ≈ 3.220 COP · 17,5 MXN · 3,5 PEN · 930 CLP 
 ## 27-oct · Vista previa «El viaje» (sin 3 % ni marrano) — SIN PUBLICAR
 - Copia #189944561953 «Vista previa – El viaje (27-oct)» hecha del tema en vivo #189777641761 (verificado igual al repo antes de subir). Vista previa: https://soytoffee.store/?preview_theme_id=189944561953 . Publicar SOLO con «publica».
 - Tema: portada sin sección marrano ni «redes» (unidas en nueva sección «viaje», tf-bloque con imagen tf-viaje.jpg, redes y botones); cinta, FAQ, nota de portada y textos de Galleta sin 3 %; fichas con marrano_linea=false; carrito sin aporte; Historia y Ayuda sin 3 %; plantilla nueva page.viaje.json (y page.marrano.json muestra lo mismo para enlaces viejos); menú: ajuste nuevo «cambiar_enlaces» en el header (/pages/marrano → «El viaje 🛷» /pages/viaje); pie: ocultar_marrano (oculta enlaces con «marrano»).
-- Imagen tf-viaje.jpg = cuadro de la toma 7 del vlog 1 (provisional hasta que Jay mande la imagen nueva).
+- Imagen tf-viaje.jpg = imagen de Jay «trineo con aurora» (original en toffee/web/viaje/VIAJE-trineo-aurora.jpg), recortada cuadrada 896 px.
 - AL PUBLICAR (contenido de la tienda, por API, en vivo al instante):
   1. Crear página «El viaje de Toffee» handle viaje, plantilla viaje.
   2. Despublicar «Política del marrano» (ya no está enlazada).
