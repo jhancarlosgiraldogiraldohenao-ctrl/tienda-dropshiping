@@ -14,12 +14,12 @@ def tabla(cab, filas):
 
 def build():
     o = [f"<html><head><meta charset='utf-8'><style>{CSS} .fn{{display:inline-block;color:#fff;border-radius:10px;padding:1px 8px;font-size:8.5pt;margin-right:4px}}</style></head><body>"]
-    o.append("<h1>El viaje de Toffee · Sección 1 (versión 2)</h1><p class='sub'>14 episodios · 27 de octubre al 19 de noviembre de 2026 · 4 episodios por semana + cortos, comerciales y fotos</p>")
+    o.append("<h1>El viaje de Toffee · Sección 1 (versión 2.1)</h1><p class='sub'>14 episodios + 13 videos de viralización · 27 de octubre al 22 de noviembre de 2026 · episodio día de por medio</p>")
     o.append("""<div class='box'><b>Qué cambió frente a la versión 1</b><ol>
 <li><b>Primeros segundos:</b> cada episodio empieza con su toma GANCHO ⭐ y una promesa clara arriba.</li>
 <li><b>Historias más simples:</b> un conflicto entendible y una recompensa por episodio. Cada toma tiene una sola función (inicio, desarrollo, obstáculo, recompensa, continuación).</li>
 <li><b>Personalidades definidas:</b> Toffee antihéroe sarcástico con buen corazón; Galleta impulsivo, curioso y a veces el más listo, con 7 expresiones fijas.</li>
-<li><b>Ritmo:</b> 4 episodios por semana (lun, mié, vie, dom), 3 cortos para gente nueva y 2 comerciales. Halloween se resume en 3 cascabeles y 4 episodios; se quitaron el mercado de las brujas y las escenas que no aportaban.</li>
+<li><b>Ritmo (2.1):</b> un episodio día de por medio y, en cada día intermedio, un video de viralización (14 listos en el capítulo 5). Comerciales y fotos como segunda publicación opcional. Halloween se resume en 3 cascabeles y 4 episodios; se quitaron el mercado de las brujas y las escenas que no aportaban.</li>
 <li><b>Productos con transparencia</b> y sin promesas que no podamos probar.</li>
 <li><b>Medición semanal con datos</b> y propósito social verificable.</li></ol>
 <b>Si ya generaste tomas del vlog 2 viejo:</b> sirven la lechuza aterrizando, la de los cinco cascabeles NO (ahora son tres), la del trineo que no arranca y la del camino de calabazas.</div>""")
@@ -42,9 +42,9 @@ def build():
     o.append("<p>" + " ".join(f"<span class='fn' style='background:{c}'>{f}</span>" for f, c in COLOR.items()) + "</p>")
     o.append("<h3>Elenco fijo del universo</h3>" + tabla(["Personaje", "Quién es"], D.ELENCO_FUTURO))
 
-    o.append("<h2>3 · Calendario semanal</h2>" + tabla(["Día", "Publicación principal", "Segunda (solo si está buena)"], D.CALENDARIO))
-    o.append("<p class='sub'>Es una guía, no una obligación. Si un segundo video no está bueno, no se publica. Cada publicación debe ofrecer algo distinto (no subir el mismo fragmento tres veces).</p>")
-    for t, filas in D.SEMANAS: o.append(f"<h3>{E(t)}</h3>" + tabla(["Día", "Principal", "Segunda"], filas))
+    o.append("<h2>3 · Calendario: episodio día de por medio, video de viralización en los días intermedios</h2>")
+    o.append("<div class='box'>Un episodio un día, al otro un video de viralización (formato B), y así. Los comerciales y las fotos van como segunda publicación SOLO si están buenos. Cada publicación ofrece algo distinto: nada de subir el mismo fragmento varias veces.</div>")
+    o.append(tabla(["Día", "Publicación principal", "Segunda (opcional)"], D.DIAS))
 
     o.append("<h2>4 · Personajes nuevos de esta versión</h2>")
     for nom, arch, desc, p in D.FICHAS_NUEVAS:
@@ -70,10 +70,10 @@ def build():
             if t['toffee'] and t['toffee'].startswith('«'): toff.append(t['toffee'].split('»')[0].strip('«'))
         o.append("<div class='box'><b>Voces de Toffee de este episodio (todo junto en ElevenLabs):</b><pre>" + E("\n\n".join(toff)) + "</pre></div>")
 
-    o.append("<h2>5 · Formato B: cortos para llegar a gente nueva (3 por semana)</h2>")
+    o.append("<h2>5 · Videos de viralización (formato B · uno en cada día intermedio)</h2>")
     o.append("<div class='box'>Antes de publicar: «Si alguien descubre a Toffee por este video, ¿entiende por qué es gracioso o especial y tiene una razón para seguirlo?». Si no, no aporta a la marca. Un baile de moda solo sirve si encaja con su personalidad.</div>")
     for c in D.CORTOS:
-        o.append(f"<div class='toma'><span class='chip'>{E(c['tipo'])}</span><span class='meta'>{E(c['titulo'])} · {c['seg']} s</span> · Fotos: <b>{E(c['fotos'])}</b><br><span class='sub'>{E(c['idea'])}</span><pre>{E(cap(c['p']))}</pre><div class='voz'>🎙️ Toffee: {E(c['voz'])}</div><div class='sub'>{E(c['texto'])}</div></div>")
+        o.append(f"<div class='toma'><span class='chip'>{E(c['tipo'])}</span><span class='meta'>{E(c['titulo'])} · {c['seg']} s</span> · Fotos: <b>{E(c['fotos'])}</b><br><span class='sub'>{E(c['idea'])}</span><pre>{E(cap(c['p'].replace(chr(92)+'n', chr(10))))}</pre><div class='voz'>🎙️ Toffee: {E(c['voz'])}</div><div class='sub'>{E(c['texto'])}</div></div>")
 
     o.append("<h2>6 · Formato C: comerciales integrados (2 por semana)</h2><ol>" + "".join(f"<li>{E(r)}</li>" for r in D.REGLAS_COMERCIAL) + "</ol>")
     for c in D.COMERCIALES:

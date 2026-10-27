@@ -151,7 +151,7 @@ EP.append(dict(n=5, fecha="Dom 2-nov · DÍA DE MUERTOS", titulo="El Chupacabras
 ]))
 
 # =============== EPISODIO 6 ===============
-EP.append(dict(n=6, fecha="Lun 3-nov", titulo="Perdidos en las nubes", arriba=("Nos PERDIMOS", "EN LAS NUBES ☁️"),
+EP.append(dict(n=6, fecha="Mar 4-nov", titulo="Perdidos en las nubes", arriba=("Nos PERDIMOS", "EN LAS NUBES ☁️"),
  conflicto="Vuelan, pero no saben a dónde ir, y Toffee no quiere admitir que está perdido.", recompensa="Doña Lechuza les da un mapa que brilla donde hay un animal que necesita un regalo… y marca justo donde Galleta señalaba.",
  pregunta="¿Adivinan en qué país es la primera luz?",
  resumen="Toffee dice que «reconoce el terreno». Galleta olfatea el viento y señala una dirección; Toffee lo ignora. Llega la lechuza con un mapa encantado. La primera luz está justo donde señaló Galleta.",
@@ -173,7 +173,7 @@ EP.append(dict(n=6, fecha="Lun 3-nov", titulo="Perdidos en las nubes", arriba=("
 ]))
 
 # =============== EPISODIO 7 ===============
-EP.append(dict(n=7, fecha="Mié 5-nov", titulo="Galleta maneja un Willys", arriba=("Galleta MANEJA", "UN WILLYS 🚙"),
+EP.append(dict(n=7, fecha="Jue 6-nov", titulo="Galleta maneja un Willys", arriba=("Galleta MANEJA", "UN WILLYS 🚙"),
  conflicto="El animal del mapa está en el pueblo de abajo y Toffee no quiere caminar.", recompensa="Llegan (de milagro) y le dan una cobija a un perrito abuelo que tiene frío. Toffee se queda sin palabras cuando el perro le agradece.",
  pregunta="¿Qué animalito de la calle conocen que merezca estar en la lista? Escriban su nombre.",
  resumen="Valle de Cocora. Toffee: «caminar es para los pobres». Galleta ya está al volante de un Willys con la sonrisa del desastre. Bajan en zigzag (Cumbia del Willys). En Salento encuentran al abuelo que tiembla de frío; Toffee le da la cobija «porque le estorbaba».",
@@ -197,7 +197,7 @@ EP.append(dict(n=7, fecha="Mié 5-nov", titulo="Galleta maneja un Willys", arrib
 ]))
 
 # =============== EPISODIO 8 ===============
-EP.append(dict(n=8, fecha="Vie 7-nov", titulo="Una alpaca me escupió en Machu Picchu", arriba=("Me ESCUPIÓ", "UNA ALPACA 🦙"),
+EP.append(dict(n=8, fecha="Sáb 8-nov", titulo="Una alpaca me escupió en Machu Picchu", arriba=("Me ESCUPIÓ", "UNA ALPACA 🦙"),
  conflicto="Toffee quiere su foto perfecta en Machu Picchu y una alpaca no lo deja.", recompensa="La alpaca estaba nerviosa porque perdió a su bebé; Galleta la sigue y lo encuentran.",
  pregunta=None,
  resumen="Toffee posa como estrella. Paca lo mira mal y le escupe. Galleta, curioso, la sigue; encuentran a la alpaquita perdida. Paca le agradece a Toffee con un cabezazo cariñoso. Número tres de la lista.",
@@ -221,7 +221,7 @@ EP.append(dict(n=8, fecha="Vie 7-nov", titulo="Una alpaca me escupió en Machu P
 ]))
 
 # =============== EPISODIO 9 ===============
-EP.append(dict(n=9, fecha="Dom 9-nov", titulo="Un ovni se llevó a Galleta", arriba=("Un OVNI se llevó", "A GALLETA 🛸"),
+EP.append(dict(n=9, fecha="Lun 10-nov", titulo="Un ovni se llevó a Galleta", arriba=("Un OVNI se llevó", "A GALLETA 🛸"),
  conflicto="Un ovni se lleva a Galleta en el desierto de Atacama.", recompensa="Toffee, que «no pensaba buscarlo», corre como loco; Galleta vuelve con un regalo de los extraterrestres y se abrazan.",
  pregunta=None,
  resumen="Toffee dice que los ovnis son «mentiras de turistas». Un rayo azul se lleva a Galleta. «No pienso perder el tiempo buscándolo», dice Toffee… y corre por todo el desierto. Galleta regresa con una pelotita que brilla. «No lloré. Era arena.»",
@@ -243,7 +243,7 @@ EP.append(dict(n=9, fecha="Dom 9-nov", titulo="Un ovni se llevó a Galleta", arr
 ]))
 
 # =============== EPISODIO 10 ===============
-EP.append(dict(n=10, fecha="Lun 10-nov", titulo="Lucha libre contra el Chihuahua Enmascarado", arriba=("Me retó un", "LUCHADOR 🤼"),
+EP.append(dict(n=10, fecha="Mié 12-nov", titulo="Lucha libre contra el Chihuahua Enmascarado", arriba=("Me retó un", "LUCHADOR 🤼"),
  conflicto="Un chihuahua luchador reta a Toffee y no lo deja pasar.", recompensa="Toffee gana sin hacer nada (se acuesta). El chihuahua solo quería que alguien le regalara un juguete.",
  pregunta=None,
  resumen="El Chihuahua Enmascarado reta a Toffee. Toffee se pone una máscara encima del gorro: «el Gato Dormilón». Su técnica: acostarse. El chihuahua se cansa solo. Galleta toca la campana. Número cuatro de la lista.",
@@ -267,7 +267,7 @@ EP.append(dict(n=10, fecha="Lun 10-nov", titulo="Lucha libre contra el Chihuahua
 ]))
 
 # =============== EPISODIO 11 ===============
-EP.append(dict(n=11, fecha="Mié 12-nov", titulo="Nos estrellamos en Nueva York", arriba=("Nos estrellamos en", "NUEVA YORK 🗽"),
+EP.append(dict(n=11, fecha="Vie 14-nov", titulo="Nos estrellamos en Nueva York", arriba=("Nos estrellamos en", "NUEVA YORK 🗽"),
  conflicto="Una tormenta los tira en Times Square y el mapa se moja y se apaga.", recompensa="Aparece un vendedor muy sospechoso que dice tener la solución (y Toffee, obviamente, le va a comprar).",
  pregunta="¿Le compramos a este señor? Sí o no.",
  resumen="Aterrizaje de emergencia en Times Square. Toffee cree que las pantallas son para él. Un taxi les pita. El mapa mojado se apaga. En un callejón, Don Turbio abre su gabardina: «¿Necesitas un mapa? Tengo de todo».",
@@ -288,7 +288,7 @@ EP.append(dict(n=11, fecha="Mié 12-nov", titulo="Nos estrellamos en Nueva York"
 ]))
 
 # =============== EPISODIO 12 ===============
-EP.append(dict(n=12, fecha="Vie 14-nov", titulo="El vendedor sospechoso", arriba=("Le compré a un", "VENDEDOR SOSPECHOSO 🦝"),
+EP.append(dict(n=12, fecha="Dom 16-nov", titulo="El vendedor sospechoso", arriba=("Le compré a un", "VENDEDOR SOSPECHOSO 🦝"),
  conflicto="Toffee le compra a Don Turbio un «secador de mapas turbo»… y le explota en la cara.", recompensa="El calor del secador despierta el mapa, que se llena de cientos de luces. Funciona… demasiado.",
  pregunta=None,
  resumen="Don Turbio vende un «secador de mapas turbo. Original. Casi». Toffee paga con las galletas de Galleta (Galleta pone cara de súplica). El secador le despeina toda la cara. El mapa caliente se enciende con cientos de luces.",
@@ -310,7 +310,7 @@ EP.append(dict(n=12, fecha="Vie 14-nov", titulo="El vendedor sospechoso", arriba
 ]))
 
 # =============== EPISODIO 13 ===============
-EP.append(dict(n=13, fecha="Dom 16-nov", titulo="La foto con el ratón más famoso", arriba=("Hice 3 horas de fila", "PARA ESTA FOTO 📸"),
+EP.append(dict(n=13, fecha="Mar 18-nov", titulo="La foto con el ratón más famoso", arriba=("Hice 3 horas de fila", "PARA ESTA FOTO 📸"),
  conflicto="Toffee hace tres horas de fila para la foto con «el ratón más famoso del mundo»… y es un ratón callejero disfrazado que cobra la foto.", recompensa="Ratoncio confiesa que nadie quiere fotos con un ratón de la calle. Toffee se la paga y se la toman los tres.",
  pregunta="¿Qué nombre le ponen al próximo personaje que encontremos?",
  resumen="Los Ángeles. Toffee viene a que lo «descubran». Fila larguísima. El famoso es Ratoncio, un ratón callejero con esmoquin viejo y estrella de plástico. Toffee, estafado, termina pagándole la foto. Número cinco de la lista.",
@@ -333,7 +333,7 @@ EP.append(dict(n=13, fecha="Dom 16-nov", titulo="La foto con el ratón más famo
 ]))
 
 # =============== EPISODIO 14 ===============
-EP.append(dict(n=14, fecha="Lun 17-nov", titulo="El día que Toffee se quiso rendir", arriba=("Toffee se", "QUIERE RENDIR 💔"),
+EP.append(dict(n=14, fecha="Jue 20-nov", titulo="El día que Toffee se quiso rendir", arriba=("Toffee se", "QUIERE RENDIR 💔"),
  conflicto="El mapa tiene cientos de luces y Toffee cree que la misión es imposible.", recompensa="Galleta se sienta a su lado sin decir nada. Toffee entiende que no está solo… y le pide ayuda a la gente.",
  pregunta="Escriban el nombre de un animalito de la calle que conozcan: va para la lista de Toffee.",
  resumen="Episodio emotivo y corto (la escena 3 que propusiste). Gran Cañón al atardecer. Toffee se rinde. Galleta intenta animarlo con la pelotita del ovni; nada. Entonces solo se sienta a su lado y apoya la cabeza. «No le vayas contando a nadie que tengo sentimientos.» Toffee le pide al público los nombres para la lista.",
@@ -355,7 +355,7 @@ EP.append(dict(n=14, fecha="Lun 17-nov", titulo="El día que Toffee se quiso ren
 ]))
 
 # =============== EPISODIO 15 ===============
-EP.append(dict(n=15, fecha="Mié 19-nov", titulo="El barco de hielo", arriba=("¿Qué es ESO", "EN LAS NUBES? ⚡"),
+EP.append(dict(n=15, fecha="Sáb 22-nov", titulo="El barco de hielo", arriba=("¿Qué es ESO", "EN LAS NUBES? ⚡"),
  conflicto="Con la lista llena de nombres (los del público), una tormenta los sorprende y aparece algo gigante entre las nubes.", recompensa="La lista ya tiene más de cien nombres gracias a la gente (en la edición pongo nombres reales de los comentarios). Final con suspenso: «jo, jo, jo».",
  pregunta="¿Ese era Santa? ¿Qué creen que va a pasar?",
  resumen="Cierre de la sección 1. Toffee lee los nombres que mandó la gente. Tormenta. Un rayo muestra un barco de hielo gigante en las nubes. Galleta se esconde; Toffee «evalúa la situación». Un reflector los ilumina y se oye «jo, jo, jo».",
@@ -555,4 +555,70 @@ GANCHO_REGLAS = [
  "Después del gancho entra el INICIO: Toffee dice en una frase cuál es el problema.",
  "Cada toma tiene una sola función: INICIO, DESARROLLO, OBSTÁCULO, RECOMPENSA o CONTINUACIÓN. Si una toma no cumple ninguna, se quita.",
  "La pregunta al público solo va cuando la respuesta puede cambiar o enriquecer la historia (marcada en cada episodio).",
+]
+
+
+# ===================== Versión 2.1 (27-oct): episodio día de por medio + video de viralización en cada día intermedio =====================
+CORTOS += [
+ dict(tipo="Tendencia adaptada", titulo="«Confía en mí» (formato POV)", seg=6, fotos="TOFFEE + GALLETA",
+      idea="El meme de «POV: tu amigo dice confía en mí». Galleta al volante con la sonrisa del desastre y Toffee aterrado. Se entiende sin conocer la serie.",
+      p=f"{ST(6)} Inside a colorful old Willys jeep on a mountain road, daylight. On the left, {G} sits in the driver's seat with his paws on the steering wheel and {GX['desastre']}; on the right, {T} grips the seat, eyes wide, slowly turning to look into the camera. {END(C2, amb='engine starting')}",
+      voz="(sin voz)", texto="Texto: «POV: tu amigo dice “confía en mí”» · Sonido: un audio de suspenso o de moda"),
+ dict(tipo="Personalidad", titulo="Toffee prueba una arepa (y dice que no le gusta)", seg=8, fotos="TOFFEE",
+      idea="Toffee prueba comida típica del país del episodio. Dice que es «comida de plebeyos»… y se la come toda. Contraste = su personalidad.",
+      p=f"{ST(8)} A small wooden table in a colorful Colombian town, morning. {T} sits in front of a plate with a golden Colombian arepa with cheese, sniffs it with a disgusted face, then takes a bite and keeps eating it fast, looking around to check no one is watching. Exactly one cat; the cat's whole head, nightcap and camera always in frame. No one speaks; only street sounds. No phone, no text, no music.",
+      voz="«Comida de plebeyos. Horrible.» (voz en off, al inicio)", texto="Texto final: «Calificación de Toffee: 2/10 (se la comió toda)»"),
+ dict(tipo="Tendencia adaptada", titulo="Expectativa vs. realidad del viaje", seg=12, fotos="TOFFEE + GALLETA + TRINEO",
+      idea="Formato clásico de expectativa contra realidad, en dos tomas. Muy compartible.",
+      p=f"TOMA 1 (6 s): {ST(6)} Magical night sky with a green aurora. {TR} flies majestically toward the camera with golden sparkles; {T} at the front looks heroic, {G} behind him. {END(C2, amb='epic wind')}\n\nTOMA 2 (6 s): {ST(6)} Daylight, a snowy pine tree. {TR} is stuck upside down in the branches; {T} hangs from the rim with a flat, tired face while {G} happily licks snow off the cat's face. {END(C2, amb='birds')}",
+      voz="(sin voz)", texto="Texto: «Expectativa» / «Realidad»"),
+ dict(tipo="Humor", titulo="Galleta contra el cascabel", seg=8, fotos="TOFFEE + GALLETA",
+      idea="Un cascabel rebota y Galleta lo persigue sin pensar… directo contra Toffee, que estaba posando. Humor físico fácil de entender.",
+      p=f"{ST(8)} Snowy forest at day. On the left, {T} sits posing proudly for the camera. A small golden bell bounces across the snow from the right; {G} chases it with his ears flying and crashes softly into the cat; both roll in the snow and the cat ends up sitting with snow on his face, deadpan. {END(C2, amb='bell jingling and soft thud')}",
+      voz="«Galleta, te voy a pedir un favor: piensa.» (voz en off)", texto="Texto: «Estaba posando.»"),
+ dict(tipo="Personalidad", titulo="La lista de los que NO reciben regalo", seg=8, fotos="TOFFEE",
+      idea="Toffee lee su propia «lista de los que no se portaron bien». El primero siempre es Galleta (por algo ridículo). Invita a comentar.",
+      p=f"{ST(8)} Cozy cabin at night with a fireplace. {T} sits holding a small long paper list, reading it very seriously, then looks into the camera over the paper. {HT('Lista de los que no reciben regalo. Número uno: Galleta. Se comió el mapa.')} {END('one cat', 'the cat', 'fire crackling')}",
+      voz="«Lista de los que no reciben regalo. Número uno: Galleta. Se comió el mapa.»", texto="Texto: «¿Quién más va en la lista? 👇»"),
+ dict(tipo="Humor", titulo="Don Turbio te vende algo", seg=8, fotos="TURBIO",
+      idea="El vendedor sospechoso le habla a la cámara como si le vendiera algo a quien está viendo. Personaje que puede volverse favorito del público.",
+      p=f"{ST(8)} A dark wet alley at night, steam from the ground. {TU} leans toward the camera and slowly opens his coat, showing a small glass jar with a tiny white cloud inside. {HX('Psst… ¿una nube en frasco? Para cuando estés triste. Original. Casi.', 'raccoon', VT_, 'whispers')} {END('one raccoon', 'the raccoon', 'city noise far away')}",
+      voz="TURBIO: «Psst… ¿una nube en frasco? Para cuando estés triste. Original. Casi.»", texto="Texto: «¿Le comprarías?»"),
+ dict(tipo="Tendencia adaptada", titulo="Instrucciones de seguridad del trineo", seg=10, fotos="TOFFEE + GALLETA + TRINEO",
+      idea="Parodia de la demostración de seguridad de los aviones. Toffee explica serio; Galleta hace todo mal.",
+      p=f"{ST(10)} Inside {TR}, parked in a living room. On the left, {T} stands very serious like a flight attendant, pointing to the right and to the left with his paw; on the right, {G} wears a tiny red scarf around his head instead of his neck and {GX['inocente']}. {HT('Las salidas de emergencia están aquí… y aquí. Galleta, eso no va en la cabeza.')} {END(C2, 'the cat', 'soft room ambience')}",
+      voz="«Las salidas de emergencia están aquí… y aquí. Galleta, eso no va en la cabeza.»", texto="Texto: «Vuele con Toffee Airlines ✈️»"),
+ dict(tipo="Humor", titulo="Cuando Toffee intenta salir tierno en la foto", seg=6, fotos="TOFFEE",
+      idea="Toffee intenta poner cara tierna para una foto… y estornuda justo en el flash. Corto, universal, repetible.",
+      p=f"{ST(6)} Cozy living room with Christmas lights. Close-up of {T} trying to make a cute face for a photo, eyes wide and head tilted; a camera flash goes off and he sneezes hard at that exact moment, his pompom bouncing. Exactly one cat; the cat's whole head, nightcap and camera always in frame. No one speaks; only a camera click and a tiny sneeze. No phone, no text, no music.",
+      voz="(sin voz)", texto="Texto: «Foto de perfil, intento 47»"),
+]
+DIAS = [
+ ("Lun 27-oct", "EPISODIO 2 · La bruja del bosque", "—"),
+ ("Mar 28-oct", "VIRAL · El gato que se quedó dentro de la maleta", "Foto A (retrato)"),
+ ("Mié 29-oct", "EPISODIO 3 · La calabaza miedosa", "Comercial: La tormenta del valle (orejeras)"),
+ ("Jue 30-oct", "VIRAL · Desfile de disfraces (sonido de moda de Halloween)", "—"),
+ ("Vie 31-oct", "EPISODIO 4 · El disfraz más aterrador (Halloween)", "—"),
+ ("Sáb 1-nov", "VIRAL · La Noche del Miau (coro)", "Comercial: El disfraz más aterrador del valle"),
+ ("Dom 2-nov", "EPISODIO 5 · El Chupacabras (Día de Muertos)", "Foto B"),
+ ("Lun 3-nov", "VIRAL · El botón que no se toca", "—"),
+ ("Mar 4-nov", "EPISODIO 6 · Perdidos en las nubes", "—"),
+ ("Mié 5-nov", "VIRAL · Revisión de piloto antes de despegar", "Comercial: El vehículo oficial también es cama"),
+ ("Jue 6-nov", "EPISODIO 7 · Galleta maneja un Willys", "—"),
+ ("Vie 7-nov", "VIRAL · «Confía en mí» (formato POV)", "Foto C (carrusel)"),
+ ("Sáb 8-nov", "EPISODIO 8 · La alpaca de Machu Picchu", "—"),
+ ("Dom 9-nov", "VIRAL · Toffee prueba una arepa", "Comercial: ¿Caben un gato y un perro?"),
+ ("Lun 10-nov", "EPISODIO 9 · Un ovni se llevó a Galleta", "—"),
+ ("Mar 11-nov", "VIRAL · Expectativa vs. realidad del viaje", "Foto D"),
+ ("Mié 12-nov", "EPISODIO 10 · Lucha libre", "—"),
+ ("Jue 13-nov", "VIRAL · Galleta contra el cascabel", "Comercial (repetir el que mejor funcionó)"),
+ ("Vie 14-nov", "EPISODIO 11 · Nueva York", "—"),
+ ("Sáb 15-nov", "VIRAL · La lista de los que NO reciben regalo", "Foto"),
+ ("Dom 16-nov", "EPISODIO 12 · El vendedor sospechoso", "—"),
+ ("Lun 17-nov", "VIRAL · Don Turbio te vende algo", "Comercial"),
+ ("Mar 18-nov", "EPISODIO 13 · La foto con el ratón famoso", "—"),
+ ("Mié 19-nov", "VIRAL · Instrucciones de seguridad del trineo", "Foto"),
+ ("Jue 20-nov", "EPISODIO 14 · Toffee se quiere rendir", "—"),
+ ("Vie 21-nov", "VIRAL · Cuando Toffee intenta salir tierno en la foto", "Comercial"),
+ ("Sáb 22-nov", "EPISODIO 15 · El barco de hielo (fin de la sección 1)", "—"),
 ]
