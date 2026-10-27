@@ -27,6 +27,7 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 
 ## Videos de Toffee: si no salió como el prompt, se repite (pedido de Jay, 23-oct-2026)
 - Al revisar cada clip que manda Jay, compararlo con la idea del prompt (encuadre, acción, personajes, gorro, producto).
+- **Cuando Jay manda videos para revisar (regla para siempre, 27-oct-2026):** no comentar nada mientras los manda; solo analizarlos en silencio (respuesta mínima, p. ej. «✓»). Cuando Jay diga **«listo»**, dar la revisión completa de todos: qué está bien y qué hay que corregir o repetir.
 - Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
 - Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
 - **Subtítulos de la voz: en español, pegados en el video** (cambio decidido el 25-oct-2026; antes eran en inglés). Estilo Gnomo Palomo: 1 a 3 palabras, centrados y sincronizados palabra por palabra. El **inglés va aparte**, como subtítulos .srt en YouTube (y la traducción automática de TikTok/Instagram).
