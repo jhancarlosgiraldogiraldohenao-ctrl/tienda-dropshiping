@@ -23,17 +23,21 @@ Without its three bells, that sleigh won't fly.
 They fell into the Valley of October.
 
 7
-00:00:26,400 --> 00:00:29,100
-Monsters? I'm not scared.
+00:00:26,900 --> 00:00:30,100
+A valley… full of monsters.
 
 8
-00:00:29,300 --> 00:00:31,100
-I'm assessing the situation.
+00:00:30,430 --> 00:00:33,130
+Monsters? I'm not scared.
 
 9
-00:00:31,300 --> 00:00:36,000
-Galleta found the way. It was luck. I had it all figured out.
+00:00:33,330 --> 00:00:35,130
+I'm assessing the situation.
 
 10
-00:00:36,300 --> 00:00:39,900
+00:00:35,330 --> 00:00:40,030
+Galleta found the way. It was luck. I had it all figured out.
+
+11
+00:00:40,330 --> 00:00:43,930
 What monster do you think is waiting for us? I'm reading your comments.

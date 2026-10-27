@@ -5,6 +5,7 @@ S=[('t1.mp4',0,6.0,1,.5,.5,0.0),      # 1 gancho: la lechuza aterriza (audio de 
    ('t2.mp4',0.4,6.04,1,.5,.5,0.0),   # 2 Toffee: a ver mis desgraciados
    ('r3.mp4',0,4.0,1,.5,.5,0.6),('r3.mp4',4.0,8.0,1.15,.6,.55,0.6),  # 3 el trineo no arranca
    ('r4.mp4',1.2,7.6,1,.5,.5,0.0),    # 4 la lechuza: tres cascabeles
+   ('t4b.mp4',0,4.03,1,.5,.5,0.0),    # 4b la lechuza susurra: lleno de monstruos
    ('s5.mp4',0.8,6.0,1,.5,.5,0.0),    # 5 evaluando la situación
    ('t6.mp4',0,5.3,1,.5,.5,0.7),      # 6 Galleta tumba el farol (antes del corte de Flow)
    ('t7.mp4',0,6.0,1,.5,.5,0.6)]      # 7 el camino de calabazas
@@ -17,6 +18,7 @@ VO=[(L,0.00,4.25,0.10,'t1.mp4',1.52,None,'¡Por fin!|Llevo tres siglos|esperando
     (T2,2.12,4.65,2.37,'r3.mp4',None,3.9,'Plan B:|culpar a Galleta.'),
     (L2,0.00,3.72,0.00,'r4.mp4',1.68,None,'Sin sus tres|cascabeles,|ese trineo|no vuela.'),
     (L2,3.72,6.03,4.06,'r4.mp4',5.23,None,'Cayeron en el|Valle de Octubre.'),
+    ('a_lech3.mp3',0.00,3.35,0.05,'t4b.mp4',None,0.8,'Un valle…|lleno de|monstruos.'),
     (T3,0.00,1.06,0.00,'s5.mp4',1.02,None,'¿Monstruos?'),
     (T3,1.06,2.53,1.23,'s5.mp4',2.13,None,'Yo no tengo miedo.'),
     (T3,2.53,4.68,2.75,'s5.mp4',3.73,None,'Estoy evaluando|la situación.')]
