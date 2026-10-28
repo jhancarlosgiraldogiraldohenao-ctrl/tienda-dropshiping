@@ -59,4 +59,5 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 ## Extravío: la serie de YouTube (decidido por Jay el 29-oct-2026)
 - **Antes de hablar de la serie, leer `toffee/extravio/`:** `BIBLIA.md` (mundo, reglas, personajes, mundos, temporada, tono), `DECISIONES.md` (canal y negocio) y `CONVERSACION-28-29-OCT.md` (la conversación completa en texto). Mandan sobre los planes viejos del viaje al Polo Norte.
 - Fichas de todo lo que Jay genera (personajes, objetos, mundos, logo, voces, sonidos): `toffee/EXTRAVIO-FICHAS.pdf` (`python3 toffee/extravio/fichas.py`). Imágenes aprobadas en `toffee/refs/extravio/{personajes,objetos,mundos,marca}/`.
+- **Ritmo: 1 capítulo diario a las 6 p. m. (Colombia) con 1 de reserva terminado; 2 shorts diarios (12 p. m. y 8 p. m.) del capítulo, los mismos en YouTube Shorts, TikTok e Instagram.**
 - La serie no tiene final escrito. Lucho (ratón adicto al queso) reemplaza a Don Turbio. No más tiempo en la web por ahora.
