@@ -58,7 +58,10 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 
 ## Extravío: la serie de YouTube (decidido por Jay el 29-oct-2026)
 - **Antes de hablar de la serie, leer `toffee/extravio/`:** `BIBLIA.md` (mundo, reglas, personajes, mundos, temporada, tono), `DECISIONES.md` (canal y negocio) y `CONVERSACION-28-29-OCT.md` (la conversación completa en texto). Mandan sobre los planes viejos del viaje al Polo Norte.
-- Fichas de todo lo que Jay genera (personajes, objetos, mundos, logo, voces, sonidos): `toffee/EXTRAVIO-1-IMAGENES.pdf` y `toffee/EXTRAVIO-2-AUDIO.pdf` (`python3 toffee/extravio/fichas.py`). Imágenes aprobadas en `toffee/refs/extravio/{personajes,objetos,mundos,marca}/`.
+- Fichas de todo lo que Jay genera (personajes, objetos, mundos, logo, voces, sonidos): `toffee/EXTRAVIO-1-IMAGENES.pdf` y `toffee/EXTRAVIO-2-AUDIO.pdf` (`python3 toffee/extravio/fichas.py`; también como páginas web en `toffee/extravio/web/`: imágenes https://claude.ai/artifact/QKJpZJ4GfaMeoj999nXQ2U · audio https://claude.ai/artifact/EuNDN73dwzMmLU8fPCJ5EQ). Imágenes aprobadas en `toffee/refs/extravio/{personajes,objetos,mundos,marca}/`.
 - **Ritmo: 1 capítulo diario a las 6 p. m. (Colombia) con 1 de reserva terminado; 2 shorts diarios (12 p. m. y 8 p. m.) del capítulo, los mismos en YouTube Shorts, TikTok e Instagram.**
 - **Edición de los capítulos como una serie de TV (pedido de Jay, 29-oct-2026):** sin subtítulos pegados ni títulos encima, sin texto en pantalla. Gancho → logo corto de EXTRAVÍO con su firma sonora (2–3 s) → capítulo con música y efectos → cierre con la invitación a seguir dicha por Toffee (no escrita) → 15–20 s finales de escena tranquila para las pantallas finales de YouTube. Subtítulos solo como archivos .srt en YouTube (español e inglés). Los **shorts sí van con estilo Gnomo Palomo** (subtítulos de 1–3 palabras, título arriba).
 - La serie no tiene final escrito. Lucho (ratón adicto al queso) reemplaza a Don Turbio. No más tiempo en la web por ahora.
+
+## Entregas en link (pedido de Jay, 29-oct-2026)
+- Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.

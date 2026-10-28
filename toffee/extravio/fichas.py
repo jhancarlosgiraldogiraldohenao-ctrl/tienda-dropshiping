@@ -267,3 +267,18 @@ if __name__ == '__main__':
         subprocess.run(['node', os.path.join(here, 'pdf.js'), out], cwd=here, check=True)
         print('ok', out)
     os.remove(os.path.join(here, 'pdf.js')); os.remove(os.path.join(here, 'plan.html'))
+
+def web():
+    """Las mismas fichas como páginas web (Artifact) con botón Copiar: Jay pidió links en vez de PDF (29-oct-2026)."""
+    src = open(os.path.join(here, '..', 'viaje', 'temporada1', 'build_web.py')).read()
+    head = src[src.index("head = '''") + 10: src.index("'''", src.index("head = '''") + 10)]
+    script = src[src.index("<script>"): src.index("</script>") + 9]
+    os.makedirs(os.path.join(here, 'web'), exist_ok=True)
+    for nombre, titulo, fn in (('extravio-imagenes.html', 'Extravío · imágenes', build_img), ('extravio-audio.html', 'Extravío · audio', build_audio)):
+        body = fn().split('<body>', 1)[1].rsplit('</body>', 1)[0]
+        body = body.replace('<table>', '<div class="tabla"><table>').replace('</table>', '</table></div>')
+        page = head.replace('<title>El viaje de Toffee</title>', f'<title>{titulo}</title>') + '<main>' + body + '</main>\n' + script
+        open(os.path.join(here, 'web', nombre), 'w').write(page)
+
+if __name__ == '__main__':
+    web()
