@@ -1,0 +1,236 @@
+# Toffee y Galleta · Capítulo 1: Compré cascabeles MÁGICOS… y mi perro nos tumbó del cielo 🛷
+
+## El plan de Toffee · INICIO · qué quiere Toffee
+### Toma 1 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Voz: TOFFEE (a cámara) — [sarcastic, dramatic] A ver, mis desgraciados… [proud] hoy me voy al Polo Norte.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy bedroom at night, warm Christmas lights on the wall, a window with the city lights outside. Medium close-up at eye level of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap, sitting on a bed and looking straight into the lens with a proud, dramatic face. The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "A ver, mis desgraciados… hoy me voy al Polo Norte." His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with quiet room in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 2 · 8 s
+Fotos: TOFFEE-viajero.jpg
+Usar el último cuadro de la toma 1 como primer cuadro.
+Voz: TOFFEE (a cámara) — [serious] Santa nunca les trae regalos a los animales de la calle. [determined] Voy a pedírselo en persona.
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy bedroom at night, warm Christmas lights on the wall, a window with the city lights outside. Same framing: the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sits on the bed, looking into the lens, serious and noble, one ear slightly back. The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "Santa nunca les trae regalos a los animales de la calle. Voy a pedírselo en persona." His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with quiet room in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 3 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Usar el último cuadro de la toma 2 como primer cuadro.
+Voz: TOFFEE (secreto, a cámara) — [whispers, sly] Y si de paso me vuelvo el gato más famoso del mundo… [smug] pues ni modo.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy bedroom at night, warm Christmas lights on the wall, a window with the city lights outside. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap slowly leans very close to the lens, narrows his eyes and speaks in a low secret voice, like telling a secret. The cat whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "Y si de paso me vuelvo el gato más famoso del mundo… pues ni modo." His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with quiet room in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 4 · 6 s
+Fotos: GALLETA-viajero.jpg
+Voz: TOFFEE (voz en off) — [amused] Él es Galleta. Viene conmigo. … Todavía no lo sabe.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy bedroom at night, warm Christmas lights on the wall, a window with the city lights outside. Low camera on the carpet. the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) lies on the carpet happily chewing a small yellow rubber squeaky ball; he squeaks it twice, then looks up at the camera and tilts his head. Exactly one dog for the whole video, identical to the references; no other animals appear. The dog never speaks. No one speaks; only squeaky toy sounds. No phone, no selfie stick, no text, no music.
+```
+### Toma 5 · 8 s
+Fotos: TOFFEE-viajero.jpg · REF-trineo-rojo.jpg
+Voz: TOFFEE (voz en off) — [proud] Nuestro vehículo: mi trineo. [embarrassed] Bueno… es mi cama. Pero tiene forma de trineo.
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. Medium-wide shot at eye level: the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) on the carpet. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap climbs into the sleigh bed, sits proudly at the front like a captain and looks at the camera. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. No one speaks; only quiet room. No phone, no selfie stick, no text, no music.
+```
+## Plan A: fracasa · DESARROLLO · el primer intento
+### Toma 6 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: (sin voz: el golpe suave y la cara de Toffee)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. Side view: the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) sits on the edge of the gray sofa seat with the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap inside, leaning forward like a racer. The sleigh bed slowly slides off the sofa and lands flat on the soft carpet with a gentle thump; the cat stays inside, unhurt, with a flat annoyed face. On the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) watches from the carpet. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only soft thump. No phone, no selfie stick, no text, no music.
+```
+### Toma 7 · 4 s
+Fotos: TOFFEE-viajero.jpg · REF-trineo-rojo.jpg
+Voz: TOFFEE (voz en off) — [flat, deadpan] Plan A: fracasó.
+```
+Vertical 9:16, 4 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. Close-up of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap lying inside the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) on the carpet, face flat, staring at the ceiling, completely unimpressed. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. No one speaks; only quiet room. No phone, no selfie stick, no text, no music.
+```
+## Aparece Don Turbio · OBSTÁCULO · la tentación
+### Toma 8 · 6 s
+Fotos: TURBIO.jpg
+Voz: DON TURBIO: «Psst… gato.»
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night, outside view of a living room window with warm Christmas lights inside. Don Turbio, the raccoon from the reference (gray fur, black eye mask, striped tail), wearing an old beige trench coat with the collar up and a small brown hat, with shifty eyes slowly rises into view behind the glass from below, taps the glass twice and opens one side of his trench coat, showing small strange gadgets hanging inside. The raccoon whispers in Latin American Spanish, in a raspy, fast, whispering salesman voice: "Psst… gato." His mouth moves in sync with every word. Exactly one raccoon for the whole video, identical to the references; no other animals appear. Only the raccoon speaks, with quiet night in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 9 · 8 s
+Fotos: TURBIO.jpg
+Voz: DON TURBIO: «Cascabeles de reno. Originales. Casi. Hacen volar cualquier cosa.»
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night, close-up of Don Turbio, the raccoon from the reference (gray fur, black eye mask, striped tail), wearing an old beige trench coat with the collar up and a small brown hat, with shifty eyes at the open window, holding up three big shiny golden jingle bells tied together on a red string and shaking them so they jingle. The raccoon says in Latin American Spanish, in a raspy, fast, whispering salesman voice: "Cascabeles de reno. Originales. Casi. Hacen volar cualquier cosa." His mouth moves in sync with every word. Exactly one raccoon for the whole video, identical to the references; no other animals appear. Only the raccoon speaks, with jingle bells in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 10 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Voz: TOFFEE (a cámara) — [suspicious] ¿Y cuánto cuestan?
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. Close-up of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sitting on the windowsill inside, squinting suspiciously toward the window. The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "¿Y cuánto cuestan?" His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with quiet room in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 11 · 6 s
+Fotos: TURBIO.jpg · GALLETA-viajero.jpg
+Voz: DON TURBIO: «Esa pelotita.»
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night, view from outside through the open window: on the left, Don Turbio, the raccoon from the reference (gray fur, black eye mask, striped tail), wearing an old beige trench coat with the collar up and a small brown hat, with shifty eyes leans in and points with one finger at a small yellow rubber squeaky ball lying on the carpet inside; on the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) lies next to the ball. The raccoon says in Latin American Spanish, in a raspy, fast, whispering salesman voice: "Esa pelotita." His mouth moves in sync with every word. Exactly one raccoon and one dog for the whole video, identical to the references; no other animals appear. The dog never speaks. Only the raccoon speaks, with quiet night in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 12 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Voz: TOFFEE (voz en off) — [avoiding eye contact] Es por una buena causa.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. Low camera on the carpet. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap pushes a small yellow rubber squeaky ball away with one paw toward the window, without looking at the dog. On the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) makes huge shiny puppy eyes, ears low, looking up, begging. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only quiet room. No phone, no selfie stick, no text, no music.
+```
+### Toma 13 · 6 s
+Fotos: TURBIO.jpg
+Voz: DON TURBIO: «Garantía: ninguna.»
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night, outside the window: Don Turbio, the raccoon from the reference (gray fur, black eye mask, striped tail), wearing an old beige trench coat with the collar up and a small brown hat, with shifty eyes grabs a small yellow rubber squeaky ball and hands over three big shiny golden jingle bells tied together on a red string through the window, then steps back into the darkness and disappears. The raccoon says in Latin American Spanish, in a raspy, fast, whispering salesman voice: "Garantía: ninguna." His mouth moves in sync with every word. Exactly one raccoon for the whole video, identical to the references; no other animals appear. Only the raccoon speaks, with quiet night in the background. No phone, no selfie stick, no text, no music.
+```
+## ¡Funciona! · DESARROLLO · el plan parece salir bien
+### Toma 14 · 8 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: (sin voz: solo cascabeles; Galleta mira los cascabeles)
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) on the carpet. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap ties three big shiny golden jingle bells tied together on a red string to the front tip of the sleigh bed with his paws. the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) sits at the back of the sleigh bed and a slow mischievous smile spreads on his face, eyebrows raised, eyes fixed on the forbidden thing — staring at the jingling golden bells. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only jingle bells. No phone, no selfie stick, no text, no music.
+```
+### Toma 15 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Usar el último cuadro de la toma 14 como primer cuadro.
+Voz: TOFFEE (a cámara) — [whispers, amazed] Funciona…
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. The sleigh bed with three big shiny golden jingle bells tied together on a red string at the front begins to glow with a soft golden light and slowly lifts a few centimeters off the carpet, floating. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sits at the front with huge surprised eyes; the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) at the back. The cat whispers in Latin American Spanish, in a deep, slow, sleepy male voice: "Funciona…" His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with magical shimmer and jingle bells in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 16 · 8 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Usar el último cuadro de la toma 15 como primer cuadro.
+Voz: TOFFEE — [shouting, excited] ¡Polo Norte, allá vamos!
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind. The glowing floating sleigh bed with the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap at the front and the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) at the back flies smoothly out through the big open window into the night sky. The cat shouts in Latin American Spanish, in a loud, excited male voice: "¡Polo Norte, allá vamos!" His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with wind and jingle bells in the background. No phone, no selfie stick, no text, no music.
+```
+## El vuelo… y Galleta · COMPLICACIÓN · Galleta lo empeora todo
+### Toma 17 · 8 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: TOFFEE (voz en off) — [proud, epic] Mírenme, humanos. … Esto es historia.
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night sky over a big city full of lights. Side view from a few meters away, same height: the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) flies smoothly with a soft golden glow, three big shiny golden jingle bells tied together on a red string jingling at the front; the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sits at the front proudly, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) at the back with his ears flapping in the wind. Snowflakes fall. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only wind and jingle bells. No phone, no selfie stick, no text, no music.
+```
+### Toma 18 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: TOFFEE (a cámara) — [warning, slow] Galleta. No. [firm] Ni lo pienses.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night sky, close shot inside the flying sleigh bed. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap turns his head back toward the dog with a warning look; on the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) leans slowly forward with his eyes fixed on the jingling golden bells at the front. The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "Galleta. No. Ni lo pienses." His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with wind and jingle bells in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 19 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: (sin voz: el «snap» y los cascabeles que caen)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night sky, close shot of the front of the flying sleigh bed: the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) bites the red string of three big shiny golden jingle bells tied together on a red string and pulls playfully; the string snaps and the three golden bells fall away into the dark night below. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap at the front stares with his mouth open. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only wind, a snap, bells falling away. No phone, no selfie stick, no text, no music.
+```
+### Toma 20 · 8 s · GANCHO
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg · REF-trineo-rojo.jpg
+Voz: TOFFEE — [screaming, terrified] ¡¡GALLETAAA!!
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Night sky above a dark snowy pine forest. Side view: the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it), without bells and without glow, falls from the sky toward the snowy forest, tilting; the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap at the front holds on with wide eyes and shouts; the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) at the back holds on. The cat screams in Latin American Spanish, in a loud, terrified male voice: "¡¡GALLETAAA!!" His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with wind rushing in the background. No phone, no selfie stick, no text, no music.
+```
+## El choque y el rescate · CORAZÓN · Toffee sí quiere a Galleta (aunque lo niegue)
+### Toma 21 · 6 s
+Fotos: TOFFEE-viajero.jpg · REF-trineo-rojo.jpg
+Voz: (sin voz)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy pine forest at night, wide shot: the red plush sleigh-shaped pet bed from the reference photo (red velvet body, thick white fluffy fur rim, red-and-white candy-cane striped runners, black boot-shaped tips at the front; no legs, no letters or words on it) lands softly into a deep pile of fresh powder snow, and a big cloud of snow bursts up and slowly falls. Nobody is hurt; nobody is visible in the snow for a moment. No animals are visible in this shot. Only a soft whump and wind. No phone, no selfie stick, no text, no music.
+```
+### Toma 22 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Voz: TOFFEE (a cámara) — [worried, quiet] ¿Galleta?
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy forest at night, low camera. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap pops his head out of the deep snow, shakes the snow off his nightcap and camera, and looks around worried. The cat calls in Latin American Spanish, in a worried male voice: "¿Galleta?" His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 23 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Usar el último cuadro de la toma 22 como primer cuadro.
+Voz: TOFFEE — [shouting, desperate] ¡GALLETA!
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy forest at night. the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap digs fast in the snow with both front paws, snow flying behind him, very worried, looking for someone. The cat shouts in Latin American Spanish, in a loud, desperate male voice: "¡GALLETA!" His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind and digging in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 24 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Usar el último cuadro de la toma 23 como primer cuadro.
+Voz: (sin voz: el lengüetazo)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy forest at night. On the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) pops his head out of the snow in front of the cat, happy and unhurt, and licks the cat's face once. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap freezes with a disgusted face. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only wind. No phone, no selfie stick, no text, no music.
+```
+### Toma 25 · 6 s
+Fotos: TOFFEE-viajero.jpg
+Voz: TOFFEE (a cámara) — [annoyed, embarrassed] Asco. … Esto no pasó. [defensive] Y no lo estaba buscando.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy forest at night. Close-up of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap with snow on his face, looking into the lens, annoyed and embarrassed. The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "Asco. Esto no pasó. Y no lo estaba buscando." His lips move in sync with every word. Exactly one cat for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+## Doña Lechuza · OBSTÁCULO · la misión de verdad
+### Toma 26 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Voz: (sin voz: los ojos en la oscuridad)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Dark snowy forest at night. In the darkness between the trees in the background, two big round glowing golden eyes appear and blink. In the foreground, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) hides behind the cat, only his head peeking out, ears back, and the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap stares at the eyes. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only wind and a soft hoot. No phone, no selfie stick, no text, no music.
+```
+### Toma 27 · 6 s
+Fotos: LECHUZA.jpg
+Voz: DOÑA LECHUZA: «¡Por fin! Llevo tres siglos esperando visitas.»
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. Doña Lechuza, the huge old barn owl from the reference (white heart-shaped face, golden-brown speckled feathers, big round golden eyes, tiny round glasses, a small crooked black witch hat, holding a small old lantern) lands on a snowy branch close to the camera, wings folding like a real owl, and sets her lantern on the branch. The owl says in Latin American Spanish, in an old, raspy, warm grandmother voice: "¡Por fin! Llevo tres siglos esperando visitas." Her beak moves in sync with every word. Exactly one owl for the whole video, identical to the references; no other animals appear. Only the owl speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 28 · 8 s
+Fotos: LECHUZA.jpg
+Usar el último cuadro de la toma 27 como primer cuadro.
+Voz: DOÑA LECHUZA: «Vi caer sus cascabeles. No eran de reno. Eran del Valle de Octubre, donde siempre es Halloween.»
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. Close-up of Doña Lechuza, the huge old barn owl from the reference (white heart-shaped face, golden-brown speckled feathers, big round golden eyes, tiny round glasses, a small crooked black witch hat, holding a small old lantern) on the branch, wings folded, lantern beside her, looking into the lens over her tiny glasses. The owl says in Latin American Spanish, in an old, raspy, warm grandmother voice: "Vi caer sus cascabeles. No eran de reno. Eran del Valle de Octubre, donde siempre es Halloween." Her beak moves in sync with every word. Exactly one owl for the whole video, identical to the references; no other animals appear. Only the owl speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 29 · 8 s
+Fotos: LECHUZA.jpg
+Usar el último cuadro de la toma 28 como primer cuadro.
+Voz: DOÑA LECHUZA (susurro): «Sin sus tres cascabeles, ese trineo no vuela. Y cada uno lo guarda un monstruo.»
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. Doña Lechuza, the huge old barn owl from the reference (white heart-shaped face, golden-brown speckled feathers, big round golden eyes, tiny round glasses, a small crooked black witch hat, holding a small old lantern) leans toward the camera, golden eyes wide, and lowers her voice. The owl whispers in Latin American Spanish, in an old, raspy, warm grandmother voice: "Sin sus tres cascabeles, ese trineo no vuela. Y cada uno lo guarda un monstruo." Her beak moves in sync with every word. Exactly one owl for the whole video, identical to the references; no other animals appear. Only the owl speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 30 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Voz: TOFFEE — [shouting, terrified] ¡¡¿¿MONSTRUOS??!!
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. Extreme close-up of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap, eyes huge, ears back, mouth wide open, shouting in panic; the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) peeks from behind him on the right. The cat shouts in Latin American Spanish, in a loud, high, panicked male voice: "¡¿MONSTRUOS?!" His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+### Toma 31 · 8 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Usar el último cuadro de la toma 30 como primer cuadro.
+Voz: TOFFEE (a cámara) — [trying to sound brave] Yo no tengo miedo. [whispers] Estoy evaluando la situación.
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. On the left, the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap sits up straight, pretending to be calm, and talks to the camera. On the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack) lies flat on the snow covering his eyes with both front paws, shaking slightly with fear (realistic, no drawn lines or cartoon effects). The cat says in Latin American Spanish, in a deep, slow, sleepy male voice: "Yo no tengo miedo. Estoy evaluando la situación." His lips move in sync with every word. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. Only the cat speaks, with wind in the background. No phone, no selfie stick, no text, no music.
+```
+## Galleta encuentra el camino · RECOMPENSA · el desastre de Galleta salva el día
+### Toma 32 · 6 s
+Fotos: GALLETA-viajero.jpg · LECHUZA.jpg
+Voz: (sin voz)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. On the left, Doña Lechuza, the huge old barn owl from the reference (white heart-shaped face, golden-brown speckled feathers, big round golden eyes, tiny round glasses, a small crooked black witch hat, holding a small old lantern) stands on the snow and has put her lit lantern down in front of her. On the right, the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack), curious, walks up, sniffs the lantern and bumps it with his nose; the lantern tips over and rolls down a gentle snowy slope, still glowing. Exactly one owl and one dog for the whole video, identical to the references; no other animals appear. The dog never speaks. No one speaks; only wind and a soft clink. No phone, no selfie stick, no text, no music.
+```
+### Toma 33 · 8 s
+Fotos: ninguna
+Voz: (sin voz: momento «wow»)
+```
+Vertical 9:16, 8 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night, wide shot along a winding path: a small glowing old lantern rolls down the path, and as it passes, a long line of carved jack-o'-lantern pumpkins along both sides lights up one by one with warm orange light, deep into the dark forest. No animals appear in this shot. Only a soft magical whoosh as each pumpkin lights. No phone, no selfie stick, no text, no music.
+```
+### Toma 34 · 6 s
+Fotos: TOFFEE-viajero.jpg · GALLETA-viajero.jpg
+Voz: TOFFEE (voz en off) — [unimpressed] Galleta encontró el camino. [scoffs] Fue suerte. [smug] Yo lo tenía calculado.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night, view from behind: on the left the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes), wearing his navy knitted nightcap with a cream pompom and a small black action camera on top of the nightcap, on the right the scruffy golden-brown criollo dog from the reference (thin, wiry fur, bushy eyebrows, white chest and paws), wearing only his navy bandana with a gold bone tag (no backpack), sitting side by side looking down a long path lit by glowing jack-o'-lantern pumpkins. The dog wags his tail. Exactly one cat and one dog for the whole video, identical to the references; no other animals appear. The cat's whole head, nightcap and camera always in frame. The dog never speaks. No one speaks; only wind. No phone, no selfie stick, no text, no music.
+```
+## Remate y misterio · CONTINUACIÓN · lo que deja ganas del capítulo 2
+### Toma 35 · 6 s
+Fotos: CALABACIN.jpg
+Voz: TOFFEE (voz en off) — [mysterious, low] ¿Qué monstruo creen que tiene el primer cascabel? [cheeky] Los leo.
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. At the end of a path of glowing jack-o'-lantern pumpkins, Calabacín, the big talking jack-o'-lantern pumpkin from the reference (bright orange, carved friendly triangle eyes and a crooked smile, curly green stem on top, warm candle light glowing inside, two tiny twig arms) sits in the dark, trembling nervously and making a tiny scared whimper; his candle light flickers. Exactly one pumpkin for the whole video, identical to the references; no other animals appear. No one speaks; only wind and a tiny whimper. No phone, no selfie stick, no text, no music.
+```
+### Toma 36 · 6 s
+Fotos: TURBIO.jpg
+Voz: (sin voz: el «squeak» de la pelota)
+```
+Vertical 9:16, 6 seconds. Photorealistic smartphone video, normal lens (no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Snowy forest at night. Behind a big pine tree, Don Turbio, the raccoon from the reference (gray fur, black eye mask, striped tail), wearing an old beige trench coat with the collar up and a small brown hat, with shifty eyes peeks out, holding a small yellow rubber squeaky ball; he squeezes it once (squeak), smiles slyly and steps back into the darkness. Exactly one raccoon for the whole video, identical to the references; no other animals appear. No one speaks; only wind and one squeak. No phone, no selfie stick, no text, no music.
+```
