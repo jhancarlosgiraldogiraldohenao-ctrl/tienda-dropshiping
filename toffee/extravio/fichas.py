@@ -126,10 +126,6 @@ VOCES = [
 ]
 
 CANCIONES = [
- (A, "TEMA-EXTRAVIO.mp3", "«Extravío» · la canción de la serie (1 min)",
-  "Para los shorts y como sonido propio en TikTok e Instagram (si otros la usan, nos hacen publicidad). En los capítulos solo suena la firma de 3 s.",
-  "Catchy whimsical Latin indie-pop with a light electronic cumbia beat, music box and marimba melody, warm male vocal with a playful sly tone, a sing-along chorus, mysterious but fun, 1 minute, Spanish lyrics.",
-  "[Verso]\nSe me perdió la media, se me perdió el control,\nlas llaves de la casa y hasta el corazón.\nY todo lo que pierdes no se va pa'l olvido:\nse cae, se cae, se cae… ¡a Extravío!\n\n[Coro]\nExtravío, Extravío, donde todo va a parar,\nlo que nadie está buscando no lo vuelves a encontrar.\nExtravío, Extravío, si te pierdes por aquí,\nque alguien te esté buscando… o te quedas aquí."),
  (B, "JINGLE-LUCHO.mp3", "Jingle del Mercado de Lucho (15 s)",
   "Comercial absurdo para el «Zapping de Extravío» y para shorts.",
   "Cheesy fast late-night TV commercial jingle, cheap synth and accordion, raspy whispering male voice that sounds short of breath, funny and suspicious, 15 seconds, Spanish lyrics.",
@@ -138,6 +134,8 @@ CANCIONES = [
 MUSICA = [
  (A, "FIRMA-EXTRAVIO.mp3", "Firma sonora (3 s)", "Suena con el logo, al inicio de cada capítulo.",
   "A 3-second magical sonic logo: a single shimmering music-box melody that falls downward and ends with a soft whoosh and a deep warm bass hit. Mysterious, whimsical, cinematic. No vocals."),
+ (B, "TEMA-EXTRAVIO.mp3", "Tema principal de Extravío, instrumental (45 s) · opcional", "Sin letra, para que funcione en cualquier país. Se usa en tráileres, en el capítulo 1 y en momentos épicos. La firma de 3 s puede salir de aquí.",
+  "Main title theme for an adult animated sci-fi fantasy series about a world where all lost things end up: mysterious and adventurous, starting with a lonely music box and a theremin-like synth melody, then building into a big cinematic orchestral and synth theme with driving drums, weird and wonderful, slightly dark and funny, memorable 4-note hook, 45 seconds. Instrumental, no vocals."),
  (A, "FONDO-CIUDAD.mp3", "Fondo de la ciudad de Extravío (1 min)", "Escenas en la ciudad y en el Mercado.",
   "Whimsical mysterious instrumental for a fantasy city made of lost things: music box, pizzicato strings, soft marimba, light percussion, curious and slightly melancholic, loopable, 1 minute. No vocals."),
  (A, "FONDO-MAR-PELOTAS.mp3", "Fondo del Mar de Pelotas (1 min)", "Capítulo 1: la llegada.",
@@ -246,7 +244,7 @@ def build_audio():
     h.append('<h2>1 · Voces (Voice Design)</h2>')
     for p, n, nombre, d, prueba in VOCES:
         h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · guardar como «{e(nombre)}»</div><pre>{e(d)}</pre><div class="voz"><b>Frase de prueba:</b> {e(prueba)}</div></div>')
-    h.append('<h2>2 · Canciones (Eleven Music)</h2><p>Con letra. Para que la canción sea tuya y se pueda usar en videos que ganan dinero, revisa que tu plan de ElevenLabs incluya uso comercial.</p>')
+    h.append('<h2>2 · Canciones con letra (Eleven Music)</h2><p>Opcionales. Para que sean tuyas y se puedan usar en videos que ganan dinero, revisa que tu plan de ElevenLabs incluya uso comercial.</p>')
     for p, a, n, para, estilo, letra in CANCIONES:
         h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · <code>{e(a)}</code></div><div class="voz">{e(para)}</div><h4>Estilo</h4><pre>{e(estilo)}</pre><h4>Letra</h4><pre>{e(letra)}</pre></div>')
     h.append('<h2>3 · Música de fondo (Eleven Music, sin voz)</h2>')
