@@ -109,6 +109,9 @@ Los capítulos 12 en adelante se escriben según lo que pidan los comentarios.
 - Horario fijo de publicación; responder comentarios la primera hora.
 
 ## 8. Medición
+- Metas (masterclass de automatización, `ESTUDIO-AUTOMATIZACION-YOUTUBE.md`): CTR ≥5 % (ideal 7–10 %; <5 % = cambiar miniatura); retención de capítulos de 3–5 min ≥40 % (35–45 % es lo normal en videos de 10+ min); comentarios pedidos en cada video.
+- Investigación de referencias: 5–10 canales en inglés de series de animales con IA (≥1 M de vistas al mes, <1 año) y competencia en español, con vidIQ o Social Blade.
+- Trabajo en bloques de 4 semanas; no cambiar la serie antes de 60–90 días (solo ajustar miniaturas, ganchos y duración).
 - Cada capítulo: impresiones y porcentaje de clics, retención a los 30 s, duración media, espectadores que vuelven, suscriptores ganados.
 - Cada short: «vieron vs. deslizaron» y porcentaje visto.
 - Se compara capítulo contra capítulo (la retención tarda 1–2 días en aparecer). Registro en `MEDICION-SEMANAL.csv`.
