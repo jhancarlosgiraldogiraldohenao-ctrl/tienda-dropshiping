@@ -116,3 +116,14 @@ Los capítulos 12 en adelante se escriben según lo que pidan los comentarios.
 - Cada short: «vieron vs. deslizaron» y porcentaje visto.
 - Se compara capítulo contra capítulo (la retención tarda 1–2 días en aparecer). Registro en `MEDICION-SEMANAL.csv`.
 - **Día 14:** ajustar ganchos, duración y qué personajes funcionan. **Día 30:** decidir TikTok/Instagram, frecuencia (¿capítulo diario?) y duración (¿8 min?).
+
+## 9. Lo que se suma del estudio «Cómo replicar Desencanto» (28-oct-2026)
+- **Ficha de 6 preguntas por personaje:** deseo, miedo, defecto, contradicción, humor y evolución. Si dos personajes pueden cambiarse los diálogos sin que se note, falta diferenciarlos. Cada personaje debe dar ideas para 10 capítulos sin cambiar su forma de ser.
+- **80/20:** cada capítulo se entiende solo (80 %) y deja algo de continuidad (20 %). Un espectador nuevo que llega al capítulo 7 tiene que entenderlo sin ver los anteriores: resumen de 10 s y conflicto propio en cada capítulo.
+- **No todos los finales son de suspenso:** alternar finales que cierran con finales que dejan una pregunta. Siempre una recompensa real antes de la pregunta.
+- **Elementos que el público adopta:** frase recurrente («A ver, mis desgraciados…», «Yo lo tenía calculado»), objeto recurrente (la cámara del gorro, la lista), rival recurrente (Don Turbio, el vendedor tramposo que causa el caos cada pocos capítulos), una decisión para votar y un secreto de varios capítulos (Toffee quiere ser famoso).
+- **Compartible:** cada capítulo tiene 1 o 2 escenas pensadas para «esto me representa», «conozco a alguien así» o «tienes que ver esto».
+- **Cada capítulo da 4–6 piezas:** capítulo completo; short del gancho; short del personaje; short del mejor remate; pregunta para Stories/comentarios; pista del misterio (opcional). Cada short se reedita con su propio inicio y final.
+- **Sin marcas de agua:** nunca bajar un video de TikTok para subirlo a Instagram o YouTube. Instagram resta recomendaciones a las copias idénticas y con marca de agua. Claude entrega cada short limpio.
+- **YouTube:** los Shorts pueden durar hasta 3 min. Los capítulos deben durar más de 3:00 para contar como video largo (horas de vista). Las «series de Shorts» (temporadas y episodios, anunciadas el 23-sep-2026) solo están disponibles para canales del Programa de socios: se usan cuando el canal esté monetizado.
+- **Medir además:** compartidos y guardados, comentarios que hablan de los personajes como personas, suscriptores por capítulo, espectadores que vuelven y cuántos pasan del short al capítulo.
