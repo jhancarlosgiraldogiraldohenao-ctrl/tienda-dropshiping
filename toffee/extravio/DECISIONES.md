@@ -8,6 +8,7 @@
 - Temporada 1: unos 30 capítulos hasta el 24-dic (con ritmo diario pueden ser más; se suma un mundo, no se estira la historia) + especial del 31-dic.
 - La historia de los reels (viaje al Polo Norte, Valle de Octubre) se descartó como base: Jay pidió un **mundo propio** como Gnomo Palomo, Desencanto y Rick and Morty → **Extravío** (ver `BIBLIA.md`). Los personajes ya creados se reutilizan como habitantes.
 - Don Turbio (mapache) no le gustó → **Lucho**, ratón «adicto» (al queso), estilo Luci de Desencanto, voz ronca susurrada con silbido de asma.
+- **Edición:** los capítulos se editan como serie de TV, sin texto en pantalla (subtítulos solo como .srt en YouTube, español e inglés). Los shorts sí llevan subtítulos y título estilo Gnomo Palomo.
 - La serie **no tiene final escrito**; solo cierres de temporada.
 - Cuando Jay manda videos: «✓» en silencio hasta «listo» (regla de `CLAUDE.md`).
 
