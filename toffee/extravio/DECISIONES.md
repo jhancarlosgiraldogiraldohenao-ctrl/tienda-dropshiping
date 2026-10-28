@@ -9,6 +9,7 @@
 - La historia de los reels (viaje al Polo Norte, Valle de Octubre) se descartó como base: Jay pidió un **mundo propio** como Gnomo Palomo, Desencanto y Rick and Morty → **Extravío** (ver `BIBLIA.md`). Los personajes ya creados se reutilizan como habitantes.
 - Don Turbio (mapache) no le gustó → **Lucho**, ratón «adicto» (al queso), estilo Luci de Desencanto, voz ronca susurrada con silbido de asma.
 - **Edición:** los capítulos se editan como serie de TV, sin texto en pantalla (subtítulos solo como .srt en YouTube, español e inglés). Los shorts sí llevan subtítulos y título estilo Gnomo Palomo.
+- **Voces en ElevenLabs (límite de espacios):** fijas siempre Toffee, Lucho y La Gran Polilla; los personajes de un solo mundo rotan: cuando ya salió su capítulo, se borra la voz (antes se guarda una muestra en `toffee/refs/extravio/voces/`) y se recrea con el mismo prompt si vuelven. El Silbón no habla: solo silba (efectos de sonido).
 - La serie **no tiene final escrito**; solo cierres de temporada.
 - Cuando Jay manda videos: «✓» en silencio hasta «listo» (regla de `CLAUDE.md`).
 

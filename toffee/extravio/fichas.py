@@ -117,9 +117,6 @@ VOCES = [
  (B, "La Llorona", "Llorona",
   "A dramatic female voice that sobs and wails theatrically between words, like a telenovela actress, echoing, Latin American Spanish.",
   "¡Ay, mis hijos! … No, no he perdido a nadie. Lloro porque el Silbón no me deja dormir."),
- (B, "El Silbón", "Silbon",
-  "A deep, grumpy, tired old male voice from the Colombian-Venezuelan plains, slow, with long whistles between phrases, Latin American Spanish.",
-  "(silbido largo) Vecina… son las tres de la mañana. Deje de llorar."),
  (B, "Doña Mula", "Mula",
   "A warm, sassy middle-aged female voice with a Colombian paisa accent, friendly and quick-witted, Spanish.",
   "¿Usted es el gato famoso? Pues aquí manda el tinto, mijo."),
@@ -179,6 +176,8 @@ SONIDOS = [
  (A, "SFX-GALLETA.mp3", "Galleta (sin palabras)", "A happy small dog: two excited short barks, a curious sniff and a soft whine."),
  (B, "SFX-ZAPPING.mp3", "Zapping", "An old CRT TV switching channels: click, burst of static, short buzz."),
  (B, "SFX-TRUENITO.mp3", "Truenito", "A small grumpy thunder rumble, cute but booming, with a crackle."),
+ (B, "SFX-SILBON-1.mp3", "El Silbón: su silbido (no habla)", "A lone man whistling a slow, eerie descending melody of a few notes in the open plains at night, crickets and soft wind, haunting but beautiful, a bit melancholic."),
+ (B, "SFX-SILBON-2.mp3", "El Silbón: silbido gruñón", "A short grumpy annoyed whistle, two quick notes going down, like someone complaining, with a tired sigh after."),
  (B, "SFX-BOSTEZO.mp3", "Bostezo del Mundo Siesta", "A huge slow sleepy yawn echoing in a quiet afternoon."),
 ]
 
