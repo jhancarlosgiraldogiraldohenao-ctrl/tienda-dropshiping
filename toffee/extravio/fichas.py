@@ -128,18 +128,58 @@ VOCES = [
   "Su… carta… llegó. Hace… cuarenta… años."),
 ]
 
+CANCIONES = [
+ (A, "TEMA-EXTRAVIO.mp3", "«Extravío» · la canción de la serie (1 min)",
+  "Para los shorts y como sonido propio en TikTok e Instagram (si otros la usan, nos hacen publicidad). En los capítulos solo suena la firma de 3 s.",
+  "Catchy whimsical Latin indie-pop with a light electronic cumbia beat, music box and marimba melody, warm male vocal with a playful sly tone, a sing-along chorus, mysterious but fun, 1 minute, Spanish lyrics.",
+  "[Verso]\nSe me perdió la media, se me perdió el control,\nlas llaves de la casa y hasta el corazón.\nY todo lo que pierdes no se va pa'l olvido:\nse cae, se cae, se cae… ¡a Extravío!\n\n[Coro]\nExtravío, Extravío, donde todo va a parar,\nlo que nadie está buscando no lo vuelves a encontrar.\nExtravío, Extravío, si te pierdes por aquí,\nque alguien te esté buscando… o te quedas aquí."),
+ (B, "JINGLE-LUCHO.mp3", "Jingle del Mercado de Lucho (15 s)",
+  "Comercial absurdo para el «Zapping de Extravío» y para shorts.",
+  "Cheesy fast late-night TV commercial jingle, cheap synth and accordion, raspy whispering male voice that sounds short of breath, funny and suspicious, 15 seconds, Spanish lyrics.",
+  "¿Perdiste algo? ¡Lucho lo tiene!\nLlaves, recuerdos y algo que no conviene.\nOriginal… casi. Garantía… ninguna.\n¡Mercado de Lucho! Se paga con queso… o con tu fortuna."),
+]
+MUSICA = [
+ (A, "FIRMA-EXTRAVIO.mp3", "Firma sonora (3 s)", "Suena con el logo, al inicio de cada capítulo.",
+  "A 3-second magical sonic logo: a single shimmering music-box melody that falls downward and ends with a soft whoosh and a deep warm bass hit. Mysterious, whimsical, cinematic. No vocals."),
+ (A, "FONDO-CIUDAD.mp3", "Fondo de la ciudad de Extravío (1 min)", "Escenas en la ciudad y en el Mercado.",
+  "Whimsical mysterious instrumental for a fantasy city made of lost things: music box, pizzicato strings, soft marimba, light percussion, curious and slightly melancholic, loopable, 1 minute. No vocals."),
+ (A, "FONDO-MAR-PELOTAS.mp3", "Fondo del Mar de Pelotas (1 min)", "Capítulo 1: la llegada.",
+  "Bright playful adventure instrumental, bouncy pizzicato, light ukulele and glockenspiel, sense of wonder and fun, loopable, 1 minute. No vocals."),
+ (A, "FONDO-LUCHO.mp3", "Tema de Lucho (45 s)", "Cada vez que Lucho aparece con una mala idea.",
+  "Sneaky comedic instrumental: tiptoeing pizzicato bass, muted trumpet, finger snaps, a little nervous and shady, loopable, 45 seconds. No vocals."),
+ (A, "FONDO-POLILLA.mp3", "Tema de La Gran Polilla (45 s)", "Cuando aparece la villana.",
+  "Dark elegant villain theme: slow choir pads, low cello, a soft harp, hypnotic and menacing, 45 seconds. No lyrics."),
+ (A, "FONDO-TENSION.mp3", "Persecución / peligro (45 s)", "Momentos de acción y escapes.",
+  "Fast tense adventure chase instrumental, driving strings and percussion, brass hits, playful but urgent, 45 seconds. No vocals."),
+ (A, "FONDO-CORAZON.mp3", "Momento de corazón (45 s)", "Rescates y finales emotivos.",
+  "Tender emotional instrumental: soft piano and warm strings, a little music box, hopeful and moving, 45 seconds. No vocals."),
+ (A, "FONDO-VALLE-OCTUBRE.mp3", "Valle de Octubre (1 min)", "El mundo de Halloween eterno.",
+  "Spooky-fun Halloween instrumental: harpsichord, theremin, pizzicato, light bells, mischievous and cozy, loopable, 1 minute. No vocals."),
+ (A, "FONDO-RECORDADOS.mp3", "Tierra de los Recordados (1 min)", "El mundo del Día de Muertos.",
+  "Warm magical Mexican-inspired instrumental: soft guitarra, marimba, gentle strings, nostalgic and beautiful, loopable, 1 minute. No vocals."),
+ (B, "FONDO-SIESTA.mp3", "Mundo Siesta (1 min)", "", "Very slow dreamy lullaby instrumental, soft vibraphone and warm pads, sleepy Sunday afternoon, loopable, 1 minute. No vocals."),
+ (B, "FONDO-ALGORITMO.mp3", "Ciudad Algoritmo (1 min)", "", "Glossy upbeat synth-pop instrumental, sparkly and fake-happy like a social media ad, loopable, 1 minute. No vocals."),
+ (B, "FONDO-ESPANTOS.mp3", "Tierra de los Espantos (1 min)", "", "Spooky Latin folk instrumental: llanero harp, maracas, ghostly whistles, funny and eerie, loopable, 1 minute. No vocals."),
+ (B, "FONDO-NUBES.mp3", "Pueblo en las Nubes (1 min)", "", "Cheerful Colombian-inspired instrumental: tiple and guitar, light percussion, airy and warm, loopable, 1 minute. No vocals."),
+ (B, "FONDO-TRUENO.mp3", "Mundo Trueno (1 min)", "", "Epic stormy instrumental with booming taiko drums, low brass and rising strings, dramatic but not scary, 1 minute. No vocals."),
+ (B, "FONDO-ZAPPING.mp3", "Zapping de Extravío (30 s)", "", "Retro TV channel-surfing music bed: cheesy 80s synth, short and loopable, 30 seconds. No vocals."),
+]
 SONIDOS = [
- ("Música", "Firma sonora de Extravío (3 s)", "Eleven Music", "A 3-second magical sonic logo: a single shimmering music-box melody that falls downward and ends with a soft whoosh and a deep warm bass hit. Mysterious, whimsical, cinematic. No vocals."),
- ("Música", "Fondo de Extravío (loop 1 min)", "Eleven Music", "Whimsical mysterious instrumental for a fantasy city made of lost things: music box, pizzicato strings, soft marimba, light percussion, curious and slightly melancholic, loopable, 1 minute. No vocals."),
- ("Música", "Fondo de La Gran Polilla (30 s)", "Eleven Music", "Dark elegant villain theme: slow choir pads, low cello, a soft harp, hypnotic and menacing, 30 seconds. No lyrics."),
- ("Efecto", "Portal que se abre", "Sound Effects", "An old wooden door unlocking with a magical key turn, then a deep whoosh of wind and a shimmering bright opening portal sound."),
- ("Efecto", "Caída por el Remolino", "Sound Effects", "Falling down a swirling vortex: rushing wind, spinning objects clattering, distant echoes, building to a soft bouncy landing."),
- ("Efecto", "Aterrizaje en el Mar de Pelotas", "Sound Effects", "Two bodies landing in a huge pool of rubber balls: a loud bouncy crash and hundreds of balls rattling and rolling."),
- ("Efecto", "Recuerdo", "Sound Effects", "A soft crystal chime with a gentle glowing hum, like a memory appearing, magical and warm."),
- ("Efecto", "Alas de la Polilla", "Sound Effects", "Giant moth wings flapping slowly: deep soft fluttering whooshes with a faint dusty shimmer."),
- ("Efecto", "Llaves del mercado", "Sound Effects", "Hundreds of old keys hanging like wind chimes, clinking softly in a breeze."),
- ("Efecto", "Risita de Lucho", "Sound Effects", "A small wheezy nervous mouse giggle, quick and squeaky."),
- ("Efecto", "Zapping", "Sound Effects", "An old CRT TV switching channels: click, burst of static, short buzz."),
+ (A, "SFX-PORTAL.mp3", "Portal que se abre", "An old wooden door unlocking with a magical key turn, then a deep whoosh of wind and a shimmering bright opening portal sound."),
+ (A, "SFX-REMOLINO.mp3", "Caída por el Remolino", "Falling down a swirling vortex: rushing wind, spinning objects clattering, distant echoes, building to a soft landing."),
+ (A, "SFX-PELOTAS.mp3", "Aterrizaje en el Mar de Pelotas", "Two bodies landing in a huge pool of rubber balls: a loud bouncy crash and hundreds of balls rattling and rolling."),
+ (A, "SFX-RECUERDO.mp3", "Aparece un recuerdo", "A soft crystal chime with a gentle glowing hum, like a memory appearing, magical and warm."),
+ (A, "SFX-POLILLA.mp3", "Alas de la Polilla", "Giant moth wings flapping slowly: deep soft fluttering whooshes with a faint dusty shimmer."),
+ (A, "SFX-LLAVES.mp3", "Llaves del Mercado", "Hundreds of old keys hanging like wind chimes, clinking softly in a breeze."),
+ (A, "SFX-RISITA-LUCHO.mp3", "Risita de Lucho", "A small wheezy nervous mouse giggle, quick and squeaky."),
+ (A, "SFX-QUESO.mp3", "Lucho huele el queso", "A long deep ecstatic sniff followed by a tiny wheezy happy sigh."),
+ (A, "SFX-WHOOSH.mp3", "Transición rápida", "A fast clean cinematic whoosh transition, short and airy."),
+ (A, "SFX-GOLPE-COMICO.mp3", "Golpe cómico", "A cartoonish soft thud with a tiny boing at the end."),
+ (A, "SFX-ALCANTARILLA.mp3", "La alcantarilla", "A metal storm drain grate rattling, echoing water dripping, and a hollow echo below."),
+ (A, "SFX-GALLETA.mp3", "Galleta (sin palabras)", "A happy small dog: two excited short barks, a curious sniff and a soft whine."),
+ (B, "SFX-ZAPPING.mp3", "Zapping", "An old CRT TV switching channels: click, burst of static, short buzz."),
+ (B, "SFX-TRUENITO.mp3", "Truenito", "A small grumpy thunder rumble, cute but booming, with a crackle."),
+ (B, "SFX-BOSTEZO.mp3", "Bostezo del Mundo Siesta", "A huge slow sleepy yawn echoing in a quiet afternoon."),
 ]
 
 LOGOS = [
@@ -151,24 +191,31 @@ LOGOS = [
 LOGOS[1] = (A, "marca", "BANNER-CANAL.jpg", "Banner del canal de YouTube", "Portada del canal (2560×1440; lo importante en el centro). Adjunta las fotos de Toffee y Galleta.",
   "YouTube channel banner, 16:9, photorealistic cinematic: the cream-caramel British Shorthair cat from the reference (navy knitted nightcap with cream pompom and small black action camera on top) and the scruffy golden-brown dog from the reference (navy bandana with gold bone tag) standing in the center on top of a hill of lost objects, looking at the fantastical city of lost things at dusk with lost objects slowly raining down and turquoise glowing lights. Characters small and centered in the middle third. No text.")
 
-def build():
+LOGOS += [
+ (A, "marca", "AVATAR-CANAL.jpg", "Foto de perfil del canal", "Se ve en círculo y muy pequeña: solo la cara de Toffee, clara y reconocible. Adjunta la foto de Toffee.",
+  "Square 1:1 profile picture, photorealistic: close-up of the face of the cream-caramel British Shorthair cat from the reference (chubby, very round face, big green eyes) wearing his navy knitted nightcap with a cream pompom and the small black action camera on top, smug confident expression, looking at the camera, centered so it fits inside a circle, soft turquoise magical glow behind him on a dark amber background. No text."),
+ (A, "marca", "FONDO-PANTALLA-FINAL.jpg", "Fondo de los últimos 20 s de cada capítulo", "Escena tranquila donde YouTube pone sus botones de «siguiente video» y «suscribirse». Adjunta Toffee y Galleta.",
+  "Photorealistic cinematic wide shot, 16:9: the cream-caramel British Shorthair cat from the reference (navy knitted nightcap with cream pompom and small black action camera on top) and the scruffy golden-brown dog from the reference (navy bandana with gold bone tag) sitting small on the lower center, seen from behind, on a hill of lost objects looking at the glowing city of lost things at night, turquoise lights, lost objects slowly falling like snow. Lots of calm empty sky in the upper and side areas. No text."),
+]
+
+def build_img():
     e = html.escape
     def tabla(cab, filas):
         return '<table><tr>' + ''.join(f'<th>{c}</th>' for c in cab) + '</tr>' + ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in f) + '</tr>' for f in filas) + '</table>'
     allimg = PERSONAJES + OBJETOS + MUNDOS
-    h = ['<h1>EXTRAVÍO · fichas de todo lo que hay que generar</h1>',
+    h = ['<h1>EXTRAVÍO · 1 · todas las imágenes</h1>',
          '<p class="sub">Toffee y Galleta · 29-oct-2026 · Imágenes en Nano Banana Pro · Voces y sonidos en ElevenLabs · La biblia del mundo está en la carpeta toffee/extravio/</p>',
          '<div class="box"><b>Cómo usar este PDF</b><ol>'
          '<li>Empieza por la <b>prioridad A</b> (lo que necesita el capítulo 1). Después la B (mundos de noviembre) y la C (diciembre).</li>'
          '<li>Copia el prompt, adjunta las fotos que dice «Adjuntar» y genera 2–4 opciones. Mándame la mejor de cada una; si algo no cuadra con la descripción, se repite.</li>'
          '<li>Ponle a cada imagen el nombre de archivo que dice la ficha (por ejemplo LUCHO.jpg).</li>'
          '<li><b>Personajes y objetos</b> en 1:1 (hoja 2×2). <b>Mundos</b> en 16:9: son la referencia de cada lugar para Flow.</li>'
-         '<li>Las voces: ElevenLabs → Voice Design; prueba con la frase de prueba y guarda con el nombre que dice la ficha.</li></ol></div>',
+         '<li>Las voces, canciones y efectos están en el otro PDF: <b>EXTRAVIO-2-AUDIO.pdf</b>.</li></ol></div>',
          '<h3>El look de Extravío</h3><p>Todo fotorrealista y de cine, como las tomas de Flow que ya hacemos. La ciudad de Extravío: atardecer ámbar con luces mágicas <b>turquesa</b> (el color de los recuerdos). Cada mundo tiene su propia paleta, para que el público sepa en un segundo dónde está. Nada de personajes con dueño. Comedia y misterio, nunca sangre.</p>']
     resumen = [(p, n, f'refs/extravio/{c}/{a}') for (p, c, a, n, *_ ) in allimg] + [(p, n, f'refs/extravio/{c}/{a}') for (p, c, a, n, *_ ) in LOGOS]
     cuenta = {k: sum(1 for r in resumen if r[0] == k) for k in (A, B, C)}
-    h.append('<h3>Resumen</h3>' + tabla(['Prioridad', 'Imágenes', 'Voces'], [[k, cuenta[k], sum(1 for v in VOCES if v[0] == k)] for k in (A, B, C)]) +
-             f'<p>Además: {len(SONIDOS)} sonidos y músicas (página final). Lo que ya existe y se reutiliza: TOFFEE-viajero.jpg, GALLETA-viajero.jpg, LECHUZA, CALABACÍN, CHUPACABRAS, ALEBRIJE, PACA, CHIHUAHUA y las voces de Toffee, Lechuza, Calabacín y Murciélago. Pendiente de antes: el Conde Murciélago con el medallón liso.</p>')
+    h.append('<h3>Resumen</h3>' + tabla(['Prioridad', 'Imágenes'], [[k, cuenta[k]] for k in (A, B, C)]) +
+             f'<p>Lo que ya existe y se reutiliza: TOFFEE-viajero.jpg, GALLETA-viajero.jpg, LECHUZA, CALABACÍN, CHUPACABRAS, ALEBRIJE, PACA, CHIHUAHUA Pendiente de antes: el Conde Murciélago con el medallón liso.</p>')
     h.append('<h3>Lista de archivos</h3>' + tabla(['Prioridad', 'Qué', 'Guardar como'], [[e(p), e(n), f'<code>{e(r)}</code>'] for p, n, r in sorted(resumen, key=lambda x: x[0])]))
     def bloque(titulo, items):
         h.append(f'<h2>{titulo}</h2>')
@@ -180,18 +227,43 @@ def build():
     bloque('2 · Objetos mágicos', OBJETOS)
     bloque('3 · Mundos (16:9)', MUNDOS)
     bloque('4 · Logo y canal', [(p, c, a, n, para, '—' if i == 0 else 'TOFFEE-viajero.jpg · GALLETA-viajero.jpg', pr) for i, (p, c, a, n, para, pr) in enumerate(LOGOS)])
-    h.append('<h2>5 · Voces (ElevenLabs → Voice Design)</h2><p>Estabilidad 30–45 % para que actúen. Genera varias opciones y quédate con la que más se parezca a la descripción. Las voces ya hechas (Toffee, Lechuza, Calabacín, Murciélago) se siguen usando.</p>')
+    return '<!doctype html><html><head><meta charset="utf-8"><style>' + CSS + 'code{font-size:8.3pt}</style></head><body>' + '\n'.join(h) + '</body></html>'
+
+def build_audio():
+    e = html.escape
+    def tabla(cab, filas):
+        return '<table><tr>' + ''.join(f'<th>{c}</th>' for c in cab) + '</tr>' + ''.join('<tr>' + ''.join(f'<td>{c}</td>' for c in f) + '</tr>' for f in filas) + '</table>'
+    h = ['<h1>EXTRAVÍO · 2 · voces, canciones, música y efectos</h1>',
+         '<p class="sub">Toffee y Galleta · 29-oct-2026 · Todo en ElevenLabs · Guarda cada archivo con el nombre que dice la ficha y mándamelos.</p>',
+         '<div class="box"><b>Cómo usar este PDF</b><ol>'
+         '<li><b>Voces</b> → ElevenLabs › Voices › Voice Design: pega la descripción, prueba con la frase de prueba, genera varias y guarda la mejor con el nombre indicado. Estabilidad 30–45 % para que actúen.</li>'
+         '<li><b>Canciones y música</b> → Eleven Music: pega el estilo (y la letra si tiene). Duración la que dice la ficha.</li>'
+         '<li><b>Efectos</b> → Sound Effects: pega la descripción; genera 2–3 y quédate con el mejor.</li>'
+         '<li>Empieza por la <b>prioridad A</b>. Las voces que ya existen (Toffee, Lechuza, Calabacín, Murciélago) se siguen usando.</li>'
+         '<li>En los capítulos no hay texto en pantalla: la música y los efectos hacen el trabajo. Por eso piden tanto sonido.</li></ol></div>']
+    cnt = lambda L, k: sum(1 for x in L if x[0] == k)
+    h.append('<h3>Resumen</h3>' + tabla(['Prioridad', 'Voces', 'Canciones', 'Música de fondo', 'Efectos'],
+             [[k, cnt(VOCES, k), cnt(CANCIONES, k), cnt(MUSICA, k), cnt(SONIDOS, k)] for k in (A, B)]))
+    h.append('<h2>1 · Voces (Voice Design)</h2>')
     for p, n, nombre, d, prueba in VOCES:
         h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · guardar como «{e(nombre)}»</div><pre>{e(d)}</pre><div class="voz"><b>Frase de prueba:</b> {e(prueba)}</div></div>')
-    h.append('<h2>6 · Música y efectos (ElevenLabs)</h2>' + tabla(['Tipo', 'Qué', 'Dónde', 'Prompt'], [[e(a), e(b), e(c), f'<code>{e(d)}</code>'] for a, b, c, d in SONIDOS]) +
-             '<p>Música: Eleven Music (versión de 1 min o menos para ahorrar créditos). Efectos: Sound Effects. Guarda todo en una carpeta «Extravío sonidos» y me lo mandas.</p>')
+    h.append('<h2>2 · Canciones (Eleven Music)</h2><p>Con letra. Para que la canción sea tuya y se pueda usar en videos que ganan dinero, revisa que tu plan de ElevenLabs incluya uso comercial.</p>')
+    for p, a, n, para, estilo, letra in CANCIONES:
+        h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · <code>{e(a)}</code></div><div class="voz">{e(para)}</div><h4>Estilo</h4><pre>{e(estilo)}</pre><h4>Letra</h4><pre>{e(letra)}</pre></div>')
+    h.append('<h2>3 · Música de fondo (Eleven Music, sin voz)</h2>')
+    for p, a, n, para, pr in MUSICA:
+        h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · <code>{e(a)}</code></div>' + (f'<div class="voz">{e(para)}</div>' if para else '') + f'<pre>{e(pr)}</pre></div>')
+    h.append('<h2>4 · Efectos de sonido (Sound Effects)</h2>')
+    for p, a, n, pr in SONIDOS:
+        h.append(f'<div class="toma"><div class="meta">{e(n)} · <span class="chip">{e(p)}</span> · <code>{e(a)}</code></div><pre>{e(pr)}</pre></div>')
     return '<!doctype html><html><head><meta charset="utf-8"><style>' + CSS + 'code{font-size:8.3pt}</style></head><body>' + '\n'.join(h) + '</body></html>'
 
 if __name__ == '__main__':
-    open(os.path.join(here, 'plan.html'), 'w').write(build())
-    out = os.path.join(here, '..', 'EXTRAVIO-FICHAS.pdf')
-    js = open(os.path.join(here, '..', 'viaje', 'temporada1', 'pdf.js')).read().replace('El viaje de Toffee · Sección 1', 'Extravío · fichas técnicas')
-    open(os.path.join(here, 'pdf.js'), 'w').write(js)
-    subprocess.run(['node', os.path.join(here, 'pdf.js'), os.path.abspath(out)], cwd=here, check=True)
+    js = open(os.path.join(here, '..', 'viaje', 'temporada1', 'pdf.js')).read()
+    for nombre, fn, pie in (('EXTRAVIO-1-IMAGENES.pdf', build_img, 'Extravío · 1 · imágenes'), ('EXTRAVIO-2-AUDIO.pdf', build_audio, 'Extravío · 2 · audio')):
+        open(os.path.join(here, 'plan.html'), 'w').write(fn())
+        open(os.path.join(here, 'pdf.js'), 'w').write(js.replace('Soy Toffee · El viaje de Toffee · Sección 1', pie))
+        out = os.path.abspath(os.path.join(here, '..', nombre))
+        subprocess.run(['node', os.path.join(here, 'pdf.js'), out], cwd=here, check=True)
+        print('ok', out)
     os.remove(os.path.join(here, 'pdf.js')); os.remove(os.path.join(here, 'plan.html'))
-    print('ok', os.path.abspath(out))
