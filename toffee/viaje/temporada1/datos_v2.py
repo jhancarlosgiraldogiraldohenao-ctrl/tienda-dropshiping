@@ -11,7 +11,7 @@ TU = ("Don Turbio, the raccoon from the reference (gray fur, black eye mask, str
       "with the collar up and a small brown hat, with shifty eyes")
 RA = ("Ratoncio, the small gray street mouse from the reference, wearing an old shiny black tuxedo that is a bit too big, "
       "dark round sunglasses and a fake plastic gold star pinned on his chest (no gloves, no shorts)")
-VT_ = "in a raspy, fast, whispering salesman voice"
+VT_ = "in a very hoarse, breathy, wheezy whisper, like a sly old salesman short of breath"
 VR = "in a squeaky, theatrical, fake-glamorous voice"
 
 FICHAS_NUEVAS = [
@@ -21,7 +21,7 @@ FICHAS_NUEVAS = [
   "Character reference sheet, 2x2 grid, 1:1, photorealistic, same character in all 4 views (front, 3/4 left, side, back), plain red-carpet background: a small gray street mouse standing on two legs, wearing an old shiny black tuxedo that is a bit too big, dark round sunglasses and a fake plastic gold star pinned on his chest. Proud but a little sad. No gloves, no shorts. Same tuxedo, sunglasses and star in ALL views. No text."),
 ]
 VOCES_NUEVAS = [
- ("Don Turbio", "Voice Design: «A middle-aged Latin American man, raspy and fast-talking street salesman, whispering like he is sharing a secret, sly and funny, Latin American Spanish, close to the microphone.» Prueba: «Psst… gato. ¿Necesitas un mapa? Tengo de todo. Original. Casi.» Guardar como «Turbio»."),
+ ("Don Turbio", "Voice Design: «A middle-aged Latin American man who always speaks in a very hoarse, breathy, raspy whisper, as if short of breath, with an audible wheezy inhale between phrases, like a sly street salesman sharing a secret in a dark alley; slow and secretive, close to the microphone, Latin American Spanish.» Prueba: «Psst… gato. (inhala con silbido) ¿Necesitas un mapa? Tengo de todo. Original… casi.» Si sale muy limpia, baja la estabilidad a 30 % y súbele «style». Guardar como «Turbio»."),
  ("Ratoncio", "Voice Design: «A small man with a squeaky but theatrical voice pretending to be a glamorous movie star, over-the-top, a bit sad underneath, Latin American Spanish.» Prueba: «Son veinte dólares la foto, gato. Soy una estrella… bueno, lo fui.» Guardar como «Ratoncio»."),
 ]
 

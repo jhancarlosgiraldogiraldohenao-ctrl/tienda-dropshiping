@@ -217,7 +217,7 @@ def page():
     lech = [re.sub(r'^DOÑA LECHUZA[^:]*: «|»$', '', t['quien']) for t in todas() if t['quien'] and t['quien'].startswith('DOÑA LECHUZA')]
     h.append('<h3>Doña Lechuza (voz «Lechuza»)</h3><pre>' + e_("[warm, excited] " + lech[0] + "\n\n[mysterious] " + lech[1] + "\n\n[whispers] " + lech[2]) + '</pre>')
     tur = [re.sub(r'^DON TURBIO[^:]*: «|»$', '', t['quien']) for t in todas() if t['quien'] and t['quien'].startswith('DON TURBIO')]
-    h.append('<h3>Don Turbio (voz «Turbio»)</h3><pre>' + e_("\n\n".join(["[whispers] " + tur[0], "[sly, fast] " + tur[1], "[casual] " + tur[2], "[walking away, amused] " + tur[3]])) + '</pre>')
+    h.append('<h3>Don Turbio (voz «Turbio»)</h3><pre>' + e_("\n\n".join(["[hoarse whisper] " + tur[0], "[wheezing] [raspy whisper, sly] " + tur[1], "[hoarse whisper] " + tur[2], "[wheezy laugh] [raspy whisper] " + tur[3]])) + '</pre>')
     h.append('<h2>Las tomas</h2>')
     for es in ESC:
         h.append(f'<h3>{e_(es["t"])}</h3><p class="sub">{e_(es["f"])}</p>')
