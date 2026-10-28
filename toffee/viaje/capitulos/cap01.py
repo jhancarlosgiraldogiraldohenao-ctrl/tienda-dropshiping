@@ -1,10 +1,18 @@
 # Toffee y Galleta · Temporada 1 · Capítulo 1 (escrito desde cero el 28-oct-2026)
-# Genera web/capitulo-01.html (Artifact) y CAPITULO-01.md. Todo en Omni 1.1 Flash (Google Flow), 9:16.
+# Genera web/capitulo-01.html (Artifact) y CAPITULO-01.md. Todo en Omni 1.1 Flash (Google Flow), 16:9 horizontal (capítulo de YouTube); las tomas marcadas se generan también en 9:16 para los shorts.
 import os, sys, html, re
 here = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(here, '..', 'temporada1'))
 from datos import ST, T, G, TR, LE, CA, END, VL
 from datos_v2 import TU, VT_, GX, FICHAS_NUEVAS, VOCES_NUEVAS
+
+# Capítulo de YouTube = horizontal 16:9. El personaje principal cerca del centro, para poder recortar shorts verticales.
+ST = lambda s: (f"Horizontal 16:9 widescreen, {s} seconds. Photorealistic video, normal lens "
+                "(no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. "
+                "Keep the main character near the center of the frame.")
+VERT = lambda p: p.replace("Horizontal 16:9 widescreen", "Vertical 9:16").replace(" Keep the main character near the center of the frame.", "")
+# Tomas con dos personajes o planos abiertos que no se pueden recortar a vertical: se generan también en 9:16 para los shorts.
+VERTICALES = {12, 17, 18, 19, 20, 24, 32, 34}
 
 BALL = "a small yellow rubber squeaky ball"
 BELLS = "three big shiny golden jingle bells tied together on a red string"
@@ -25,7 +33,7 @@ def esc(t, f): ESC.append(dict(t=t, f=f, tomas=[]))
 N = [0]
 def tk(s, fotos, p, voz=None, quien=None, cont=None, gancho=False, nota=None):
     N[0] += 1
-    ESC[-1]['tomas'].append(dict(n=N[0], s=s, fotos=[F[x] for x in fotos], p=p, voz=voz, quien=quien, cont=cont, gancho=gancho, nota=nota))
+    ESC[-1]['tomas'].append(dict(v=N[0] in VERTICALES, n=N[0], s=s, fotos=[F[x] for x in fotos], p=p, voz=voz, quien=quien, cont=cont, gancho=gancho, nota=nota))
 
 ROOM = "Cozy bedroom at night, warm Christmas lights on the wall, a window with the city lights outside."
 LIVING = "Cozy living room at night with warm Christmas lights, a gray sofa and a big window behind."
@@ -173,12 +181,13 @@ def md():
             if t['cont']: o.append(t['cont'])
             o.append(f"Voz: {t['quien']}" + (f" — {t['voz']}" if t['voz'] else ""))
             o.append("```\n" + t['p'] + "\n```")
+            if t['v']: o.append("También en 9:16 para shorts:\n```\n" + VERT(t['p']) + "\n```")
     return "\n".join(o)
 
 def page():
     e_ = html.escape
     tot = sum(t['s'] for t in todas())
-    h = [f'<h1>Capítulo 1 · {e_(TITULO)}</h1><p class="sub">Toffee y Galleta · Temporada 1: Rumbo al Polo Norte · {len(todas())} tomas ({tot//60}:{tot%60:02d} sin recortar) · Omni 1.1 Flash · 9:16 · escrito desde cero el 28-oct-2026</p>']
+    h = [f'<h1>Capítulo 1 · {e_(TITULO)}</h1><p class="sub">Toffee y Galleta · Temporada 1: Rumbo al Polo Norte · {len(todas())} tomas ({tot//60}:{tot%60:02d} sin recortar) · Omni 1.1 Flash · <b>16:9 horizontal</b> (+ 8 tomas también en 9:16 para shorts) · escrito desde cero el 28-oct-2026</p>']
     h.append('<h2>La historia en 30 segundos</h2><div class="box">'
              '<p><b>Qué quiere Toffee:</b> ir al Polo Norte a pedirle a Santa regalos para los animales de la calle… y, en secreto, hacerse famoso.</p>'
              '<p><b>Qué se lo impide:</b> su trineo es su cama y no vuela. Para hacerlo volar le compra cascabeles «originales, casi» a Don Turbio… pagando con la pelota de Galleta. En pleno vuelo, Galleta (que se quedó sin juguete) muerde los cascabeles y se estrellan.</p>'
@@ -191,12 +200,13 @@ def page():
              '<li><b>El trío de Desencanto:</b> Toffee (orgulloso), Galleta (inocente) y Don Turbio (el provocador que causa el caos).</li>'
              '<li><b>Momentos para compartir:</b> «Es por una buena causa», el rescate en la nieve y «Yo lo tenía calculado».</li>'
              '<li><b>Una sola grosería</b> («desgraciados», el saludo). Ningún día ni fecha al final: «Sígueme para no perderte el próximo episodio».</li>'
+             '<li><b>Formato:</b> el capítulo va en <b>16:9 horizontal</b> (se ve completo en TV, computador y celular girado). En Flow elige el formato 16:9 antes de generar. Las tomas de un solo personaje las recorto a vertical para los shorts; las 8 tomas con dos personajes o planos abiertos (12, 17, 18, 19, 20, 24, 32 y 34) se generan también en 9:16.</li>'
              '<li><b>Producto dentro de la historia:</b> la cama-trineo roja es el vehículo de toda la temporada.</li></ul>')
     h.append('<h2>Antes de generar (en este orden)</h2><ol>'
              '<li><b>Ficha de Don Turbio</b> en Nano Banana Pro (prompt abajo) → guárdala como TURBIO.jpg.</li>'
              '<li><b>Voz de Don Turbio</b> en ElevenLabs → Voice Design (abajo) → guárdala como «Turbio».</li>'
              '<li><b>Voces primero:</b> genera el texto completo de Toffee (2–3 versiones, estabilidad 35–45 %), las frases de Doña Lechuza (voz «Lechuza») y las de Don Turbio. Mándamelas.</li>'
-             '<li><b>Prueba de 3 tomas:</b> genera primero las tomas 1, 20 y 27. Si salen bien, sigues con el resto.</li>'
+             '<li><b>Prueba de 3 tomas:</b> en Flow pon el formato <b>16:9</b> y genera primero las tomas 1, 20 y 27. Si salen bien, sigues con el resto. Al final, las 8 versiones verticales (9:16) para los shorts.</li>'
              '<li>Me mandas las tomas; yo respondo «✓» hasta que digas «listo».</li></ol>')
     nm, foto, desc, pr = FICHAS_NUEVAS[0]
     h.append(f'<h3>Ficha de {e_(nm)} · {foto}</h3><p>{e_(desc)}</p><pre>{e_(pr)}</pre>')
@@ -217,7 +227,9 @@ def page():
             if t['cont']: h.append(f'<div class="cont">{e_(t["cont"])}</div>')
             h.append(f'<div class="voz"><b>{e_(t["quien"] or "")}</b>' + (f' — {e_(t["voz"])}' if t['voz'] else '') + '</div>')
             if t['nota']: h.append(f'<div class="sub">{e_(t["nota"])}</div>')
-            h.append(f'<pre>{e_(t["p"])}</pre></div>')
+            h.append(f'<pre>{e_(t["p"])}</pre>')
+            if t['v']: h.append(f'<div class="cont">📱 También en vertical 9:16 (para los shorts): en Flow cambia el formato a 9:16 y usa este prompt.</div><pre>{e_(VERT(t["p"]))}</pre>')
+            h.append('</div>')
     h.append(f'<h2>Publicación</h2><h3>Título</h3><pre>{e_(TITULO)}</pre><p>Otras opciones: ' + ' · '.join(e_(x) for x in TITULOS_ALT) + '</p>'
              f'<p><b>Texto arriba (primeros 3 s):</b> {e_(ARRIBA[0])} <b>{e_(ARRIBA[1])}</b></p>'
              f'<h3>Miniatura (Nano Banana Pro, con fotos de Toffee, Galleta y el trineo)</h3><pre>{e_(MINIATURA)}</pre><p>{e_(TEXTO_MINI)}</p>'
@@ -225,7 +237,7 @@ def page():
              '<p><b>Al subir:</b> «No, no es para niños» · marcar «contenido alterado o sintético» · lista «Temporada 1: Rumbo al Polo Norte» · pantalla final al capítulo 2. Duración final por encima de 3:15 para que cuente como video largo.</p>')
     h.append('<h2>Shorts que salen de este capítulo</h2><div class="tabla"><table><tr><th>Tipo</th><th>De dónde</th><th>Título</th><th>Nota</th></tr>' +
              ''.join(f'<tr><td>{e_(a)}</td><td>{e_(b)}</td><td>{e_(c)}</td><td>{e_(d)}</td></tr>' for a, b, c, d in SHORTS) + f'</table></div><p>{e_(ENCUESTA)}</p>'
-             '<p>Cada short lo reedito con su propio inicio y final, y lo entrego limpio (sin marca de agua) para YouTube, TikTok e Instagram.</p>')
+             '<p>Cada short lo reedito con su propio inicio y final, en vertical 9:16 (recortando las tomas de un solo personaje y usando las 8 tomas verticales), y lo entrego limpio (sin marca de agua) para YouTube, TikTok e Instagram.</p>')
     return "\n".join(h)
 
 if __name__ == '__main__':

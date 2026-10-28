@@ -127,3 +127,6 @@ Los capítulos 12 en adelante se escriben según lo que pidan los comentarios.
 - **Sin marcas de agua:** nunca bajar un video de TikTok para subirlo a Instagram o YouTube. Instagram resta recomendaciones a las copias idénticas y con marca de agua. Claude entrega cada short limpio.
 - **YouTube:** los Shorts pueden durar hasta 3 min. Los capítulos deben durar más de 3:00 para contar como video largo (horas de vista). Las «series de Shorts» (temporadas y episodios, anunciadas el 23-sep-2026) solo están disponibles para canales del Programa de socios: se usan cuando el canal esté monetizado.
 - **Medir además:** compartidos y guardados, comentarios que hablan de los personajes como personas, suscriptores por capítulo, espectadores que vuelven y cuántos pasan del short al capítulo.
+
+## 10. Formato (29-oct-2026)
+- Capítulos en **16:9 horizontal** (TV, computador y celular girado). Shorts en **9:16**: se recortan de las tomas de un solo personaje; las tomas con dos personajes o planos abiertos se generan también en vertical. Miniaturas en 16:9.
