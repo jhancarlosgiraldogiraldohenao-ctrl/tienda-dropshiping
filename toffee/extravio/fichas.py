@@ -103,8 +103,8 @@ MUNDOS = [
 
 VOCES = [
  (A, "Lucho", "Lucho",
-  "A thin middle-aged Latin American man who speaks in a very hoarse, breathy, raspy whisper, as if short of breath, with an audible wheezy inhale between phrases and a quick nervous giggle; paranoid, fast and secretive, like a street dealer of strange objects; close to the microphone, Latin American Spanish.",
-  "Psst… gato. (inhala con silbido) ¿Buscas una llave? Tengo de todo. Original… casi. Je, je."),
+  "Studio-quality recording, recorded up close on a professional condenser microphone: clean, crisp, full and present audio, no phone or radio filter, no distortion, no background noise, no echo. A thin middle-aged Latin American man with a naturally hoarse, raspy, gravelly voice who speaks quietly and secretively (a raspy low voice, not a full whisper), slightly short of breath with a soft wheezy inhale between phrases and a quick nervous giggle; paranoid and fast like a street dealer of strange objects; Latin American Spanish.",
+  "Psst… gato. ¿Buscas una llave? Tengo de todo. Original… casi. Je, je."),
  (A, "La Gran Polilla", "Polilla",
   "An ancient, elegant female voice, deep and very slow, calm and hypnotic, soft whisper with a light echo as if spoken in a huge empty cathedral, beautiful and menacing at the same time, Latin American Spanish.",
   "Nadie te está buscando, gatito. Quédate. Aquí… nadie recuerda nada."),
