@@ -42,4 +42,4 @@ Valle de Octubre (Halloween eterno) · Tierra de los Recordados (Día de Muertos
 Irreverente y oscuro como Rick and Morty o Mr. Pickles, pero sin sangre ni crueldad: la marca vende a familias con mascotas. Máximo una grosería por capítulo (en voz en off). Nunca humillar personas o grupos ni burlarse del sufrimiento animal. Cada capítulo con corazón al final. 80 % se entiende solo, 20 % continuidad.
 
 ## Formato de producción
-Capítulos de 3:15–5 min en **16:9 horizontal**; shorts en 9:16. Reglas de tomas, voces y edición en `CLAUDE.md`. Fichas de todo lo que hay que generar: `toffee/EXTRAVIO-FICHAS.pdf` (fuente `toffee/extravio/fichas.py`); las imágenes aprobadas se guardan en `toffee/refs/extravio/`.
+Capítulos de 3:15–5 min en **16:9 horizontal**; shorts en 9:16. Reglas de tomas, voces y edición en `CLAUDE.md`. Fichas de todo lo que hay que generar: `toffee/EXTRAVIO-1-IMAGENES.pdf` y `toffee/EXTRAVIO-2-AUDIO.pdf` (fuente `toffee/extravio/fichas.py`); las imágenes aprobadas se guardan en `toffee/refs/extravio/`.
