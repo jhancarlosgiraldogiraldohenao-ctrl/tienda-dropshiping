@@ -38,8 +38,11 @@ Valle de Octubre (Halloween eterno) · Tierra de los Recordados (Día de Muertos
 4. El público elige la siguiente llave.
 5. Cada temporada, una misión nueva.
 
-## Tono y límites
-Irreverente y oscuro como Rick and Morty o Mr. Pickles, pero sin sangre ni crueldad: la marca vende a familias con mascotas. Máximo una grosería por capítulo (en voz en off). Nunca humillar personas o grupos ni burlarse del sufrimiento animal. Cada capítulo con corazón al final. 80 % se entiende solo, 20 % continuidad.
+## Tono y límites (actualizado por Jay el 29-oct-2026: «como una serie real»)
+- Irreverente y adulto como Rick and Morty, South Park o Mr. Pickles, sin sangre ni crueldad. Corazón en cada final. 80 % se entiende solo, 20 % continuidad.
+- **Groserías sí**, con gracia y bien puestas (latinas, que suenen naturales): las fuertes («la puta madre», «hijueputa»…) pocas por capítulo y nunca en los primeros 10 segundos, en el título ni en la miniatura (YouTube les quita anuncios ahí). Opción South Park: tapar la más fuerte con un «piiip», que también da risa.
+- **Referencias y parodias** (como Gnomo Palomo y Rick and Morty): en Extravío caen cosas olvidadas de la cultura (modas, juguetes, memes, personajes de cuentos). Sí: personajes de dominio público (el Gato con Botas del cuento de Perrault dibujado como el cuento clásico, Pinocho de libro, Drácula…) y guiños sin nombre ni diseño idéntico («un gnomo viejo con cámara en el gorro que dice que antes era famoso»). No: copiar el diseño, nombre o voz de personajes con dueño (Disney, DreamWorks, Warner…) ni de creadores reales sin su permiso; nunca caras ni voces de personas reales. Para Gnomo Palomo o El Loco Blanco de verdad: proponerles una colaboración.
+- Nunca humillar personas o grupos ni burlarse del sufrimiento animal.
 
 ## Formato de producción
 Capítulos de 3:15–5 min en **16:9 horizontal**; shorts en 9:16. Reglas de tomas, voces y edición en `CLAUDE.md`. Fichas de todo lo que hay que generar: `toffee/EXTRAVIO-1-IMAGENES.pdf` y `toffee/EXTRAVIO-2-AUDIO.pdf` (fuente `toffee/extravio/fichas.py`); las imágenes aprobadas se guardan en `toffee/refs/extravio/`.
