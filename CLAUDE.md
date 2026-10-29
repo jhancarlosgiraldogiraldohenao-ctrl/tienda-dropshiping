@@ -62,6 +62,7 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - **Ritmo: 1 capítulo diario a las 6 p. m. (Colombia) con 1 de reserva terminado; 2 shorts diarios (12 p. m. y 8 p. m.) del capítulo, los mismos en YouTube Shorts, TikTok e Instagram.**
 - **Edición de los capítulos como una serie de TV (pedido de Jay, 29-oct-2026):** sin subtítulos pegados ni títulos encima, sin texto en pantalla. Gancho → logo corto de EXTRAVÍO con su firma sonora (2–3 s) → capítulo con música y efectos → cierre con la invitación a seguir dicha por Toffee (no escrita) → 15–20 s finales de escena tranquila para las pantallas finales de YouTube. Subtítulos solo como archivos .srt en YouTube (español e inglés). Los **shorts sí van con estilo Gnomo Palomo** (subtítulos de 1–3 palabras, título arriba).
 - **Tono de Extravío (29-oct-2026, manda sobre la regla vieja de «una grosería por episodio»):** groserías sí, pocas fuertes y nunca en los primeros 10 s, título ni miniatura; parodias y referencias a lo olvidado con dominio público o guiños sin nombre ni diseño idéntico; nada de caras o voces de personas reales ni copias de personajes con dueño (ver `toffee/extravio/BIBLIA.md`).
+- **Capítulos de Extravío:** `toffee/extravio/capitulos/exNN.py` (base común en `base.py`) → `web/capitulo-NN.html` (Artifact). Los viejos de `toffee/viaje/capitulos/` (Don Turbio, Polo Norte) quedan descartados.
 - La serie no tiene final escrito. Lucho (ratón adicto al queso) reemplaza a Don Turbio. No más tiempo en la web por ahora.
 
 ## Entregas en link (pedido de Jay, 29-oct-2026)
