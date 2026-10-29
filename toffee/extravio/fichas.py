@@ -181,7 +181,7 @@ SONIDOS = [
 
 LOGOS = [
  (A, "marca", "LOGO-EXTRAVIO.png", "Logo de la serie", "Para el inicio de cada capítulo (1 s), miniaturas y el canal.",
-  "Logo design for an animated fantasy series, transparent-looking plain dark background, 3:2: the word EXTRAVÍO in big hand-crafted letters made of lost objects (a sock, a key, a ball, a remote control, a letter) glowing with turquoise magic light, with a small cream cat nightcap with a pompom hanging from the letter V. Whimsical, cinematic, readable. Only the text EXTRAVÍO."),
+  "Minimal, clean, premium title logo for a fantasy TV series, like the title card of a big streaming show, 3:2, plain solid deep navy background: the single word EXTRAVÍO in elegant bold custom serif capital letters made of polished antique brass, evenly spaced, perfectly centered; the only magic detail is the letter O, which is shaped like an old keyhole glowing softly with turquoise light from inside. Subtle soft shadow, lots of empty space around the word. No objects, no characters, no clutter, no extra text."),
  (A, "marca", "BANNER-CANAL.jpg", "Banner del canal de YouTube", "Portada del canal (2560×1440; lo importante en el centro).", "TOFFEE-viajero.jpg · GALLETA-viajero.jpg",
   ),
 ]
