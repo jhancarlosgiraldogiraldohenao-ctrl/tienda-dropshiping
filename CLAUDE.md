@@ -65,4 +65,5 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - La serie no tiene final escrito. Lucho (ratón adicto al queso) reemplaza a Don Turbio. No más tiempo en la web por ahora.
 
 ## Entregas en link (pedido de Jay, 29-oct-2026)
+- **Prompts nuevos o cambiados: SIEMPRE en el chat, cada uno en su bloque para copiar y pegar** (pedido de Jay, 29-oct-2026). No basta con decir «está en el link».
 - Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.
