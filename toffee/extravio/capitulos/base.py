@@ -7,9 +7,9 @@ from datos import T, G, TR, END, VL  # noqa: E402
 from datos_v2 import GX  # noqa: E402
 
 ST = lambda s: (f"Horizontal 16:9 widescreen, {s} seconds. Photorealistic cinematic video, normal lens "
-                "(no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. "
+                "(no fisheye, no vignette, no dark corners), sharp, natural colors, realistic physics. One continuous shot with no cuts. Full 16:9 frame from edge to edge, no black bars, no letterbox. "
                 "Keep the main character near the center of the frame.")
-VERT = lambda p: p.replace("Horizontal 16:9 widescreen", "Vertical 9:16").replace(" Keep the main character near the center of the frame.", "")
+VERT = lambda p: p.replace("Horizontal 16:9 widescreen", "Vertical 9:16").replace(" Full 16:9 frame from edge to edge, no black bars, no letterbox.", " Full vertical frame, no black bars.").replace(" Keep the main character near the center of the frame.", "")
 
 LU = ("Lucho, the skinny scruffy gray street mouse from the reference standing on two legs (huge dark eye bags, big round tired eyes, "
       "one crooked front tooth, torn black hoodie, small worn backpack full of old keys), holding a chunk of yellow cheese,")

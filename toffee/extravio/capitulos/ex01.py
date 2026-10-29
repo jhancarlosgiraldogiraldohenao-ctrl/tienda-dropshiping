@@ -18,8 +18,8 @@ HILL = ("On top of a hill of lost objects (suitcases, umbrellas, socks, keys, ol
 
 # ---------------- 1 · La vida de un influencer ----------------
 C.esc("La vida de un «influencer»", "INICIO · quién es Toffee y qué quiere")
-C.tk(8, "TS", f"{ST(8)} {HOME} {T} sits proudly on {TR} like a king on a throne and looks straight into the lens. {HT('A ver, mis desgraciados… bienvenidos a otro día en la vida del gato más famoso de internet.')} {END('one cat', 'the cat', 'quiet room')}",
-     voz="[proud, dramatic] A ver, mis desgraciados… bienvenidos a otro día en la vida del gato más famoso de internet.", quien="TOFFEE (a cámara)")
+C.tk(8, "T", f"{ST(8)} {HOME.replace('the red plush sleigh-shaped pet bed', 'a red pet bed with white snowflakes')} {T} sits proudly on the same red pet bed with white snowflakes as in the first frame, like a king on a throne and looks straight into the lens. {HT('A ver, mis desgraciados… bienvenidos a otro día en la vida del gato más famoso de internet.')} {END('one cat', 'the cat', 'quiet room')}",
+     voz="[proud, dramatic] A ver, mis desgraciados… bienvenidos a otro día en la vida del gato más famoso de internet.", quien="TOFFEE (a cámara)", cont="REPETIDA: usar el PRIMER cuadro del video aprobado de la toma 2 como primer cuadro, para que la cama sea la misma.")
 C.tk(6, "TS", f"{ST(6)} {HOME} Same framing: {T} on the sleigh bed, his proud face slowly drops into a flat, annoyed look; he glances away from the lens. {HT('Bueno… casi famoso. Tengo doce seguidores. Y tres son bots.')} {END('one cat', 'the cat', 'quiet room')}",
      voz="[deflated] Bueno… casi famoso. … Tengo doce seguidores. [annoyed] Y tres son bots.", quien="TOFFEE (a cámara)", cont="Usar el último cuadro de la toma 1 como primer cuadro.")
 C.tk(6, "G", f"{ST(6)} {HOME} Low camera on the rug. {G} lies happily chewing {BALL}; he squeaks it twice, then looks up at the camera and tilts his head. {END('one dog', None, 'squeaky toy sounds')}",
@@ -39,7 +39,7 @@ C.tk(6, "T", f"{ST(6)} Doorway of the apartment, rainy street outside. {T} stand
      voz="[firm] Yo no salgo. Yo nunca salgo. [long sigh] …[muttering] Puta madre.", quien="TOFFEE", nota="«Puta madre» va en voz baja, casi entre dientes; es la grosería fuerte del capítulo (más de 10 s después del inicio).")
 C.tk(6, "TG", f"{ST(6)} {STREET} On the left, {T}, wet from the rain, arrives next to the storm drain; on the right, {G} with his head in the drain. A soft turquoise light starts glowing from inside the drain, lighting their faces. {HT('¿Por qué está brillando la alcantarilla?', voice='in a worried male voice')} {END(CG, 'the cat', 'rain and a magical hum')}",
      voz="[suspicious] ¿Por qué está brillando la alcantarilla?", quien="TOFFEE")
-C.tk(6, "TG", f"{ST(6)} {STREET} The turquoise glow from the storm drain grows bright; the cat and the dog slide into the glowing opening and disappear down into the light, the cat screaming. {END(CG, None, 'rain, a magical whoosh and a scream fading down')}",
+C.tk(6, "TG", f"{ST(6)} {STREET} Low camera at the sidewalk curb: the metal storm drain grate glows bright turquoise; the grate fades away like light, and the cat and the dog, standing on it, slide down into the glowing curb opening and disappear into the light, the cat screaming. The street stays the same; no big square hole. {END(CG, None, 'rain, a magical whoosh and a scream fading down')}",
      voz="[screaming, falling] ¡¡AAAAH!!", quien="TOFFEE")
 
 # ---------------- 3 · El Remolino ----------------
@@ -57,9 +57,9 @@ C.tk(6, "TM", f"{ST(6)} {SEA} {T} pops his head out of the balls, spits out a sm
      voz="[amazed, breathless] ¿Qué… es… esto?", quien="TOFFEE (a cámara)")
 C.tk(6, "GM", f"{ST(6)} {SEA} {G} dives happily among the balls looking for his yellow ball, then slowly sinks until only the tip of his tail is visible, and disappears under the balls. {END('one dog', None, 'rattling balls')}",
      voz="[worried] ¿Galleta?", quien="TOFFEE (voz en off)")
-C.tk(8, "TM", f"{ST(8)} {SEA} {T} swims desperately through the balls, pushing them aside with his front paws and digging down, very worried. {HT('¡Galleta! ¡No te mueras, que tú eres el que carga todo!', voice='in a loud, desperate male voice', verb='shouts')} {END('one cat', 'the cat', 'rattling balls')}",
+C.tk(8, "TM", f"{ST(8)} {SEA} {T}, half buried in the sea of balls, swims and digs frantically, pushing balls aside with both front paws so the balls fly around him, very worried, looking down into the balls. {HT('¡Galleta! ¡No te mueras, que tú eres el que carga todo!', voice='in a loud, desperate male voice', verb='shouts')} {END('one cat', 'the cat', 'rattling balls')}",
      voz="[shouting, desperate] ¡Galleta! ¡No te mueras, que tú eres el que carga todo!", quien="TOFFEE")
-C.tk(6, "TGM", f"{ST(6)} {SEA} On the left, {T} pulls {G} up out of the balls by his bandana; the dog comes up happy with {BALL} in his mouth and licks the cat. The cat looks into the lens, embarrassed. {HT('Casi me da algo. Por la pelota. Me preocupaba la pelota.')} {END(CG, 'the cat', 'rattling balls')}",
+C.tk(6, "TGM", f"{ST(6)} {SEA} On the left, {T} pulls {G} up out of the balls by his bandana; the dog comes up happy with {BALL} in his mouth and licks the cat. The cat looks into the lens, embarrassed. The cat wears NO bandana and NO tag; only the dog wears the navy bandana with the gold bone tag. {HT('Casi me da algo. Por la pelota. Me preocupaba la pelota.')} {END(CG, 'the cat', 'rattling balls')}",
      voz="[relieved, then defensive] Casi me da algo. … Por la pelota. Me preocupaba la pelota.", quien="TOFFEE (a cámara)")
 
 # ---------------- 5 · Lucho ----------------
@@ -80,7 +80,7 @@ C.tk(6, "T", f"{ST(6)} {SEA} Close-up of {T}, his confidence slowly breaking, ey
      voz="[confident] Mi humana me está buscando. [unsure] Seguro. [small voice] …Creo.", quien="TOFFEE")
 C.tk(8, "TL", f"{ST(8)} {SEA} On the beach of lost toys: on the right, {LU} taps his backpack of old keys, which jingle; on the left, {T} listens. {HLU('¿Y la llave de tu casa? Para volver, necesitas la llave.')} {END('one cat and one mouse', 'the mouse', 'jingling keys')}",
      voz=None, quien="LUCHO: «¿Y la llave de tu casa? Para volver, necesitas la llave.»")
-C.tk(6, "TL", f"{ST(6)} On the beach of lost toys: on the left, {T} answers flatly; on the right, {LU} grins slowly with his crooked tooth and giggles. {HT('Mi humana la perdió hace tres meses.')} {END('one cat and one mouse', 'the cat', 'distant waves of balls')}",
+C.tk(6, "TLM", f"{ST(6)} {SEA} On the beach of lost toys: on the left, {T} answers flatly; on the right, {LU} grins slowly with his crooked tooth and giggles. {HT('Mi humana la perdió hace tres meses.')} {END('one cat and one mouse', 'the cat', 'distant waves of balls')}",
      voz="[flat] Mi humana la perdió hace tres meses.", quien="TOFFEE · y después LUCHO: «Entonces está aquí. En algún lado. Je, je.»",
      nota="La respuesta de Lucho («Entonces está aquí. En algún lado. Je, je.») va en voz en off sobre su sonrisa.")
 
