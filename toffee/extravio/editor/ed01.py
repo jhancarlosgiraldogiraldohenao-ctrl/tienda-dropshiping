@@ -105,7 +105,7 @@ s = seg('in_18.mp4', 0, 5.5, amb=0.3, pre=1.0);                vo('T14', s, 'boc
 s = seg('in_17.mp4', 2.0, 8.0, amb=0.3);              vo('L2', s, 'boca', ('famoso', 2.89))
 s = seg(img='GATO', dur=2.2)
 s = seg('in_24.mp4', 1.0, 5.6, amb=0.3);              vo('T15', s, 'boca', ('me', 1.84))
-s = seg('in_23.mp4', 3.0, 8.0, amb=0.3);              vo('L3', s, 'boca', ('aquí', 3.24))
+s = seg('in_23.mp4', 1.0, 8.0, amb=0.3);              vo('L3', s, 'boca', ('aquí', 3.24))
 s = seg('in_22.mp4', 0.3, 5.6, amb=0.3);              vo('T16', s, 'boca', ('mi', 0.75))
 s = seg('in_21.mp4', 1.8, 8.0, amb=0.3);              vo('L4', s, 'boca', ('y', 2.74))
 s = seg('r_26.mp4', 0.4, 6.0, crop=True, amb=0.3);    vo('T17', s, 'boca', ('mi', 0.88)); vo('L5', s, 'tras', 'T17')
@@ -145,21 +145,112 @@ for k, i, modo, val in VO:
     PLACED[k + '@' + str(i)] = (v, start, start + (ce - cs))
     PLACED[k] = (v, start, start + (ce - cs))
 items = [(k, i) for k, i, _, _ in VO]
+# ---- Sincronía fina con la boca (pedido de Jay, 29-oct-2026: la sincronía manda) ----
+# Cada palabra de ElevenLabs que se reconoce en la boca de Flow es un ancla. Entre dos anclas la voz se acelera o se
+# frena un poco (rubberband, sin cambiar el tono, entre 0,8 y 1,25) para que cada palabra caiga donde la boca la dice.
+import re, unicodedata
+def norm(w):
+    w = unicodedata.normalize('NFD', w.lower()); w = ''.join(c for c in w if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^a-z0-9]', '', w)
+def stretch(x, dur):
+    if abs(len(x) / SR - dur) < 0.01: return x
+    tempo = (len(x) / SR) / dur
+    r = sp.run(['ffmpeg', '-v', 'error', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af',
+                f'rubberband=tempo={tempo:.4f}:pitchq=quality:formant=preserved:transients=smooth', '-f', 'f32le', '-'],
+               input=x.astype(np.float32).tobytes(), capture_output=True, check=True)
+    return np.frombuffer(r.stdout, np.float32)
+def fit(x, dur):
+    """Lleva el pedazo x a dur segundos: primero alargando o acortando sus silencios, después (si falta) la voz."""
+    fr = int(0.01 * SR); n = len(x) // fr
+    if n < 3: return stretch(x, dur)
+    db = np.array([20 * np.log10(np.sqrt(np.mean(x[q * fr:(q + 1) * fr] ** 2)) + 1e-9) for q in range(n)])
+    sil = db < -40; runs, q = [], 0
+    while q < n:
+        r = q
+        while r < n and sil[r] == sil[q]: r += 1
+        runs.append((bool(sil[q]) and 0 < q and r < n, q * fr, r * fr if r < n else len(x))); q = r
+    S = sum(b - a for s_, a, b in runs if s_) / SR; P = len(x) / SR - S
+    if S > 0 and dur - P >= 0.35 * S: al, be = (dur - P) / S, 1.0
+    else:
+        al = 0.35 if S > 0 else 1.0; be = min(1.35, max(0.8, (dur - al * S) / P)); RAT.append(be)
+    parts = []
+    for s_, a, b in runs:
+        seg_ = x[a:b]
+        if s_:
+            m = int(len(seg_) * al); seg_ = seg_[:m] if m <= len(seg_) else np.concatenate([seg_, np.zeros(m - len(seg_), np.float32)])
+        parts.append(seg_)
+    y = np.concatenate(parts)
+    return stretch(y, len(y) / SR * be) if abs(be - 1) > 0.01 else y
+CHUNKS = {}; ERR = []; RAT = [1.0]; BAD = []
+for k, i, modo, val in VO:
+    if modo != 'boca': continue
+    v, cs, ce = frase(k); x = VOICE[v]; s_ = SEG[i]
+    ew = [w for w in VWORDS[v] if cs <= (w[0] + w[1]) / 2 < ce]
+    fw = [w for w in TK[s_['src']]['words'] if s_['a'] - 0.1 <= w[0] < s_['b']]
+    anc, j = [], 0
+    for w in ew:
+        a_ = norm(w[2])[:4]
+        for jj in range(j, min(j + 4, len(fw))):
+            b_ = norm(fw[jj][2])[:4]
+            if a_ and b_ and (a_.startswith(b_[:3]) or b_.startswith(a_[:3])):
+                t_ = clip_t(i, fw[jj][0])
+                if not anc or (w[0] - anc[-1][0] > 0.08 and t_ - anc[-1][1] > 0.08): anc.append((max(w[0] - 0.02, cs), t_ - 0.02))
+                j = jj + 1; break
+    if not anc: continue
+    pts = [cs] + [e for e, _ in anc] + [ce]
+    st = anc[0][1] - (anc[0][0] - cs)
+    y, f = np.zeros(0, np.float32), int(0.01 * SR)
+    for n in range(len(pts) - 1):
+        a_, b_ = pts[n], pts[n + 1]; cur = st + len(y) / SR
+        if n >= 1: ERR.append(abs(cur - anc[n - 1][1])); BAD.append((k, round(cur - anc[n - 1][1], 2), round(anc[n-1][0], 2)))
+        L = max(0.05, anc[n][1] - cur) if 1 <= n < len(anc) else b_ - a_
+        z = fit(x[int(a_ * SR): int(b_ * SR)], L + (0.01 if len(y) else 0))
+        # si la boca hace una pausa que la voz no tiene: pausa justo antes de la palabra (solo si ahí la voz está casi en silencio)
+        if len(y) and len(z) / SR < L - 0.05 and db_at(x, a_ - 0.01, 0.02) < -30:
+            pad = int((L - len(z) / SR) * SR); fo = int(0.008 * SR)
+            y = y.copy(); y[-fo:] *= np.linspace(1, 0, fo); y = np.concatenate([y, np.zeros(pad, np.float32)])
+        if len(y) >= f and len(z) >= f:
+            z = z.copy(); z[:f] = z[:f] * np.linspace(0, 1, f) + y[-f:] * np.linspace(1, 0, f); y = y[:-f]
+        y = np.concatenate([y, z])
+    CHUNKS[(k, i)] = [st, y]
+    PLACED[k + '@' + str(i)] = PLACED[k] = (v, st, st + len(y) / SR)
+if ERR: print(f'sincronía: {len(ERR)} palabras, desfase medio {np.mean(ERR):.2f} s, 90 % por debajo de {np.percentile(ERR, 90):.2f} s; velocidad {min(RAT):.2f}–{max(RAT):.2f}')
+if os.environ.get('SOLO_SYNC'): print([b for b in BAD if abs(b[1]) > 0.15])
 MODO = {(k, i): m for k, i, m, _ in VO}
-# si dos frases se pisan, la de después se corre (nunca se estira ni se corta la voz)
-prev_end = -1
+# si dos frases se pisan (contando solo donde hay voz, no el silencio de las puntas):
+# una frase en la boca nunca se mueve; se corre la otra (la de voz en off va antes, o la siguiente va después)
+def habla(k, i):
+    if (k, i) in CHUNKS:
+        y = CHUNKS[(k, i)][1]; fr = int(0.01 * SR)
+        e = np.array([np.sqrt(np.mean(y[q:q + fr] ** 2)) for q in range(0, len(y) - fr, fr)]); on = np.where(e > 0.01)[0]
+        return on[0] * 0.01, (on[-1] + 1) * 0.01
+    v, cs, ce = frase(k); ws = [w for w in VWORDS[v] if cs <= (w[0] + w[1]) / 2 < ce]
+    return (ws[0][0] - cs, ws[-1][1] - cs + 0.05) if ws else (0.0, ce - cs)
+def mover(k, i, sh):
+    v, st, en = PLACED[k + '@' + str(i)]; PLACED[k + '@' + str(i)] = PLACED[k] = (v, st + sh, en + sh)
+    if (k, i) in CHUNKS: CHUNKS[(k, i)][0] += sh
+prev = None
 for k, i in sorted(items, key=lambda ki: PLACED[ki[0] + '@' + str(ki[1])][1]):
-    v, st, en = PLACED[k + '@' + str(i)]
-    if st < prev_end + 0.08:
-        sh = prev_end + 0.08 - st
-        print(f'corro {k} {sh:.2f} s' + ('  ⚠ boca' if MODO[(k, i)] == 'boca' and sh > 0.5 else ''))
-        st, en = st + sh, en + sh
-        PLACED[k + '@' + str(i)] = PLACED[k] = (v, st, en)
-    prev_end = en
+    if prev:
+        pk, pi = prev; p_end = PLACED[pk + '@' + str(pi)][1] + habla(pk, pi)[1]
+        s_ini = PLACED[k + '@' + str(i)][1] + habla(k, i)[0]
+        if s_ini < p_end + 0.1:
+            sh = p_end + 0.1 - s_ini
+            if MODO[(k, i)] == 'boca' and MODO[(pk, pi)] != 'boca':
+                print(f'adelanto {pk} {sh:.2f} s (para no mover la boca de {k})'); mover(pk, pi, -sh)
+            else:
+                print(f'corro {k} {sh:.2f} s' + ('  ⚠ boca' if MODO[(k, i)] == 'boca' else '')); mover(k, i, sh)
+    prev = (k, i)
+if os.environ.get('SOLO_SYNC'): sys.exit()
 # ---------------- Audio ----------------
 N = int((TOT + 0.5) * SR)
 VOX = np.zeros(N, np.float32); AMB = np.zeros(N, np.float32)
 for k, i in items:
+    if (k, i) in CHUNKS:
+        st_, x = CHUNKS[(k, i)]; x = x.copy(); f = int(0.005 * SR)
+        x[:f] *= np.linspace(0, 1, f); x[-f:] *= np.linspace(1, 0, f)
+        st = int(st_ * SR); VOX[st: st + len(x)] += x
+        continue
     v, cs, ce = frase(k); x = VOICE[v][int(cs * SR): int(ce * SR)].copy()
     f = int(0.005 * SR); x[:f] *= np.linspace(0, 1, f); x[-f:] *= np.linspace(1, 0, f)
     st = int(PLACED[k + '@' + str(i)][1] * SR); VOX[st: st + len(x)] += x
