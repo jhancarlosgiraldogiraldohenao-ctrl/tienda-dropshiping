@@ -14,7 +14,7 @@
 - Cuando Jay manda videos: «✓» en silencio hasta «listo» (regla de `CLAUDE.md`).
 
 ## Negocio
-- **No se le mete más tiempo a la web** por ahora; lo importante es conseguir público y tráfico. Shopify le cuesta 1 USD/mes hasta noviembre (promoción), así que se mantiene.
+- **La tienda se queda abierta (Jay, 30-oct-2026)** y tiene que convertir el tráfico orgánico de la serie en ventas: Jay necesita facturar ya (≈10 USD en caja), sin pauta, sin empleo ni ventas por fuera. Plan: «Colección Extravío» = productos baratos que los personajes usan en la serie (gorro con pompón para mascotas como el de Toffee, pañoleta azul como la de Galleta, placa de hueso dorada, pelotita, llavero de pompón con huella) + orejeras para la pólvora de diciembre. Validar costos y envíos en TeemDrop antes de montar nada; los cambios en la web van por vista previa.
 - La tienda no se cierra: más adelante puede vender lo que salga en la serie (orejeras en diciembre por la pólvora, cama-trineo, disfraz). A Jay no le convencieron por ahora los productos digitales personalizados ni el merch; se revisará con el tiempo.
 - No vender «cómo hago mis videos» (rompe la magia y expone a Jay).
 - Fuentes futuras: anuncios de YouTube, patrocinios de marcas de mascotas (media kit desde 5–10 mil seguidores), afiliados, membresías, muñecos de Toffee y Galleta cuando haya público.
