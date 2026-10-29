@@ -23,7 +23,8 @@ def HLU(line, verb="says"):
     return f'The mouse {verb} in Latin American Spanish, {VLU}: "{line}" His mouth moves in sync with every word.'
 
 REF = dict(T="TOFFEE-viajero.jpg", G="GALLETA-viajero.jpg", S="REF-trineo-rojo.jpg", L="LUCHO.jpg", R="REMOLINO.jpg",
-           M="MAR-DE-PELOTAS.jpg", C="EXTRAVIO-CIUDAD.jpg", X="PLACA-MAX.jpg", P="POLILLA.jpg", F="FONDO-PANTALLA-FINAL.jpg")
+           M="MAR-DE-PELOTAS.jpg", C="EXTRAVIO-CIUDAD.jpg", X="PLACA-MAX.jpg", P="POLILLA.jpg", F="FONDO-PANTALLA-FINAL.jpg",
+           K="MERCADO-DE-LLAVES.jpg", O="RECUERDO.jpg", Q="CALLE-EXTRAVIO.jpg")
 
 class Cap:
     def __init__(self, n, verticales=()):
