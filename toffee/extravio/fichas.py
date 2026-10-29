@@ -82,7 +82,7 @@ MUNDOS = [
  (B, "mundos", "CIUDAD-CONTROL-REMOTO.jpg", "Ciudad Control Remoto", "Rascacielos de controles; los botones cambian el clima.", "—",
   WORLD("A city skyline where every skyscraper is a giant TV remote control standing upright, glowing rubber buttons as windows, giant buttons on the ground, a sky changing between sunny and stormy in different halves.")),
  (B, "mundos", "MUNDO-SIESTA.jpg", "Mundo Siesta", "Siempre domingo, 3 p. m. Si te duermes, te quedas.", "—",
-  WORLD("A drowsy world where it is always a warm Sunday 3 p.m.: endless hammocks, giant soft pillows as hills, huge sleeping sunflowers bending down, a lazy golden haze, clocks melting softly and stopped at 3:00.")),
+  WORLD("A peaceful dreamlike world where it is always a lazy Sunday at 3 p.m.: soft rolling hills covered with giant fluffy pillows and patchwork quilts like farm fields, hammocks hanging between huge sleepy trees with drooping branches, a tall old clock tower in the middle stopped at exactly 3:00 and leaning slightly as if dozing, sunflowers bowing their heads asleep, a lazy river flowing very slowly, warm golden afternoon light with a soft sleepy haze. Calm, cozy and a little eerie because nothing moves.")),
  (B, "mundos", "CIUDAD-ALGORITMO.jpg", "Ciudad Algoritmo", "Los likes son dinero y gravedad. Sátira de influencers.", "—",
   WORLD("A glossy futuristic city with giant glowing heart-shaped like symbols floating in the air, buildings shaped like ring lights, pink and white neon, a stage with a red carpet, and in the distance some buildings slowly floating away into the sky. No readable text, no phones.")),
  (B, "mundos", "MUNDO-AL-REVES.jpg", "El Mundo al Revés", "Los perros son los dueños; Galleta es el jefe.", "—",
