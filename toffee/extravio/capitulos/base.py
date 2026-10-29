@@ -15,6 +15,10 @@ LU = ("Lucho, the skinny scruffy gray street mouse from the reference standing o
       "one crooked front tooth, torn black hoodie, small worn backpack full of old keys), holding a chunk of yellow cheese,")
 BALL = "a small yellow rubber squeaky ball"
 VTO = "in a deep, slow, sleepy male voice"
+# Voz de Toffee para que la haga Flow (prueba aprobada por Jay el 29-oct-2026; sale de su descripción de ElevenLabs)
+VOZ_TOFFEE = ("with a light, soft and sweet young adult male voice (a 20-year-old young man, light tenor): warm, round and cozy, sleepy and lazy, "
+              "slow pace with soft sighs, clear and slightly formal diction, subtle smug charm and dry humor, effortless and sincere. "
+              "Clearly an adult young man, not a child, not a woman, not falsetto, not squeaky, not cartoonish")
 VLU = "in a hoarse, raspy, quiet male voice, slightly short of breath"
 
 def HT(line, voice=VTO, verb="says"):
