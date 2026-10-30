@@ -72,7 +72,7 @@ nuevo('P09', 0.2, 4.6); viejo('R13', 'in_15', 0.0, 5.0, amb=0.8); viejo('R14', '
 viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.8, 7.2, boca='T16'); viejo('R17', 'r_17', 0.5, 6.0, boca='T17', crop=True)
 esc('lucho')
 nuevo('P10', 2.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 5.5, boca='T20', pre=0.0)
-nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 1.0, 5.6, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
+nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 1.0, 5.6, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 viejo('R24', 'in_22', 0.3, 5.6, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15')
 esc('ciudad', 'fade', 0.8)
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.5, 6.0, boca='T28', crop=True); viejo('R29', 'in_26', 1.5, 6.0, boca='L29')
@@ -162,22 +162,23 @@ MIX.astype(np.float32).tofile('_mix.f32')
 # ---------------- Video ----------------
 BASE = 'scale=1920:1080:flags=lanczos,setsar=1,fps=24,format=yuv420p'
 def logo_clip(out, d):
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-loop', '1', '-t', str(d), '-i', f'{REFS}/marca/LOGO-EXTRAVIO.jpg', '-vf',
-            f"scale=1080:1080,pad=1920:1080:420:0:color=0x0B1530,zoompan=z='1+0.0004*on':d={int(d * 24)}:s=1920x1080:fps=24,{BASE}",
-            '-c:v', 'libx264', '-crf', '16', out], check=True)
+    n = int(round(d * 24))
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'{REFS}/marca/LOGO-EXTRAVIO.jpg', '-vf',
+            f"crop=iw:iw*9/16:0:(ih-iw*9/16)/2,scale=1920:1080,zoompan=z='1+0.0006*on':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d={n}:s=1920x1080:fps=24,{BASE}",
+            '-frames:v', str(n), '-c:v', 'libx264', '-crf', '16', out], check=True)
 def burbuja():
     """Burbuja de pensamiento con el Gato con Botas (PNG con transparencia, 3 bolitas + círculo)."""
     W_, H_ = 1920, 1080; img = Image.open(f'{REFS}/objetos/GATO-CON-BOTAS.jpg').convert('RGB')
-    D = 380; s_ = min(img.size); img = img.crop(((img.width - s_) // 2, (img.height - s_) // 2, (img.width + s_) // 2, (img.height + s_) // 2)).resize((D, D))
+    D = 330; s_ = min(img.size); img = img.crop(((img.width - s_) // 2, (img.height - s_) // 2, (img.width + s_) // 2, (img.height + s_) // 2)).resize((D, D))
     frames = []
     for f in range(int(2.6 * 24)):
         t = f / 24; c = Image.new('RGBA', (W_, H_), (0, 0, 0, 0)); d = ImageDraw.Draw(c)
-        for j, (x, y, r) in enumerate([(1235, 330, 14), (1290, 270, 22), (1360, 200, 30)]):
+        for j, (x, y, r) in enumerate([(1395, 430, 14), (1450, 365, 20), (1515, 295, 27)]):
             if t > 0.12 * j: d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 255, 255, 235))
         if t > 0.4:
             k = min(1.0, (t - 0.4) / 0.18) * (1.06 if t < 0.66 else 1.0); dd = int(D * k)
             if dd > 4:
-                cx, cy = 1560, 210; m = Image.new('L', (dd, dd), 0); ImageDraw.Draw(m).ellipse([0, 0, dd, dd], fill=255)
+                cx, cy = 1665, 185; m = Image.new('L', (dd, dd), 0); ImageDraw.Draw(m).ellipse([0, 0, dd, dd], fill=255)
                 ring = int(10 * k); d.ellipse([cx - dd // 2 - ring, cy - dd // 2 - ring, cx + dd // 2 + ring, cy + dd // 2 + ring], fill=(255, 255, 255, 240))
                 c.paste(img.resize((dd, dd)), (cx - dd // 2, cy - dd // 2), m)
         if t > 2.3: c.putalpha(Image.eval(c.getchannel('A'), lambda v: int(v * max(0, (2.6 - t) / 0.3))))
@@ -203,7 +204,8 @@ def clip(i, s, out):
         cmd += ['-vf', ','.join(vf)]
     cmd += ['-an', '-frames:v', str(int(round(s['len'] * 24))), '-c:v', 'libx264', '-crf', '16', out]
     sp.run(cmd, check=True)
-for i, s in enumerate(SEG): clip(i, s, f'_v/{i:02d}.mp4')
+for i, s in enumerate(SEG):
+    if not (os.environ.get('REUSAR') and os.path.exists(f'_v/{i:02d}.mp4')): clip(i, s, f'_v/{i:02d}.mp4')
 # escenas: cortes secos adentro; entre escenas, transición
 escenas = []
 for k, (e, nx) in enumerate(zip(ESC[:-1], ESC[1:])):
@@ -211,14 +213,14 @@ for k, (e, nx) in enumerate(zip(ESC[:-1], ESC[1:])):
     open('_v/l.txt', 'w').write(''.join(f"file '{i:02d}.mp4'\n" for i in range(e['start'], nx['start'])))
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', '_v/l.txt', '-c', 'copy', out], check=True)
     escenas.append((out, sum(SEG[i]['len'] for i in range(e['start'], nx['start'])), e.get('trans'), e.get('td', 0)))
-inputs, fc, acc, last = [], [], 0.0, '[0:v]'
+inputs, fc, acc, last = [], [], 0.0, '[v0]'
 for k, (f, L, tr, td) in enumerate(escenas):
-    inputs += ['-i', f]
+    inputs += ['-i', f]; fc.append(f'[{k}:v]setpts=PTS-STARTPTS,fps=24,settb=1/24,format=yuv420p[v{k}]')
     if k == 0: acc = L; continue
     if tr:
-        fc.append(f"{last}[{k}:v]xfade=transition={tr}:duration={td}:offset={acc - td:.3f}[x{k}]"); acc += L - td
+        fc.append(f"{last}[v{k}]xfade=transition={tr}:duration={td}:offset={acc - td:.3f},settb=1/24[x{k}]"); acc += L - td
     else:
-        fc.append(f"{last}[{k}:v]concat=n=2:v=1:a=0[x{k}]"); acc += L
+        fc.append(f"{last}[v{k}]concat=n=2:v=1:a=0,settb=1/24[x{k}]"); acc += L
     last = f'[x{k}]'
 sp.run(['ffmpeg', '-v', 'error', '-y'] + inputs + ['-filter_complex', ';'.join(fc), '-map', last, '-c:v', 'libx264', '-crf', '17', '-pix_fmt', 'yuv420p', '_video.mp4'], check=True)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', '_video.mp4', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '_mix.f32', '-map', '0:v', '-map', '1:a',
@@ -227,7 +229,7 @@ import re
 def lufs(f):
     o = sp.run(['ffmpeg', '-hide_banner', '-i', f, '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True).stderr
     return float(re.findall(r'I:\s+(-?[\d.]+) LUFS', o)[-1])
-g = -14 - lufs('_mux.mp4') + 0.7
+g = -14 - lufs('_mux.mp4') + 1.3
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', '_mux.mp4', '-c:v', 'copy', '-af',
         f'aresample=192000,volume={g:.2f}dB,alimiter=limit=0.82:attack=1:release=60:level=disabled,aresample=48000',
         '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', 'EXTRAVIO-CAP01-PILOTO.mp4'], check=True)
