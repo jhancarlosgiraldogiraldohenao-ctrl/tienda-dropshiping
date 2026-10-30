@@ -52,6 +52,10 @@ SHOPOUT = "In front of Lucho's key shop (like the shop front reference), in the 
 SHOPIN = ("Inside Lucho's key shop (like the shop interior reference): thousands of old keys hanging from the ceiling on strings like rain, "
           "a wooden counter, shelves of glass jars with glowing turquoise memory spheres, a warm oil lamp, a rolling metal shutter at the front.")
 NIGHT = "It is night now: dark blue light, lanterns off, only the faint turquoise glow of the memory jars."
+STREETN = ("The main street of the city of lost things at night (like the street reference): crooked houses and shops built from stacked suitcases, "
+           "books and shoes, round doors all closed, shop signs made of giant objects (no words), dark blue light, the paper lanterns are off, "
+           "only faint turquoise glows behind closed windows.")
+SHOPOUTN = "In front of Lucho's key shop (like the shop front reference), in the market street at night: dark blue light, the paper lanterns are off, the shutter closed."
 ROOF = ("On the flat roof of Lucho's shop at night (like the rooftop reference): chimneys made of old teapots, a clothesline of single socks, "
         "the glowing turquoise city spread below, lost objects slowly falling like snow.")
 BEAM = "a wide beam of soft turquoise light comes down from the dark sky, sweeping slowly over the cobblestones, with the huge shadow of moth wings gliding over the ground"
@@ -157,7 +161,7 @@ nueva(6, "TQH", "Cámara en mano estilo vlog (caminando de espaldas)",
       f"{S(6)} {STREETX} Handheld camera with natural slight shake: {T} walks backwards down the busy street facing the camera like a vlogger, excited, while behind him {UMB} crosses slowly and {TV} waves its little legs. {TT('Esto es contenido. Esto es puro contenido.', 'excitedly and fast')} {END('one cat', 'a lively street murmur', extras=True)}",
       "TOFFEE: «Esto es contenido. Esto es puro contenido.»")
 nueva(6, "GQH", "Plano general cómico (el mundo reacciona)",
-      f"{S(6)} {STREETX} In front of a tiny sock shop with a giant sock hanging as its sign: {G} snatches a striped sock from the display table and runs off happily with it in his mouth; {BEAR}, the shopkeeper, comes out of the door and shakes his tiny paw angrily at the dog. {END('one dog', 'a lively street murmur and a little bell', cat=False, dog=True, extras=True)}",
+      f"{S(6)} {STREETX} In front of a tiny sock shop with a giant sock hanging as its sign: {G} snatches a striped sock from the display table and runs off happily with it in his mouth; {BEAR} comes out of the door and shakes his tiny paw angrily at the dog. {END('one dog', 'a lively street murmur and a little bell', cat=False, dog=True, extras=True)}",
       "(sin voz: Galleta se roba una media)")
 nueva(6, "LA", "Contrapicado + cortina metálica",
       f"{S(6)} {SHOPOUT} Low angle looking up at {L} in front of his narrow shop, under a giant rusty key hanging as its sign. He grabs the rolling metal shutter and pulls it up with a loud rattle, then turns to the camera with a proud salesman smile. {LL('Bienvenidos a mi negocio.', 'proudly')} {END('one mouse', 'a rattling shutter and a market murmur', cat=False)}",
@@ -194,13 +198,13 @@ nueva(6, "TD", "Primer plano (holandés)",
       f"{S(6)} {SHOPIN} {NIGHT} Dutch angle, the camera tilted about 15 degrees. Close-up of {T} under the counter watching the dog leave, eyes wide; he whispers in panic, then sighs, closes his eyes for a second and crawls toward the flap. {TT('Galleta… no. Yo no corro. Yo nunca corro.', 'in a panicked whisper')} {END('one cat', 'deep slow wing flaps outside')}",
       "TOFFEE (susurro): «Galleta… no. Yo no corro. Yo nunca corro.»", nota="Callback de «Yo no salgo» → corte seco a P30.")
 nueva(6, "TQ", "Snorricam (pánico)",
-      f"{S(6)} {STREETX} {NIGHT} Snorricam shot: the camera is rigidly fixed in front of the face of {T} and runs with him; he sprints down the dark empty street as fast as he can, his face locked in the center of the frame, while the dark houses and the turquoise light behind him shake and swing wildly. {END('one cat', 'running paws, panting and deep wing flaps')}",
+      f"{S(6)} {STREETN} Snorricam shot: the camera is rigidly fixed in front of the face of {T} and runs with him; he sprints down the dark empty street as fast as he can, his face locked in the center of the frame, while the dark houses and the turquoise light behind him shake and swing wildly. {END('one cat', 'running paws, panting and deep wing flaps')}",
       "(sin voz: Toffee corre… sí corre)")
 nueva(6, "TGOQ", "Picado general",
-      f"{S(6)} {STREETX} {NIGHT} High angle wide shot of the empty street: in the middle, {G} happily pushes the glowing memory sphere with his nose; {BEAM}, getting closer to him. From the left, {T} sprints toward the dog. {END('one cat and one dog', 'wing flaps getting louder', dog=True)}",
+      f"{S(6)} {STREETN} High angle wide shot of the empty street: in the middle, {G} happily pushes the glowing memory sphere with his nose; {BEAM}, getting closer to him. From the left, {T} sprints toward the dog. {END('one cat and one dog', 'wing flaps getting louder', dog=True)}",
       "(sin voz)")
 nueva(6, "TGOQ", "Plano general con corte en la acción",
-      f"{S(6)} {STREETX} {NIGHT} {T} grabs {G} by the navy bandana with his front paw and pulls him behind an overturned wooden cart full of lost umbrellas at the side of the street. A moment later the turquoise light beam passes over the spot where the dog was, and the glowing memory sphere floats up into the light and disappears into the sky. The cat wears NO bandana and NO tag. {END('one cat and one dog', 'a loud whoosh and deep wing flaps', dog=True)}",
+      f"{S(6)} {STREETN} {T} grabs {G} by the navy bandana with his front paw and pulls him behind an overturned wooden cart full of lost umbrellas at the side of the street. A moment later the turquoise light beam passes over the spot where the dog was, and the glowing memory sphere floats up into the light and disappears into the sky. The cat wears NO bandana and NO tag. {END('one cat and one dog', 'a loud whoosh and deep wing flaps', dog=True)}",
       "(sin voz: el rescate)", cont="Usar el último cuadro de P31 como primer cuadro.")
 nueva(6, "TGQ", "Primer plano de dos (escondidos)",
       f"{S(6)} Behind an overturned wooden cart of lost umbrellas, at night, close two-shot: on the left {T} holds one front paw over the mouth of {G}, on the right; both have huge eyes, frozen. Turquoise light slides slowly over the umbrellas and their faces, then darkness and silence. The cat wears NO bandana and NO tag. {END('one cat and one dog', 'deep wing flaps fading away', dog=True)}",
@@ -209,7 +213,7 @@ nueva(6, "TGQ", "Mismo plano (remate)",
       f"{S(6)} Behind the overturned cart of lost umbrellas, at night, same close two-shot, dim turquoise light: on the left {T}, still shaking, looks at {G} and whispers furiously; the dog licks the cat's face. The cat wears NO bandana and NO tag. {TT('Si me vuelves a hacer eso, te vendo. A Lucho.', 'in a furious whisper')} {END('one cat and one dog', 'a quiet night', dog=True)}",
       "TOFFEE (susurro): «Si me vuelves a hacer eso, te vendo. A Lucho.»", cont="Usar el último cuadro de P33 como primer cuadro.")
 nueva(6, "LA", "Plano medio (remate cómico)",
-      f"{S(6)} {SHOPOUT} {NIGHT} {L} pokes his head out of the small pet flap at the bottom of his shop's metal shutter, looking at the camera, surprised, then forces a big fake smile with his crooked tooth. {LL('¿Siguen vivos? Qué decepción… digo, ¡qué alegría! Je, je.', 'nervously')} {END('one mouse', 'a quiet night', cat=False)}",
+      f"{S(6)} {SHOPOUTN} {L} pokes his head out of the small pet flap at the bottom of his shop's metal shutter, looking at the camera, surprised, then forces a big fake smile with his crooked tooth. {LL('¿Siguen vivos? Qué decepción… digo, ¡qué alegría! Je, je.', 'nervously')} {END('one mouse', 'a quiet night', cat=False)}",
       "LUCHO: «¿Siguen vivos? Qué decepción… digo, ¡qué alegría!»")
 
 esc("9 · La azotea y Max", "RECOMPENSA + CONTINUACIÓN · a salvo… y el misterio")
