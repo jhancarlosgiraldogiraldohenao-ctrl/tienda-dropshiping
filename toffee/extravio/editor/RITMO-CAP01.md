@@ -25,6 +25,6 @@ Archivo = nombre con que Jay guarda cada voz. «s» = lo que dura la frase en la
 | T24 | Toffee | 4,2 | [confident] Miii humana me está buscando… [short pause] [unsure] Seguro, creo. |
 | L25 | Lucho | 4,4 | [raspy] ¿Y la llave de tu casa?… [long pause] Para volver… [short pause] necesitas la llave. |
 | T26 | Toffee | 2,7 | [flat] Miii humana la perdió hace tres meses. |
-| T28 | Toffee | 3,9 | [whispers, ambitious] Voy a ser el gato más famoso del multiverso. |
+| T28 | Toffee | 3,9 | [whispers, ambitious] Vooooy a ser el gato más famoso del multiverso. |
 | L29 | Lucho | 2,7 | [tired, sarcastic] Primero sobrevive a esta noche, Botas. |
 | T33 | Toffee | 2,7 | [confused] ¿Maaax?… [short pause] [frowning] ¿Quién carajos es Max? |
