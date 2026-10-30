@@ -230,6 +230,25 @@ nueva(10, "TGLZ", "Plano general fijo (pantalla final)",
       f"{S(10)} {ROOF} Calm wide shot from behind, slightly higher: {L} asleep curled around his cheese, {T} and {G} sitting side by side at the edge of the roof, the glowing city below and lost objects falling like snow. Lots of empty sky in the upper half. {END('one cat, one dog and one mouse', 'soft magical wind', dog=True)}",
       "(Toffee en off: «¿Ustedes saben quién es Max? Los leo. Sígueme para no perderte el próximo episodio.»)", nota="Pantalla final de YouTube: 15–20 s (congelo el final si hace falta).")
 
+
+# ---------------- Puentes (30-oct-2026): tomas que unen escenas para que el capítulo fluya como una serie ----------------
+esc("Puentes · tomas que unen escenas", "SECUENCIA · cada una va entre dos tomas que ya existen; así no hay saltos de lugar")
+nueva(6, "TS", "Plano general (une R03/P04 con R04)",
+      f"{S(6)} {HOME} Wide shot: {T} hops down from the red sleigh-shaped pet bed, walks slowly and lazily across the rug toward the front door on the right, and sits down next to the slightly open door, looking at it with a judging face. {END('one cat', 'a quiet room and soft rain outside')}",
+      "(sin voz: Toffee va hasta la puerta)", cont="Usar el último cuadro de la toma R02 (Toffee en el trineo) como primer cuadro.", nota="Va justo antes de R04 (la puerta entreabierta).")
+nueva(8, "TGLM", "Plano general siguiendo de espaldas (une P15 con P16)",
+      f"{S(8)} {SEA} Wide tracking shot from behind: the three walk away from the beach of lost toys and climb a gentle slope made of lost objects (suitcases, umbrellas, old toys) toward the top of a hill at sunset: in front {L}, then {T}, then {G}. Kites and umbrellas fly in the warm sky. {END('one cat, one dog and one mouse', 'soft wind and footsteps on objects', dog=True)}",
+      "(sin voz: suben la colina)", nota="Va después de P15 y antes de P16 (la grúa que revela la ciudad).")
+nueva(8, "TGLV", "Plano general de frente (une R29 con P17)",
+      f"{S(8)} At dusk, a wide path made of stacked old suitcases goes down from the hill into the city of lost things (like the city reference) and passes under a tall arch made of two giant crossed keys, the entrance to the city. Wide shot from the front: {L}, {T} and {G} walk down the path toward the camera and pass under the arch, the busy city glowing behind them. {END('one cat, one dog and one mouse', 'a distant lively murmur and footsteps', dog=True, extras=True)}",
+      "(sin voz: entran a la ciudad)", nota="Va después de R29 y antes de P17 (la calle viva).")
+nueva(6, "TGLA", "Plano general de espaldas (une P20 con P21)",
+      f"{S(6)} {SHOPOUT} {L} holds the rolling metal shutter up; the camera follows from behind as {T} and {G} walk under it into the shop, looking up at the thousands of keys hanging inside. {END('one cat, one dog and one mouse', 'a rattling shutter and jingling keys', dog=True)}",
+      "(sin voz: entran al local)", cont="Usar el último cuadro de P20 como primer cuadro.", nota="Va después de P20 y antes de P21.")
+nueva(6, "TGLZ", "Contrapicado desde la azotea (une P35 con P36)",
+      f"{S(6)} {ROOF} Low camera on the roof looking down into a square open hatch in the roof floor: {L} climbs up a narrow wooden ladder and out through the hatch, then {T} squeezes out after him, then {G} jumps out; they shake off the dust and walk toward the edge of the roof. {END('one cat, one dog and one mouse', 'creaking wood and soft magical wind', dog=True)}",
+      "(sin voz: suben a la azotea)", nota="Va después de P35 y antes de P36.")
+
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
  ("CIUDAD-VIVA", "16:9 · referencia: EXTRAVIO-CIUDAD",

@@ -7,7 +7,7 @@ import os, sys, json, glob, subprocess as sp
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from pegar import pegar, load, SR, norm
+from pegar import pegar, pegar_suave, por_frases, load, SR, norm
 
 P, E, RT = [os.path.abspath(x) for x in sys.argv[1:4]]
 REFS = '/home/user/tienda-dropshiping/toffee/refs/extravio'
@@ -114,12 +114,13 @@ for i, s in enumerate(SEG):
     if s['boca']:
         x = nivel(load(VPATH[s['boca']])); ew = vwords(VPATH[s['boca']])
         fw = [[a - s['a'], b - s['a'], w] for a, b, w in s['fw'] if s['a'] - 0.3 <= a < s['b']]
+        # pegado suave: solo se ajustan silencios reales y la velocidad entre 0,9 y 1,15 (sin pausas metidas en medio de palabras)
         try:
-            y, err = pegar(x, ew, fw, s['len'] + 2.5)
-        except IndexError:   # no se reconoció ninguna palabra: primera palabra con primera palabra
+            y, err = pegar_suave(x, ew, fw, s['len'] + 2.5, lo=0.75, hi=1.35)
+        except IndexError:
             y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, fw[0][0] - ew[0][0]) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
-        ERR += [abs(e) for e in err]
         poner(y, T0[i] + s['pre'])
+        ERR += [abs(e) for e in err]
     for k, at in s['off']:
         if k == 'L36': x = nivel(load(voz('17_23')))
         else: a, b = OFF[k]; x = nivel(OLD[int(a * SR): int(b * SR)])
@@ -166,8 +167,9 @@ MUS = (music(A3, 0, ti('LOGO') + 0.3, fade=0.3)
        + music(A1, ti('P36'), TOT, ss=3, fade=4.0))
 env = np.convolve(np.abs(VOX), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')
 MUS *= (0.40 - 0.28 * np.clip(env / 0.02, 0, 1))
-MIX = np.clip(VOX + AMB * 0.8 + MUS, -1, 1)
+MIX = np.clip(VOX + AMB * 1.0, -1, 1)   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
+if os.environ.get('SOLO_AUDIO'): sys.exit()
 
 # ---------------- Video ----------------
 BASE = 'scale=1920:1080:flags=lanczos,setsar=1,fps=24,format=yuv420p'
