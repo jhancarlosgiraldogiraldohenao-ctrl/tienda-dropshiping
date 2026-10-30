@@ -88,7 +88,7 @@ reusar(1, "Toffee en el trineo: «A ver, mis desgraciados…»", "Plano general 
 reusar(2, "«Bueno… casi famoso. Tengo doce seguidores…»", "Mismo plano", nota="En la edición: acercamiento lento a su cara en «Y tres son bots» y 1 s de silencio incómodo (deadpan).")
 reusar(3, "Galleta mordiendo la pelota en el tapete (voz en off de Toffee: «Él es Galleta…»)", "Ras de suelo")
 nueva(5, "", "Plano detalle + acercamiento lento",
-      f"{S(5)} {HOME} Extreme close-up insert of an empty wooden key hook on the wall next to the front door, with a faint dusty outline where a set of keys used to hang. Soft rainy daylight. The camera slowly pushes in toward the empty hook. Shallow depth of field. No animals visible. No text, no people, no music; only soft rain.",
+      f"{S(5)} {HOME} Extreme close-up insert of an empty wooden key hook on the wall next to the front door, with a faint dusty outline where a set of keys used to hang. The hook is completely EMPTY: no keys, no keychain, nothing hangs on it. Soft rainy daylight. The camera slowly pushes in toward the empty hook. Shallow depth of field. No animals visible. No text, no people, no music; only soft rain.",
       "(Toffee en off: «Mi humana perdió las llaves de la casa hace tres meses…»)", nota="Siembra la meta del capítulo: la llave de casa.")
 reusar(4, "Toffee junto a la puerta entreabierta: «Desde entonces deja la puerta… así.»", "Plano general")
 
@@ -169,7 +169,7 @@ nueva(6, "LA", "Contrapicado + cortina metálica",
 
 esc("7 · El local de Lucho", "DESARROLLO · la meta: encontrar la llave de casa entre millones")
 nueva(8, "TGLD", "Travelling hacia adelante entre capas (llaves en primer plano)",
-      f"{S(8)} {SHOPIN} The camera dollies forward slowly between curtains of hanging keys that pass close to the lens in the foreground; in the midground {T} and {G} walk in, looking up, amazed; in the background {L} stands behind the counter. {LL('Aquí están todas las llaves que se han perdido en la historia.', 'proudly')} {END('one cat, one dog and one mouse', 'softly jingling keys', dog=True)}",
+      f"{S(8)} {SHOPIN} The camera dollies forward slowly between curtains of hanging keys that pass close to the lens in the foreground; in the midground {T} and {G} walk in, looking up, amazed; in the background {L} stands behind the counter. Lucho wears NO hat and NO camera; only the cat wears the navy nightcap with the camera. {LL('Aquí están todas las llaves que se han perdido en la historia.', 'proudly')} {END('one cat, one dog and one mouse', 'softly jingling keys', dog=True)}",
       "LUCHO: «Aquí están todas las llaves que se han perdido en la historia.»")
 nueva(6, "TD", "Dolly zoom (vértigo) · el único del capítulo",
       f"{S(6)} {SHOPIN} Dolly zoom (vertigo effect) on {T} standing in the middle of the shop: the camera moves backward while zooming in, so the cat stays the same size while the endless curtains of hanging keys behind him stretch away into infinity. His face falls, then he looks into the lens. {TT('¿Y cuál es la mía?', 'in a flat, defeated way')} {END('one cat', 'softly jingling keys')}",
@@ -195,7 +195,7 @@ nueva(6, "GOD", "Primer plano + encuadre dentro del encuadre",
       f"{S(6)} {SHOPIN} {NIGHT} Close-up of {G} lying under the counter, looking through a small square pet flap at the bottom of the metal shutter: outside on the cobblestones, a glowing turquoise memory sphere (like the sphere reference) rolls slowly past, like a ball. The dog's ears go up, {GX['desastre']}, and he squeezes out through the flap. {END('one dog', 'a soft magical hum', cat=False, dog=True)}",
       "(sin voz: Galleta ve el recuerdo como si fuera una pelota)")
 nueva(6, "TD", "Primer plano (holandés)",
-      f"{S(6)} {SHOPIN} {NIGHT} Dutch angle, the camera tilted about 15 degrees. Close-up of {T} under the counter watching the dog leave, eyes wide; he whispers in panic, then sighs, closes his eyes for a second and crawls toward the flap. {TT('Galleta… no. Yo no corro. Yo nunca corro.', 'in a panicked whisper')} {END('one cat', 'deep slow wing flaps outside')}",
+      f"{S(6)} {SHOPIN} {NIGHT} Dutch angle, the camera tilted about 15 degrees. Close-up of {T} under the counter watching the dog leave, eyes wide; he whispers in panic, then sighs, closes his eyes for a second and crawls toward the flap. His fur stays warm cream-caramel, never white or gray, even in the blue night light. {TT('Galleta… no. Yo no corro. Yo nunca corro.', 'in a panicked whisper')} {END('one cat', 'deep slow wing flaps outside')}",
       "TOFFEE (susurro): «Galleta… no. Yo no corro. Yo nunca corro.»", nota="Callback de «Yo no salgo» → corte seco a P30.")
 nueva(6, "TQ", "Snorricam (pánico)",
       f"{S(6)} {STREETN} Snorricam shot: the camera is rigidly fixed in front of the face of {T} and runs with him; he sprints down the dark empty street as fast as he can, his face locked in the center of the frame, while the dark houses and the turquoise light behind him shake and swing wildly. {END('one cat', 'running paws, panting and deep wing flaps')}",
