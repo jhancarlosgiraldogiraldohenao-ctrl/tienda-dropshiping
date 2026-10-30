@@ -28,10 +28,10 @@ def fwords(k):
     s = SRC[k]
     if s.startswith(f'{P}/rep/'): return VW['rep/' + os.path.basename(s)]
     return W[os.path.basename(s)]
-def voz(stamp): return glob.glob(f'{P}/voces/*T18_{stamp}*.mp3')[0]
+def voz(stamp): return glob.glob(f'{P}/voces/*T{"18_" + stamp if len(stamp) == 5 else stamp}_*.mp3')[0]
 NV = dict(P01='08_40', P10='09_49', P11='10_12', P12='10_43', P13='11_20', P14='11_48', P15='12_50', P18='13_17', P20='13_46', P22='14_10',
           P23='14_44', P26='15_09', P34='15_37', P35='16_02', P38='16_32', T02='18_03', T06='18_27', T08='18_51', T09='19_18', T14='19_46',
-          T17='20_10', T20='20_35', T22='21_04', T24='21_27', T28='22_01', L29='22_23')
+          T17='20_10', T20='20_35', T22='21_04', T24='21_27', T28='22_01', L29='22_23', P21='22_40_43', P29='22_41_48')
 def vwords(path):
     if path.startswith(RT): return RW[os.path.basename(path)]
     return VW['voces/' + os.path.basename(path)]
@@ -59,7 +59,7 @@ esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fadeblack', 0.5)
 nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.3)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.4)])
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 1.0)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.4)])
 viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
 esc('pelota')
 viejo('R05', 'in_04', 0.0, 6.0, amb=0.7); nuevo('P05', 0.3, 5.9)
@@ -204,7 +204,7 @@ def stats(s):
 # color parejo dentro de cada escena (lo que da «sintonía»): cada toma se acerca un 60 % al color medio de su escena
 GRADE = {}
 for e, nx in zip(ESC[:-1], ESC[1:]):
-    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src']]
+    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and SEG[i]['id'] not in ('P08',)]   # el ojo es un primerísimo plano: no se toca
     if len(ids) < 2: continue
     st_ = {i: stats(SEG[i]) for i in ids}
     mT = np.median([st_[i][0] for i in ids], 0); sT = np.median([st_[i][1] for i in ids], 0)
