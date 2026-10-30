@@ -38,7 +38,7 @@ def vwords(path):
 VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
 OLD = load(f'{E}/voz_toffee_1.mp3')
-OFF = dict(T3=(12.45, 17.21), T4=(17.21, 23.13), T9=(35.53, 38.97), T11=(41.45, 42.29), T18=(60.85, 64.73), T21=(70.61, 75.65), PUTA=(29.40, 30.75))
+OFF = dict(T3=(12.45, 17.21), T4=(17.21, 23.13), T9=(35.53, 38.97), T11=(41.45, 42.29), T18=(60.85, 64.73), T21=(70.61, 75.65), PUTA=(29.40, 30.75), AAH=(32.77, 33.71))
 
 # ---------------- Montaje ----------------
 # seg: id, archivo, desde, hasta; boca = clave de voz pegada a la boca; off = (voz en off, segundo del clip); amb = volumen del ambiente de Flow
@@ -48,8 +48,8 @@ def seg(id_, src, a, b, boca=None, off=(), amb=0.7, crop=False, pre=0.0, freeze=
     SEG.append(dict(id=id_, src=src, a=a, b=b, boca=boca, off=list(off), amb=amb, crop=crop, pre=pre, freeze=freeze, fw=fw))
 def nuevo(k, a=None, b=None, boca=None, off=(), amb=None, freeze=0.0):
     d = dur(SRC[k]); ws = fwords(k)
-    if a is None: a = max(0.0, ws[0][0] - 0.5) if (boca and ws) else 0.2
-    if b is None: b = min(d - 0.05, ws[-1][1] + 0.7) if (boca and ws) else d - 0.1
+    if a is None: a = max(0.0, ws[0][0] - 0.9) if (boca and ws) else 0.2
+    if b is None: b = min(d - 0.05, ws[-1][1] + 1.5) if (boca and ws) else d - 0.1
     seg(k, SRC[k], a, b, boca=boca, off=off, amb=(0.35 if boca else 0.8) if amb is None else amb, freeze=freeze, fw=ws)
 def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
     seg(k, f'{E}/{f}.mp4', a, b, boca=boca, off=off, amb=amb, crop=crop, pre=pre, fw=TK[f + '.mp4']['words'])
@@ -57,34 +57,34 @@ def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
 esc('gancho');        nuevo('P01', 0.2, 4.2, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fadeblack', 0.5)
-nuevo('P02', 0.0, 5.9); nuevo('P03', 0.2, 3.6)
+nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.3)], amb=0.6); nuevo('P04', 0.3, 4.0, off=[('T4', 0.4)])
-viejo('R04', 'in_05', 1.0, 5.0, amb=0.6)
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.3)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.4)])
+viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
 esc('pelota')
-viejo('R05', 'in_04', 0.0, 5.0, amb=0.7); nuevo('P05', 0.3, 5.9)
-viejo('R06', 'in_03', 0.7, 5.6, boca='T06'); viejo('R08', 'in_09', 0.0, 6.0, boca='T08', crop=True, off=[('PUTA', 5.2)])
-nuevo('P06', 0.3, 4.3); viejo('R09', 'in_08', 0.5, 6.0, boca='T09'); nuevo('P07', 0.2, 5.6)
+viejo('R05', 'in_04', 0.0, 6.0, amb=0.7); nuevo('P05', 0.3, 5.9)
+viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
+nuevo('P06', 0.3, 5.9); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.4)])
 esc('remolino')
-viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 5.0, off=[('T9', 0.5)], amb=0.6); nuevo('P08', 0.0, 3.6)
+viejo('R11', 'in_11', 3.0, 8.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6); nuevo('P08', 0.0, 4.0)
 esc('mar', 'fade', 0.6)
-nuevo('P09', 0.2, 4.6); viejo('R13', 'in_15', 0.0, 5.0, amb=0.8); viejo('R14', 'in_14', 1.5, 6.0, boca='T14')
-viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.8, 7.2, boca='T16'); viejo('R17', 'r_17', 0.5, 6.0, boca='T17', crop=True)
+nuevo('P09', 0.2, 5.9); viejo('R13', 'in_15', 0.0, 6.0, amb=0.8); viejo('R14', 'in_14', 1.0, 6.04, boca='T14')
+viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.5, 8.0, boca='T16'); viejo('R17', 'r_17', 0.3, 6.04, boca='T17', crop=True)
 esc('lucho')
-nuevo('P10', 2.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 5.5, boca='T20', pre=0.0)
-nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 1.0, 5.6, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
-viejo('R24', 'in_22', 0.3, 5.6, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15')
+nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
+nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
+viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15')
 esc('ciudad', 'fade', 0.8)
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.5, 6.0, boca='T28', crop=True); viejo('R29', 'in_26', 1.5, 6.0, boca='L29')
-nuevo('P17', 0.3, 6.5); nuevo('P18', boca='P18'); nuevo('P19', 0.3, 5.9); nuevo('P20', boca='P20')
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29')
+nuevo('P17', 0.3, 7.9); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95); nuevo('P20', boca='P20')
 esc('local')
-nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.4, 5.6)
+nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
 esc('noche', 'fadeblack', 0.8)
-nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.5, 5.9); nuevo('P28', 0.2, 4.6)
-nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 4.8); nuevo('P31', 0.3, 5.5); nuevo('P32', 0.2, 4.6)
-nuevo('P33', 0.2, 5.0); nuevo('P34', boca='P34'); nuevo('P35', 1.3, None, boca='P35')
+nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8)
+nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.0)
+nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.3, None, boca='P35')
 esc('azotea', 'fade', 1.0)
-nuevo('P36', 0.3, 6.5, off=[('L36', 1.5)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
+nuevo('P36', 0.3, 7.9, off=[('L36', 2.0)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=8.5)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
     if k not in NV: SEG[[s['id'] for s in SEG].index(k)].update(amb=0.9, fw=None)
@@ -127,15 +127,24 @@ for i, s in enumerate(SEG):
 if ERR: print(f'boca: {len(ERR)} palabras, desfase medio {np.mean(ERR):.3f} s, 90 % < {np.percentile(ERR, 90):.2f} s')
 
 # ---------------- Ambiente de cada toma (sin la voz de Flow) ----------------
+VAD = json.load(open('vad.json'))
+def voces_flow(s):
+    k = os.path.relpath(s['src'], P) if s['src'].startswith(P) else None
+    if k in VAD: return VAD[k]
+    if k is None: return TK[os.path.basename(s['src'])]['vad']
+    return []
 for i, s in enumerate(SEG):
     if not s['src']: continue
-    a = load(s['src'])[int(s['a'] * SR): int(s['b'] * SR)].copy()
-    for wa, wb, _ in (s['fw'] or []):
-        ia, ib = int(max(0, wa - s['a'] - 0.12) * SR), int(max(0, wb - s['a'] + 0.12) * SR)
-        a[ia:ib] = 0
-    a *= s['amb']; f = int(0.06 * SR)
+    X = 0.25; full = load(s['src']); a0 = max(0.0, s['a'] - X)
+    a = full[int(a0 * SR): int((s['b'] + X) * SR)].copy()
+    if s['fw'] is not None:   # P21/P29 sin voz nueva todavía: su voz de Flow se queda
+        for va, vb in voces_flow(s):
+            ia, ib = int(max(0, va - a0 - 0.1) * SR), int(max(0, vb - a0 + 0.1) * SR); a[ia:ib] = 0
+    a *= s['amb']; f = int(X * SR)
     if len(a) > 2 * f: a[:f] *= np.linspace(0, 1, f); a[-f:] *= np.linspace(1, 0, f)
-    st = int((T0[i] + s['pre']) * SR); AMB[st: st + len(a)] += a[: N - st]
+    st = int((T0[i] + s['pre'] - (s['a'] - a0)) * SR)
+    if st < 0: a = a[-st:]; st = 0
+    AMB[st: st + len(a)] += a[: N - st]
 
 # ---------------- Música ----------------
 def ti(id_): return T0[[s['id'] for s in SEG].index(id_)]
@@ -146,13 +155,14 @@ def music(f, start, end, ss=0.0, gain=1.0, fade=1.5):
     x[:fi] *= np.linspace(0, 1, fi); x[-fi:] *= np.linspace(1, 0, fi)
     out = np.zeros(N, np.float32); st = int(start * SR); out[st: st + len(x)] = x[: N - st] * gain; return out
 A1, A2, A3 = f'{E}/audio/a_01.mp4', f'{E}/audio/a_02.mp4', f'{E}/audio/a_03.mp4'
+X2 = 2.5   # cruce entre temas
 MUS = (music(A3, 0, ti('LOGO') + 0.3, fade=0.3)
-       + music(A1, ti('LOGO'), ti('P02') + 0.5, ss=0.6, gain=1.3, fade=0.4)
-       + music(A2, ti('P02'), ti('R05') + 1.0)
-       + music(A3, ti('R05'), ti('P09') + 0.6)
-       + music(A2, ti('P09'), ti('P16'), ss=20)
-       + music(A1, ti('P16'), ti('P25') + 0.5, ss=3)
-       + music(A3, ti('P25'), ti('P36') + 1.0, ss=5)
+       + music(A1, ti('LOGO'), ti('P02') + 1.0, ss=0.6, gain=1.3, fade=0.6)
+       + music(A2, ti('P02'), ti('P07') + X2, fade=X2)
+       + music(A3, ti('P07'), ti('P09') + X2, fade=X2)
+       + music(A2, ti('P09'), ti('P24') + X2, ss=12, fade=X2)
+       + music(A1, ti('P24'), ti('P26') + X2, ss=3, fade=X2)
+       + music(A3, ti('P26'), ti('P36') + X2, ss=5, fade=X2)
        + music(A1, ti('P36'), TOT, ss=3, fade=4.0))
 env = np.convolve(np.abs(VOX), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')
 MUS *= (0.40 - 0.28 * np.clip(env / 0.02, 0, 1))
@@ -185,6 +195,22 @@ def burbuja():
         frames.append(c)
     os.makedirs('_bur', exist_ok=True)
     for j, fr in enumerate(frames): fr.save(f'_bur/{j:03d}.png')
+def stats(s):
+    fr = []
+    for t in np.linspace(s['a'] + 0.3, s['b'] - 0.3, 3):
+        r = sp.run(['ffmpeg', '-v', 'error', '-ss', f'{t:.2f}', '-i', s['src'], '-frames:v', '1', '-vf', 'scale=96:54', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
+        if r: fr.append(np.frombuffer(r, np.uint8).reshape(-1, 3).astype(float))
+    x = np.concatenate(fr); return x.mean(0), x.std(0)
+# color parejo dentro de cada escena (lo que da «sintonía»): cada toma se acerca un 60 % al color medio de su escena
+GRADE = {}
+for e, nx in zip(ESC[:-1], ESC[1:]):
+    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src']]
+    if len(ids) < 2: continue
+    st_ = {i: stats(SEG[i]) for i in ids}
+    mT = np.median([st_[i][0] for i in ids], 0); sT = np.median([st_[i][1] for i in ids], 0)
+    for i in ids:
+        m, sd = st_[i]; k = 1 + 0.6 * (sT / np.maximum(sd, 1) - 1); tt = m + 0.6 * (mT - m)
+        GRADE[i] = 'lutrgb=' + ':'.join(f"{c}='clip((val-{m[j]:.1f})*{k[j]:.3f}+{tt[j]:.1f},0,255)'" for j, c in enumerate('rgb'))
 def clip(i, s, out):
     if s['id'] == 'LOGO': return logo_clip(out, s['len'])
     vf = []
@@ -192,6 +218,7 @@ def clip(i, s, out):
         bars = [b for b in TK[os.path.basename(s['src'])]['bars'] if b and b[0] > 5]
         y0, y1 = (max(b[0] for b in bars), min(b[1] for b in bars)) if bars else (0, 719)
         h = y1 - y0 + 1; w = int(h * 16 / 9) // 2 * 2; vf.append(f'crop={w}:{h - h % 2}:{(1280 - w) // 2}:{y0}')
+    if i in GRADE: vf.append(GRADE[i])
     vf.append(BASE)
     if s['pre'] or s['freeze']: vf.append(f"tpad=start_mode=clone:start_duration={s['pre']}:stop_mode=clone:stop_duration={s['freeze']}")
     cmd = ['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(s['b'] - s['a']), '-i', s['src']]
