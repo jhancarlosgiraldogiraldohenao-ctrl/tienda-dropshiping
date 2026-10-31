@@ -82,17 +82,17 @@ esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fade', 0.4)
 nuevo('P02', 2.6, 6.0); nuevo('P03', 0.2, 3.6)
-viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 5.95); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
-viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
+viejo('R01', 'in_02', 0.0, 8.04, boca='T01', amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 4.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
+viejo('R04', 'in_05', 0.5, 5.0, amb=0.6)
 esc('pelota')
-viejo('R05', 'in_04', 0.0, 6.0, amb=0.7)   # P05 salió: la pelota iba hacia atrás (Jay, 31-oct)
+viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)   # P05 salió: la pelota iba hacia atrás (Jay, 31-oct)
 viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
-nuevo('P06', 0.3, 5.9); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.9)], amb=0.0)   # el grito de Flow se quitaba mal: ambiente fuera, queda solo el grito de Toffee cuando caen (Jay, 31-oct)
+nuevo('P06', 0.3, 3.8); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.9)], amb=0.0)   # el grito de Flow se quitaba mal: ambiente fuera, queda solo el grito de Toffee cuando caen (Jay, 31-oct)
 esc('remolino')
-viejo('R11', 'in_11', 3.0, 8.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6); nuevo('P08', 0.0, 4.0)
+viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6); nuevo('P08', 0.0, 4.0)
 esc('mar', 'fade', 0.3)
-nuevo('P09', 0.2, 5.9); viejo('R13', 'in_15', 0.0, 6.0, amb=0.8); viejo('R14', 'in_14', 1.0, 6.04, boca='T14')
+nuevo('P09', 0.2, 4.4); viejo('R13', 'in_15', 0.0, 4.6, amb=0.8); viejo('R14', 'in_14', 1.0, 6.04, boca='T14')
 viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.5, 8.0, boca='T16'); viejo('R17', 'r_17', 0.3, 6.04, boca='T17', crop=True)
 esc('lucho')
 nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
@@ -102,11 +102,11 @@ esc('ciudad')
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
 nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
 esc('local')
-nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9); nuevo('P58', 0.2, 5.95)
-esc('noche', 'fadeblack', 0.8)
-nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 3.95)
-nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P52', 0.2, 5.95); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.95)
-nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a'); nuevo('P60', 0.2, 5.95)
+nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)
+esc('noche', 'fade', 0.6)
+nuevo('P25', 0.3, 6.0); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 4.2); nuevo('P28', 0.2, 3.95)
+nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P32', 0.2, 5.95)
+nuevo('P33', 0.2, 4.6); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a'); nuevo('P60', 0.2, 5.95)
 esc('azotea', 'fade', 0.4)
 nuevo('P36', 0.3, 7.9, off=[('L36', 4.9)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=4.0)
@@ -115,12 +115,15 @@ for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
 
 # ---------------- Tiempos (con los cruces entre escenas) ----------------
 for i, s in enumerate(SEG): s['len'] = (s['b'] - s['a']) + s['pre'] + s['freeze']
+XF = 0.25
 ESC.append(dict(start=len(SEG)))
 t = 0.0; T0 = [0.0] * len(SEG)
 for e, nx in zip(ESC[:-1], ESC[1:]):
     if e['trans']: t -= e['td']
     e['t0'] = t
-    for i in range(e['start'], nx['start']): T0[i] = t; t += SEG[i]['len']
+    for i in range(e['start'], nx['start']):
+        if i > e['start']: t -= XF   # fundido corto entre tomas de la misma escena (sin cortes bruscos)
+        T0[i] = t; t += SEG[i]['len']
 TOT = t
 print(f'{len(SEG)} tomas · {TOT // 60:.0f}:{TOT % 60:04.1f}')
 
@@ -208,6 +211,7 @@ for e, nx in zip(ESC[:-1], ESC[1:]):
     if e['n'] in CAMA:
         bed = load(CAMA[e['n']]); bed = bed * (10 ** (-26 / 20) / (np.sqrt(np.mean(bed ** 2)) + 1e-9))   # mismo nivel para todos los ambientes
     elif ids:
+        if e['n'] == 'casa': ids = [i for i in ids if SEG[i]['id'] in ('P02', 'P04')] or ids
         xf_ = int(1.0 * SR); bed = None
         for i in sorted(ids, key=lambda i: -(SEG[i]['b'] - SEG[i]['a']))[:4]:   # varias tomas distintas, cruzadas
             c_ = load(SEG[i]['src'])[int(SEG[i]['a'] * SR): int(SEG[i]['b'] * SR)].copy()
@@ -250,7 +254,9 @@ if _lm:
     m_ = load(_lm[0])[: int(4.2 * SR)].copy(); m_ *= 10 ** (-18 / 20) / (np.sqrt(np.mean(m_ ** 2)) + 1e-9)
     fo = int(1.2 * SR); m_[-fo:] *= np.linspace(1, 0, fo); fi = int(0.05 * SR); m_[:fi] *= np.linspace(0, 1, fi)
     st = int(max(0, ti('LOGO') - 0.5) * SR); LOGOMUS[st: st + len(m_)] = m_[: N - st]
-MIX = np.clip(VOX + AMB * 1.0 + LOGOMUS, -1, 1)   # sin música (pedido de Jay, 30-oct-2026)
+envv = np.convolve(np.abs(VOX), np.ones(int(0.3 * SR)) / int(0.3 * SR), mode='same'); duck = np.clip(envv / 0.015, 0, 1)
+duck = np.convolve(duck, np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')   # que baje y suba suave
+MIX = np.clip(VOX * 1.15 + AMB * (0.6 - 0.38 * duck) + LOGOMUS, -1, 1)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
@@ -326,9 +332,17 @@ for i, s in enumerate(SEG):
 escenas = []
 for k, (e, nx) in enumerate(zip(ESC[:-1], ESC[1:])):
     out = f'_v/esc{k:02d}.mp4'
-    open('_v/l.txt', 'w').write(''.join(f"file '{i:02d}.mp4'\n" for i in range(e['start'], nx['start'])))
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', '_v/l.txt', '-c', 'copy', out], check=True)
-    escenas.append((out, sum(SEG[i]['len'] for i in range(e['start'], nx['start'])), e.get('trans'), e.get('td', 0)))
+    idx = list(range(e['start'], nx['start']))
+    if len(idx) == 1:
+        sp.run(['ffmpeg', '-v', 'error', '-y', '-i', f'_v/{idx[0]:02d}.mp4', '-c', 'copy', out], check=True)
+    else:   # fundido de 0,25 s entre cada toma de la escena
+        inp, fc_, lst, acc_ = [], [], '[a0]', SEG[idx[0]]['len']
+        for j, i in enumerate(idx):
+            inp += ['-i', f'_v/{i:02d}.mp4']; fc_.append(f'[{j}:v]setpts=PTS-STARTPTS,fps=24,settb=1/24,format=yuv420p[a{j}]')
+            if j == 0: continue
+            fc_.append(f"{lst}[a{j}]xfade=transition=fade:duration={XF}:offset={acc_ - XF:.3f},settb=1/24[y{j}]"); acc_ += SEG[i]['len'] - XF; lst = f'[y{j}]'
+        sp.run(['ffmpeg', '-v', 'error', '-y'] + inp + ['-filter_complex', ';'.join(fc_), '-map', lst, '-c:v', 'libx264', '-crf', '16', '-pix_fmt', 'yuv420p', out], check=True)
+    escenas.append((out, sum(SEG[i]['len'] for i in idx) - XF * (len(idx) - 1), e.get('trans'), e.get('td', 0)))
 inputs, fc, acc, last = [], [], 0.0, '[v0]'
 for k, (f, L, tr, td) in enumerate(escenas):
     inputs += ['-i', f]; fc.append(f'[{k}:v]setpts=PTS-STARTPTS,fps=24,settb=1/24,format=yuv420p[v{k}]')
