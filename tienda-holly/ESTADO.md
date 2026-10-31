@@ -1,3 +1,5 @@
+> **31-oct-2026: tienda CERRADA por decisión de Jay** (contraseña en la tienda online). Se reabre cuando tenga claro qué vender. Ideas guardadas: guía digital «Diciembre sin miedo» (+ orejeras como único físico) y retrato «Tu mascota en Extravío».
+
 # Tienda Holly (arbolito proyector navideño)
 
 - Tienda: hollycolombia.myshopify.com (antes a1fcei-t6; CLI/admin sigue con a1fcei-t6). Nombre: holly
