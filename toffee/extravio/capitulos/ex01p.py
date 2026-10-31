@@ -250,7 +250,7 @@ nueva(6, "TGLZ", "Contrapicado desde la azotea (une P35 con P36)",
       "(sin voz: suben a la azotea)", nota="Va después de P35 y antes de P36.")
 
 # ---------------- Repetidas (31-oct-2026): Jay no aprobó estas tomas; nuevos ángulos ----------------
-esc("Repetir · nuevos ángulos", "REEMPLAZAN a P01, P05, P41 y P42")
+esc("Repetir · nuevos ángulos", "REEMPLAZAN a P01, P05 y P13 (P47 y P48 quedan de reserva: Jay aprobó los puentes)")
 nueva(6, "TGR", "Plano general cayendo junto a ellos (reemplaza P01)",
       f"{S(6)} {VORTEX} Medium-wide shot, the camera falls together with them and rotates slowly: the whole body of {T} is visible, tumbling head over heels, legs and tail flailing, screaming toward the dog with a huge open mouth; on the right, {G} falls happily, upside down, trying to bite {BALL} floating next to him. Lost objects (socks, keys, remote controls) swirl past between them and the camera. {TT('¡¡GALLETAAAA!!', 'screaming in terror')} {END('one cat and one dog', 'rushing wind', dog=True)}".replace("The cat's whole head, nightcap and camera always in frame.", "The cat's whole body, nightcap and camera always in frame."),
       "TOFFEE grita: «¡¡GALLETAAAA!!»", nota="Se ve a Toffee entero (no solo la cabeza).")
@@ -263,6 +263,9 @@ nueva(8, "TGLM", "Plano lateral bajo, caminando (reemplaza P41)",
 nueva(8, "TGLV", "Travelling de espaldas que sube al pasar el arco (reemplaza P42)",
       f"{S(8)} At dusk, a path made of stacked old suitcases goes down from the hill toward a tall arch made of two giant crossed keys, the entrance to the city of lost things (like the city reference). Tracking shot from behind: {L}, {T} and {G} walk down the path away from the camera, side by side, clearly walking; as they pass under the arch, the camera rises slightly and reveals the busy glowing street of the city ahead of them, full of lanterns and tiny inhabitants. {END('one cat, one dog and one mouse', 'a distant lively murmur and footsteps', dog=True, extras=True)}",
       "(sin voz: entran a la ciudad)")
+nueva(8, "TGLM", "Plano medio lateral, cerca (reemplaza P13: se veían muy pequeños)",
+      f"{S(8)} {SEA} Medium shot from the side at their eye level, the camera tracking along with them as they walk along the beach of lost toys, close enough that the three fill most of the frame (their heads and bodies big in the frame, the sea of balls blurred behind them): in front on the right {L}, walking and talking over his shoulder, his backpack of keys jingling; in the middle {T}, listening; at the back on the left {G}, carrying {BALL}. {LL('¿Y la llave de tu casa? Para volver, necesitas la llave.')} {END('one cat, one dog and one mouse', 'jingling keys and waves of balls', dog=True)}",
+      "LUCHO: «¿Y la llave de tu casa? Para volver, necesitas la llave.»", nota="Que se vean grandes, cerca de la cámara.")
 
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
