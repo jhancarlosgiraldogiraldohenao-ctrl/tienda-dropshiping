@@ -319,6 +319,11 @@ nueva(8, "LQH", "Plano medio lateral caminando (Lucho responde)",
 nueva(6, "TGLA", "Plano general desde la calle (reemplaza P57: Toffee y Galleta salían del local)",
       f"{S(6)} {SHOPOUT} The camera is on the street, facing the shop. From the first frame, all three are OUTSIDE on the cobblestones in front of the closed shutter: {L} in the middle, {T} and {G} on the left, waiting with their backs half to the camera. Lucho pulls a short rope with his right paw and the rolling metal shutter rolls up by itself with a rattle, showing the dark shop full of hanging keys. {ONEPAW} Then Toffee and Galleta walk from the street INTO the shop, away from the camera, and disappear inside. Nobody comes out of the shop. The camera stays low and frames the shop door only, no sign above it. {END('one cat, one dog and one mouse', 'a rattling shutter and jingling keys', dog=True)}",
       "(sin voz: entran al local)", nota="Los tres empiezan AFUERA; Toffee y Galleta entran, nadie sale. No usar el último cuadro de otra toma.")
+L1Q = ("Lucho, the skinny scruffy gray mouse from the reference standing on two legs (huge dark eye bags, big tired eyes, one crooked front tooth, "
+       "torn black hoodie, small backpack full of old keys), hugging one single chunk of yellow cheese against his chest with his left arm")
+nueva(8, "TLM", "Plano de dos (reemplaza P56: le aparecían quesos)",
+      f"{S(8)} {SEA} Two-shot on the beach of lost toys: on the right {L1Q}, talks proudly, gesturing only with his right paw; on the left {T} listens, wet and offended. There is only ONE piece of cheese in the whole video and it stays against Lucho's chest the whole time; no other food appears. Behind them a few lost objects fall from the sky onto the beach (a TV remote control, a metal key, a striped sock); at the end the striped sock lands on the cat's nightcap and the cat shakes it off, disgusted. {LL('Bienvenidos a Extravío. Aquí cae todo lo que se pierde. Medias, controles, llaves… y mascotas.')} {END('one cat and one mouse', 'distant waves of balls')}",
+      "LUCHO: «Bienvenidos a Extravío…»", nota="El queso se nombra UNA sola vez: mientras más se repite en el prompt, más quesos inventa Flow.")
 
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
