@@ -90,7 +90,7 @@ nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nue
 esc('noche', 'fadeblack', 0.8)
 nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8)
 nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.0)
-nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.3, None, boca='P35')
+nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.6, None, boca='P35')
 esc('azotea', 'fade', 0.4)
 nuevo('P44', 0.2, 5.9)
 nuevo('P36', 0.3, 7.9, off=[('L36', 2.0)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
