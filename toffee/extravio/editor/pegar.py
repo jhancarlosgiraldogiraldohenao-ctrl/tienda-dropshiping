@@ -132,7 +132,7 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     for k in range(1, len(anc)):
         d_src = anc[k][0] - anc[k - 1][0]; want = anc[k][1] - dst[-1]
         S_ = silencio(anc[k - 1][0], anc[k][0]); P_ = d_src - S_
-        dst.append(dst[-1] + min(hi * P_ + 3.0 * S_, max(lo * P_ + 0.35 * S_, want)))
+        dst.append(dst[-1] + min(hi * P_ + min(3.0 * S_, S_ + 0.2), max(lo * P_ + 0.35 * S_, want)))   # una pausa crece como mucho 0,2 s: nada de huecos en medio de la frase
     dst.append(dst[-1] + (L - anc[-1][0]))
     err = [dst[k + 1] - anc[k][1] for k in range(len(anc))]
     total = dst[-1] - dst[0]

@@ -136,7 +136,7 @@ for i, s in enumerate(SEG):
         elif k in VO2: x = nivel(load(VO2[k]))
         else: a, b = OFF[k]; x = nivel(OLD[int(a * SR): int(b * SR)])
         t = T0[i] + s['pre'] + at; t0 = t
-        while t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.3) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
+        while t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
         poner(x, t)
 if ERR: print(f'boca: {len(ERR)} palabras, desfase medio {np.mean(ERR):.3f} s, 90 % < {np.percentile(ERR, 90):.2f} s')
 
@@ -288,7 +288,7 @@ import re
 def lufs(f):
     o = sp.run(['ffmpeg', '-hide_banner', '-i', f, '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True).stderr
     return float(re.findall(r'I:\s+(-?[\d.]+) LUFS', o)[-1])
-g = -14 - lufs('_mux.mp4') + 1.0
+g = -14 - lufs('_mux.mp4') + 1.6
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', '_mux.mp4', '-c:v', 'copy', '-af',
         f'aresample=192000,volume={g:.2f}dB,alimiter=limit=0.82:attack=1:release=60:level=disabled,aresample=48000',
         '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', 'EXTRAVIO-CAP01-PILOTO.mp4'], check=True)
