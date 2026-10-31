@@ -289,6 +289,34 @@ nueva(6, "TGOPQ", "Plano general fijo, misma escala todo el tiempo (reemplaza P5
       f"{S(6)} {STREETN} Static medium-wide shot, the camera does not move or zoom, everything keeps the same size for the whole shot. On the right side of the frame, from the first frame, there is a BIG old wooden market cart lying on its side, three times taller than the cat, its open side facing the camera and full of big open lost umbrellas. From the left, {T} runs in at full speed, pulling {G} by the navy bandana; both reach the big cart and crawl inside between the umbrellas until only the umbrellas are visible. Then the turquoise light beam from the giant moth above passes over the street in front of the cart, and the glowing memory sphere floats up into the light. The cat and the dog are small next to the big cart the whole time. The cat wears NO bandana and NO tag. Same dark blue night light for the whole shot. {END('one cat, one dog and the giant moth (only her light and shadow)', 'running paws, umbrellas rustling and deep wing flaps', dog=True)}",
       "(sin voz: se meten al carrito)", nota="NO usar el último cuadro de otra toma: la cámara queda quieta y el carrito grande se ve desde el principio.")
 
+# ---------------- Arreglos 2 (31-oct-2026, tarde): queso, ciudad con bocas, noche con anticipación, azotea ----------------
+esc("Arreglos 2", "P56–P63: el queso de Lucho, la llegada a la ciudad hablando con la boca, la noche y la subida a la azotea")
+ONEPAW = "Lucho holds his chunk of yellow cheese in his LEFT paw during the whole shot and uses ONLY his right paw for everything else; the cheese never leaves his left paw, never disappears and no second cheese appears."
+nueva(8, "TLM", "Plano de dos (reemplaza P11: el queso desaparecía)",
+      f"{S(8)} {SEA} Two-shot on the beach of lost toys: on the right {L} talks proudly, opening only his right arm; on the left {T} listens, wet and offended. {ONEPAW} Behind them lost objects fall from the sky onto the beach (a remote control, a key, a doll shoe), and at the end a single striped sock falls and lands on the cat's nightcap; the cat shakes it off, disgusted. {LL('Bienvenidos a Extravío. Aquí cae todo lo que se pierde. Medias, controles, llaves… y mascotas.')} {END('one cat and one mouse', 'distant waves of balls')}",
+      "LUCHO: «Bienvenidos a Extravío…»")
+nueva(6, "TGLA", "Plano general frente al local (reemplaza P51: aparecía un queso de más)",
+      f"{S(6)} {SHOPOUT} {L} pulls a short rope with his right paw and the rolling metal shutter rolls up by itself with a rattle. {ONEPAW} Then {T} and {G} walk in under the open shutter, looking up at the thousands of keys hanging inside. The camera stays low and frames the shop door only, no sign above it. {END('one cat, one dog and one mouse', 'a rattling shutter and jingling keys', dog=True)}",
+      "(sin voz: entran al local)", cont="Usar el último cuadro de P20 como primer cuadro.")
+nueva(6, "TGLD", "Plano medio dentro del local: algo se acerca (va antes de P25)",
+      f"{S(6)} {SHOPIN} A deep bell tolls far away. Inside the shop, the oil lamp flickers; the hanging keys start to tremble and jingle by themselves. {L} stops in the middle of a bite of cheese, his ears go up and he slowly turns his head toward the front shutter, terrified. On the left {T} and {G} look at him, confused. {ONEPAW} {END('one cat, one dog and one mouse', 'a distant deep bell, trembling keys and silence', dog=True)}",
+      "(sin voz: la campana; Lucho se asusta)", nota="Le da tiempo a la noche: primero se siente que algo viene, después la calle se esconde y después «Escóndanse».")
+nueva(6, "GOD", "Primer plano: Galleta sale tras el recuerdo (reemplaza P28)",
+      f"{S(6)} {SHOPIN} {NIGHT} Low shot from behind {G}, who lies under the counter. Through the gap under the closed metal shutter a soft turquoise light glows and moves, like a ball rolling outside. The dog gets up, walks to the small square pet flap at the bottom of the shutter, pushes it open with his nose and walks out through it, tail wagging. The dog keeps his normal shape at all times. {END('one dog', 'a soft magical hum', cat=False, dog=True)}",
+      "(sin voz: Galleta sale)")
+nueva(6, "TGLQ", "Plano general de noche: suben a la azotea (va después de P54, antes de P44)",
+      f"{S(6)} {STREETN} The moth is gone. On the side wall of Lucho's narrow key shop there is a steep outdoor wooden staircase that goes up to the roof. {L} climbs it first, then {T}, then {G}, all three seen from behind and below, tired, while the turquoise glow of the city lights them softly. {ONEPAW} {END('one cat, one dog and one mouse', 'creaking wooden steps and a quiet night', dog=True)}",
+      "(sin voz: suben a la azotea)")
+nueva(8, "TGLV", "Plano general de frente bajo el arco (reemplaza P42: Lucho no movía la boca)",
+      f"{S(8)} At dusk, a path made of stacked old suitcases goes down into the city of lost things (like the city reference) and passes under a tall arch made of two giant crossed keys. Medium-wide shot from the front: {L} walks toward the camera under the arch, turns to the other two and speaks with a proud tour-guide gesture of his right arm; behind him {T} and {G} walk and look around, amazed. {ONEPAW} {LL('Bienvenidos a la ciudad de Extravío.', 'proudly, like a tour guide')} {END('one cat, one dog and one mouse', 'a lively city murmur and footsteps', dog=True, extras=True)}",
+      "LUCHO: «Bienvenidos a la ciudad de Extravío.»")
+nueva(4, "TQ", "Primer plano caminando (Toffee pregunta)",
+      f"{S(4)} {STREETX} Side tracking close-up of {T} walking down the busy street, looking around amazed at the inhabitants, then turning his head to the right to ask. {TT('¿Y quién vive aquí?', 'curiously')} {END('one cat', 'a lively street murmur', extras=True)}",
+      "TOFFEE: «¿Y quién vive aquí?»")
+nueva(8, "LQH", "Plano medio lateral caminando (Lucho responde)",
+      f"{S(8)} {STREETX} Side tracking medium shot of {L} walking down the busy street, talking to someone on his left, casually pointing with his right paw at the inhabitants as they pass behind him: {BEAR} at his sock shop, {UMB}, {SOCKS} climbing a wall. {ONEPAW} {LL('Todo lo que alguien dejó tirado. Medias, juguetes, paraguas… y uno que otro exnovio.', 'casually, with a smug little smile')} {END('one mouse', 'a lively street murmur and footsteps', cat=False, extras=True)}",
+      "LUCHO: «Todo lo que alguien dejó tirado… y uno que otro exnovio.»")
+
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
  ("CIUDAD-VIVA", "16:9 · referencia: EXTRAVIO-CIUDAD",

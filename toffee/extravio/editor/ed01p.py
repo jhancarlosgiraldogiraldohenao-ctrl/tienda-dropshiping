@@ -91,20 +91,20 @@ nuevo('P09', 0.2, 5.9); viejo('R13', 'in_15', 0.0, 6.0, amb=0.8); viejo('R14', '
 viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.5, 8.0, boca='T16'); viejo('R17', 'r_17', 0.3, 6.04, boca='T17', crop=True)
 esc('lucho')
 nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
-nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
-viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('LSUB', 1.3)])
+nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
+viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, boca='P41' if 'P41' in NV else None)
 esc('ciudad')
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 1.8, 7.9, off=[('C1', 1.0), ('C2', 4.2)])
 nuevo('P17', 0.3, 7.9, off=[('C3', 0.3)]); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
 esc('noche', 'fadeblack', 0.8)
-nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8); nuevo('P52', 0.2, 5.95)
-nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.95)
+nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8)
+nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P52', 0.2, 5.95); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.95)
 nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a')
 esc('azotea', 'fade', 0.4)
-nuevo('P44', 0.2, 5.9, off=[('P35b', 0.15)])
-nuevo('P36', 0.3, 7.9, off=[('L36', 2.0)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
+nuevo('P44', 0.2, 5.9)
+nuevo('P36', 0.3, 7.9, off=[('L36', 4.9)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=4.0)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
     if k not in NV: SEG[[s['id'] for s in SEG].index(k)].update(amb=0.9, fw=None)
@@ -193,19 +193,27 @@ for i, s in enumerate(SEG):
     AMB[st: st + len(a)] += a[: N - st]
 
 # cama de sonido por escena: el ambiente de la toma sin voces más larga, en bucle y bajito, para que no haya huecos
+CAMA = {}   # efectos de sonido largos por escena (ElevenLabs), si existen
+for k_, pat in dict(mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciudad='Market_Lane').items():
+    g_ = glob.glob(f'{P}/vo3/*{pat}*') + glob.glob(f'{P}/sfx/*{pat}*')
+    if g_: CAMA[k_] = g_[0]
 for e, nx in zip(ESC[:-1], ESC[1:]):
-    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and not voces_flow(SEG[i]) and not SEG[i]['boca']]
-    if not ids: continue
-    b_ = max(ids, key=lambda i: SEG[i]['b'] - SEG[i]['a']); s_ = SEG[b_]
-    bed = load(s_['src'])[int(s_['a'] * SR): int(s_['b'] * SR)]
-    if e['n'] == 'ciudad': bed = load(glob.glob(f'{P}/vo3/*Market_Lane*.mp4')[0]) * 1.4
+    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and not voces_flow(SEG[i]) and not SEG[i]['boca'] and SEG[i]['amb'] > 0.3]
+    if e['n'] in CAMA: bed = load(CAMA[e['n']]) * 1.4
+    elif ids:
+        xf_ = int(1.0 * SR); bed = None
+        for i in sorted(ids, key=lambda i: -(SEG[i]['b'] - SEG[i]['a']))[:4]:   # varias tomas distintas, cruzadas
+            c_ = load(SEG[i]['src'])[int(SEG[i]['a'] * SR): int(SEG[i]['b'] * SR)].copy()
+            if bed is None: bed = c_
+            elif len(c_) > xf_: bed[-xf_:] = bed[-xf_:] * np.linspace(1, 0, xf_) + c_[:xf_] * np.linspace(0, 1, xf_); bed = np.concatenate([bed, c_[xf_:]])
+    else: continue
     t0 = T0[e['start']]; t1 = (T0[nx['start']] if nx['start'] < len(SEG) else TOT)
     L = int((t1 - t0) * SR)
-    if L <= 0 or len(bed) < SR: continue
+    if L <= 0 or bed is None or len(bed) < SR: continue
     reps = [bed] * (L // len(bed) + 2); xf = int(0.5 * SR); out = reps[0].copy()
     for r in reps[1:]:
         r = r.copy(); out[-xf:] = out[-xf:] * np.linspace(1, 0, xf) + r[:xf] * np.linspace(0, 1, xf); out = np.concatenate([out, r[xf:]])
-    out = out[:L] * 0.45; f = int(min(1.0, L / SR / 3) * SR); out[:f] *= np.linspace(0, 1, f); out[-f:] *= np.linspace(1, 0, f)
+    out = out[:L] * (0.5 if e['n'] in CAMA else 0.3); f = int(min(1.0, L / SR / 3) * SR); out[:f] *= np.linspace(0, 1, f); out[-f:] *= np.linspace(1, 0, f)
     st = int(t0 * SR); AMB[st: st + len(out)] += out[: N - st]
 
 # ---------------- Música ----------------
@@ -289,7 +297,7 @@ def clip(i, s, out):
     vf.append(BASE)
     if s['pre'] or s['freeze']: vf.append(f"tpad=start_mode=clone:start_duration={s['pre']}:stop_mode=clone:stop_duration={s['freeze']}")
     cmd = ['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(s['b'] - s['a']), '-i', s['src']]
-    if s['id'] == 'P12':   # burbuja justo después de «botas»
+    if s['id'] == 'P12' and os.environ.get('BURBUJA'):   # (quitada por pedido de Jay, 31-oct)
         tb = next(b for a, b, w in s['fw'] if norm(w).startswith('bota')) - s['a'] + 0.15
         burbuja(); cmd += ['-framerate', '24', '-i', '_bur/%03d.png']
         vfs = ','.join(vf)
