@@ -7,7 +7,7 @@ import os, sys, json, glob, subprocess as sp
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from pegar import pegar, pegar_suave, por_frases, load, SR, norm
+from pegar import pegar, pegar_suave, pegar_dtw, por_frases, load, SR, norm
 
 P, E, RT = [os.path.abspath(x) for x in sys.argv[1:4]]
 REFS = '/home/user/tienda-dropshiping/toffee/refs/extravio'
@@ -64,8 +64,8 @@ def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
 
 esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
-esc('casa', 'fadeblack', 0.5)
-nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
+esc('casa', 'fade', 0.4)
+nuevo('P02', 2.6, 6.0); nuevo('P03', 0.2, 3.6)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
 viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 5.95); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
 viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
@@ -75,26 +75,26 @@ viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, bo
 nuevo('P06', 0.3, 5.9); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.4)])
 esc('remolino')
 viejo('R11', 'in_11', 3.0, 8.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6); nuevo('P08', 0.0, 4.0)
-esc('mar', 'fade', 0.6)
+esc('mar', 'fade', 0.3)
 nuevo('P09', 0.2, 5.9); viejo('R13', 'in_15', 0.0, 6.0, amb=0.8); viejo('R14', 'in_14', 1.0, 6.04, boca='T14')
 viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.5, 8.0, boca='T16'); viejo('R17', 'r_17', 0.3, 6.04, boca='T17', crop=True)
 esc('lucho')
 nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
 nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9)
-esc('ciudad', 'fade', 0.8)
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 0.3, 7.9)
-nuevo('P17', 0.3, 7.9); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95); nuevo('P20', boca='P20'); nuevo('P43', 0.2, 5.9)
+esc('ciudad')
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 1.8, 7.9)
+nuevo('P17', 0.3, 5.6); nuevo('P18', boca='P18'); nuevo('P19', 0.4, 4.6); nuevo('P20', boca='P20'); nuevo('P43', 0.2, 5.9)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
 esc('noche', 'fadeblack', 0.8)
 nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8)
 nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.0)
 nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.3, None, boca='P35')
-esc('azotea', 'fade', 1.0)
+esc('azotea', 'fade', 0.4)
 nuevo('P44', 0.2, 5.9)
 nuevo('P36', 0.3, 7.9, off=[('L36', 2.0)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
-nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=8.5)
+nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=4.0)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
     if k not in NV: SEG[[s['id'] for s in SEG].index(k)].update(amb=0.9, fw=None)
 
@@ -110,6 +110,13 @@ TOT = t
 print(f'{len(SEG)} tomas · {TOT // 60:.0f}:{TOT % 60:04.1f}')
 
 # ---------------- Voces ----------------
+VAD = json.load(open('vad.json'))
+def voces_flow(s):
+    k = os.path.relpath(s['src'], P) if s['src'].startswith(P) else None
+    if k in VAD: return VAD[k]
+    if k is None: return TK[os.path.basename(s['src'])]['vad']
+    return []
+
 N = int((TOT + 1) * SR); VOX = np.zeros(N, np.float32); AMB = np.zeros(N, np.float32)
 def nivel(x):  # todas las voces al mismo nivel de habla
     e = x[np.abs(x) > 0.02]; r = np.sqrt(np.mean(e ** 2)) if len(e) else 0.1
@@ -118,17 +125,31 @@ def poner(x, t):
     i = int(t * SR); j = min(N, i + len(x))
     if i < 0: x = x[-i:]; i = 0
     VOX[i:j] += x[:j - i]
-ERR = []
+ERR = []; SHIFT = []
 for i, s in enumerate(SEG):
     if s['boca']:
         x = nivel(load(VPATH[s['boca']])); ew = vwords(VPATH[s['boca']])
         fw = [[a - s['a'], b - s['a'], w] for a, b, w in s['fw'] if s['a'] - 0.3 <= a < s['b']]
         # pegado suave: solo se ajustan silencios reales y la velocidad entre 0,9 y 1,15 (sin pausas metidas en medio de palabras)
         try:
-            y, err = pegar_suave(x, ew, fw, s['len'] + 2.5, lo=0.8, hi=1.25)
+            if os.environ.get('SIN_DTW'): y, err = pegar_suave(x, ew, fw, s['len'] + 2.5, lo=0.8, hi=1.25)
+            else:   # anclas por el sonido de Flow (va pegado a la boca), no por los tiempos de Whisper
+                fl = load(s['src'])[int(s['a'] * SR): int(s['b'] * SR)]
+                y, err = pegar_dtw(x, ew, fl, s['len'] + 2.5, lo=0.8, hi=1.25)
         except IndexError:
             y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, fw[0][0] - ew[0][0]) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
-        poner(y, T0[i] + s['pre'])
+        # ajuste fino: correr la frase completa (máx. ±0,3 s) para que la voz suene justo cuando Flow hablaba (= cuando se mueve la boca)
+        vf = voces_flow(s); fr_ = int(0.02 * SR); n_ = int(s['len'] / 0.02)
+        M = np.zeros(n_)
+        for va, vb in vf:
+            M[max(0, int((va - s['a']) / 0.02)): max(0, int((vb - s['a']) / 0.02))] = 1
+        if M.sum() > 5:
+            m_ = len(y) // fr_; ey = 20 * np.log10(np.sqrt(np.mean(y[: m_ * fr_].reshape(m_, fr_) ** 2, axis=1)) + 1e-9)
+            Bv = (ey > -42).astype(float)[:n_]; Bv = np.pad(Bv, (0, max(0, n_ - len(Bv))))
+            def ov(k): return np.sum(M[max(0, k): n_ + min(0, k)] * Bv[max(0, -k): n_ - max(0, k)]) / max(1, np.sum(np.maximum(M, Bv)))
+            k_best = max(range(-15, 16), key=lambda k: ov(k) - 0.002 * abs(k))
+            if ov(k_best) > ov(0) + 0.03: y = np.roll(y, k_best * fr_); SHIFT.append((s['id'], k_best * 0.02))
+        poner(y, T0[i] + s['pre'] + 0.08)
         ERR += [abs(e) for e in err]
         if err and np.max(np.abs(err)) > 0.25: print(f"  revisar {s['id']}: desfase medio {np.mean(np.abs(err)):.2f} s, peor {np.max(np.abs(err)):.2f} s")
     for k, at in s['off']:
@@ -138,15 +159,11 @@ for i, s in enumerate(SEG):
         t = T0[i] + s['pre'] + at; t0 = t
         while t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
         poner(x, t)
+if os.environ.get('DUMP'): np.save('_vox.npy', VOX); json.dump(dict(T0=T0, segs=[(x['id'], x['src'], x['a'], x['b'], x['pre'], bool(x['boca'])) for x in SEG]), open('_dump.json', 'w'))
+print('ajuste fino:', SHIFT)
 if ERR: print(f'boca: {len(ERR)} palabras, desfase medio {np.mean(ERR):.3f} s, 90 % < {np.percentile(ERR, 90):.2f} s')
 
 # ---------------- Ambiente de cada toma (sin la voz de Flow) ----------------
-VAD = json.load(open('vad.json'))
-def voces_flow(s):
-    k = os.path.relpath(s['src'], P) if s['src'].startswith(P) else None
-    if k in VAD: return VAD[k]
-    if k is None: return TK[os.path.basename(s['src'])]['vad']
-    return []
 for i, s in enumerate(SEG):
     if not s['src']: continue
     X = 0.25; full = load(s['src']); a0 = max(0.0, s['a'] - X)
@@ -174,7 +191,7 @@ for e, nx in zip(ESC[:-1], ESC[1:]):
     reps = [bed] * (L // len(bed) + 2); xf = int(0.5 * SR); out = reps[0].copy()
     for r in reps[1:]:
         r = r.copy(); out[-xf:] = out[-xf:] * np.linspace(1, 0, xf) + r[:xf] * np.linspace(0, 1, xf); out = np.concatenate([out, r[xf:]])
-    out = out[:L] * 0.3; f = int(min(1.0, L / SR / 3) * SR); out[:f] *= np.linspace(0, 1, f); out[-f:] *= np.linspace(1, 0, f)
+    out = out[:L] * 0.45; f = int(min(1.0, L / SR / 3) * SR); out[:f] *= np.linspace(0, 1, f); out[-f:] *= np.linspace(1, 0, f)
     st = int(t0 * SR); AMB[st: st + len(out)] += out[: N - st]
 
 # ---------------- Música ----------------
@@ -233,6 +250,7 @@ def stats(s):
         r = sp.run(['ffmpeg', '-v', 'error', '-ss', f'{t:.2f}', '-i', s['src'], '-frames:v', '1', '-vf', 'scale=96:54', '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True).stdout
         if r: fr.append(np.frombuffer(r, np.uint8).reshape(-1, 3).astype(float))
     x = np.concatenate(fr); return x.mean(0), x.std(0)
+NOCHE = {x['id'] for e, nx in zip(ESC[:-1], ESC[1:]) if e['n'] in ('noche', 'azotea') for x in SEG[e['start']:nx['start']]}
 # color parejo dentro de cada escena (lo que da «sintonía»): cada toma se acerca un 60 % al color medio de su escena
 GRADE = {}
 for e, nx in zip(ESC[:-1], ESC[1:]):
@@ -251,6 +269,7 @@ def clip(i, s, out):
         y0, y1 = (max(b[0] for b in bars), min(b[1] for b in bars)) if bars else (0, 719)
         h = y1 - y0 + 1; w = int(h * 16 / 9) // 2 * 2; vf.append(f'crop={w}:{h - h % 2}:{(1280 - w) // 2}:{y0}')
     if i in GRADE: vf.append(GRADE[i])
+    if s['id'] in NOCHE: vf.append('eq=gamma=1.18:contrast=1.04')
     vf.append(BASE)
     if s['pre'] or s['freeze']: vf.append(f"tpad=start_mode=clone:start_duration={s['pre']}:stop_mode=clone:stop_duration={s['freeze']}")
     cmd = ['ffmpeg', '-v', 'error', '-y', '-ss', str(s['a']), '-t', str(s['b'] - s['a']), '-i', s['src']]

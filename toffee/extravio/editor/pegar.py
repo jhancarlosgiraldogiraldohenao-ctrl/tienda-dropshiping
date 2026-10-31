@@ -145,3 +145,27 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     if s0 < 0: y = y[-s0:]; s0 = 0
     y = y[: max(0, len(out) - s0)]; out[s0: s0 + len(y)] = y
     return out, err
+
+def anclas_dtw(x, flow, ew, sr=SR):
+    """Anclas voz→boca por alineación DTW del sonido (MFCC) entre la voz de ElevenLabs y el audio original de Flow
+    (que va pegado a la boca). Más preciso que los tiempos de Whisper. Devuelve [(t_voz, t_flow)] en cada palabra."""
+    import librosa
+    h = 0.01
+    def feat(y):
+        y16 = librosa.resample(y.astype(np.float32), orig_sr=sr, target_sr=16000)
+        m = librosa.feature.mfcc(y=y16, sr=16000, n_mfcc=20, hop_length=160, n_fft=512)[1:]
+        return (m - m.mean(1, keepdims=True)) / (m.std(1, keepdims=True) + 1e-6)
+    A, B = feat(x), feat(flow)
+    D, wp = librosa.sequence.dtw(X=A, Y=B, subseq=True, metric='cosine')
+    wp = wp[::-1]; vi, fi = wp[:, 0] * h, wp[:, 1] * h
+    out = []
+    for w in ew:
+        k = np.searchsorted(vi, w[0]); k = min(k, len(fi) - 1)
+        out.append((w[0], float(fi[k])))
+    return out
+
+def pegar_dtw(x, ew, flow, dur, lo=0.8, hi=1.25, tmp='/tmp/_pegar'):
+    """Como pegar_suave(), pero las anclas salen de comparar el sonido de la voz con el de Flow (DTW)."""
+    a = anclas_dtw(x, flow, ew)
+    fw = [[tf, tf + 0.1, w[2]] for (tv, tf), w in zip(a, ew)]   # «palabras» de Flow en los tiempos que dio el DTW
+    return pegar_suave(x, ew, fw, dur, lo=lo, hi=hi, tmp=tmp)
