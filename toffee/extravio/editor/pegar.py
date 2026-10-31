@@ -132,7 +132,7 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     with open(f'{tmp}/map.txt', 'w') as fh:
         for a, b in zip(src[1:-1], dst[1:-1]): fh.write(f'{int(a * SR)} {int((b - dst[0]) * SR)}\n')
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{tmp}/in.wav'], input=x.astype(np.float32).tobytes(), check=True)
-    sp.run(['rubberband', '-q', '-F', '-D', f'{total:.4f}', '-M', f'{tmp}/map.txt', f'{tmp}/in.wav', f'{tmp}/out.wav'], check=True, capture_output=True)
+    sp.run(['rubberband', '-q', '--fine', '-F', '-D', f'{total:.4f}', '-M', f'{tmp}/map.txt', f'{tmp}/in.wav', f'{tmp}/out.wav'], check=True, capture_output=True)
     y = load(f'{tmp}/out.wav')
     out = np.zeros(int(dur * SR), np.float32); s0 = int(st * SR)
     if s0 < 0: y = y[-s0:]; s0 = 0

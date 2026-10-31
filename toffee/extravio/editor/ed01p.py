@@ -24,9 +24,12 @@ SRC = dict(P01=nf(5), P02=nf(4), P03=nf(3), P04=rep('d3dde95a'), P05=nf(1), P06=
            P11=nf(14), P12=nf(13), P13=nf(12), P14=nf(11), P15=nf(17), P16=nf(16), P17=nf(15), P18=nf(21), P19=nf(20), P20=nf(19),
            P21=rep('44746f55'), P22=nf(26), P23=nf(25), P24=nf(24), P25=nf(23), P26=nf(27), P27=nf(31), P28=nf(30), P29=rep('e90f3391'),
            P30=nf(28), P31=nf(36), P32=nf(35), P33=nf(34), P34=nf(33), P35=rep('38ba47d0'), P36=nf(40), P37=nf(37), P38=nf(38), P39=nf(39))
+def pte(k): return glob.glob(f'{P}/puentes/{k}*.mp4')[0]
+SRC.update(P40=pte('63714319'), P41=pte('c50dc0cc'), P42=pte('2ef86137'), P43=pte('b2df403b'), P44=pte('d846063b'))
 def fwords(k):
     s = SRC[k]
     if s.startswith(f'{P}/rep/'): return VW['rep/' + os.path.basename(s)]
+    if s.startswith(f'{P}/puentes/'): return []
     return W[os.path.basename(s)]
 def voz(stamp): return glob.glob(f'{P}/voces/*T{"18_" + stamp if len(stamp) == 5 else stamp}_*.mp3')[0]
 NV = dict(P01='08_40', P10='09_49', P11='10_12', P12='10_43', P13='11_20', P14='11_48', P15='12_50', P18='13_17', P20='13_46', P22='14_10',
@@ -62,7 +65,7 @@ esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fadeblack', 0.5)
 nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 1.6)])
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 5.95); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
 viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
 esc('pelota')
 viejo('R05', 'in_04', 0.0, 6.0, amb=0.7); nuevo('P05', 0.3, 5.9)
@@ -76,10 +79,10 @@ viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_2
 esc('lucho')
 nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
 nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
-viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15')
+viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9)
 esc('ciudad', 'fade', 0.8)
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29')
-nuevo('P17', 0.3, 7.9); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95); nuevo('P20', boca='P20')
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 0.3, 7.9)
+nuevo('P17', 0.3, 7.9); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95); nuevo('P20', boca='P20'); nuevo('P43', 0.2, 5.9)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
 esc('noche', 'fadeblack', 0.8)
@@ -87,6 +90,7 @@ nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo
 nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.0)
 nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.3, None, boca='P35')
 esc('azotea', 'fade', 1.0)
+nuevo('P44', 0.2, 5.9)
 nuevo('P36', 0.3, 7.9, off=[('L36', 2.0)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=8.5)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
@@ -119,7 +123,7 @@ for i, s in enumerate(SEG):
         fw = [[a - s['a'], b - s['a'], w] for a, b, w in s['fw'] if s['a'] - 0.3 <= a < s['b']]
         # pegado suave: solo se ajustan silencios reales y la velocidad entre 0,9 y 1,15 (sin pausas metidas en medio de palabras)
         try:
-            y, err = pegar_suave(x, ew, fw, s['len'] + 2.5, lo=0.75, hi=1.35)
+            y, err = pegar_suave(x, ew, fw, s['len'] + 2.5, lo=0.8, hi=1.25)
         except IndexError:
             y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, fw[0][0] - ew[0][0]) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
         poner(y, T0[i] + s['pre'])
@@ -145,13 +149,30 @@ for i, s in enumerate(SEG):
     X = 0.25; full = load(s['src']); a0 = max(0.0, s['a'] - X)
     a = full[int(a0 * SR): int((s['b'] + X) * SR)].copy()
     if s['fw'] is not None:   # P21/P29 sin voz nueva todavía: su voz de Flow se queda
+        g = np.ones(len(a), np.float32)
         for va, vb in voces_flow(s):
-            ia, ib = int(max(0, va - a0 - 0.1) * SR), int(max(0, vb - a0 + 0.1) * SR); a[ia:ib] = 0
+            ia, ib = int(max(0, va - a0 - 0.1) * SR), int(max(0, vb - a0 + 0.1) * SR); g[ia:ib] = 0
+        k_ = int(0.15 * SR); g = np.convolve(g, np.ones(k_) / k_, mode='same'); a *= g
     a *= s['amb']; f = int(X * SR)
     if len(a) > 2 * f: a[:f] *= np.linspace(0, 1, f); a[-f:] *= np.linspace(1, 0, f)
     st = int((T0[i] + s['pre'] - (s['a'] - a0)) * SR)
     if st < 0: a = a[-st:]; st = 0
     AMB[st: st + len(a)] += a[: N - st]
+
+# cama de sonido por escena: el ambiente de la toma sin voces más larga, en bucle y bajito, para que no haya huecos
+for e, nx in zip(ESC[:-1], ESC[1:]):
+    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and not voces_flow(SEG[i]) and not SEG[i]['boca']]
+    if not ids: continue
+    b_ = max(ids, key=lambda i: SEG[i]['b'] - SEG[i]['a']); s_ = SEG[b_]
+    bed = load(s_['src'])[int(s_['a'] * SR): int(s_['b'] * SR)]
+    t0 = T0[e['start']]; t1 = (T0[nx['start']] if nx['start'] < len(SEG) else TOT)
+    L = int((t1 - t0) * SR)
+    if L <= 0 or len(bed) < SR: continue
+    reps = [bed] * (L // len(bed) + 2); xf = int(0.5 * SR); out = reps[0].copy()
+    for r in reps[1:]:
+        r = r.copy(); out[-xf:] = out[-xf:] * np.linspace(1, 0, xf) + r[:xf] * np.linspace(0, 1, xf); out = np.concatenate([out, r[xf:]])
+    out = out[:L] * 0.3; f = int(min(1.0, L / SR / 3) * SR); out[:f] *= np.linspace(0, 1, f); out[-f:] *= np.linspace(1, 0, f)
+    st = int(t0 * SR); AMB[st: st + len(out)] += out[: N - st]
 
 # ---------------- Música ----------------
 def ti(id_): return T0[[s['id'] for s in SEG].index(id_)]
@@ -264,7 +285,7 @@ import re
 def lufs(f):
     o = sp.run(['ffmpeg', '-hide_banner', '-i', f, '-af', 'ebur128', '-f', 'null', '-'], capture_output=True, text=True).stderr
     return float(re.findall(r'I:\s+(-?[\d.]+) LUFS', o)[-1])
-g = -14 - lufs('_mux.mp4') + 1.3
+g = -14 - lufs('_mux.mp4') + 1.0
 sp.run(['ffmpeg', '-v', 'error', '-y', '-i', '_mux.mp4', '-c:v', 'copy', '-af',
         f'aresample=192000,volume={g:.2f}dB,alimiter=limit=0.82:attack=1:release=60:level=disabled,aresample=48000',
         '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', 'EXTRAVIO-CAP01-PILOTO.mp4'], check=True)
