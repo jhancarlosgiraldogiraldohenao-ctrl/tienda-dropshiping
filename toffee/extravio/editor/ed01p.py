@@ -38,6 +38,9 @@ def vwords(path):
 VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
 OLD = load(f'{E}/voz_toffee_1.mp3')
+# voces en off rehechas por Jay el 31-oct-2026 (misma voz de Toffee que el resto)
+_v2 = sorted(glob.glob(f'{P}/vo2/*.mp3'), key=lambda f: f.split('T00_')[1])
+VO2 = dict(zip(['T3', 'T4', 'PUTA', 'AAH', 'T9', 'T11', 'T18', 'T21'], _v2)) if len(_v2) == 8 else {}
 OFF = dict(T3=(12.45, 17.21), T4=(17.21, 23.13), T9=(35.53, 38.97), T11=(41.45, 42.29), T18=(60.85, 64.73), T21=(70.61, 75.65), PUTA=(29.40, 30.75), AAH=(32.77, 33.71))
 
 # ---------------- Montaje ----------------
@@ -59,7 +62,7 @@ esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fadeblack', 0.5)
 nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, boca='T02')
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 1.0)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.4)])
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P04', 0.2, 4.0, off=[('T4', 1.6)])
 viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
 esc('pelota')
 viejo('R05', 'in_04', 0.0, 6.0, amb=0.7); nuevo('P05', 0.3, 5.9)
@@ -123,8 +126,11 @@ for i, s in enumerate(SEG):
         ERR += [abs(e) for e in err]
     for k, at in s['off']:
         if k == 'L36': x = nivel(load(voz('17_23')))
+        elif k in VO2: x = nivel(load(VO2[k]))
         else: a, b = OFF[k]; x = nivel(OLD[int(a * SR): int(b * SR)])
-        poner(x, T0[i] + s['pre'] + at)
+        t = T0[i] + s['pre'] + at; t0 = t
+        while t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.3) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
+        poner(x, t)
 if ERR: print(f'boca: {len(ERR)} palabras, desfase medio {np.mean(ERR):.3f} s, 90 % < {np.percentile(ERR, 90):.2f} s')
 
 # ---------------- Ambiente de cada toma (sin la voz de Flow) ----------------
