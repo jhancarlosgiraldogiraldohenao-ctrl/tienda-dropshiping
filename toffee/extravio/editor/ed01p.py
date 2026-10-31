@@ -199,7 +199,8 @@ for k_, pat in dict(mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciud
     if g_: CAMA[k_] = g_[0]
 for e, nx in zip(ESC[:-1], ESC[1:]):
     ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and not voces_flow(SEG[i]) and not SEG[i]['boca'] and SEG[i]['amb'] > 0.3]
-    if e['n'] in CAMA: bed = load(CAMA[e['n']]) * 1.4
+    if e['n'] in CAMA:
+        bed = load(CAMA[e['n']]); bed = bed * (10 ** (-26 / 20) / (np.sqrt(np.mean(bed ** 2)) + 1e-9))   # mismo nivel para todos los ambientes
     elif ids:
         xf_ = int(1.0 * SR); bed = None
         for i in sorted(ids, key=lambda i: -(SEG[i]['b'] - SEG[i]['a']))[:4]:   # varias tomas distintas, cruzadas
@@ -236,7 +237,14 @@ MUS = (music(A3, 0, ti('LOGO') + 0.3, fade=0.3)
        + music(A1, ti('P36'), TOT, ss=3, fade=4.0))
 env = np.convolve(np.abs(VOX), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')
 MUS *= (0.40 - 0.28 * np.clip(env / 0.02, 0, 1))
-MIX = np.clip(VOX + AMB * 1.0, -1, 1)   # sin música (pedido de Jay, 30-oct-2026)
+# música solo en el logo (pedido de Jay, 31-oct): el arranque de «Key of the Veil», unos 4 s, que se apaga suave
+LOGOMUS = np.zeros(N, np.float32)
+_lm = glob.glob(f'{P}/sfx/*Key_of_the_Veil*')
+if _lm:
+    m_ = load(_lm[0])[: int(4.2 * SR)].copy(); m_ *= 10 ** (-18 / 20) / (np.sqrt(np.mean(m_ ** 2)) + 1e-9)
+    fo = int(1.2 * SR); m_[-fo:] *= np.linspace(1, 0, fo); fi = int(0.05 * SR); m_[:fi] *= np.linspace(0, 1, fi)
+    st = int(max(0, ti('LOGO') - 0.5) * SR); LOGOMUS[st: st + len(m_)] = m_[: N - st]
+MIX = np.clip(VOX + AMB * 1.0 + LOGOMUS, -1, 1)   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
