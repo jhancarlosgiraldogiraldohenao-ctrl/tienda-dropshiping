@@ -123,9 +123,16 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     src = [0.0] + [a for a, _ in anc] + [L]
     st = anc[0][1] - anc[0][0]
     dst = [st, anc[0][1]]
+    fr = int(0.01 * SR)
+    def silencio(a, b):   # segundos de silencio real (bajo -40 dB) entre a y b: ese tiempo se puede achicar o alargar sin que se note
+        seg = x[int(a * SR): int(b * SR)]; n = len(seg) // fr
+        if n == 0: return 0.0
+        db = 20 * np.log10(np.sqrt(np.mean(seg[: n * fr].reshape(n, fr) ** 2, axis=1)) + 1e-9)
+        return float(np.sum(db < -40)) * 0.01
     for k in range(1, len(anc)):
         d_src = anc[k][0] - anc[k - 1][0]; want = anc[k][1] - dst[-1]
-        dst.append(dst[-1] + min(hi * d_src, max(lo * d_src, want)))
+        S_ = silencio(anc[k - 1][0], anc[k][0]); P_ = d_src - S_
+        dst.append(dst[-1] + min(hi * P_ + 3.0 * S_, max(lo * P_ + 0.35 * S_, want)))
     dst.append(dst[-1] + (L - anc[-1][0]))
     err = [dst[k + 1] - anc[k][1] for k in range(len(anc))]
     total = dst[-1] - dst[0]

@@ -25,10 +25,12 @@ SRC = dict(P01=nf(5), P02=nf(4), P03=nf(3), P04=rep('d3dde95a'), P05=nf(1), P06=
            P21=rep('44746f55'), P22=nf(26), P23=nf(25), P24=nf(24), P25=nf(23), P26=nf(27), P27=nf(31), P28=nf(30), P29=rep('e90f3391'),
            P30=nf(28), P31=nf(36), P32=nf(35), P33=nf(34), P34=nf(33), P35=rep('38ba47d0'), P36=nf(40), P37=nf(37), P38=nf(38), P39=nf(39))
 def pte(k): return glob.glob(f'{P}/puentes/{k}*.mp4')[0]
+SRC.update(P01=glob.glob(f'{P}/rep2/94afffdb*.mp4')[0], P13=glob.glob(f'{P}/rep2/b6437638*.mp4')[0])   # repetidas el 31-oct (P45 y P49)
 SRC.update(P40=pte('63714319'), P41=pte('c50dc0cc'), P42=pte('2ef86137'), P43=pte('b2df403b'), P44=pte('d846063b'))
 def fwords(k):
     s = SRC[k]
     if s.startswith(f'{P}/rep/'): return VW['rep/' + os.path.basename(s)]
+    if s.startswith(f'{P}/rep2/'): return VW['rep2/' + os.path.basename(s)]
     if s.startswith(f'{P}/puentes/'): return []
     return W[os.path.basename(s)]
 def voz(stamp): return glob.glob(f'{P}/voces/*T{"18_" + stamp if len(stamp) == 5 else stamp}_*.mp3')[0]
@@ -60,7 +62,7 @@ def nuevo(k, a=None, b=None, boca=None, off=(), amb=None, freeze=0.0):
 def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
     seg(k, f'{E}/{f}.mp4', a, b, boca=boca, off=off, amb=amb, crop=crop, pre=pre, fw=TK[f + '.mp4']['words'])
 
-esc('gancho');        nuevo('P01', 0.2, 4.2, boca='P01')
+esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fadeblack', 0.5)
 nuevo('P02', 0.0, 6.0); nuevo('P03', 0.2, 3.6)
@@ -68,7 +70,7 @@ viejo('R01', 'in_02', 0.0, 8.04, boca='T01'); viejo('R02', 'in_01', 0.6, 6.04, b
 viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 5.95); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
 viejo('R04', 'in_05', 0.5, 7.5, amb=0.6)
 esc('pelota')
-viejo('R05', 'in_04', 0.0, 6.0, amb=0.7); nuevo('P05', 0.3, 5.9)
+viejo('R05', 'in_04', 0.0, 6.0, amb=0.7)   # P05 salió: la pelota iba hacia atrás (Jay, 31-oct)
 viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
 nuevo('P06', 0.3, 5.9); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.4)])
 esc('remolino')
@@ -128,6 +130,7 @@ for i, s in enumerate(SEG):
             y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, fw[0][0] - ew[0][0]) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
         poner(y, T0[i] + s['pre'])
         ERR += [abs(e) for e in err]
+        if err and np.max(np.abs(err)) > 0.25: print(f"  revisar {s['id']}: desfase medio {np.mean(np.abs(err)):.2f} s, peor {np.max(np.abs(err)):.2f} s")
     for k, at in s['off']:
         if k == 'L36': x = nivel(load(voz('17_23')))
         elif k in VO2: x = nivel(load(VO2[k]))
