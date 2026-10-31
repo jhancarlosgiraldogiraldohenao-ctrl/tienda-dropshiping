@@ -249,6 +249,21 @@ nueva(6, "TGLZ", "Contrapicado desde la azotea (une P35 con P36)",
       f"{S(6)} {ROOF} Low camera on the roof looking down into a square open hatch in the roof floor: {L} climbs up a narrow wooden ladder and out through the hatch, then {T} squeezes out after him, then {G} jumps out; they shake off the dust and walk toward the edge of the roof. {END('one cat, one dog and one mouse', 'creaking wood and soft magical wind', dog=True)}",
       "(sin voz: suben a la azotea)", nota="Va después de P35 y antes de P36.")
 
+# ---------------- Repetidas (31-oct-2026): Jay no aprobó estas tomas; nuevos ángulos ----------------
+esc("Repetir · nuevos ángulos", "REEMPLAZAN a P01, P05, P41 y P42")
+nueva(6, "TGR", "Plano general cayendo junto a ellos (reemplaza P01)",
+      f"{S(6)} {VORTEX} Medium-wide shot, the camera falls together with them and rotates slowly: the whole body of {T} is visible, tumbling head over heels, legs and tail flailing, screaming toward the dog with a huge open mouth; on the right, {G} falls happily, upside down, trying to bite {BALL} floating next to him. Lost objects (socks, keys, remote controls) swirl past between them and the camera. {TT('¡¡GALLETAAAA!!', 'screaming in terror')} {END('one cat and one dog', 'rushing wind', dog=True)}".replace("The cat's whole head, nightcap and camera always in frame.", "The cat's whole body, nightcap and camera always in frame."),
+      "TOFFEE grita: «¡¡GALLETAAAA!!»", nota="Se ve a Toffee entero (no solo la cabeza).")
+nueva(6, "G", "Travelling lateral a ras de suelo (reemplaza P05)",
+      f"{S(6)} Side tracking shot at floor level, the camera moving from left to right: {BALL} bounces out through an open apartment door, AWAY from the house, down three wet outdoor steps and onto a rainy sidewalk, always moving forward to the right, ahead of the dog. {G} runs after it from left to right, happy, ears flapping, following the ball. The ball never moves backward. {END('one dog', 'rain and a squeaky bounce', cat=False, dog=True)}",
+      "(sin voz: Galleta persigue la pelota)")
+nueva(8, "TGLM", "Plano lateral bajo, caminando (reemplaza P41)",
+      f"{S(8)} At sunset, a slope made of lost objects (suitcases, umbrellas, old toys) rises from the beach of the sea of balls toward a hilltop. Low-angle side shot, the camera tracking slowly from left to right with them: the three walk in a line up the slope, clearly walking step by step, their legs moving: in front {L}, pointing ahead with his cheese, then {T}, puffing, then {G}, trotting happily. The huge sun is behind them, kites and umbrellas fly in the sky. {END('one cat, one dog and one mouse', 'soft wind and footsteps on objects', dog=True)}",
+      "(sin voz: suben la colina)", nota="Tienen que CAMINAR (que se les muevan las patas), no quedarse parados.")
+nueva(8, "TGLV", "Travelling de espaldas que sube al pasar el arco (reemplaza P42)",
+      f"{S(8)} At dusk, a path made of stacked old suitcases goes down from the hill toward a tall arch made of two giant crossed keys, the entrance to the city of lost things (like the city reference). Tracking shot from behind: {L}, {T} and {G} walk down the path away from the camera, side by side, clearly walking; as they pass under the arch, the camera rises slightly and reveals the busy glowing street of the city ahead of them, full of lanterns and tiny inhabitants. {END('one cat, one dog and one mouse', 'a distant lively murmur and footsteps', dog=True, extras=True)}",
+      "(sin voz: entran a la ciudad)")
+
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
  ("CIUDAD-VIVA", "16:9 · referencia: EXTRAVIO-CIUDAD",
