@@ -26,14 +26,17 @@ SRC = dict(P01=nf(5), P02=nf(4), P03=nf(3), P04=rep('d3dde95a'), P05=nf(1), P06=
            P30=nf(28), P31=nf(36), P32=nf(35), P33=nf(34), P34=nf(33), P35=rep('38ba47d0'), P36=nf(40), P37=nf(37), P38=nf(38), P39=nf(39))
 def pte(k): return glob.glob(f'{P}/puentes/{k}*.mp4')[0]
 def r3(k): return glob.glob(f'{P}/rep3/{k}*.mp4')[0]
-SRC.update(P13=r3('c91aaa3a'), P43=r3('5529a323'), P52=r3('9fbb7dcf'), P32=r3('07ce16cf'), P35=r3('a66c0978'))   # P50, P51, P52, P55, P54
+def r4(k): return glob.glob(f'{P}/rep4/{k}*.mp4')[0]
 SRC.update(P01=glob.glob(f'{P}/rep2/94afffdb*.mp4')[0], P13=glob.glob(f'{P}/rep2/b6437638*.mp4')[0])   # repetidas el 31-oct (P45 y P49)
+SRC.update(P13=r3('c91aaa3a'), P43=r3('5529a323'), P52=r3('9fbb7dcf'), P32=r3('07ce16cf'), P35=r3('a66c0978'))   # P50, P51, P52, P55, P54
 SRC.update(P40=pte('63714319'), P41=pte('c50dc0cc'), P42=pte('2ef86137'), P43=pte('b2df403b'), P44=pte('d846063b'))
+SRC.update(P11=r4('caa2c15d'), P43=r4('7016207e'), P28=r4('c32cf4f6'), P42=r4('cc21fd6c'), P58=r4('055a4951'), P60=r4('17bacbe1'), P62=r4('07781392'), P63=r4('3f9df0a4'))   # P65, P64, P59, P66 y nuevas
 def fwords(k):
     s = SRC[k]
     if s.startswith(f'{P}/rep/'): return VW['rep/' + os.path.basename(s)]
     if s.startswith(f'{P}/rep2/'): return VW['rep2/' + os.path.basename(s)]
     if s.startswith(f'{P}/rep3/'): return VW['rep3/' + os.path.basename(s)]
+    if s.startswith(f'{P}/rep4/'): return VW['rep4/' + os.path.basename(s)]
     if s.startswith(f'{P}/puentes/'): return []
     return W[os.path.basename(s)]
 def voz(stamp): return glob.glob(f'{P}/voces/*T{"18_" + stamp if len(stamp) == 5 else stamp}_*.mp3')[0]
@@ -43,6 +46,7 @@ NV = dict(P01='08_40', P10='09_49', P11='10_12', P12='10_43', P13='11_20', P14='
 def vwords(path):
     if path.startswith(RT): return RW[os.path.basename(path)]
     if path.endswith('_p35a.wav'): return VW['voces/_p35a.wav']
+    if '/vo3/' in path: return VW['vo3/' + os.path.basename(path)]
     return VW['voces/' + os.path.basename(path)]
 VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
@@ -54,8 +58,9 @@ VPATH['P35a'] = f'{P}/vo3/_p35a.wav'
 OLD = load(f'{E}/voz_toffee_1.mp3')
 # voces en off rehechas por Jay el 31-oct-2026 (misma voz de Toffee que el resto)
 _v2 = sorted(glob.glob(f'{P}/vo2/*.mp3'), key=lambda f: f.split('T00_')[1])
-_v3 = {k: glob.glob(f'{P}/vo3/*T{v}*.mp3')[0] for k, v in dict(C1='13_51_01', C2='13_50_33', C3='14_03_29', C4='13_50_03', C5='13_49_30', LSUB='13_52_01').items()}
+_v3 = {k: glob.glob(f'{P}/vo3/*T{v}*.mp3')[0] for k, v in dict(C1='13_51_01', C2='13_50_33', C3='14_03_29', C4='13_50_03', C5='13_49_30', LSUB='13_52_01', TSUB='21_13_15').items()}
 _p35 = load(VPATH['P35']) if 'P35' in VPATH else None
+VPATH.update({k: _v3[k] for k in ('C1', 'C2', 'C3')})
 VO2 = dict(zip(['T3', 'T4', 'PUTA', 'AAH', 'T9', 'T11', 'T18', 'T21'], _v2)) if len(_v2) == 8 else {}
 OFF = dict(T3=(12.45, 17.21), T4=(17.21, 23.13), T9=(35.53, 38.97), T11=(41.45, 42.29), T18=(60.85, 64.73), T21=(70.61, 75.65), PUTA=(29.40, 30.75), AAH=(32.77, 33.71))
 
@@ -92,18 +97,17 @@ viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_2
 esc('lucho')
 nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
 nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
-viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, boca='P41' if 'P41' in NV else None)
+viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])
 esc('ciudad')
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 1.8, 7.9, off=[('C1', 1.0), ('C2', 4.2)])
-nuevo('P17', 0.3, 7.9, off=[('C3', 0.3)]); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
+nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
 esc('local')
-nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
+nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9); nuevo('P58', 0.2, 5.95)
 esc('noche', 'fadeblack', 0.8)
-nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 4.8)
+nuevo('P25', 0.3, 7.9); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 5.95); nuevo('P28', 0.2, 3.95)
 nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P52', 0.2, 5.95); nuevo('P30', 0.2, 5.9); nuevo('P31', 0.2, 5.95); nuevo('P32', 0.2, 5.95)
-nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a')
+nuevo('P33', 0.2, 5.95); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a'); nuevo('P60', 0.2, 5.95)
 esc('azotea', 'fade', 0.4)
-nuevo('P44', 0.2, 5.9)
 nuevo('P36', 0.3, 7.9, off=[('L36', 4.9)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=4.0)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
@@ -148,7 +152,9 @@ for i, s in enumerate(SEG):
                 fl = load(s['src'])[int(s['a'] * SR): int(s['b'] * SR)]
                 y, err = pegar_dtw(x, ew, fl, s['len'] + 2.5, lo=0.8, hi=1.25)
         except IndexError:
-            y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, fw[0][0] - ew[0][0]) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
+            print('  sin palabras para pegar en', s['id'], len(fw), len(ew))
+            t0_ = (fw[0][0] - ew[0][0]) if (fw and ew) else 0.3
+            y = np.zeros(int((s['len'] + 2.5) * SR), np.float32); st = int(max(0, t0_) * SR); y[st: st + len(x)] = x[: len(y) - st]; err = []
         # ajuste fino: correr la frase completa (máx. ±0,3 s) para que la voz suene justo cuando Flow hablaba (= cuando se mueve la boca)
         vf = voces_flow(s); fr_ = int(0.02 * SR); n_ = int(s['len'] / 0.02)
         M = np.zeros(n_)
@@ -299,7 +305,7 @@ def clip(i, s, out):
         bars = [b for b in TK[os.path.basename(s['src'])]['bars'] if b and b[0] > 5]
         y0, y1 = (max(b[0] for b in bars), min(b[1] for b in bars)) if bars else (0, 719)
         h = y1 - y0 + 1; w = int(h * 16 / 9) // 2 * 2; vf.append(f'crop={w}:{h - h % 2}:{(1280 - w) // 2}:{y0}')
-    if s['id'] == 'P43': vf.append('crop=960:540:160:175')   # sin el letrero «LUCHO'S KEY SHOP»
+    if s['id'] == 'P60': vf.append('crop=1088:612:0:108')   # sin el letrero de arriba a la derecha
     if i in GRADE: vf.append(GRADE[i])
     if s['id'] in NOCHE: vf.append('eq=gamma=1.18:contrast=1.04')
     vf.append(BASE)
