@@ -54,7 +54,7 @@ VPATH['P35a'] = f'{P}/vo3/_p35a.wav'
 OLD = load(f'{E}/voz_toffee_1.mp3')
 # voces en off rehechas por Jay el 31-oct-2026 (misma voz de Toffee que el resto)
 _v2 = sorted(glob.glob(f'{P}/vo2/*.mp3'), key=lambda f: f.split('T00_')[1])
-_v3 = {k: glob.glob(f'{P}/vo3/*T13_{v}*.mp3')[0] for k, v in dict(C1='51_01', C2='50_33', C4='50_03', C5='49_30', LSUB='52_01').items()}
+_v3 = {k: glob.glob(f'{P}/vo3/*T{v}*.mp3')[0] for k, v in dict(C1='13_51_01', C2='13_50_33', C3='14_03_29', C4='13_50_03', C5='13_49_30', LSUB='13_52_01').items()}
 _p35 = load(VPATH['P35']) if 'P35' in VPATH else None
 VO2 = dict(zip(['T3', 'T4', 'PUTA', 'AAH', 'T9', 'T11', 'T18', 'T21'], _v2)) if len(_v2) == 8 else {}
 OFF = dict(T3=(12.45, 17.21), T4=(17.21, 23.13), T9=(35.53, 38.97), T11=(41.45, 42.29), T18=(60.85, 64.73), T21=(70.61, 75.65), PUTA=(29.40, 30.75), AAH=(32.77, 33.71))
@@ -94,8 +94,8 @@ nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_
 nuevo('P12', None, 8.0, boca='P12', freeze=1.4); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('LSUB', 1.3)])
 esc('ciudad')
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 1.8, 7.9, off=[('C1', 1.0)])
-nuevo('P17', 0.3, 5.6); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', 1.8, 7.9, off=[('C1', 1.0), ('C2', 4.2)])
+nuevo('P17', 0.3, 7.9, off=[('C3', 0.3)]); nuevo('P18', boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 5.9)
 esc('noche', 'fadeblack', 0.8)
