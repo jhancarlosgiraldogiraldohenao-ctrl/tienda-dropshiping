@@ -324,6 +324,9 @@ L1Q = ("Lucho, the skinny scruffy gray mouse from the reference standing on two 
 nueva(8, "TLM", "Plano de dos (reemplaza P56: le aparecían quesos)",
       f"{S(8)} {SEA} Two-shot on the beach of lost toys: on the right {L1Q}, talks proudly, gesturing only with his right paw; on the left {T} listens, wet and offended. There is only ONE piece of cheese in the whole video and it stays against Lucho's chest the whole time; no other food appears. Behind them a few lost objects fall from the sky onto the beach (a TV remote control, a metal key, a striped sock); at the end the striped sock lands on the cat's nightcap and the cat shakes it off, disgusted. {LL('Bienvenidos a Extravío. Aquí cae todo lo que se pierde. Medias, controles, llaves… y mascotas.')} {END('one cat and one mouse', 'distant waves of balls')}",
       "LUCHO: «Bienvenidos a Extravío…»", nota="El queso se nombra UNA sola vez: mientras más se repite en el prompt, más quesos inventa Flow.")
+nueva(8, "TGLV", "Plano general de frente bajo el arco (reemplaza P61: queso nombrado una sola vez)",
+      f"{S(8)} At dusk, a path made of stacked old suitcases goes down into the city of lost things (like the city reference) and passes under a tall arch made of two giant crossed keys. Medium-wide shot from the front: {L1Q}, walks toward the camera under the arch, turns to the other two and speaks with a proud tour-guide gesture of his right paw; behind him {T} and {G} walk and look around, amazed. There is only ONE piece of cheese in the whole video and it stays against Lucho's chest the whole time; no other food appears. {LL('Bienvenidos a la ciudad de Extravío.', 'proudly, like a tour guide')} {END('one cat, one dog and one mouse', 'a lively city murmur and footsteps', dog=True, extras=True)}",
+      "LUCHO: «Bienvenidos a la ciudad de Extravío.»")
 
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
