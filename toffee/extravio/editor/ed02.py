@@ -29,7 +29,7 @@ def seg(id_, a=None, b=None, boca=None, amb=0.6, speed=1.0, freeze=0.0, src=None
     if b is None: b = min(d - 0.05, ws[-1][1] + 1.3) if (boca and ws) else d - 0.1
     SEG.append(dict(id=id_, src=f, a=a, b=b, boca=boca, amb=(0.3 if boca else amb), speed=speed, freeze=freeze, fw=ws))
 esc('gancho');  seg('C2-01', 0.0, 5.8, boca='V01', amb=0.3); seg('C2-02', 0.3, 4.0, boca='V02')
-esc('logo', 'circleopen', 0.7); SEG.append(dict(id='LOGO', src=None, a=0, b=3.2, boca=None, amb=0, speed=1, freeze=0, fw=[]))
+esc('logo', 'circleopen', 0.35); SEG.append(dict(id='LOGO', src=None, a=0, b=3.2, boca=None, amb=0, speed=1, freeze=0, fw=[]))
 esc('azotea', 'fade', 0.5)
 seg('C2-03', 0.2, 5.4); seg('C2-04', 0.0, 6.0, boca='V04'); seg('C2-05', 1.0, 4.0, boca='V05'); seg('C2-06', 0.3, 3.9)
 seg('C2-07', 1.6, 8.0, boca='L07'); seg('C2-08', boca='L08'); seg('C2-09', boca='V09'); seg('C2-10', 0.3, 4.0, boca='V10')
