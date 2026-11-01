@@ -85,7 +85,9 @@ def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
 
 # Nuevo comienzo (idea de Jay, 1-nov-2026): sin la presentación en la casa ni la persecución; de la alcantarilla al remolino, y Lucho los encuentra.
 esc('gancho')
-nuevo('P06', 0.3, 3.8); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.9)], amb=0.0)
+nuevo('P06', 0.3, 3.8, amb=0.0); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 1.3)], amb=0.0)   # P06 sin su sonido (el perro olfateando sonaba a estornudo); el grito justo cuando caen (Jay, 1-nov)
+esc('remolino', 'fade', 0.25)   # «Si me muero… culpa del perro» abrazado al control se queda (Jay, 1-nov)
+viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6)
 nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('lucho', 'fade', 0.4)
@@ -197,7 +199,7 @@ for i, s in enumerate(SEG):
 
 # cama de sonido por escena: el ambiente de la toma sin voces más larga, en bucle y bajito, para que no haya huecos
 CAMA = {}   # efectos de sonido largos por escena (ElevenLabs), si existen
-for k_, pat in dict(mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciudad='Market_Lane').items():
+for k_, pat in dict(gancho='CALLE_LLUVIA', mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciudad='Market_Lane').items():
     g_ = glob.glob(f'{P}/vo3/*{pat}*') + glob.glob(f'{P}/sfx/*{pat}*')
     if g_: CAMA[k_] = g_[0]
 for e, nx in zip(ESC[:-1], ESC[1:]):
