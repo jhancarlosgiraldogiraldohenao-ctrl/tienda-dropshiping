@@ -41,6 +41,9 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Escenas sin continuidad (aparecen en otro lugar) | Faltaban tomas puente | Toda llegada a un lugar nuevo tiene su toma de camino (bajar del trineo, subir la colina, entrar por el arco, entrar al local, escalera a la azotea, meterse al carrito) |
 | Lucho entra volando/saltando desde arriba (P68) | «leans into the frame from above»: Flow lo leyó como caer del cielo | Decir dónde está en el primer cuadro: «From the first frame, Lucho is already standing in front of the camera»; nunca «from above» para alguien que se asoma |
 | Toffee salió sentado en vez de acostado (P69) | Posturas acostadas en primer plano: Flow las endereza | Si la postura importa, plano más abierto donde se vea el cuerpo entero acostado; si no importa, aceptar sentado |
+| Cruzan la puerta en un prado de día en vez de la azotea (C2-12) | La foto de referencia de la puerta tiene prado de fondo y Flow copió el fondo | Si una referencia de OBJETO trae fondo, decir «only the door from the door reference, NOT its background» y nombrar el lugar real + su foto |
+| La página arrancada salió entera, con dos cachorros (C2-36) | Pedir que Galleta «pase la página» y que aparezca el dibujo: Flow inventa otra página | Que la página correcta esté abierta DESDE EL PRIMER CUADRO y una sola acción (olfatear) |
+| Texto manuscrito en las páginas del libro (C2-32) | Libro antiguo = Flow escribe | Recortar en edición; para insertos de libro, usar la foto de páginas como primer cuadro |
 | La amenaza aparece y desaparece | Tomas sueltas | La Polilla (o la amenaza) se ve o se siente en cada toma de la secuencia (luz, sombra, sonido) |
 
 ## 4. Voces (ElevenLabs)
