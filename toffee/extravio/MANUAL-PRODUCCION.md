@@ -39,6 +39,8 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Galleta con la boca abierta mientras habla Toffee | Jadeo de perro | En tomas de diálogo: «the dog keeps his mouth closed while the cat talks» |
 | Flow pone a hablar a quien no debe o inventa frases | Toma sin frase | Si nadie habla: «No one speaks». Claude silencia toda voz de Flow en la mezcla |
 | Escenas sin continuidad (aparecen en otro lugar) | Faltaban tomas puente | Toda llegada a un lugar nuevo tiene su toma de camino (bajar del trineo, subir la colina, entrar por el arco, entrar al local, escalera a la azotea, meterse al carrito) |
+| Lucho entra volando/saltando desde arriba (P68) | «leans into the frame from above»: Flow lo leyó como caer del cielo | Decir dónde está en el primer cuadro: «From the first frame, Lucho is already standing in front of the camera»; nunca «from above» para alguien que se asoma |
+| Toffee salió sentado en vez de acostado (P69) | Posturas acostadas en primer plano: Flow las endereza | Si la postura importa, plano más abierto donde se vea el cuerpo entero acostado; si no importa, aceptar sentado |
 | La amenaza aparece y desaparece | Tomas sueltas | La Polilla (o la amenaza) se ve o se siente en cada toma de la secuencia (luz, sombra, sonido) |
 
 ## 4. Voces (ElevenLabs)
