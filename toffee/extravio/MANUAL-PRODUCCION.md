@@ -51,6 +51,7 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 - El texto con ritmo lo arma Claude midiendo la toma (`editor/ritmo.py`). Si Flow estira mucho una palabra («¡Bieeenveniiidos!»), el texto también la estira.
 - Voces en off: solo cuando no se ve la boca (de espaldas, lejos, o sobre otro plano). Si se ve la cara, la frase va en una toma donde ese personaje la dice.
 - Música (cambio de Jay, 1-nov-2026): NO de fondo todo el capítulo, sino **por momentos** (persecución, misterio, llegada/ciudad, noche, final) y bajando sola cuando alguien habla. Sin eso el capítulo suena plano. Pistas en `editor` → `sfx2/` (M_TEMA, M_PERSECUCION, M_SUSPENSO, M_MISTERIO).
+- **Silencios vivos (estudio de Desencanto, Jay 1-nov-2026):** cuando nadie habla, el lugar suena con detalles propios (animales, ramas, viento, velas, papel picado, perros a lo lejos) y en los momentos tristes o tiernos entra una melodía suave. Nunca un silencio plano ni un solo viento: cada lugar tiene su ambiente de 1 minuto con capas.
 - **Efectos de reacción** que despiertan: whoosh (logo, caídas), golpe de chiste en cada remate, rayón de disco antes de un estallido, «wah wah» en los fracasos de Toffee, pop, brillo mágico, alas, latido, pasos, cortina, remate final. Se ubican en el cuadro exacto (mirar la toma) y van por debajo de la voz. Ambientes: efectos largos de ElevenLabs por lugar (si solo deja 1 minuto, un audio con 3 partes de 20 s y Claude lo corta).
 
 ## 5. Edición (`editor/ed01p.py`, la base de los próximos capítulos)
