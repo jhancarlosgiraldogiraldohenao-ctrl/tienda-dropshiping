@@ -105,7 +105,7 @@ nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])
 esc('ciudad')
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
-nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.0), ('C5', 3.95)]); nuevo('P20', 1.0, None, boca='P20')   # «Tenía. Por eso está aquí» en off mientras Galleta tiene la media (Jay, 1-nov); nuevo('P43', 0.2, 5.95)
+nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.0), ('C5', 3.95)]); nuevo('P20', 1.0, None, boca='P20'); nuevo('P43', 0.2, 5.95)   # «Tenía. Por eso está aquí» va en off en P19, mientras Galleta tiene la media (Jay, 1-nov)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)
 esc('noche', 'fade', 0.6)
