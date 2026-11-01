@@ -23,15 +23,15 @@ def vwords(k): return VW[os.path.basename(VP[k])]
 # ---------------- Montaje ----------------
 SEG, ESC = [], []
 def esc(n, trans=None, td=0.0): ESC.append(dict(n=n, start=len(SEG), trans=trans, td=td))
-def seg(id_, a=None, b=None, boca=None, amb=0.6, speed=1.0, freeze=0.0, src=None):
+def seg(id_, a=None, b=None, boca=None, amb=0.6, speed=1.0, freeze=0.0, src=None, crop=None):
     f = src or tom(id_); d = dur(f); ws = FW.get(os.path.basename(f), [])
     if a is None: a = max(0.0, ws[0][0] - 0.9) if (boca and ws) else 0.2
     if b is None: b = min(d - 0.05, ws[-1][1] + 1.3) if (boca and ws) else d - 0.1
-    SEG.append(dict(id=id_, src=f, a=a, b=b, boca=boca, amb=(0.3 if boca else amb), speed=speed, freeze=freeze, fw=ws))
+    SEG.append(dict(id=id_, src=f, a=a, b=b, boca=boca, amb=(0.3 if boca else amb), speed=speed, freeze=freeze, fw=ws, crop=crop))
 esc('gancho');  seg('C2-01', 0.0, 5.8, boca='V01', amb=0.3); seg('C2-02', 0.3, 4.0, boca='V02')
 esc('logo', 'circleopen', 0.35); SEG.append(dict(id='LOGO', src=None, a=0, b=3.2, boca=None, amb=0, speed=1, freeze=0, fw=[]))
 esc('azotea', 'fade', 0.5)
-seg('C2-03', 0.2, 5.4); seg('C2-04', 0.0, 6.0, boca='V04'); seg('C2-05', 1.0, 4.0, boca='V05'); seg('C2-06', 0.3, 3.9)
+seg('C2-03', 0.2, 5.4); seg('C2-04', 0.0, 6.0, boca='V04', crop='1024:576:128:0'); seg('C2-05', 1.0, 4.0, boca='V05'); seg('C2-06', 0.3, 3.9)   # C2-04 recortada: sin el letrero de abajo
 seg('C2-07', 1.6, 8.0, boca='L07'); seg('C2-08', boca='L08'); seg('C2-09', boca='V09'); seg('C2-10', 0.3, 4.0, boca='V10')
 esc('puerta', 'fade', 0.3); seg('C2-11', 0.3, 5.9); seg('C2-12', 0.2, 5.9, src=tom('C2-12b'))
 esc('cancion', 'fade', 0.6)
@@ -210,6 +210,7 @@ def clip(i, s, out):
                 f"crop=iw:iw*9/16:0:(ih-iw*9/16)/2,scale=1920:1080,zoompan=z='1+0.0006*on':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d={n}:s=1920x1080:fps=24,{BASE}",
                 '-frames:v', str(n), '-c:v', 'libx264', '-crf', '16', out], check=True); return
     vf = []
+    if s.get('crop'): vf.append('crop=' + s['crop'])
     if s['speed'] != 1: vf += [f"setpts={s['speed']}*PTS", "minterpolate=fps=24:mi_mode=blend"]
     if i in GRADE: vf.append(GRADE[i])
     vf.append(BASE)
