@@ -328,6 +328,20 @@ nueva(8, "TGLV", "Plano general de frente bajo el arco (reemplaza P61: queso nom
       f"{S(8)} At dusk, a path made of stacked old suitcases goes down into the city of lost things (like the city reference) and passes under a tall arch made of two giant crossed keys. Medium-wide shot from the front: {L1Q}, walks toward the camera under the arch, turns to the other two and speaks with a proud tour-guide gesture of his right paw; behind him {T} and {G} walk and look around, amazed. There is only ONE piece of cheese in the whole video and it stays against Lucho's chest the whole time; no other food appears. {LL('Bienvenidos a la ciudad de Extravío.', 'proudly, like a tour guide')} {END('one cat, one dog and one mouse', 'a lively city murmur and footsteps', dog=True, extras=True)}",
       "LUCHO: «Bienvenidos a la ciudad de Extravío.»")
 
+# ---------------- Arreglos 3 (1-nov-2026): nuevo comienzo, idea de Jay ----------------
+# El capítulo arranca en la alcantarilla → caída («¡Galletaaa!») → logo → P67 → P68 → P69 → P12 («¿Famoso?… Gato con Botas»)
+# → «¿Me ves botas, desgraciado?» → sigue igual desde «Tranquilo, Botas» (2:26 del corte de 5:38).
+esc("Arreglos 3 · nuevo comienzo", "P67–P69: caen al Mar de Pelotas y Lucho los encuentra (reemplaza 0:13–2:26)")
+nueva(8, "TGLM", "Plano general fijo: caen y quedan tirados; llega Lucho",
+      f"{S(8)} {SEA} Static medium-wide shot at beach level, the camera does not move or zoom and everything keeps the same size; the whole bodies are visible. From the first frame the beach is empty in the center. {T} drops from the sky on the left and lands on his back in the soft colorful balls with a soft bounce, and right after {G} drops on the right and lands on his side next to him. Both lie still on the balls, dazed, eyes half closed; the nightcap and camera stay on the cat's head. Then {L1Q}, walks in from the right edge of the frame, stops between them and leans over them, looking down with curiosity. There is only ONE piece of cheese in the whole video. No one speaks. {END('one cat, one dog and one mouse', 'soft waves of balls and a soft bounce', dog=True)}",
+      "(sin voz: caen y llega Lucho)", nota="NO usar el último cuadro de la caída: la cámara empieza quieta en la playa.")
+nueva(6, "LM", "Contrapicado desde el suelo: Lucho acerca su ojo a la cámara",
+      f"{S(6)} {SEA} Low-angle shot from the ground, as if lying on the balls and looking up: the warm sunset sky behind. {L1Q}, leans into the frame from above, curious, his face in close-up. While he speaks he slowly brings his face closer and closer to the camera, tilting his head, until one big round tired eye with dark eye bags fills most of the frame, looking into the lens like a curious question. The lens stays normal, no fisheye distortion. No paws or other bodies are in the foreground. There is only ONE piece of cheese in the whole video. {LL('Bienvenidos a Extravío… ¿Y ustedes quiénes son?', 'curiously, slowly')} {END('one mouse', 'soft waves of balls', cat=False)}",
+      "LUCHO: «Bienvenidos a Extravío… ¿Y ustedes quiénes son?»", nota="En «¿quiénes son?» el ojo ya llena la pantalla.")
+nueva(6, "TM", "Primer plano picado: Toffee tirado responde ofendido",
+      f"{S(6)} {SEA} High-angle close-up from above: {T} lies on his back on the colorful balls, the whole head, nightcap and camera visible. He opens his eyes, lifts his head a little and frowns, deeply offended, looking up at the camera. The cat wears NO bandana and NO tag. {TT('¿No me conoces?… Soy famoso.', 'offended and smug')} {END('one cat', 'soft waves of balls')}",
+      "TOFFEE: «¿No me conoces?… Soy famoso.»", nota="Después va P12 (ya hecha): «¿Famoso? ¡Ah, claro! Tú eres el Gato con Botas, ¿cierto?»")
+
 # ---------------- Imágenes nuevas (Nano Banana Pro) ----------------
 IMG = [
  ("CIUDAD-VIVA", "16:9 · referencia: EXTRAVIO-CIUDAD",
