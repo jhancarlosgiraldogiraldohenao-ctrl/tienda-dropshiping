@@ -105,7 +105,7 @@ nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])
 esc('ciudad')
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
-nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]); nuevo('P20', 1.0, None, boca='P20', off=[('C5', 0.2)]); nuevo('P43', 0.2, 5.95)
+nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.0), ('C5', 3.95)]); nuevo('P20', 1.0, None, boca='P20')   # «Tenía. Por eso está aquí» en off mientras Galleta tiene la media (Jay, 1-nov); nuevo('P43', 0.2, 5.95)
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)
 esc('noche', 'fade', 0.6)
@@ -184,7 +184,7 @@ for i, s in enumerate(SEG):
         elif k == 'P35b': x = nivel(_p35[int(2.97 * SR):])
         else: a, b = OFF[k]; x = nivel(OLD[int(a * SR): int(b * SR)])
         t = T0[i] + s['pre'] + at; t0 = t
-        while t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
+        while k != 'C5' and t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
         poner(x, t)
 if os.environ.get('DUMP'): np.save('_vox.npy', VOX); np.save('_amb_pre.npy', AMB); json.dump(dict(T0=T0, segs=[(x['id'], x['src'], x['a'], x['b'], x['pre'], bool(x['boca'])) for x in SEG]), open('_dump.json', 'w'))
 print('ajuste fino:', SHIFT)
@@ -258,29 +258,29 @@ def wend(id_, pre):   # fin de una palabra de Flow, en segundos desde el inicio 
     s_ = SEG[idx(id_)]; return next(b for a, b, w in s_['fw'] if norm(w).startswith(pre)) - s_['a'] + 0.1
 def fx(id_, rel, f, g=-10.0, largo=None):
     x = load(f'{FXD}/{f}').copy()
+    on = np.argmax(np.abs(x) > 0.1 * np.max(np.abs(x))); x = x[max(0, on - int(0.01 * SR)):]   # sin el silencio del principio: suena en el cuadro exacto
     if largo: x = x[: int(largo * SR)]; fo = int(0.6 * SR); x[-fo:] *= np.linspace(1, 0, fo)
     x *= 10 ** (g / 20) / (np.max(np.abs(x)) + 1e-9)
     st = int((T0[idx(id_)] + rel) * SR)
     if st < 0: x = x[-st:]; st = 0
     FX[st: st + len(x)] += x[: N - st]
 FX = np.zeros(N, np.float32)
-fx('LOGO', -0.85, 'WHOOSH.mp3', -8)                       # entra el logo
+# tiempos medidos cuadro por cuadro (segundos desde que empieza la toma en pantalla)
+fx('LOGO', -0.25, 'WHOOSH.mp3', -8)                         # entra el logo
 fx('R02', wend('R02', 'bots'), 'TRISTE.mp3', -9)            # «…y 3 son bots»
-fx('R05', 0.4, 'PELOTA.mp3', -8)                            # se le cae la pelota a Galleta
-fx('P07', 0.35, 'WHOOSH.mp3', -6)                           # se abre la reja y caen
-fx('P67', 1.1, 'PELOTAS1.mp3', -8); fx('P67', 2.5, 'PELOTAS2.mp3', -11)   # aterrizan en el Mar de Pelotas
-fx('P68', 3.8, 'POP.mp3', -12)                              # el ojo de Lucho llena la pantalla
-fx('R22', -0.45, 'SCRATCH.mp3', -11)                        # «¿Gato con Botas?» → «¡¿Me ves botas…?!»
+fx('R05', 0.5, 'PELOTA.mp3', -8)                            # la pelota toca el piso
+fx('R09', 0.9, 'BRILLO.mp3', -12)                           # la alcantarilla se prende
+fx('P07', 1.05, 'WHOOSH.mp3', -6)                           # destello: se abre la reja
+fx('P67', 1.5, 'PELOTAS1.mp3', -8); fx('P67', 2.7, 'PELOTAS2.mp3', -11)   # Toffee y después Galleta tocan las pelotas
+fx('P68', 3.55, 'POP.mp3', -12)                             # el ojo de Lucho llena la pantalla
+fx('R22', -0.05, 'SCRATCH.mp3', -11)                        # corte a «¡¿Me ves botas…?!»
 fx('P16', 0.0, 'PASOS.mp3', -16); fx('P62', 0.0, 'PASOS.mp3', -16)
 for id_, w_ in (('P63', 'novio'), ('P23', 'negocio'), ('P35', 'decep')):
-    try: fx(id_, wend(id_, w_), 'GOLPE.mp3', -10)           # remate de chiste
-    except StopIteration: print('  sin palabra para el golpe en', id_, w_)
+    fx(id_, wend(id_, w_), 'GOLPE.mp3', -10)                # remate de chiste
 fx('P25', 0.0, 'RISER.mp3', -11)                            # la campana: algo viene
-fx('P32', 2.6, 'ALAS.mp3', -7, largo=6.0); fx('P33', 0.8, 'ALAS.mp3', -12, largo=4.0)   # la Polilla pasa por encima
+fx('P32', 2.75, 'ALAS.mp3', -7, largo=6.0); fx('P33', 1.25, 'ALAS.mp3', -12, largo=4.0)   # la luz de la Polilla
 fx('P33', 0.0, 'LATIDO.mp3', -15, largo=12.0)               # escondidos en el carrito
-fx('R09', 0.5, 'BRILLO.mp3', -12)   # la alcantarilla y el recuerdo que brillan
-fx('P25', 3.0, 'CORTINA.mp3', -17)                          # la calle cierra sus cortinas a lo lejos
-fx('P39', 7.8, 'FIN.mp3', -9)                               # remate de «Sígueme para no perderte el próximo episodio»
+fx('P39', 7.8, 'FIN.mp3', -9)                               # remate de «Sígueme…»
 def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
     t0, t1 = T0[idx(a_id)] + a_rel, T0[idx(b_id)] + b_rel; L = int((t1 - t0) * SR); src = load(f'{FXD}/{f}')[int(ss * SR):]
     while len(src) < L: src = np.concatenate([src, load(f'{FXD}/{f}')])
@@ -294,11 +294,13 @@ mus('M_PERSECUCION.mp4', 'R05', 0.3, 'P06', 1.5, db=-23, fi=0.3)                
 mus('M_MISTERIO.mp4', 'P06', 0.5, 'P07', 3.0, ss=2.0, db=-25, fo=0.6)                # la alcantarilla que brilla (se corta con el grito)
 mus('M_SUSPENSO.mp4', 'R11', 0.0, 'P67', 0.6, ss=8.0, db=-25, fi=0.5, fo=0.8)        # el remolino
 mus('M_TEMA.mp4', 'P67', 0.3, 'P12', 1.0, ss=0.0, db=-25, fo=1.5)                    # llegan a Extravío y aparece Lucho
-mus('M_MISTERIO.mp4', 'P12', 0.5, 'P41', 1.5, ss=12.0, db=-26, fi=2.0, fo=2.0)       # las reglas y la llave
+mus('M_DIALOGO.mp4', 'P12', 0.5, 'P41', 1.5, ss=0.0, db=-25, fi=1.5, fo=2.0)         # las reglas y la llave (comedia bajo el diálogo)
 mus('M_TEMA.mp4', 'P41', 0.0, 'P43', 5.0, ss=6.0, db=-25, fi=2.0, fo=2.0)            # la subida y la ciudad
-mus('M_PERSECUCION.mp4', 'P21', 0.0, 'P25', 0.5, ss=12.0, db=-27, fi=1.5, fo=1.5)    # el local de Lucho
-mus('M_SUSPENSO.mp4', 'P25', 0.0, 'P37', 0.5, db=-24, fi=1.5, fo=2.0)                # la noche, la Polilla y la azotea
-mus('M_MISTERIO.mp4', 'P37', 0.0, 'P39', 13.0, ss=10.0, db=-25, fi=2.0, fo=4.0)      # la placa MAX y el cierre
+mus('M_DIALOGO.mp4', 'P21', 0.0, 'P25', 0.5, ss=30.0, db=-26, fi=1.5, fo=1.5)        # el local de Lucho
+mus('M_SUSPENSO.mp4', 'P25', 0.0, 'P29', 0.6, db=-24, fi=1.5, fo=0.6)                # la campana, «Escóndanse»
+mus('M_ACCION.mp4', 'P29', 0.0, 'P33', 1.2, ss=0.0, db=-23, fi=0.2, fo=1.2)          # «¡Yo no corro!»: la persecución de noche
+mus('M_SUSPENSO.mp4', 'P33', 0.6, 'P37', 0.5, ss=18.0, db=-25, fi=1.0, fo=2.0)       # escondidos y la subida a la azotea
+mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)         # la placa MAX y el cierre
 MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * (1 - 0.68 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
