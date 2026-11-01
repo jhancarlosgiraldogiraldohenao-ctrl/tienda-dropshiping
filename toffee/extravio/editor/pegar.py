@@ -109,6 +109,10 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     continua (sin costuras ni pausas metidas), con cada tramo entre 0,85 y 1,2. Devuelve (señal del largo del clip, desfases)."""
     import os
     os.makedirs(tmp, exist_ok=True)
+    # 0,3 s de silencio delante: rubberband arranca sobre silencio y no deforma la primera sílaba (sonaba robótica al empezar)
+    PAD = 0.3
+    x = np.concatenate([np.zeros(int(PAD * SR), np.float32), x])
+    ew = [[w[0] + PAD, w[1] + PAD, w[2]] for w in ew]
     anc, j = [], 0
     for w in ew:
         a_ = norm(w[2])[:4]
@@ -141,6 +145,7 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{tmp}/in.wav'], input=x.astype(np.float32).tobytes(), check=True)
     sp.run(['rubberband', '-q', '--fine', '-F', '-D', f'{total:.4f}', '-M', f'{tmp}/map.txt', f'{tmp}/in.wav', f'{tmp}/out.wav'], check=True, capture_output=True)
     y = load(f'{tmp}/out.wav')
+    pass  # (sin corrección extra: el silencio agregado lo absorbe el mapa)
     out = np.zeros(int(dur * SR), np.float32); s0 = int(st * SR)
     if s0 < 0: y = y[-s0:]; s0 = 0
     y = y[: max(0, len(out) - s0)]; out[s0: s0 + len(y)] = y
