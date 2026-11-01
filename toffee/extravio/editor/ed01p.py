@@ -49,11 +49,12 @@ NV = dict(P01='08_40', P10='09_49', P11='10_12', P12='10_43', P13='11_20', P14='
 def vwords(path):
     if path.startswith(RT): return RW[os.path.basename(path)]
     if path.endswith('_p35a.wav'): return VW['voces/_p35a.wav']
+    if path.endswith('_p68.wav'): return VW['vo3/_p68.wav']   # voz de Lucho sin la pausa entre «ustedes» y «quiénes» (Flow no la hace)
     if '/vo3/' in path: return VW['vo3/' + os.path.basename(path)]
     return VW['voces/' + os.path.basename(path)]
 VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
-VPATH.update(P68=glob.glob(f'{P}/vo3/*T04_10_40*')[0], P69=glob.glob(f'{P}/vo3/*T04_11_09*')[0])   # voces del nuevo comienzo
+VPATH.update(P68=f'{P}/vo3/_p68.wav', P69=glob.glob(f'{P}/vo3/*T04_11_09*')[0])   # voces del nuevo comienzo
 # «¿Siguen vivos? ¡Qué decepción!» va pegado a la boca en el carrito; «Digo, ¡qué alegría!» sigue en off sobre la subida a la azotea
 _x = load(VPATH['P35'])[: int(2.97 * SR)]; f_ = int(0.03 * SR); _x = _x.copy(); _x[-f_:] *= np.linspace(1, 0, f_)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{P}/vo3/_p35a.wav'], input=_x.astype(np.float32).tobytes(), check=True)
