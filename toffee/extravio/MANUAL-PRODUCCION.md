@@ -47,7 +47,8 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 - Toffee: voz «toffee» v4 (prompt de diseño en `CLAUDE.md`). Lucho: «lucho el ratón». Una frase por generación; 1–2 versiones.
 - El texto con ritmo lo arma Claude midiendo la toma (`editor/ritmo.py`). Si Flow estira mucho una palabra («¡Bieeenveniiidos!»), el texto también la estira.
 - Voces en off: solo cuando no se ve la boca (de espaldas, lejos, o sobre otro plano). Si se ve la cara, la frase va en una toma donde ese personaje la dice.
-- Música: SOLO en el logo (Jay pidió quitar la música de fondo). Ambientes: efectos largos de ElevenLabs por lugar (si solo deja 1 minuto, un audio con 3 partes de 20 s y Claude lo corta).
+- Música (cambio de Jay, 1-nov-2026): NO de fondo todo el capítulo, sino **por momentos** (persecución, misterio, llegada/ciudad, noche, final) y bajando sola cuando alguien habla. Sin eso el capítulo suena plano. Pistas en `editor` → `sfx2/` (M_TEMA, M_PERSECUCION, M_SUSPENSO, M_MISTERIO).
+- **Efectos de reacción** que despiertan: whoosh (logo, caídas), golpe de chiste en cada remate, rayón de disco antes de un estallido, «wah wah» en los fracasos de Toffee, pop, brillo mágico, alas, latido, pasos, cortina, remate final. Se ubican en el cuadro exacto (mirar la toma) y van por debajo de la voz. Ambientes: efectos largos de ElevenLabs por lugar (si solo deja 1 minuto, un audio con 3 partes de 20 s y Claude lo corta).
 
 ## 5. Edición (`editor/ed01p.py`, la base de los próximos capítulos)
 - Pegado de voz: `pegar_suave` (rubberband `--fine`, una sola pasada con mapa de tiempos). Las pausas absorben la diferencia (máx. +0,2 s por pausa); la voz solo se acelera/frena 0,8–1,25. Nunca se corta una frase por dentro. +0,08 s de retraso para que la voz no llegue antes que la boca. Ajuste fino por frase (±0,3 s) con la voz original de Flow.
