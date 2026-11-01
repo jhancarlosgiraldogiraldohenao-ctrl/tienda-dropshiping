@@ -21,7 +21,7 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Si hay duda de si es grande o pequeño, tratarlo como grande.
 
 ## Dónde está todo
-- **Tienda CERRADA desde el 31-oct-2026 (decisión de Jay)** hasta que tenga claro qué vender (físico, digital o los dos). No proponer cambios ni ventas de la tienda mientras tanto; la idea pendiente para cuando vuelva: guía digital «Diciembre sin miedo» + orejeras, y retrato «Tu mascota en Extravío».
+- **Tienda cerrada desde el 31-oct-2026; plan nuevo de Jay (1-nov-2026): los capítulos hacen GUIÑOS de productos para mascotas** (aparecen en la serie sin decir «compra»; enlace solo en la descripción). Lista elegida del catálogo de TeemDrop: `toffee/extravio/web/productos-guinos.html` (Artifact) y catálogo completo en `toffee/extravio/TEEMDROP-MASCOTAS.csv`. Antes de montar un producto: Jay revisa el envío a Colombia en TeemDrop y Claude calcula el precio. Ideas digitales guardadas: guía «Diciembre sin miedo» y retrato «Tu mascota en Extravío».
 - Tienda: soytoffee.store (Shopify `a1fcei-t6.myshopify.com`). Tema en `tienda-holly/`; estado y decisiones en `tienda-holly/ESTADO.md`.
 - Colores: `toffee/COLORIMETRIA.md`. Entregas y pendientes del panel: `tienda-holly/ENTREGA-B.md`.
 - Jay no es técnico: explicar en palabras simples, en español, paso a paso.
