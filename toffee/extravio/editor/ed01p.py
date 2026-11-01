@@ -7,7 +7,7 @@ import os, sys, json, glob, subprocess as sp
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from pegar import pegar, pegar_suave, pegar_dtw, por_frases, load, SR, norm
+from pegar import pegar, pegar_suave, pegar_dtw, por_frases, load, SR, norm   # noqa
 
 P, E, RT = [os.path.abspath(x) for x in sys.argv[1:4]]
 REFS = '/home/user/tienda-dropshiping/toffee/refs/extravio'
@@ -91,7 +91,7 @@ esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fade', 0.4)
 nuevo('P02', 2.6, 6.0)
 viejo('R01', 'in_02', 0.0, 8.04, boca='T01', amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6)
+viejo('R03', 'in_06', 0.0, 6.0, off=[('T3', 1.4)], amb=0.6)   # deja sonar el «wah wah» de los 12 seguidores
 esc('pelota', 'fade', 0.3)
 viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)
 viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
@@ -251,7 +251,47 @@ if _lm:
     st = int(max(0, ti('LOGO') - 0.5) * SR); LOGOMUS[st: st + len(m_)] = m_[: N - st]
 envv = np.convolve(np.abs(VOX), np.ones(int(0.3 * SR)) / int(0.3 * SR), mode='same'); duck = np.clip(envv / 0.015, 0, 1)
 duck = np.convolve(duck, np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')   # que baje y suba suave
-MIX = np.clip(VOX * 1.15 + AMB * (0.6 - 0.38 * duck) + LOGOMUS, -1, 1)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
+# ---------------- Sonido que puntúa (pedido de Jay, 1-nov-2026): efectos de reacción + música por momentos ----------------
+FXD = f'{P}/sfx2'
+def idx(id_): return [x['id'] for x in SEG].index(id_)
+def wend(id_, pre):   # fin de una palabra de Flow, en segundos desde el inicio de la toma en pantalla
+    s_ = SEG[idx(id_)]; return next(b for a, b, w in s_['fw'] if norm(w).startswith(pre)) - s_['a'] + 0.1
+def fx(id_, rel, f, g=-10.0, largo=None):
+    x = load(f'{FXD}/{f}').copy()
+    if largo: x = x[: int(largo * SR)]; fo = int(0.6 * SR); x[-fo:] *= np.linspace(1, 0, fo)
+    x *= 10 ** (g / 20) / (np.max(np.abs(x)) + 1e-9)
+    st = int((T0[idx(id_)] + rel) * SR)
+    if st < 0: x = x[-st:]; st = 0
+    FX[st: st + len(x)] += x[: N - st]
+FX = np.zeros(N, np.float32)
+fx('LOGO', -0.85, 'WHOOSH.mp3', -8)                       # entra el logo
+fx('R02', wend('R02', 'bots'), 'TRISTE.mp3', -9)            # «…y 3 son bots»
+fx('R05', 0.4, 'PELOTA.mp3', -8)                            # se le cae la pelota a Galleta
+fx('P07', 0.35, 'WHOOSH.mp3', -6)                           # se abre la reja y caen
+fx('P67', 1.1, 'PELOTAS1.mp3', -8); fx('P67', 2.5, 'PELOTAS2.mp3', -11)   # aterrizan en el Mar de Pelotas
+fx('P68', 3.8, 'POP.mp3', -12)                              # el ojo de Lucho llena la pantalla
+fx('R22', -0.45, 'SCRATCH.mp3', -11)                        # «¿Gato con Botas?» → «¡¿Me ves botas…?!»
+fx('P16', 0.0, 'PASOS.mp3', -16); fx('P62', 0.0, 'PASOS.mp3', -16)
+for id_, w_ in (('P63', 'novio'), ('P23', 'negocio'), ('P35', 'decep')):
+    try: fx(id_, wend(id_, w_), 'GOLPE.mp3', -10)           # remate de chiste
+    except StopIteration: print('  sin palabra para el golpe en', id_, w_)
+fx('P25', 0.0, 'RISER.mp3', -11)                            # la campana: algo viene
+fx('P32', 2.6, 'ALAS.mp3', -7, largo=6.0); fx('P33', 0.8, 'ALAS.mp3', -12, largo=4.0)   # la Polilla pasa por encima
+fx('P33', 0.0, 'LATIDO.mp3', -15, largo=12.0)               # escondidos en el carrito
+def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
+    t0, t1 = T0[idx(a_id)] + a_rel, T0[idx(b_id)] + b_rel; L = int((t1 - t0) * SR); src = load(f'{FXD}/{f}')[int(ss * SR):]
+    while len(src) < L: src = np.concatenate([src, load(f'{FXD}/{f}')])
+    x = src[:L].copy(); x *= 10 ** (db / 20) / (np.sqrt(np.mean(x ** 2)) + 1e-9)
+    a_, b_ = int(min(fi, L / SR / 3) * SR), int(min(fo, L / SR / 3) * SR); x[:a_] *= np.linspace(0, 1, a_); x[-b_:] *= np.linspace(1, 0, b_)
+    st = int(t0 * SR); MUSB[st: st + L] += x[: N - st]
+MUSB = np.zeros(N, np.float32)
+mus('M_PERSECUCION.mp4', 'R05', 0.3, 'P06', 1.5, db=-25, fi=0.3)          # la pelota y la persecución
+mus('M_MISTERIO.mp4', 'P06', 0.5, 'P07', 3.0, ss=2.0, db=-28, fo=0.6)       # la alcantarilla que brilla (se corta con el grito)
+mus('M_TEMA.mp4', 'P67', 0.3, 'P68', 1.5, db=-27)                           # llegan a Extravío
+mus('M_TEMA.mp4', 'P41', 0.0, 'P43', 5.0, ss=6.0, db=-28, fi=2.0, fo=3.0)  # la subida y la ciudad
+mus('M_SUSPENSO.mp4', 'P25', 0.0, 'P60', 5.0, db=-27, fi=2.0, fo=3.0)      # la noche y la Polilla
+mus('M_MISTERIO.mp4', 'P37', 0.0, 'P39', 13.0, ss=10.0, db=-28, fi=2.0, fo=4.0)   # la placa MAX y el cierre
+MIX = np.clip(VOX * 1.15 + AMB * (0.6 - 0.38 * duck) + LOGOMUS + MUSB * (1 - 0.75 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
