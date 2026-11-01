@@ -80,3 +80,16 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 5. **Frases cortas y naturales**, sin vocales estiradas largas que ElevenLabs no imita («ustedeees»); si una pausa importa, escribirla en el prompt de Flow y en el de ElevenLabs.
 6. **Primero 1 toma de prueba por personaje nuevo** (para ver cara y tamaño) y después el resto.
 7. Al recibir tomas: «✓» en silencio, revisión completa en «listo», repetir lo que no cumpla, anotar el error nuevo en la tabla de la sección 3.
+
+## 9. Errores del capítulo 2 (1-nov-2026, lo que encontró Jay)
+| Error | Causa | Regla |
+|---|---|---|
+| La Catrina mueve la boca sin decir nada (1:03) | Toma sin frase grabada | Si se ve la boca, la toma lleva frase y voz; si no habla, boca cerrada en el prompt |
+| La canción no calza con su boca (1:08) | Flow canta con su propia voz, no con la canción | Canción: cámara lejos y cortes a reacciones; los acercamientos son solo para frases cortas |
+| «Para pasar, se paga con un recuerdo» aparece de la nada (1:41) | Falta la toma del camino y el motivo | Antes de cada pago o ritual, una toma que muestre la llegada |
+| Lucho pide queso sin que se sepa por qué están ahí | Falta el contexto de quién los busca | Cada capítulo explica en una frase por qué están allí, antes del minuto 1 |
+| Cartel con letras | Referencia con texto | Usar solo la foto, sin letras |
+| La placa de Galleta no dice MAX | El prompt no pedía las letras | Escribir «engraved letters M-A-X» y usar PLACA-MAX como referencia |
+| Ocho tomas en el mismo lugar con el mismo plano (2:19 en adelante) | Todas las tomas fijas, de frente | Cada escena: mínimo tres encuadres distintos (general, medio, a ras de piso) y una acción nueva |
+| Toffee siempre de cuello para arriba | Plano medio cerrado por defecto | Toffee gesticula: patas, manos y camina en dos patas (a veces en cuatro) |
+| El estilo cambia del capítulo 1 al 2 | Referencias nuevas sin estilo común | Cada toma nueva lleva también ESTILO-CAP01 como referencia |
