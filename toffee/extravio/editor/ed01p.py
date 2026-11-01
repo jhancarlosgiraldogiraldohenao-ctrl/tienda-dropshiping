@@ -83,14 +83,23 @@ def nuevo(k, a=None, b=None, boca=None, off=(), amb=None, freeze=0.0):
 def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
     seg(k, f'{E}/{f}.mp4', a, b, boca=boca, off=off, amb=amb, crop=crop, pre=pre, fw=TK[f + '.mp4']['words'])
 
-# Nuevo comienzo (idea de Jay, 1-nov-2026): sin la presentación en la casa ni la persecución; de la alcantarilla al remolino, y Lucho los encuentra.
-esc('gancho')
-nuevo('P06', 0.3, 3.8, amb=0.0); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 1.3)], amb=0.0)   # P06 sin su sonido (el perro olfateando sonaba a estornudo); el grito justo cuando caen (Jay, 1-nov)
-esc('remolino', 'fade', 0.25)   # «Si me muero… culpa del perro» abrazado al control se queda (Jay, 1-nov)
-viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6)
-nuevo('P01', 0.3, 4.6, boca='P01')
+# Versión con libertad creativa (Jay, 1-nov-2026): gancho del remolino → logo → la casa por la ventana → Toffee y Galleta en 25 s
+# → la pelota y la persecución → la alcantarilla → caída y «Si me muero…» → Lucho los encuentra en el Mar de Pelotas.
+# Fuera: la puerta y las llaves (se dicen otra vez con Lucho), el «¿Galleta?» en la playa y la primera bienvenida de Lucho (repetían).
+esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
-esc('lucho', 'fade', 0.4)
+esc('casa', 'fade', 0.4)
+nuevo('P02', 2.6, 6.0)
+viejo('R01', 'in_02', 0.0, 8.04, boca='T01', amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
+viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6)
+esc('pelota', 'fade', 0.3)
+viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)
+viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
+nuevo('P06', 0.3, 3.8, amb=0.0); viejo('R09', 'in_08', 0.3, 6.04, boca='T09')
+nuevo('P07', 0.2, 5.4, off=[('AAH', 2.85)], amb=0.0)   # el grito entra cuando Toffee abre la boca (3,25 s de la toma); antes suena la caída
+esc('remolino', 'fade', 0.25)
+viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6)
+esc('lucho', 'fade', 0.5)
 nuevo('P67', 0.2, 7.95); nuevo('P68', 0.9, None, boca='P68'); nuevo('P69', boca='P69')
 nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])
@@ -192,6 +201,8 @@ for i, s in enumerate(SEG):
             ia, ib = int(max(0, va - a0 - 0.1) * SR), int(max(0, vb - a0 + 0.1) * SR); g[ia:ib] = 0
         k_ = int(0.15 * SR); g = np.convolve(g, np.ones(k_) / k_, mode='same'); a *= g
     a *= s['amb']; f = int(X * SR)
+    if s['id'] == 'P07':   # la caída suena (destello y viento) hasta que Toffee abre la boca; el grito de Flow no entra
+        tt = a0 + np.arange(len(a)) / SR; a = full[int(a0 * SR): int(a0 * SR) + len(a)] * 0.55 * np.clip((3.2 - tt) / 0.15, 0, 1)
     if len(a) > 2 * f: a[:f] *= np.linspace(0, 1, f); a[-f:] *= np.linspace(1, 0, f)
     st = int((T0[i] + s['pre'] - (s['a'] - a0)) * SR)
     if st < 0: a = a[-st:]; st = 0
@@ -199,7 +210,7 @@ for i, s in enumerate(SEG):
 
 # cama de sonido por escena: el ambiente de la toma sin voces más larga, en bucle y bajito, para que no haya huecos
 CAMA = {}   # efectos de sonido largos por escena (ElevenLabs), si existen
-for k_, pat in dict(gancho='CALLE_LLUVIA', mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciudad='Market_Lane').items():
+for k_, pat in dict(pelota='CALLE_LLUVIA', mar='MAR', lucho='MAR', noche='NOCHE', azotea='AZOTEA', ciudad='Market_Lane').items():
     g_ = glob.glob(f'{P}/vo3/*{pat}*') + glob.glob(f'{P}/sfx/*{pat}*')
     if g_: CAMA[k_] = g_[0]
 for e, nx in zip(ESC[:-1], ESC[1:]):
