@@ -109,7 +109,7 @@ nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.6)]);
 esc('local')
 nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23'); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)
 esc('noche', 'fade', 0.6)
-nuevo('P25', 0.3, 6.0); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 4.2); nuevo('P28', 0.2, 3.95)
+nuevo('P25', 0.3, 6.0); nuevo('P26', boca='P26'); nuevo('P27', 1.2, 4.2)   # P28 (Galleta sale por la portezuela) fuera: Jay, 1-nov
 nuevo('P29', boca='P29' if 'P29' in NV else None); nuevo('P32', 0.2, 5.95)
 nuevo('P33', 0.2, 4.6); nuevo('P34', boca='P34'); nuevo('P35', 1.0, 6.0, boca='P35a'); nuevo('P60', 0.2, 5.95)
 esc('azotea', 'fade', 0.4)
@@ -278,7 +278,7 @@ for id_, w_ in (('P63', 'novio'), ('P23', 'negocio'), ('P35', 'decep')):
 fx('P25', 0.0, 'RISER.mp3', -11)                            # la campana: algo viene
 fx('P32', 2.6, 'ALAS.mp3', -7, largo=6.0); fx('P33', 0.8, 'ALAS.mp3', -12, largo=4.0)   # la Polilla pasa por encima
 fx('P33', 0.0, 'LATIDO.mp3', -15, largo=12.0)               # escondidos en el carrito
-fx('R09', 0.5, 'BRILLO.mp3', -12); fx('P28', 0.3, 'BRILLO.mp3', -14)   # la alcantarilla y el recuerdo que brillan
+fx('R09', 0.5, 'BRILLO.mp3', -12)   # la alcantarilla y el recuerdo que brillan
 fx('P25', 3.0, 'CORTINA.mp3', -17)                          # la calle cierra sus cortinas a lo lejos
 fx('P39', 7.8, 'FIN.mp3', -9)                               # remate de «Sígueme para no perderte el próximo episodio»
 def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
@@ -288,13 +288,18 @@ def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
     a_, b_ = int(min(fi, L / SR / 3) * SR), int(min(fo, L / SR / 3) * SR); x[:a_] *= np.linspace(0, 1, a_); x[-b_:] *= np.linspace(1, 0, b_)
     st = int(t0 * SR); MUSB[st: st + L] += x[: N - st]
 MUSB = np.zeros(N, np.float32)
-mus('M_PERSECUCION.mp4', 'R05', 0.3, 'P06', 1.5, db=-25, fi=0.3)          # la pelota y la persecución
-mus('M_MISTERIO.mp4', 'P06', 0.5, 'P07', 3.0, ss=2.0, db=-28, fo=0.6)       # la alcantarilla que brilla (se corta con el grito)
-mus('M_TEMA.mp4', 'P67', 0.3, 'P68', 1.5, db=-27)                           # llegan a Extravío
-mus('M_TEMA.mp4', 'P41', 0.0, 'P43', 5.0, ss=6.0, db=-28, fi=2.0, fo=3.0)  # la subida y la ciudad
-mus('M_SUSPENSO.mp4', 'P25', 0.0, 'P60', 5.0, db=-27, fi=2.0, fo=3.0)      # la noche y la Polilla
-mus('M_MISTERIO.mp4', 'P37', 0.0, 'P39', 13.0, ss=10.0, db=-28, fi=2.0, fo=4.0)   # la placa MAX y el cierre
-MIX = np.clip(VOX * 1.15 + AMB * (0.6 - 0.38 * duck) + LOGOMUS + MUSB * (1 - 0.75 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
+# Música casi todo el capítulo (Jay, 1-nov: «que la música ayude a engancharse»), cambiando con cada parte de la historia
+mus('M_TEMA.mp4', 'P02', 0.0, 'R05', 1.0, ss=0.0, db=-26, fi=1.0, fo=1.0)            # la casa y la presentación
+mus('M_PERSECUCION.mp4', 'R05', 0.3, 'P06', 1.5, db=-23, fi=0.3)                     # la pelota y la persecución
+mus('M_MISTERIO.mp4', 'P06', 0.5, 'P07', 3.0, ss=2.0, db=-25, fo=0.6)                # la alcantarilla que brilla (se corta con el grito)
+mus('M_SUSPENSO.mp4', 'R11', 0.0, 'P67', 0.6, ss=8.0, db=-25, fi=0.5, fo=0.8)        # el remolino
+mus('M_TEMA.mp4', 'P67', 0.3, 'P12', 1.0, ss=0.0, db=-25, fo=1.5)                    # llegan a Extravío y aparece Lucho
+mus('M_MISTERIO.mp4', 'P12', 0.5, 'P41', 1.5, ss=12.0, db=-26, fi=2.0, fo=2.0)       # las reglas y la llave
+mus('M_TEMA.mp4', 'P41', 0.0, 'P43', 5.0, ss=6.0, db=-25, fi=2.0, fo=2.0)            # la subida y la ciudad
+mus('M_PERSECUCION.mp4', 'P21', 0.0, 'P25', 0.5, ss=12.0, db=-27, fi=1.5, fo=1.5)    # el local de Lucho
+mus('M_SUSPENSO.mp4', 'P25', 0.0, 'P37', 0.5, db=-24, fi=1.5, fo=2.0)                # la noche, la Polilla y la azotea
+mus('M_MISTERIO.mp4', 'P37', 0.0, 'P39', 13.0, ss=10.0, db=-25, fi=2.0, fo=4.0)      # la placa MAX y el cierre
+MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * (1 - 0.68 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
