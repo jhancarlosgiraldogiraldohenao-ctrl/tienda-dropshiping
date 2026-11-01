@@ -31,12 +31,15 @@ SRC.update(P01=glob.glob(f'{P}/rep2/94afffdb*.mp4')[0], P13=glob.glob(f'{P}/rep2
 SRC.update(P13=r3('c91aaa3a'), P43=r3('5529a323'), P52=r3('9fbb7dcf'), P32=r3('07ce16cf'), P35=r3('a66c0978'))   # P50, P51, P52, P55, P54
 SRC.update(P40=pte('63714319'), P41=pte('c50dc0cc'), P42=pte('2ef86137'), P43=pte('b2df403b'), P44=pte('d846063b'))
 SRC.update(P11=r4('caa2c15d'), P43=r4('7016207e'), P28=r4('c32cf4f6'), P42=r4('cc21fd6c'), P58=r4('055a4951'), P60=r4('17bacbe1'), P62=r4('07781392'), P63=r4('3f9df0a4'))   # P65, P64, P59, P66 y nuevas
+def r5(k): return glob.glob(f'{P}/rep5/{k}*.mp4')[0]
+SRC.update(P67=r5('46ff2d1b'), P68=r5('ed40e3d9'), P69=r5('84f8193a'))   # nuevo comienzo (1-nov-2026)
 def fwords(k):
     s = SRC[k]
     if s.startswith(f'{P}/rep/'): return VW['rep/' + os.path.basename(s)]
     if s.startswith(f'{P}/rep2/'): return VW['rep2/' + os.path.basename(s)]
     if s.startswith(f'{P}/rep3/'): return VW['rep3/' + os.path.basename(s)]
     if s.startswith(f'{P}/rep4/'): return VW['rep4/' + os.path.basename(s)]
+    if s.startswith(f'{P}/rep5/'): return VW['rep5/' + os.path.basename(s)]
     if s.startswith(f'{P}/puentes/'): return []
     return W[os.path.basename(s)]
 def voz(stamp): return glob.glob(f'{P}/voces/*T{"18_" + stamp if len(stamp) == 5 else stamp}_*.mp3')[0]
@@ -50,6 +53,7 @@ def vwords(path):
     return VW['voces/' + os.path.basename(path)]
 VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
+VPATH.update(P68=glob.glob(f'{P}/vo3/*T04_10_40*')[0], P69=glob.glob(f'{P}/vo3/*T04_11_09*')[0])   # voces del nuevo comienzo
 # «¿Siguen vivos? ¡Qué decepción!» va pegado a la boca en el carrito; «Digo, ¡qué alegría!» sigue en off sobre la subida a la azotea
 _x = load(VPATH['P35'])[: int(2.97 * SR)]; f_ = int(0.03 * SR); _x = _x.copy(); _x[-f_:] *= np.linspace(1, 0, f_)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{P}/vo3/_p35a.wav'], input=_x.astype(np.float32).tobytes(), check=True)
@@ -78,24 +82,13 @@ def nuevo(k, a=None, b=None, boca=None, off=(), amb=None, freeze=0.0):
 def viejo(k, f, a, b, boca=None, off=(), amb=0.6, crop=False, pre=0.0):
     seg(k, f'{E}/{f}.mp4', a, b, boca=boca, off=off, amb=amb, crop=crop, pre=pre, fw=TK[f + '.mp4']['words'])
 
-esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
+# Nuevo comienzo (idea de Jay, 1-nov-2026): sin la presentación en la casa ni la persecución; de la alcantarilla al remolino, y Lucho los encuentra.
+esc('gancho')
+nuevo('P06', 0.3, 3.8); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.9)], amb=0.0)
+nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
-esc('casa', 'fade', 0.4)
-nuevo('P02', 2.6, 6.0); nuevo('P03', 0.2, 3.6)
-viejo('R01', 'in_02', 0.0, 8.04, boca='T01', amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
-viejo('R03', 'in_06', 0.0, 4.8, off=[('T3', 0.6)], amb=0.6); nuevo('P40', 1.0, 4.6); nuevo('P04', 0.2, 4.0, off=[('T4', 0.3)])
-viejo('R04', 'in_05', 0.5, 5.0, amb=0.6)
-esc('pelota')
-viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)   # P05 salió: la pelota iba hacia atrás (Jay, 31-oct)
-viejo('R06', 'in_03', 0.3, 6.0, boca='T06'); viejo('R08', 'in_09', 0.0, 6.04, boca='T08', crop=True, off=[('PUTA', 5.0)])
-nuevo('P06', 0.3, 3.8); viejo('R09', 'in_08', 0.3, 6.04, boca='T09'); nuevo('P07', 0.2, 5.9, off=[('AAH', 2.9)], amb=0.0)   # el grito de Flow se quitaba mal: ambiente fuera, queda solo el grito de Toffee cuando caen (Jay, 31-oct)
-esc('remolino')
-viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6); nuevo('P08', 0.0, 4.0)
-esc('mar', 'fade', 0.3)
-nuevo('P09', 0.2, 4.4); viejo('R13', 'in_15', 0.0, 4.6, amb=0.8); viejo('R14', 'in_14', 1.0, 6.04, boca='T14')
-viejo('R15', 'in_13', 0.0, 6.0, off=[('T11', 4.2)], amb=0.6); viejo('R16', 'in_20', 0.5, 8.0, boca='T16'); viejo('R17', 'r_17', 0.3, 6.04, boca='T17', crop=True)
-esc('lucho')
-nuevo('P10', 1.0, None, boca='P10'); nuevo('P11', boca='P11'); viejo('R20', 'in_18', 0.0, 6.04, boca='T20')
+esc('lucho', 'fade', 0.4)
+nuevo('P67', 0.2, 7.95); nuevo('P68', 0.9, None, boca='P68'); nuevo('P69', boca='P69')
 nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 viejo('R24', 'in_22', 0.0, 6.04, boca='T24'); nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])
 esc('ciudad')
@@ -235,18 +228,6 @@ def music(f, start, end, ss=0.0, gain=1.0, fade=1.5):
     x = src[: int(L * SR)].copy(); fi = int(min(fade, L / 3) * SR)
     x[:fi] *= np.linspace(0, 1, fi); x[-fi:] *= np.linspace(1, 0, fi)
     out = np.zeros(N, np.float32); st = int(start * SR); out[st: st + len(x)] = x[: N - st] * gain; return out
-A1, A2, A3 = f'{E}/audio/a_01.mp4', f'{E}/audio/a_02.mp4', f'{E}/audio/a_03.mp4'
-X2 = 2.5   # cruce entre temas
-MUS = (music(A3, 0, ti('LOGO') + 0.3, fade=0.3)
-       + music(A1, ti('LOGO'), ti('P02') + 1.0, ss=0.6, gain=1.3, fade=0.6)
-       + music(A2, ti('P02'), ti('P07') + X2, fade=X2)
-       + music(A3, ti('P07'), ti('P09') + X2, fade=X2)
-       + music(A2, ti('P09'), ti('P24') + X2, ss=12, fade=X2)
-       + music(A1, ti('P24'), ti('P26') + X2, ss=3, fade=X2)
-       + music(A3, ti('P26'), ti('P36') + X2, ss=5, fade=X2)
-       + music(A1, ti('P36'), TOT, ss=3, fade=4.0))
-env = np.convolve(np.abs(VOX), np.ones(int(0.25 * SR)) / int(0.25 * SR), mode='same')
-MUS *= (0.40 - 0.28 * np.clip(env / 0.02, 0, 1))
 # música solo en el logo (pedido de Jay, 31-oct): el arranque de «Key of the Veil», unos 4 s, que se apaga suave
 LOGOMUS = np.zeros(N, np.float32)
 _lm = glob.glob(f'{P}/sfx/*Key_of_the_Veil*')
@@ -297,7 +278,7 @@ NOCHE = {x['id'] for e, nx in zip(ESC[:-1], ESC[1:]) if e['n'] in ('noche', 'azo
 # color parejo dentro de cada escena (lo que da «sintonía»): cada toma se acerca un 60 % al color medio de su escena
 GRADE = {}
 for e, nx in zip(ESC[:-1], ESC[1:]):
-    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and SEG[i]['id'] not in ('P08',)]   # el ojo es un primerísimo plano: no se toca
+    ids = [i for i in range(e['start'], nx['start']) if SEG[i]['src'] and SEG[i]['id'] not in ('P08', 'P01')]   # el ojo es un primerísimo plano: no se toca
     if len(ids) < 2: continue
     st_ = {i: stats(SEG[i]) for i in ids}
     mT = np.median([st_[i][0] for i in ids], 0); sT = np.median([st_[i][1] for i in ids], 0)
