@@ -1,0 +1,190 @@
+EXTRAVIO · todos los recursos (imagenes y audio) · 1-nov-2026
+
+Mandale esta carpeta a Claude al empezar cada capitulo.
+Las voces van por personaje y en orden de fecha; el nombre del archivo dice la frase.
+
+== 1-IMAGENES/marca ==
+- BANNER-CANAL-2560x1440.jpg
+- BANNER-CANAL.jpg
+- FONDO-PANTALLA-FINAL.jpg
+- LOGO-EXTRAVIO.jpg
+
+== 1-IMAGENES/mundos ==
+- AZOTEA-LUCHO.jpg
+- BOSQUE-PARAGUAS.jpg
+- CALLE-PRINCIPAL.jpg
+- CIUDAD-ALGORITMO.jpg
+- CIUDAD-CONTROL-REMOTO.jpg
+- CIUDAD-VIVA.jpg
+- DIMENSION-GALLETA.jpg
+- EXTRAVIO-CIUDAD.jpg
+- LOCAL-LUCHO-DENTRO.jpg
+- LOCAL-LUCHO-FUERA.jpg
+- MAR-DE-PELOTAS.jpg
+- MERCADO-DE-LLAVES.jpg
+- MONTANA-MEDIAS.jpg
+- MUNDO-AL-REVES.jpg
+- MUNDO-SIESTA.jpg
+- MUNDO-TRUENO.jpg
+- OFICINA-CARTAS.jpg
+- PLAZA-MIL-PUERTAS.jpg
+- POLO-NORTE.jpg
+- PUEBLO-NUBES.jpg
+- REMOLINO.jpg
+- TIERRA-ESPANTOS.jpg
+- TIERRA-RECORDADOS.jpg
+- VALLE-DE-OCTUBRE.jpg
+
+== 1-IMAGENES/objetos ==
+- CARTEL-SE-BUSCA.jpg
+- GATO-CON-BOTAS.jpg
+- LLAVE-DE-CASA.jpg
+- PLACA-MAX.jpg
+- PUERTA-PORTAL.jpg
+- RECUERDO.jpg
+- TELE-PERDIDA.jpg
+
+== 1-IMAGENES/personajes ==
+- ALCALDESA-LIKES.jpg
+- CARTERO-CARACOL.jpg
+- DONA-MULA.jpg
+- GALLETA-EXPRESIONES.jpg
+- GALLETA-oficial.jpg
+- GALLETA-viajero.jpg  ->  referencia principal
+- GALLETAS-MULTIVERSO.jpg
+- GUARDIAN-SIESTA.jpg
+- HABITANTES.jpg
+- LLORONA.jpg
+- LUCHO.jpg
+- POLILLA.jpg
+- SILBON.jpg
+- TOFFEE-EXPRESIONES.jpg
+- TOFFEE-ficha.jpg
+- TOFFEE-viajero.jpg  ->  referencia principal
+- TRUENITO.jpg
+
+== 1-IMAGENES/personajes-viejos ==
+- ALEBRIJE.jpg  ->  del viaje al Polo Norte
+- CALABACIN.jpg  ->  del viaje al Polo Norte
+- CHIHUAHUA.jpg  ->  del viaje al Polo Norte
+- CHUPACABRAS.jpg  ->  del viaje al Polo Norte
+- LECHUZA.jpg  ->  del viaje al Polo Norte
+- PACA.jpg  ->  del viaje al Polo Norte
+
+== 2-VOCES/DONA-LECHUZA ==
+- 2026-10-27_16_10_40__Por-fin-llevo-tres-siglos-esperando-visitas.mp3  ->  Por fin, llevo tres siglos esperando visitas.
+- 2026-10-27_16_14_36__Sin-sus-tres-cascabeles-ese-trineo-no-vuela-Cayeron-en-el-va.mp3  ->  Sin sus tres cascabeles, ese trineo no vuela. Cayeron en el valle de octubre.
+- 2026-10-27_16_41_13__un-valle-lleno-de-monstruos.mp3  ->  un valle lleno de monstruos.
+
+== 2-VOCES/LUCHO ==
+- 2026-10-29_15_29_06__Psst-gato-bienvenidos-a-Extravio-Aqui-cae-todo-lo-que-se-pie.mp3  ->  Psst, gato, bienvenidos a Extravio. Aquí cae todo lo que se pierde. Medias, controles, llaves y mascotas. ¡Famoso?! ¡Ah, claro! ¿Tú eres el gato con botas, cierto? Tranquilo, botas. Aquí hay una regla. Sólo vuelves a casa si alguien allá arriba todavía te está buscando. ¿Y la llave de tu casa? Para volver, necesitas la llave. Entonces está aquí, en algún lado. Primero sobrevive a esta noche, botas. Escóndanse, ella no puede saber que llegaron.
+- 2026-10-30_02_35_01__Tranquilo-botas-Aqui-hay-una-regla-Solo-vuelves-a-casa-si-al.mp3  ->  Tranquilo, botas. Aquí hay una regla. Sólo vuelves a casa si alguien allá arriba todavía te está buscando.
+- 2026-10-30_18_09_49__Psst-Cato.mp3  ->  ¡Psst! ¡Cato!
+- 2026-10-30_18_10_12__Bienvenidos-a-Extravio-Aqui-cae-todo-lo-que-se-pierde-Medias.mp3  ->  ¡Bienvenidos a Extravío! Aquí cae todo lo que se pierde. Medias, controles, llaves y mascotas.
+- 2026-10-30_18_10_43__Famoso-Ah-claro-Tu-eres-el-gato-con-botas-cierto.mp3  ->  ¡Famoso! ¡Ah, claro! ¿Tú eres el gato con botas, cierto?
+- 2026-10-30_18_11_20__Y-la-llave-de-tu-casa-Para-volver-necesitas-la-llave.mp3  ->  ¿Y la llave de tu casa? Para volver, necesitas la llave.
+- 2026-10-30_18_12_50__Entonces-esta-aqui-en-algun-lado.mp3  ->  Entonces está aquí, en algún lado.
+- 2026-10-30_18_13_46__Bienvenidos-a-mi-negocio.mp3  ->  Bienvenidos a mi negocio.
+- 2026-10-30_18_14_44__Ni-idea-Por-eso-es-negocio.mp3  ->  Ni idea. Por eso es negocio.
+- 2026-10-30_18_15_09__Escondanse-Ella-no-puede-saber-que-llegaron.mp3  ->  Escóndanse. Ella no puede saber que llegaron.
+- 2026-10-30_18_16_02__Siguen-vivos-Que-decepcion-Digo-que-alegria.mp3  ->  ¿Siguen vivos? ¡Qué decepción! ¡Digo, qué alegría!
+- 2026-10-30_18_17_23__Aqui-arriba-no-sube-Por-ahora.mp3  ->  Aquí arriba no sube. Por ahora.
+- 2026-10-30_18_22_23__A-primero-sobrevive-a-esta-noche-votas.mp3  ->  A primero sobrevive a esta noche, votas.
+- 2026-10-30_22_40_43__Aqui-estan-todas-las-llaves-que-se-han-perdido-en-la-histori.mp3  ->  Aquí están todas las llaves que se han perdido en la historia.
+- 2026-10-31_01_32_04__Bienvenidos-a-mi-negocio.mp3  ->  ¡Bienvenidos a mi negocio!
+- 2026-10-31_13_49_30__Tenia-Por-eso-esta-aqui.mp3  ->  Tenía. Por eso está aquí.
+- 2026-10-31_13_51_01__Bienvenidos-a-la-ciudad-de-Extravio.mp3  ->  Bienvenidos a la ciudad de Extravio.
+- 2026-10-31_13_52_01__Uff-Esta-subida-es-larguisima-Ya-casi-llegamos-a-la-cima.mp3  ->  ¡Uff! Esta subida es larguísima. Ya casi llegamos a la cima.
+- 2026-10-31_14_03_29__Todo-lo-que-alguien-dejo-tirado-Medias-juguetes-paraguas-y-u.mp3  ->  Todo lo que alguien dejó tirado. Medias, juguetes, paraguas y uno que otro ex novio.
+- 2026-11-01_04_10_40__Bienvenidos-a-Extravio-Y-ustedes-Quienes-son.mp3  ->  Bienvenidos a Extravio. ¿Y ustedes? ¿Quiénes son?
+
+== 2-VOCES/TOFFEE ==
+- 2026-10-23_17_55_22__Humano-tu-perro-no-es-miedoso-Su-oido-es-mucho-mas-fino-que.mp3  ->  Humano, tu perro no es miedoso. Su oído es mucho más fino que el tuyo.
+- 2026-10-23_17_56_32__Metelo-a-la-casa-Acompanalo-y-ponle-orejeras-antes-del-ruido.mp3  ->  Mételo a la casa. Acompáñalo y ponle orejeras antes del ruido. Comenta ¡Calma!
+- 2026-10-24_01_17_40__31-de-diciembre-afuera-todos-celebraban-debajo-de-un-carro-a.mp3  ->  31 de diciembre, afuera todos celebraban, debajo de un carro alguien temblaba.
+- 2026-10-24_01_18_59__Yo-no-salgo-de-noche-yo-no-salgo-nunca-pero-ese-perro-estaba.mp3  ->  Yo no salgo de noche, yo no salgo nunca, pero ese perro estaba solo.
+- 2026-10-24_01_20_29__Le-dije-sigueme-palo-de-cuatro-patas-Y-me-siguio.mp3  ->  Le dije, sígueme, palo de cuatro patas. ¿Y me siguió?
+- 2026-10-24_01_21_21__Fue-la-peor-noche-de-su-vida-Manana-el-dia-2-soy-Tofi-y-el-e.mp3  ->  Fue la peor noche de su vida. Mañana, el día 2, soy Tofi y él es Galleta.
+- 2026-10-24_13_20_05__DIA-1-Galleta-no-salio-de-debajo-de-la-cama-A-un-perro-asust.mp3  ->  DÍA 1. Galleta no salió de debajo de la cama. A un perro asustado, no se le obliga.
+- 2026-10-24_13_23_45__Le-deje-agua-me-sente-lejos-y-lo-ignore-Los-jefes-sabemos-es.mp3  ->  Le dejé agua, me senté lejos y lo ignore. Los jefes sabemos esperar.
+- 2026-10-24_13_24_30__En-la-tarde-salio-y-se-durmio-cerca-de-mi-manana-su-primera.mp3  ->  En la tarde salió y se durmió cerca de mí, mañana, su primera pólvora en casa.
+- 2026-10-24_20_56_48__Humanos-manana-me-voy-al-polo-norte.mp3  ->  ¡Humanos, mañana me voy al polo norte!
+- 2026-10-25_02_05_47__Humanos-Manana-me-voy-al-polo-norte-y-me-entere-de-que-Santa.mp3  ->  ¡Humanos! Mañana me voy al polo norte y me enteré de que Santa nunca les trae regalos a los animales de la calle así que voy a pedírselo en persona Todos los animales merecen un regalo Galleta viene conmigo Él todavía no lo sabe Nuestro vehículo Mi trineo Bueno, es mi cama Pero tiene forma de trineo Díganme en los comentarios qué animalito de la calle merece un regalo ¡Despegamos! Creo que no se manejaré esto ¿Y tú quién eres?
+- 2026-10-25_02_31_19__Este-es-Galleta-Su-primera-navidad-la-paso-temblando-debajo.mp3  ->  Este es Galleta. Su primera navidad la pasó temblando debajo de un carro.
+- 2026-10-27_16_11_38__A-ver-mis-desgraciados-nos-estrellamos-y-nos-encontro-una-br.mp3  ->  A ver, mis desgraciados, nos estrellamos y nos encontró una bruja.
+- 2026-10-27_16_13_54__Plan-A-Despegar-Plan-B-Culpar-a-galleta.mp3  ->  Plan A. Despegar. Plan B. Culpar a galleta.
+- 2026-10-27_16_15_29__Monstruos-Yo-no-tengo-miedo-Estoy-evaluando-la-situacion.mp3  ->  ¿Monstruos? Yo no tengo miedo. Estoy evaluando la situación.
+- 2026-10-27_16_16_44__Que-monstruo-creen-que-nos-espera-Los-leo.mp3  ->  ¿Qué monstruo creen que nos espera? Los leo.
+- 2026-10-27_16_28_56__Galleta-encontro-el-camino-fue-suerte-yo-lo-tenia-calculado.mp3  ->  Galleta encontró el camino, fue suerte, yo lo tenía calculado.
+- 2026-10-27_16_51_29__A-ver-mis-desgraciados-nos-estrellamos-y-nos-encontro-una-br.mp3  ->  A ver, mis desgraciados, nos estrellamos, y nos encontró una bruja, plan A, despegar, plan B, culpar a Galleta. ¡Monstros! Yo no tengo miedo, estoy evaluando la situación. Galleta encontró el camino, fue suerte, yo lo tenía todo calculado. ¿Qué monstruo creen que nos espera? Los leo.
+- 2026-10-27_17_06_45__A-ver-mis-desgraciados-nos-estrellamos-y-nos-encontro-una-br.mp3  ->  A ver mis desgraciados, nos estrellamos y nos encontró una bruja, plan A despegar, plan B culpar a Galleta, ¡Monstros! Yo no tengo miedo, estoy evaluando la situación, Galleta encontró el camino, fue suerte, yo no tenía todo calculado, ¿Qué monstruo creen que nos espera? Los leo.
+- 2026-10-29_15_25_36__A-ver-mis-desgraciados-bienvenidos-a-otro-dia-en-la-vida-del.mp3  ->  A ver mis desgraciados, bienvenidos a otro día en la vida del gato más famoso de internet. Bueno, casi famoso. Tengo 12 seguidores, y 3 son bots. Él es Galleta, mi asistente. No sabe hacer nada, pero es gratis. Mi humana perdió las llaves de la casa hace 3 meses. Desde entonces deja la puerta así. Galleta, no. Galleta! Yo no salgo, yo nunca salgo. ¡Puta madre! ¿Por qué está brillando la alcantarilla? ¡Galleta! Si me muero, quiero que sepan que fue culpa del perro. ¿Qué es esto? Galleta? Galleta, no te mueras, que tú eres el que carga todo. Casi me da algo, por la pelota. Me preocupaba la pelota. Nosotros no estamos perdidos, yo soy famoso. ¿Me ves botas desgraciado? Mi humana me está buscando. Seguro, creo. Mi humana la perdió hace 3 meses. Un mundo entero que nadie ha grabado nunca. Voy a ser el gato más famoso del multiverso. Max? ¿Quién carajos es Max? ¿Ustedes saben quién es Max? Los leo. Sígueme para no perderte el próximo episodio.
+- 2026-10-30_02_34_11__Galleta-no-te-mueras-que-tu-eres-el-que-carga-todo.mp3  ->  Galleta, no te mueras, que tú eres el que carga todo.
+- 2026-10-30_02_36_10__A-ver-mis-desgraciados-bienvenidos-a-otro-dia-en-la-vida-del.mp3  ->  A ver mis desgraciados, bienvenidos a otro día en la vida del gato más famoso de internet.
+- 2026-10-30_18_08_40__Galleta.mp3  ->  ¡Galleta!
+- 2026-10-30_18_11_48__Mi-humana-la-perdio-hace-tres-meses.mp3  ->  Mi humana la perdió hace tres meses.
+- 2026-10-30_18_13_17__Esto-es-contenido-esto-es-puro-contenido.mp3  ->  Esto es contenido, esto es puro contenido.
+- 2026-10-30_18_14_10__Y-cual-es-la-mia.mp3  ->  ¿Y cuál es la mía?
+- 2026-10-30_18_15_37__Si-me-vuelves-a-hacer-eso-te-vendo-a-lucho.mp3  ->  Si me vuelves a hacer eso, te vendo a lucho.
+- 2026-10-30_18_16_32__Max-Quien-carajos-es-Max.mp3  ->  Max? ¿Quién carajos es Max?
+- 2026-10-30_18_18_03__Bueno-casi-famoso-tengo-12-seguidores-y-3-son-bots.mp3  ->  Bueno, casi famoso, tengo 12 seguidores y 3 son bots.
+- 2026-10-30_18_18_27__Galleta-No-Galleta.mp3  ->  ¡Galleta! ¡No! ¡Galleta!
+- 2026-10-30_18_18_51__Yo-no-salgo-yo-nunca-salgo.mp3  ->  Yo no salgo, yo nunca salgo.
+- 2026-10-30_18_19_18__Por-que-esta-brillando-la-alcantarilla.mp3  ->  ¿Por qué está brillando la alcantarilla?
+- 2026-10-30_18_19_46__Que-es-esto.mp3  ->  ¿Qué es esto?
+- 2026-10-30_18_20_10__Casi-me-da-algo-Por-la-pelota-Me-preocupaba-la-pelota.mp3  ->  Casi me da algo. Por la pelota. Me preocupaba la pelota.
+- 2026-10-30_18_20_35__NOSOTROS-NO-ESTAMOS-PERDIDOS-YO-SOY-FAMOSO.mp3  ->  NOSOTROS NO ESTAMOS PERDIDOS YO SOY FAMOSO
+- 2026-10-30_18_21_04__ME-VES-BOTAS-DESGRACIALO.mp3  ->  ¿ME VES BOTAS DESGRACIALO?
+- 2026-10-30_18_21_27__Mi-humana-me-esta-buscando-Seguro-creo.mp3  ->  Mi humana me está buscando. Seguro, creo.
+- 2026-10-30_18_22_01__Voy-a-ser-el-gato-mas-famoso-del-multiverso.mp3  ->  Voy a ser el gato más famoso del multiverso.
+- 2026-10-30_22_41_48__Calleta-no-Yo-no-corro-Yo-nunca-corro.mp3  ->  Calleta, no. Yo no corro. Yo nunca corro.
+- 2026-10-31_00_42_06__El-es-galleta-mi-asistente-No-sabe-hacer-nada-pero-es-gratis.mp3  ->  Él es galleta, mi asistente. No sabe hacer nada, pero es gratis.
+- 2026-10-31_00_42_40__Mi-humana-perdio-las-llaves-de-la-casa-hace-tres-meses-Desde.mp3  ->  Mi humana perdió las llaves de la casa hace tres meses. Desde entonces deja la puerta... así.
+- 2026-10-31_00_43_10__Ah-puta-madre.mp3  ->  ¡Ah, puta madre!
+- 2026-10-31_00_43_39__AHHHHHHHHH.mp3  ->  AHHHHHHHHH
+- 2026-10-31_00_44_04__Si-me-muero-quiero-que-sepan-que-fue-culpa-del-perro.mp3  ->  Si me muero, quiero que sepan que fue culpa del perro.
+- 2026-10-31_00_44_51__Gadgeta.mp3  ->  ¿Gadgeta?
+- 2026-10-31_00_45_11__Un-mundo-entero-que-nadie-ha-grabado-nunca.mp3  ->  Un mundo entero que nadie ha grabado nunca.
+- 2026-10-31_00_45_37__Ustedes-saben-quien-es-Madrax-Los-leo-Sigueme-para-no-perder.mp3  ->  ¿Ustedes saben quién es Madrax? ¡Los leo! Sígueme para no perderte el próximo episodio.
+- 2026-10-31_13_50_03__Galleta-suelta-eso-Esa-media-tiene-dueno.mp3  ->  Galleta, suelta eso. Esa media tiene dueño.
+- 2026-10-31_13_50_33__Y-quien-vive-aqui.mp3  ->  ¿Y quién vive aquí?
+- 2026-10-31_21_13_15__Esta-subida-es-larguisima-Ya-casi-llegamos.mp3  ->  Esta subida es larguísima. Ya casi llegamos.
+- 2026-11-01_04_11_09__No-me-conoces-Soy-famoso.mp3  ->  ¿No me conoces? Soy famoso.
+
+== 3-EFECTOS ==
+- alas-gigantes-Polilla.mp3  ->  alas gigantes (Polilla)
+- brillo-magico.mp3  ->  brillo magico
+- caida-en-pelotas-de-plastico.mp3  ->  caida en pelotas de plastico
+- cortina-de-metal.mp3  ->  cortina de metal
+- golpe-de-chiste.mp3  ->  golpe de chiste
+- latido.mp3  ->  latido
+- pasitos-de-patas.mp3  ->  pasitos de patas
+- pelota-que-rebota-y-chilla.mp3  ->  pelota que rebota y chilla
+- pop-de-curiosidad.mp3  ->  pop de curiosidad
+- rayon-de-disco.mp3  ->  rayon de disco
+- remate-final-de-episodio.mp3  ->  remate final de episodio
+- subida-de-tension.mp3  ->  subida de tension
+- wah-wah-triste-fracaso.mp3  ->  wah wah triste (fracaso)
+- whoosh-transiciones-y-caidas.mp3  ->  whoosh transiciones y caidas
+
+== 3-EFECTOS/ambientes ==
+- Ciudad-de-Extravio-mercado-al-atardecer.mp3  ->  calle y mercado de la ciudad
+- Mar-de-Pelotas-olas-de-pelotas.mp3  ->  Mar de Pelotas (olas de pelotas)
+- azotea-de-noche.mp3  ->  azotea de noche
+- calle-con-lluvia-casa-de-Toffee.mp3  ->  calle con lluvia (casa de Toffee)
+- ciudad-de-noche.mp3  ->  ciudad de noche
+
+== 4-MUSICA ==
+- Chase-Through-the-Ruins.mp3  ->  Persecucion de noche (accion)
+- Clockwork-Citadel.mp3  ->  Suspenso de noche
+- Comic-Pursuit.mp3  ->  Persecucion comica
+- Curious-Light.mp3  ->  Misterio (alcantarilla, recuerdos)
+- Key-of-the-Veil.mp3  ->  LOGO de EXTRAVIO (firma, primeros 4 s)
+- La-Noche-Del-Miau.mp3  ->  (sin usar) cancion de la noche del miau
+- Lost-Things-Waltz.mp3  ->  (sin usar) vals de las cosas perdidas
+- Mapmakers-Charm.mp3  ->  Tema de Extravio (casa, llegada, ciudad)
+- Memory-of-the-Leash.mp3  ->  Momento tierno (Galleta, MAX, finales)
+- Moonfall-Charm.mp3  ->  (sin usar) primera prueba 29-oct
+- Run-For-It.mp3  ->  (sin usar) persecucion 29-oct
+- Sneaky-Little-Scheme.mp3  ->  Comedia bajo los dialogos
+- Three-Nights-And-A-Shore.mp3  ->  (sin usar) pista larga

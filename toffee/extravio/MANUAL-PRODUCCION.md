@@ -67,3 +67,12 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 ## 7. Capítulos y ritmo
 - 5–6 min por capítulo (el 1 quedó en 5:38). 1 diario a las 6 p. m. con 1 de reserva. Galleta nunca habla.
 - Cada capítulo: gancho → logo → meta clara → mundo vivo → obstáculo con tensión → clímax → recompensa → misterio → «Sígueme para no perderte el próximo episodio» → 10 s de pantalla final.
+
+## 8. Cómo se hacen los prompts desde el capítulo 2 (optimizado el 1-nov-2026, con todo lo aprendido)
+1. **Guion por escenas, no por tomas sueltas.** Cada escena: dónde están, qué quieren, qué sale mal, con qué remate termina. Antes de las tomas, revisar continuidad completa (cómo llegan, qué tienen en las manos, de día o de noche).
+2. **Cada toma en una ficha de 6 líneas** (base `capitulos/base.py`): plano y movimiento · dónde está cada uno en el PRIMER cuadro · UNA acción · quién habla y la frase exacta (≤ 8 s) · qué suena (efecto o música de la librería) · si sigue a otra toma (último cuadro solo con el mismo encuadre).
+3. **Sonido desde el guion**: cada toma ya dice qué efecto y qué música lleva, sacados de `recursos/EXTRAVIO-RECURSOS.zip` (LEEME.txt). Solo se le pide a Jay lo que falta, todo junto y al principio.
+4. **Tomas de reacción e insertos baratos** (una cara, un objeto, 4 s) entre diálogos: dan ritmo y tapan cortes.
+5. **Frases cortas y naturales**, sin vocales estiradas largas que ElevenLabs no imita («ustedeees»); si una pausa importa, escribirla en el prompt de Flow y en el de ElevenLabs.
+6. **Primero 1 toma de prueba por personaje nuevo** (para ver cara y tamaño) y después el resto.
+7. Al recibir tomas: «✓» en silencio, revisión completa en «listo», repetir lo que no cumpla, anotar el error nuevo en la tabla de la sección 3.
