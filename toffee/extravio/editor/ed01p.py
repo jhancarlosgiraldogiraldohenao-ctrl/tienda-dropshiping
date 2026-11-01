@@ -278,6 +278,9 @@ for id_, w_ in (('P63', 'novio'), ('P23', 'negocio'), ('P35', 'decep')):
 fx('P25', 0.0, 'RISER.mp3', -11)                            # la campana: algo viene
 fx('P32', 2.6, 'ALAS.mp3', -7, largo=6.0); fx('P33', 0.8, 'ALAS.mp3', -12, largo=4.0)   # la Polilla pasa por encima
 fx('P33', 0.0, 'LATIDO.mp3', -15, largo=12.0)               # escondidos en el carrito
+fx('R09', 0.5, 'BRILLO.mp3', -12); fx('P28', 0.3, 'BRILLO.mp3', -14)   # la alcantarilla y el recuerdo que brillan
+fx('P25', 3.0, 'CORTINA.mp3', -17)                          # la calle cierra sus cortinas a lo lejos
+fx('P39', 7.8, 'FIN.mp3', -9)                               # remate de «Sígueme para no perderte el próximo episodio»
 def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
     t0, t1 = T0[idx(a_id)] + a_rel, T0[idx(b_id)] + b_rel; L = int((t1 - t0) * SR); src = load(f'{FXD}/{f}')[int(ss * SR):]
     while len(src) < L: src = np.concatenate([src, load(f'{FXD}/{f}')])
