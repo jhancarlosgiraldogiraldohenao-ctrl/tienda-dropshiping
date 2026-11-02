@@ -44,6 +44,7 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Cruzan la puerta en un prado de día en vez de la azotea (C2-12) | La foto de referencia de la puerta tiene prado de fondo y Flow copió el fondo | Si una referencia de OBJETO trae fondo, decir «only the door from the door reference, NOT its background» y nombrar el lugar real + su foto |
 | La página arrancada salió entera, con dos cachorros (C2-36) | Pedir que Galleta «pase la página» y que aparezca el dibujo: Flow inventa otra página | Que la página correcta esté abierta DESDE EL PRIMER CUADRO y una sola acción (olfatear) |
 | Texto manuscrito en las páginas del libro (C2-32) | Libro antiguo = Flow escribe | Recortar en edición; para insertos de libro, usar la foto de páginas como primer cuadro |
+| Texto en pantalla (letreros) | Regla fija vieja | Jay (2-nov-2026): los letreros y textos que salen de forma natural en la escena NO son error; pueden usarse como recurso. Lo que se evita es texto inventado, ilegible o que tape la acción |
 | La amenaza aparece y desaparece | Tomas sueltas | La Polilla (o la amenaza) se ve o se siente en cada toma de la secuencia (luz, sombra, sonido) |
 
 ## 4. Voces (ElevenLabs)
