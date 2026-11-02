@@ -317,6 +317,7 @@ mus('M_SUSPENSO.mp4', 'HID', 0.0, 'P37', 0.5, ss=18.0, db=-25, fi=1.0, fo=2.0)  
 mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)         # la placa MAX y el cierre
 MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 2.0 * (1 - 0.5 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
+if os.environ.get('DUMP'): np.save('_musb.npy', MUSB); np.save('_fx.npy', FX); np.save('_logo.npy', LOGOMUS)
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
 
