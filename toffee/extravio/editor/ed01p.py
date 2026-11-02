@@ -97,7 +97,7 @@ esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fade', 0.4)
 nuevo('P02', 2.6, 6.0)
-seg('CAMA', NEWCLIP['CAMA'], 0.0, 5.9, off=[('T01A', 0.4)], amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
+seg('CAMA', NEWCLIP['CAMA'], 0.0, 5.9, amb=0.15)   # Toffee panza arriba: arranca con «Hola, soy Toffee» (voz pendiente de Jay). Se quitó la escena «tengo 12 seguidores» (Jay, 2-nov)
 viejo('R03', 'in_06', 0.0, 6.0, off=[('T3', 1.4)], amb=0.6)   # deja sonar el «wah wah» de los 12 seguidores
 esc('pelota', 'fade', 0.3)
 viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)
@@ -280,7 +280,7 @@ def fx(id_, rel, f, g=-10.0, largo=None):
 FX = np.zeros(N, np.float32)
 # tiempos medidos cuadro por cuadro (segundos desde que empieza la toma en pantalla)
 fx('LOGO', -0.25, 'WHOOSH.mp3', -8)                         # entra el logo
-fx('R02', wend('R02', 'bots'), 'TRISTE.mp3', -9)            # «…y 3 son bots»
+
 fx('R05', 0.5, 'PELOTA.mp3', -8)                            # la pelota toca el piso
 fx('R09', 0.9, 'BRILLO.mp3', -12)                           # la alcantarilla se prende
 fx('P07', 1.05, 'WHOOSH.mp3', -6)                           # destello: se abre la reja
