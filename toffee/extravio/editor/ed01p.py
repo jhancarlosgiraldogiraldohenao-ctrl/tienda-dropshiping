@@ -320,7 +320,7 @@ _song = load(f'{S_NEW}/extravio_song/cancion.mp4')
 _song = _song * (10 ** (-20 / 20) / (np.sqrt(np.mean(_song ** 2)) + 1e-9))
 _fi, _fo = int(1.0 * SR), int(1.5 * SR)
 _song[:_fi] *= np.linspace(0, 1, _fi); _song[-_fo:] *= np.linspace(1, 0, _fo)
-put(MUSB, _song, ti('P16'))   # empieza al llegar a la ciudad de Extravío
+_i0 = int(ti('P16') * SR); _j0 = min(N, _i0 + len(_song)); MUSB[_i0:_j0] += _song[: _j0 - _i0]   # empieza al llegar a la ciudad de Extravío
          # la placa MAX y el cierre
 MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 2.0 * (1 - 0.5 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
