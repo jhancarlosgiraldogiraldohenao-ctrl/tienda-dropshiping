@@ -122,7 +122,8 @@ esc('lucho', 'fade', 0.5)
 nuevo('P67', 0.2, 7.95); nuevo('P68', 0.9, None, boca='P68'); nuevo('P69', boca='P69')
 nuevo('P12', None, 8.0, boca='P12'); seg('ENO', NEWCLIP['ENO'], 0.0, 3.9, boca='MBOT', fw=[[1.42, 2.38, '¿Me ves'], [2.38, 3.06, 'botas'], [3.06, 3.76, 'desgraciado']], amb=0.5); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 seg('SOL', NEWCLIP['SOL'], 0.0, 5.9, boca='MH', fw=[[0.0,1.74,'Mi'],[1.74,2.16,'humana'],[2.16,2.28,'me'],[2.28,2.48,'está'],[2.48,3.06,'buscando'],[3.54,4.14,'Seguro'],[4.34,4.52,'creo']])
-nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); esc('ciudad')
+nuevo('P13', boca='P13'); nuevo('P14', boca='P14');   # P15 (caminan de espaldas, Jay 2-nov) fuera con su audio
+esc('ciudad')
 nuevo('P16', 0.2, 7.9, off=[('T18', 3.4), ('TSUB', 0.6)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
 nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.0), ('C5', 3.95)]); nuevo('P20', 1.0, None, boca='P20'); nuevo('P43', 0.2, 5.95)   # «Tenía. Por eso está aquí» va en off en P19, mientras Galleta tiene la media (Jay, 1-nov)
 esc('local')
@@ -174,7 +175,7 @@ def poner(x, t):
     i = int(t * SR); j = min(N, i + len(x))
     if i < 0: x = x[-i:]; i = 0
     VOX[i:j] += x[:j - i]
-ERR = []; SHIFT = []
+ERR = []; SHIFT = []; XCS = []
 SIN_DTW_IDS = set(os.environ.get('SIN_DTW_IDS', 'SOL').split(','))   # tomas que se pegan por frases en vez de por el sonido de Flow
 for i, s in enumerate(SEG):
     if s['boca']:
@@ -201,6 +202,26 @@ for i, s in enumerate(SEG):
             def ov(k): return np.sum(M[max(0, k): n_ + min(0, k)] * Bv[max(0, -k): n_ - max(0, k)]) / max(1, np.sum(np.maximum(M, Bv)))
             k_best = max(range(-15, 16), key=lambda k: ov(k) - 0.002 * abs(k))
             if ov(k_best) > ov(0) + 0.03: y = np.roll(y, k_best * fr_); SHIFT.append((s['id'], k_best * 0.02))
+        if os.environ.get('XC') and s['boca'] not in ('MBOT', 'HOLA'):   # experimento apagado: no mide bien la boca
+            fl_ = load(s['src'])[int(s['a'] * SR): int(s['b'] * SR)]
+            def env_(z):
+                m_ = len(z) // fr_; db_ = 20 * np.log10(np.sqrt(np.mean(z[: m_ * fr_].reshape(m_, fr_) ** 2, axis=1)) + 1e-9)
+                return (np.clip(db_ + 50, 0, None))
+            fE, vE = env_(fl_), env_(y)
+            fE = (fE - fE.mean()) / (fE.std() + 1e-6)
+            best_, k_x = -1e9, 0
+            for k in range(-40, 41):
+                if k >= 0: a_, b_ = vE[k: k + len(fE)], fE[: len(vE[k: k + len(fE)])]
+                else: a_, b_ = vE[: len(fE) + k], fE[-k: -k + len(vE[: len(fE) + k])]
+                n_ = min(len(a_), len(b_))
+                if n_ < 50: continue
+                a2 = (a_[:n_] - a_[:n_].mean()) / (a_[:n_].std() + 1e-6); b2 = (b_[:n_] - b_[:n_].mean()) / (b_[:n_].std() + 1e-6)
+                c_ = float(np.mean(a2 * b2)) - 0.002 * abs(k)
+                if c_ > best_: best_, k_x = c_, k
+            c0_ = float(np.mean(((vE[: len(fE)] - vE[: len(fE)].mean()) / (vE[: len(fE)].std() + 1e-6)) * fE[: len(vE[: len(fE)])])) if len(vE) >= len(fE) else 0
+            if k_x and best_ > c0_ + 0.03:
+                y = y[k_x * fr_:] if k_x > 0 else np.concatenate([np.zeros(-k_x * fr_, np.float32), y])
+                XCS.append((s['id'], round(k_x * 0.02, 2)))
         poner(y, T0[i] + s['pre'] + 0.08)
         ERR += [abs(e) for e in err]
         if err and np.max(np.abs(err)) > 0.25: print(f"  revisar {s['id']}: desfase medio {np.mean(np.abs(err)):.2f} s, peor {np.max(np.abs(err)):.2f} s")
@@ -214,7 +235,7 @@ for i, s in enumerate(SEG):
         while k != 'C5' and t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
         poner(x, t)
 if os.environ.get('DUMP'): np.save('_vox.npy', VOX); np.save('_amb_pre.npy', AMB); json.dump(dict(T0=T0, segs=[(x['id'], x['src'], x['a'], x['b'], x['pre'], bool(x['boca'])) for x in SEG]), open('_dump.json', 'w'))
-print('ajuste fino:', SHIFT)
+print('ajuste fino:', SHIFT); print('calce por energía:', XCS)
 if ERR: print(f'boca: {len(ERR)} palabras, desfase medio {np.mean(ERR):.3f} s, 90 % < {np.percentile(ERR, 90):.2f} s')
 
 # ---------------- Ambiente de cada toma (sin la voz de Flow) ----------------
@@ -328,12 +349,12 @@ mus('M_SUSPENSO.mp4', 'HID', 0.0, 'P37', 0.5, ss=18.0, db=-25, fi=1.0, fo=2.0)  
 mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)
 # Canción «Extravío» (Jay, 2-nov): empieza cuando llegan a Extravío y Lucho dice «Bienvenidos a la ciudad de Extravío» (P42), debajo de los diálogos
 _song = load(f'{S_NEW}/extravio_song/cancion.mp4')
-_song = _song * (10 ** (-20 / 20) / (np.sqrt(np.mean(_song ** 2)) + 1e-9))
+_song = _song * (10 ** (-25 / 20) / (np.sqrt(np.mean(_song ** 2)) + 1e-9))
 _fi, _fo = int(1.0 * SR), int(1.5 * SR)
 _song[:_fi] *= np.linspace(0, 1, _fi); _song[-_fo:] *= np.linspace(1, 0, _fo)
 _i0 = int((ti('P42') + 0.2) * SR); _j0 = min(N, _i0 + len(_song)); MUSB[_i0:_j0] += _song[: _j0 - _i0]
          # la placa MAX y el cierre
-MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 2.0 * (1 - 0.5 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
+MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 1.1 * (1 - 0.6 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_musb.npy', MUSB); np.save('_fx.npy', FX); np.save('_logo.npy', LOGOMUS)
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
