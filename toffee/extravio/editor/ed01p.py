@@ -286,7 +286,7 @@ fx('R09', 0.9, 'BRILLO.mp3', -12)                           # la alcantarilla se
 fx('P07', 1.05, 'WHOOSH.mp3', -6)                           # destello: se abre la reja
 fx('P67', 1.5, 'PELOTAS1.mp3', -8); fx('P67', 2.7, 'PELOTAS2.mp3', -11)   # Toffee y después Galleta tocan las pelotas
 fx('P68', 3.55, 'POP.mp3', -12)                             # el ojo de Lucho llena la pantalla
-fx('R22', -0.05, 'SCRATCH.mp3', -11)                        # corte a «¡¿Me ves botas…?!»
+fx('ENO', -0.05, 'SCRATCH.mp3', -11)                        # corte a «¡¿Me ves botas…?!»
 fx('P16', 0.0, 'PASOS.mp3', -16); fx('P62', 0.0, 'PASOS.mp3', -16)
 for id_, w_ in (('P63', 'novio'), ('P23', 'negocio')):
     fx(id_, wend(id_, w_), 'GOLPE.mp3', -10)                # remate de chiste
