@@ -57,7 +57,7 @@ VPATH = {k: voz(v) for k, v in NV.items()}
 VPATH.update(T01=f'{RT}/x1.mp3', T16=f'{RT}/x3.mp3', L23=f'{RT}/x2.mp3')
 VPATH.update(P68=f'{P}/vo3/_p68.wav', P69=glob.glob(f'{P}/vo3/*T04_11_09*')[0])
 VPATH['MH'] = glob.glob(f'{P}/voces/11136be8*')[0]   # «Mi humana me está buscando. Seguro, creo.» (Toffee, 30-oct)
-NEWCLIP = dict(AER=f'{S_NEW}/tres/aerea.mp4', HID=f'{S_NEW}/tres/escond.mp4', SOL=f'{S_NEW}/tres/sol.mp4', EXT=f'{S_NEW}/salida/clip.mp4')   # voces del nuevo comienzo
+NEWCLIP = dict(CAMA=glob.glob('/root/.claude/uploads/c684127a-90fa-5e05-b748-57ecc9507198/ccc93482-*.mp4')[0], ENO=f'{S_NEW}/nuevas/enojo.mp4', AER=f'{S_NEW}/tres/aerea.mp4', HID=f'{S_NEW}/tres/escond.mp4', SOL=f'{S_NEW}/tres/sol.mp4', EXT=f'{S_NEW}/salida/clip.mp4')   # voces del nuevo comienzo
 # «¿Siguen vivos? ¡Qué decepción!» va pegado a la boca en el carrito; «Digo, ¡qué alegría!» sigue en off sobre la subida a la azotea
 _x = load(VPATH['P35'])[: int(2.97 * SR)]; f_ = int(0.03 * SR); _x = _x.copy(); _x[-f_:] *= np.linspace(1, 0, f_)
 sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{P}/vo3/_p35a.wav'], input=_x.astype(np.float32).tobytes(), check=True)
@@ -68,7 +68,9 @@ OLD = load(f'{E}/voz_toffee_1.mp3')
 _v2 = sorted(glob.glob(f'{P}/vo2/*.mp3'), key=lambda f: f.split('T00_')[1])
 _v3 = {k: glob.glob(f'{P}/vo3/*T{v}*.mp3')[0] for k, v in dict(C1='13_51_01', C2='13_50_33', C3='14_03_29', C4='13_50_03', C5='13_49_30', LSUB='13_52_01', TSUB='21_13_15').items()}
 _v3['SIG'] = VPATH['P35']   # voz de Lucho «¿Siguen vivos? ¡Qué decepción!»
-_v3['RISA'] = f'{S_NEW}/risa/risa.mp3'   # risa de Lucho (Jay, 2-nov)
+_v3['RISA'] = f'{S_NEW}/risa/risa_corta.mp3'
+_v3['T01A'] = VPATH['T01']
+_v3['MBOT'] = glob.glob(f'{S_NEW}/audio_v3/1-VOCES-TOFFEE-LUCHO-CATRINA/c12ae959*')[0]   # risa de Lucho (Jay, 2-nov)
 _p35 = load(VPATH['P35']) if 'P35' in VPATH else None
 VPATH.update({k: _v3[k] for k in ('C1', 'C2', 'C3')})
 VO2 = dict(zip(['T3', 'T4', 'PUTA', 'AAH', 'T9', 'T11', 'T18', 'T21'], _v2)) if len(_v2) == 8 else {}
@@ -95,7 +97,7 @@ esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fade', 0.4)
 nuevo('P02', 2.6, 6.0)
-viejo('R01', 'in_02', 0.0, 8.04, boca='T01', amb=0.15); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
+seg('CAMA', NEWCLIP['CAMA'], 0.0, 5.9, off=[('T01A', 0.4)], amb=0.15)   # Toffee panza arriba en el trineo al llegar (Jay, 2-nov); viejo('R02', 'in_01', 0.6, 6.04, boca='T02', amb=0.15)
 viejo('R03', 'in_06', 0.0, 6.0, off=[('T3', 1.4)], amb=0.6)   # deja sonar el «wah wah» de los 12 seguidores
 esc('pelota', 'fade', 0.3)
 viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)
@@ -106,21 +108,21 @@ esc('remolino', 'fade', 0.25)
 viejo('R11', 'in_11', 3.0, 6.0, amb=0.6); viejo('R12', 'in_16', 0.0, 6.0, off=[('T9', 0.6)], amb=0.6)
 esc('lucho', 'fade', 0.5)
 nuevo('P67', 0.2, 7.95); nuevo('P68', 0.9, None, boca='P68'); nuevo('P69', boca='P69')
-nuevo('P12', None, 8.0, boca='P12'); viejo('R22', 'in_24', 0.6, 6.04, boca='T22'); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
+nuevo('P12', None, 8.0, boca='P12'); seg('ENO', NEWCLIP['ENO'], 0.0, 3.9, off=[('MBOT', 0.3)], amb=0.5)   # enojo con patas en la cabeza (Jay, 2-nov); viejo('R23', 'in_23', 1.0, 8.0, boca='L23', crop=True)
 seg('SOL', NEWCLIP['SOL'], 0.0, 5.9, boca='MH', fw=[[0.0,1.74,'Mi'],[1.74,2.16,'humana'],[2.16,2.28,'me'],[2.28,2.48,'está'],[2.48,3.06,'buscando'],[3.54,4.14,'Seguro'],[4.34,4.52,'creo']])
-nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9, off=[('TSUB', 1.3)])   # «Mi humana me está buscando» en el mar de pelotas (Jay, 2-nov) va arriba
+nuevo('P13', boca='P13'); nuevo('P14', boca='P14'); nuevo('P15', boca='P15'); nuevo('P41', 0.3, 7.9)   # «Mi humana me está buscando» en el mar de pelotas (Jay, 2-nov) va arriba
 esc('ciudad')
-nuevo('P16', 0.2, 7.9, off=[('T18', 3.4)]); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
+nuevo('P16', 0.2, 7.9, off=[('T18', 3.4), ('TSUB', 0.6)])   # «Esta subida…» solo al llegar arriba y ver la ciudad (Jay, 2-nov); viejo('R28', 'in_27', 0.2, 6.04, boca='T28', crop=True); viejo('R29', 'in_26', 1.0, 6.04, boca='L29'); nuevo('P42', boca='C1'); nuevo('P62', boca='C2'); nuevo('P63', boca='C3')
 nuevo('P18', 0.0, None, boca='P18'); nuevo('P19', 0.2, 5.95, off=[('C4', 0.0), ('C5', 3.95)]); nuevo('P20', 1.0, None, boca='P20'); nuevo('P43', 0.2, 5.95)   # «Tenía. Por eso está aquí» va en off en P19, mientras Galleta tiene la media (Jay, 1-nov)
 esc('local')
-nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23', off=[('RISA', 3.9)]); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)   # risa de Lucho tras «Por eso es negocio» (Jay, 2-nov)
+nuevo('P21', boca='P21' if 'P21' in NV else None); nuevo('P22', boca='P22'); nuevo('P23', boca='P23', off=[('RISA', 3.5)]); nuevo('P24', 0.2, 4.2); nuevo('P58', 0.2, 4.8)   # risa de Lucho tras «Por eso es negocio» (Jay, 2-nov)
 esc('noche', 'fade', 0.6)
 nuevo('P25', 0.3, 6.0); nuevo('P26', boca='P26')
 seg('AER', NEWCLIP['AER'], 0.0, 8.0, amb=0.5)   # apagón de la ciudad cuando llega la Polilla (Jay, 2-nov)
 seg('HID', NEWCLIP['HID'], 0.0, 6.0, off=[('SIG', 2.6)], amb=0.5)   # escondidos en el contenedor; Lucho en off: «¿Siguen vivos?» (Jay, 2-nov)
 seg('EXT', NEWCLIP['EXT'], 0.0, 5.9, amb=0.5)   # salen del local hacia la escalera (Jay, 2-nov)
 nuevo('P60', 0.2, 5.95)
-esc('azotea', 'fade', 0.4)
+esc('azotea', 'fade', 0.9)
 nuevo('P36', 0.3, 7.9, off=[('L36', 4.9)], amb=0.5); nuevo('P37', 1.9, 5.95); nuevo('P38', boca='P38')
 nuevo('P39', 0.2, 9.9, off=[('T21', 1.5)], freeze=4.0)
 for k in ('P21', 'P29'):   # mientras llega la voz nueva: queda la de Flow
@@ -312,7 +314,7 @@ mus('M_SUSPENSO.mp4', 'P25', 0.0, 'AER', 0.6, db=-24, fi=1.5, fo=0.6)           
           # «¡Yo no corro!»: la persecución de noche
 mus('M_SUSPENSO.mp4', 'HID', 0.0, 'P37', 0.5, ss=18.0, db=-25, fi=1.0, fo=2.0)       # escondidos y la subida a la azotea
 mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)         # la placa MAX y el cierre
-MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * (1 - 0.68 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
+MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 2.0 * (1 - 0.5 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
