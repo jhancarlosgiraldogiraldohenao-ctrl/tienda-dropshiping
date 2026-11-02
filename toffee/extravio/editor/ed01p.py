@@ -175,6 +175,7 @@ def poner(x, t):
     i = int(t * SR); j = min(N, i + len(x))
     if i < 0: x = x[-i:]; i = 0
     VOX[i:j] += x[:j - i]
+EXLOG = []   # eventos sueltos para el editor web (voces, efectos, música)
 ERR = []; SHIFT = []; XCS = []; VLIST = []   # VLIST: lista de voces por toma (para que Jay ponga las voces)
 SIN_DTW_IDS = set(os.environ.get('SIN_DTW_IDS', 'SOL').split(','))   # tomas que se pegan por frases en vez de por el sonido de Flow
 for i, s in enumerate(SEG):
@@ -223,6 +224,7 @@ for i, s in enumerate(SEG):
                 y = y[k_x * fr_:] if k_x > 0 else np.concatenate([np.zeros(-k_x * fr_, np.float32), y])
                 XCS.append((s['id'], round(k_x * 0.02, 2)))
         VLIST.append(dict(t=round(T0[i] + s['pre'], 2), toma=s['id'], voz=s['boca'], archivo=os.path.basename(VPATH[s['boca']])))
+        EXLOG.append(dict(kind='voz', track='Voces', nombre=f"{s['id']}-{s['boca']}", t=T0[i] + s['pre'] + 0.08, x=y.copy()))
         poner(y, T0[i] + s['pre'] + 0.08)
         ERR += [abs(e) for e in err]
         if err and np.max(np.abs(err)) > 0.25: print(f"  revisar {s['id']}: desfase medio {np.mean(np.abs(err)):.2f} s, peor {np.max(np.abs(err)):.2f} s")
@@ -235,6 +237,7 @@ for i, s in enumerate(SEG):
         t = T0[i] + s['pre'] + at; t0 = t
         VLIST.append(dict(t=round(t, 2), toma=s['id'], voz=k, archivo=os.path.basename(str(VO2.get(k, _v3.get(k, OFF.get(k)))))))
         while k != 'C5' and t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
+        EXLOG.append(dict(kind='voz', track='Voces', nombre=f"{s['id']}-{k}", t=t, x=x.copy()))
         poner(x, t)
 if os.environ.get('DUMP'): np.save('_vox.npy', VOX); np.save('_amb_pre.npy', AMB); json.dump(dict(T0=T0, segs=[(x['id'], x['src'], x['a'], x['b'], x['pre'], bool(x['boca'])) for x in SEG]), open('_dump.json', 'w'))
 print('ajuste fino:', SHIFT); print('calce por energía:', XCS)
@@ -314,6 +317,7 @@ def fx(id_, rel, f, g=-10.0, largo=None):
     st = int((T0[idx(id_)] + rel) * SR)
     if st < 0: x = x[-st:]; st = 0
     FX[st: st + len(x)] += x[: N - st]
+    EXLOG.append(dict(kind='efecto', track='Efectos', nombre=f'{id_}-{f}', t=st / SR, x=x.copy()))
 FX = np.zeros(N, np.float32)
 # tiempos medidos cuadro por cuadro (segundos desde que empieza la toma en pantalla)
 fx('LOGO', -0.25, 'WHOOSH.mp3', -8)                         # entra el logo
@@ -337,6 +341,7 @@ def mus(f, a_id, a_rel, b_id, b_rel, ss=0.0, db=-27.0, fi=1.0, fo=2.0):
     x = src[:L].copy(); x *= 10 ** (db / 20) / (np.sqrt(np.mean(x ** 2)) + 1e-9)
     a_, b_ = int(min(fi, L / SR / 3) * SR), int(min(fo, L / SR / 3) * SR); x[:a_] *= np.linspace(0, 1, a_); x[-b_:] *= np.linspace(1, 0, b_)
     st = int(t0 * SR); MUSB[st: st + L] += x[: N - st]
+    EXLOG.append(dict(kind='musica', track='Música', nombre=f'{f}', t=t0, x=x.copy()))
 MUSB = np.zeros(N, np.float32)
 # Música casi todo el capítulo (Jay, 1-nov: «que la música ayude a engancharse»), cambiando con cada parte de la historia
 mus('M_TEMA.mp4', 'P02', 0.0, 'R05', 1.0, ss=0.0, db=-26, fi=1.0, fo=1.0)            # la casa y la presentación
@@ -355,6 +360,7 @@ _song = _song * (10 ** (-25 / 20) / (np.sqrt(np.mean(_song ** 2)) + 1e-9))
 _fi, _fo = int(1.0 * SR), int(1.5 * SR)
 _song[:_fi] *= np.linspace(0, 1, _fi); _song[-_fo:] *= np.linspace(1, 0, _fo)
 _i0 = int((ti('P42') + 0.2) * SR); _j0 = min(N, _i0 + len(_song)); MUSB[_i0:_j0] += _song[: _j0 - _i0]
+EXLOG.append(dict(kind='musica', track='Canción', nombre='cancion', t=_i0 / SR, x=_song.copy()))
          # la placa MAX y el cierre
 SIN_VOCES = os.environ.get('SIN_VOCES')   # versión sin voces (Jay pone las voces): la música baja donde irían las voces
 MIX = np.clip((0 if SIN_VOCES else VOX * 1.15) + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 1.1 * (1 - 0.6 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
@@ -362,6 +368,17 @@ MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_musb.npy', MUSB); np.save('_fx.npy', FX); np.save('_logo.npy', LOGOMUS)
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
 json.dump(VLIST, open('voces_lista.json', 'w'), ensure_ascii=False, indent=1)
+def _wr(path, x):
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-c:a', 'libmp3lame', '-b:a', '160k', path], input=np.asarray(x, np.float32).tobytes(), check=True)
+if os.environ.get('EXPORT'):
+    os.makedirs('export/eventos', exist_ok=True); man = []
+    for n_, e_ in enumerate(EXLOG, 1):
+        fn = f"{n_:03d}_{e_['kind']}.mp3"; _wr(f'export/eventos/{fn}', e_['x'])
+        man.append(dict(id=f'e{n_:03d}', kind=e_['kind'], track=e_['track'], nombre=e_['nombre'], t=round(float(e_['t']), 3), dur=round(len(e_['x']) / SR, 3), archivo=fn))
+    _wr('export/ambiente.mp3', AMB); _wr('export/logo.mp3', LOGOMUS)
+    man.append(dict(id='ambiente', kind='stem', track='Ambiente', nombre='ambiente de todas las escenas', t=0.0, dur=round(TOT, 3), archivo='ambiente.mp3'))
+    man.append(dict(id='logo', kind='stem', track='Música', nombre='logo (Key of the Veil)', t=0.0, dur=round(TOT, 3), archivo='logo.mp3'))
+    json.dump(dict(total=round(TOT, 3), eventos=man), open('export/manifest.json', 'w'), ensure_ascii=False, indent=1)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
 
 # ---------------- Video ----------------
