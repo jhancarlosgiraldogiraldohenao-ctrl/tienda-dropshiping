@@ -314,7 +314,14 @@ mus('M_DIALOGO.mp4', 'P21', 0.0, 'P25', 0.5, ss=30.0, db=-26, fi=1.5, fo=1.5)   
 mus('M_SUSPENSO.mp4', 'P25', 0.0, 'AER', 0.6, db=-24, fi=1.5, fo=0.6)                # la campana, «Escóndanse»
           # «¡Yo no corro!»: la persecución de noche
 mus('M_SUSPENSO.mp4', 'HID', 0.0, 'P37', 0.5, ss=18.0, db=-25, fi=1.0, fo=2.0)       # escondidos y la subida a la azotea
-mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)         # la placa MAX y el cierre
+mus('M_TIERNO.mp4', 'P37', 0.0, 'P39', 13.0, ss=0.0, db=-24, fi=2.0, fo=4.0)
+# Canción «Extravío» (Jay, 2-nov): suena cuando llegan a la ciudad, debajo de los diálogos
+_song = load(f'{S_NEW}/extravio_song/cancion.mp4')
+_song = _song * (10 ** (-20 / 20) / (np.sqrt(np.mean(_song ** 2)) + 1e-9))
+_fi, _fo = int(1.0 * SR), int(1.5 * SR)
+_song[:_fi] *= np.linspace(0, 1, _fi); _song[-_fo:] *= np.linspace(1, 0, _fo)
+put(MUSB, _song, ti('P16'))   # empieza al llegar a la ciudad de Extravío
+         # la placa MAX y el cierre
 MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 2.0 * (1 - 0.5 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_musb.npy', MUSB); np.save('_fx.npy', FX); np.save('_logo.npy', LOGOMUS)
