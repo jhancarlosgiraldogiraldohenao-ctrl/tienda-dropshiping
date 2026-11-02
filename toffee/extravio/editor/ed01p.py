@@ -70,6 +70,7 @@ _v3 = {k: glob.glob(f'{P}/vo3/*T{v}*.mp3')[0] for k, v in dict(C1='13_51_01', C2
 _v3['SIG'] = VPATH['P35']   # voz de Lucho «¿Siguen vivos? ¡Qué decepción!»
 _v3['RISA'] = f'{S_NEW}/risa/risa_corta.mp3'
 _v3['T01A'] = VPATH['T01']
+_v3['HOLA'] = f'{S_NEW}/hola/hola.mp3'   # «Hola, soy Toffee» (Jay, 2-nov)
 _v3['MBOT'] = glob.glob(f'{S_NEW}/audio_v3/1-VOCES-TOFFEE-LUCHO-CATRINA/c12ae959*')[0]   # risa de Lucho (Jay, 2-nov)
 _p35 = load(VPATH['P35']) if 'P35' in VPATH else None
 VPATH.update({k: _v3[k] for k in ('C1', 'C2', 'C3')})
@@ -97,7 +98,7 @@ esc('gancho');        nuevo('P01', 0.3, 4.6, boca='P01')
 esc('logo', 'circleopen', 0.7); seg('LOGO', None, 0, 3.2)
 esc('casa', 'fade', 0.4)
 nuevo('P02', 2.6, 6.0)
-seg('CAMA', NEWCLIP['CAMA'], 0.0, 5.9, amb=0.15)   # Toffee panza arriba: arranca con «Hola, soy Toffee» (voz pendiente de Jay). Se quitó la escena «tengo 12 seguidores» (Jay, 2-nov)
+seg('CAMA', NEWCLIP['CAMA'], 0.0, 5.9, off=[('HOLA', 0.4)], amb=0.15)   # Toffee panza arriba: arranca con «Hola, soy Toffee» (voz pendiente de Jay). Se quitó la escena «tengo 12 seguidores» (Jay, 2-nov)
 viejo('R03', 'in_06', 0.0, 6.0, off=[('T3', 1.4)], amb=0.6)   # deja sonar el «wah wah» de los 12 seguidores
 esc('pelota', 'fade', 0.3)
 viejo('R05', 'in_04', 0.0, 4.5, amb=0.7)
