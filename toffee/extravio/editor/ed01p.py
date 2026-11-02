@@ -144,7 +144,10 @@ VAD = json.load(open('vad.json'))
 def voces_flow(s):
     k = os.path.relpath(s['src'], P) if s['src'].startswith(P) else None
     if k in VAD: return VAD[k]
-    if k is None: return TK[os.path.basename(s['src'])]['vad']
+    if k is None:
+        b_ = os.path.basename(s['src'])
+        if b_ in TK: return TK[b_]['vad']
+        return {'sol.mp4': [[0.0, 3.1], [3.5, 4.6]]}.get(b_, [])   # clips nuevos: solo la voz de «Mi humana» (Flow) se quita
     return []
 
 N = int((TOT + 1) * SR); VOX = np.zeros(N, np.float32); AMB = np.zeros(N, np.float32)
