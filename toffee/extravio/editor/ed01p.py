@@ -175,7 +175,7 @@ def poner(x, t):
     i = int(t * SR); j = min(N, i + len(x))
     if i < 0: x = x[-i:]; i = 0
     VOX[i:j] += x[:j - i]
-ERR = []; SHIFT = []; XCS = []
+ERR = []; SHIFT = []; XCS = []; VLIST = []   # VLIST: lista de voces por toma (para que Jay ponga las voces)
 SIN_DTW_IDS = set(os.environ.get('SIN_DTW_IDS', 'SOL').split(','))   # tomas que se pegan por frases en vez de por el sonido de Flow
 for i, s in enumerate(SEG):
     if s['boca']:
@@ -222,6 +222,7 @@ for i, s in enumerate(SEG):
             if k_x and best_ > c0_ + 0.03:
                 y = y[k_x * fr_:] if k_x > 0 else np.concatenate([np.zeros(-k_x * fr_, np.float32), y])
                 XCS.append((s['id'], round(k_x * 0.02, 2)))
+        VLIST.append(dict(t=round(T0[i] + s['pre'], 2), toma=s['id'], voz=s['boca'], archivo=os.path.basename(VPATH[s['boca']])))
         poner(y, T0[i] + s['pre'] + 0.08)
         ERR += [abs(e) for e in err]
         if err and np.max(np.abs(err)) > 0.25: print(f"  revisar {s['id']}: desfase medio {np.mean(np.abs(err)):.2f} s, peor {np.max(np.abs(err)):.2f} s")
@@ -232,6 +233,7 @@ for i, s in enumerate(SEG):
         elif k == 'P35b': x = nivel(_p35[int(2.97 * SR):])
         else: a, b = OFF[k]; x = nivel(OLD[int(a * SR): int(b * SR)])
         t = T0[i] + s['pre'] + at; t0 = t
+        VLIST.append(dict(t=round(t, 2), toma=s['id'], voz=k, archivo=os.path.basename(str(VO2.get(k, _v3.get(k, OFF.get(k)))))))
         while k != 'C5' and t < t0 + 3 and np.any(np.abs(VOX[int(max(0, t - 0.7) * SR): int((t + 0.6) * SR)]) > 0.01): t += 0.1   # nunca encima de otra voz
         poner(x, t)
 if os.environ.get('DUMP'): np.save('_vox.npy', VOX); np.save('_amb_pre.npy', AMB); json.dump(dict(T0=T0, segs=[(x['id'], x['src'], x['a'], x['b'], x['pre'], bool(x['boca'])) for x in SEG]), open('_dump.json', 'w'))
@@ -354,10 +356,12 @@ _fi, _fo = int(1.0 * SR), int(1.5 * SR)
 _song[:_fi] *= np.linspace(0, 1, _fi); _song[-_fo:] *= np.linspace(1, 0, _fo)
 _i0 = int((ti('P42') + 0.2) * SR); _j0 = min(N, _i0 + len(_song)); MUSB[_i0:_j0] += _song[: _j0 - _i0]
          # la placa MAX y el cierre
-MIX = np.clip(VOX * 1.15 + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 1.1 * (1 - 0.6 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
+SIN_VOCES = os.environ.get('SIN_VOCES')   # versión sin voces (Jay pone las voces): la música baja donde irían las voces
+MIX = np.clip((0 if SIN_VOCES else VOX * 1.15) + AMB * (0.32 - 0.24 * duck) + LOGOMUS + MUSB * 1.1 * (1 - 0.6 * duck) + FX * (1 - 0.4 * duck), -1, 1)   # menos viento/ambiente, más música (Jay, 1-nov)   # ambiente ~18 dB por debajo de la voz cuando hablan   # sin música (pedido de Jay, 30-oct-2026)
 MIX.astype(np.float32).tofile('_mix.f32')
 if os.environ.get('DUMP'): np.save('_musb.npy', MUSB); np.save('_fx.npy', FX); np.save('_logo.npy', LOGOMUS)
 if os.environ.get('DUMP'): np.save('_amb.npy', AMB)
+json.dump(VLIST, open('voces_lista.json', 'w'), ensure_ascii=False, indent=1)
 if os.environ.get('SOLO_AUDIO'): sys.exit()
 
 # ---------------- Video ----------------
