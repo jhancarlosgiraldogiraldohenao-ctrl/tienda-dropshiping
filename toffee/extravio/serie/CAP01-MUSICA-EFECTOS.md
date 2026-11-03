@@ -31,22 +31,17 @@ Cheerful Colombian vallenato, instrumental only: accordion, caja drum and guacha
 Escena 8 · 30 a 35 s · CON VOZ. Pega el estilo y la letra (abajo).
 
 ```
-Catchy Colombian champeta, fast African-Caribbean guitar riffs, heavy bass and drums, street party in a dangerous neighborhood at night. Lead singer: sassy Caribbean Colombian woman. Short call-and-response with rough male voices. Funny, mischievous and dirty mood. Spanish lyrics.
+Catchy Colombian champeta, fast African-Caribbean guitar riffs, heavy bass and drums, street party in a dangerous neighborhood at night. Lead singer: sassy Caribbean Colombian woman. The woman sings the first two lines, then three different rough male voices each sing one line, and everybody sings the last three lines together as a chorus. Funny, mischievous and dirty mood. Spanish lyrics.
 ```
 
 **Letra**
 
 ```
-[Cuca]
 Bienvenido a El Hueco, mi amor,
 aquí se entra, pero no se sale.
-[Gallinazo]
 Carnecita fresca… ¡de ayer!
-[Sapo]
 Perico del bueno, pa' que vueles sin avión.
-[Rata vieja]
 Cambio tapas, cambio todo… hasta el alma.
-[Todos]
 ¡En El Hueco, en El Hueco!
 Aquí todo tiene precio…
 ¡y el precio lo pone el Tuerto!
