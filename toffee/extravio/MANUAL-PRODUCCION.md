@@ -94,3 +94,10 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Ocho tomas en el mismo lugar con el mismo plano (2:19 en adelante) | Todas las tomas fijas, de frente | Cada escena: mínimo tres encuadres distintos (general, medio, a ras de piso) y una acción nueva |
 | Toffee siempre de cuello para arriba | Plano medio cerrado por defecto | Toffee gesticula: patas, manos y camina en dos patas (a veces en cuatro) |
 | El estilo cambia del capítulo 1 al 2 | Referencias nuevas sin estilo común | Cada toma nueva lleva también ESTILO-CAP01 como referencia |
+
+## 10. Errores del capítulo 1 de Dizzy (4-nov-2026)
+| Error | Causa | Regla |
+|---|---|---|
+| La canción cantó los nombres de los personajes («Gallinazo, carnecita fresca…») | Nombres entre corchetes en la letra de ElevenLabs Music | Nunca poner nombres ni etiquetas en la letra; quién canta va en el prompt de estilo. (Esta vez se dejó porque presenta a cada vendedor) |
+| La segunda versión se saltó versos y estiró el coro | Letra sin etiquetas + duración larga | Si una versión ya sirve, no regenerar; poner la duración justa (≈ 35 s) |
+| Créditos gastados en efectos que Flow ya hace | Lista de efectos demasiado larga | Flow genera el sonido propio de cada toma (pasos, puertas, cascos, fuego, gente). En ElevenLabs solo los efectos de chiste, de amenaza y los que no están en la imagen |
