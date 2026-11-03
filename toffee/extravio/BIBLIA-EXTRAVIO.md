@@ -217,6 +217,12 @@ Marrano gordo y rosado con una cresta punk verde parada, chaqueta de cuero negra
 una argolla en la trompa (la que tienen todos los marranos, pero él dice que es un piercing), pulseras de taches y una
 guitarra eléctrica vieja, rayada y pegada con cinta.
 
+- **Es gringo y le dicen «el Pinche Gringo»** (pedido de Jay, 3-nov-2026). Llegó de Estados Unidos hace años por una
+  alcantarilla de medianoche y se quedó. Aprendió español en México, así que habla con acento gringo marcado y mezcla
+  palabras mexicanas («pinche», «güey», «órale») con inglés («dude», «man», «oh my God») y lo colombiano que va
+  aprendiendo, todo mal pronunciado y con los géneros al revés («un chimba», «la problema»). El apodo se lo dice Dizzy con
+  cariño y él lo lleva con orgullo: «¡Soy el Pinche Gringo, baby!». El chiste es él y su español, nunca que los gringos
+  sean brutos.
 - **Quién es:** el rockero del Pueblo de Arriba. Toca con su banda (que nunca llega completa) en la Cantina El Último
   Tinto. Es el mejor amigo del protagonista y su peor influencia: todos los planes locos empiezan con «Tocino tiene una
   idea».
@@ -228,9 +234,10 @@ guitarra eléctrica vieja, rayada y pegada con cinta.
 - **Chistes que se repiten:** su solo de guitarra despierta al Nevado Dormilón; la abuela lo odia por el ruido pero en
   secreto tararea sus canciones; Bartolo es el único que no se impresiona con él («…No.»); cada vez que alguien dice
   «tocino» en la conversación, él se pone pálido.
-- **Cómo habla:** ronco y gritón, de rockero viejo: «¡Rock and roll, nene!», «¡Esto es una chimba, hermano!», «¡Qué
-  chimba de distorsión!».
-- **Frase fija:** «¡El rock no muere, hermano… y yo tampoco, ni en diciembre!»
+- **Cómo habla:** ronco y gritón, de rockero gringo hablando español: «¡Hey, dude!», «¡Eso fue un chimba, man!», «Órale,
+  güey, ¿qué es la problema?».
+- **Frase fija:** «¡El rock no muere, dude… y yo tampoco, ni en diciembre!»
+- **Sale mucho:** junto con la abuela, es el personaje que más acompaña a Dizzy.
 - **Para qué sirve:** los videoclips (parodias de rock, punk y metal con letra propia), las fiestas, los viajes al mundo
   (una gira) y como compañero de aventuras cuando la abuela está lejos.
 
@@ -336,7 +343,7 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 | Gobernador Sapo | Santandereano | Loud, pompous politician giving a speech |
 | Bruja Chepa | Caleño | Sassy, playful, mysterious witch |
 | Don Chepe | Paisa de pueblo | Old, chatty, storytelling bus driver |
-| Tocino | Rockero viejo | Loud, raspy, gravelly old rock singer voice, dramatic and over the top, shouts with joy |
+| Tocino, el Pinche Gringo | Gringo hablando español | American rock singer speaking Spanish with a strong American accent, raspy and loud (prompt completo en `PROMPTS-PERSONAJES.html`) |
 
 Las voces de otros países (la Catrina mexicana, las ratas de Nueva York) se crean cuando toque el viaje. Solo quedan
 guardadas siempre las voces fijas (Dizzy, Doña Gertrudis, Bartolo, Tocino, Cuca, El Tuerto); las de un solo vlog se guardan como
