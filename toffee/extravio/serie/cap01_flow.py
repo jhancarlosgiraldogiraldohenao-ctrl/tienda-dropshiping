@@ -26,7 +26,7 @@ def suave(t):
     return t
 
 LOCK = {
- "DIZZY": "Dizzy is the skinny gray rat from the reference: huge bloodshot eyes with dark circles, buck teeth, flat-brim cap tilted to the side with a small black action camera mounted on top, gold chain with a bottle-cap pendant, torn black hoodie, white socks with black slide sandals, olive backpack with rusty keys; his whole head, cap and camera always stay in frame",
+ "DIZZY": "Dizzy is the skinny gray rat from the reference: huge bloodshot eyes with dark circles, buck teeth, flat-brim cap tilted to the side with a small black action camera mounted on top, gold chain with a bottle-cap pendant, torn black hoodie that he always wears (never bare-chested), white socks with black slide sandals, olive backpack with rusty keys; the bottle-cap pendant is plain with no letters; his whole head, cap and camera always stay in frame",
  "GERTRUDIS": "Doña Gertrudis is the old speckled brown hen from the reference with tiny round glasses, a faded flowered headscarf and a wooden rosary; she has real wings, never hands",
  "BARTOLO": "Bartolo is the old brown mule from the reference with the black and white woven straw hat, leather shoulder bag and two plain burlap sacks on his back with no printing",
  "TOCINO": "Tocino is the skinny dirty pink pig from the reference with a greasy black mohawk, crooked cracked sunglasses, a rusty snout ring, a torn leather vest and a broken electric guitar tied to his back with a rope; he stands on four legs like a real pig",
@@ -51,7 +51,7 @@ LUZ = {
  "CARNE": "At the dirty meat stall of the night slum market from the reference, a bare light bulb above",
  "RINCON": "In the dark corner of the slum market from the reference with the car-seat armchair, red light bulb and burning barrel, at night",
 }
-SONIDO = {"ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and people in the square","ESQUINA":"people in the square far away","OLLA":"dogs barking far away, fire crackling and a crowd murmuring","ESCALERAS":"footsteps on concrete and dogs barking far away","CARNE":"a cleaver on wood and fire crackling","RINCON":"fire crackling in the barrel"}
+SONIDO = {"ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a cleaver on wood and fire crackling","RINCON":"fire crackling in the barrel"}
 
 # (id, segundos, tomas del guion, lugar, [personajes], cámara, primer cuadro, acción, (quien, frase) o None, ref de lugar)
 P1 = [
@@ -226,8 +226,17 @@ def prompt(g):
         partes.append("No one speaks; all mouths stay closed.")
     if cast:
         partes.append("Only these characters appear, identical to the references; no other animals.")
-    partes.append(f"No text, letters or signs with words anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
-    return " ".join(partes)
+    partes.append(f"No humans or people anywhere. No text, letters or signs with words anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
+    out=" ".join(partes)
+    # sin nombres propios: Flow los escribe como texto (salió «DIZZY» en la cadena)
+    trozos=out.split('"')
+    for i in range(0,len(trozos),2):  # solo fuera de las comillas (los diálogos no se tocan)
+        for a,b in [("Dizzy's","the rat's"),("Dizzy","the rat"),("Doña Gertrudis","the hen"),("El Tuerto","the cat"),("Tocino","the pig"),("Bartolo","the mule"),("Cuca","the cockroach"),("La Llorona","the ghost woman")]:
+            trozos[i]=trozos[i].replace(a,b)
+    out='"'.join(trozos)
+    import re
+    out=re.sub(r'(^|[.!?] )(the|its)\b',lambda m:m.group(1)+m.group(2).capitalize(),out)
+    return out
 
 def refs(g):
     r=[REF[c] for c in g[4]]
