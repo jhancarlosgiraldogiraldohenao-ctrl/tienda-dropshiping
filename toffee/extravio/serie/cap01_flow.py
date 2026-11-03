@@ -6,9 +6,23 @@ Cada generación da una o varias tomas del guion (CAP01-GUION.md).
 import os, json
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
-HEAD = ("Vertical 9:16, {d} seconds. Photorealistic 3D animated film style, cinematic lighting, wide-angle lens like an "
-        "action camera but with no fisheye distortion, no vignette, no dark corners, natural colors, realistic physics. "
-        "One continuous shot with no cuts, full frame from edge to edge, no black bars.")
+HEAD = ("Vertical 9:16, {d} seconds. Photorealistic cinematic film look, normal lens (no fisheye, no vignette, no dark corners), "
+        "natural colors, realistic physics. One continuous shot with no cuts, full vertical frame from edge to edge, no black bars.")
+VOZ = {"DIZZY":"in Colombian Spanish with a raspy, hoarse, rough young male street voice",
+       "GERTRUDIS":"in Colombian Spanish with a soft, shaky, sweet old grandmother voice",
+       "TOCINO":"with a loud, raspy male voice and a very heavy American accent",
+       "BARTOLO":"in Spanish with a very deep, slow, tired old male voice",
+       "CUCA":"in Colombian Spanish with a fast, bright, sassy Caribbean female voice",
+       "TUERTO":"in Colombian Spanish with a low, calm, husky male voice",
+       "GALLINAZO":"in Spanish with a very deep, croaky male voice",
+       "LLORONA":"in Spanish with a high, trembling, wailing female voice"}
+QUIEN = {"DIZZY":"Dizzy","GERTRUDIS":"Doña Gertrudis","TOCINO":"Tocino","BARTOLO":"Bartolo","CUCA":"Cuca","TUERTO":"El Tuerto","GALLINAZO":"The vulture","LLORONA":"La Llorona"}
+# Solo para que Flow mueva la boca: groserías suavizadas (la voz real de ElevenLabs lleva la grosería)
+SUAVE = [("triple hijueputa","triple hijo de su madre"),("gran hijueputa","gran hijo de su madre"),("hijueputa","hijo de su madre"),
+         ("malparidos","mal portados"),("malparida","mal portada"),("Gonorrea","Qué horror"),("pirobo","bobo"),("What the fuck","What the heck")]
+def suave(t):
+    for a,b in SUAVE: t=t.replace(a,b)
+    return t
 
 LOCK = {
  "DIZZY": "Dizzy is the skinny gray rat from the reference: huge bloodshot eyes with dark circles, buck teeth, flat-brim cap tilted to the side with a small black action camera mounted on top, gold chain with a bottle-cap pendant, torn black hoodie, white socks with black slide sandals, olive backpack with rusty keys; his whole head, cap and camera always stay in frame",
@@ -198,20 +212,20 @@ P1 = [
 
 def prompt(g):
     gid,d,tomas,lugar,cast,cam,primero,accion,habla,ref=g
-    partes=[HEAD.format(d=d), cam+".", LUZ[lugar]+".", primero+".", accion+"."]
-    if habla:
-        q,fr=habla
-        partes.append(f"Only {NOMBRE.get(q,q.lower())} speaks, in Spanish: «{fr}» Its mouth moves clearly in sync with every word; everybody else keeps their mouth closed.")
-    else:
-        partes.append("No one speaks; all mouths stay closed.")
     locks=[LOCK[c] for c in cast if c in LOCK]
     if "GALLINAZO" in cast: locks.append("the vulture is the black vulture butcher from the reference")
+    partes=[HEAD.format(d=d), LUZ[lugar]+".", cam+".", primero+".", accion+"."]
     if locks:
         t="; ".join(locks)+"."
         partes.append(t[0].upper()+t[1:])
+    if habla:
+        q,fr=habla
+        partes.append(f'{QUIEN[q]} speaks {VOZ[q]}: "{suave(fr)}" {'Her' if q in ('GERTRUDIS','CUCA','LLORONA') else 'His'} mouth moves clearly in sync with every word. Only {QUIEN[q]} speaks; everybody else keeps their mouth closed.')
+    else:
+        partes.append("No one speaks; all mouths stay closed.")
     if cast:
         partes.append("Only these characters appear, identical to the references; no other animals.")
-    partes.append(f"No text, letters or signs with words anywhere. No music; only {SONIDO[lugar]}.")
+    partes.append(f"No text, letters or signs with words anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
     return " ".join(partes)
 
 def refs(g):
