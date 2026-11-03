@@ -4,46 +4,56 @@ Reemplaza a la versión 1 (`BIBLIA-LUCHO.md`, queda en el historial de git) con 
 uno que funcione en todo el mundo, es «de Colombia» (sin ciudad), Extravío tiene todos los paisajes de Colombia, la plata
 son tapas de cualquier gaseosa, entra una mula, la gallina es una abuela finquera que vive enredada con el protagonista,
 hay viajes por Colombia y por el mundo (México, Estados Unidos y donde sea). Base: `toffee/ESTUDIO-GNOMO-PALOMO.html` y la
-ficha `PROTAGONISTA-ROCCO.html`. Es una propuesta: Jay aprueba o cambia.
+ficha `PROTAGONISTA-BRAYAN.html`. Es una propuesta: Jay aprueba o cambia.
 
 ---
 
 ## 1. La idea en una frase
 
 **Extravío es una Colombia mágica escondida, con todas las bellezas del país (fincas cafeteras, páramos, montañas, mar,
-selva, desierto y llanos), donde viven las criaturas que los humanos no ven. Rocco, una rata colombiana rebuscadora, se
+selva, desierto y llanos), donde viven las criaturas que los humanos no ven. Brayan, una rata ñera de barrio colombiano, se
 robó la cámara de un influencer humano y graba vlogs de todo lo que le pasa: en la finca de su abuela postiza, por toda
 Colombia y por el mundo entero.**
 
 El nombre viene de «extraviarse»: la única forma de entrar es perderse. Quien se pierde de verdad a la medianoche, en
 cualquier ciudad del mundo, puede caer por una alcantarilla y aparecer en Extravío.
 
-## 2. El nombre del protagonista
+## 2. El protagonista: Brayan, el ñero
 
-Lucho sonaba muy local. El nombre nuevo tiene que decirse igual en español y en inglés, ser corto, fácil de recordar y no
-pertenecer a un personaje famoso.
+Pedido de Jay (3-nov-2026): más ñero, más nea. El nombre y el estilo salen del barrio colombiano.
 
 | Opción | Por qué |
 |---|---|
-| **Rocco** (el que queda en esta biblia) | Suena a pícaro de barrio en cualquier idioma, se dice igual en español, inglés y portugués, y suena a «roedor» y a «roquero». Se puede gritar: «¡ROCCO!» |
-| Tito | Muy latino y cariñoso, pero hay muchos personajes y cantantes con ese nombre |
-| Bruno | Global, pero muy usado en mascotas y en películas |
-| Rufo | Simpático, pero en inglés no suena igual |
+| **Brayan** (el que queda en esta biblia) | El nombre ñero por excelencia en Colombia, y en México y el resto de Latinoamérica se entiende igual (el meme del «Brayan» existe en todos lados). En inglés suena a «Brian», así que funciona en el mundo entero |
+| Maicol | Igual de nea («Michael» escrito como suena) |
+| Yeison | Muy de barrio («Jason» escrito como suena) |
+| Jhon Fredy | El más colombiano, pero en otros países se entiende menos |
 
-Si Jay prefiere otro, se cambia en todos los archivos en un minuto. Se evita **Remy** (es la rata de una película de
-Disney) y **Pérez** (el Ratón Pérez).
+Si Jay prefiere otro, se cambia en todos los archivos en un minuto.
+
+**Lo ñero, en concreto:**
+
+- **Pinta:** gorra plana de lado con la cámara de acción montada encima, cadena dorada gruesa de juguete con una tapa de
+  gaseosa de dije (su «oro»), buzo negro roto, medias blancas subidas hasta la rodilla con chanclas, morral con llaves y
+  una rayita rapada en la ceja. Siempre igual: esa es su silueta.
+- **Actitud:** se las da de duro del barrio, camina con swing, saluda con el puño, todo lo negocia, «todo bien, todo
+  bien» justo antes de que todo salga mal. Por dentro es miedoso y por su abuela hace lo que sea.
+- **Cómo habla:** «¿Quiubo pues, mis ratas?», «mi llave», «mi socio», «ñerito», «qué visaje», «bacano», «de una»,
+  «me vale cinco», «camellar», «sapo» (el que va con el chisme), «pirobo», «gonorrea», «hijueputa». A la plata (las tapas)
+  le dice «lucas». A la abuela le dice «mi cucha» delante del público y «abuelita» cuando ella lo oye.
+- **Cierre fijo:** «Sígueme pa' no perderte el próximo vlog, mi llave.»
 
 ## 3. Por qué esto funciona (lo que aprendimos de Gnomo Palomo)
 
 | Lo que hace funcionar a Gnomo | Cómo lo tiene Extravío |
 |---|---|
-| Un personaje que siempre se ve igual y habla como un amigo grosero | Rocco: ojos saltones con ojeras, buzo roto, morral de llaves, cámara en la frente; parcero colombiano con groserías |
+| Un personaje que siempre se ve igual y habla como un amigo grosero | Brayan: gorra plana con la cámara encima, cadena con una tapa de dije, buzo roto, medias con chanclas; ñero de barrio con groserías colombianas |
 | Un reino de fantasía con lugares que vuelven | La finca cafetera de Doña Gertrudis como casa, más todos los paisajes de Colombia como mapa |
 | Objetos mágicos que son la excusa de cada vlog y regresan | El perico, la ruana invisible, la arepa de la suerte, la radio del futuro… |
 | Vecinos con una manía y una voz | La abuela gallina, la mula, la cucaracha costeña, las leyendas colombianas |
 | Viaja y conoce lugares | Viajes por Colombia en la Chiva Voladora y viajes al mundo por las alcantarillas de medianoche |
 | Personajes famosos con un giro de adulto | Leyendas de Colombia, de México, de Estados Unidos y cuentos de dominio público, con problemas de hoy |
-| El público decide | Rocco pregunta en los comentarios a qué lugar de Colombia o a qué país va, y lo más pedido es el próximo viaje |
+| El público decide | Brayan pregunta en los comentarios a qué lugar de Colombia o a qué país va, y lo más pedido es el próximo viaje |
 | Fechas especiales el día exacto | Velitas, Navidad, Año Nuevo, Feria de las Flores, Carnaval de Barranquilla, Día de Muertos, Halloween, 4 de julio |
 
 ## 4. Tono y límites
@@ -51,13 +61,13 @@ Disney) y **Pérez** (el Ratón Pérez).
 - **Irreverente y con groserías colombianas,** como un parcero contando una historia. Las fuertes («hijueputa»,
   «gonorrea», «malparido», «triple hijueputa») son pocas por video, siempre como remate de un chiste, nunca en los
   primeros 10 segundos, en el título ni en la miniatura. Si una queda muy fuerte, se tapa con un «piiip».
-- **Corazón al final:** Rocco es un vividor, pero en los momentos que importan hace lo correcto, sobre todo por su abuela.
+- **Corazón al final:** Brayan es un vividor, pero en los momentos que importan hace lo correcto, sobre todo por su abuela.
 - **Para todo el mundo:** los chistes se entienden sin ser colombiano. Las palabras colombianas se entienden por el
   contexto y son parte del encanto, como el acento de Gnomo.
 - **Parodias sí, copias no:** leyendas y cuentos de dominio público (Caperucita, Pinocho, los tres cerditos, Drácula, el
   jinete sin cabeza de Sleepy Hollow, Hansel y Gretel) con un giro. Nada de personajes con dueño (Disney, Warner, Nintendo,
   Marvel) ni de su diseño, nada de marcas reales en pantalla, nada de caras ni voces de personas reales.
-- **Los países y las regiones se tratan con cariño:** el chiste es lo que le pasa a Rocco, no burlarse de una región o
+- **Los países y las regiones se tratan con cariño:** el chiste es lo que le pasa a Brayan, no burlarse de una región o
   de un país.
 - **Nunca:** sangre, crueldad con animales, burlarse de enfermedades reales o de gente vulnerable.
 
@@ -87,19 +97,19 @@ grabar.
 ## 6. Las reglas del mundo
 
 1. **Los humanos no ven Extravío.** Si un humano mira directo a una criatura, la criatura se queda quieta como un juguete
-   hasta que deje de mirar. (Chiste fijo: Rocco congelado en poses ridículas, en cualquier país.)
+   hasta que deje de mirar. (Chiste fijo: Brayan congelado en poses ridículas, en cualquier país.)
 2. **Se entra perdiéndose.** Quien se pierde de verdad a la medianoche cae por una alcantarilla a Extravío. Por eso aparecen
    cosas y personajes nuevos de todo el mundo: un turista gringo perdido, un perro de la calle, una maleta de aeropuerto.
 3. **La plata son tapas de gaseosa, de cualquier marca y cualquier país.** Las tapas viejas, raras o de otros países valen
-   más (una tapa japonesa vale una fortuna). Rocco siempre anda «pelado» y recoge tapas del piso.
+   más (una tapa japonesa vale una fortuna). Brayan siempre anda «pelado» y recoge tapas del piso.
 4. **La magia funciona con perico** (sección 5): polvo blanco y brillante del café mágico. Es caro, escaso y todos lo
    quieren; las mejores fincas cafeteras de Extravío son las que más tienen.
 5. **Las leyendas son vecinos.** Las de Colombia viven en Extravío con problemas normales: arriendos, deudas, chismes,
    citas. Cada país tiene sus propias leyendas, igual de normales.
-6. **A la medianoche las alcantarillas se vuelven puertas.** Cada tapa de alcantarilla puede sacar a Rocco a cualquier
+6. **A la medianoche las alcantarillas se vuelven puertas.** Cada tapa de alcantarilla puede sacar a Brayan a cualquier
    ciudad del mundo: Ciudad de México, Nueva York, Madrid, Tokio. Nunca se sabe a cuál; de ahí salen los viajes al mundo.
    Para volver tiene que encontrar otra alcantarilla antes del amanecer.
-7. **Lo que se graba con la cámara de Rocco se puede ver en el mundo de los humanos.** Por eso su sueño es hacerse famoso
+7. **Lo que se graba con la cámara de Brayan se puede ver en el mundo de los humanos.** Por eso su sueño es hacerse famoso
    allá arriba también.
 
 ## 7. El mapa de Extravío: Colombia entera
@@ -111,8 +121,8 @@ aéreas de estos paisajes son la parte bonita de cada vlog.
 
 | Lugar | Cómo es | Para qué sirve |
 |---|---|---|
-| **La Finca La Esperanza de Doña Gertrudis** | Casa de bahareque blanca con puertas y balcones de colores, corredor con macetas, hamaca, fogón de leña, un patio de secar café y cafetales en la ladera, con plátano y guadua. Niebla en las mañanas | La casa de Rocco: vive en el zarzo (el ático) y paga el arriendo trabajando… cuando trabaja |
-| **El zarzo de Rocco** | Ático de tablas con un colchón viejo, una hamaca, su colección de llaves, tapas de gaseosa en frascos y queso escondido en todas partes | El «house tour», donde prueba los objetos nuevos |
+| **La Finca La Esperanza de Doña Gertrudis** | Casa de bahareque blanca con puertas y balcones de colores, corredor con macetas, hamaca, fogón de leña, un patio de secar café y cafetales en la ladera, con plátano y guadua. Niebla en las mañanas | La casa de Brayan: vive en el zarzo (el ático) y paga el arriendo trabajando… cuando trabaja |
+| **El zarzo de Brayan** | Ático de tablas con un colchón viejo, una hamaca, su colección de llaves, tapas de gaseosa en frascos y queso escondido en todas partes | El «house tour», donde prueba los objetos nuevos |
 | **El Pueblo de Arriba** | Pueblo cafetero de colores pegado a la montaña: balcones con flores, plaza con fuente, iglesia, jeeps «Willys» cargados de café | Fiestas, ferias, chismes, el mundo vivo de fondo |
 | **El Hueco** | El mercado negro debajo del puente del pueblo: toldos de colores, bombillos, humo y vendedores raros. Se entra con contraseña | Comprar perico y objetos mágicos, negocios turbios |
 | **La Cantina El Último Tinto** | Bar de tablas con rocola, dominó y criaturas raras tomando tinto y agüita de panela | Rumores, apuestas, peleas |
@@ -139,7 +149,7 @@ aéreas de estos paisajes son la parte bonita de cada vlog.
 | **La Capital de la Niebla** | Bogotá | Llueve, hace frío, todos llevan ruana y trancones mágicos |
 | **El Carnaval Eterno** | Barranquilla | Un carnaval que nunca para, marimondas y garabatos |
 
-### Cómo viaja Rocco
+### Cómo viaja Brayan
 
 - **La Chiva Voladora:** chiva de colores (bus de escalera) que vuela por toda Colombia, manejada por Don Chepe, que nunca
   para del todo. Es el tren de Gnomo: da tomas aéreas de los paisajes.
@@ -148,8 +158,8 @@ aéreas de estos paisajes son la parte bonita de cada vlog.
 
 ## 8. Los viajes al mundo
 
-Rocco es colombiano, pero su canal es para todos. Cada país tiene su propio Extravío escondido, con sus leyendas y sus
-criaturas, y Rocco llega ahí por una alcantarilla de medianoche (regla 6), casi siempre sin querer. Ideas para los
+Brayan es colombiano, pero su canal es para todos. Cada país tiene su propio Extravío escondido, con sus leyendas y sus
+criaturas, y Brayan llega ahí por una alcantarilla de medianoche (regla 6), casi siempre sin querer. Ideas para los
 primeros:
 
 | País | A dónde sale | Con quién se encuentra (dominio público o leyendas) |
@@ -165,30 +175,30 @@ Cada viaje es una serie de 2 o 3 partes. El público decide el próximo país en
 
 ## 9. Los personajes fijos
 
-### Rocco (protagonista)
-Rata colombiana, rebuscadora y vlogger. Ficha completa en `PROTAGONISTA-ROCCO.html`. Saludo: «¿Qué más, mis ratas?».
-Cierre: «Sígueme pa' no perderte el próximo vlog, parce». Loco por el queso (se nombra una vez por video).
+### Brayan (protagonista)
+Rata colombiana, rebuscadora y vlogger. Ficha completa en `PROTAGONISTA-BRAYAN.html`. Saludo: «¿Quiubo pues, mis ratas?».
+Cierre: «Sígueme pa' no perderte el próximo vlog, mi llave». Loco por el queso (se nombra una vez por video).
 
 ### Doña Gertrudis, la abuela gallina (la segunda más importante)
 
-Gallina vieja, finquera, dueña de la Finca La Esperanza. Encontró a Rocco medio muerto de hambre en un bulto de café y
-desde ese día lo trata como a un nieto: lo regaña, lo alimenta, reza por él y lo persigue con la chancla. Rocco le dice
+Gallina vieja, finquera, dueña de la Finca La Esperanza. Encontró a Brayan medio muerto de hambre en un bulto de café y
+desde ese día lo trata como a un nieto: lo regaña, lo alimenta, reza por él y lo persigue con la chancla. Brayan le dice
 «abuela» aunque no son familia.
 
 - **Cómo es:** gallina gorda de plumas cafés y blancas, gafas en la punta del pico, pañoleta en la cabeza, delantal de
   flores, chancla en la pata y un rosario. Siempre está haciendo algo: cocinando, barriendo, desgranando maíz, rezando.
 - **Personalidad de abuela colombiana finquerita:** cariñosa y brava a la vez, chismosa, rezandera, le da de comer a todo
   el que llega, no se deja de nadie, cree en remedios caseros para todo (aguapanela, Vick, sábila), le tiene miedo a la
-  tecnología y a la cámara de Rocco, pero termina siendo la favorita del público.
+  tecnología y a la cámara de Brayan, pero termina siendo la favorita del público.
 - **Cómo habla:** «mijo», «mijito», «Ave María, pues», «Virgen santísima», «¿usted ya comió?», «se me va a enfermar»,
   «si no está en la casa a las seis, no hay comida».
 - **Frase fija:** «Mijo, ¿usted otra vez metido en problemas? Venga y coma primero.»
-- **Por qué está en casi todos los vlogs:** Rocco vive en su zarzo, le debe el arriendo, ella lo manda a hacer mandados
-  (llevar café al pueblo, traer leña, ir a misa) y cada mandado se vuelve una aventura. Cuando Rocco se mete en un
+- **Por qué está en casi todos los vlogs:** Brayan vive en su zarzo, le debe el arriendo, ella lo manda a hacer mandados
+  (llevar café al pueblo, traer leña, ir a misa) y cada mandado se vuelve una aventura. Cuando Brayan se mete en un
   problema grande, ella aparece con la chancla y lo arregla. Ella es el corazón de la serie: el momento sincero de cada
   vlog casi siempre es con ella.
 - **La relación, en chistes que se repiten:** ella lo pilla grabando y él finge que no; ella le manda saludos al público
-  sin saber que está en vivo; Rocco se esconde de sus mandados y ella siempre lo encuentra; él la llama «vieja» y ella
+  sin saber que está en vivo; Brayan se esconde de sus mandados y ella siempre lo encuentra; él la llama «vieja» y ella
   le tira la chancla desde lejos y nunca falla.
 
 ### Bartolo, la mula (personaje nuevo)
@@ -196,12 +206,12 @@ desde ese día lo trata como a un nieto: lo regaña, lo alimenta, reza por él y
 Mulo viejo y terco de la finca, con sombrero vueltiao, carriel de cuero y bultos de café en el lomo. Referencia de imagen
 ya existe: `toffee/refs/extravio/personajes/DONA-MULA.jpg`.
 
-- **Quién es:** el transporte de Rocco por las trochas y los páramos, y su compañero de viajes por Colombia. Lleva años
+- **Quién es:** el transporte de Brayan por las trochas y los páramos, y su compañero de viajes por Colombia. Lleva años
   cargando café para Doña Gertrudis y se cree el dueño de la finca.
 - **Personalidad:** terco como una mula (literal), lento, serio, con cara de que nada le importa. Casi no habla: contesta
   con «No.», «Mmm.» o un resoplido. Cuando habla, dice la frase más sabia del capítulo. Solo se mueve si le dan panela.
-  Es el que pone los pies en la tierra cuando Rocco se emociona, como el compañero serio que hace reír sin esforzarse.
-- **Chistes que se repiten:** se para en la mitad del camino y no se mueve con nada; Rocco le grita, le ruega, le canta, y
+  Es el que pone los pies en la tierra cuando Brayan se emociona, como el compañero serio que hace reír sin esforzarse.
+- **Chistes que se repiten:** se para en la mitad del camino y no se mueve con nada; Brayan le grita, le ruega, le canta, y
   Bartolo solo arranca cuando la abuela grita «¡Bartolo!»; se come lo que no debe (el mapa, la ruana invisible); en los
   viajes al mundo se niega a entrar a la alcantarilla.
 - **Cómo habla:** voz gruesa, lenta y de campo, de arriero viejo. «No.» «Mmm.» «Eso no va a salir bien, muchacho.»
@@ -211,7 +221,7 @@ ya existe: `toffee/refs/extravio/personajes/DONA-MULA.jpg`.
 
 | Personaje | Quién es | Manía | Cómo habla | Frase fija |
 |---|---|---|---|---|
-| **Cuca** | Cucaracha costeña, prima y socia de Rocco, vende llaves en El Hueco | Chismosa, sabe todo de todos; se pelea con la abuela | Costeña, rapidísimo, «eche», «ajá», «mi vida» | «Eche, primo, ¿y eso qué es lo que es?» |
+| **Cuca** | Cucaracha costeña, prima y socia de Brayan, vende llaves en El Hueco | Chismosa, sabe todo de todos; se pelea con la abuela | Costeña, rapidísimo, «eche», «ajá», «mi vida» | «Eche, primo, ¿y eso qué es lo que es?» |
 | **El Tuerto** | Gato malandro con parche en el ojo, cobra «vacuna» en El Hueco | El villano chiquito de todos los días; le tiene miedo a los pepinos y a la abuela | Rolo de barrio, frío, «¿sí o qué?» | «Tú me debes, ratica… ¿sí o qué?» |
 | **El Gobernador Sapo** | Sapo gordo con banda que manda en Extravío | Promete todo, no cumple nada, inaugura huecos | Santandereano, gritón, de discurso | «¡Esto no es un hueco, es una obra!» |
 | **La Bruja Chepa** | Bruja caleña de la selva que vende pociones | Todas sus pociones tienen «efectos secundarios» | Caleña, «oís», «mirá» | «Mirá, oís, eso no te va a hacer daño… creo» |
@@ -237,29 +247,29 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 
 | Formato | Qué es | Ejemplo |
 |---|---|---|
-| **Vlog de aventura** (el principal) | Rocco va a un lugar o persigue algo, sale mal y termina con corazón | «Me robé el perico del Gobernador» |
+| **Vlog de aventura** (el principal) | Brayan va a un lugar o persigue algo, sale mal y termina con corazón | «Me robé el perico del Gobernador» |
 | **Mandados de la abuela** | Doña Gertrudis lo manda a hacer algo sencillo y se vuelve un desastre | «Mi abuela me mandó por leña y terminé en el páramo» |
-| **Viajes por Colombia** | Rocco y Bartolo (o la Chiva) van a un paisaje de Colombia, con tomas aéreas bonitas | «Me fui a Caño Cristales y el río me odia» |
+| **Viajes por Colombia** | Brayan y Bartolo (o la Chiva) van a un paisaje de Colombia, con tomas aéreas bonitas | «Me fui a Caño Cristales y el río me odia» |
 | **Viajes al mundo** | Sale por una alcantarilla de medianoche a otro país (2 o 3 partes) | «Salí por una alcantarilla y aparecí en Nueva York» |
 | **Probando ___** | Prueba un objeto mágico y todo se sale de control | «Probando la ruana invisible» |
 | **Compras en El Hueco** | Recorre el mercado negro comprando cosas raras | «Le compré una llave al Tuerto y abrió el infierno» |
 | **Visita a una leyenda** | Pasa un día con una leyenda | «Un día con el Silbón en los Llanos» |
 | **Fecha especial** | El vlog de la fecha, el mismo día | Velitas en la finca, Día de Muertos en México, Halloween en Estados Unidos |
 | **House tour** | Muestra el zarzo, la finca o la casa de un vecino | «House tour de la finca de mi abuela» |
-| **Videoclip** | Rocco canta (parodia de vallenato, reguetón, salsa o corrido con letra propia) | «Rocco – Pelado pero feliz» |
-| **Venta dentro del mundo** | Muestra un producto real como si viniera de Extravío | Productos para mascotas en guiño, la figura de Rocco cuando exista |
+| **Videoclip** | Brayan canta (parodia de vallenato, reguetón, salsa o corrido con letra propia) | «Brayan – Pelado pero feliz» |
+| **Venta dentro del mundo** | Muestra un producto real como si viniera de Extravío | Productos para mascotas en guiño, la figura de Brayan cuando exista |
 
 ## 11. Cómo se hace cada vlog (lo aprendido de Gnomo, en reglas)
 
-1. **Gancho en el segundo 0:** la cara de Rocco pegada al lente y una frase con la meta («¿Qué más, mis ratas? Hoy me voy
+1. **Gancho en el segundo 0:** la cara de Brayan pegada al lente y una frase con la meta («¿Quiubo pues, mis ratas? Hoy me voy
    a robar el queso de luna»). Sin groserías fuertes aquí.
 2. **Título pequeño** «VLOG 01» sobre la primera toma de paisaje, después del gancho (solo en los shorts; ver manual).
 3. **Camino con el palo selfie** hablando hacia dónde va. Entre lugares, una toma aérea de 3 a 5 s del paisaje
    colombiano (la Chiva Voladora o Bartolo en una trocha son perfectos para esto).
-4. **Llegada en tres pasos:** el lugar desde lejos, Rocco entrando, Rocco adentro.
+4. **Llegada en tres pasos:** el lugar desde lejos, Brayan entrando, Brayan adentro.
 5. **El problema y la escalada:** algo sale distinto a lo esperado y cada intento es peor y más absurdo.
 6. **Remate con chiste o con corazón** (casi siempre con la abuela), y cierre fijo: «Sígueme pa' no perderte el próximo
-   vlog, parce».
+   vlog, mi llave».
 7. **Ritmo:** un corte cada 3 a 4 segundos. Conversaciones en plano y contraplano, con reacciones mudas entre frases
    (Bartolo es perfecto para las reacciones mudas).
 8. **Nunca un silencio vacío:** música del lugar por debajo (vallenato en el Caribe, joropo en los Llanos, salsa en Cali,
@@ -273,11 +283,11 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 
 - **El misterio de la cámara:** era de un influencer humano que se perdió una medianoche y nunca volvió. A veces la cámara
   se prende sola y muestra pedazos de sus videos, grabados en lugares de todo el mundo. ¿Dónde está? Esa pregunta lleva a
-  Rocco de viaje.
-- **La abuela y la finca:** la finca tiene deudas con el Gobernador Sapo y la podrían quitar. Rocco, que nunca hace nada,
+  Brayan de viaje.
+- **La abuela y la finca:** la finca tiene deudas con el Gobernador Sapo y la podrían quitar. Brayan, que nunca hace nada,
   empieza a buscar tapas por todo el mundo para salvarla, sin decirle a ella. Es el corazón de la temporada.
-- **Las deudas de Rocco:** el arriendo del zarzo, la vacuna del Tuerto, los fiados en el pueblo.
-- **El queso de luna:** sale una vez al año y Rocco lo persigue.
+- **Las deudas de Brayan:** el arriendo del zarzo, la vacuna del Tuerto, los fiados en el pueblo.
+- **El queso de luna:** sale una vez al año y Brayan lo persigue.
 - **Los objetos que vuelven:** lo que compra o rompe en un vlog aparece después.
 - **El público decide:** a qué paisaje de Colombia o a qué país va el próximo viaje.
 
@@ -287,21 +297,21 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 |---|---|---|
 | **El perico** | La magia básica: hace volar, crecer, hablar, brillar | Siempre se pasan con la cantidad |
 | **La cámara robada** | Graba todo; a veces muestra videos de su dueño humano | El misterio de la temporada |
-| **La ruana invisible** | Quien se la pone desaparece | Solo desaparece la ruana; Rocco queda a la vista en calzoncillos |
+| **La ruana invisible** | Quien se la pone desaparece | Solo desaparece la ruana; Brayan queda a la vista en calzoncillos |
 | **La arepa de la suerte** | Quien la muerde tiene un día de suerte | La suerte le cae a quien está al lado (casi siempre a Bartolo) |
 | **Las botas pantaneras saltarinas** | Saltan tan alto como una montaña | No hay forma de frenar |
-| **La radio del futuro** | Sintoniza las noticias de mañana | Las noticias son de lo que Rocco va a dañar |
+| **La radio del futuro** | Sintoniza las noticias de mañana | Las noticias son de lo que Brayan va a dañar |
 | **La totuma de los deseos** | Cumple un deseo al día | Lo cumple al pie de la letra |
-| **El humo del Nevado Dormilón** | Quien lo respira dice la verdad | Rocco lo respira justo antes de hablar con la abuela |
+| **El humo del Nevado Dormilón** | Quien lo respira dice la verdad | Brayan lo respira justo antes de hablar con la abuela |
 | **La llave maestra «trucha»** | Abre cualquier puerta | Abre la puerta equivocada, en el país equivocado |
 | **La chancla de la abuela** | Nunca falla, la tire desde donde la tire | Es la única arma que le gana a cualquier criatura |
-| **El queso de luna** | El queso más rico que existe, sale una vez al año | Rocco haría cualquier cosa por él |
+| **El queso de luna** | El queso más rico que existe, sale una vez al año | Brayan haría cualquier cosa por él |
 
 ## 14. Las voces (cada una con su acento)
 
 | Personaje | Acento | Para el prompt de ElevenLabs |
 |---|---|---|
-| Rocco | Colombiano paisa suave, entendible en todo el mundo | Raspy, fast, cheeky street hustler, nervous wheezy giggle (prompt completo en la ficha) |
+| Brayan | Ñero de barrio colombiano, entendible en todo el mundo | Raspy street kid from a rough neighborhood, cocky and fast, nervous wheezy giggle (prompt completo en la ficha) |
 | Doña Gertrudis | Campesina cafetera (paisa de pueblo) | Elderly Colombian countryside grandmother, warm, sweet and bossy, scolds and spoils at the same time |
 | Bartolo | Arriero viejo | Very deep, slow, tired old farmer voice, few words, dry humor |
 | Cuca | Costeño | Fast, gossipy, cheerful Caribbean Colombian woman |
@@ -311,29 +321,29 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 | Don Chepe | Paisa de pueblo | Old, chatty, storytelling bus driver |
 
 Las voces de otros países (la Catrina mexicana, las ratas de Nueva York) se crean cuando toque el viaje. Solo quedan
-guardadas siempre las voces fijas (Rocco, Doña Gertrudis, Bartolo, Cuca, El Tuerto); las de un solo vlog se guardan como
+guardadas siempre las voces fijas (Brayan, Doña Gertrudis, Bartolo, Cuca, El Tuerto); las de un solo vlog se guardan como
 muestra y se borran para liberar espacio.
 
 ## 15. Los primeros 10 vlogs (propuesta, con la historia que crece)
 
 | # | Vlog | Qué pasa | Qué deja para después |
 |---|---|---|---|
-| 1 | **Me robé la cámara de un humano** | Rocco encuentra la cámara de un influencer perdido al lado de una alcantarilla y decide volverse vlogger; la abuela lo pilla grabando | La cámara se prende sola y se ve una cara humana |
+| 1 | **Me robé la cámara de un humano** | Brayan encuentra la cámara de un influencer perdido al lado de una alcantarilla y decide volverse vlogger; la abuela lo pilla grabando | La cámara se prende sola y se ve una cara humana |
 | 2 | **House tour de la finca de mi abuela** | Muestra la finca, el zarzo y a Bartolo, que no se deja grabar; la abuela le manda saludos al público | La abuela recibe una carta del Gobernador: la finca tiene deudas |
 | 3 | **Probando el perico** | Compra perico en El Hueco para hacer magia y sale volando por todo el pueblo | Le queda debiendo al Tuerto |
-| 4 | **Mi abuela me mandó por leña** | Un mandado sencillo termina con Rocco y Bartolo perdidos en el Páramo de los Frailejones | Los frailejones le cuentan dónde hay tapas antiguas |
+| 4 | **Mi abuela me mandó por leña** | Un mandado sencillo termina con Brayan y Bartolo perdidos en el Páramo de los Frailejones | Los frailejones le cuentan dónde hay tapas antiguas |
 | 5 | **Me fui al Valle de las Palmas Gigantes** (viaje) | Busca las tapas antiguas en lo alto de las palmas; Bartolo no quiere subir | Encuentra una tapa rarísima… de otro país |
 | 6 | **Salí por una alcantarilla y aparecí en México** (parte 1) | Siguiendo la tapa, cae en Ciudad de México en Día de Muertos | Una Catrina lo confunde con un alma perdida |
 | 7 | **Día de Muertos en México** (parte 2) | Con el xolo y la Catrina; tiene que volver antes del amanecer | Vuelve con una pista del dueño de la cámara |
-| 8 | **El Gobernador Sapo quiere la finca** | Rocco se cuela en la alcaldía y lo graba todo | El video se vuelve viral en Extravío |
+| 8 | **El Gobernador Sapo quiere la finca** | Brayan se cuela en la alcaldía y lo graba todo | El video se vuelve viral en Extravío |
 | 9 | **Me subí al Nevado Dormilón** | Busca el humo de la verdad y lo respira antes de hablar con la abuela | Le confiesa que la quiere (momento sincero) |
 | 10 | **Salí por una alcantarilla en Nueva York** (parte 1) | Las ratas gringas, Pie Grande en el metro, el público decide si sigue | Final en suspenso |
 
 ## 16. Qué cambió respecto a la versión 1
 
-- Lucho ahora se llama **Rocco** y es «de Colombia», sin ciudad.
+- Lucho ahora se llama **Brayan**, es «de Colombia», sin ciudad, y es más ñero: gorra plana, cadena, medias con chanclas.
 - Extravío pasó de «debajo de las ciudades» a **una Colombia mágica con todos sus paisajes**.
-- La casa de Rocco pasó de la Cloaca a **el zarzo de la finca de Doña Gertrudis**; la Patasola dejó de ser la casera.
+- La casa de Brayan pasó de la Cloaca a **el zarzo de la finca de Doña Gertrudis**; la Patasola dejó de ser la casera.
 - Doña Gertrudis pasó de tendera boyacense a **abuela finquera**, segunda protagonista.
 - Entró **Bartolo, la mula**. Se fue Pirulo, el duende (se puede recuperar).
 - La plata son **tapas de cualquier gaseosa y cualquier país**.
