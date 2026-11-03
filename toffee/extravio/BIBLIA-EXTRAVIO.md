@@ -213,9 +213,10 @@ ya existe: `toffee/refs/extravio/personajes/DONA-MULA.jpg`.
 
 ### Tocino, el marrano rockero (personaje nuevo, 3-nov-2026)
 
-Marrano gordo y rosado con una cresta punk verde parada, chaqueta de cuero negra con taches sin mangas, gafas oscuras,
-una argolla en la trompa (la que tienen todos los marranos, pero él dice que es un piercing), pulseras de taches y una
-guitarra eléctrica vieja, rayada y pegada con cinta.
+Marrano de verdad (en cuatro patas), flaco, pobre, demacrado y sucio, con una cresta punk negra grasosa y caída, gafas
+baratas rotas, una argolla oxidada en la trompa (la que tienen todos los marranos, pero él dice que es un piercing), un
+chaleco de cuero viejo y roto, una pañoleta gringa desteñida y una guitarra eléctrica rota amarrada con una cuerda. Está
+quebrado, pero se cree una estrella.
 
 - **Es gringo y le dicen «el Pinche Gringo»** (pedido de Jay, 3-nov-2026). Llegó de Estados Unidos hace años por una
   alcantarilla de medianoche y se quedó. Aprendió español en México, así que habla con acento gringo marcado y mezcla
