@@ -1,0 +1,45 @@
+# Biblioteca de sonidos de Extravío (Dizzy)
+
+Pedido de Jay (4-nov-2026): **no hacer sonidos nuevos en cada capítulo.** Primero se usa lo que ya está aquí. Si un
+capítulo necesita algo que no existe, Claude se lo pide a Jay (solo lo que falte) y se guarda aquí con su código.
+Flow ya pone el sonido propio de cada toma (pasos, puertas, cascos, fuego, gente); aquí van solo los efectos de chiste,
+los de amenaza, los ambientes de fondo por lugar y la música.
+
+## Música (`musica/`)
+| Código | Archivo | Qué es | Dura | Usos |
+|---|---|---|---|---|
+| M1 | M1-finca-bambuco | Bambuco suave de tiple, amanecer en la finca | 1:04 | Finca, mañanas, escenas tranquilas |
+| M2 | M2-camino-carranga | Carranga alegre de trote | 1:04 | Viajes en Bartolo, caminos, chistes de campo |
+| M3 | M3-plaza-vallenato | Vallenato de fondo | 1:04 | Pueblo, plaza, fiestas tranquilas |
+| M4 | M4-cancion-el-hueco | Canción «Bienvenido a El Hueco» (champeta; canta los nombres de los vendedores) | 0:34 | Cada vez que se entra a El Hueco |
+| M5 | M5-tuerto-reggaeton | Reguetón oscuro lento | 1:04 | El Tuerto, peligro, negocios turbios |
+| M6 | M6-cuca-saxofon | Saxofón coqueto de chiste | 0:15 | Coqueteos (Cuca, Tocino) |
+| M7 | M7-domino-tension | Tambores de tensión | 0:15 | Apuestas y suspenso (se repite en bucle) |
+| M8 | M8-abuela-western | Silbido de western, duelo | 0:30 | La abuela llega a salvar; enfrentamientos |
+| M9 | M9-regreso-bambuco-tierno | Bambuco lento y tierno | 1:00 | Momentos sinceros, atardeceres, regresos |
+| M10 | M10-misterio-camara | Misterio con zumbido eléctrico | 0:30 | La cámara mágica, cosas raras de noche |
+| M11 | M11-tema-extravio | Tema de la serie (cumbia + guitarra punk) | 0:30 | Cierre de cada capítulo y pantallas finales |
+
+## Ambientes (`ambientes/`), por debajo de las voces
+| Código | Archivo | Lugar |
+|---|---|---|
+| E01 | E01-zarzo-amanecer | El zarzo y la casa en la mañana |
+| E02 | E02-ambiente-finca | La finca de día |
+| E14 | E14-ambiente-olla | El Hueco (siempre de noche) |
+
+## Efectos (`efectos/`)
+| Archivo | Para qué |
+|---|---|
+| E09-grillo-silencio | Silencio incómodo de chiste |
+| E16-cachetada-triple | Cachetadas |
+| E17-bajo-amenaza | Aparece algo peligroso; finales en suspenso |
+| E19-solo-guitarra-espantoso | Tocino tocando (se corta el pedazo que sirva) |
+| E20-chanclazo | La chancla de la abuela |
+| E24-camara-se-prende | La cámara mágica se prende sola |
+| whoosh-transiciones-y-caidas | Título, tomas aéreas, caídas, lanzamientos |
+| golpe-de-chiste | Remate de cada chiste |
+| rayon-de-disco | Frenazos, «se cortó la música» |
+| brillo-magico | Magia, perico, la ficha de la manga |
+| subida-de-tension | Antes de una apuesta o un susto |
+| latido | Miedo, tensión cercana |
+| remate-final-de-episodio | Golpe final del cierre |
