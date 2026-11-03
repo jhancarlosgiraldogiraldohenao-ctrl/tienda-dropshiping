@@ -2,12 +2,12 @@
 
 ## 1. Dizzy
 
-Guárdala como «Dizzy». Ñero rolo, grosero, carrasposo y fuerte. Es la más importante: habla en casi todo el capítulo.
+Guárdala como «Dizzy». Ñero rolo, grosero, muy carrasposo y «llevado». Es la más importante: habla en casi todo el capítulo.
 
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish with a strong street accent from the working-class neighborhoods of Bogotá: the typical rolo street intonation that rises and drags at the end of sentences, rough and a bit nasal, with street slang like «quiubo», «mi llave», «¿sí o qué?». A skinny young street hustler in his early twenties with a strong, raspy, gravelly, slightly hoarse voice, like he has been shouting on the street corner all night. Cocky, aggressive and funny, talks fast and loud, throws insults like a tough guy, but laughs with a quick nervous wheezy giggle. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish, rough Bogotá street accent (rolo ñero), drags the end of sentences. A wrecked street rat in his twenties: extremely raspy, broken, gravelly voice, hoarse and a bit slurred, like he partied for three days straight without sleeping. Cocky, loud, fast, throws insults, nervous wheezy giggle. Exaggerated animated movie character voice, not a normal human voice.
 ```
 
 **Texto de prueba**
@@ -18,12 +18,12 @@ Speaks only in Colombian Spanish with a strong street accent from the working-cl
 
 ## 2. Tocino, el Pinche Gringo
 
-Guárdala como «Tocino». Gringo que vive en Colombia: habla español con palabras colombianas, pero con todo el acento gringo.
+Guárdala como «Tocino». Gringo que vive en Colombia: palabras colombianas con todo el acento gringo.
 
 **Descripción**
 
 ```
-An American man speaking Spanish with a very heavy American English accent, like a gringo who has lived in Colombia for years and uses Colombian slang like «parce» and «qué chimba» but still pronounces everything like an American: hard American R, English vowels, flat American intonation, wrong word stress, and English words like dude, man and oh my God mixed in. A chubby middle-aged rock singer with a loud, raspy, gravelly voice worn out from years of screaming on stage, dramatic and over the top, laughs loudly, his voice cracks into a high note when he gets emotional. Funny and warm. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Spanish with a very heavy American accent: a gringo living in Colombia who uses Colombian slang like parce and qué chimba but pronounces it all like an American, hard R, English vowels, mixes in dude, man, oh my God. Chubby middle-aged rock singer, loud, raspy, gravelly voice worn out from screaming on stage, dramatic, laughs loudly. Animated movie character.
 ```
 
 **Texto de prueba**
@@ -39,7 +39,7 @@ Guárdala como «Gertrudis». Abuelita campesina cafetera, dulce y brava a la ve
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish with a warm countryside accent from the Colombian coffee region. A sweet little grandmother in her late seventies with a soft, slightly shaky, high and tender old-lady voice. She spoils and scolds in the same breath, sighs «ay», clicks her tongue, prays quickly under her breath and says «mijito» with lots of love. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish, warm countryside accent from the coffee region. A sweet little grandmother in her late seventies, soft, shaky, high, tender old-lady voice. Spoils and scolds in the same breath, sighs, clicks her tongue, prays under her breath, says mijito with love. Animated movie character, natural acting.
 ```
 
 **Texto de prueba**
@@ -50,12 +50,12 @@ Speaks only in Colombian Spanish with a warm countryside accent from the Colombi
 
 ## 4. Cuca, la prima cucaracha
 
-Guárdala como «Cuca». Costeña de Barranquilla. Si la prefieres venezolana, usa la versión de abajo.
+Guárdala como «Cuca». Costeña de Barranquilla. Si la prefieres venezolana, usa la 4b.
 
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish with a strong Caribbean coastal accent from Barranquilla: fast, musical and loud, drops the S at the end of words, very expressive. A gossipy, sassy middle-aged woman with a bright, slightly nasal voice, confident and flirty, laughs out loud and talks like she knows everybody's secrets. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish, strong Caribbean accent from Barranquilla: fast, musical, loud, drops the S at the end of words. A gossipy, sassy middle-aged woman, bright slightly nasal voice, flirty and confident, laughs out loud, knows everybody's secrets. Animated movie character, natural acting.
 ```
 
 **Texto de prueba**
@@ -71,7 +71,7 @@ Solo si la quieres venezolana en vez de costeña. Escoge una de las dos.
 **Descripción**
 
 ```
-Speaks only in Venezuelan Spanish with a strong, lively accent from Caracas, fast and expressive, using words like «chamo», «mi amor» and «vale». A gossipy, sassy middle-aged woman with a bright, slightly nasal voice, confident and flirty, laughs out loud and talks like she knows everybody's secrets. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Venezuelan Spanish, strong lively Caracas accent, fast and expressive, says chamo, mi amor, vale. A gossipy, sassy middle-aged woman, bright slightly nasal voice, flirty and confident, laughs out loud, knows everybody's secrets. Animated movie character, natural acting.
 ```
 
 **Texto de prueba**
@@ -82,12 +82,12 @@ Speaks only in Venezuelan Spanish with a strong, lively accent from Caracas, fas
 
 ## 5. El Tuerto
 
-Guárdala como «Tuerto». Paisa malandro, frío, bajito: para que no suene igual a Dizzy, que es rolo.
+Guárdala como «Tuerto». Paisa malandro, frío y bajito, para que no suene igual a Dizzy.
 
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish with a slow, cold street accent from Medellín. A small but dangerous small-time gangster in his forties with a low, calm, husky voice, almost a whisper, he never shouts, every word sounds like a threat, a little ridiculous because he takes himself too seriously. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish, slow cold street accent from Medellín. A small but dangerous gangster in his forties, low, calm, husky voice, almost a whisper, never shouts, every word sounds like a threat, a little ridiculous because he takes himself too seriously. Animated movie villain, natural acting.
 ```
 
 **Texto de prueba**
@@ -103,7 +103,7 @@ Guárdala como «Bartolo». Casi no habla: grave, lento, cansado.
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish with a slow rural countryside accent. A very old, tired mule driver with an extremely deep, slow, low and husky voice. He says very few words with long pauses, sounds bored and unimpressed, has a dry sense of humor, sighs heavily and snorts through his nose. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish, slow rural countryside accent. A very old, tired mule driver with an extremely deep, slow, low, husky voice. Very few words, long pauses, bored and unimpressed, dry humor, sighs heavily and snorts. Animated movie character, natural acting.
 ```
 
 **Texto de prueba**
@@ -114,12 +114,12 @@ Speaks only in Colombian Spanish with a slow rural countryside accent. A very ol
 
 ## 7. El gallinazo
 
-Guárdala como «Gallinazo». El portero de El Hueco (dice «¿Contraseña?» y «Siga.»).
+Guárdala como «Gallinazo». El portero de El Hueco.
 
 **Descripción**
 
 ```
-Speaks only in Colombian Spanish. A huge, intimidating doorman and butcher with a very deep, rough, croaky voice, slow and threatening, uses very few words, like a bouncer at a dangerous nightclub. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Colombian Spanish. A huge intimidating doorman and butcher with a very deep, rough, croaky voice, slow and threatening, very few words, like a bouncer at a dangerous nightclub. Animated movie character, natural acting.
 ```
 
 **Texto de prueba**
@@ -135,7 +135,7 @@ Guárdala como «Llorona». Solo grita una frase, de lejos.
 **Descripción**
 
 ```
-Speaks only in Latin American Spanish. A dramatic ghost woman with a high, trembling, echoing voice, wailing and sobbing loudly like in a soap opera. Over-the-top sadness that sounds funny, not scary. Natural and realistic, recorded close to a good microphone, not a cartoon, not a narrator, not an announcer.
+Latin American Spanish. A dramatic ghost woman with a high, trembling, echoing voice, wailing and sobbing loudly like in a soap opera. Over-the-top sadness that sounds funny, not scary. Animated movie character.
 ```
 
 **Texto de prueba**
