@@ -1,0 +1,1486 @@
+<title>Capítulo 1, el guion</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: ficha de personaje — retrato y datos arriba, una columna de lectura, bloques de prompt para copiar */
+:root{
+  --bg:#F4F5F2; --paper:#FFFFFF; --ink:#16181A; --muted:#5C6166; --line:rgba(22,24,26,.14);
+  --cheese:#B7791F; --cheese-soft:rgba(183,121,31,.12); --alley:#3F4A57; --alley-soft:rgba(63,74,87,.10);
+  --f-display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --f-body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --f-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121417; --paper:#1A1D21; --ink:#ECEDEE; --muted:#A6ABB1; --line:rgba(236,237,238,.14);
+  --cheese:#F2B544; --cheese-soft:rgba(242,181,68,.14); --alley:#9FB0C2; --alley-soft:rgba(159,176,194,.12); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121417; --paper:#1A1D21; --ink:#ECEDEE; --muted:#A6ABB1; --line:rgba(236,237,238,.14);
+  --cheese:#F2B544; --cheese-soft:rgba(242,181,68,.14); --alley:#9FB0C2; --alley-soft:rgba(159,176,194,.12); color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 var(--f-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 48px}
+header,main,footer{max-width:900px;margin:0 auto}
+main{display:grid;gap:40px;grid-template-columns:minmax(0,1fr)}
+header{padding-block:40px 24px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px;align-items:center}
+@media (max-width:700px){header{grid-template-columns:minmax(0,1fr)}}
+header img{width:100%;border-radius:14px;border:1px solid var(--line)}
+.htext{display:grid;gap:12px;min-width:0}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(34px,6vw,54px);font-weight:800}
+h2{font-size:clamp(23px,3.6vw,30px);font-weight:800}
+h3{font-size:19px;font-weight:600}
+p{margin:0;max-width:68ch}
+.lede{font-size:19px;color:var(--muted)}
+.eyebrow{font:600 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--cheese)}
+section{display:grid;gap:16px}
+ul,ol{margin:0;padding-left:22px;display:grid;gap:6px;max-width:68ch}
+li b{font-family:var(--f-display);font-weight:600}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--paper)}
+table{border-collapse:collapse;width:100%;font-size:15px;min-width:520px}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font:600 12px/1.3 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);background:var(--bg)}
+tr:last-child td{border-bottom:0}
+.ficha{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+@media (max-width:640px){.ficha{grid-template-columns:minmax(0,1fr)}}
+.ficha div{background:var(--paper);padding:12px 16px;display:grid;gap:2px}
+.ficha span{font:600 12px/1.3 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.frase{font-family:var(--f-display);font-size:20px;font-weight:600;border-left:3px solid var(--cheese);padding:6px 0 6px 14px;background:var(--cheese-soft);border-radius:0 10px 10px 0}
+.note{border-left:3px solid var(--alley);background:var(--alley-soft);padding:12px 16px;border-radius:0 10px 10px 0;font-size:16px}
+.caja{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--paper)}
+.barra{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:8px 12px;background:var(--bg);border-bottom:1px solid var(--line)}
+.barra b{font:600 12px/1 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.copiar{border:0;cursor:pointer;border-radius:999px;min-height:36px;padding:0 14px;font:600 14px var(--f-display);background:var(--cheese);color:var(--paper)}
+.copiar:focus-visible{outline:3px solid var(--alley);outline-offset:2px}
+pre{margin:0;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font:13px/1.6 var(--f-mono)}
+footer{padding-top:24px;font-size:14px;color:var(--muted)}
+code{overflow-wrap:anywhere}
+table{font-size:14px;min-width:760px} td:nth-child(1),td:nth-child(2),td:nth-child(3){white-space:nowrap;font-family:var(--f-mono);font-size:12px} h3{margin-top:12px} blockquote{margin:0;padding:10px 16px;border-left:3px solid var(--cheese);background:var(--cheese-soft);border-radius:0 10px 10px 0}
+</style>
+<header style="display:block"><div class="htext"><span class="eyebrow">Extravío · capítulo 1 · parte 4: el guion</span><h1>Mi primer vlog (y casi me mata mi abuela)</h1><p class="lede">El guion toma por toma, en vertical 9:16: qué se ve, quién habla, qué suena y cuánto dura. Todavía no son los prompts de Flow.</p></div></header><main><p>Guion y estructura toma por toma, todo en <strong>vertical
+9:16</strong>. Todavía no son los prompts de Flow: eso es la parte 6.
+Basado en la historia aprobada (<code>CAP01-HISTORIA.md</code>), el
+estudio de Gnomo Palomo y el manual de producción.</p>
+<h2 id="resumen">Resumen</h2>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th></th>
+<th>Duración</th>
+<th>Tomas</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Parte 1</strong> (reel del día 1)</td>
+<td><strong>2:31</strong></td>
+<td>53</td>
+</tr>
+<tr class="even">
+<td><strong>Parte 2</strong> (reel del día 2)</td>
+<td><strong>2:22</strong></td>
+<td>49</td>
+</tr>
+<tr class="odd">
+<td><strong>Video de YouTube</strong> (parte 1 + parte 2 + 16 s de
+pantallas finales + chistes estirados)</td>
+<td><strong>≈ 5:15</strong></td>
+<td>103</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Cada parte cabe en un Short</strong> (máximo 3 minutos). La
+parte 1 de Gnomo con Santa duraba 2:50.</li>
+<li><strong>Muchas tomas salen de una sola generación</strong> de Flow:
+en las conversaciones se genera una toma larga de cada personaje y se
+corta en pedazos (como hace Gnomo). Por eso las generaciones son
+bastantes menos que las tomas.</li>
+<li><strong>Subtítulos estilo Gnomo en todo</strong> (blancos, negrita,
+borde negro). Las frases de Tocino en inglés salen traducidas.</li>
+<li><strong>Título</strong> «EXTRAVÍO · VLOG 01» sobre la primera toma
+aérea (toma 7). Sin logo.</li>
+<li><strong>Regla nueva del mundo:</strong> en El Hueco siempre es de
+noche (por eso pasan de la plaza de día a la olla de noche).</li>
+<li><strong>Groserías:</strong> ninguna en los primeros 10
+segundos.</li>
+</ul>
+<h2 id="la-canción">La canción</h2>
+<p><strong>«Bienvenido a El Hueco»</strong> (champeta, ≈ 28 s; la canta
+Cuca, con los vendedores de coro)</p>
+<blockquote>
+<p><strong>Cuca:</strong> Bienvenido a El Hueco, mi amor, aquí se entra,
+pero no se sale. <strong>Gallinazo:</strong> Carnecita fresca… ¡de ayer!
+<strong>Sapo:</strong> Perico del bueno, pa' que vueles sin avión.
+<strong>Rata vieja:</strong> Cambio tapas, cambio todo… hasta el alma.
+<strong>Coro (todos):</strong> ¡En El Hueco, en El Hueco! Aquí todo
+tiene precio… ¡y el precio lo pone el Tuerto!</p>
+</blockquote>
+<h2 id="parte-1--el-reel-del-día-1-231">Parte 1 · el reel del día 1
+(2:31)</h2>
+<h3 id="1-gancho--000-6-s">1. Gancho · 0:00 (6 s)</h3>
+<p><strong>Lugar:</strong> Zarzo (ZARZO), amanecer<br />
+<strong>Música y ambiente:</strong> Ambiente: gallos a lo lejos, madera
+que cruje. Sin música hasta el título.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>0:00</td>
+<td>3</td>
+<td>Primerísimo plano, cámara pegada a la cara</td>
+<td>Dizzy pegado al lente, ojos enormes, luz de la ventana redonda
+detrás</td>
+<td>DIZZY: «¿Quiubo pues, mis ratas? Este es mi primer vlog…»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>0:03</td>
+<td>3</td>
+<td>Primer plano, se aleja un poco</td>
+<td>Dizzy mira a los lados, desconfiado, y baja la voz</td>
+<td>DIZZY (susurra): «…y si mi cucha se entera de dónde saqué esta
+cámara, me mata.»</td>
+<td>Golpe de chiste al final</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2-de-dónde-salió-la-cámara-recuerdo--006-10-s">2. De dónde salió
+la cámara (recuerdo) · 0:06 (10 s)</h3>
+<p><strong>Lugar:</strong> Rincón del Tuerto y mesa de dominó
+(HUECO-RINCON-TUERTO, HUECO-DENTRO), noche, con un tono más cálido de
+recuerdo<br />
+<strong>Música y ambiente:</strong> Música: bajo de reguetón lento,
+misterioso. La voz de Dizzy va en off (no se le ve la boca).</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>3</td>
+<td>0:06</td>
+<td>3</td>
+<td>Plano medio desde un lado de la mesa</td>
+<td>Dizzy empuja una montaña de tapas al centro de la mesa; enfrente, El
+Tuerto pone la cámara</td>
+<td>DIZZY (en off): «Me jugué todas mis tapas, mis ratas.»</td>
+<td>Tapas que caen</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>0:09</td>
+<td>2</td>
+<td>Inserto, plano detalle debajo de la mesa</td>
+<td>La pata de Dizzy saca una ficha de dominó de la manga del buzo</td>
+<td>—</td>
+<td>«Tin» brillante</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>0:11</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>Dizzy pone la ficha, gana y arrastra la cámara hacia él; El Tuerto
+lo mira con su único ojo</td>
+<td>DIZZY (en off): «¿Trampa? No, mi llave. Talento.»</td>
+<td>Golpe en la mesa</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>0:14</td>
+<td>2</td>
+<td>Primer plano en el zarzo (vuelve al presente)</td>
+<td>Dizzy, de nuevo en el zarzo, mira a cámara serio</td>
+<td>DIZZY: «Que es distinto, malparidos.»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="3-su-mundo--016-11-s">3. Su mundo · 0:16 (11 s)</h3>
+<p><strong>Lugar:</strong> Finca desde el aire (AEREA-FINCA), finca
+(FINCA-ESPERANZA)<br />
+<strong>Música y ambiente:</strong> Música: tiple y guitarra suave
+(bambuco). Ambiente: pájaros, viento en los cafetales.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>7</td>
+<td>0:16</td>
+<td>3</td>
+<td>Toma aérea, el dron baja lento hacia la casa</td>
+<td>La finca entre los cafetales con niebla. TÍTULO: «EXTRAVÍO · VLOG
+01»</td>
+<td>—</td>
+<td>Whoosh suave con el título</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td>0:19</td>
+<td>3</td>
+<td>Plano medio, Dizzy con el palo selfie caminando por el corredor</td>
+<td>Dizzy camina por el corredor de la casa, hamaca y flores al
+fondo</td>
+<td>DIZZY: «Esta es la finca de mi abuela. Aquí vivo… gratis.»</td>
+<td>Pasos en madera</td>
+</tr>
+<tr class="odd">
+<td>9</td>
+<td>0:22</td>
+<td>2</td>
+<td>Primer plano de Bartolo, en el patio del café</td>
+<td>Bartolo mira a la cámara, aburrido, con los ojos medio cerrados</td>
+<td>BARTOLO: «…No.»</td>
+<td>Resoplido</td>
+</tr>
+<tr class="even">
+<td>10</td>
+<td>0:24</td>
+<td>3</td>
+<td>Plano medio de Dizzy (contraplano)</td>
+<td>Dizzy señala a Bartolo con el pulgar</td>
+<td>DIZZY: «Este es Bartolo, el hijueputa más amargado de
+Colombia.»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="4-la-abuela-y-el-mandado--027-14-s">4. La abuela y el mandado ·
+0:27 (14 s)</h3>
+<p><strong>Lugar:</strong> Finca (FINCA-ESPERANZA), corredor y puerta
+azul<br />
+<strong>Música y ambiente:</strong> Música: el bambuco sigue bajito.
+Ambiente: gallinas, una radio vieja lejos.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>11</td>
+<td>0:27</td>
+<td>4</td>
+<td>Plano general del corredor, la cámara a la altura de Dizzy</td>
+<td>La puerta azul se abre de golpe; sale Doña Gertrudis con la chancla
+en el ala</td>
+<td>GERTRUDIS: «¡Mijito! Ay, Dios mío, ¿y esa vaina qué es?»</td>
+<td>Puerta que se abre</td>
+</tr>
+<tr class="even">
+<td>12</td>
+<td>0:31</td>
+<td>2</td>
+<td>Plano medio de Dizzy</td>
+<td>Dizzy esconde el palo selfie detrás de la espalda y sonríe</td>
+<td>DIZZY: «Nada, abuelita, nada.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>13</td>
+<td>0:33</td>
+<td>5</td>
+<td>Plano medio de la abuela, desde abajo</td>
+<td>La abuela señala con el ala los dos bultos de café junto a
+Bartolo</td>
+<td>GERTRUDIS: «Lleve esos dos bultos de café al pueblo, que debemos en
+la tienda. Y me trae la panela, mi amor.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>14</td>
+<td>0:38</td>
+<td>3</td>
+<td>Primer plano de la abuela</td>
+<td>La abuela levanta una pluma como un dedo, seria y cariñosa a la
+vez</td>
+<td>GERTRUDIS: «Y no se me demore, que a las seis hay comida. ¡Dios me
+lo bendiga!»</td>
+<td>Golpe suave</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="5-el-camino-con-bartolo--041-16-s">5. El camino con Bartolo ·
+0:41 (16 s)</h3>
+<p><strong>Lugar:</strong> Camino de las palmas (CAMINO-PALMAS)<br />
+<strong>Música y ambiente:</strong> Música: carranga alegre. Ambiente:
+cascos en tierra, pájaros.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>15</td>
+<td>0:41</td>
+<td>3</td>
+<td>Toma aérea siguiendo desde atrás y arriba</td>
+<td>Bartolo baja por el camino entre las palmas gigantes, con Dizzy
+encima y los dos bultos</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>16</td>
+<td>0:44</td>
+<td>3</td>
+<td>Plano medio de frente, cámara que retrocede con ellos</td>
+<td>Dizzy montado en Bartolo habla con el palo selfie</td>
+<td>DIZZY: «Vamos pa'l pueblo, mis ratas. Facilito.»</td>
+<td>Cascos</td>
+</tr>
+<tr class="odd">
+<td>17</td>
+<td>0:47</td>
+<td>2</td>
+<td>Plano general de perfil</td>
+<td>Bartolo se frena en seco; Dizzy casi se cae hacia adelante</td>
+<td>—</td>
+<td>Frenazo de disco (la música se corta)</td>
+</tr>
+<tr class="even">
+<td>18</td>
+<td>0:49</td>
+<td>3</td>
+<td>Primer plano de Dizzy, encima de Bartolo</td>
+<td>Dizzy, furioso, le grita a la nuca de Bartolo</td>
+<td>DIZZY: «¡Muévete, perro! ¿Qué te pasa, estúpido?»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>19</td>
+<td>0:52</td>
+<td>2</td>
+<td>Primer plano de Bartolo de frente</td>
+<td>Bartolo, inmóvil, ni parpadea</td>
+<td>—</td>
+<td>Grillo (silencio de chiste)</td>
+</tr>
+<tr class="even">
+<td>20</td>
+<td>0:54</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>Dizzy saca un pedazo de panela del morral y se lo muestra; Bartolo
+arranca de una</td>
+<td>—</td>
+<td>La música vuelve de golpe + cascos rápidos</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="6-el-pueblo-y-tocino--057-31-s">6. El pueblo y Tocino · 0:57 (31
+s)</h3>
+<p><strong>Lugar:</strong> Pueblo desde el aire (AEREA-PUEBLO), plaza
+(PLAZA), esquina de Tocino (PLAZA-ESQUINA-TOCINO)<br />
+<strong>Música y ambiente:</strong> Música: vallenato de fondo.
+Ambiente: campanas, gente del pueblo, un jeep.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>21</td>
+<td>0:57</td>
+<td>3</td>
+<td>Toma aérea, el dron avanza hacia la plaza</td>
+<td>El pueblo de colores en la montaña, la iglesia al centro</td>
+<td>—</td>
+<td>Campanas</td>
+</tr>
+<tr class="even">
+<td>22</td>
+<td>1:00</td>
+<td>3</td>
+<td>Plano general de la plaza</td>
+<td>Dizzy y Bartolo entran a la plaza; atrás pasa la Llorona flotando
+con su arepa quemada</td>
+<td>LLORONA (a gritos, de lejos): «¡Se me quemó la arepaaa!»</td>
+<td>Eco de lamento</td>
+</tr>
+<tr class="odd">
+<td>23</td>
+<td>1:03</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy mira a cámara, cansado</td>
+<td>DIZZY: «Todos los días, parce.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>24</td>
+<td>1:05</td>
+<td>3</td>
+<td>Plano medio en la esquina</td>
+<td>Tocino toca su guitarra rota en la banca; nadie le echa monedas</td>
+<td>—</td>
+<td>Guitarra desafinada</td>
+</tr>
+<tr class="odd">
+<td>25</td>
+<td>1:08</td>
+<td>2</td>
+<td>Plano medio de Tocino</td>
+<td>Tocino ve a Dizzy y levanta la pata</td>
+<td>TOCINO: «¡Hey, dude!»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>26</td>
+<td>1:10</td>
+<td>3</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino se baja las gafas y mira la cámara de la gorra de Dizzy</td>
+<td>TOCINO: «Oh my God… ¿Eso es un cámara?»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>27</td>
+<td>1:13</td>
+<td>3</td>
+<td>Plano medio de Dizzy (contraplano)</td>
+<td>Dizzy saca pecho, orgulloso</td>
+<td>DIZZY: «Mía, mi llave. Ahora soy vlogger.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>28</td>
+<td>1:16</td>
+<td>5</td>
+<td>Primer plano de Tocino, se acerca la cámara despacio</td>
+<td>Tocino mira los bultos de café y se le ocurre la idea</td>
+<td>TOCINO: «Con ese cámara y ese café… vendemos el café en El Hueco por
+el doble de lucas…»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>29</td>
+<td>1:21</td>
+<td>5</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino abre los ojos, emocionado, y hace los cuernos del rock</td>
+<td>TOCINO: «…compramos perico, hacemos un video mágico y ¡boom!
+Famosos, man. Let's rock, baby!»</td>
+<td>Acorde de guitarra</td>
+</tr>
+<tr class="even">
+<td>30</td>
+<td>1:26</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy sonríe con malicia</td>
+<td>DIZZY: «Usted es un genio, gringo hijueputa.»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="7-el-hueco-la-entrada-y-la-contraseña--128-12-s">7. El Hueco: la
+entrada y la contraseña · 1:28 (12 s)</h3>
+<p><strong>Lugar:</strong> Olla desde el aire (AEREA-OLLA), escaleras
+(HUECO-ENTRADA). En El Hueco siempre es de noche (regla nueva del
+mundo).<br />
+<strong>Música y ambiente:</strong> Música: se apaga el vallenato.
+Ambiente: perros lejos, humo, gotas.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>31</td>
+<td>1:28</td>
+<td>3</td>
+<td>Toma aérea, el dron baja hacia la cañada</td>
+<td>La olla de noche, con los barriles encendidos</td>
+<td>—</td>
+<td>Whoosh oscuro</td>
+</tr>
+<tr class="even">
+<td>32</td>
+<td>1:31</td>
+<td>3</td>
+<td>Plano general desde abajo de las escaleras</td>
+<td>Dizzy, Tocino y Bartolo bajan las escaleras rotas</td>
+<td>TOCINO: «Oh my God, this is insane…»</td>
+<td>Pasos</td>
+</tr>
+<tr class="odd">
+<td>33</td>
+<td>1:34</td>
+<td>2</td>
+<td>Primer plano del gallinazo, desde abajo</td>
+<td>El gallinazo carnicero les cierra el paso con el cuchillo</td>
+<td>GALLINAZO: «¿Contraseña?»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>34</td>
+<td>1:36</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy, sin pensarlo</td>
+<td>DIZZY: «Hijueputa.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>35</td>
+<td>1:38</td>
+<td>2</td>
+<td>Primer plano del gallinazo</td>
+<td>El gallinazo se hace a un lado</td>
+<td>GALLINAZO: «Siga.»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="8-la-canción-bienvenido-a-el-hueco--140-23-s">8. La canción:
+«Bienvenido a El Hueco» · 1:40 (23 s)</h3>
+<p><strong>Lugar:</strong> El Hueco por dentro (HUECO-DENTRO,
+HUECO-PUESTO-CARNE)<br />
+<strong>Música y ambiente:</strong> CANCIÓN completa (≈ 28 s, champeta).
+Regla del manual: la canción se graba con cámara lejos y cortes a
+reacciones; solo frases cortas en primer plano.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>36</td>
+<td>1:40</td>
+<td>4</td>
+<td>Grúa que sube por la calle del mercado</td>
+<td>Se revela todo El Hueco: puestos, humo, bombillos; Cuca sube a una
+mesa en bikini rojo</td>
+<td>CANCIÓN (Cuca): «Bienvenido a El Hueco, mi amor…»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>37</td>
+<td>1:44</td>
+<td>3</td>
+<td>Plano general de Cuca bailando en la mesa</td>
+<td>Cuca baila como diva; los vendedores aplauden</td>
+<td>CANCIÓN (Cuca): «…aquí se entra, pero no se sale.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>38</td>
+<td>1:47</td>
+<td>3</td>
+<td>Plano medio en el puesto de carne</td>
+<td>El gallinazo corta carne al ritmo</td>
+<td>CANCIÓN (gallinazo): «Carnecita fresca… ¡de ayer!»</td>
+<td>Cuchillazo en el ritmo</td>
+</tr>
+<tr class="even">
+<td>39</td>
+<td>1:50</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>El sapo con cadenas levanta un frasco de perico que brilla</td>
+<td>CANCIÓN (sapo): «Perico del bueno, pa' que vueles sin avión.»</td>
+<td>Brillo mágico</td>
+</tr>
+<tr class="odd">
+<td>40</td>
+<td>1:53</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>La rata vieja cuenta tapas; la chucha pasa con su bolsa de cosas
+robadas</td>
+<td>CANCIÓN (rata vieja): «Cambio tapas, cambio todo… hasta el
+alma.»</td>
+<td>Tapas</td>
+</tr>
+<tr class="even">
+<td>41</td>
+<td>1:56</td>
+<td>4</td>
+<td>Plano general, la cámara se mueve entre los puestos</td>
+<td>Todos los vendedores bailan; Tocino baila mal; Dizzy graba con el
+palo selfie</td>
+<td>CORO (todos): «¡En El Hueco, en El Hueco! Aquí todo tiene
+precio…»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>42</td>
+<td>2:00</td>
+<td>3</td>
+<td>Plano medio de Cuca, pose final</td>
+<td>Cuca termina con una pose de diva encima de la mesa</td>
+<td>CORO: «…¡y el precio lo pone el Tuerto!»</td>
+<td>Golpe final de la canción</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="9-muestra-esa-cuca--203-28-s">9. «Muestra esa cuca» · 2:03 (28
+s)</h3>
+<p><strong>Lugar:</strong> El Hueco por dentro (HUECO-DENTRO)<br />
+<strong>Música y ambiente:</strong> Sin música: el silencio es el
+chiste. Ambiente del mercado bajito.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>43</td>
+<td>2:03</td>
+<td>2</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino se baja las gafas despacio mirando a Cuca</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>44</td>
+<td>2:05</td>
+<td>3</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino sonríe de lado</td>
+<td>TOCINO: «Uy, mami… muestra esa cuca.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>45</td>
+<td>2:08</td>
+<td>2</td>
+<td>Plano general</td>
+<td>Todo El Hueco se queda callado y lo mira (en YouTube se estira a 4
+s)</td>
+<td>—</td>
+<td>Grillo</td>
+</tr>
+<tr class="even">
+<td>46</td>
+<td>2:10</td>
+<td>2</td>
+<td>Plano medio de perfil: Cuca a la izquierda, Tocino a la derecha</td>
+<td>Cuca le pega una cachetada con tres patas a la vez</td>
+<td>—</td>
+<td>Cachetada triple</td>
+</tr>
+<tr class="odd">
+<td>47</td>
+<td>2:12</td>
+<td>2</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino sobándose la cara</td>
+<td>TOCINO: «What the fuck, dude?»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>48</td>
+<td>2:14</td>
+<td>3</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy le grita a Tocino</td>
+<td>DIZZY: «¡Es mi prima, cochino gran hijueputa!»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>49</td>
+<td>2:17</td>
+<td>4</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino, confundido, con las patas abiertas</td>
+<td>TOCINO: «¿Qué? Es una cucaracha, ¿no? Cuca… cucaracha… I'm confused,
+dude.»</td>
+<td>Golpe de chiste</td>
+</tr>
+<tr class="even">
+<td>50</td>
+<td>2:21</td>
+<td>4</td>
+<td>Plano medio de Cuca</td>
+<td>Cuca, todavía brava, se cruza de patas y baja la voz</td>
+<td>CUCA: «Eche, primo, aquí no se puede vender nada sin pagarle al
+Tuerto.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>51</td>
+<td>2:25</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy sonríe nervioso</td>
+<td>DIZZY: «Todo bien, todo bien…»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>52</td>
+<td>2:27</td>
+<td>2</td>
+<td>Plano medio de Dizzy</td>
+<td>Una sombra grande lo cubre por detrás</td>
+<td>—</td>
+<td>Bajo grave que entra</td>
+</tr>
+<tr class="odd">
+<td>53</td>
+<td>2:29</td>
+<td>2</td>
+<td>Primerísimo plano de Dizzy</td>
+<td>Dizzy, aterrado, pegado al lente</td>
+<td>DIZZY: «Uy, no… triple hijueputa.»</td>
+<td>Corte en seco · FIN DE LA PARTE 1</td>
+</tr>
+</tbody>
+</table></div>
+<h2
+id="parte-2--el-reel-del-día-2-y-el-resto-del-video-de-youtube-222--pantallas-finales">Parte
+2 · el reel del día 2 y el resto del video de YouTube (2:22 + pantallas
+finales)</h2>
+<h3 id="10-el-tuerto--000-12-s">10. El Tuerto · 0:00 (12 s)</h3>
+<p><strong>Lugar:</strong> Rincón del Tuerto (HUECO-RINCON-TUERTO)<br />
+<strong>Música y ambiente:</strong> Música: bajo de reguetón oscuro y
+lento. Ambiente: barril que crepita.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>54</td>
+<td>0:00</td>
+<td>3</td>
+<td>Primerísimo plano del Tuerto (arranca la parte 2 con la
+respuesta)</td>
+<td>El Tuerto, con el palillo en la boca, mira con su único ojo</td>
+<td>TUERTO: «Tú me debes, ratica… ¿sí o qué?»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>55</td>
+<td>0:03</td>
+<td>4</td>
+<td>Plano medio del Tuerto en su trono de sillas de carro</td>
+<td>El Tuerto señala los bultos de café</td>
+<td>TUERTO: «Esa cámara me la ganaste con trampa. Y ese café ahora es
+mío.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>56</td>
+<td>0:07</td>
+<td>3</td>
+<td>Plano general</td>
+<td>La chucha y la iguana le quitan los bultos a Bartolo y los llevan al
+trono; Bartolo ni se mueve</td>
+<td>—</td>
+<td>Bultos arrastrados</td>
+</tr>
+<tr class="even">
+<td>57</td>
+<td>0:10</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy aprieta los dientes</td>
+<td>DIZZY (bajito): «Gonorrea…»</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="11-intento-1-el-solo-de-guitarra--012-14-s">11. Intento 1: el
+solo de guitarra · 0:12 (14 s)</h3>
+<p><strong>Lugar:</strong> Rincón del Tuerto<br />
+<strong>Música y ambiente:</strong> Música: se corta cuando empieza el
+solo.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>58</td>
+<td>0:12</td>
+<td>3</td>
+<td>Plano medio de Tocino</td>
+<td>Tocino agarra la guitarra rota</td>
+<td>TOCINO: «Tranquilo, dude. Yo lo distraigo.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>59</td>
+<td>0:15</td>
+<td>3</td>
+<td>Plano general</td>
+<td>Tocino hace un solo horrible con la guitarra</td>
+<td>—</td>
+<td>Solo de guitarra espantoso</td>
+</tr>
+<tr class="odd">
+<td>60</td>
+<td>0:18</td>
+<td>2</td>
+<td>Inserto</td>
+<td>La rata vieja y el sapo se tapan los oídos</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>61</td>
+<td>0:20</td>
+<td>2</td>
+<td>Primer plano del Tuerto</td>
+<td>El Tuerto ni parpadea</td>
+<td>—</td>
+<td>La guitarra sigue</td>
+</tr>
+<tr class="odd">
+<td>62</td>
+<td>0:22</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy con las patas en las orejas</td>
+<td>DIZZY: «¡Qué te pasa, estúpido, eso es un crimen!»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>63</td>
+<td>0:24</td>
+<td>2</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino, ofendido</td>
+<td>TOCINO: «Shut up, man, it's art!»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="12-intento-2-cuca--026-17-s">12. Intento 2: Cuca · 0:26 (17
+s)</h3>
+<p><strong>Lugar:</strong> Rincón del Tuerto<br />
+<strong>Música y ambiente:</strong> Música: saxofón coqueto, de
+chiste.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>64</td>
+<td>0:26</td>
+<td>3</td>
+<td>Plano general</td>
+<td>Cuca camina hacia el Tuerto moviendo las caderas</td>
+<td>—</td>
+<td>Saxofón</td>
+</tr>
+<tr class="even">
+<td>65</td>
+<td>0:29</td>
+<td>4</td>
+<td>Plano medio de Cuca</td>
+<td>Cuca se apoya en el trono, coqueta</td>
+<td>CUCA: «Ay, Tuertico, mi vida… ¿y si me regalas ese cafecito?»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>66</td>
+<td>0:33</td>
+<td>2</td>
+<td>Primer plano del Tuerto</td>
+<td>El Tuerto la mira de arriba abajo</td>
+<td>TUERTO: «No.»</td>
+<td>El saxofón se corta</td>
+</tr>
+<tr class="even">
+<td>67</td>
+<td>0:35</td>
+<td>2</td>
+<td>Plano medio de Tocino, al fondo</td>
+<td>Tocino levanta la pata</td>
+<td>TOCINO: «¡Yo sí, mami!»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>68</td>
+<td>0:37</td>
+<td>4</td>
+<td>Plano medio de Cuca</td>
+<td>Cuca, ofendida por los dos, señala a Dizzy</td>
+<td>CUCA: «¡Ajá! Pues que sepas que este anda grabando todo,
+Tuerto.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>69</td>
+<td>0:41</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy, traicionado</td>
+<td>DIZZY: «¡Sapa malparida!»</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="13-intento-3-la-apuesta--043-29-s">13. Intento 3: la apuesta ·
+0:43 (29 s)</h3>
+<p><strong>Lugar:</strong> Mesa de dominó (HUECO-DENTRO)<br />
+<strong>Música y ambiente:</strong> Música: tensión, tambores lentos.
+Todo El Hueco mira.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>70</td>
+<td>0:43</td>
+<td>4</td>
+<td>Plano medio de Dizzy frente al Tuerto, de perfil: Dizzy a la
+izquierda, el Tuerto a la derecha</td>
+<td>Dizzy da un paso adelante</td>
+<td>DIZZY: «Le juego el café al dominó, gato hijueputa.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>71</td>
+<td>0:47</td>
+<td>3</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy se toca la cámara de la gorra</td>
+<td>DIZZY: «Y si pierdo… le doy la cámara.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>72</td>
+<td>0:50</td>
+<td>2</td>
+<td>Primer plano del Tuerto</td>
+<td>El Tuerto sonríe por primera vez</td>
+<td>TUERTO: «Juguemos.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>73</td>
+<td>0:52</td>
+<td>3</td>
+<td>Cenital sobre la mesa</td>
+<td>La mesa de dominó desde arriba, todos los vendedores alrededor</td>
+<td>—</td>
+<td>Fichas que se mueven</td>
+</tr>
+<tr class="odd">
+<td>74</td>
+<td>0:55</td>
+<td>2</td>
+<td>Inserto debajo de la mesa</td>
+<td>Bartolo se va caminando en silencio hacia las escaleras (nadie lo
+ve)</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>75</td>
+<td>0:57</td>
+<td>2</td>
+<td>Inserto, plano detalle</td>
+<td>La pata del Tuerto saca una ficha de la manga (igual que Dizzy en el
+recuerdo)</td>
+<td>—</td>
+<td>El mismo «tin» del recuerdo</td>
+</tr>
+<tr class="odd">
+<td>76</td>
+<td>0:59</td>
+<td>2</td>
+<td>Primer plano de Dizzy</td>
+<td>Dizzy, con los ojos enormes</td>
+<td>DIZZY: «¿Qué…? ¡Eso es trampa!»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>77</td>
+<td>1:01</td>
+<td>2</td>
+<td>Primer plano del Tuerto</td>
+<td>El Tuerto, tranquilo</td>
+<td>TUERTO: «No, ratica. Talento.»</td>
+<td>Golpe de chiste</td>
+</tr>
+<tr class="odd">
+<td>78</td>
+<td>1:03</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>El Tuerto levanta a Dizzy de la cola y lo deja colgando</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>79</td>
+<td>1:06</td>
+<td>3</td>
+<td>Primer plano de Dizzy de cabeza</td>
+<td>Dizzy colgando, pataleando</td>
+<td>DIZZY: «¡Suélteme, pirobo! ¡Perro hijueputa!»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>80</td>
+<td>1:09</td>
+<td>3</td>
+<td>Primer plano del Tuerto</td>
+<td>El Tuerto acerca la pata a la cámara de la gorra</td>
+<td>TUERTO: «Así se siente, ratica.»</td>
+<td>Bajo grave</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="14-la-abuela--112-25-s">14. La abuela · 1:12 (25 s)</h3>
+<p><strong>Lugar:</strong> Escaleras (HUECO-ENTRADA) y El Hueco por
+dentro<br />
+<strong>Música y ambiente:</strong> Música: silbido de western, como un
+duelo. Chancla en cámara lenta.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>81</td>
+<td>1:12</td>
+<td>3</td>
+<td>Plano general de El Hueco</td>
+<td>Se oye un grito y todos se congelan</td>
+<td>GERTRUDIS (de lejos): «¡MIJITO!»</td>
+<td>La música se corta de golpe</td>
+</tr>
+<tr class="even">
+<td>82</td>
+<td>1:15</td>
+<td>3</td>
+<td>Plano general desde abajo de las escaleras</td>
+<td>Doña Gertrudis baja las escaleras montada en Bartolo (Bartolo fue a
+buscarla)</td>
+<td>—</td>
+<td>Silbido de western</td>
+</tr>
+<tr class="odd">
+<td>83</td>
+<td>1:18</td>
+<td>4</td>
+<td>Primer plano de la abuela, desde abajo</td>
+<td>La abuela, furiosa, levanta la chancla</td>
+<td>GERTRUDIS: «¡Virgen santísima, suelte a mi muchacho!»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>84</td>
+<td>1:22</td>
+<td>3</td>
+<td>Plano medio, cámara lenta</td>
+<td>La abuela lanza la chancla</td>
+<td>—</td>
+<td>Whoosh largo</td>
+</tr>
+<tr class="odd">
+<td>85</td>
+<td>1:25</td>
+<td>2</td>
+<td>Inserto en cámara lenta</td>
+<td>La chancla vuela entre los puestos del mercado</td>
+<td>—</td>
+<td>Whoosh</td>
+</tr>
+<tr class="even">
+<td>86</td>
+<td>1:27</td>
+<td>2</td>
+<td>Primer plano del Tuerto</td>
+<td>La chancla le pega en la cara al Tuerto</td>
+<td>—</td>
+<td>Golpe fuerte</td>
+</tr>
+<tr class="odd">
+<td>87</td>
+<td>1:29</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>El Tuerto suelta a Dizzy, que cae al barro</td>
+<td>TUERTO: «Señora… perdón, señora.»</td>
+<td>Caída en el barro</td>
+</tr>
+<tr class="even">
+<td>88</td>
+<td>1:32</td>
+<td>2</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino, enamorado</td>
+<td>TOCINO: «Holy shit… I love this woman.»</td>
+<td>Golpe de chiste</td>
+</tr>
+<tr class="odd">
+<td>89</td>
+<td>1:34</td>
+<td>3</td>
+<td>Plano medio</td>
+<td>La abuela recoge los bultos y la cámara, y agarra a Dizzy de la
+oreja</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="15-el-camino-de-vuelta--137-17-s">15. El camino de vuelta · 1:37
+(17 s)</h3>
+<p><strong>Lugar:</strong> Camino de las palmas (CAMINO-PALMAS) al
+atardecer<br />
+<strong>Música y ambiente:</strong> Música: bambuco lento y tierno.
+Ambiente: grillos que empiezan, viento.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>90</td>
+<td>1:37</td>
+<td>3</td>
+<td>Toma aérea al atardecer</td>
+<td>Bartolo sube por el camino con la abuela, Dizzy y Tocino encima</td>
+<td>—</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>91</td>
+<td>1:40</td>
+<td>4</td>
+<td>Plano medio de los cuatro, cámara que retrocede con ellos</td>
+<td>Tocino, detrás de la abuela, le habla al oído</td>
+<td>TOCINO: «Señora, usted tiene unas piernas muy…»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>92</td>
+<td>1:44</td>
+<td>2</td>
+<td>Mismo plano</td>
+<td>La abuela le pega con la chancla sin voltear</td>
+<td>—</td>
+<td>Chanclazo</td>
+</tr>
+<tr class="even">
+<td>93</td>
+<td>1:46</td>
+<td>5</td>
+<td>Primer plano de Dizzy, bajito a cámara</td>
+<td>Dizzy, serio por primera vez</td>
+<td>DIZZY (bajito): «Esa cucha me salvó la vida, mi llave… pero no le
+digan que dije eso.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>94</td>
+<td>1:51</td>
+<td>3</td>
+<td>Primer plano de la abuela, de espaldas a Dizzy</td>
+<td>La abuela, sin voltear, sonríe</td>
+<td>GERTRUDIS: «Lo oí, mijito.»</td>
+<td>La música sube un poquito</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="16-la-comida--154-10-s">16. La comida · 1:54 (10 s)</h3>
+<p><strong>Lugar:</strong> Cocina con el fogón (COCINA-FOGON), de
+noche<br />
+<strong>Música y ambiente:</strong> Música: el bambuco sigue suave.
+Ambiente: fogón que crepita, olla hirviendo.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>95</td>
+<td>1:54</td>
+<td>4</td>
+<td>Plano medio</td>
+<td>La abuela sirve un plato enorme de sancocho a Dizzy</td>
+<td>GERTRUDIS: «Venga y coma primero, mi amor, que se me va a
+enfermar.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>96</td>
+<td>1:58</td>
+<td>4</td>
+<td>Plano medio de la abuela, mirando a Tocino</td>
+<td>La abuela le sirve a Tocino y le pellizca la barriga</td>
+<td>GERTRUDIS: «Y usted coma también, mijo, que pa' diciembre lo quiero
+gordito.»</td>
+<td>—</td>
+</tr>
+<tr class="odd">
+<td>97</td>
+<td>2:02</td>
+<td>2</td>
+<td>Primer plano de Tocino</td>
+<td>Tocino se pone pálido y traga saliva</td>
+<td>TOCINO: «…Oh, no.»</td>
+<td>Golpe de chiste</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="17-el-misterio--204-10-s">17. El misterio · 2:04 (10 s)</h3>
+<p><strong>Lugar:</strong> Zarzo (ZARZO) de noche; video del futuro en
+el callejón (CALLEJON-ALCANTARILLA)<br />
+<strong>Música y ambiente:</strong> Música: suspenso, zumbido
+eléctrico.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>98</td>
+<td>2:04</td>
+<td>4</td>
+<td>Plano general del zarzo de noche</td>
+<td>Dizzy duerme en el colchón; la gorra con la cámara está en la repisa
+y la cámara se prende sola</td>
+<td>—</td>
+<td>Pitido y zumbido</td>
+</tr>
+<tr class="even">
+<td>99</td>
+<td>2:08</td>
+<td>4</td>
+<td>Inserto: la pantalla de la cámara</td>
+<td>En la pantalla: Dizzy, gritando, cae de noche por la alcantarilla
+verde del callejón</td>
+<td>DIZZY (en el video, gritando): «¡Aaaah!»</td>
+<td>Grito con eco</td>
+</tr>
+<tr class="odd">
+<td>100</td>
+<td>2:12</td>
+<td>2</td>
+<td>Primerísimo plano de Dizzy despierto</td>
+<td>Dizzy con los ojos enormes</td>
+<td>DIZZY: «Hijueputa…»</td>
+<td>—</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="18-cierre--214-24-s">18. Cierre · 2:14 (24 s)</h3>
+<p><strong>Lugar:</strong> Zarzo de noche<br />
+<strong>Música y ambiente:</strong> Música: el tema de la serie entra
+suave.</p>
+<div class="tbl"><table>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Tiempo</th>
+<th>Seg.</th>
+<th>Plano</th>
+<th>Qué se ve</th>
+<th>Quién habla</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>101</td>
+<td>2:14</td>
+<td>5</td>
+<td>Primer plano de Dizzy con el palo selfie</td>
+<td>Dizzy le habla a la cámara, todavía asustado</td>
+<td>DIZZY: «¿Me meto por esa alcantarilla o qué, mis ratas? Escríbanlo
+en los comentarios.»</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td>102</td>
+<td>2:19</td>
+<td>3</td>
+<td>Primer plano</td>
+<td>Dizzy guiña el ojo</td>
+<td>DIZZY: «Sígueme pa' no perderte el próximo vlog, mi llave.»</td>
+<td>Golpe final</td>
+</tr>
+<tr class="odd">
+<td>103</td>
+<td>2:22</td>
+<td>16</td>
+<td>Solo en YouTube: escena tranquila (pantallas finales)</td>
+<td>La finca desde el aire de noche con estrellas (8 s) y Dizzy dormido
+en el zarzo (8 s)</td>
+<td>—</td>
+<td>Grillos y el tema de la serie</td>
+</tr>
+</tbody>
+</table></div>
+<h2
+id="revisión-de-continuidad-antes-de-pasar-a-voces-y-prompts">Revisión
+de continuidad (antes de pasar a voces y prompts)</h2>
+<ul>
+<li><strong>Por qué están ahí, antes del minuto 1:</strong> la abuela
+los manda a pagar la deuda con el café (toma 13, ≈ 0:33).</li>
+<li><strong>Cada frase responde a algo que ya se dijo o se vio:</strong>
+la «cámara» la nombra Dizzy en el gancho; el «Tuerto» lo presenta el
+recuerdo y la canción antes de que aparezca; «perico» y «lucas» los dice
+Tocino antes de la canción; «Talento» del Tuerto repite el de Dizzy en
+el recuerdo; «diciembre» es el miedo de Tocino que ya está en su
+ficha.</li>
+<li><strong>Cómo llegan de un lugar a otro:</strong> zarzo → corredor →
+camino (toma aérea) → pueblo (toma aérea) → plaza → esquina → olla (toma
+aérea) → escaleras → mercado → rincón → escaleras (la abuela) → camino
+al atardecer → cocina → zarzo.</li>
+<li><strong>Bartolo:</strong> baja con ellos a El Hueco, le quitan los
+bultos, se va en silencio durante el dominó (toma 74) y vuelve con la
+abuela. Es el héroe callado del capítulo.</li>
+<li><strong>La cámara:</strong> va en la gorra de Dizzy todo el
+capítulo; el Tuerto la toca en la toma 80; la abuela la recupera; de
+noche está en la repisa cuando se prende sola.</li>
+<li><strong>Un solo personaje habla por toma</strong> en todas las
+tomas.</li>
+<li><strong>Mínimo tres encuadres distintos por escena</strong>
+(general, medio y primer plano o inserto) en todas.</li>
+</ul>
+</main><footer>Parte 4 del capítulo 1. Cuando Jay dé el aval, sigue la parte 5: voces, efectos y música.</footer>
