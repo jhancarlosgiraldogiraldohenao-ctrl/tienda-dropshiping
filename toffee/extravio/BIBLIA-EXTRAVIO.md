@@ -217,6 +217,29 @@ ya existe: `toffee/refs/extravio/personajes/DONA-MULA.jpg`.
 - **Cómo habla:** voz gruesa, lenta y de campo, de arriero viejo. «No.» «Mmm.» «Eso no va a salir bien, muchacho.»
 - **Frase fija:** «…No.»
 
+### Tocino, el marrano rockero (personaje nuevo, 3-nov-2026)
+
+Marrano gordo y rosado con una cresta punk verde parada, chaqueta de cuero negra con taches sin mangas, gafas oscuras,
+una argolla en la trompa (la que tienen todos los marranos, pero él dice que es un piercing), pulseras de taches y una
+guitarra eléctrica vieja, rayada y pegada con cinta.
+
+- **Quién es:** el rockero del Pueblo de Arriba. Toca con su banda (que nunca llega completa) en la Cantina El Último
+  Tinto. Es el mejor amigo del protagonista y su peor influencia: todos los planes locos empiezan con «Tocino tiene una
+  idea».
+- **Personalidad:** escandaloso, dramático, se cree una leyenda del rock aunque nunca ha tenido un éxito. Todo lo vive a
+  todo volumen: grita, hace solos de guitarra en los peores momentos, se tira al público aunque no haya público. Por dentro
+  es un sentimental que llora con baladas.
+- **Su miedo:** que se lo coman. Le tiene pánico a diciembre, a los asados y a la palabra «chicharrón». Es vegetariano y
+  lo dice cada vez que puede.
+- **Chistes que se repiten:** su solo de guitarra despierta al Nevado Dormilón; la abuela lo odia por el ruido pero en
+  secreto tararea sus canciones; Bartolo es el único que no se impresiona con él («…No.»); cada vez que alguien dice
+  «tocino» en la conversación, él se pone pálido.
+- **Cómo habla:** ronco y gritón, de rockero viejo: «¡Rock and roll, nene!», «¡Esto es una chimba, hermano!», «¡Qué
+  chimba de distorsión!».
+- **Frase fija:** «¡El rock no muere, hermano… y yo tampoco, ni en diciembre!»
+- **Para qué sirve:** los videoclips (parodias de rock, punk y metal con letra propia), las fiestas, los viajes al mundo
+  (una gira) y como compañero de aventuras cuando la abuela está lejos.
+
 ### Los vecinos
 
 | Personaje | Quién es | Manía | Cómo habla | Frase fija |
@@ -256,7 +279,7 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 | **Visita a una leyenda** | Pasa un día con una leyenda | «Un día con el Silbón en los Llanos» |
 | **Fecha especial** | El vlog de la fecha, el mismo día | Velitas en la finca, Día de Muertos en México, Halloween en Estados Unidos |
 | **House tour** | Muestra el zarzo, la finca o la casa de un vecino | «House tour de la finca de mi abuela» |
-| **Videoclip** | Brayan canta (parodia de vallenato, reguetón, salsa o corrido con letra propia) | «Brayan – Pelado pero feliz» |
+| **Videoclip** | Brayan canta (parodia de vallenato, reguetón, salsa o corrido con letra propia), o Tocino con su banda (rock, punk, metal) | «Brayan – Pelado pero feliz», «Tocino – No me coman en diciembre» |
 | **Venta dentro del mundo** | Muestra un producto real como si viniera de Extravío | Productos para mascotas en guiño, la figura de Brayan cuando exista |
 
 ## 11. Cómo se hace cada vlog (lo aprendido de Gnomo, en reglas)
@@ -319,9 +342,10 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 | Gobernador Sapo | Santandereano | Loud, pompous politician giving a speech |
 | Bruja Chepa | Caleño | Sassy, playful, mysterious witch |
 | Don Chepe | Paisa de pueblo | Old, chatty, storytelling bus driver |
+| Tocino | Rockero viejo | Loud, raspy, gravelly old rock singer voice, dramatic and over the top, shouts with joy |
 
 Las voces de otros países (la Catrina mexicana, las ratas de Nueva York) se crean cuando toque el viaje. Solo quedan
-guardadas siempre las voces fijas (Brayan, Doña Gertrudis, Bartolo, Cuca, El Tuerto); las de un solo vlog se guardan como
+guardadas siempre las voces fijas (Brayan, Doña Gertrudis, Bartolo, Tocino, Cuca, El Tuerto); las de un solo vlog se guardan como
 muestra y se borran para liberar espacio.
 
 ## 15. Los primeros 10 vlogs (propuesta, con la historia que crece)
@@ -345,7 +369,7 @@ muestra y se borran para liberar espacio.
 - Extravío pasó de «debajo de las ciudades» a **una Colombia mágica con todos sus paisajes**.
 - La casa de Brayan pasó de la Cloaca a **el zarzo de la finca de Doña Gertrudis**; la Patasola dejó de ser la casera.
 - Doña Gertrudis pasó de tendera boyacense a **abuela finquera**, segunda protagonista.
-- Entró **Bartolo, la mula**. Se fue Pirulo, el duende (se puede recuperar).
+- Entró **Bartolo, la mula**, y **Tocino, el marrano rockero**. Se fue Pirulo, el duende (se puede recuperar).
 - La plata son **tapas de cualquier gaseosa y cualquier país**.
 - La magia pasó de polvo de cocuyo a **perico** (sección 5).
 - Nuevos formatos: **Mandados de la abuela, Viajes por Colombia y Viajes al mundo**.
