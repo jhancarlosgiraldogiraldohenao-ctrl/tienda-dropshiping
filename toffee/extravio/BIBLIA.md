@@ -1,4 +1,4 @@
-> **ARCHIVADA el 3-nov-2026.** Reemplazada por `BIBLIA-LUCHO.md` (Lucho protagonista, Extravío como reino mágico). Se guarda solo como referencia.
+> **ARCHIVADA el 3-nov-2026.** Reemplazada por `BIBLIA-EXTRAVIO.md` (Rocco protagonista, Extravío como Colombia mágica). Se guarda solo como referencia.
 
 # EXTRAVÍO · biblia de la serie (versión 1, 29-oct-2026)
 Serie de YouTube de Toffee y Galleta. Aprobada por Jay el 29-oct-2026 («me encanta»). Esta es la fuente de verdad del mundo; las decisiones de negocio están en `DECISIONES.md` y los estudios en `toffee/ESTUDIO-*.md`.
