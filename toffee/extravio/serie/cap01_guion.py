@@ -83,8 +83,8 @@ P1 = [
 
 P2 = [
 ("10. El Tuerto", "Rincón del Tuerto (HUECO-RINCON-TUERTO)", "Música: bajo de reguetón oscuro y lento. Ambiente: barril que crepita.", [
- (3, "Primerísimo plano del Tuerto (arranca la parte 2 con la respuesta)", "El Tuerto, con el palillo en la boca, mira con su único ojo", "TUERTO: «Tú me debes, ratica… ¿sí o qué?»", "—"),
- (4, "Plano medio del Tuerto en su trono de sillas de carro", "El Tuerto señala los bultos de café", "TUERTO: «Esa cámara me la ganaste con trampa. Y ese café ahora es mío.»", "—"),
+ (3, "Primerísimo plano del Tuerto (arranca la parte 2 con la respuesta)", "El Tuerto, con el palillo en la boca, mira con su único ojo", "TUERTO: «Usted me debe, ratica… ¿sí o qué, pues?»", "—"),
+ (4, "Plano medio del Tuerto en su trono de sillas de carro", "El Tuerto señala los bultos de café", "TUERTO: «Esa cámara me la ganó con trampa. Y ese café ahora es mío.»", "—"),
  (3, "Plano general", "La chucha y la iguana le quitan los bultos a Bartolo y los llevan al trono; Bartolo ni se mueve", "—", "Bultos arrastrados"),
  (2, "Primer plano de Dizzy", "Dizzy aprieta los dientes", "DIZZY (bajito): «Gonorrea…»", "—"),
 ]),

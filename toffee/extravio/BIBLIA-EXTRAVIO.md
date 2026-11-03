@@ -219,9 +219,8 @@ chaleco de cuero viejo y roto, una pañoleta gringa desteñida y una guitarra el
 quebrado, pero se cree una estrella.
 
 - **Es gringo y le dicen «el Pinche Gringo»** (pedido de Jay, 3-nov-2026). Llegó de Estados Unidos hace años por una
-  alcantarilla de medianoche y se quedó. Aprendió español en México, así que habla con acento gringo marcado y mezcla
-  palabras mexicanas («pinche», «güey», «órale») con inglés («dude», «man», «oh my God») y lo colombiano que va
-  aprendiendo, todo mal pronunciado y con los géneros al revés («un chimba», «la problema»). El apodo se lo dice Dizzy con
+  alcantarilla de medianoche y se quedó. Aprendió español en Colombia (gringo colombiano, pedido de Jay 4-nov-2026), así que habla con acento gringo marcado y mezcla
+  palabras colombianas («parce», «qué chimba», «bacano») con inglés («dude», «man», «oh my God»), todo mal pronunciado y con los géneros al revés («un chimba», «la problema»). El apodo se lo dice Dizzy con
   cariño y él lo lleva con orgullo: «¡Soy el Pinche Gringo, baby!». El chiste es él y su español, nunca que los gringos
   sean brutos.
 - **Quién es:** el rockero del Pueblo de Arriba. Toca con su banda (que nunca llega completa) en la Cantina El Último
@@ -341,11 +340,11 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 
 | Personaje | Acento | Para el prompt de ElevenLabs |
 |---|---|---|
-| Dizzy | Ñero de barrio colombiano, entendible en todo el mundo | Raspy street kid from a rough neighborhood, cocky and fast, nervous wheezy giggle (prompt completo en la ficha) |
+| Dizzy | Ñero rolo (barrio de Bogotá), carrasposo y fuerte (pedido de Jay, 4-nov-2026) | Prompt en `serie/CAP01-VOCES.md` |
 | Doña Gertrudis | Campesina cafetera (paisa de pueblo) | Elderly Colombian countryside grandmother, warm, sweet and bossy, scolds and spoils at the same time |
 | Bartolo | Arriero viejo | Very deep, slow, tired old farmer voice, few words, dry humor |
-| Cuca | Costeño | Fast, gossipy, cheerful Caribbean Colombian woman |
-| El Tuerto | Rolo (Bogotá) | Cold, low, menacing but ridiculous small-time gangster |
+| Cuca | Costeña de Barranquilla (o venezolana, a elegir) | Prompt en `serie/CAP01-VOCES.md` |
+| El Tuerto | Paisa malandro (Medellín), frío y bajito | Prompt en `serie/CAP01-VOCES.md` |
 | Gobernador Sapo | Santandereano | Loud, pompous politician giving a speech |
 | Bruja Chepa | Caleño | Sassy, playful, mysterious witch |
 | Don Chepe | Paisa de pueblo | Old, chatty, storytelling bus driver |

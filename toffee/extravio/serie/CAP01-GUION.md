@@ -168,8 +168,8 @@ Basado en la historia aprobada (`CAP01-HISTORIA.md`), el estudio de Gnomo Palomo
 
 | # | Tiempo | Seg. | Plano | Qué se ve | Quién habla | Efecto |
 |---|---|---|---|---|---|---|
-| 54 | 0:00 | 3 | Primerísimo plano del Tuerto (arranca la parte 2 con la respuesta) | El Tuerto, con el palillo en la boca, mira con su único ojo | TUERTO: «Tú me debes, ratica… ¿sí o qué?» | — |
-| 55 | 0:03 | 4 | Plano medio del Tuerto en su trono de sillas de carro | El Tuerto señala los bultos de café | TUERTO: «Esa cámara me la ganaste con trampa. Y ese café ahora es mío.» | — |
+| 54 | 0:00 | 3 | Primerísimo plano del Tuerto (arranca la parte 2 con la respuesta) | El Tuerto, con el palillo en la boca, mira con su único ojo | TUERTO: «Usted me debe, ratica… ¿sí o qué, pues?» | — |
+| 55 | 0:03 | 4 | Plano medio del Tuerto en su trono de sillas de carro | El Tuerto señala los bultos de café | TUERTO: «Esa cámara me la ganó con trampa. Y ese café ahora es mío.» | — |
 | 56 | 0:07 | 3 | Plano general | La chucha y la iguana le quitan los bultos a Bartolo y los llevan al trono; Bartolo ni se mueve | — | Bultos arrastrados |
 | 57 | 0:10 | 2 | Primer plano de Dizzy | Dizzy aprieta los dientes | DIZZY (bajito): «Gonorrea…» | — |
 
