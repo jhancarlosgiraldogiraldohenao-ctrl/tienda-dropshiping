@@ -8,7 +8,7 @@ canción propia como la de la fábrica de Santa de Gnomo.
 
 ## La idea en una frase
 
-Dizzy estrena su canal con una cámara que se robó; su abuela lo manda a un mandado sencillo (llevar el café al pueblo),
+Dizzy estrena su canal con una cámara que le ganó al Tuerto en una apuesta; su abuela lo manda a un mandado sencillo (llevar el café al pueblo),
 Tocino lo convence de hacer un negocio para volverse viral, todo sale mal en El Hueco con El Tuerto, y la abuela lo
 salva con la chancla. Al final, la cámara se prende sola y muestra algo que nadie esperaba.
 
@@ -22,7 +22,7 @@ salva con la chancla. Al final, la cámara se prende sola y muestra algo que nad
 | El problema y la escalada: cada intento sale peor | Tres intentos de recuperar el café, cada uno más ridículo |
 | Final con corazón | La abuela lo salva y le sirve comida sin regañarlo… casi |
 | Parte 1 cortada en la cara de susto; parte 2 arranca con la respuesta | La parte 1 termina cuando aparece El Tuerto; la parte 2 arranca con su cara |
-| Le pide al público que decida | «¿Quieren que vaya a buscar al dueño de la cámara?» |
+| Le pide al público que decida | «¿Me meto por esa alcantarilla o qué?» |
 
 ## Cómo se arma para YouTube (lo más importante)
 
@@ -93,9 +93,9 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 
 1. **Gancho (0 a 3 s).** Amanece en la finca. La cara de Dizzy pegada al lente: «¿Quiubo pues, mis ratas? Este es mi
    primer vlog… y si mi cucha se entera de dónde saqué esta cámara, me mata.»
-2. **De dónde salió la cámara (10 s).** Él mismo lo cuenta, en tres tomas rápidas: una noche, al lado de una
-   alcantarilla de la ciudad, encontró la cámara tirada… y al dueño, un influencer humano, nunca lo volvieron a ver.
-   «¿Robada? No, mi llave. Encontrada. Que es distinto, malparidos.»
+2. **De dónde salió la cámara (10 s).** Él mismo lo cuenta, en tres tomas rápidas en la mesa de dominó de El Hueco:
+   Dizzy, que apuesta todo lo que tiene, se jugó todas sus tapas contra la cámara del Tuerto… y ganó con una ficha que
+   sacó de la manga. «¿Trampa? No, mi llave. Talento. Que es distinto, malparidos.»
 3. **Su mundo (15 s).** Toma aérea de la finca entre los cafetales con niebla, el zarzo donde vive (colchón, tapas en
    frascos, queso escondido) y Bartolo, que no se deja grabar: «…No.» Dizzy: «Este es Bartolo, el hijueputa más
    amargado de Colombia.»
@@ -132,11 +132,13 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 12. **Escalada, intento 2.** Cuca intenta seducirlo en bikini para que suelte el café. El Tuerto la mira de arriba abajo:
     «No.» Tocino, de fondo: «¡Yo sí, mami!» Cuca, ofendida por los dos, le tira el chisme al Tuerto de que Dizzy anda
     grabando todo. Dizzy: «¡Sapa malparida!»
-13. **Escalada, intento 3.** Dizzy intenta robarle el café mientras El Tuerto está distraído. Lo pillan, lo cuelgan de
-    la cola y lo amenazan con quitarle la cámara. «¡Suélteme, pirobo! ¡Perro hijueputa!» Momento de susto de verdad.
+13. **Escalada, intento 3: la apuesta.** Dizzy hace lo único que sabe hacer: apostar. «Le juego el café al dominó, gato
+    hijueputa. Y si pierdo… le doy la cámara.» Juegan en la mesa de dominó, con todo El Hueco mirando. Esta vez El Tuerto
+    es el que saca la ficha de la manga. Dizzy pierde todo. El Tuerto lo cuelga de la cola: «Así se siente, ratica.»
+    «¡Suélteme, pirobo! ¡Perro hijueputa!» Momento de susto de verdad.
 14. **La abuela.** Desde lejos se oye: «¡MIJITO!». Silencio total en El Hueco. Todos se esconden. Doña Gertrudis está en
     la entrada, montada en Bartolo: «¡Virgen santísima, suelte a mi muchacho!». Tira la chancla desde lejos, en cámara
-    lenta, y le pega a El Tuerto en la cara. El Tuerto suelta el café y a Dizzy. «Señora… perdón, señora.» Tocino:
+    lenta, y le pega a El Tuerto en la cara. El Tuerto suelta el café, la cámara y a Dizzy. «Señora… perdón, señora.» Tocino:
     «Holy shit… I love this woman.»
 15. **El camino de vuelta.** Atardecer en las montañas. Dizzy, Tocino y la abuela montados en Bartolo, en silencio.
     Tocino, a la abuela: «Señora, usted tiene unas piernas muy… » Ella le pega con la chancla sin voltear. Dizzy, bajito,
@@ -145,19 +147,22 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 16. **La comida.** En la cocina de la finca, junto al fogón. La abuela le sirve un plato enorme: «Venga y coma primero,
     mi amor, que se me va a enfermar.» Tocino ve que es sancocho de gallina… no, de pollo… y se pone pálido de todas
     formas.
-17. **El misterio (el gancho para el capítulo 2).** De noche, en el zarzo, la cámara se prende sola. En la pantalla
-    aparece un pedazo de video del dueño: un humano asustado, en un lugar oscuro, que susurra: «Si alguien encuentra esta
-    cámara… estoy en Extravío.» Dizzy mira al lente, con los ojos enormes: «Hijueputa…»
-18. **Cierre.** «¿Quieren que vaya a buscar a este man? Escríbanlo en los comentarios. Sígueme pa' no perderte el
-    próximo vlog, mi llave.»
+17. **El misterio (el gancho para el capítulo 2).** De noche, en el zarzo, la cámara se prende sola y muestra un video
+    que Dizzy **todavía no ha grabado**: él mismo, gritando, cayendo de noche por una alcantarilla que brilla verde. La
+    cámara del Tuerto es mágica: a veces muestra pedazos del futuro. Dizzy mira al lente, con los ojos enormes:
+    «Hijueputa…»
+18. **Cierre.** «¿Me meto por esa alcantarilla o qué, mis ratas? Escríbanlo en los comentarios. Sígueme pa' no perderte
+    el próximo vlog, mi llave.»
 
 ## Lo que deja sembrado para los próximos capítulos
 
-- **El misterio del dueño de la cámara:** está perdido en algún lugar de Extravío.
-- **La deuda con El Tuerto:** sigue viva y él quiere la cámara.
+- **La cámara mágica:** a veces muestra pedazos del futuro; el primero es Dizzy cayendo por la alcantarilla verde (la
+  puerta a otros lugares y países).
+- **El Tuerto:** sabe que Dizzy le ganó la cámara con trampa y la quiere de vuelta.
 - **El perico:** Tocino se quedó con las ganas de hacer el video mágico.
 - **La deuda de la finca:** el café era para pagar la tienda; la abuela tiene problemas de plata.
-- **El público decide:** si Dizzy sale a buscar al dueño de la cámara.
+- **El público decide:** si Dizzy se mete por la alcantarilla.
+- **El vicio de Dizzy:** apuesta todo, siempre. Va a volver en muchos capítulos.
 
 ## Datos de producción (aproximados)
 
@@ -165,9 +170,8 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
   pantallas finales). En Shorts, TikTok e Instagram van como dos reels.
 - **Tomas de Flow:** cerca de 70 tomas (unas 16 por minuto, como Gnomo), unos 850 a 950 créditos con repeticiones. La
   canción ahorra: muchas tomas cortas de 4 s del mercado.
-- **Personajes:** Dizzy, Doña Gertrudis, Bartolo, Tocino, Cuca, El Tuerto, la Llorona (un segundo, de pasada) y el dueño
-  de la cámara (solo en la pantalla, al final).
-- **Lugares que pide la historia (para la parte 3):** el callejón con la alcantarilla, la finca por fuera, el zarzo, la
+- **Personajes:** Dizzy, Doña Gertrudis, Bartolo, Tocino, Cuca, El Tuerto, la Llorona (un segundo, de pasada) y los vendedores de El Hueco.
+- **Lugares que pide la historia (para la parte 3):** el callejón con la alcantarilla (en el video del futuro), la finca por fuera, el zarzo, la
   cocina con el fogón, el camino cafetero con las palmas, la plaza del pueblo y El Hueco.
 - **Groserías:** muchas, en boca de Dizzy, siempre después del segundo 10 y nunca en el título ni la miniatura. Ojo: YouTube puede limitar los anuncios si hay groserías fuertes muy seguidas; si pasa, se tapan algunas con «piiip» (que también da risa).
 - **El chiste de «muestra esa cuca»:** va en la mitad del video (no en el gancho, el título ni la miniatura) para no bajar el alcance.

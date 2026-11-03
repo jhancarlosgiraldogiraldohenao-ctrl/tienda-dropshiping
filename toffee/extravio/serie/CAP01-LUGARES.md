@@ -2,7 +2,7 @@
 
 ## 1. El callejón con la alcantarilla
 
-Donde Dizzy encontró la cámara (escena 2). Noche, ciudad.
+El video del futuro que muestra la cámara (escena 17). Noche.
 
 ```
 Vertical shot of a narrow, wet city alley at midnight in Latin America, looking straight down the alley: tall old brick and painted concrete walls on both sides with peeling paint rising to the top of the frame, tangled electric cables crossing overhead, a single orange street lamp high up, puddles reflecting the light, a few black trash bags against one wall, and a round iron manhole cover on the wet cobblestones in the lower center with a faint green glow coming out of its holes, light fog in the distance. Vertical 9:16 tall frame composition, eye-level camera with the ground visible in the lower third and empty space in the center for a small character to stand later. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, no text, no letters, no logos, no signs.
@@ -86,14 +86,6 @@ Para cuando aparece El Tuerto y le cobra la vacuna a Dizzy.
 
 ```
 Vertical medium shot at night of a dark, threatening corner at the end of a slum street market: an old battered armchair made of car seats against a brick wall in the center, a single red light bulb hanging above it, stacked stolen goods and plain burlap sacks around it, a burning barrel giving orange light at one side, smoke, puddles on the muddy ground in the foreground. Abstract graffiti shapes on the wall without any letters. Plain sacks without any printing. Vertical 9:16 tall frame composition, eye-level camera with the ground visible in the lower third and empty space in the center for a small character to stand later. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, no text, no letters, no logos, no signs.
-```
-
-## 9. El dueño de la cámara (opcional)
-
-Solo sale un segundo en la pantalla de la cámara, al final (escena 17). Es un humano inventado, no una persona real.
-
-```
-Vertical shaky handheld selfie video frame of a scared young man in his twenties with messy hair and a dirty hoodie, his face filling the upper half of the frame, lit only by a flashlight from below, inside a dark wet stone tunnel, whispering to the camera with wide frightened eyes. A fictional character, not a real person. Vertical 9:16 tall frame. Photorealistic 3D animated film style, no text, no letters, no logos.
 ```
 
 ## 10. Toma aérea: la finca desde el aire

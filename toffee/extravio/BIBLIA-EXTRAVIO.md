@@ -11,8 +11,8 @@ ficha `PROTAGONISTA-DIZZY.html`. Es una propuesta: Jay aprueba o cambia.
 ## 1. La idea en una frase
 
 **Extravío es una Colombia mágica escondida, con todas las bellezas del país (fincas cafeteras, páramos, montañas, mar,
-selva, desierto y llanos), donde viven las criaturas que los humanos no ven. Dizzy, una rata ñera de barrio colombiano, se
-robó la cámara de un influencer humano y graba vlogs de todo lo que le pasa: en la finca de su abuela postiza, por toda
+selva, desierto y llanos), donde viven las criaturas que los humanos no ven. Dizzy, una rata ñera de barrio colombiano, le
+ganó una cámara al Tuerto en una apuesta y graba vlogs de todo lo que le pasa: en la finca de su abuela postiza, por toda
 Colombia y por el mundo entero.**
 
 El nombre viene de «extraviarse»: la única forma de entrar es perderse. Quien se pierde de verdad a la medianoche, en
@@ -309,9 +309,11 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 
 ## 12. Lo que conecta todos los videos
 
-- **El misterio de la cámara:** era de un influencer humano que se perdió una medianoche y nunca volvió. A veces la cámara
-  se prende sola y muestra pedazos de sus videos, grabados en lugares de todo el mundo. ¿Dónde está? Esa pregunta lleva a
-  Dizzy de viaje.
+- **La cámara mágica (cambio de Jay, 4-nov-2026):** Dizzy se la ganó al Tuerto en una apuesta de dominó, con trampa. La
+  cámara es mágica: a veces se prende sola y muestra pedazos del futuro (videos que Dizzy todavía no ha grabado, en
+  lugares de Colombia y del mundo). Esos pedazos lo llevan de viaje. El Tuerto la quiere de vuelta.
+- **El vicio de Dizzy: apostar.** Apuesta todo lo que tiene, siempre (dominó, dados, carreras de cucarachas). Gana con
+  trampa, pierde lo que no es suyo, y cada apuesta es el arranque de un problema.
 - **La abuela y la finca:** la finca tiene deudas con el Gobernador Sapo y la podrían quitar. Dizzy, que nunca hace nada,
   empieza a buscar tapas por todo el mundo para salvarla, sin decirle a ella. Es el corazón de la temporada.
 - **Las deudas de Dizzy:** el arriendo del zarzo, la vacuna del Tuerto, los fiados en el pueblo.
@@ -324,7 +326,7 @@ por la regla 2. Uno nuevo en cada vlog; si gusta, vuelve.
 | Objeto | Qué hace | Qué sale mal |
 |---|---|---|
 | **El perico** | La magia básica: hace volar, crecer, hablar, brillar | Siempre se pasan con la cantidad |
-| **La cámara robada** | Graba todo; a veces muestra videos de su dueño humano | El misterio de la temporada |
+| **La cámara del Tuerto** | Graba todo; a veces se prende sola y muestra el futuro | Nunca se sabe si lo que muestra es bueno o malo |
 | **La ruana invisible** | Quien se la pone desaparece | Solo desaparece la ruana; Dizzy queda a la vista en calzoncillos |
 | **La arepa de la suerte** | Quien la muerde tiene un día de suerte | La suerte le cae a quien está al lado (casi siempre a Bartolo) |
 | **Las botas pantaneras saltarinas** | Saltan tan alto como una montaña | No hay forma de frenar |
@@ -357,13 +359,13 @@ muestra y se borran para liberar espacio.
 
 | # | Vlog | Qué pasa | Qué deja para después |
 |---|---|---|---|
-| 1 | **Me robé la cámara de un humano** | Dizzy encuentra la cámara de un influencer perdido al lado de una alcantarilla y decide volverse vlogger; la abuela lo pilla grabando | La cámara se prende sola y se ve una cara humana |
+| 1 | **Mi primer vlog (y casi me mata mi abuela)** | Dizzy le gana la cámara al Tuerto en una apuesta y decide volverse vlogger; la abuela lo pilla grabando | La cámara se prende sola y se ve una cara humana |
 | 2 | **House tour de la finca de mi abuela** | Muestra la finca, el zarzo y a Bartolo, que no se deja grabar; la abuela le manda saludos al público | La abuela recibe una carta del Gobernador: la finca tiene deudas |
 | 3 | **Probando el perico** | Compra perico en El Hueco para hacer magia y sale volando por todo el pueblo | Le queda debiendo al Tuerto |
 | 4 | **Mi abuela me mandó por leña** | Un mandado sencillo termina con Dizzy y Bartolo perdidos en el Páramo de los Frailejones | Los frailejones le cuentan dónde hay tapas antiguas |
 | 5 | **Me fui al Valle de las Palmas Gigantes** (viaje) | Busca las tapas antiguas en lo alto de las palmas; Bartolo no quiere subir | Encuentra una tapa rarísima… de otro país |
 | 6 | **Salí por una alcantarilla y aparecí en México** (parte 1) | Siguiendo la tapa, cae en Ciudad de México en Día de Muertos | Una Catrina lo confunde con un alma perdida |
-| 7 | **Día de Muertos en México** (parte 2) | Con el xolo y la Catrina; tiene que volver antes del amanecer | Vuelve con una pista del dueño de la cámara |
+| 7 | **Día de Muertos en México** (parte 2) | Con el xolo y la Catrina; tiene que volver antes del amanecer | La cámara le muestra otro pedazo del futuro |
 | 8 | **El Gobernador Sapo quiere la finca** | Dizzy se cuela en la alcaldía y lo graba todo | El video se vuelve viral en Extravío |
 | 9 | **Me subí al Nevado Dormilón** | Busca el humo de la verdad y lo respira antes de hablar con la abuela | Le confiesa que la quiere (momento sincero) |
 | 10 | **Salí por una alcantarilla en Nueva York** (parte 1) | Las ratas gringas, Pie Grande en el metro, el público decide si sigue | Final en suspenso |
