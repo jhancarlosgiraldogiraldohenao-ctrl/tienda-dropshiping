@@ -68,6 +68,15 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - **Capítulo 1 aprobado por Jay el 31-oct-2026 (5:38). ANTES de escribir prompts o editar cualquier capítulo nuevo, leer `toffee/extravio/MANUAL-PRODUCCION.md`** (orden de trabajo, reglas fijas de prompts, tabla de errores ya cometidos, voces, edición y revisión obligatoria) y `toffee/extravio/ESTUDIO-PLANOS.md`. Pedido de Jay: prompts optimizados y sin errores técnicos a la primera, para no gastar créditos ni tiempo; aprender de cada capítulo y anotar los errores nuevos en el manual.
 - **Lo que manda desde el capítulo 1 (reemplaza reglas viejas de arriba):** voz final SIEMPRE de ElevenLabs (Flow solo da la boca y el ritmo; Claude manda el texto con ritmo medido y pega la voz con `toffee/extravio/editor/pegar.py`); música solo por momentos y efectos de reacción en chistes y acciones (cambio de Jay, 1-nov-2026; ver el manual); ambiente por escena bajo las voces; fundidos cortos entre tomas; tomas puente entre lugares; un solo personaje habla por toma; el queso de Lucho se nombra UNA vez; nada de texto en pantalla ni en letreros. Editor base: `toffee/extravio/editor/ed01p.py`.
 
+## Extravío: orden de trabajo por partes (pedido de Jay, 3-nov-2026)
+Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir con la siguiente; no adelantar partes.
+1. **Imágenes de los personajes** de los primeros capítulos (prompts en `toffee/extravio/PROMPTS-PERSONAJES.md`).
+2. **La historia del capítulo 1** (de qué trata), copiando la estrategia y la forma de contar de Gnomo Palomo (`toffee/ESTUDIO-GNOMO-PALOMO.html`). Jay da el aval.
+3. **Imágenes de los lugares** que pide esa historia.
+4. **El guion y la estructura del video** (tomas, diálogos, tiempos; todavía no los prompts de video).
+5. **Voces, efectos de sonido y música** que pida el guion (Jay los genera).
+6. **Los prompts de video** (Flow), toma por toma.
+
 ## Entregas en link (pedido de Jay, 29-oct-2026)
 - **Prompts nuevos o cambiados: SIEMPRE en el chat, cada uno en su bloque para copiar y pegar** (pedido de Jay, 29-oct-2026). No basta con decir «está en el link».
 - Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.

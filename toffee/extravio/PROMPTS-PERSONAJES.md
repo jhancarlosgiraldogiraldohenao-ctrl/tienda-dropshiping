@@ -93,3 +93,23 @@ Speaks only in Colombian Spanish with a slow rural accent. A very old, tired far
 ```
 …No. … Mmm. Eso no va a salir bien, muchacho. … Le dije. … No.
 ```
+
+## Cuca, la prima cucaracha
+
+Secundaria: sale en El Hueco desde los primeros vlogs.
+
+**Imagen (Nano Banana Pro)**
+
+```
+Character reference sheet of an original cartoon cockroach, four views (front, three-quarter, side, back) on a plain light gray background: a small brown cockroach standing upright on two legs, long wiggly antennae, big expressive eyes with long eyelashes, bright red lipstick, big gold hoop earrings, a colorful flowered headscarf tied as a turban, a bright yellow and orange ruffled Caribbean blouse, and a fanny pack full of keys. Cheerful gossipy expression, one hand on her hip. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+```
+
+## El Tuerto, el gato malandro
+
+Secundario: el que le cobra la vacuna a Dizzy en El Hueco.
+
+**Imagen (Nano Banana Pro)**
+
+```
+Character reference sheet of an original cartoon alley cat, four views (front, three-quarter, side, back) on a plain light gray background: a small scrawny black-and-white street cat with a torn ear, a black eye patch over his left eye, a scar across his nose, a toothpick in his mouth, an oversized dark gray tracksuit jacket with the sleeves pushed up, and cheap gold rings on his paws. Cold, menacing half-closed eye, trying to look tough but a little ridiculous because he is so small. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+```
