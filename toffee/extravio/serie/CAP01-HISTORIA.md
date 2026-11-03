@@ -44,6 +44,12 @@ dos reels que se pegan en un solo video largo.**
 - **Lo que se gana:** los reels traen gente nueva todos los días y el video largo junta las vistas y los suscriptores,
   igual que la recopilación de Gnomo (1,42 millones de vistas con material que ya existía).
 
+## Los subtítulos
+
+Como Gnomo, **subtítulos pegados en todo** (shorts y video largo): letras blancas en negrita con borde negro,
+pequeñas, centradas, pocas palabras a la vez, con las palabras clave en color. Las frases en inglés de Tocino salen
+traducidas.
+
 ## La música y la canción
 
 Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 con cortes de 1 a 3 s), este capítulo trae
@@ -79,7 +85,7 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 - **Tocino:** gringo cochino (viejo verde con las mayores de edad): coquetea feo con todas, con acento gringo y
   palabras mal dichas: «uy, mami», «¡hey, dude!», «un chimba». **A veces suelta frases completas en inglés** («What the
   fuck, dude?», «Oh my God, this is insane», «Holy shit», «Let's rock, baby!», «Shut up, man»). **Esas frases van
-  traducidas en pantalla** con letras pequeñas (es la única excepción a «sin texto en pantalla» de los capítulos).
+  traducidas en el subtítulo.**
 
 ## La historia, paso a paso
 
