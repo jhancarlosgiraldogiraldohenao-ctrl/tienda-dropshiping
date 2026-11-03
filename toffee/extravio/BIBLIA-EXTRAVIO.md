@@ -118,7 +118,7 @@ aéreas de estos paisajes son la parte bonita de cada vlog.
 | **La Finca La Esperanza de Doña Gertrudis** | Casa de bahareque blanca con puertas y balcones de colores, corredor con macetas, hamaca, fogón de leña, un patio de secar café y cafetales en la ladera, con plátano y guadua. Niebla en las mañanas | La casa de Dizzy: vive en el zarzo (el ático) y paga el arriendo trabajando… cuando trabaja |
 | **El zarzo de Dizzy** | Ático de tablas con un colchón viejo, una hamaca, su colección de llaves, tapas de gaseosa en frascos y queso escondido en todas partes | El «house tour», donde prueba los objetos nuevos |
 | **El Pueblo de Arriba** | Pueblo cafetero de colores pegado a la montaña: balcones con flores, plaza con fuente, iglesia, jeeps «Willys» cargados de café | Fiestas, ferias, chismes, el mundo vivo de fondo |
-| **El Hueco** | El mercado negro debajo del puente del pueblo: toldos de colores, bombillos, humo y vendedores raros. Se entra con contraseña | Comprar perico y objetos mágicos, negocios turbios |
+| **El Hueco** | Una «olla»: el barrio peligroso al fondo de una cañada, bajando unas escaleras desde el pueblo. Calle de barro entre ranchos de ladrillo, toldos, bombillos, humo, carne colgada, cosas robadas y vendedores raros. Se entra con contraseña | Comprar perico y objetos mágicos, negocios turbios |
 | **La Cantina El Último Tinto** | Bar de tablas con rocola, dominó y criaturas raras tomando tinto y agüita de panela | Rumores, apuestas, peleas |
 
 ### Los viajes por Colombia (cada uno da para uno o varios vlogs)

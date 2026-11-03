@@ -42,26 +42,50 @@ Aerial wide shot of a narrow dirt mule trail winding down a steep green mountain
 
 ## 6. La plaza del pueblo
 
-Donde aparecen Tocino y la Llorona (escena 6).
+Donde aparecen Tocino y la Llorona (escena 6). Ángulo principal; el 6b es la esquina de Tocino.
 
 ```
 Wide shot of the main square of a colorful Colombian coffee town on a sunny morning: two-story colonial houses painted in bright colors with carved wooden balconies and doors full of hanging flowers, a white church with a bell tower, a stone fountain in the middle, benches and trees, two old jeeps loaded with coffee sacks parked on the side, green mountains rising behind the town. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
 ```
 
+## 6b. La plaza, otro ángulo: la esquina de Tocino
+
+Donde Tocino toca la guitarra, para el plano y contraplano con Dizzy.
+
+```
+Medium shot on a sunny morning of a street corner in a colorful Colombian coffee town square: a bright painted wall with a carved wooden door and a balcony with hanging flowers above, an old wooden bench and a lamp post on the sidewalk, the white church tower and the fountain blurred in the background. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
+```
+
 ## 7. La entrada de El Hueco
 
-El mercado negro escondido debajo del puente (escena 7). Noche.
+Una «olla»: el barrio peligroso al fondo de una cañada. Así se ve desde arriba, al bajar (escena 7). Noche.
 
 ```
-Wide shot at night of an old stone arch bridge over a small dark river at the edge of a mountain town: under the bridge there is a hidden entrance to a secret market, a heavy old wooden door with a small peephole, colorful plastic tarps hanging around it, string lights and bare light bulbs, smoke drifting out, puddles reflecting the colored lights, mysterious mood. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
+Wide shot at night looking down from the top of narrow, broken concrete stairs into a dangerous slum hidden at the bottom of a deep ravine at the edge of a mountain town: crooked brick shacks stacked on both sides with tin roofs, tangled electric cables, smoke rising from burning barrels and grills, bare light bulbs and a few colored lights, a muddy street full of makeshift market stalls far below, puddles, garbage, threatening and mysterious mood. Abstract graffiti shapes on the walls without any letters. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
 ```
 
-## 8. El Hueco por dentro
+## 8. El Hueco por dentro (toma principal)
 
-El mercado negro, donde suena la canción y aparece El Tuerto (escenas 7 a 14).
+La calle del mercado, donde suena la canción y aparece El Tuerto (escenas 7 a 14).
 
 ```
-Wide shot of a crowded underground black market under a big stone bridge at night: a maze of small wooden stalls covered with colorful plastic tarps, bare light bulbs and string lights, smoke and haze, stalls selling jars of glowing white sparkling powder, huge piles of colorful soda bottle caps, rusty keys, strange magical objects and old radios, a small wooden table for playing dominoes, a tiny wooden stage in the middle, dark corners, warm and mysterious. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
+Wide shot at night inside a dangerous, crowded slum street market at the bottom of a ravine: a narrow muddy street between run-down brick shacks with tin roofs, makeshift stalls made of wooden pallets and torn colorful plastic tarps, raw meat and sausages hanging from metal hooks, a smoky street grill with chorizos, piles of stolen things (old bicycles, car tires, radios, shoes), jars of glowing white sparkling powder, huge piles of colorful soda bottle caps, rusty keys, a small table for dominoes, bare light bulbs, burning barrels, smoke and haze, puddles and garbage, dangerous mood. Abstract graffiti shapes on the walls without any letters. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
+```
+
+## 8b. El Hueco, otro ángulo: el puesto de carne
+
+Para las tomas de cerca y el plano y contraplano en El Hueco.
+
+```
+Medium shot at night at ground level in front of a dirty street meat stall inside a dangerous slum market: a wooden counter with a heavy butcher knife and a chopping block, raw meat and sausages hanging from rusty hooks, a smoky grill with chorizos, a bare light bulb swinging above, torn plastic tarps, a muddy alley with more stalls and smoke in the blurred background. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
+```
+
+## 8c. El Hueco, otro ángulo: el rincón del Tuerto
+
+Para cuando aparece El Tuerto y le cobra la vacuna a Dizzy.
+
+```
+Medium shot at night of a dark, threatening corner at the end of a slum street market: an old battered armchair made of car seats in front of a brick wall, stacked stolen goods and coffee sacks around it, a single red light bulb, a burning barrel giving orange light, smoke, puddles on the muddy ground, the busy market lights blurred in the background. Abstract graffiti shapes on the wall without any letters. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, 16:9 wide frame, no text, no letters, no logos, no signs.
 ```
 
 ## 9. El dueño de la cámara (opcional)

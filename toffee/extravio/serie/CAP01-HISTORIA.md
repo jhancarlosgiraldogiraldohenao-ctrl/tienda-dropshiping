@@ -110,7 +110,7 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
    cámara y se le ocurre la idea: «Con ese cámara y ese café… vendemos el café en El Hueco por el doble de lucas,
    compramos perico, hacemos un video mágico y ¡boom! Famosos, man. Let's rock, baby!» Dizzy: «Usted es un genio, gringo
    hijueputa.»
-7. **El Hueco y la canción (45 s).** Entran por debajo del puente con la contraseña. Tocino: «Oh my God, this is
+7. **El Hueco y la canción (45 s).** Bajan las escaleras hasta la olla y dicen la contraseña. Tocino: «Oh my God, this is
    insane…». Suena **«Bienvenido a El Hueco»**: Cuca aparece en bikini rojo cantando y bailando como diva, los vendedores
    hacen coros, y en tomas cortas se ve todo el mercado negro.
 8. **«Muestra esa cuca» (20 s).** Termina la canción. Tocino se baja las gafas, la mira de arriba abajo y, con su
