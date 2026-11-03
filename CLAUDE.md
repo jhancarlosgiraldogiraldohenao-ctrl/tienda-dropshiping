@@ -71,8 +71,8 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 ## Extravío: orden de trabajo por partes (pedido de Jay, 3-nov-2026)
 Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir con la siguiente; no adelantar partes.
 1. **Imágenes de los personajes** de los primeros capítulos (prompts en `toffee/extravio/PROMPTS-PERSONAJES.md`). ✅ Lista el 3-nov-2026: DIZZY, GERTRUDIS, BARTOLO, TOCINO, CUCA y TUERTO en `toffee/refs/extravio/personajes/`.
-2. **La historia del capítulo 1** (de qué trata; propuesta en `toffee/extravio/serie/CAP01-HISTORIA.md`, link https://claude.ai/artifact/ASdqUEhnZVok6NvuSw2XRP), copiando la estrategia y la forma de contar de Gnomo Palomo (`toffee/ESTUDIO-GNOMO-PALOMO.html`). Jay da el aval.
-3. **Imágenes de los lugares** que pide esa historia.
+2. ✅ Aprobada el 3-nov-2026 (v3). **La historia del capítulo 1** (de qué trata; propuesta en `toffee/extravio/serie/CAP01-HISTORIA.md`, link https://claude.ai/artifact/ASdqUEhnZVok6NvuSw2XRP), copiando la estrategia y la forma de contar de Gnomo Palomo (`toffee/ESTUDIO-GNOMO-PALOMO.html`). Jay da el aval.
+3. **Imágenes de los lugares** que pide esa historia (prompts del cap. 1 en `toffee/extravio/serie/CAP01-LUGARES.md`).
 4. **El guion y la estructura del video** (tomas, diálogos, tiempos; todavía no los prompts de video).
 5. **Voces, efectos de sonido y música** que pida el guion (Jay los genera).
 6. **Los prompts de video** (Flow), toma por toma.
