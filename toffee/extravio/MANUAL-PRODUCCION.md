@@ -100,4 +100,5 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 |---|---|---|
 | La canción cantó los nombres de los personajes («Gallinazo, carnecita fresca…») | Nombres entre corchetes en la letra de ElevenLabs Music | Nunca poner nombres ni etiquetas en la letra; quién canta va en el prompt de estilo. (Esta vez se dejó porque presenta a cada vendedor) |
 | La segunda versión se saltó versos y estiró el coro | Letra sin etiquetas + duración larga | Si una versión ya sirve, no regenerar; poner la duración justa (≈ 35 s) |
+| Flow: «No se pudo generar el audio» (G01) | Frases con palabras que el filtro de audio de Flow bloquea («me mata», groserías, drogas, sexo) | En los prompts de Flow la frase va suavizada con sílabas parecidas («me regaña», «mal portados», «polvito»); la frase real va solo en ElevenLabs. Lista en `serie/cap01_flow.py` (SUAVE) |
 | Créditos gastados en efectos que Flow ya hace | Lista de efectos demasiado larga | Flow genera el sonido propio de cada toma (pasos, puertas, cascos, fuego, gente). En ElevenLabs solo los efectos de chiste, de amenaza y los que no están en la imagen |

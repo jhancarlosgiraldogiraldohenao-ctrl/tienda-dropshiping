@@ -19,7 +19,8 @@ VOZ = {"DIZZY":"in Colombian Spanish with a raspy, hoarse, rough young male stre
 QUIEN = {"DIZZY":"Dizzy","GERTRUDIS":"Doña Gertrudis","TOCINO":"Tocino","BARTOLO":"Bartolo","CUCA":"Cuca","TUERTO":"El Tuerto","GALLINAZO":"The vulture","LLORONA":"La Llorona"}
 # Solo para que Flow mueva la boca: groserías suavizadas (la voz real de ElevenLabs lleva la grosería)
 SUAVE = [("triple hijueputa","triple hijo de su madre"),("gran hijueputa","gran hijo de su madre"),("hijueputa","hijo de su madre"),
-         ("malparidos","mal portados"),("malparida","mal portada"),("Gonorrea","Qué horror"),("pirobo","bobo"),("What the fuck","What the heck")]
+         ("malparidos","mal portados"),("malparida","mal portada"),("Gonorrea","Qué horror"),("pirobo","bobo"),("What the fuck","What the heck"),
+         ("me mata","me regaña"),("compramos perico","compramos polvito"),("muestra esa cuca","muestra esa cara")]
 def suave(t):
     for a,b in SUAVE: t=t.replace(a,b)
     return t
