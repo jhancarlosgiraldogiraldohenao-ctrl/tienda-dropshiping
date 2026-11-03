@@ -95,3 +95,35 @@ Solo sale un segundo en la pantalla de la cámara, al final (escena 17). Es un h
 ```
 Vertical shaky handheld selfie video frame of a scared young man in his twenties with messy hair and a dirty hoodie, his face filling the upper half of the frame, lit only by a flashlight from below, inside a dark wet stone tunnel, whispering to the camera with wide frightened eyes. A fictional character, not a real person. Vertical 9:16 tall frame. Photorealistic 3D animated film style, no text, no letters, no logos.
 ```
+
+## 10. Toma aérea: la finca desde el aire
+
+Después del gancho, para mostrar el mundo de Dizzy (escena 3).
+
+```
+Vertical aerial drone shot high above a small white Colombian coffee farm house with a clay tile roof and blue doors, alone on a steep green mountain slope surrounded by rows of coffee plants, banana trees and bamboo, low morning mist flowing through the valleys, soft sunrise light, the camera looking down at an angle. Vertical 9:16 tall frame composition. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, no text, no letters, no logos, no signs.
+```
+
+## 11. Toma aérea: el pueblo desde el aire
+
+La llegada al pueblo en tres pasos: el lugar desde lejos (escena 6).
+
+```
+Vertical aerial drone shot of a small colorful Colombian coffee town built on a green mountain ridge: clay tile roofs, houses painted in bright colors, a white church with a tall bell tower and the main square in the middle, narrow streets going down the slopes, green mountains and clouds around it, sunny morning light. Vertical 9:16 tall frame composition. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, no text, no letters, no logos, no signs.
+```
+
+## 12. Toma aérea: la olla de noche
+
+Para presentar El Hueco desde el aire antes de bajar (escena 7) y para la vuelta (escena 15).
+
+```
+Vertical aerial drone shot at night looking down into a deep dark ravine at the edge of a mountain town: at the bottom, a hidden slum of crooked brick shacks with tin roofs, tiny bare light bulbs and burning barrels glowing orange, smoke rising up through the ravine, narrow stairs going down from the town above, mysterious and dangerous mood. Vertical 9:16 tall frame composition. No people, no animals, no characters. Photorealistic 3D animated film style, cinematic lighting, no text, no letters, no logos, no signs.
+```
+
+## 13. Los vendedores de El Hueco
+
+Los que hacen coros en la canción «Bienvenido a El Hueco» y llenan el mercado (escenas 7 y 8). Una sola imagen con los cinco.
+
+```
+Character lineup reference sheet on a plain light gray background of five original street creatures from a dangerous Colombian slum market, standing side by side, full body, each clearly separated: 1) a big black vulture butcher with a dirty white apron and a meat cleaver; 2) a skinny gray opossum with a torn tank top carrying a sack of stolen radios and shoes; 3) a fat green toad with gold chains and dark glasses holding a small glass jar of glowing white powder; 4) an old wrinkled brown rat with a hat counting a pile of colorful soda bottle caps; 5) a green iguana with a cigarette-free toothpick in his mouth holding domino tiles. Shady, funny, tough expressions. Photorealistic 3D animated film style, same style as a modern animated movie, expressive faces, soft natural light, no text, no letters, no logos.
+```
