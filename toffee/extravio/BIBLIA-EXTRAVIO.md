@@ -227,6 +227,9 @@ quebrado, pero se cree una estrella.
 - **Quién es:** el rockero del Pueblo de Arriba. Toca con su banda (que nunca llega completa) en la Cantina El Último
   Tinto. Es el mejor amigo del protagonista y su peor influencia: todos los planes locos empiezan con «Tocino tiene una
   idea».
+- **Cochino (pedido de Jay, 3-nov-2026):** es un viejo verde: les coquetea feo a todas las mayores de edad (Cuca, la
+  abuela, la Llorona) con frases de gringo mal dichas («uy, mami… muestra esa cuca»), y siempre le pegan. Nunca con
+  menores.
 - **Personalidad:** escandaloso, dramático, se cree una leyenda del rock aunque nunca ha tenido un éxito. Todo lo vive a
   todo volumen: grita, hace solos de guitarra en los peores momentos, se tira al público aunque no haya público. Por dentro
   es un sentimental que llora con baladas.
