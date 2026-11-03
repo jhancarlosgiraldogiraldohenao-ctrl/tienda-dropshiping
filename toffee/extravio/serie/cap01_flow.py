@@ -6,8 +6,8 @@ Cada generación da una o varias tomas del guion (CAP01-GUION.md).
 import os, json
 AQUI = os.path.dirname(os.path.abspath(__file__))
 
-HEAD = ("Vertical 9:16, {d} seconds. Photorealistic cinematic film look, normal lens (no fisheye, no vignette, no dark corners), "
-        "natural colors, realistic physics. One continuous shot with no cuts, full vertical frame from edge to edge, no black bars.")
+HEAD = ("Vertical 9:16, {d} seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, "
+        "cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars.")
 VOZ = {"DIZZY":"in Colombian Spanish with a raspy, hoarse, rough young male street voice",
        "GERTRUDIS":"in Colombian Spanish with a soft, shaky, sweet old grandmother voice",
        "TOCINO":"with a loud, raspy male voice and a very heavy American accent",
@@ -18,7 +18,7 @@ VOZ = {"DIZZY":"in Colombian Spanish with a raspy, hoarse, rough young male stre
        "LLORONA":"in Spanish with a high, trembling, wailing female voice"}
 QUIEN = {"DIZZY":"Dizzy","GERTRUDIS":"Doña Gertrudis","TOCINO":"Tocino","BARTOLO":"Bartolo","CUCA":"Cuca","TUERTO":"El Tuerto","GALLINAZO":"The vulture","LLORONA":"La Llorona"}
 # Solo para que Flow mueva la boca: groserías suavizadas (la voz real de ElevenLabs lleva la grosería)
-SUAVE = [("triple hijueputa","triple hijo de su madre"),("gran hijueputa","gran hijo de su madre"),("hijueputa","hijo de su madre"),
+SUAVE = [("hijueputa","hijuepucha"),("Hijueputa","Hijuepucha"),
          ("malparidos","mal portados"),("malparida","mal portada"),("Gonorrea","Qué horror"),("pirobo","bobo"),("What the fuck","What the heck"),
          ("me mata","me regaña"),("compramos perico","compramos polvito"),("muestra esa cuca","muestra esa cara")]
 def suave(t):
@@ -26,18 +26,18 @@ def suave(t):
     return t
 
 LOCK = {
- "DIZZY": "Dizzy is the skinny gray rat from the reference: huge bloodshot eyes with dark circles, buck teeth, flat-brim cap tilted to the side with a small black action camera mounted on top, gold chain with a bottle-cap pendant, torn black hoodie that he always wears (never bare-chested), white socks with black slide sandals, olive backpack with rusty keys; the bottle-cap pendant is plain with no letters; his whole head, cap and camera always stay in frame",
- "GERTRUDIS": "Doña Gertrudis is the old speckled brown hen from the reference with tiny round glasses, a faded flowered headscarf and a wooden rosary; she has real wings, never hands",
- "BARTOLO": "Bartolo is the old brown mule from the reference with the black and white woven straw hat, leather shoulder bag and two plain burlap sacks on his back with no printing",
- "TOCINO": "Tocino is the skinny dirty pink pig from the reference with a greasy black mohawk, crooked cracked sunglasses, a rusty snout ring, a torn leather vest and a broken electric guitar tied to his back with a rope; he stands on four legs like a real pig",
- "CUCA": "Cuca is the brown cockroach from the reference in a red bikini with gold hoop earrings on her antennae, standing on her back legs",
- "TUERTO": "El Tuerto is the small black-and-white street cat from the reference with a black eye patch over his left eye, a toothpick in his mouth and a gray tracksuit jacket",
- "PATA": "the paw and the torn black hoodie sleeve belong to the gray rat from the reference; only the paw is visible",
- "LLORONA": "La Llorona is the pale glowing ghost woman from the reference in a torn white lace dress and veil, holding a burnt arepa",
- "VENDEDORES": "the market vendors are the five creatures from the reference (black vulture butcher, gray opossum, fat toad with gold chains, old brown rat with a hat, green iguana)",
+ "DIZZY": "The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, black hoodie, white socks with black slides, backpack with keys",
+ "PATA": "Only the gray paw and black hoodie sleeve of the rat from the reference image are visible",
+ "GERTRUDIS": "The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings",
+ "BARTOLO": "The mule looks exactly like the reference image: old brown mule with a woven straw hat, leather bag and two plain sacks on his back",
+ "TOCINO": "The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and a broken guitar on his back",
+ "CUCA": "The cockroach looks exactly like the reference image: brown cockroach standing on her back legs, red bikini, gold hoop earrings on her antennae",
+ "TUERTO": "The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket",
+ "LLORONA": "The ghost woman looks exactly like the reference image: pale glowing ghost in a torn white lace dress holding a burnt arepa",
+ "VENDEDORES": "The market creatures look exactly like the reference image (black vulture in an apron, gray opossum, fat toad with gold chains, old rat with a hat, green iguana)",
 }
 NOMBRE = {"DIZZY":"the rat","GERTRUDIS":"the hen","BARTOLO":"the mule","TOCINO":"the pig","CUCA":"the cockroach","TUERTO":"the cat","LLORONA":"the ghost woman","GALLINAZO":"the vulture"}
-REF = {"DIZZY":"DIZZY.jpg","PATA":"DIZZY.jpg","GERTRUDIS":"GERTRUDIS.jpg","BARTOLO":"BARTOLO.jpg","TOCINO":"TOCINO.jpg","CUCA":"CUCA.jpg","TUERTO":"TUERTO.jpg","LLORONA":"LLORONA.jpg","VENDEDORES":"VENDEDORES-HUECO.jpg","GALLINAZO":"VENDEDORES-HUECO.jpg"}
+REF = {"DIZZY":"DIZZY-FRENTE.jpg","PATA":"DIZZY-FRENTE.jpg","GERTRUDIS":"GERTRUDIS-FRENTE.jpg","BARTOLO":"BARTOLO-FRENTE.jpg","TOCINO":"TOCINO-FRENTE.jpg","CUCA":"CUCA-FRENTE.jpg","TUERTO":"TUERTO-FRENTE.jpg","LLORONA":"LLORONA-FRENTE.jpg","VENDEDORES":"VENDEDORES-HUECO.jpg","GALLINAZO":"VENDEDORES-HUECO.jpg"}
 
 LUZ = {
  "ZARZO": "Inside the wooden farmhouse attic from the reference, soft golden sunrise light through the round window",
@@ -46,12 +46,12 @@ LUZ = {
  "CAMINO": "On the dirt mule trail between coffee plants and giant wax palms from the reference, bright morning sun with mist",
  "PLAZA": "In the colorful coffee-town square from the reference, sunny morning",
  "ESQUINA": "At the sunny street corner of the town square from the reference, the bench and lamp post beside them",
- "OLLA": "In the dangerous slum market at the bottom of a ravine from the reference, always night, bare light bulbs, burning barrels, smoke",
- "ESCALERAS": "On the broken concrete stairs that go down into the slum from the reference, at night, orange firelight below",
- "CARNE": "At the dirty meat stall of the night slum market from the reference, a bare light bulb above",
- "RINCON": "In the dark corner of the slum market from the reference with the car-seat armchair, red light bulb and burning barrel, at night",
+ "OLLA": "In the hidden night market at the bottom of a ravine from the reference, always night, bare light bulbs, burning barrels, smoke",
+ "ESCALERAS": "On the broken concrete stairs that go down into the hidden neighborhood from the reference, at night, orange firelight below",
+ "CARNE": "At the dirty meat stall of the night night market market from the reference, a bare light bulb above",
+ "RINCON": "In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night",
 }
-SONIDO = {"ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a cleaver on wood and fire crackling","RINCON":"fire crackling in the barrel"}
+SONIDO = {"ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel"}
 
 # (id, segundos, tomas del guion, lugar, [personajes], cámara, primer cuadro, acción, (quien, frase) o None, ref de lugar)
 P1 = [
@@ -68,7 +68,7 @@ P1 = [
   "The paw secretly slides one white domino tile out of the hoodie sleeve",None,"HUECO-RINCON-TUERTO.jpg"),
  ("G04",6,"5","RINCON",["DIZZY","TUERTO"],"Medium shot from the side of the domino table, static, warm golden flashback tint",
   "From the first frame Dizzy sits on the left and El Tuerto on the right",
-  "Dizzy slams a domino tile on the table, grins and drags the small action camera toward himself; El Tuerto stares at him with his one eye, furious",None,"HUECO-RINCON-TUERTO.jpg"),
+  "Dizzy slams a domino tile on the table, grins and drags the small action camera toward himself; El Tuerto stares at him with his one eye, very angry",None,"HUECO-RINCON-TUERTO.jpg"),
  ("G05",6,"7","FINCA",[],"Aerial drone shot slowly descending toward the house",
   "Aerial view of the white coffee farmhouse from the reference alone on the green mountain",
   "The drone slowly glides down toward the house through the morning mist",None,"AEREA-FINCA.jpg"),
@@ -107,7 +107,7 @@ P1 = [
   "Bartolo stops dead in one instant; Dizzy jolts forward and almost falls off, holding on to the sacks",None,"CAMINO-PALMAS.jpg"),
  ("G15",4,"18","CAMINO",["DIZZY","BARTOLO"],"Close-up of Dizzy riding, the back of the mule's head and hat in the lower foreground",
   "From the first frame Dizzy sits on Bartolo's back",
-  "Dizzy shouts furiously at the back of Bartolo's head",
+  "Dizzy shouts very angryly at the back of Bartolo's head",
   ("DIZZY","¡Muévete, perro! ¿Qué te pasa, estúpido?"),"CAMINO-PALMAS.jpg"),
  ("G16",4,"19","CAMINO",["BARTOLO"],"Close-up of the mule's face from the front, static",
   "From the first frame Bartolo stands still on the trail",
@@ -145,14 +145,14 @@ P1 = [
   "From the first frame Dizzy faces the camera",
   "He smiles slowly with mischief",("DIZZY","Usted es un genio, gringo hijueputa."),"PLAZA-ESQUINA-TOCINO.jpg"),
  ("G26",6,"31","OLLA",[],"Aerial drone shot slowly descending into the ravine at night",
-  "Aerial night view of the hidden slum at the bottom of the ravine from the reference",
+  "Aerial night view of the hidden neighborhood at the bottom of the ravine from the reference",
   "The drone sinks down toward the glowing barrels and the smoke",None,"AEREA-OLLA.jpg"),
  ("G27",6,"32","ESCALERAS",["DIZZY","TOCINO","BARTOLO"],"Wide shot from the bottom of the stairs looking up, static",
   "From the first frame the three are at the top of the stairs: Dizzy in front, Tocino behind him, Bartolo with the sacks last",
   "They walk down the broken stairs toward the camera; Tocino looks around amazed",
   ("TOCINO","Oh my God, this is insane…"),"HUECO-ENTRADA.jpg"),
  ("G28",8,"33 y 35","OLLA",["GALLINAZO"],"Close-up of the vulture from a low angle, static",
-  "From the first frame the big black vulture butcher in a dirty apron blocks the way, holding a cleaver",
+  "From the first frame the big black vulture meat seller in a dirty apron blocks the way, holding a big wooden spoon",
   "He asks a question, waits three seconds staring, then says one word and steps aside",
   ("GALLINAZO","¿Contraseña? … Siga."),"HUECO-DENTRO.jpg"),
  ("G29",4,"34","OLLA",["DIZZY"],"Close-up, static",
@@ -165,14 +165,14 @@ P1 = [
   "From the first frame Cuca dances on top of a wooden table in the center; the vendors stand around it",
   "Cuca dances champeta like a diva and ends with a proud pose; the vendors clap to the rhythm",None,"HUECO-DENTRO.jpg"),
  ("G32",6,"38","CARNE",["GALLINAZO"],"Medium shot, static",
-  "From the first frame the black vulture butcher stands behind the counter",
-  "He chops meat with the cleaver to a dance rhythm, bobbing his head",None,"HUECO-PUESTO-CARNE.jpg"),
+  "From the first frame the black vulture meat seller stands behind the counter",
+  "He cuts sausages with a kitchen knife to a dance rhythm, bobbing his head",None,"HUECO-PUESTO-CARNE.jpg"),
  ("G33",6,"39","OLLA",["VENDEDORES"],"Medium shot of the toad, static",
   "From the first frame the fat green toad with gold chains and dark glasses sits next to a stall",
-  "He lifts a small glass jar of glowing white sparkling powder and shakes it proudly to the rhythm",None,"HUECO-DENTRO.jpg"),
+  "He lifts a small glass jar of glowing white magic dust and shakes it proudly to the rhythm",None,"HUECO-DENTRO.jpg"),
  ("G34",6,"40","OLLA",["VENDEDORES"],"Medium shot, static",
   "From the first frame the old brown rat with a hat sits next to a huge pile of colorful bottle caps",
-  "He counts the caps, greedy; behind him the gray opossum walks past carrying a sack of stolen radios and shoes",None,"HUECO-DENTRO.jpg"),
+  "He counts the caps, greedy; behind him the gray opossum walks past carrying a sack of old second-hand radios and shoes",None,"HUECO-DENTRO.jpg"),
  ("G35",8,"41","OLLA",["DIZZY","TOCINO","VENDEDORES"],"Wide shot, the camera moves slowly sideways between the stalls",
   "From the first frame the vendors dance between the stalls; Dizzy stands on the left watching",
   "Everybody dances; Tocino dances very badly in the middle, shaking his mohawk",None,"HUECO-DENTRO.jpg"),
@@ -185,12 +185,12 @@ P1 = [
   "The whole market goes silent and slowly turns to stare at Tocino",None,"HUECO-DENTRO.jpg"),
  ("G38",4,"46","OLLA",["CUCA","TOCINO"],"Medium shot in profile: Cuca on the left, Tocino on the right",
   "From the first frame Cuca and Tocino face each other",
-  "Cuca slaps Tocino's face very fast with three of her legs at once; his head turns with each slap",None,"HUECO-DENTRO.jpg"),
+  "Cuca gives Tocino a fast, cartoonish comedy slap with three of her legs; his head bounces funnily",None,"HUECO-DENTRO.jpg"),
  ("G39",4,"47","OLLA",["TOCINO"],"Close-up, static",
   "From the first frame Tocino holds one hoof on his red cheek",
   "He rubs his cheek, confused and offended",("TOCINO","What the fuck, dude?"),"HUECO-DENTRO.jpg"),
  ("G40",4,"48","OLLA",["DIZZY"],"Close-up, static",
-  "From the first frame Dizzy looks to the right, furious",
+  "From the first frame Dizzy looks to the right, very angry",
   "He yells at someone off screen to the right",("DIZZY","¡Es mi prima, cochino gran hijueputa!"),"HUECO-DENTRO.jpg"),
  ("G41",6,"49","OLLA",["TOCINO"],"Close-up, static",
   "From the first frame Tocino faces the camera",
@@ -207,14 +207,14 @@ P1 = [
   "From the first frame Dizzy stands in the center facing the camera, smiling",
   "The huge dark shadow of a cat with pointy ears slowly covers him from behind; his smile freezes",None,"HUECO-DENTRO.jpg"),
  ("G45",4,"53","OLLA",["DIZZY"],"Close-up very near the lens, static, his whole head, cap and camera inside the frame",
-  "From the first frame Dizzy's terrified face is very close to the lens",
+  "From the first frame Dizzy's scared face is very close to the lens",
   "His eyes go huge with fear and he whispers",("DIZZY","Uy, no… triple hijueputa."),"HUECO-DENTRO.jpg"),
 ]
 
 def prompt(g):
     gid,d,tomas,lugar,cast,cam,primero,accion,habla,ref=g
     locks=[LOCK[c] for c in cast if c in LOCK]
-    if "GALLINAZO" in cast: locks.append("the vulture is the black vulture butcher from the reference")
+    if "GALLINAZO" in cast: locks.append("the vulture is the black vulture meat seller from the reference")
     partes=[HEAD.format(d=d), LUZ[lugar]+".", cam+".", primero+".", accion+"."]
     if locks:
         t="; ".join(locks)+"."
@@ -225,8 +225,8 @@ def prompt(g):
     else:
         partes.append("No one speaks; all mouths stay closed.")
     if cast:
-        partes.append("Only these characters appear, identical to the references; no other animals.")
-    partes.append(f"No humans or people anywhere. No text, letters or signs with words anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
+        partes.append("Only these characters appear; no other animals.")
+    partes.append(f"No humans or people anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
     out=" ".join(partes)
     # sin nombres propios: Flow los escribe como texto (salió «DIZZY» en la cadena)
     trozos=out.split('"')
