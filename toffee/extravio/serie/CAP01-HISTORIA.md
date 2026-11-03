@@ -1,6 +1,8 @@
 # Capítulo 1 · «Mi primer vlog (y casi me mata mi abuela)»
 
-Parte 2 del orden de trabajo: **la historia**, todavía sin guion ni prompts. Jay da el aval o pide cambios.
+Parte 2 del orden de trabajo: **la historia**, todavía sin guion ni prompts. Versión 3 (3-nov-2026): aval de Jay con tres
+agregados: Tocino suelta frases en inglés (traducidas en pantalla), todo pensado para el video largo de YouTube, y una
+canción propia como la de la fábrica de Santa de Gnomo.
 
 ---
 
@@ -22,6 +24,51 @@ salva con la chancla. Al final, la cámara se prende sola y muestra algo que nad
 | Parte 1 cortada en la cara de susto; parte 2 arranca con la respuesta | La parte 1 termina cuando aparece El Tuerto; la parte 2 arranca con su cara |
 | Le pide al público que decida | «¿Quieren que vaya a buscar al dueño de la cámara?» |
 
+## Cómo se arma para YouTube (lo más importante)
+
+El objetivo es el canal de YouTube. Se hace igual que Gnomo con la Fábrica de Santa: **una historia completa partida en
+dos reels que se pegan en un solo video largo.**
+
+| Día | Qué se publica | Dónde |
+|---|---|---|
+| Día 1 | **Parte 1** (1:45 a 2:00), termina en suspenso | YouTube Shorts, TikTok, Instagram |
+| Día 2 | **Parte 2** (2:30 a 2:50), arranca con la respuesta | YouTube Shorts, TikTok, Instagram |
+| Día 2 | **El capítulo completo** (≈ 5:00): logo de EXTRAVÍO (2 a 3 s) + parte 1 + parte 2 + cierre + 15 a 20 s de escena tranquila para las pantallas finales | YouTube (video largo, vertical como el de Gnomo) |
+
+- **Cada parte se entiende sola** (para quien la ve en Shorts) y **pegadas se ven continuas** (el susto del final de la
+  parte 1 queda justo antes de la cara del Tuerto).
+- **En el video largo se estiran los chistes** que en el reel van rápido (como el ascensor de Gnomo: 8 s en el reel, 16 s
+  en YouTube): el «…No.» de Bartolo, el silencio después de «muestra esa cuca», la chancla en cámara lenta.
+- **Capítulos marcados en la descripción** de YouTube (00:00 Mi primer vlog · 00:40 La finca · 01:20 El Hueco · …).
+- **Duración de los Shorts:** máximo 3 minutos cada parte, para que YouTube los acepte como Shorts.
+- **Lo que se gana:** los reels traen gente nueva todos los días y el video largo junta las vistas y los suscriptores,
+  igual que la recopilación de Gnomo (1,42 millones de vistas con material que ya existía).
+
+## La música y la canción
+
+Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 con cortes de 1 a 3 s), este capítulo trae
+**una canción propia** y música distinta en cada lugar:
+
+- **La canción: «Bienvenido a El Hueco»** (champeta o salsa choke, unos 40 a 50 s). La canta Cuca, con los vendedores
+  haciendo coros, cuando Dizzy y Tocino entran al mercado negro. Mientras suena se ve todo El Hueco en tomas cortas: el
+  que cambia tapas, el que vende perico, el puesto de llaves, objetos mágicos raros, criaturas jugando dominó. Presenta
+  el lugar sin explicarlo, como la canción de Santa. La letra se escribe en la parte 4 (guion) y se genera en la parte 5.
+- **Música por escena:**
+
+| Escena | Música |
+|---|---|
+| La finca al amanecer | Tiple y guitarra, suave (bambuco) |
+| El camino con Bartolo | Carranga alegre, con un frenazo cuando Bartolo se para |
+| La plaza del pueblo | Vallenato de fondo; Tocino desafinando encima |
+| El Hueco | La canción «Bienvenido a El Hueco» |
+| El Tuerto | Bajo de reguetón oscuro y lento, amenazante |
+| La abuela llega | Silbido de western, como un duelo, y la chancla en cámara lenta |
+| El regreso al atardecer | Bambuco lento y tierno |
+| El misterio de la cámara | Sonido de suspenso, zumbido eléctrico |
+
+- **Efectos:** un golpe de sonido en cada chiste y cada acción (cachetada, chancla, frenazo de Bartolo, guitarra
+  desafinada, el «piiip» de las groserías tapadas).
+
 ## Cómo habla cada uno en este capítulo
 
 - **Dizzy:** grosero de verdad, como un ñero de barrio: «hijueputa», «malparido», «gran hijueputa», «perro», «¿qué te
@@ -30,11 +77,13 @@ salva con la chancla. Al final, la cámara se prende sola y muestra algo que nad
 - **Doña Gertrudis:** abuela de pueblo: «mijito», «mijo», «mi amor», «ay, Dios mío», «Virgen santísima», «Ave María
   purísima», «¿usted ya comió?», «se me va a enfermar», «Dios me lo bendiga», «ay, este muchacho».
 - **Tocino:** gringo cochino (viejo verde con las mayores de edad): coquetea feo con todas, con acento gringo y
-  palabras mal dichas: «uy, mami», «¡hey, dude!», «oh my God», «un chimba».
+  palabras mal dichas: «uy, mami», «¡hey, dude!», «un chimba». **A veces suelta frases completas en inglés** («What the
+  fuck, dude?», «Oh my God, this is insane», «Holy shit», «Let's rock, baby!», «Shut up, man»). **Esas frases van
+  traducidas en pantalla** con letras pequeñas (es la única excepción a «sin texto en pantalla» de los capítulos).
 
 ## La historia, paso a paso
 
-### Parte 1 (≈ 1:30, el primer reel)
+### Parte 1 (≈ 1:50, el primer reel; día 1)
 
 1. **Gancho (0 a 3 s).** Amanece en la finca. La cara de Dizzy pegada al lente: «¿Quiubo pues, mis ratas? Este es mi
    primer vlog… y si mi cucha se entera de dónde saqué esta cámara, me mata.»
@@ -53,42 +102,47 @@ salva con la chancla. Al final, la cámara se prende sola y muestra algo que nad
 6. **El pueblo y Tocino (20 s).** Plaza de colores. La Llorona pasa llorando a gritos porque se le quemó la arepa (chiste
    de un segundo). Tocino toca su guitarra rota en una esquina sin que nadie le eche una moneda. «¡Hey, dude!». Ve la
    cámara y se le ocurre la idea: «Con ese cámara y ese café… vendemos el café en El Hueco por el doble de lucas,
-   compramos perico, hacemos un video mágico y ¡boom! Famosos, man.» Dizzy: «Usted es un genio, gringo hijueputa.»
-7. **El Hueco y Cuca (20 s).** Entran por debajo del puente con la contraseña. Puestos de colores, humo, bombillos.
-   Aparece Cuca en bikini rojo, moviéndose como diva. Tocino se baja las gafas, la mira de arriba abajo y, con su
+   compramos perico, hacemos un video mágico y ¡boom! Famosos, man. Let's rock, baby!» Dizzy: «Usted es un genio, gringo
+   hijueputa.»
+7. **El Hueco y la canción (45 s).** Entran por debajo del puente con la contraseña. Tocino: «Oh my God, this is
+   insane…». Suena **«Bienvenido a El Hueco»**: Cuca aparece en bikini rojo cantando y bailando como diva, los vendedores
+   hacen coros, y en tomas cortas se ve todo el mercado negro.
+8. **«Muestra esa cuca» (20 s).** Termina la canción. Tocino se baja las gafas, la mira de arriba abajo y, con su
    acento gringo, le suelta: «Uy, mami… muestra esa cuca.» Silencio. Cuca le pega una cachetada con tres patas a la
-   vez. Dizzy: «¡Es mi prima, cochino gran hijueputa!» Tocino, sobándose: «¿Qué? Es una cucaracha, ¿no? Cuca… cucaracha…
+   vez. Tocino: «What the fuck, dude?» Tocino: «What the fuck, dude?» Dizzy: «¡Es mi prima, cochino gran hijueputa!» Tocino, sobándose: «¿Qué? Es una cucaracha, ¿no? Cuca… cucaracha…
    I'm confused, dude.» (El chiste: «cuca» es cucaracha y es otra cosa en Colombia, y él no entiende por qué le pegaron.)
    Cuca, todavía brava, les avisa: «Eche, primo, aquí no se puede vender sin pagarle al Tuerto.» Dizzy: «Todo bien,
    todo bien…»
-8. **Cierre de la parte 1.** Una sombra tapa la cámara. Cara de Dizzy pegada al lente, aterrado: «Uy, no… triple
+9. **Cierre de la parte 1.** Una sombra tapa la cámara. Cara de Dizzy pegada al lente, aterrado: «Uy, no… triple
    hijueputa.» Corte.
 
-### Parte 2 (≈ 2:00, el segundo reel)
+### Parte 2 (≈ 2:40, el segundo reel; día 2, el mismo día del video largo)
 
-9. **La respuesta.** Primer segundo: la cara de El Tuerto, con el palillo en la boca. «Tú me debes, ratica… ¿sí o
+10. **La respuesta.** Primer segundo: la cara de El Tuerto, con el palillo en la boca. «Tú me debes, ratica… ¿sí o
    qué?». Se queda con los bultos de café como «vacuna». Dizzy, bajito: «Gonorrea…»
-10. **Escalada, intento 1.** Tocino propone distraerlo con un solo de guitarra. El solo es tan malo que todo El Hueco se
-    tapa los oídos… y El Tuerto ni se mueve. Dizzy: «¡Qué te pasa, estúpido, eso es un crimen!»
-11. **Escalada, intento 2.** Cuca intenta seducirlo en bikini para que suelte el café. El Tuerto la mira de arriba abajo:
+11. **Escalada, intento 1.** Tocino propone distraerlo con un solo de guitarra. El solo es tan malo que todo El Hueco se
+    tapa los oídos… y El Tuerto ni se mueve. Tocino: «Shut up, man, it's art!». Dizzy: «¡Qué te pasa, estúpido, eso es un
+    crimen!»
+12. **Escalada, intento 2.** Cuca intenta seducirlo en bikini para que suelte el café. El Tuerto la mira de arriba abajo:
     «No.» Tocino, de fondo: «¡Yo sí, mami!» Cuca, ofendida por los dos, le tira el chisme al Tuerto de que Dizzy anda
     grabando todo. Dizzy: «¡Sapa malparida!»
-12. **Escalada, intento 3.** Dizzy intenta robarle el café mientras El Tuerto está distraído. Lo pillan, lo cuelgan de
+13. **Escalada, intento 3.** Dizzy intenta robarle el café mientras El Tuerto está distraído. Lo pillan, lo cuelgan de
     la cola y lo amenazan con quitarle la cámara. «¡Suélteme, pirobo! ¡Perro hijueputa!» Momento de susto de verdad.
-13. **La abuela.** Desde lejos se oye: «¡MIJITO!». Silencio total en El Hueco. Todos se esconden. Doña Gertrudis está en
+14. **La abuela.** Desde lejos se oye: «¡MIJITO!». Silencio total en El Hueco. Todos se esconden. Doña Gertrudis está en
     la entrada, montada en Bartolo: «¡Virgen santísima, suelte a mi muchacho!». Tira la chancla desde lejos, en cámara
-    lenta, y le pega a El Tuerto en la cara. El Tuerto suelta el café y a Dizzy. «Señora… perdón, señora.»
-14. **El camino de vuelta.** Atardecer en las montañas. Dizzy, Tocino y la abuela montados en Bartolo, en silencio.
+    lenta, y le pega a El Tuerto en la cara. El Tuerto suelta el café y a Dizzy. «Señora… perdón, señora.» Tocino:
+    «Holy shit… I love this woman.»
+15. **El camino de vuelta.** Atardecer en las montañas. Dizzy, Tocino y la abuela montados en Bartolo, en silencio.
     Tocino, a la abuela: «Señora, usted tiene unas piernas muy… » Ella le pega con la chancla sin voltear. Dizzy, bajito,
     a la cámara: «Esa cucha me salvó la vida, mi llave… pero no le digan que dije eso.» La abuela, sin voltear: «Lo oí,
     mijito.»
-15. **La comida.** En la cocina de la finca, junto al fogón. La abuela le sirve un plato enorme: «Venga y coma primero,
+16. **La comida.** En la cocina de la finca, junto al fogón. La abuela le sirve un plato enorme: «Venga y coma primero,
     mi amor, que se me va a enfermar.» Tocino ve que es sancocho de gallina… no, de pollo… y se pone pálido de todas
     formas.
-16. **El misterio (el gancho para el capítulo 2).** De noche, en el zarzo, la cámara se prende sola. En la pantalla
+17. **El misterio (el gancho para el capítulo 2).** De noche, en el zarzo, la cámara se prende sola. En la pantalla
     aparece un pedazo de video del dueño: un humano asustado, en un lugar oscuro, que susurra: «Si alguien encuentra esta
     cámara… estoy en Extravío.» Dizzy mira al lente, con los ojos enormes: «Hijueputa…»
-17. **Cierre.** «¿Quieren que vaya a buscar a este man? Escríbanlo en los comentarios. Sígueme pa' no perderte el
+18. **Cierre.** «¿Quieren que vaya a buscar a este man? Escríbanlo en los comentarios. Sígueme pa' no perderte el
     próximo vlog, mi llave.»
 
 ## Lo que deja sembrado para los próximos capítulos
@@ -101,9 +155,10 @@ salva con la chancla. Al final, la cámara se prende sola y muestra algo que nad
 
 ## Datos de producción (aproximados)
 
-- **Duración:** unos 3:30 en total (parte 1 ≈ 1:30, parte 2 ≈ 2:00). En YouTube se unen en un solo video; en TikTok e
-  Instagram van como dos reels.
-- **Tomas de Flow:** cerca de 55 tomas (unas 16 por minuto, como Gnomo), unos 650 a 750 créditos con repeticiones.
+- **Duración:** el capítulo de YouTube dura unos 5:00 (parte 1 ≈ 1:50, parte 2 ≈ 2:40, más logo, chistes estirados y
+  pantallas finales). En Shorts, TikTok e Instagram van como dos reels.
+- **Tomas de Flow:** cerca de 70 tomas (unas 16 por minuto, como Gnomo), unos 850 a 950 créditos con repeticiones. La
+  canción ahorra: muchas tomas cortas de 4 s del mercado.
 - **Personajes:** Dizzy, Doña Gertrudis, Bartolo, Tocino, Cuca, El Tuerto, la Llorona (un segundo, de pasada) y el dueño
   de la cámara (solo en la pantalla, al final).
 - **Lugares que pide la historia (para la parte 3):** el callejón con la alcantarilla, la finca por fuera, el zarzo, la

@@ -77,6 +77,8 @@ Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir c
 5. **Voces, efectos de sonido y música** que pida el guion (Jay los genera).
 6. **Los prompts de video** (Flow), toma por toma.
 
+**Formato YouTube (pedido de Jay, 3-nov-2026):** el objetivo es el canal de YouTube. Cada capítulo es una historia partida en dos reels (parte 1 de 1:30–2:00 el día 1, termina en suspenso; parte 2 el día 2, arranca con la respuesta; cada una ≤ 3 min para Shorts) que se pegan en el video largo de YouTube (3–10 min) el día 2, como la Fábrica de Santa de Gnomo. Usar canciones propias y efectos (Jay tiene con qué generarlos). Tocino suelta frases en inglés: **esas frases van traducidas en pantalla** (única excepción a «sin texto en pantalla»).
+
 ## Entregas en link (pedido de Jay, 29-oct-2026)
 - **Prompts nuevos o cambiados: SIEMPRE en el chat, cada uno en su bloque para copiar y pegar** (pedido de Jay, 29-oct-2026). No basta con decir «está en el link».
 - Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.
