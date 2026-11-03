@@ -201,7 +201,7 @@ def prompt(g):
     partes=[HEAD.format(d=d), cam+".", LUZ[lugar]+".", primero+".", accion+"."]
     if habla:
         q,fr=habla
-        partes.append(f"Only {NOMBRE.get(q,q.lower())} speaks, in Spanish: «{fr}». Its mouth moves clearly in sync with every word; everybody else keeps their mouth closed.")
+        partes.append(f"Only {NOMBRE.get(q,q.lower())} speaks, in Spanish: «{fr}» Its mouth moves clearly in sync with every word; everybody else keeps their mouth closed.")
     else:
         partes.append("No one speaks; all mouths stay closed.")
     locks=[LOCK[c] for c in cast if c in LOCK]
