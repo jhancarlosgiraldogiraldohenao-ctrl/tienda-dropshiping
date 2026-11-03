@@ -16,7 +16,7 @@ VOZ = {"DIZZY":"in Colombian Spanish with a raspy, hoarse, rough young male stre
        "TUERTO":"in Colombian Spanish with a low, calm, husky male voice",
        "GALLINAZO":"in Spanish with a very deep, croaky male voice",
        "LLORONA":"in Spanish with a high, trembling, wailing female voice"}
-QUIEN = {"DIZZY":"Dizzy","GERTRUDIS":"Doña Gertrudis","TOCINO":"Tocino","BARTOLO":"Bartolo","CUCA":"Cuca","TUERTO":"El Tuerto","GALLINAZO":"The vulture","LLORONA":"La Llorona"}
+QUIEN = {"DIZZY":"Dizzy","GERTRUDIS":"Doña Gertrudis","TOCINO":"Tocino","BARTOLO":"Bartolo","CUCA":"Cuca","TUERTO":"El Tuerto","GALLINAZO":"the vulture","LLORONA":"La Llorona"}
 # Solo para que Flow mueva la boca: groserías suavizadas (la voz real de ElevenLabs lleva la grosería)
 SUAVE = [("hijueputa","hijuepucha"),("Hijueputa","Hijuepucha"),
          ("malparidos","mal portados"),("malparida","mal portada"),("Gonorrea","Qué horror"),("pirobo","bobo"),("What the fuck","What the heck"),
@@ -48,10 +48,13 @@ LUZ = {
  "ESQUINA": "At the sunny street corner of the town square from the reference, the bench and lamp post beside them",
  "OLLA": "In the hidden night market at the bottom of a ravine from the reference, always night, bare light bulbs, burning barrels, smoke",
  "ESCALERAS": "On the broken concrete stairs that go down into the hidden neighborhood from the reference, at night, orange firelight below",
- "CARNE": "At the dirty meat stall of the night night market market from the reference, a bare light bulb above",
+ "AEREA-FINCA": "High above the Colombian coffee mountains in the early morning, soft golden sunrise light and mist",
+ "AEREA-PUEBLO": "High above the green coffee mountains on a sunny morning",
+ "AEREA-OLLA": "High above a deep ravine at night, orange firelight glowing below",
+ "CARNE": "At the dirty meat stall of the night market from the reference, a bare light bulb above",
  "RINCON": "In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night",
 }
-SONIDO = {"ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel"}
+SONIDO = {"AEREA-FINCA":"wind and birds far away","AEREA-PUEBLO":"wind and church bells far away","AEREA-OLLA":"wind and fire crackling far below","ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel"}
 
 # (id, segundos, tomas del guion, lugar, [personajes], cámara, primer cuadro, acción, (quien, frase) o None, ref de lugar)
 P1 = [
@@ -69,7 +72,7 @@ P1 = [
  ("G04",6,"5","RINCON",["DIZZY","TUERTO"],"Medium shot from the side of the domino table, static, warm golden flashback tint",
   "From the first frame Dizzy sits on the left and El Tuerto on the right",
   "Dizzy slams a domino tile on the table, grins and drags the small action camera toward himself; El Tuerto stares at him with his one eye, very angry",None,"HUECO-RINCON-TUERTO.jpg"),
- ("G05",6,"7","FINCA",[],"Aerial drone shot slowly descending toward the house",
+ ("G05",6,"7","AEREA-FINCA",[],"Aerial drone shot slowly descending toward the house",
   "Aerial view of the white coffee farmhouse from the reference alone on the green mountain",
   "The drone slowly glides down toward the house through the morning mist",None,"AEREA-FINCA.jpg"),
  ("G06",6,"8","FINCA",["DIZZY"],"Medium shot, the camera moves backward in front of him as he walks",
@@ -107,7 +110,7 @@ P1 = [
   "Bartolo stops dead in one instant; Dizzy jolts forward and almost falls off, holding on to the sacks",None,"CAMINO-PALMAS.jpg"),
  ("G15",4,"18","CAMINO",["DIZZY","BARTOLO"],"Close-up of Dizzy riding, the back of the mule's head and hat in the lower foreground",
   "From the first frame Dizzy sits on Bartolo's back",
-  "Dizzy shouts very angryly at the back of Bartolo's head",
+  "Dizzy shouts very angrily at the back of Bartolo's head",
   ("DIZZY","¡Muévete, perro! ¿Qué te pasa, estúpido?"),"CAMINO-PALMAS.jpg"),
  ("G16",4,"19","CAMINO",["BARTOLO"],"Close-up of the mule's face from the front, static",
   "From the first frame Bartolo stands still on the trail",
@@ -115,7 +118,7 @@ P1 = [
  ("G17",6,"20","CAMINO",["DIZZY","BARTOLO"],"Medium shot from the side, static",
   "From the first frame Dizzy sits on Bartolo's back",
   "Dizzy pulls a brown block of panela out of his backpack and holds it in front of Bartolo's nose; Bartolo instantly starts trotting fast",None,"CAMINO-PALMAS.jpg"),
- ("G18",6,"21","PLAZA",[],"Aerial drone shot moving forward toward the main square",
+ ("G18",6,"21","AEREA-PUEBLO",[],"Aerial drone shot moving forward toward the main square",
   "Aerial view of the colorful coffee town on the green mountain ridge from the reference",
   "The drone flies forward over the roofs toward the white church and the square",None,"AEREA-PUEBLO.jpg"),
  ("G19",6,"22","PLAZA",["DIZZY","BARTOLO","LLORONA"],"Wide shot of the square, static",
@@ -144,7 +147,7 @@ P1 = [
  ("G25",4,"30","ESQUINA",["DIZZY"],"Close-up, static",
   "From the first frame Dizzy faces the camera",
   "He smiles slowly with mischief",("DIZZY","Usted es un genio, gringo hijueputa."),"PLAZA-ESQUINA-TOCINO.jpg"),
- ("G26",6,"31","OLLA",[],"Aerial drone shot slowly descending into the ravine at night",
+ ("G26",6,"31","AEREA-OLLA",[],"Aerial drone shot slowly descending into the ravine at night",
   "Aerial night view of the hidden neighborhood at the bottom of the ravine from the reference",
   "The drone sinks down toward the glowing barrels and the smoke",None,"AEREA-OLLA.jpg"),
  ("G27",6,"32","ESCALERAS",["DIZZY","TOCINO","BARTOLO"],"Wide shot from the bottom of the stairs looking up, static",
@@ -217,7 +220,7 @@ def prompt(g):
     if "GALLINAZO" in cast: locks.append("the vulture is the black vulture meat seller from the reference")
     partes=[HEAD.format(d=d), LUZ[lugar]+".", cam+".", primero+".", accion+"."]
     if locks:
-        t="; ".join(locks)+"."
+        t=". ".join(locks)+"."
         partes.append(t[0].upper()+t[1:])
     if habla:
         q,fr=habla
