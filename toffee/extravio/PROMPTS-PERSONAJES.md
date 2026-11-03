@@ -2,7 +2,7 @@
 
 ## Dizzy
 
-La rata protagonista. Adjunta LUCHO.jpg para que no cambie la cara.
+La rata protagonista. APROBADA (DIZZY.jpg). Para las tomas, adjuntar DIZZY.jpg.
 
 **Imagen (Nano Banana Pro)**
 
@@ -24,12 +24,12 @@ Speaks only in Colombian Spanish with a rough street accent from a working-class
 
 ## Doña Gertrudis, la abuela
 
-La gallina finquera. Sale en casi todos los vlogs. No necesita referencia: es la primera imagen de ella.
+La gallina finquera. Sale en casi todos los vlogs. Versión 2: que se vea gallina de verdad.
 
 **Imagen (Nano Banana Pro)**
 
 ```
-Character reference sheet of an original cartoon hen, four views (front, three-quarter, side, back) on a plain light gray background: an old plump grandmother hen with brown and white speckled feathers and a small red comb, tiny round reading glasses on the tip of her beak, a colorful flowered headscarf tied under her chin, a faded floral apron, a wooden rosary around her neck, and a worn rubber flip-flop sandal held in one wing, ready to throw it. Warm but stern grandma expression, one eyebrow raised. Colombian coffee farm grandmother. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+Character reference sheet of an original hen, four views (front, three-quarter, side, back) on a plain light gray background. She must look like a real farm hen first: natural chicken body and proportions, real feathers, real wings (not arms or hands), thin scaly chicken legs and feet, a natural beak and a floppy red comb and wattles. She is old and plump, with brown and white speckled feathers, a few messy ruffled feathers, tiny round reading glasses resting on her beak, a small faded flowered scarf tied around her head, and a small wooden rosary around her neck. A worn yellow rubber flip-flop sandal is tucked under one wing. Stern but loving grandma look, one eye squinting. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
 ```
 
 **Imagen en su finca (opcional, para el mundo)**
@@ -52,12 +52,12 @@ Mijo, ¿usted otra vez metido en problemas? Ave María, pues… Venga y coma pri
 
 ## Tocino, el Pinche Gringo
 
-El marrano rockero gringo, mejor amigo de Dizzy.
+El marrano rockero gringo, mejor amigo de Dizzy. Versión 2: marrano de verdad, pobre, flaco y sucio, cresta negra.
 
 **Imagen (Nano Banana Pro)**
 
 ```
-Character reference sheet of an original cartoon pig, four views (front, three-quarter, side, back) on a plain light gray background: a chubby pink pig with a tall bright green punk mohawk, dark sunglasses, a silver ring in his snout, a black sleeveless leather vest with metal studs over a faded white tank top, a red, white and blue bandana tied around one wrist, studded wristbands, and an old scratched electric guitar held together with tape, slung on his back. Proud rock star pose, one hoof raised making the rock horns sign. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos. No brand names on the guitar or clothes.
+Character reference sheet of an original pig, four views (front, three-quarter, side, back) on a plain light gray background. He must look like a real pig, not a person: natural pig body standing on four legs with hooves, real pig snout, ears and curly tail. A skinny, worn-out, poor and dirty old pink pig: thin body with visible ribs, saggy skin, mud stains and dirt on his legs and belly, small scars, tired bloodshot eyes with dark bags. A messy black punk mohawk, greasy and falling to one side. Cheap cracked sunglasses sitting crooked on his snout, a rusty ring in his snout, a torn and faded old black leather vest that is too small with missing studs, a dirty faded red, white and blue bandana around one front leg, and a beat-up broken electric guitar with missing strings tied to his back with a rope. Broke but proud rocker attitude. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos, no brand names on the guitar.
 ```
 
 **Voz (ElevenLabs, Diseño de voz)**
@@ -74,7 +74,7 @@ Speaks Spanish with a very strong American English accent, like an American rock
 
 ## Bartolo, la mula
 
-El mulo terco. Adjunta DONA-MULA.jpg para que quede igual.
+El mulo terco. APROBADO (BARTOLO.jpg).
 
 **Imagen (Nano Banana Pro)**
 
@@ -96,17 +96,17 @@ Speaks only in Colombian Spanish with a slow rural accent. A very old, tired far
 
 ## Cuca, la prima cucaracha
 
-Secundaria: sale en El Hueco desde los primeros vlogs.
+Secundaria: sale en El Hueco desde los primeros vlogs. Versión 2: cucaracha fea de verdad.
 
 **Imagen (Nano Banana Pro)**
 
 ```
-Character reference sheet of an original cartoon cockroach, four views (front, three-quarter, side, back) on a plain light gray background: a small brown cockroach standing upright on two legs, long wiggly antennae, big expressive eyes with long eyelashes, bright red lipstick, big gold hoop earrings, a colorful flowered headscarf tied as a turban, a bright yellow and orange ruffled Caribbean blouse, and a fanny pack full of keys. Cheerful gossipy expression, one hand on her hip. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+Character reference sheet of an original cockroach, four views (front, three-quarter, side, back) on a plain light gray background. She must look like a real, ugly cockroach: insect body with six spiny legs, a shiny greasy dark brown shell with wings folded on her back, very long twitchy antennae, small bulging insect eyes, ugly mandibles, a few hairs and bristles. Standing up on her four back legs. Her only accessories: one cheap gold hoop earring hanging from an antenna and a tiny dirty fanny pack full of small keys. A gossipy, sneaky grin. Gross but funny, not cute, not a lady, no human clothes, no lipstick. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
 ```
 
 ## El Tuerto, el gato malandro
 
-Secundario: el que le cobra la vacuna a Dizzy en El Hueco.
+Secundario: el que le cobra la vacuna a Dizzy en El Hueco. APROBADO (TUERTO.jpg).
 
 **Imagen (Nano Banana Pro)**
 
