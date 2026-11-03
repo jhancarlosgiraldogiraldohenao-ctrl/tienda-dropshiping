@@ -33,7 +33,7 @@ dos reels que se pegan en un solo video largo.**
 |---|---|---|
 | Día 1 | **Parte 1** (1:45 a 2:00), termina en suspenso | YouTube Shorts, TikTok, Instagram |
 | Día 2 | **Parte 2** (2:30 a 2:50), arranca con la respuesta | YouTube Shorts, TikTok, Instagram |
-| Día 2 | **El capítulo completo** (≈ 5:00): logo de EXTRAVÍO (2 a 3 s) + parte 1 + parte 2 + cierre + 15 a 20 s de escena tranquila para las pantallas finales | YouTube (video largo, vertical como el de Gnomo) |
+| Día 2 | **El capítulo completo** (≈ 5:00): parte 1 + parte 2 + cierre + 15 a 20 s de escena tranquila para las pantallas finales | YouTube (video largo, vertical como el de Gnomo) |
 
 - **Cada parte se entiende sola** (para quien la ve en Shorts) y **pegadas se ven continuas** (el susto del final de la
   parte 1 queda justo antes de la cara del Tuerto).
@@ -96,7 +96,8 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 2. **De dónde salió la cámara (10 s).** Él mismo lo cuenta, en tres tomas rápidas en la mesa de dominó de El Hueco:
    Dizzy, que apuesta todo lo que tiene, se jugó todas sus tapas contra la cámara del Tuerto… y ganó con una ficha que
    sacó de la manga. «¿Trampa? No, mi llave. Talento. Que es distinto, malparidos.»
-3. **Su mundo (15 s).** Toma aérea de la finca entre los cafetales con niebla, el zarzo donde vive (colchón, tapas en
+3. **Su mundo (15 s).** Toma aérea de la finca entre los cafetales con niebla, con el título encima, como Gnomo:
+   **«EXTRAVÍO · VLOG 01»** (sin logo ni banner). Después, el zarzo donde vive (colchón, tapas en
    frascos, queso escondido) y Bartolo, que no se deja grabar: «…No.» Dizzy: «Este es Bartolo, el hijueputa más
    amargado de Colombia.»
 4. **La abuela (15 s).** Doña Gertrudis lo pilla grabando: «¡Mijito! Ay, Dios mío, ¿y esa vaina qué es?». Él esconde la
@@ -166,7 +167,7 @@ Como Gnomo en la fábrica de Santa («Así son las cosas aquí en Santa», 1:15 
 
 ## Datos de producción (aproximados)
 
-- **Duración:** el capítulo de YouTube dura unos 5:00 (parte 1 ≈ 1:50, parte 2 ≈ 2:40, más logo, chistes estirados y
+- **Duración:** el capítulo de YouTube dura unos 5:00 (parte 1 ≈ 1:50, parte 2 ≈ 2:40, más chistes estirados y
   pantallas finales). En Shorts, TikTok e Instagram van como dos reels.
 - **Tomas de Flow:** cerca de 70 tomas (unas 16 por minuto, como Gnomo), unos 850 a 950 créditos con repeticiones. La
   canción ahorra: muchas tomas cortas de 4 s del mercado.
