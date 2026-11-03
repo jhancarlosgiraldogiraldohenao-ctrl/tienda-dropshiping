@@ -24,7 +24,7 @@ Speaks only in Colombian Spanish with a rough street accent from a working-class
 
 ## Doña Gertrudis, la abuela
 
-La gallina finquera. Sale en casi todos los vlogs. Versión 2: que se vea gallina de verdad.
+La gallina finquera. Sale en casi todos los vlogs. APROBADA (GERTRUDIS.jpg).
 
 **Imagen (Nano Banana Pro)**
 
@@ -52,7 +52,7 @@ Mijo, ¿usted otra vez metido en problemas? Ave María, pues… Venga y coma pri
 
 ## Tocino, el Pinche Gringo
 
-El marrano rockero gringo, mejor amigo de Dizzy. Versión 2: marrano de verdad, pobre, flaco y sucio, cresta negra.
+El marrano rockero gringo, mejor amigo de Dizzy. APROBADO (TOCINO.jpg).
 
 **Imagen (Nano Banana Pro)**
 
@@ -96,12 +96,12 @@ Speaks only in Colombian Spanish with a slow rural accent. A very old, tired far
 
 ## Cuca, la prima cucaracha
 
-Secundaria: sale en El Hueco desde los primeros vlogs. Versión 2: cucaracha fea de verdad.
+Secundaria: sale en El Hueco desde los primeros vlogs. Versión 3: cucaracha fea de verdad, en brasier y tanga de leopardo (chiste).
 
 **Imagen (Nano Banana Pro)**
 
 ```
-Character reference sheet of an original cockroach, four views (front, three-quarter, side, back) on a plain light gray background. She must look like a real, ugly cockroach: insect body with six spiny legs, a shiny greasy dark brown shell with wings folded on her back, very long twitchy antennae, small bulging insect eyes, ugly mandibles, a few hairs and bristles. Standing up on her four back legs. Her only accessories: one cheap gold hoop earring hanging from an antenna and a tiny dirty fanny pack full of small keys. A gossipy, sneaky grin. Gross but funny, not cute, not a lady, no human clothes, no lipstick. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+Character reference sheet of an original cockroach, four views (front, three-quarter, side, back) on a plain light gray background. She must look like a real, ugly cockroach: insect body with six spiny legs, a shiny greasy dark brown shell with wings folded on her back, very long twitchy antennae, small bulging insect eyes, ugly mandibles, a few hairs and bristles. Standing up on her four back legs. She wears a cheap faded leopard-print bra and matching thong underwear that don't fit her insect body at all, with straps twisted and slipping, as a silly comedy gag, not sexy. Her other accessories: one cheap gold hoop earring hanging from an antenna and a tiny dirty fanny pack full of small keys. A confident, gossipy, sneaky grin, posing like she thinks she is gorgeous. Gross and funny, not cute, not attractive. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
 ```
 
 ## El Tuerto, el gato malandro
