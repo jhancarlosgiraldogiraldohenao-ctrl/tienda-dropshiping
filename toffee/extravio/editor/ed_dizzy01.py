@@ -30,7 +30,7 @@ TXT = {c: re.sub(r'\[[^\]]*\]', '', t).replace('  ', ' ').strip() for c, _, _, _
 SUBT = {
  'V22': '¡Quiubo, parce!',
  'V23': 'Dios mío… ¿Eso es un cámara?',
- 'V24': 'Con ese cámara y ese café… vendemos el café en El Hueco por el doble de lucas, compramos perico, hacemos un video mágico y… ¡boom! Famosos, man. ¡A rockear, nena!',
+ 'V24': 'Con ese cámara y ese café… si lo vendemos en El Hueco nos pagan el doble: pagamos la deuda de tu abuela y nos sobra pa\' ser famosos, man. ¡A rockear, nena!',
  'V25': 'Dios mío, esto es una locura…',
  'V27': '¿Qué putas, parce?',
  'V28': '¿Qué? Es una cucaracha, ¿no? Cuca… cucaracha… Estoy confundido, parce.',
@@ -43,7 +43,7 @@ ROJO = {'cucha', 'cámara', 'malparidos', 'hijueputa', 'bartolo', 'perro', 'est�
 # sc: escena · fx: [(efecto, segundo, ganancia)] · fin: efecto al terminar la voz · tinte · zoom · titulo
 E = [
  dict(t='G01', a=0.0, v='V01', vo=0.15, sc='zarzo', d=None),   # G01 nueva: Flow habló en inglés, la boca se mueve todo el tiempo
- dict(t='G02', a=0.4, d=None, v='V03', vo=0.2, sc='recuerdo', tinte=1),
+ dict(t='G02', a=0.2, d=None, v='V03', vo=0.2, sc='recuerdo', tinte=1),
  dict(t='G03', a=0.4, d=1.8, sc='recuerdo', tinte=1,),
  dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1),
  dict(t='G01', a=6.6, v='V02', vo=0.1, sc='zarzo', d=None),
@@ -71,6 +71,7 @@ E = [
  dict(t='G24', a=0.3, v='V24', sc='plaza', d=None),
  dict(t='G25', a=0.5, v='V12', sc='plaza', d=None),
  dict(t='G26', a=0.4, d=3.2, sc='olla'),
+ dict(t='G26b', a=0.3, v='V31', sc='olla', d=None),
  dict(t='G27', a=1.6, v='V25', sc='olla', d=None),
  dict(t='G28', a=0.0, d=1.9, v='V30a', sc='olla'),
  dict(t='G29', a=0.0, v='V13', sc='olla', d=None),

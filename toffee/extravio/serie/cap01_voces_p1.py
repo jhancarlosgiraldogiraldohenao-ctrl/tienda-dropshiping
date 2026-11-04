@@ -2,9 +2,9 @@
 """Voces de la parte 1 del capítulo 1, con el ritmo medido en las tomas de Flow (4-nov-2026)."""
 V=[
 # (código, personaje/voz, toma, duración de la boca en Flow, texto ElevenLabs, nota)
-("V01","Dizzy","G01","≈ 6,5 s","[excited] ¿Quiubo pues, mis ratas? [short pause] Este es mi primer vlog… [short pause] [whispers] y si mi cucha se entera de dónde saqué esta cámara, me mata.","El gancho. Empieza fuerte y termina en susurro."),
+("V01","Dizzy","G01","≈ 6,5 s","[excited] ¿Quiubo pues, mis ratas? Este es mi primer vlog. [short pause] Hoy mi abuela me mandó a vender el café pa' pagar una deuda… [whispers] y yo tengo un plan mejor.","El gancho. Empieza fuerte y termina en susurro."),
 ("V02","Dizzy","G01 (final)","≈ 2,7 s","[serious] Que es… [short pause] distinto, malparidos.","Va después del recuerdo, de nuevo en el zarzo."),
-("V03","Dizzy (en off)","G02","libre, ≈ 3 s","[proud] Me jugué todas mis tapas, mis ratas.","Voz en off del recuerdo: no se le ve la boca."),
+("V03","Dizzy (en off)","G02","libre, ≈ 3 s","[smug] Esta cámara se la gané al Tuerto… [short pause] el gato más peligroso de El Hueco.","Voz en off del recuerdo: no se le ve la boca."),
 ("V04","Dizzy (en off)","G04","libre, ≈ 3 s","[smug] ¿Trampa? [short pause] No, mi llave. [short pause] Talento.","Voz en off del recuerdo."),
 ("V05","Dizzy","G06","≈ 5 s","[proud] Esta… [short pause] es la finca de mi abuela. [short pause] Aquí vivo… [short pause] gratis.",""),
 ("V06","Dizzy","G08","≈ 3 s","[annoyed] Este es Bartolo, [short pause] el hijueputa más amargado de Colombia.","Dilo rápido; el final puede caer sobre la cara de Bartolo."),
@@ -25,11 +25,12 @@ V=[
 ("V21","Llorona","G19","≈ 4 s","[sobbing] ¡Se me quemó la arepaaa! [short pause] ¡Se me quemó la arepaaa!","Dos veces, como en la toma."),
 ("V22","Tocino","G21","≈ 1,3 s","[happy] ¡Hey, dude!",""),
 ("V23","Tocino","G22","≈ 3 s","[amazed] Oh my God… [short pause] ¿Eso es un cámara?",""),
-("V24","Tocino","G24","≈ 9 s","[excited] Con ese cámara y ese café… vendemos el café en El Hueco por el doble de lucas, compramos perico, hacemos un video mágico y… [short pause] ¡boom! Famosos, man. [short pause] Let's rock, baby!",""),
+("V24","Tocino","G24","≈ 9 s","[excited] Con ese cámara y ese café… si lo vendemos en El Hueco nos pagan el doble: pagamos la deuda de tu abuela y nos sobra pa' ser famosos, man. Let's rock, baby!",""),
 ("V25","Tocino","G27","≈ 2,5 s","[amazed] Oh my God, this is insane…",""),
 ("V26","Tocino","G36","≈ 2,5 s","[flirty] Uy, mami… [short pause] muestra esa cuca.",""),
 ("V27","Tocino","G39","≈ 2,4 s","[offended] What the fuck… [short pause] dude?",""),
 ("V28","Tocino","G41","≈ 5,4 s","[confused] ¿Qué? [short pause] Es una cucaracha, ¿no? [long pause] Cuca… cucaracha… I'm confused, dude.",""),
 ("V29","Cuca","G42","≈ 4,2 s","[sassy] Eche, primo, [short pause] aquí no se puede vender nada sin pagarle al Tuerto.",""),
+("V31","Dizzy","G26b","≈ 3 s","[nervous] Pilas, mis ratas: [short pause] si el Tuerto me ve aquí… me mata.","Antes de bajar a El Hueco."),
 ("V30","Gallinazo","G28","≈ 3 s","[deep] ¿Contraseña? [long pause] Siga.","Entre las dos palabras hay casi 3 segundos de silencio."),
 ]
