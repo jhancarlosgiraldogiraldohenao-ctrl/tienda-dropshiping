@@ -26,10 +26,10 @@ def suave(t):
     return t
 
 LOCK = {
- "DIZZY": "The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, black hoodie, white socks with black slides, backpack with keys",
+ "DIZZY": "The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys",
  "PATA": "Only the gray paw and black hoodie sleeve of the rat from the reference image are visible",
  "GERTRUDIS": "The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings",
- "BARTOLO": "The mule looks exactly like the reference image: old brown mule with a woven straw hat, leather bag and two plain sacks on his back",
+ "BARTOLO": "The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back",
  "TOCINO": "The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and a broken guitar on his back",
  "CUCA": "The cockroach looks exactly like the reference image: brown cockroach standing on her back legs, red bikini, gold hoop earrings on her antennae",
  "TUERTO": "The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket",
@@ -102,22 +102,22 @@ P1 = [
   "From the first frame Bartolo walks down the trail with Dizzy riding on his back between the two sacks, small in the frame",
   "They go down the winding trail between the giant wax palms",None,"CAMINO-PALMAS.jpg"),
  ("G13",4,"16","CAMINO",["DIZZY","BARTOLO"],"Medium shot from the front, the camera moves backward with them",
-  "From the first frame Dizzy rides on Bartolo's back between the two sacks, both facing the camera",
+  "From the first frame the small Dizzy sits on the saddle in the middle of Bartolo's back between the two sacks, both facing the camera",
   "Bartolo walks calmly; Dizzy talks to the camera, relaxed",
   ("DIZZY","Vamos pa'l pueblo, mis ratas. Facilito."),"CAMINO-PALMAS.jpg"),
  ("G14",4,"17","CAMINO",["DIZZY","BARTOLO"],"Wide shot in profile, static",
-  "From the first frame Bartolo walks from left to right with Dizzy riding on his back",
+  "From the first frame Bartolo walks from left to right with the small Dizzy sitting on the saddle in the middle of his back",
   "Bartolo stops dead in one instant; Dizzy jolts forward and almost falls off, holding on to the sacks",None,"CAMINO-PALMAS.jpg"),
- ("G15",4,"18","CAMINO",["DIZZY","BARTOLO"],"Close-up of Dizzy riding, the back of the mule's head and hat in the lower foreground",
-  "From the first frame Dizzy sits on Bartolo's back",
-  "Dizzy shouts very angrily at the back of Bartolo's head",
+ ("G15",4,"18","CAMINO",["DIZZY","BARTOLO"],"Medium shot from the side, static, both whole bodies in frame",
+  "From the first frame Bartolo stands still on the trail facing left and the small Dizzy sits on the saddle in the middle of Bartolo's back, between the two sacks, behind the mule's neck",
+  "Dizzy leans forward and shouts very angrily at Bartolo's head; Bartolo does not move",
   ("DIZZY","¡Muévete, perro! ¿Qué te pasa, estúpido?"),"CAMINO-PALMAS.jpg"),
  ("G16",4,"19","CAMINO",["BARTOLO"],"Close-up of the mule's face from the front, static",
   "From the first frame Bartolo stands still on the trail",
   "He does not move at all, eyes half closed, not even blinking",None,"CAMINO-PALMAS.jpg"),
  ("G17",6,"20","CAMINO",["DIZZY","BARTOLO"],"Medium shot from the side, static",
-  "From the first frame Dizzy sits on Bartolo's back",
-  "Dizzy pulls a brown block of panela out of his backpack and holds it in front of Bartolo's nose; Bartolo instantly starts trotting fast",None,"CAMINO-PALMAS.jpg"),
+  "From the first frame the small Dizzy sits on the saddle in the middle of Bartolo's back",
+  "Dizzy leans forward and holds a small brown block of panela in front of Bartolo's nose; Bartolo's ears go up and he starts walking forward slowly; both stay fully inside the frame the whole time",None,"CAMINO-PALMAS.jpg"),
  ("G18",6,"21","AEREA-PUEBLO",[],"Aerial drone shot moving forward toward the main square",
   "Aerial view of the colorful coffee town on the green mountain ridge from the reference",
   "The drone flies forward over the roofs toward the white church and the square",None,"AEREA-PUEBLO.jpg"),
@@ -234,7 +234,7 @@ def prompt(g):
     # sin nombres propios: Flow los escribe como texto (salió «DIZZY» en la cadena)
     trozos=out.split('"')
     for i in range(0,len(trozos),2):  # solo fuera de las comillas (los diálogos no se tocan)
-        for a,b in [("Dizzy's","the rat's"),("Dizzy","the rat"),("Doña Gertrudis","the hen"),("El Tuerto","the cat"),("Tocino","the pig"),("Bartolo","the mule"),("Cuca","the cockroach"),("La Llorona","the ghost woman")]:
+        for a,b in [("the small Dizzy","the small rat"),("Dizzy's","the rat's"),("Dizzy","the rat"),("Doña Gertrudis","the hen"),("El Tuerto","the cat"),("Tocino","the pig"),("Bartolo","the mule"),("Cuca","the cockroach"),("La Llorona","the ghost woman")]:
             trozos[i]=trozos[i].replace(a,b)
     out='"'.join(trozos)
     import re

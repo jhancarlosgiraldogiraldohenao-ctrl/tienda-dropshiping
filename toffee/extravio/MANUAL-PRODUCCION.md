@@ -109,3 +109,12 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Dizzy salió en bicicleta (G20) | «riding» sin decir en qué: Flow le puso una bicicleta | Decir siempre sobre qué está («stands on the stone pavement», «on the mule's back») y «no vehicle» |
 | Flow pegó subtítulos inventados («¿Contaaba?», G28) | Toma con diálogo corto | Todos los prompts: «no subtitles or captions» |
 | Créditos gastados en efectos que Flow ya hace | Lista de efectos demasiado larga | Flow genera el sonido propio de cada toma (pasos, puertas, cascos, fuego, gente). En ElevenLabs solo los efectos de chiste, de amenaza y los que no están en la imagen |
+
+## 11. Errores del primer reel de Dizzy (4-nov-2026, revisión de Jay)
+| Error | Causa | Regla |
+|---|---|---|
+| Dizzy sin buzo en la primera toma (G01) | La foto de 4 vistas y «black hoodie» una sola vez | Dizzy: «ALWAYS wearing his black hoodie (never bare-chested…)» y foto DIZZY-FRENTE |
+| Bartolo con sombrero de paja liso en el camino (G12–G17) y vueltiao en la finca | «woven straw hat» | «black-and-white striped Colombian sombrero vueltiao (never a plain straw hat)» |
+| Dizzy montado raro (encima de la cabeza o el cuello de Bartolo, G15) y Bartolo saliéndose del cuadro (G17) | Primer plano con el sombrero adelante; «trotting fast» | Plano medio de lado con los dos cuerpos enteros; Dizzy «on the saddle in the middle of the mule's back»; «both stay fully inside the frame» |
+| Voces corridas de la boca | Se alineaba solo la primera palabra | Pegar palabra por palabra (`pegar_suave` con las palabras de la voz y de Flow) + 0,08 s de retraso |
+| Efectos de impacto feos | Los efectos viejos del Extravío de Toffee (golpe, whoosh, rayón, brillo, latido) | Descartados (`sonidos/descartados/`). Solo los efectos nuevos de Dizzy |

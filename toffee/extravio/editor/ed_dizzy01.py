@@ -9,7 +9,7 @@ import os, re, sys, json, subprocess as sp
 import numpy as np
 AQ = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, AQ)
-from pegar import load, fit, SR  # noqa: E402
+from pegar import load, fit, pegar_suave, SR  # noqa: E402
 RAIZ = os.path.abspath(os.path.join(AQ, '..'))
 TK = os.path.join(RAIZ, 'serie', 'tomas-cap01')
 VZ = os.path.join(RAIZ, 'serie', 'voces-cap01')
@@ -44,13 +44,13 @@ ROJO = {'cucha', 'cámara', 'malparidos', 'hijueputa', 'bartolo', 'perro', 'est�
 E = [
  dict(t='G01', a=0.0, v='V01', sc='zarzo', d=None),
  dict(t='G02', a=0.4, d=None, v='V03', vo=0.2, sc='recuerdo', tinte=1),
- dict(t='G03', a=0.4, d=1.8, sc='recuerdo', tinte=1, fx=[('brillo-magico', 1.2, .6)]),
- dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1, fx=[('golpe-de-chiste', 0.4, .35)]),
- dict(t='G01', a=6.35, v='V02', sc='zarzo', fin='golpe-de-chiste', d=None),
- dict(t='G05', a=0.0, d=3.4, sc='finca', titulo=1, fx=[('whoosh-transiciones-y-caidas', 0.0, .7)]),
+ dict(t='G03', a=0.4, d=1.8, sc='recuerdo', tinte=1,),
+ dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1),
+ dict(t='G01', a=6.35, v='V02', sc='zarzo', d=None),
+ dict(t='G05', a=0.0, d=3.4, sc='finca', titulo=1),
  dict(t='G06', a=0.0, v='V05', sc='finca', d=None),
  dict(t='G07', a=0.0, d=2.3, v='V20', sc='finca'),
- dict(t='G08', a=0.85, v='V06', sc='finca', fin='golpe-de-chiste', d=None),
+ dict(t='G08', a=0.85, v='V06', sc='finca', d=None),
  dict(t='G07', a=2.2, d=1.4, sc='finca'),                                     # Bartolo mira (cola de la frase en L)
  dict(t='G09', a=1.6, v='V17', sc='finca', d=None),
  dict(t='G10', a=1.6, v='V07', sc='finca', d=None),
@@ -58,23 +58,23 @@ E = [
  dict(t='G10', a=0.0, d=None, v='V19', vo=0.45, sc='finca'),                    # «¡Dios me lo bendiga!» sobre Dizzy
  dict(t='G12', a=0.0, d=2.6, sc='camino'),
  dict(t='G13', a=0.4, v='V08', sc='camino', d=None),
- dict(t='G14', a=0.0, d=2.7, sc='camino', fx=[('rayon-de-disco', 1.25, .8)], cortar_musica=1.25),
+ dict(t='G14', a=0.0, d=2.7, sc='camino', cortar_musica=1.25),
  dict(t='G15', a=0.0, v='V09', sc='camino', d=None),
  dict(t='G16', a=0.0, d=1.9, sc='camino', fx=[('E09-grillo-silencio', 0.2, .7)]),
  dict(t='G17', a=0.0, d=3.0, sc='camino', volver_musica=1.6),
- dict(t='G18', a=0.0, d=3.4, sc='plaza', fx=[('whoosh-transiciones-y-caidas', 0.0, .5)]),
+ dict(t='G18', a=0.0, d=3.4, sc='plaza'),
  dict(t='G19', a=0.5, v='V21', sc='plaza', d=None),
  dict(t='G20', a=0.5, v='V10', sc='plaza', d=None),
  dict(t='G21', a=1.6, v='V22', sc='plaza', d=None),
  dict(t='G22', a=1.4, v='V23', sc='plaza', d=None),
  dict(t='G23', a=0.0, v='V11', sc='plaza', d=None),
  dict(t='G24', a=0.3, v='V24', sc='plaza', d=None),
- dict(t='G25', a=0.5, v='V12', sc='plaza', fin='golpe-de-chiste', d=None),
- dict(t='G26', a=0.4, d=3.2, sc='olla', fx=[('whoosh-transiciones-y-caidas', 0.0, .6)]),
+ dict(t='G25', a=0.5, v='V12', sc='plaza', d=None),
+ dict(t='G26', a=0.4, d=3.2, sc='olla'),
  dict(t='G27', a=1.6, v='V25', sc='olla', d=None),
  dict(t='G28', a=0.0, d=1.9, v='V30a', sc='olla'),
  dict(t='G29', a=0.0, v='V13', sc='olla', d=None),
- dict(t='G28', a=2.4, d=2.0, v='V30b', sc='olla', fin='golpe-de-chiste'),
+ dict(t='G28', a=2.4, d=2.0, v='V30b', sc='olla'),
  # la canción (sin voces habladas)
  dict(t='G30', a=3.0, d=4.0, sc='cancion'),
  dict(t='G32', a=0.5, d=2.0, sc='cancion'),
@@ -85,12 +85,12 @@ E = [
  dict(t='G35', a=5.0, d=1.8, sc='cancion'),
  dict(t='G31', a=5.5, d=2.5, sc='cancion'),
  # «muestra esa cuca»
- dict(t='G36', a=2.9, v='V26', sc='cuca', zoom=1.1, d=None),
+ dict(t='G36', a=2.9, v='V26', sc='cuca', recorte=1, d=None),
  dict(t='G37', a=0.0, d=2.4, sc='cuca', fx=[('E09-grillo-silencio', 0.3, .8)]),
  dict(t='G38', a=0.4, d=2.6, sc='cuca', fx=[('E16-cachetada-triple', 1.2, .9)]),
  dict(t='G39', a=0.0, v='V27', sc='cuca', d=None),
  dict(t='G40', a=1.0, v='V14', sc='cuca', d=None),
- dict(t='G41', a=0.0, v='V28', sc='cuca', fin='golpe-de-chiste', d=None),
+ dict(t='G41', a=0.0, v='V28', sc='cuca', d=None),
  dict(t='G42', a=0.7, v='V29', sc='cuca', d=None),
  dict(t='G43', a=0.6, v='V15', sc='cuca', d=None),
  dict(t='G44', a=0.5, d=3.2, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
@@ -145,6 +145,7 @@ def flow_span(t, a, b):
     if not ws: return None
     return ws[0][0], max(w[1] for w in ws)
 
+SYNC = []
 def main():
     total = 0.0; plan = []
     for k, e in enumerate(E):
@@ -152,16 +153,22 @@ def main():
         y = None; vstart = None
         if e.get('v'):
             x = voz(e['v'])
-            if 'vo' in e:
-                y = x; vstart = e['vo']
+            fw = [[w[0] - e['a'], w[1] - e['a'], w[2]] for w in FLOW.get(e['t'], []) if w[0] >= e['a'] - 0.05]
+            if 'vo' in e or not fw or e['v'] in ('V30a', 'V30b'):
+                y = x; vstart = e.get('vo', (fw[0][0] + 0.08) if fw else 0.3)
             else:
-                sp_ = flow_span(e['t'], e['a'], L)
-                if sp_ is None:
-                    y = x; vstart = 0.3
-                else:
-                    f0, f1 = sp_; fd = max(0.4, f1 - f0); vd = len(x) / SR
-                    y = fit(x, max(fd, vd / 1.25), lo=1.0, hi=1.25) if vd > fd * 1.05 else x
-                    vstart = f0 - e['a'] + 0.06
+                ew = VW.get(e['v'], [])
+                try:
+                    lim = (e['d'] if e['d'] else L - e['a']) + 2.5
+                    y, err = pegar_suave(x, ew, fw, lim, lo=0.8, hi=1.25, tmp=os.path.join(TMP, 'pg'))
+                    y = np.concatenate([np.zeros(int(0.08 * SR), np.float32), y])   # la voz nunca antes que la boca
+                    nz = np.where(np.abs(y) > 1e-4)[0]
+                    y = y[: nz[-1] + 1] if len(nz) else y
+                    vstart = 0.0
+                    if err: SYNC.append((e['t'], round(float(np.mean(np.abs(err))), 3), round(float(np.max(np.abs(err))), 3)))
+                except Exception as ex:
+                    print('  sin anclas en', e['t'], ex)
+                    y = x; vstart = fw[0][0] + 0.08
         d = e['d']
         if d is None:
             need = (vstart or 0) + (len(y) / SR if y is not None else 0) + 0.32
@@ -170,6 +177,7 @@ def main():
         plan.append(dict(e, f=f, d=round(d, 3), t0=total, y=y, vs=vstart))
         total += d
     print('largo parte 1: %.1f s' % total)
+    for t_, m_, x_ in SYNC: print('  sincronía', t_, 'promedio', m_, 's · máximo', x_, 's')
     N = int(total * SR) + SR
     voces = np.zeros(N, np.float32); toma = np.zeros(N, np.float32); musica = np.zeros(N, np.float32)
     amb = np.zeros(N, np.float32); fx = np.zeros(N, np.float32)
@@ -194,7 +202,6 @@ def main():
             if t < prev_end + 0.05: print('  ojo: voz encima en', p['t'], round(prev_end - t, 2))
             put(voces, p['y'], t); prev_end = t + len(p['y']) / SR
             subs.append((t, t + len(p['y']) / SR, p['v']))
-            if p.get('fin'): put(fx, sonido(p['fin']), prev_end + 0.05, .5)
         for n_, ts, gg in p.get('fx', []): put(fx, sonido(n_), p['t0'] + ts, gg)
     # escenas → música y ambiente
     escenas = []
@@ -235,6 +242,7 @@ def main():
     for i, p in enumerate(plan):
         vf = [f'scale={W}:{H}:flags=lanczos', 'setsar=1', f'fps={FPS}']
         if p.get('zoom'): z = p['zoom']; vf.insert(0, f'crop=iw/{z}:ih/{z}')
+        if p.get('recorte'): vf.insert(0, 'crop=iw*0.82:ih*0.82:iw*0.02:ih*0.09')   # quita el brazo humano del borde derecho (G36)
         if p.get('tinte'): vf.append('eq=saturation=0.85:gamma=0.97,colorbalance=rs=.07:gs=.03:bs=-.07')
         o = os.path.join(TMP, f'seg{i:03d}.mp4')
         sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{p['a']:.3f}", '-i', p['f'], '-t', f"{p['d']:.3f}", '-an', '-vf', ','.join(vf),
