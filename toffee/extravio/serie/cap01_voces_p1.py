@@ -33,4 +33,7 @@ V=[
 ("V29","Cuca","G42","≈ 4,2 s","[sassy] Eche, primo, [short pause] aquí no se puede vender nada sin pagarle al Tuerto.",""),
 ("V31","Dizzy","G26b","≈ 3 s","[nervous] Pilas, mis ratas: [short pause] si el Tuerto me ve aquí… me mata.","Antes de bajar a El Hueco."),
 ("V30","Gallinazo","G28","≈ 3 s","[deep] ¿Contraseña? [long pause] Siga.","Entre las dos palabras hay casi 3 segundos de silencio."),
+("V32","Bartolo","G16 (en off)","≈ 1,5 s","[bored] [sighs] Lo detesto.","En off sobre la cara de la mula, que no mueve la boca."),
+("V33","Cuca","G29b","≈ 3 s","[sassy] ¡Ajá! [short pause] ¿Carne fresca en El Hueco? [shouting] ¡Dale, música!","Puente: Cuca ve a los nuevos y arranca la canción."),
+("V34","Dizzy","G41b","≈ 2,5 s","[proud] Bueno, prima: [short pause] ¿quién me compra este cafecito?","Puente: Dizzy ofrece el café; por eso Cuca le dice lo del Tuerto."),
 ]

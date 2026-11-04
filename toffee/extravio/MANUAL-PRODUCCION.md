@@ -119,3 +119,14 @@ editor `editor/ed01p.py` + `editor/pegar.py`, video `toffee/videos-editados/EXTR
 | Voces corridas de la boca | Se alineaba solo la primera palabra | Pegar palabra por palabra (`pegar_suave` con las palabras de la voz y de Flow) + 0,08 s de retraso |
 | Efectos de impacto feos | Los efectos viejos del Extravío de Toffee (golpe, whoosh, rayón, brillo, latido) | Descartados (`sonidos/descartados/`). Solo los efectos nuevos de Dizzy |
 | Tocino con cuatro patas y además dos brazos (G24) | Se le pidió levantar una pezuña y hacer el gesto del rock | Tocino es marrano en cuatro patas: nunca gestos de manos; «only four legs and no arms or hands»; expresar con la cabeza, la cresta o las orejas |
+
+## 12. Segunda revisión del reel de Dizzy (4-nov-2026, Jay)
+| Error | Por qué pasó | Regla nueva |
+|---|---|---|
+| Voz corrida de la boca (G01, «¡Muévete!», «What the…», «Siga») | Los tiempos de Whisper sobre el audio de Flow fallan hasta 1,5 s | Pegar la voz frase por frase al **volumen real** del audio de Flow (`alinear()` en el editor: tramos de boca + emparejar por duración) |
+| Se oía un «mue» antes de «¡Muévete!» | La máscara de la voz de Flow salía de Whisper y empezaba tarde | Tapar la voz de Flow también por volumen (0,12 s antes, 0,15 s después de cada tramo) |
+| Subtítulos sobre las bocas: se nota cualquier desfase | Iban a la altura del pecho (y=1200) | **Subtítulos arriba (y=300 de 1920)**, sobre las cabezas y debajo de la barra de YouTube; cada trozo sale con su palabra |
+| Personajes que cambian de puesto dentro de una toma (G27) | Flow los mueve en el primer segundo | Revisar el primer segundo de cada toma y entrar después del cambio |
+| Saltos de historia (Cuca canta de la nada, la cachetada de frente, por qué Cuca habla del Tuerto) | Faltaban tomas puente | Antes de entregar el guion, cada acción nueva necesita una toma que la cause (G29b, G37b, G41b) |
+| «¡Mía!», «¡Mijito!», grillos y «boing» que sobraban | Palabras y efectos de más | Menos es más: cortar lo que no suma, sin grillos ni efectos de caricatura |
+| Una figura humana borrosa en la esquina (G40) | Flow la coló al fondo | Revisar las 4 esquinas de cada toma; si es pequeña, zoom (`recorte2`); si no, repetir |

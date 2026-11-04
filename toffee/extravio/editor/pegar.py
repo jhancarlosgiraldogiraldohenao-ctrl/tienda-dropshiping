@@ -104,6 +104,7 @@ def por_frases(x, ew, fw, sil_db=-42, sil_min=0.15):
         err += [st + ew[k][0] - t0 - match[k] for k in ks if k in match]
     return [(s, c) for s, c, _ in out], err
 
+ULTIMO = None
 def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     """Igual que pegar(), pero en UNA sola pasada de rubberband con mapa de tiempos: la voz se acelera o frena de forma
     continua (sin costuras ni pausas metidas), con cada tramo entre 0,85 y 1,2. Devuelve (señal del largo del clip, desfases)."""
@@ -140,6 +141,8 @@ def pegar_suave(x, ew, fw, dur, lo=0.85, hi=1.2, tmp='/tmp/_pegar'):
     dst.append(dst[-1] + (L - anc[-1][0]))
     err = [dst[k + 1] - anc[k][1] for k in range(len(anc))]
     total = dst[-1] - dst[0]
+    global ULTIMO
+    ULTIMO = (np.array(src) - PAD, np.array(dst))   # mapa voz→clip (para poner los subtítulos palabra por palabra)
     with open(f'{tmp}/map.txt', 'w') as fh:
         for a, b in zip(src[1:-1], dst[1:-1]): fh.write(f'{int(a * SR)} {int((b - dst[0]) * SR)}\n')
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', f'{tmp}/in.wav'], input=x.astype(np.float32).tobytes(), check=True)
