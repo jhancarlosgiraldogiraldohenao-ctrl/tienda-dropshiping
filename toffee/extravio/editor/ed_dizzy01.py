@@ -122,6 +122,10 @@ def trim_sil(x, db=-45):
 # palabras de las voces (Whisper), cacheadas
 VW_F = os.path.join(DAT, 'ritmo-voces.json')
 VW = json.load(open(VW_F)) if os.path.exists(VW_F) else {}
+# ajustes hechos a mano en Claude Studio: {voz: {mueve: s, gain: x, mute: bool}}
+AJ_F = os.path.join(DAT, 'ajustes.json')
+AJ = json.load(open(AJ_F)) if os.path.exists(AJ_F) else {}
+EXPORTAR = os.environ.get('EXPORTAR') == '1'
 def voz(c):
     """Devuelve la señal de la voz (sin silencios a los lados). V30a / V30b = las dos mitades del gallinazo."""
     base = c[:3]
@@ -198,7 +202,11 @@ def main():
         lev = .12 if p['sc'] == 'cancion' else .7
         put(toma, s * g * lev, p['t0'])
         if p['y'] is not None:
-            t = p['t0'] + p['vs']
+            aj = AJ.get(p['v'], {})
+            p['t_base'] = p['t0'] + p['vs']
+            t = p['t_base'] + float(aj.get('mueve', 0))
+            if aj.get('mute'): continue
+            if aj.get('gain') is not None: p['y'] = p['y'] * float(aj['gain'])
             if t < prev_end + 0.05: print('  ojo: voz encima en', p['t'], round(prev_end - t, 2))
             put(voces, p['y'], t); prev_end = t + len(p['y']) / SR
             subs.append((t, t + len(p['y']) / SR, p['v']))
@@ -232,7 +240,9 @@ def main():
     duck = np.convolve(duck, np.ones(int(.25 * SR)) / int(.25 * SR), mode='same').astype(np.float32)
     mix = voces * 1.0 + toma * (0.55 + 0.45 * duck) + musica * duck + amb * (0.4 + 0.6 * duck) + fx
     mix = mix[: int(total * SR)]
-    mix /= max(1e-6, np.max(np.abs(mix))) / 0.9
+    pk = max(1e-6, np.max(np.abs(mix))) / 0.9
+    mix /= pk
+    if EXPORTAR: exportar(plan, (toma * (0.55 + 0.45 * duck) + musica * duck + amb * (0.4 + 0.6 * duck) + fx)[: int(total * SR)] / pk, pk, total)
     wav = os.path.join(TMP, 'mix.wav')
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', wav], input=mix.astype(np.float32).tobytes(), check=True)
     # subtítulos (ASS)
@@ -256,7 +266,27 @@ def main():
             '-af', 'loudnorm=I=-14:TP=-1.5:LRA=11', '-c:v', 'libx264', '-preset', 'medium', '-crf', '22', '-maxrate', '4M', '-bufsize', '8M', '-pix_fmt', 'yuv420p',
             '-c:a', 'aac', '-b:a', '160k', '-ar', '48000', '-shortest', '-movflags', '+faststart', OUT], check=True)
     json.dump([{k: v for k, v in p.items() if k not in ('y',)} for p in plan], open(os.path.join(TMP, 'plan.json'), 'w'), indent=1, default=str)
+    if EXPORTAR:
+        sp.run(['ffmpeg', '-v', 'error', '-y', '-i', vid, '-vf', 'scale=540:960', '-c:v', 'libx264', '-preset', 'medium', '-b:v', '560k', '-maxrate', '700k', '-bufsize', '1400k',
+                '-pix_fmt', 'yuv420p', '-an', '-movflags', '+faststart', os.path.join(TMP, 'export', 'video.mp4')], check=True)
     print('listo:', OUT, round(ffdur(OUT), 1), 's')
+
+def exportar(plan, bed, pk, total):
+    """Archivos para Claude Studio: video liviano sin audio, cama de sonido (sin voces) y cada voz suelta."""
+    ex = os.path.join(TMP, 'export'); os.makedirs(os.path.join(ex, 'voces'), exist_ok=True)
+    def mp3(sig, f, br='96k'):
+        sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-c:a', 'libmp3lame', '-b:a', br, f], input=sig.astype(np.float32).tobytes(), check=True)
+    mp3(bed, os.path.join(ex, 'cama.mp3'), '96k')
+    voces = []
+    for p in plan:
+        if p['y'] is None or 't_base' not in p: continue
+        y = p['y'] / pk
+        nz = np.where(np.abs(y) > 1e-4)[0]; lead = nz[0] if len(nz) else 0
+        mp3(y[lead:], os.path.join(ex, 'voces', p['v'] + '.mp3'), '64k')
+        voces.append(dict(id=p['v'], toma=p['t'], inicio=round(p['t_base'] + lead / SR, 3), dur=round((len(y) - lead) / SR, 3),
+                          texto=SUBT.get(p['v'][:3], TXT[p['v'][:3]]) if p['v'] not in ('V30a', 'V30b') else ('¿Contraseña?' if p['v'] == 'V30a' else 'Siga.')))
+    tomas = [dict(toma=p['t'], inicio=round(p['t0'], 3), dur=p['d'], escena=p['sc']) for p in plan]
+    json.dump(dict(duracion=round(total, 3), tomas=tomas, voces=voces), open(os.path.join(ex, 'proyecto.json'), 'w'), ensure_ascii=False, indent=1)
 
 def ass_t(t):
     t = max(0, t); h = int(t // 3600); m = int(t % 3600 // 60); s = t % 60

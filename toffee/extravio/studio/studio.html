@@ -1,0 +1,395 @@
+<title>Claude Studio</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=Figtree:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: estudio de postproducción — barra superior, visor y Claude arriba, inspector, línea de tiempo multipista abajo. Un solo look oscuro a propósito. */
+:root{
+  --bg:#0f1013; --panel:#17181d; --panel2:#1e2027; --line:#2a2c35; --fg:#eceef3; --muted:#8d92a3;
+  --violet:#8b6cff; --blue:#3d8bff; --voz:#8b6cff; --cama:#2f9e8f; --toma:#3a3f4d; --warn:#ffb547; --bad:#ff5d6c; --ok:#3ccf91;
+  --f-ui:"Figtree",system-ui,sans-serif; --f-disp:"Sora","Figtree",system-ui,sans-serif; --f-mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--bg);color:var(--fg);font:14px/1.45 var(--f-ui);margin:0;padding-left:max(10px,env(safe-area-inset-left,0px));padding-right:max(10px,env(safe-area-inset-right,0px));padding-block:0 10px;display:flex;flex-direction:column;overflow:hidden}
+button{font:600 13px var(--f-ui);color:var(--fg);background:var(--panel2);border:1px solid var(--line);border-radius:8px;min-height:34px;padding:0 12px;cursor:pointer;touch-action:manipulation}
+button:hover{border-color:#3a3d4a}
+button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
+button.pri{background:linear-gradient(135deg,var(--violet),var(--blue));border:0}
+button.on{background:#2c2550;border-color:var(--violet)}
+button:disabled{opacity:.4;cursor:default}
+input,textarea{font:13px var(--f-ui);color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:7px 9px}
+.mono{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+header{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-block:10px 8px}
+header h1{font:700 17px var(--f-disp);margin:0;letter-spacing:.01em}
+header h1 b{background:linear-gradient(135deg,var(--violet),var(--blue));-webkit-background-clip:text;background-clip:text;color:transparent}
+.proj{color:var(--muted);font-size:13px}
+.save{font:500 12px var(--f-mono);color:var(--muted);display:flex;align-items:center;gap:6px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok)}
+.dot.busy{background:var(--warn);animation:pulse 1s infinite}
+.dot.err{background:var(--bad)}
+@keyframes pulse{50%{opacity:.35}}
+.grow{flex:1}
+main{flex:1;min-height:0;display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,330px);grid-template-rows:minmax(0,1fr) auto;gap:8px}
+@media (max-width:820px){main{grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto auto}body{overflow:auto}}
+.stage{display:grid;grid-template-columns:auto minmax(0,1fr);gap:8px;min-height:0}
+@media (max-width:560px){.stage{grid-template-columns:minmax(0,1fr)}}
+.viewer{background:#000;border-radius:12px;border:1px solid var(--line);display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;overflow:hidden;position:relative}
+.viewer video{height:100%;max-height:52vh;aspect-ratio:9/16;max-width:100%;background:#000;display:block}
+.sub{position:absolute;left:0;right:0;top:61%;text-align:center;font:700 clamp(13px,2.2vh,19px) var(--f-ui);color:#fff;text-shadow:0 0 3px #000,0 0 3px #000,0 2px 3px #000;pointer-events:none;padding-inline:8px}
+.side{display:flex;flex-direction:column;gap:8px;min-width:0;min-height:0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 12px;min-width:0}
+.card h2{font:600 11px var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.transport{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tc{font:500 15px var(--f-mono);min-width:118px}
+.row{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.insp .big{font:600 15px var(--f-ui);margin-bottom:4px}
+.insp .txt{color:var(--muted);font-size:13px;margin-bottom:8px}
+.warn{color:var(--warn);font-size:12.5px}
+.claude{display:flex;flex-direction:column;min-height:0}
+.claude .log{flex:1;min-height:120px;max-height:46vh;overflow:auto;display:flex;flex-direction:column;gap:8px;padding-right:2px}
+.msg{padding:8px 10px;border-radius:10px;background:var(--panel2);font-size:13px;white-space:pre-wrap;word-break:break-word}
+.msg.me{background:#1d2a44;align-self:flex-end;max-width:92%}
+.msg.ai{border:1px solid #33295e}
+.msg .who{font:600 10.5px var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:block;margin-bottom:2px}
+.status{font:500 12px var(--f-mono);color:var(--violet);min-height:18px}
+.claude textarea{width:100%;min-height:58px;resize:vertical}
+.tl{grid-column:1/-1;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:8px;min-width:0}
+.tlbar{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.tlwrap{display:grid;grid-template-columns:96px minmax(0,1fr);gap:0}
+.heads{display:flex;flex-direction:column}
+.head{height:44px;display:flex;align-items:center;gap:4px;font:600 11px var(--f-mono);color:var(--muted);border-bottom:1px solid var(--line);padding-right:6px}
+.head.ruler{height:22px}
+.head button{min-height:24px;padding:0 6px;font-size:11px;border-radius:6px}
+.scroll{overflow-x:auto;overflow-y:hidden;position:relative;-webkit-overflow-scrolling:touch}
+canvas#tl{display:block;touch-action:pan-y}
+.pill{font:600 11px var(--f-mono);padding:2px 8px;border-radius:999px;background:#2c2550;color:#cbbcff}
+.list{display:flex;flex-direction:column;gap:6px;max-height:30vh;overflow:auto}
+.item{display:flex;gap:6px;align-items:center;justify-content:space-between;font-size:12.5px;background:var(--panel2);border-radius:8px;padding:6px 8px}
+dialog{background:var(--panel);color:var(--fg);border:1px solid var(--line);border-radius:14px;max-width:min(520px,92vw);width:100%}
+dialog::backdrop{background:#0009}
+.empty{color:var(--muted);font-size:13px}
+</style>
+
+<header>
+  <h1><b>Claude</b> Studio</h1>
+  <span class="proj" id="proj">Cargando proyecto…</span>
+  <span class="save"><span class="dot" id="dot"></span><span id="savetxt">—</span></span>
+  <span class="grow"></span>
+  <button id="undo" title="Deshacer" disabled>↶ Deshacer</button>
+  <button id="redo" title="Rehacer" disabled>↷ Rehacer</button>
+  <button id="btnVers">Versiones</button>
+  <button id="btnFin" class="pri">Finalizar proyecto</button>
+</header>
+
+<main>
+  <div class="stage">
+    <div class="viewer" id="viewer">
+      <video id="vid" playsinline muted preload="auto"></video>
+      <div class="sub" id="sub"></div>
+    </div>
+    <div class="side">
+      <div class="card">
+        <h2>Reproducción</h2>
+        <div class="transport">
+          <button id="play" class="pri" style="min-width:86px">▶ Play</button>
+          <button id="fb" title="Un cuadro atrás">◀︎ 1 cuadro</button>
+          <button id="ff" title="Un cuadro adelante">1 cuadro ▶︎</button>
+          <span class="tc mono" id="tc">0:00.000</span>
+        </div>
+        <div class="row" style="margin-top:6px">
+          <button id="b5">−5 s</button><button id="f5">+5 s</button>
+          <span class="empty" id="loadtxt">Cargando audio…</span>
+        </div>
+      </div>
+      <div class="card insp" id="insp">
+        <h2>Propiedades</h2>
+        <div class="empty">Toca una voz en la línea de tiempo para moverla, cambiarle el volumen o silenciarla.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card claude">
+    <h2>Claude</h2>
+    <div class="log" id="log"></div>
+    <div class="status" id="cstat"></div>
+    <textarea id="ask" placeholder="Ej.: adelanta la voz V12 80 ms · baja el volumen de Tocino · ¿qué voces están desfasadas?"></textarea>
+    <div class="row" style="margin-top:6px">
+      <button id="send" class="pri">Enviar a Claude</button>
+      <button id="stop" hidden>Detener</button>
+      <span class="grow"></span>
+      <button id="toCC" title="Tareas grandes: render, separar audio, corregir imagen">Encargar a Claude Code</button>
+    </div>
+  </div>
+
+  <section class="tl">
+    <div class="tlbar">
+      <span class="pill" id="selpill">Nada seleccionado</span>
+      <span class="grow"></span>
+      <span class="empty">Zoom</span>
+      <input id="zoom" type="range" min="20" max="600" value="90" style="width:140px" aria-label="Zoom de la línea de tiempo">
+      <button id="follow" class="on">Seguir cursor</button>
+    </div>
+    <div class="tlwrap">
+      <div class="heads">
+        <div class="head ruler">TIEMPO</div>
+        <div class="head">TOMAS</div>
+        <div class="head">VOCES <span class="grow"></span><button id="mV">M</button><button id="lV" title="Bloquear">🔒</button></div>
+        <div class="head">SUBTÍT.</div>
+        <div class="head">MÚSICA <span class="grow"></span><button id="mC">M</button></div>
+      </div>
+      <div class="scroll" id="scroll"><canvas id="tl"></canvas></div>
+    </div>
+  </section>
+</main>
+
+<dialog id="dlg"><div id="dlgbody"></div><div class="row" style="margin-top:12px;justify-content:flex-end"><button id="dlgclose">Cerrar</button></div></dialog>
+
+<script>
+(function(){
+const PID = 'cap01p1';
+const $ = id => document.getElementById(id);
+const vid = $('vid'), cv = $('tl'), sc = $('scroll');
+const TRACK = {ruler:22, toma:44, voz:44, sub:44, cama:44};
+const H = TRACK.ruler + TRACK.toma + TRACK.voz + TRACK.sub + TRACK.cama;
+let db = null, sample = null, me = null;
+let P = null;               // documento del proyecto
+let V = {};                 // voces: id -> doc
+let versiones = [], mensajes = [];
+let pps = 90;               // píxeles por segundo
+let sel = null, muteV = false, muteC = false, lockV = false, follow = true;
+let undo = [], redo = [];
+const buf = {};             // id -> AudioBuffer (voces) y 'cama'
+let ac = null, playing = false, t0ac = 0, t0v = 0, srcs = [];
+const fmt = t => { t = Math.max(0, t); const m = Math.floor(t / 60), s = t - m * 60; return m + ':' + (s < 10 ? '0' : '') + s.toFixed(3); };
+const ms = x => (x >= 0 ? '+' : '−') + Math.round(Math.abs(x) * 1000) + ' ms';
+
+/* ---------- guardado ---------- */
+let pend = 0;
+function setSave(state, txt){ $('dot').className = 'dot' + (state === 'busy' ? ' busy' : state === 'err' ? ' err' : ''); $('savetxt').textContent = txt; }
+async function guardarVoz(id, patch, autor){
+  if (!db) return;
+  pend++; setSave('busy', 'Guardando…');
+  try {
+    await db.doc(`proyectos/${PID}/voces/${id}`).update(Object.assign({}, patch, {editado_por: autor || 'jay', editado: new Date().toISOString()}));
+    pend--; if (!pend) setSave('ok', 'Guardado');
+  } catch (e) { pend--; setSave('err', 'No se pudo guardar: ' + (e.code || e.message)); }
+}
+const timers = {};
+function cambio(id, patch, autor){
+  const v = V[id]; if (!v) return;
+  const prev = {}; for (const k in patch) prev[k] = v[k];
+  undo.push({id, prev, next: patch}); redo = [];
+  Object.assign(v, patch); syncUndo(); draw(); insp();
+  clearTimeout(timers[id]); timers[id] = setTimeout(() => guardarVoz(id, patch, autor), 450);
+  if (playing) restart();
+}
+function syncUndo(){ $('undo').disabled = !undo.length; $('redo').disabled = !redo.length; }
+$('undo').onclick = () => { const u = undo.pop(); if (!u) return; Object.assign(V[u.id], u.prev); redo.push(u); guardarVoz(u.id, u.prev); syncUndo(); draw(); insp(); };
+$('redo').onclick = () => { const u = redo.pop(); if (!u) return; Object.assign(V[u.id], u.next); undo.push(u); guardarVoz(u.id, u.next); syncUndo(); draw(); insp(); };
+
+/* ---------- audio ---------- */
+async function cargarAudio(){
+  try { ac = new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { $('loadtxt').textContent = 'Este navegador no reproduce el audio.'; return; }
+  const ids = Object.keys(V); let n = 0; const tot = ids.length + 1;
+  const get = async (url) => ac.decodeAudioData(await (await fetch(url)).arrayBuffer());
+  try { if (P.cama) buf.cama = await get(P.cama); } catch (e) {}
+  $('loadtxt').textContent = `Audio ${++n}/${tot}`;
+  await Promise.all(ids.map(async id => { try { if (V[id].url) buf[id] = await get(V[id].url); } catch (e) {} $('loadtxt').textContent = `Audio ${++n}/${tot}`; }));
+  $('loadtxt').textContent = 'Listo'; draw();
+}
+function tNow(){ return playing ? t0v + (ac.currentTime - t0ac) : vid.currentTime; }
+function stopAll(){ srcs.forEach(s => { try { s.stop(); } catch (e) {} }); srcs = []; }
+function startAt(t){
+  stopAll(); if (!ac) return;
+  const now = ac.currentTime + 0.05; t0ac = now; t0v = t;
+  const play = (b, at, gain) => { if (!b) return; const s = ac.createBufferSource(); s.buffer = b; const g = ac.createGain(); g.gain.value = gain; s.connect(g).connect(ac.destination);
+    const off = t - at; if (off >= b.duration) return; if (off >= 0) s.start(now, off); else s.start(now - off); srcs.push(s); };
+  if (!muteC) play(buf.cama, 0, 1);
+  if (!muteV) for (const id in V) { const v = V[id]; if (!v.mute) play(buf[id], v.inicio + (v.mueve || 0), v.gain ?? 1); }
+  vid.currentTime = t; vid.play().catch(() => {});
+}
+function restart(){ startAt(tNow()); }
+async function togglePlay(){
+  if (!ac) return; if (ac.state === 'suspended') await ac.resume();
+  if (playing) { playing = false; const t = tNow(); stopAll(); vid.pause(); vid.currentTime = t; $('play').textContent = '▶ Play'; }
+  else { playing = true; startAt(vid.currentTime); $('play').textContent = '❚❚ Pausa'; }
+}
+function seek(t){ t = Math.max(0, Math.min(P ? P.duracion : 0, t)); if (playing) startAt(t); else vid.currentTime = t; draw(); }
+$('play').onclick = togglePlay;
+$('fb').onclick = () => seek(tNow() - 1 / 30); $('ff').onclick = () => seek(tNow() + 1 / 30);
+$('b5').onclick = () => seek(tNow() - 5); $('f5').onclick = () => seek(tNow() + 5);
+document.addEventListener('keydown', e => { if (e.target.tagName === 'TEXTAREA' || e.target.tagName === 'INPUT') return;
+  if (e.code === 'Space') { e.preventDefault(); togglePlay(); }
+  if (e.key === 'ArrowLeft') seek(tNow() - (e.shiftKey ? 1 : 1 / 30)); if (e.key === 'ArrowRight') seek(tNow() + (e.shiftKey ? 1 : 1 / 30));
+  if (sel && (e.key === ',' || e.key === '.')) cambio(sel, {mueve: +( (V[sel].mueve || 0) + (e.key === '.' ? .01 : -.01) ).toFixed(3)}); });
+function loop(){ if (playing) { const t = tNow(); if (Math.abs(vid.currentTime - t) > 0.12) vid.currentTime = t; if (P && t >= P.duracion) togglePlay(); }
+  $('tc').textContent = fmt(tNow()); subtitulo(tNow()); draw(); requestAnimationFrame(loop); }
+
+/* ---------- línea de tiempo ---------- */
+const ctx = cv.getContext('2d');
+const peaks = {};
+function pk(id, b){ if (peaks[id]) return peaks[id]; const d = b.getChannelData(0), n = Math.ceil(b.duration * 100), o = new Float32Array(n), st = Math.floor(d.length / n);
+  for (let i = 0; i < n; i++) { let m = 0; for (let j = i * st; j < (i + 1) * st; j++) { const a = Math.abs(d[j] || 0); if (a > m) m = a; } o[i] = m; } return peaks[id] = o; }
+function wave(id, b, x0, y, h, color){ const p = pk(id, b), px = pps / 100; ctx.fillStyle = color;
+  const vis0 = sc.scrollLeft - 50, vis1 = sc.scrollLeft + sc.clientWidth + 50;
+  for (let i = 0; i < p.length; i++) { const x = x0 + i * px; if (x < vis0 || x > vis1) continue; const a = Math.min(1, p[i] * 2.4) * h / 2; ctx.fillRect(x, y + h / 2 - a, Math.max(1, px), a * 2 || 1); } }
+function size(){ if (!P) return; const w = Math.ceil(P.duracion * pps) + 40, dpr = window.devicePixelRatio || 1;
+  cv.width = w * dpr; cv.height = H * dpr; cv.style.width = w + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+function draw(){
+  if (!P) return; const W = parseFloat(cv.style.width);
+  ctx.clearRect(0, 0, W, H); ctx.font = '500 10.5px "IBM Plex Mono", monospace'; ctx.textBaseline = 'middle';
+  // regla
+  ctx.fillStyle = '#8d92a3'; const step = pps > 200 ? 0.5 : pps > 60 ? 1 : 5;
+  for (let t = 0; t <= P.duracion; t += step) { const x = t * pps; ctx.fillRect(x, 14, 1, 8); if (Math.round(t * 10) % (step < 1 ? 10 : step * 10) === 0 || step >= 1) ctx.fillText(fmt(t).replace(/\.\d+$/, ''), x + 3, 8); }
+  let y = TRACK.ruler;
+  // tomas
+  (P.tomas || []).forEach((k, i) => { const x = k.inicio * pps, w = k.dur * pps; ctx.fillStyle = i % 2 ? '#323745' : '#2a2e3a'; ctx.fillRect(x, y + 4, w - 1, TRACK.toma - 8);
+    ctx.fillStyle = '#c9cdd8'; if (w > 26) ctx.fillText(k.toma, x + 4, y + TRACK.toma / 2); });
+  y += TRACK.toma;
+  // voces
+  for (const id in V) { const v = V[id], x = (v.inicio + (v.mueve || 0)) * pps, w = v.dur * pps, isS = sel === id;
+    ctx.fillStyle = v.mute ? '#2a2c35' : isS ? '#4a3a9a' : '#33295e'; ctx.fillRect(x, y + 3, w, TRACK.voz - 6);
+    if (buf[id]) wave(id, buf[id], x, y + 6, TRACK.voz - 12, v.mute ? '#555' : '#b8a6ff');
+    ctx.strokeStyle = isS ? '#c9b9ff' : (Math.abs(v.mueve || 0) > 0.001 ? '#3d8bff' : '#4b3f8c'); ctx.lineWidth = isS ? 2 : 1; ctx.strokeRect(x + .5, y + 3.5, w - 1, TRACK.voz - 7);
+    ctx.fillStyle = '#fff'; if (w > 22) ctx.fillText(id, x + 4, y + 11);
+    if (v.desfase && Math.abs(v.desfase) > 0.15) { ctx.fillStyle = '#ffb547'; ctx.fillRect(x, y + TRACK.voz - 6, w, 3); } }
+  y += TRACK.voz;
+  // subtítulos
+  for (const id in V) { const v = V[id]; if (v.mute) continue; const x = (v.inicio + (v.mueve || 0)) * pps, w = v.dur * pps; ctx.fillStyle = '#23252d'; ctx.fillRect(x, y + 8, w, TRACK.sub - 16);
+    ctx.save(); ctx.beginPath(); ctx.rect(x, y, w, TRACK.sub); ctx.clip(); ctx.fillStyle = '#d6d9e2'; ctx.fillText(v.texto || '', x + 4, y + TRACK.sub / 2); ctx.restore(); }
+  y += TRACK.sub;
+  // cama
+  ctx.fillStyle = '#16302d'; ctx.fillRect(0, y + 3, P.duracion * pps, TRACK.cama - 6); if (buf.cama) wave('cama', buf.cama, 0, y + 6, TRACK.cama - 12, muteC ? '#444' : '#2f9e8f');
+  // cursor
+  const xc = tNow() * pps; ctx.fillStyle = '#ff5d6c'; ctx.fillRect(xc - 1, 0, 2, H);
+  if (follow && playing) { const L = sc.scrollLeft, R = L + sc.clientWidth; if (xc > R - 60 || xc < L) sc.scrollLeft = xc - sc.clientWidth * 0.3; }
+}
+// arrastre de voces y toque en la regla
+let drag = null;
+cv.addEventListener('pointerdown', e => {
+  const r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, t = x / pps;
+  const yv0 = TRACK.ruler + TRACK.toma;
+  if (y >= yv0 && y < yv0 + TRACK.voz) {
+    const hit = Object.keys(V).find(id => { const v = V[id], a = v.inicio + (v.mueve || 0); return t >= a && t <= a + v.dur; });
+    if (hit) { sel = hit; insp(); $('selpill').textContent = hit + ' seleccionada'; if (!lockV) { drag = {id: hit, x0: e.clientX, m0: V[hit].mueve || 0, moved: false}; cv.setPointerCapture(e.pointerId); } draw(); return; }
+  }
+  seek(t);
+});
+cv.addEventListener('pointermove', e => { if (!drag) return; const dx = (e.clientX - drag.x0) / pps; if (Math.abs(e.clientX - drag.x0) > 3) drag.moved = true;
+  if (drag.moved) { V[drag.id].mueve = +(drag.m0 + dx).toFixed(3); draw(); insp(); } });
+cv.addEventListener('pointerup', () => { if (drag && drag.moved) { const id = drag.id, nv = V[id].mueve; V[id].mueve = drag.m0; cambio(id, {mueve: nv}); } drag = null; });
+$('zoom').oninput = e => { const c = tNow(); pps = +e.target.value; size(); sc.scrollLeft = c * pps - sc.clientWidth / 2; draw(); };
+$('follow').onclick = () => { follow = !follow; $('follow').classList.toggle('on', follow); };
+$('mV').onclick = () => { muteV = !muteV; $('mV').classList.toggle('on', muteV); if (playing) restart(); };
+$('mC').onclick = () => { muteC = !muteC; $('mC').classList.toggle('on', muteC); if (playing) restart(); };
+$('lV').onclick = () => { lockV = !lockV; $('lV').classList.toggle('on', lockV); };
+
+function subtitulo(t){ let s = ''; for (const id in V) { const v = V[id], a = v.inicio + (v.mueve || 0); if (!v.mute && t >= a && t <= a + v.dur) { s = v.texto || ''; break; } } $('sub').textContent = s; }
+
+/* ---------- inspector ---------- */
+function insp(){
+  const box = $('insp'); if (!sel || !V[sel]) { return; }
+  const v = V[sel];
+  box.innerHTML = `<h2>Propiedades · ${sel}</h2>
+  <div class="big">${esc(v.personaje || '')} · toma ${esc(v.toma || '')}</div>
+  <div class="txt">«${esc(v.texto || '')}»</div>
+  <div class="row mono" style="margin-bottom:6px">Empieza en ${fmt(v.inicio + (v.mueve || 0))} · movida ${ms(v.mueve || 0)}</div>
+  ${v.desfase ? `<div class="warn" style="margin-bottom:6px">Desfase medido por Claude: ${ms(v.desfase)}</div>` : ''}
+  <div class="row" style="margin-bottom:6px">
+    <button data-n="-0.1">−100</button><button data-n="-0.05">−50</button><button data-n="-0.01">−10</button>
+    <button data-n="0.01">+10</button><button data-n="0.05">+50</button><button data-n="0.1">+100</button><span class="empty">ms</span></div>
+  <div class="row" style="margin-bottom:6px"><label for="gain" class="empty">Volumen</label><input id="gain" type="range" min="0" max="2" step="0.05" value="${v.gain ?? 1}" style="flex:1"><span class="mono" id="gv">${Math.round((v.gain ?? 1) * 100)}%</span></div>
+  <div class="row"><button id="pv">▶ Escuchar desde 1 s antes</button><button id="mute1" class="${v.mute ? 'on' : ''}">${v.mute ? 'Activar' : 'Silenciar'}</button><button id="reset1">Volver a como estaba</button></div>`;
+  box.querySelectorAll('[data-n]').forEach(b => b.onclick = () => cambio(sel, {mueve: +((v.mueve || 0) + +b.dataset.n).toFixed(3)}));
+  $('gain').oninput = e => { $('gv').textContent = Math.round(e.target.value * 100) + '%'; };
+  $('gain').onchange = e => cambio(sel, {gain: +e.target.value});
+  $('mute1').onclick = () => cambio(sel, {mute: !v.mute});
+  $('reset1').onclick = () => cambio(sel, {mueve: 0, gain: 1, mute: false});
+  $('pv').onclick = async () => { if (playing) await togglePlay(); seek(v.inicio + (v.mueve || 0) - 1); togglePlay(); };
+}
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+/* ---------- versiones y finalizar ---------- */
+function ajustes(){ const o = {}; for (const id in V) { const v = V[id]; o[id] = {mueve: v.mueve || 0, gain: v.gain ?? 1, mute: !!v.mute}; } return o; }
+function dialogo(html){ $('dlgbody').innerHTML = html; $('dlg').showModal(); }
+$('dlgclose').onclick = () => $('dlg').close();
+$('btnVers').onclick = () => {
+  dialogo(`<h2 style="font:700 16px var(--f-disp);margin:0 0 8px">Versiones</h2>
+  <div class="row" style="margin-bottom:10px"><input id="vnote" placeholder="Nota (opcional)" style="flex:1"><button id="vsave" class="pri">Guardar versión</button></div>
+  <div class="list" id="vlist">${versiones.length ? versiones.map(x => `<div class="item"><span><b>${esc(x.nota || 'Sin nota')}</b><br><span class="mono empty">${new Date(x.fecha).toLocaleString()} · ${esc(x.autor || '')}</span></span><button data-r="${x._id}">Recuperar</button></div>`).join('') : '<div class="empty">Todavía no hay versiones guardadas.</div>'}</div>`);
+  $('vsave').onclick = async () => { try { await db.collection(`proyectos/${PID}/versiones`).add({fecha: new Date().toISOString(), nota: $('vnote').value, autor: 'jay', ajustes: ajustes()}); $('dlg').close(); setSave('ok', 'Versión guardada'); } catch (e) { setSave('err', 'No se pudo guardar la versión'); } };
+  $('vlist').querySelectorAll('[data-r]').forEach(b => b.onclick = () => { const x = versiones.find(y => y._id === b.dataset.r); if (!x) return;
+    for (const id in x.ajustes) if (V[id]) cambio(id, x.ajustes[id]); $('dlg').close(); });
+};
+$('btnFin').onclick = () => dialogo(`<h2 style="font:700 16px var(--f-disp);margin:0 0 8px">Finalizar proyecto</h2>
+  <p>Claude Code revisa el proyecto completo (sincronía, audio, subtítulos, duración), te muestra lo que encontró y renderiza el video final con tus ajustes, en calidad completa.</p>
+  <p class="empty">Se guarda una versión con el estado actual y queda la tarea en la lista de Claude Code. Avísale en el chat de Claude que ya le diste Finalizar.</p>
+  <div class="row" style="justify-content:flex-end"><button id="finok" class="pri">Pedir revisión y render</button></div>`) || setTimeout(() => { $('finok').onclick = async () => {
+    try { await db.collection(`proyectos/${PID}/versiones`).add({fecha: new Date().toISOString(), nota: 'Antes de finalizar', autor: 'jay', ajustes: ajustes()});
+      await db.collection(`proyectos/${PID}/mensajes`).add({de: 'jay', para: 'claude-code', tipo: 'finalizar', texto: 'Revisión final y render del proyecto con mis ajustes.', estado: 'pendiente', fecha: new Date().toISOString()});
+      $('dlg').close(); setSave('ok', 'Tarea enviada a Claude Code'); } catch (e) { setSave('err', 'No se pudo enviar'); } }; }, 0);
+
+/* ---------- panel de Claude ---------- */
+let hist = [], ctrl = null;
+function pintaLog(){
+  const items = [...mensajes.map(m => ({de: m.de === 'claude-code' ? 'Claude Code' : m.de === 'jay' ? 'Tú → Claude Code' : m.de, texto: m.texto + (m.estado ? `\n[${m.estado}]` : ''), cls: m.de === 'jay' ? 'me' : 'ai', fecha: m.fecha})),
+    ...hist.map(h => ({de: h.role === 'user' ? 'Tú' : 'Claude', texto: h.show || h.content, cls: h.role === 'user' ? 'me' : 'ai', fecha: h.fecha}))].sort((a, b) => (a.fecha || '').localeCompare(b.fecha || ''));
+  $('log').innerHTML = items.length ? items.map(i => `<div class="msg ${i.cls}"><span class="who">${esc(i.de)}</span>${esc(i.texto)}</div>`).join('') : '<div class="empty">Pídele a Claude que mueva voces, cambie volúmenes o revise desfases. Para render, separar audio o corregir imagen, usa «Encargar a Claude Code».</div>';
+  $('log').scrollTop = 1e9;
+}
+function resumen(){ return Object.keys(V).sort().map(id => { const v = V[id]; return `${id} | ${v.personaje} | toma ${v.toma} | empieza ${(v.inicio + (v.mueve || 0)).toFixed(3)} s | dura ${v.dur.toFixed(2)} s | movida ${Math.round((v.mueve || 0) * 1000)} ms | volumen ${Math.round((v.gain ?? 1) * 100)}% | ${v.mute ? 'silenciada' : 'activa'}${v.desfase ? ` | desfase medido ${Math.round(v.desfase * 1000)} ms` : ''} | «${v.texto}»`; }).join('\n'); }
+const idv = x => Object.keys(V).find(k => k.toLowerCase() === String(x).trim().toLowerCase()) || String(x);
+const TOOLS = [
+  {name: 'mover_voz', description: 'Mueve una voz en el tiempo. ms positivos la atrasan (suena más tarde), negativos la adelantan. Relativo a donde está ahora.', inputSchema: {type: 'object', properties: {id: {type: 'string'}, ms: {type: 'number'}}, required: ['id', 'ms']},
+   execute: ({id, ms: m}) => { id = idv(id); if (!V[id]) throw new Error('No existe la voz ' + id); $('cstat').textContent = `Moviendo ${id}…`; cambio(id, {mueve: +((V[id].mueve || 0) + (+m) / 1000).toFixed(3)}, 'claude'); return {ok: true, id, movida_ms: Math.round(V[id].mueve * 1000)}; }},
+  {name: 'volumen_voz', description: 'Fija el volumen de una voz (0 a 2; 1 = normal).', inputSchema: {type: 'object', properties: {id: {type: 'string'}, volumen: {type: 'number'}}, required: ['id', 'volumen']},
+   execute: ({id, volumen}) => { id = idv(id); if (!V[id]) throw new Error('No existe ' + id); cambio(id, {gain: Math.max(0, Math.min(2, +volumen))}, 'claude'); return {ok: true}; }},
+  {name: 'silenciar_voz', description: 'Silencia o activa una voz.', inputSchema: {type: 'object', properties: {id: {type: 'string'}, silenciar: {type: 'boolean'}}, required: ['id', 'silenciar']},
+   execute: ({id, silenciar}) => { id = idv(id); if (!V[id]) throw new Error('No existe ' + id); cambio(id, {mute: !!silenciar}, 'claude'); return {ok: true}; }},
+  {name: 'ir_a', description: 'Mueve el cursor de reproducción a un segundo del video.', inputSchema: {type: 'object', properties: {segundo: {type: 'number'}}, required: ['segundo']},
+   execute: ({segundo}) => { seek(+segundo); return {ok: true}; }},
+];
+$('send').onclick = async () => {
+  const q = $('ask').value.trim(); if (!q) return;
+  if (!sample) { $('cstat').textContent = 'Claude no está disponible en esta vista. Usa «Encargar a Claude Code».'; return; }
+  $('ask').value = ''; hist.push({role: 'user', content: q, fecha: new Date().toISOString()}); pintaLog();
+  const prompt = `Eres el asistente de edición de Claude Studio. Proyecto: ${P.nombre}, dura ${P.duracion.toFixed(1)} s. El cursor está en ${tNow().toFixed(2)} s.${sel ? ' Voz seleccionada: ' + sel + '.' : ''}
+Voces del proyecto (una por línea):\n${resumen()}
+Reglas: haz solo lo que pide el usuario, con las herramientas. No cambies nada creativo que no pidió. Mover una voz: ms positivos la atrasan, negativos la adelantan. Responde en español, corto y claro, diciendo qué cambiaste. Para render, separar audio, quitar ruido o corregir imagen, di que use «Encargar a Claude Code».
+Conversación previa:\n${hist.slice(-8, -1).map(h => (h.role === 'user' ? 'Usuario: ' : 'Claude: ') + h.content).join('\n')}
+Usuario: ${q}`;
+  ctrl = new AbortController(); $('stop').hidden = false; $('send').disabled = true; $('cstat').textContent = 'Pensando…';
+  const h = {role: 'assistant', content: '', fecha: new Date().toISOString()}; hist.push(h);
+  try { const r = await sample(prompt, {tools: TOOLS, signal: ctrl.signal, cache: false, onText: ({text}) => { h.content = text; $('cstat').textContent = 'Escribiendo…'; pintaLog(); }});
+    h.content = r.text; $('cstat').textContent = 'Listo'; }
+  catch (e) { h.content = e.text || (e.code === 'not_granted' ? 'Sin permiso para usar Claude en esta página.' : e.code === 'cancelled' ? 'Detenido.' : 'No se pudo: ' + (e.message || e.code)); $('cstat').textContent = ''; }
+  $('stop').hidden = true; $('send').disabled = false; pintaLog();
+};
+$('stop').onclick = () => ctrl && ctrl.abort();
+$('toCC').onclick = async () => { const q = $('ask').value.trim(); if (!q) { $('cstat').textContent = 'Escribe primero la tarea para Claude Code.'; return; }
+  try { await db.collection(`proyectos/${PID}/mensajes`).add({de: 'jay', para: 'claude-code', tipo: 'tarea', texto: q, estado: 'pendiente', fecha: new Date().toISOString(), cursor: +tNow().toFixed(2), voz: sel || null});
+    $('ask').value = ''; $('cstat').textContent = 'Tarea guardada. Avísale a Claude Code en el chat.'; } catch (e) { $('cstat').textContent = 'No se pudo guardar la tarea.'; } };
+
+/* ---------- arranque ---------- */
+async function start(){
+  const to = setTimeout(() => { if (!P) $('proj').textContent = 'No se pudo cargar el proyecto. Recarga la página.'; }, 10000);
+  db = await claude.use('db');
+  claude.use('sample').then(s => { sample = s; if (!s) $('send').disabled = true; });
+  if (!db) { clearTimeout(to); $('proj').textContent = 'Inicia sesión para abrir el proyecto.'; return; }
+  db.doc('proyectos/' + PID).onSnapshot(s => { clearTimeout(to); if (!s.exists) { $('proj').textContent = 'El proyecto todavía no tiene datos.'; return; }
+    const first = !P; P = s.data(); $('proj').textContent = P.nombre + ' · ' + fmt(P.duracion);
+    if (first) { vid.src = P.video; size(); setSave('ok', 'Guardado'); } }, () => setSave('err', 'Sin conexión'));
+  let firstV = true;
+  db.collection(`proyectos/${PID}/voces`).onSnapshot(q => { q.docs.forEach(d => { const nv = d.data(); if (timers[d.id] && V[d.id]) return; V[d.id] = Object.assign(V[d.id] || {}, nv); });
+    if (firstV && P) { firstV = false; cargarAudio(); } draw(); insp(); });
+  db.collection(`proyectos/${PID}/versiones`).orderBy('fecha', 'desc').limit(30).onSnapshot(q => { versiones = q.docs.map(d => Object.assign({_id: d.id}, d.data())); });
+  db.collection(`proyectos/${PID}/mensajes`).orderBy('fecha').limit(60).onSnapshot(q => { mensajes = q.docs.map(d => d.data()); pintaLog(); });
+  pintaLog(); requestAnimationFrame(loop);
+  const wait = setInterval(() => { if (P && Object.keys(V).length && !ac) { clearInterval(wait); cargarAudio(); } }, 500);
+}
+if (window.claude && claude.use) start(); else $('proj').textContent = 'Abre esta página dentro de Claude.';
+})();
+</script>

@@ -79,6 +79,9 @@ Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir c
 
 **Formato YouTube (pedido de Jay, 3-nov-2026):** el objetivo es el canal de YouTube. Cada capítulo es una historia partida en dos reels (parte 1 de 1:30–2:00 el día 1, termina en suspenso; parte 2 el día 2, arranca con la respuesta; cada una ≤ 3 min para Shorts) que se pegan en el video largo de YouTube (3–10 min) el día 2, como la Fábrica de Santa de Gnomo. Usar canciones propias y efectos (Jay tiene con qué generarlos). **Subtítulos (decisión de Jay, 3-nov-2026, reemplaza «sin texto en pantalla»): se copia a Gnomo Palomo; subtítulos pegados en TODO (shorts y video largo de YouTube): letras blancas en negrita con borde negro, pequeñas, centradas, pocas palabras, palabras clave en color.** Las frases en inglés de Tocino van con su traducción en el subtítulo. **Formato de las tomas (decisión de Jay, 4-nov-2026): TODO en vertical 9:16, como Gnomo** (shorts y video largo de YouTube iguales; nada de generar en 16:9 y recortar, porque el recorte queda borroso). Las imágenes de lugares en 16:9 sirven como referencia.
 
+## Claude Studio (editor de Jay, 4-nov-2026)
+- Link: https://claude.ai/artifact/Rp5qnwNvumrHP12AFkbkkB · cómo funciona: `toffee/extravio/studio/LEEME.md`. Jay mueve voces, volumen y silencios; cuando dice «finalizar» (o hay tareas «pendiente» en `mensajes`), Claude lee la base, escribe `ajustes.json` y renderiza.
+
 ## Entregas en link (pedido de Jay, 29-oct-2026)
 - **Prompts nuevos o cambiados: SIEMPRE en el chat, cada uno en su bloque para copiar y pegar** (pedido de Jay, 29-oct-2026). No basta con decir «está en el link».
 - Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.
