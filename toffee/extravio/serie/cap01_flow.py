@@ -126,7 +126,7 @@ P1 = [
   "In the background La Llorona floats across the square from right to left, wailing dramatically at her burnt arepa",
   ("LLORONA","¡Se me quemó la arepaaa!"),"PLAZA.jpg"),
  ("G20",4,"23","PLAZA",["DIZZY"],"Close-up, static",
-  "From the first frame Dizzy, riding, faces the camera",
+  "From the first frame Dizzy stands on the stone pavement of the square facing the camera, no vehicle, nothing in his paws",
   "He looks at the camera, tired and unimpressed",("DIZZY","Todos los días, parce."),"PLAZA.jpg"),
  ("G21",8,"24 y 25","ESQUINA",["TOCINO"],"Medium shot, static",
   "From the first frame Tocino sits on the sidewalk next to the bench with the broken guitar across his front legs; an empty hat lies in front of him",
@@ -229,7 +229,7 @@ def prompt(g):
         partes.append("No one speaks; all mouths stay closed.")
     if cast:
         partes.append("Only these characters appear; no other animals.")
-    partes.append(f"No humans or people anywhere, no phone, no selfie stick, no music; only {SONIDO[lugar]}.")
+    partes.append(f"No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only {SONIDO[lugar]}.")
     out=" ".join(partes)
     # sin nombres propios: Flow los escribe como texto (salió «DIZZY» en la cadena)
     trozos=out.split('"')
