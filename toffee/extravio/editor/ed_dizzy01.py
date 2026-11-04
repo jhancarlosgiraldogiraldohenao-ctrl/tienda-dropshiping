@@ -44,25 +44,24 @@ ROJO = {'cucha', 'cámara', 'malparidos', 'hijueputa', 'bartolo', 'perro', 'est�
 E = [
  dict(t='G01', a=0.0, v='V01', vo=0.15, sc='zarzo', d=None),   # G01 nueva: Flow habló en inglés, la boca se mueve todo el tiempo
  dict(t='G02', a=0.2, d=None, v='V03', vo=0.2, sc='recuerdo', tinte=1),
- dict(t='G03', a=0.4, d=1.8, sc='recuerdo', tinte=1,),
+ dict(t='G03', a=0.4, d=1.4, sc='recuerdo', tinte=1,),
  dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1),
  dict(t='G01', a=6.6, v='V02', vo=0.1, sc='zarzo', d=None),
- dict(t='G05', a=0.0, d=3.4, sc='finca', titulo=1),
+ dict(t='G05', a=0.0, d=2.6, sc='finca', titulo=1),
  dict(t='G06', a=0.0, v='V05', sc='finca', d=None),
  dict(t='G07', a=0.0, d=2.3, v='V20', sc='finca'),
  dict(t='G08', a=0.85, v='V06', sc='finca', d=None),
- dict(t='G07', a=2.2, d=1.4, sc='finca'),                                     # Bartolo mira (cola de la frase en L)
  dict(t='G09', a=1.6, v='V17', sc='finca', d=None),
  dict(t='G10', a=1.6, v='V07', sc='finca', d=None),
  dict(t='G11', a=0.0, v='V18', sc='finca', d=None),
  dict(t='G10', a=0.0, d=None, v='V19', vo=0.45, sc='finca'),                    # «¡Dios me lo bendiga!» sobre Dizzy
- dict(t='G12', a=0.0, d=2.6, sc='camino'),
+ dict(t='G12', a=0.0, d=2.0, sc='camino'),
  dict(t='G13', a=0.4, v='V08', sc='camino', d=None),
- dict(t='G14', a=0.0, d=2.7, sc='camino', cortar_musica=1.25),
+ dict(t='G14', a=0.0, d=2.3, sc='camino', cortar_musica=1.25),
  dict(t='G15', a=0.0, v='V09', sc='camino', d=None),
- dict(t='G16', a=0.0, d=1.9, sc='camino', fx=[('E09-grillo-silencio', 0.2, .7)]),
- dict(t='G17', a=0.0, d=3.0, sc='camino', volver_musica=1.6),
- dict(t='G18', a=0.0, d=3.4, sc='plaza'),
+ dict(t='G16', a=0.0, d=1.5, sc='camino', fx=[('E09-grillo-silencio', 0.2, .7)]),
+ dict(t='G17', a=0.0, d=2.4, sc='camino', volver_musica=1.6),
+ dict(t='G18', a=0.0, d=2.4, sc='plaza'),
  dict(t='G19', a=0.5, v='V21', sc='plaza', d=None),
  dict(t='G20', a=0.5, v='V10', sc='plaza', d=None),
  dict(t='G21', a=1.6, v='V22', sc='plaza', d=None),
@@ -70,7 +69,7 @@ E = [
  dict(t='G23', a=0.0, v='V11', sc='plaza', d=None),
  dict(t='G24', a=0.3, v='V24', sc='plaza', d=None),
  dict(t='G25', a=0.5, v='V12', sc='plaza', d=None),
- dict(t='G26', a=0.4, d=3.2, sc='olla'),
+ dict(t='G26', a=0.4, d=2.4, sc='olla'),
  dict(t='G26b', a=0.0, v='V31', sc='olla', d=None),
  dict(t='G27', a=0.9, v='V25', sc='olla', d=None),
  dict(t='G28', a=0.0, d=1.9, v='V30a', sc='olla'),
@@ -78,23 +77,23 @@ E = [
  dict(t='G28', a=2.4, d=2.0, v='V30b', sc='olla'),
  # la canción (sin voces habladas)
  dict(t='G30', a=3.0, d=4.0, sc='cancion'),
- dict(t='G32', a=0.5, d=2.0, sc='cancion'),
+ dict(t='G32', a=0.5, d=1.6, sc='cancion'),
  dict(t='G33', a=1.0, d=3.0, sc='cancion'),
  dict(t='G34', a=0.5, d=4.0, sc='cancion'),
  dict(t='G35', a=2.0, d=3.0, sc='cancion'),
  dict(t='G31', a=0.0, d=4.0, sc='cancion'),
  dict(t='G35', a=5.0, d=1.8, sc='cancion'),
- dict(t='G31', a=5.5, d=2.5, sc='cancion'),
+ dict(t='G31', a=5.5, d=1.7, sc='cancion'),
  # «muestra esa cuca»
  dict(t='G36', a=2.9, v='V26', sc='cuca', recorte=1, d=None),
- dict(t='G37', a=0.0, d=2.4, sc='cuca', fx=[('E09-grillo-silencio', 0.3, .8)]),
- dict(t='G38', a=0.4, d=2.6, sc='cuca', fx=[('E16-cachetada-triple', 1.2, .9)]),
+ dict(t='G37', a=0.0, d=2.0, sc='cuca', fx=[('E09-grillo-silencio', 0.3, .8)]),
+ dict(t='G38', a=0.4, d=2.2, sc='cuca', fx=[('E16-cachetada-triple', 1.2, .9)]),
  dict(t='G39', a=0.0, v='V27', sc='cuca', d=None),
  dict(t='G40', a=1.0, v='V14', sc='cuca', d=None),
  dict(t='G41', a=0.0, v='V28', sc='cuca', d=None),
  dict(t='G42', a=0.7, v='V29', sc='cuca', d=None),
  dict(t='G43', a=0.6, v='V15', sc='cuca', d=None),
- dict(t='G44', a=0.5, d=3.2, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
+ dict(t='G44', a=0.5, d=2.8, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
  dict(t='G45', a=0.9, v='V16', sc='final', d=None),
 ]
 MUSICA = {'recuerdo': ('M5-tuerto-reggaeton', .32), 'finca': ('M1-finca-bambuco', .38), 'camino': ('M2-camino-carranga', .42),
@@ -172,7 +171,7 @@ def main():
                     y = x; vstart = fw[0][0] + 0.08
         d = e['d']
         if d is None:
-            need = (vstart or 0) + (len(y) / SR if y is not None else 0) + 0.32
+            need = (vstart or 0) + (len(y) / SR if y is not None else 0) + 0.22
             d = min(max(need, 1.4), L - e['a'])
         d = min(d, L - e['a'])
         plan.append(dict(e, f=f, d=round(d, 3), t0=total, y=y, vs=vstart))
