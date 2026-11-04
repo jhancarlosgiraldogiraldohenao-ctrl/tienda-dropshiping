@@ -42,11 +42,11 @@ ROJO = {'cucha', 'cámara', 'malparidos', 'hijueputa', 'bartolo', 'perro', 'est�
 # t: toma · a: entrada (s) · d: duración (None = lo que pida la voz) · v: voz · vo: voz en off (segundos desde el inicio)
 # sc: escena · fx: [(efecto, segundo, ganancia)] · fin: efecto al terminar la voz · tinte · zoom · titulo
 E = [
- dict(t='G01', a=0.0, v='V01', sc='zarzo', d=None),
+ dict(t='G01', a=0.0, v='V01', vo=0.15, sc='zarzo', d=None),   # G01 nueva: Flow habló en inglés, la boca se mueve todo el tiempo
  dict(t='G02', a=0.4, d=None, v='V03', vo=0.2, sc='recuerdo', tinte=1),
  dict(t='G03', a=0.4, d=1.8, sc='recuerdo', tinte=1,),
  dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1),
- dict(t='G01', a=6.35, v='V02', sc='zarzo', d=None),
+ dict(t='G01', a=6.6, v='V02', vo=0.1, sc='zarzo', d=None),
  dict(t='G05', a=0.0, d=3.4, sc='finca', titulo=1),
  dict(t='G06', a=0.0, v='V05', sc='finca', d=None),
  dict(t='G07', a=0.0, d=2.3, v='V20', sc='finca'),
