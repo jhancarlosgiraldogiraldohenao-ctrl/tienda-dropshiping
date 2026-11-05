@@ -25,3 +25,13 @@
   de antes de cierto segundo.
 - Voz en off (`vo=s`): cuando la boca no se ve o está cerrada (recuerdos, Bartolo pensando).
 - La voz de Flow se tapa por Whisper **y** por volumen (0,12 s antes, 0,15 s después): así no se cuela un «mue».
+
+## Una sola versión por voz (Jay, 5-nov-2026 — regla fija desde el capítulo 2)
+- Jay NO puede generar varias versiones de la misma frase (créditos). Claude manda **un solo texto final** por voz y
+  controla la duración con el texto, no con repeticiones:
+  - **Más rápido:** `[fast]`, comas en vez de «…», sin pausas escritas. `[whispers]`, `[menacing]`, `[calm]` y «…» la
+    alargan (en la parte 2, V35, V36, V40, V50, V52 y V64 salieron entre 1,3 y 1,7 veces más largas que la boca).
+  - **Más lento o con pausa:** «…» (≈ 0,5–0,8 s) o `[short pause]` / `[long pause]` justo donde la boca se cierra.
+  - Palabras sueltas muy cortas en la boca («No.», «Juguemos.»): `[fast]` y sin acotaciones de emoción lentas.
+- Meta: el habla de la voz (sin silencios) ≤ 1,2 × el tiempo de boca de Flow. El editor estira o encoge como mucho 0,8–1,25.
+- En la parte 2 (cap. 1) Jay permitió repetir las que salieron largas; en los próximos capítulos, no.

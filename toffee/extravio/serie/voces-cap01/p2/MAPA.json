@@ -172,5 +172,17 @@
   "texto": "Y hue... Puta...",
   "parecido": 0.78,
   "dur": 2.28
+ },
+ "ElevenLabs_2026-11-05T15_24_08_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V65",
+  "texto": "¿Me meto por esa alcantarilla o qué, mis ratas? Escribanlo en los comentarios.",
+  "parecido": 0.97,
+  "dur": 3.94
+ },
+ "ElevenLabs_2026-11-05T15_24_34_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V66",
+  "texto": "Sígueme para no perderte el próximo vlog, mi llave.",
+  "parecido": 0.96,
+  "dur": 3.04
  }
 }
