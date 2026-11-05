@@ -60,13 +60,13 @@ E = [
  dict(t='G10', a=1.6, v='V07', sc='finca', d=None, al=1),
  dict(t='G11', a=0.0, v='V18', sc='finca', d=None),
  dict(t='G10', a=0.0, d=None, v='V19', vo=0.45, sc='finca'),                    # «¡Dios me lo bendiga!» sobre Dizzy
- dict(t='G12', a=0.0, d=2.0, sc='camino'),
+ dict(t='G12', a=0.0, d=1.6, sc='camino'),
  dict(t='G13', a=0.4, v='V08', sc='camino', d=None, al=1),
  dict(t='G14', a=0.0, d=2.3, sc='camino', cortar_musica=1.25),
  dict(t='G15', a=0.9, v='V09', sc='camino', d=None, al=1),          # sin el «mue» de Flow
  dict(t='G16', a=0.0, d=None, v='V32', vo=0.35, sc='camino', volver_musica=1.6, dmin=2.0),   # Bartolo en off: «Lo detesto» (sin grillo)
  # (G17 fuera: del 1:07 se pasa directo a la vista del pueblo)
- dict(t='G18', a=0.0, d=2.4, sc='plaza'),
+ dict(t='G18', a=0.0, d=2.0, sc='plaza'),
  dict(t='G19', a=0.5, v='V21', sc='plaza', d=None, al=1),
  dict(t='G20', a=0.5, v='V10', sc='plaza', d=None, al=1),
  dict(t='G21', a=1.6, v='V22', sc='plaza', d=None, al=1),
@@ -74,13 +74,13 @@ E = [
  dict(t='G23', a=1.18, v='V11', sc='plaza', d=None, al=1, quitar=1),   # sin «¡Mía!»: arranca en «Mi llave»
  dict(t='G24', a=0.3, v='V24', sc='plaza', d=None, al=1),
  dict(t='G25', a=0.5, v='V12', sc='plaza', d=None, al=1),
- dict(t='G26', a=0.4, d=2.4, sc='olla'),
+ dict(t='G26', a=0.4, d=1.8, sc='olla'),
  dict(t='G26b', a=0.0, v='V31', sc='olla', d=None, al=1),
  dict(t='G27', a=1.6, v='V25', sc='olla', d=None, al=1),           # empieza después de que se cambian de puesto
  dict(t='G28', a=0.0, d=1.9, v='V30a', sc='olla', al=1),
  dict(t='G29', a=0.0, v='V13', sc='olla', d=None, al=1),
  dict(t='G28', a=3.4, d=None, v='V30b', sc='olla', al=1, cola=0.45),   # «Siga» donde de verdad lo dice la boca; corte enseguida
- dict(t='G29b', a=0.0, v='V33', sc='olla', d=None, al=1),           # PUENTE: Cuca ve a los nuevos y arranca la canción
+ dict(t='G29b', a=0.0, v='V33', sc='olla', d=None, al=1, recorte3=1),           # PUENTE: Cuca ve a los nuevos y arranca la canción
  # la canción (sin voces habladas)
  dict(t='G30', a=3.0, d=4.0, sc='cancion'),
  dict(t='G32', a=0.5, d=1.6, sc='cancion'),
@@ -92,15 +92,15 @@ E = [
  dict(t='G31', a=5.5, d=1.7, sc='cancion'),
  # «muestra esa cuca»
  dict(t='G36', a=2.9, v='V26', sc='cuca', recorte=1, d=None, al=1),
- dict(t='G37b', a=0.0, d=None, sc='cuca', dfija=3.2, reemplaza='G38'),     # PUENTE: la cachetada desde otro ángulo (G37 fuera)
+ dict(t='G37b', a=0.0, d=None, sc='cuca', dfija=3.0),     # PUENTE: la cachetada desde otro ángulo (G37 fuera)
  dict(t='G38', a=0.4, d=1.5, sc='cuca', si_falta='G37b', mudo_desde=1.3),                 # mientras llega G37b: solo la cachetada, sin el «boing»
  dict(t='G39', a=0.9, v='V27', sc='cuca', d=None, al=1),
  dict(t='G40', a=1.0, v='V14', sc='cuca', d=None, al=1, recorte2=1),        # zoom: fuera la figura de la esquina derecha
  dict(t='G41', a=0.0, v='V28', sc='cuca', d=None, al=1),
- dict(t='G41b', a=0.0, v='V34', sc='cuca', d=None, al=1),           # PUENTE: Dizzy ofrece el café → por eso Cuca dice lo del Tuerto
+ dict(t='G41b', a=0.0, v='V34', vo=0.67, sc='cuca', d=None, dfija=4.03),   # «¿quién me compra…» cae donde abre la boca           # PUENTE: Dizzy ofrece el café → por eso Cuca dice lo del Tuerto
  dict(t='G42', a=0.7, v='V29', sc='cuca', d=None, al=1),
  dict(t='G43', a=0.6, v='V15', sc='cuca', d=None, al=1),
- dict(t='G44', a=0.5, d=2.8, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
+ dict(t='G44', a=0.5, d=2.4, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
  dict(t='G45', a=0.9, v='V16', sc='final', d=None, al=1),
 ]
 MUSICA = {'recuerdo': ('M5-tuerto-reggaeton', .32), 'finca': ('M1-finca-bambuco', .38), 'camino': ('M2-camino-carranga', .42),
@@ -352,6 +352,7 @@ def main():
     for i, p in enumerate(plan):
         vf = [f'scale={W}:{H}:flags=lanczos', 'setsar=1', f'fps={FPS}']
         if p.get('zoom'): z = p['zoom']; vf.insert(0, f'crop=iw/{z}:ih/{z}')
+        if p.get('recorte3'): vf.insert(0, 'crop=iw*0.9:ih*0.9:iw*0.1:ih*0.05')   # G29b: fuera lo que se asoma en el borde izquierdo
         if p.get('recorte2'): vf.insert(0, 'crop=iw*0.86:ih*0.86:0:ih*0.05')   # G40: fuera la figura borrosa de la esquina derecha
         if p.get('recorte'): vf.insert(0, 'crop=iw*0.82:ih*0.82:iw*0.02:ih*0.09')   # quita el brazo humano del borde derecho (G36)
         if p.get('tinte'): vf.append('eq=saturation=0.85:gamma=0.97,colorbalance=rs=.07:gs=.03:bs=-.07')
