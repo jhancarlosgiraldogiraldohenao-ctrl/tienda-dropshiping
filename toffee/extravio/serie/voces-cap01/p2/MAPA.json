@@ -142,5 +142,35 @@
   "texto": "Lo oí, mijito.",
   "parecido": 0.96,
   "dur": 1.43
+ },
+ "ElevenLabs_2026-11-05T15_21_42_gertrudis_gen_s50_sim75_v4.mp3": {
+  "v": "V60",
+  "texto": "Venga, y coma primero, mi amor, que se me va a enfermar.",
+  "parecido": 0.98,
+  "dur": 4.02
+ },
+ "ElevenLabs_2026-11-05T15_22_07_gertrudis_gen_s50_sim75_v4.mp3": {
+  "v": "V61",
+  "texto": "Y usted coma también, mi hijo, que pa' diciembre lo quiero gordito.",
+  "parecido": 0.96,
+  "dur": 4.48
+ },
+ "ElevenLabs_2026-11-05T15_22_36_toccino_gen_s50_sim75_v4.mp3": {
+  "v": "V62",
+  "texto": "Oh no.",
+  "parecido": 0.83,
+  "dur": 1.19
+ },
+ "ElevenLabs_2026-11-05T15_23_01_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V63",
+  "texto": "AHHHHH!",
+  "parecido": 0.31,
+  "dur": 1.47
+ },
+ "ElevenLabs_2026-11-05T15_23_34_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V64",
+  "texto": "Y hue... Puta...",
+  "parecido": 0.78,
+  "dur": 2.28
  }
 }
