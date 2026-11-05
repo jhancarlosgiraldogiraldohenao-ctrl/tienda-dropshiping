@@ -27,3 +27,8 @@
 - Que Claude borre escenas por su cuenta. Si hay que ganar tiempo, **preguntar** o recortar solo de transiciones
   (nunca las tomas aéreas, nunca una escena que explica algo, como la gallina saliendo de la casa).
 - Efectos de impacto viejos, grillos de chiste, «boing». Menos es más.
+
+## Un mundo vivo (Jay, 5-nov-2026)
+- Cada capítulo trae lugares nuevos; Jay los crea con gusto. Claude le pide la foto propia de cada lugar donde pasa una
+  escena (y de cada hora distinta: noche, atardecer), en vez de forzar una foto de otro lugar o de otra hora.
+- Prompts de lugares: Nano Banana Pro, vertical 9:16, sin personajes, «empty space in the center for small characters».
