@@ -1,0 +1,548 @@
+[
+ {
+  "t": "G54",
+  "who": "TUERTO",
+  "txt": "Usted me debe, ratica… ¿sí o qué, pues?",
+  "tramos": [
+   [
+    1.15,
+    2.53
+   ],
+   [
+    3.08,
+    3.86
+   ]
+  ],
+  "habla": 2.71,
+  "sil": 12,
+  "rate": 4.4,
+  "L": 4.03
+ },
+ {
+  "t": "G55",
+  "who": "TUERTO",
+  "txt": "Esa cámara me la ganó con trampa. Y ese café ahora es mío.",
+  "tramos": [
+   [
+    1.31,
+    2.99
+   ],
+   [
+    4.2,
+    5.47
+   ]
+  ],
+  "habla": 4.16,
+  "sil": 22,
+  "rate": 5.3,
+  "L": 6.04
+ },
+ {
+  "t": "G57",
+  "who": "DIZZY",
+  "txt": "Gonorrea…",
+  "tramos": [
+   [
+    1.23,
+    2.14
+   ]
+  ],
+  "habla": 0.91,
+  "sil": 3,
+  "rate": 3.3,
+  "L": 4.03
+ },
+ {
+  "t": "G58",
+  "who": "TOCINO",
+  "txt": "Tranquilo, dude. Yo lo distraigo.",
+  "tramos": [
+   [
+    0.75,
+    1.66
+   ],
+   [
+    1.98,
+    2.74
+   ]
+  ],
+  "habla": 1.99,
+  "sil": 10,
+  "rate": 5.0,
+  "L": 4.03
+ },
+ {
+  "t": "G62",
+  "who": "DIZZY",
+  "txt": "¡Qué te pasa, estúpido, eso es un crimen!",
+  "tramos": [
+   [
+    1.29,
+    2.94
+   ],
+   [
+    3.25,
+    4.03
+   ]
+  ],
+  "habla": 2.74,
+  "sil": 14,
+  "rate": 5.1,
+  "L": 4.03
+ },
+ {
+  "t": "G63",
+  "who": "TOCINO",
+  "txt": "Shut up, man, it's art!",
+  "tramos": [
+   [
+    1.18,
+    2.58
+   ]
+  ],
+  "habla": 1.4,
+  "sil": 5,
+  "rate": 3.6,
+  "L": 4.03
+ },
+ {
+  "t": "G65",
+  "who": "CUCA",
+  "txt": "Ay, Tuertico, mi vida… ¿y si me regalas ese cafecito?",
+  "tramos": [
+   [
+    1.15,
+    3.0
+   ],
+   [
+    3.63,
+    5.43
+   ]
+  ],
+  "habla": 4.28,
+  "sil": 19,
+  "rate": 4.4,
+  "L": 6.04
+ },
+ {
+  "t": "G66",
+  "who": "TUERTO",
+  "txt": "No.",
+  "tramos": [
+   [
+    2.84,
+    3.09
+   ]
+  ],
+  "habla": 0.25,
+  "sil": 1,
+  "rate": 4.0,
+  "L": 4.03
+ },
+ {
+  "t": "G67",
+  "who": "TOCINO",
+  "txt": "¡Yo sí, mami!",
+  "tramos": [
+   [
+    1.93,
+    3.24
+   ]
+  ],
+  "habla": 1.31,
+  "sil": 4,
+  "rate": 3.1,
+  "L": 4.03
+ },
+ {
+  "t": "G68",
+  "who": "CUCA",
+  "txt": "¡Ajá! Pues que sepas que este anda grabando todo, Tuerto.",
+  "tramos": [
+   [
+    1.25,
+    4.29
+   ]
+  ],
+  "habla": 3.04,
+  "sil": 18,
+  "rate": 5.9,
+  "L": 6.04
+ },
+ {
+  "t": "G69",
+  "who": "DIZZY",
+  "txt": "¡Sapa malparida!",
+  "tramos": [
+   [
+    0.71,
+    2.37
+   ]
+  ],
+  "habla": 1.66,
+  "sil": 6,
+  "rate": 3.6,
+  "L": 4.03
+ },
+ {
+  "t": "G70",
+  "who": "DIZZY",
+  "txt": "Le juego el café al dominó, gato hijueputa.",
+  "tramos": [
+   [
+    1.41,
+    3.04
+   ],
+   [
+    3.35,
+    4.43
+   ]
+  ],
+  "habla": 3.02,
+  "sil": 16,
+  "rate": 5.3,
+  "L": 6.04
+ },
+ {
+  "t": "G71",
+  "who": "DIZZY",
+  "txt": "Y si pierdo… le doy la cámara.",
+  "tramos": [
+   [
+    0.94,
+    1.74
+   ],
+   [
+    2.45,
+    3.31
+   ]
+  ],
+  "habla": 2.37,
+  "sil": 10,
+  "rate": 4.2,
+  "L": 4.03
+ },
+ {
+  "t": "G72",
+  "who": "TUERTO",
+  "txt": "Juguemos.",
+  "tramos": [
+   [
+    2.55,
+    2.89
+   ]
+  ],
+  "habla": 0.34,
+  "sil": 3,
+  "rate": 8.8,
+  "L": 4.03
+ },
+ {
+  "t": "G76",
+  "who": "DIZZY",
+  "txt": "¿Qué…? ¡Eso es trampa!",
+  "tramos": [
+   [
+    1.28,
+    1.58
+   ],
+   [
+    1.91,
+    2.99
+   ]
+  ],
+  "habla": 1.71,
+  "sil": 6,
+  "rate": 3.5,
+  "L": 4.03
+ },
+ {
+  "t": "G77",
+  "who": "TUERTO",
+  "txt": "No, ratica. Talento.",
+  "tramos": [
+   [
+    1.14,
+    2.01
+   ],
+   [
+    2.64,
+    3.03
+   ]
+  ],
+  "habla": 1.89,
+  "sil": 7,
+  "rate": 3.7,
+  "L": 4.03
+ },
+ {
+  "t": "G79",
+  "who": "DIZZY",
+  "txt": "¡Suélteme, pirobo! ¡Perro hijueputa!",
+  "tramos": [
+   [
+    0.18,
+    1.34
+   ],
+   [
+    1.7,
+    2.81
+   ]
+  ],
+  "habla": 2.63,
+  "sil": 12,
+  "rate": 4.6,
+  "L": 4.03
+ },
+ {
+  "t": "G80",
+  "who": "TUERTO",
+  "txt": "Así se siente, ratica.",
+  "tramos": [
+   [
+    1.33,
+    2.68
+   ]
+  ],
+  "habla": 1.35,
+  "sil": 8,
+  "rate": 5.9,
+  "L": 4.03
+ },
+ {
+  "t": "G83",
+  "who": "GERTRUDIS",
+  "txt": "¡Virgen santísima, suelte a mi muchacho!",
+  "tramos": [
+   [
+    1.19,
+    2.88
+   ],
+   [
+    3.29,
+    4.02
+   ]
+  ],
+  "habla": 2.83,
+  "sil": 13,
+  "rate": 4.6,
+  "L": 4.03
+ },
+ {
+  "t": "G87",
+  "who": "TUERTO",
+  "txt": "Señora… perdón, señora.",
+  "tramos": [
+   [
+    1.78,
+    2.31
+   ],
+   [
+    2.88,
+    3.42
+   ],
+   [
+    4.17,
+    5.07
+   ]
+  ],
+  "habla": 3.29,
+  "sil": 8,
+  "rate": 2.4,
+  "L": 6.04
+ },
+ {
+  "t": "G88",
+  "who": "TOCINO",
+  "txt": "Holy shit… I love this woman.",
+  "tramos": [
+   [
+    2.13,
+    3.11
+   ],
+   [
+    3.89,
+    4.03
+   ]
+  ],
+  "habla": 1.9,
+  "sil": 9,
+  "rate": 4.7,
+  "L": 4.03
+ },
+ {
+  "t": "G91",
+  "who": "TOCINO",
+  "txt": "Señora, usted tiene unas piernas muy…",
+  "tramos": [
+   [
+    0.62,
+    0.7
+   ],
+   [
+    1.57,
+    2.13
+   ],
+   [
+    2.79,
+    5.02
+   ]
+  ],
+  "habla": 4.4,
+  "sil": 12,
+  "rate": 2.7,
+  "L": 6.04
+ },
+ {
+  "t": "G94",
+  "who": "GERTRUDIS",
+  "txt": "Lo oí, mijito.",
+  "tramos": [
+   [
+    0.43,
+    0.5
+   ],
+   [
+    1.35,
+    2.88
+   ],
+   [
+    3.65,
+    3.72
+   ]
+  ],
+  "habla": 3.29,
+  "sil": 5,
+  "rate": 1.5,
+  "L": 4.03
+ },
+ {
+  "t": "G95",
+  "who": "GERTRUDIS",
+  "txt": "Venga y coma primero, mi amor, que se me va a enfermar.",
+  "tramos": [
+   [
+    1.76,
+    1.81
+   ],
+   [
+    2.13,
+    3.99
+   ],
+   [
+    4.37,
+    5.57
+   ]
+  ],
+  "habla": 3.81,
+  "sil": 19,
+  "rate": 5.0,
+  "L": 6.04
+ },
+ {
+  "t": "G96",
+  "who": "GERTRUDIS",
+  "txt": "Y usted coma también, mijo, que pa' diciembre lo quiero gordito.",
+  "tramos": [
+   [
+    1.3,
+    2.94
+   ],
+   [
+    3.39,
+    5.4
+   ]
+  ],
+  "habla": 4.1,
+  "sil": 20,
+  "rate": 4.9,
+  "L": 6.04
+ },
+ {
+  "t": "G97",
+  "who": "TOCINO",
+  "txt": "…Oh, no.",
+  "tramos": [
+   [
+    1.65,
+    2.35
+   ]
+  ],
+  "habla": 0.7,
+  "sil": 2,
+  "rate": 2.9,
+  "L": 4.03
+ },
+ {
+  "t": "G99",
+  "who": "DIZZY",
+  "txt": "¡Aaaah!",
+  "tramos": [
+   [
+    1.82,
+    2.0
+   ],
+   [
+    2.74,
+    4.03
+   ]
+  ],
+  "habla": 2.21,
+  "sil": 1,
+  "rate": 0.5,
+  "L": 4.03
+ },
+ {
+  "t": "G100",
+  "who": "DIZZY",
+  "txt": "Hijueputa…",
+  "tramos": [
+   [
+    1.36,
+    1.74
+   ],
+   [
+    2.03,
+    2.37
+   ]
+  ],
+  "habla": 1.01,
+  "sil": 4,
+  "rate": 4.0,
+  "L": 4.03
+ },
+ {
+  "t": "G101",
+  "who": "DIZZY",
+  "txt": "¿Me meto por esa alcantarilla o qué, mis ratas? Escríbanlo en los comentarios.",
+  "tramos": [
+   [
+    0.66,
+    3.03
+   ],
+   [
+    3.64,
+    5.09
+   ]
+  ],
+  "habla": 4.43,
+  "sil": 26,
+  "rate": 5.9,
+  "L": 6.04
+ },
+ {
+  "t": "G102",
+  "who": "DIZZY",
+  "txt": "Sígueme pa' no perderte el próximo vlog, mi llave.",
+  "tramos": [
+   [
+    1.27,
+    3.82
+   ]
+  ],
+  "habla": 2.55,
+  "sil": 16,
+  "rate": 6.3,
+  "L": 4.03
+ }
+]
