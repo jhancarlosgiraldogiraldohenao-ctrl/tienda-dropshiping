@@ -2,6 +2,8 @@
 
 Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **47 generaciones · ≈ 382 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
 
+**Antes de las tomas de la mesa, del zarzo de noche y del camino al atardecer: las 3 fotos nuevas de lugares (HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER).**
+
 **Tomas que NO hay que generar (se reusan, 0 créditos):**
 
 - Toma 81: G37 (de la parte 1): todos se quedan quietos; encima va «¡MIJITO!» de la abuela en off
@@ -157,7 +159,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G70 · 6 s · toma 70
 
-**Fotos:** DIZZY-FRENTE.jpg + TUERTO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Medium shot in profile: the rat on the left, the cat on the right, the domino table between them. From the first frame the rat and the cat face each other across the table. The rat takes one step forward and talks with a challenging smile; the cat keeps his mouth closed. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Le juego el café al dominó, gato hijuepucha." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -166,7 +168,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G71 · 4 s · toma 71
 
-**Fotos:** DIZZY-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static, his whole head, cap and camera inside the frame. From the first frame the rat faces the camera. He taps the small camera on his cap with one paw and talks, serious. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Y si pierdo… le doy la cámara." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -175,7 +177,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G72 · 4 s · toma 72
 
-**Fotos:** TUERTO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static. From the first frame the cat stares at the camera, serious. He smiles slowly for the first time and says one word. The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket. The cat speaks in Colombian Spanish with a low, calm, husky male voice: "Juguemos." His mouth moves clearly in sync with every word. Only the cat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -184,7 +186,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G73 · 6 s · toma 73
 
-**Fotos:** VENDEDORES-HUECO.jpg + HUECO-DENTRO.jpg
+**Fotos:** VENDEDORES-HUECO.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Top-down shot looking straight down at the domino table, static. From the first frame we see the wooden table from above with white domino tiles, two players' paws (a gray rat paw on the left, a black-and-white cat paw on the right) and the market creatures crowded around. The paws place domino tiles one after another on the table. The market creatures look exactly like the reference image (black vulture in an apron, gray opossum, fat toad with gold chains, old rat with a hat, green iguana). No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -193,7 +195,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G74 · 4 s · toma 74
 
-**Fotos:** BARTOLO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** BARTOLO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Low shot from under the domino table, static, the paws of the players blurry in the foreground. From the first frame, far in the background, the mule stands near the stairs. The mule turns around quietly and walks away up the stairs; nobody notices. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -202,7 +204,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G75 · 4 s · toma 75
 
-**Fotos:** TUERTO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Extreme close-up insert under the table, shallow depth of field. From the first frame we only see the cat's black-and-white paw and the gray tracksuit sleeve under the table. The paw slowly slides a white domino tile out of the sleeve. Only the black-and-white paw and gray tracksuit sleeve of the cat from the reference image are visible. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -211,7 +213,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G76 · 4 s · toma 76
 
-**Fotos:** DIZZY-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static, his whole head, cap and camera inside the frame. From the first frame the rat looks down at the table. His eyes go huge and he shouts, shocked. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "¿Qué…? ¡Eso es trampa!" His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -220,7 +222,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G77 · 4 s · toma 77
 
-**Fotos:** TUERTO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static. From the first frame the cat looks at the camera, totally calm. He moves the toothpick and talks slowly with a little smile. The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket. The cat speaks in Colombian Spanish with a low, calm, husky male voice: "No, ratica. Talento." His mouth moves clearly in sync with every word. Only the cat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -229,7 +231,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G78 · 6 s · toma 78
 
-**Fotos:** TUERTO-FRENTE.jpg + DIZZY-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** TUERTO-FRENTE.jpg + DIZZY-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Medium shot, static, both whole bodies inside the frame. From the first frame the cat stands next to the domino table holding the rat in the air by his tail with one paw. The rat hangs upside down and kicks his legs in the air; the cat looks at him, calm. The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -238,7 +240,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G79 · 4 s · toma 79
 
-**Fotos:** DIZZY-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up of the rat hanging upside down, static, his whole head, cap and camera inside the frame. From the first frame the rat hangs upside down by his tail, his cap held on his head. He kicks and shouts, furious. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "¡Suélteme, bobo! ¡Perro hijuepucha!" His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -247,7 +249,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G80 · 4 s · toma 80
 
-**Fotos:** TUERTO-FRENTE.jpg + HUECO-DENTRO.jpg
+**Fotos:** TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static. From the first frame the cat looks straight into the lens. He slowly brings one paw toward the lens and talks very low. The cat looks exactly like the reference image: small black-and-white cat with an eye patch, a toothpick and a gray tracksuit jacket. The cat speaks in Colombian Spanish with a low, calm, husky male voice: "Así se siente, ratica." His mouth moves clearly in sync with every word. Only the cat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
@@ -328,7 +330,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G91 · 6 s · toma 91
 
-**Fotos:** GERTRUDIS-FRENTE.jpg + DIZZY-FRENTE.jpg + BARTOLO-FRENTE.jpg + TOCINO-FRENTE.jpg + CAMINO-PALMAS.jpg
+**Fotos:** GERTRUDIS-FRENTE.jpg + DIZZY-FRENTE.jpg + BARTOLO-FRENTE.jpg + TOCINO-FRENTE.jpg + CAMINO-ATARDECER.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Medium shot from the side, the camera moves along with them, all whole bodies inside the frame. From the first frame the mule walks from left to right; the hen sits on the saddle in front and the rat sits behind her; the pig walks on four legs on the ground beside the mule. The pig lifts his snout close to the hen and whispers to her with a flirty smile; the hen looks forward. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar. The pig speaks with a loud, raspy male voice and a very heavy American accent: "Señora, usted tiene unas piernas muy…" His mouth moves clearly in sync with every word. Only the pig speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
@@ -337,7 +339,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G92 · 4 s · toma 92
 
-**Fotos:** GERTRUDIS-FRENTE.jpg + TOCINO-FRENTE.jpg + BARTOLO-FRENTE.jpg + CAMINO-PALMAS.jpg
+**Fotos:** GERTRUDIS-FRENTE.jpg + TOCINO-FRENTE.jpg + BARTOLO-FRENTE.jpg + CAMINO-ATARDECER.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Medium shot from the side, the camera moves along with them. From the first frame the hen sits on the saddle of the walking mule and the pig walks beside it. Without turning her head, the hen slaps the pig's face with the yellow flip-flop in one quick move. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
@@ -346,7 +348,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G93 · 6 s · toma 93
 
-**Fotos:** DIZZY-FRENTE.jpg + CAMINO-PALMAS.jpg
+**Fotos:** DIZZY-FRENTE.jpg + CAMINO-ATARDECER.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Close-up, the camera moves along with him, his whole head, cap and camera inside the frame. From the first frame the rat sits on the mule's back, the sunset behind him. For the first time he is serious and talks quietly to the lens. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Esa cucha me salvó la vida, mi llave… pero no le digan que dije eso." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
@@ -355,7 +357,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G94 · 4 s · toma 94
 
-**Fotos:** GERTRUDIS-FRENTE.jpg + CAMINO-PALMAS.jpg
+**Fotos:** GERTRUDIS-FRENTE.jpg + CAMINO-ATARDECER.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Close-up of the hen from the front, the camera moves along with her. From the first frame the hen sits on the mule looking forward, the rat's ears blurry behind her. Without turning around she smiles softly and talks. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. The hen speaks in Colombian Spanish with a soft, shaky, sweet old grandmother voice: "Lo oí, mijito." Her mouth moves clearly in sync with every word. Only the hen speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
@@ -391,7 +393,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G98 · 8 s · toma 98 y 103
 
-**Fotos:** DIZZY-FRENTE.jpg + ZARZO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + ZARZO-NOCHE.jpg
 
 ```
 Vertical 9:16, 8 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Wide shot, static. From the first frame the rat sleeps on a small mattress, snoring softly; his cap with the small action camera rests on a wooden shelf. After four seconds the small camera on the cap turns on by itself and glows with a soft green light. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
@@ -409,7 +411,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G100 · 4 s · toma 100
 
-**Fotos:** DIZZY-FRENTE.jpg + ZARZO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + ZARZO-NOCHE.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Extreme close-up, static, his whole head inside the frame. From the first frame the rat lies awake on the mattress, green light on his face. His eyes go huge and he whispers, scared. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Hijuepucha…" His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
@@ -418,7 +420,7 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G101 · 6 s · toma 101
 
-**Fotos:** DIZZY-FRENTE.jpg + ZARZO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + ZARZO-NOCHE.jpg
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Close-up very near the lens, static, his whole head, cap and camera inside the frame. From the first frame the rat sits on the mattress wearing his cap, his face very close to the lens. He talks to the lens like a vlogger, still a little scared. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "¿Me meto por esa alcantarilla o qué, mis ratas? Escríbanlo en los comentarios." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
@@ -427,7 +429,7 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ## G102 · 4 s · toma 102
 
-**Fotos:** DIZZY-FRENTE.jpg + ZARZO.jpg
+**Fotos:** DIZZY-FRENTE.jpg + ZARZO-NOCHE.jpg
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Close-up very near the lens, static, his whole head, cap and camera inside the frame. From the first frame the rat looks into the lens with a cocky smile. He winks one eye and talks. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Sígueme pa' no perderte el próximo vlog, mi llave." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
