@@ -25,7 +25,7 @@ V = [
 ("V55","Tuerto","G87","≈ 3,3 s: 0,5 · pausa 0,6 · 0,5 · pausa 0,7 · 0,9 s","[scared] Señora… [short pause] perdón, [short pause] señora.","Asustado, con pausas."),
 ("V56","Tocino","G88","≈ 2,8 s: 1 s · pausa 0,8 · 1 s","[amazed] [whispers] Holy shit… [short pause] I love this woman.","«I love this woman» cae en off."),
 ("V57","Tocino","G91","≈ 3,5 s: 0,6 s · pausa 0,7 · 2,2 s","[flirty] Señora, [short pause] usted tiene unas piernas muy…","Coqueto, bajito."),
-("V58","Dizzy","G93","(se mide cuando llegue la toma)","[serious] [quiet] Esa cucha me salvó la vida, mi llave… [short pause] pero no le digan que dije eso.","Por primera vez serio."),
+("V58","Dizzy","G93","≈ 4,5 s: 2,1 s · pausa 0,8 · 1,7 s","[serious] Esa cucha me salvó la vida, mi llave… pero no le digan que dije eso.","Por primera vez serio. Sin susurro (alarga)."),
 ("V59","Gertrudis","G94","≈ 1,5 s","[sweet] Lo oí, mijito.",""),
 ("V60","Gertrudis","G95","≈ 3,4 s: 1,9 s · pausa 0,4 · 1,2 s","[sweet] Venga y coma primero, mi amor, [short pause] que se me va a enfermar.",""),
 ("V61","Gertrudis","G96","≈ 4,1 s: 1,6 s · pausa 0,5 · 2 s","[sweet] Y usted coma también, mijo, [short pause] que pa' diciembre lo quiero gordito.",""),
