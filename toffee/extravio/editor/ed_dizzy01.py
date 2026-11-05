@@ -35,10 +35,11 @@ SUBT = {
  'V25': 'Dios mío, esto es una locura…',
  'V27': '¿Qué putas, parce?',
  'V28': '¿Qué? Es una cucaracha, ¿no? Cuca… cucaracha… Estoy confundido, parce.',
+ 'V21': '¡Se me quemó la arepaaa!',                     # una sola vez
  'V11': 'Mi llave. Ahora soy vlogger.',                 # sin «¡Mía!» (pedido de Jay)
  'V17': 'Ay, Dios mío, ¿y esa vaina qué es?',          # sin «¡Mijito!» (pedido de Jay)
 }
-SUB_Y = 300   # subtítulos ARRIBA, sobre las cabezas (pedido de Jay, 4-nov-2026): la mirada no cae en las bocas
+SUB_Y = 1400  # subtítulos un poco más abajo que al principio (y=1200), lejos de las bocas (Jay, 5-nov-2026; arriba no le gustó)
 ROJO = {'cucha', 'cámara', 'malparidos', 'hijueputa', 'bartolo', 'perro', 'estúpido', 'tocino', 'perico', 'hueco', 'lucas',
         'cuca', 'tuerto', 'gonorrea', 'abuelita', 'mijito', 'arepaaa', 'tapas', 'talento', 'trampa', 'gringo', 'vlog', 'vlogger', 'cochino'}
 
@@ -56,7 +57,7 @@ E = [
  dict(t='G06', a=0.0, v='V05', sc='finca', d=None, al=1),
  dict(t='G07', a=0.0, d=2.3, v='V20', sc='finca', al=1),
  dict(t='G08', a=0.85, v='V06', sc='finca', d=None, al=1),
- dict(t='G09', a=3.15, v='V17', sc='finca', d=None, quitar=1, al=1),     # Jay: sin «¡Mijito!» (Gertrudis queda pegada como estaba)
+ dict(t='G09', a=1.6, v='V17', sc='finca', d=None, quitar=1, al=1, desde_boca=1.6),   # se ve cuando sale corriendo de la casa; sin «¡Mijito!»     # Jay: sin «¡Mijito!» (Gertrudis queda pegada como estaba)
  dict(t='G10', a=1.6, v='V07', sc='finca', d=None, al=1),
  dict(t='G11', a=0.0, v='V18', sc='finca', d=None),
  dict(t='G10', a=0.0, d=None, v='V19', vo=0.45, sc='finca'),                    # «¡Dios me lo bendiga!» sobre Dizzy
@@ -67,7 +68,7 @@ E = [
  dict(t='G16', a=0.0, d=None, v='V32', vo=0.35, sc='camino', volver_musica=1.6, dmin=2.0),   # Bartolo en off: «Lo detesto» (sin grillo)
  # (G17 fuera: del 1:07 se pasa directo a la vista del pueblo)
  dict(t='G18', a=0.0, d=2.0, sc='plaza'),
- dict(t='G19', a=0.5, v='V21', sc='plaza', d=None, al=1),
+ dict(t='G19', a=0.5, v='V21', sc='plaza', d=None, al=1, solo=1),   # la Llorona grita una sola vez (para ganar tiempo)
  dict(t='G20', a=0.5, v='V10', sc='plaza', d=None, al=1),
  dict(t='G21', a=1.6, v='V22', sc='plaza', d=None, al=1),
  dict(t='G22', a=1.4, v='V23', sc='plaza', d=None, al=1),
@@ -214,9 +215,9 @@ def emparejar(P, S):
                 if c + r[0] < best[0]: best = (c + r[0], [(P[i][0], S[j][0])] + r[1])
         return best
     return f(0, 0)[1]
-def alinear(x, t, a, lim):
+def alinear(x, t, a, lim, desde=0.0):
     """Pega cada frase de la voz al arranque del tramo de boca de Flow que le toca. Devuelve (señal desde el clip 0, mapa voz→clip, errores)."""
-    P = frases_voz(x); S = boca_flow(t, a, a + lim)
+    P = frases_voz(x); S = [q for q in boca_flow(t, a, a + lim) if q[0] >= desde]
     if not P or not S: raise IndexError('sin tramos')
     pares = emparejar(tuple(map(tuple, P)), tuple(map(tuple, S)))
     if not pares: raise IndexError('sin pares')
@@ -240,13 +241,15 @@ def main():
             x = voz(e['v'])
             if e.get('quitar'):   # quita las primeras frases de la voz (p. ej. «¡Mía!», «¡Mijito!»)
                 P = frases_voz(x); corte = max(0.0, P[e['quitar']][0] - 0.06); x = x[int(corte * SR):]
+            if e.get('solo'):     # deja solo las primeras frases
+                P = frases_voz(x); x = x[: int(min(len(x) / SR, P[e['solo'] - 1][1] + 0.08) * SR)]
             fw = [[w[0] - e['a'], w[1] - e['a'], w[2]] for w in FLOW.get(e['t'], []) if w[0] >= e['a'] - 0.05]
             if 'vo' in e:
                 y = x; vstart = e['vo']; mapa = lambda tv: tv
             elif e.get('al'):
                 lim = (e['d'] if e['d'] else L - e['a'])
                 try:
-                    y, mp_, err = alinear(x, e['t'], e['a'], lim)
+                    y, mp_, err = alinear(x, e['t'], e['a'], lim, e.get('desde_boca', 0.0))
                     y = np.concatenate([np.zeros(int(0.03 * SR), np.float32), y])   # la voz un pelo después de la boca, nunca antes
                     nz = np.where(np.abs(y) > 1e-4)[0]; y = y[: nz[-1] + 1] if len(nz) else y
                     vstart = 0.0; mapa = (lambda m: (lambda tv: m(tv) + 0.03))(mp_)

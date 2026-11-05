@@ -2,8 +2,8 @@
 """Voces de la parte 1 del capítulo 1, con el ritmo medido en las tomas de Flow (4-nov-2026)."""
 V=[
 # (código, personaje/voz, toma, duración de la boca en Flow, texto ElevenLabs, nota)
-("V01","Dizzy","G01","≈ 6,5 s","[excited] ¿Quiubo pues, mis ratas? Este es mi primer vlog. [short pause] Hoy mi abuela me mandó a vender el café pa' pagar una deuda… [whispers] y yo tengo un plan mejor.","El gancho. Empieza fuerte y termina en susurro."),
-("V02","Dizzy","G01 (final)","≈ 2,7 s","[serious] Que es… [short pause] distinto, malparidos.","Va después del recuerdo, de nuevo en el zarzo."),
+("V01","Dizzy","G01","≈ 6 s","[excited] [fast] ¿Quiubo pues, mis ratas? Este es mi primer vlog, hoy mi abuela me mandó a vender el café, pa' la deuda… y yo tengo un plan mejor.","v2 (5-nov): rápido y casi sin pausas, porque la boca de G01 se mueve casi sin parar durante 6 s."),
+("V02","Dizzy","G01 (final)","≈ 1,1 s","[serious] [fast] Que es distinto, malparidos.","v2 (5-nov): sin pausa; la boca de G01 dura 1 s en este tramo."),
 ("V03","Dizzy (en off)","G02","libre, ≈ 3 s","[smug] Esta cámara se la gané al Tuerto… [short pause] el gato más peligroso de El Hueco.","Voz en off del recuerdo: no se le ve la boca."),
 ("V04","Dizzy (en off)","G04","libre, ≈ 3 s","[smug] ¿Trampa? [short pause] No, mi llave. [short pause] Talento.","Voz en off del recuerdo."),
 ("V05","Dizzy","G06","≈ 5 s","[proud] Esta… [short pause] es la finca de mi abuela. [short pause] Aquí vivo… [short pause] gratis.",""),
