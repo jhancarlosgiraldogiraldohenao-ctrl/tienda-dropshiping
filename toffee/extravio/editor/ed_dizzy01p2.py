@@ -45,6 +45,7 @@ E = [
  # 10. El Tuerto (arranca con la respuesta)
  dict(t='G54', a=0.9, v='V35', sc='tuerto', d=None, al=1),
  dict(t='G55', a=0.8, v='V36', sc='tuerto', d=None, al=1),
+ dict(t='G55b', a=0.3, d=3.0, sc='tuerto'),                         # PUENTE: los tres frente al Tuerto (Bartolo ya no aparece de la nada)
  dict(t='G56', a=0.5, d=3.0, sc='tuerto'),
  dict(t='G57', a=0.9, v='V37', sc='tuerto', d=None, al=1),
  # 11. El solo de guitarra
@@ -55,6 +56,7 @@ E = [
  dict(t='G62', a=0.8, v='V39', sc='solo', d=None, al=1),
  dict(t='G63', a=0.8, v='V40', sc='solo', d=None, al=1),
  # 12. Cuca intenta
+ dict(t='G63b', a=0.3, d=3.2, sc='cuca'),                          # PUENTE: Cuca entra y aparta a Tocino
  dict(t='G64', a=0.5, d=3.2, sc='cuca'),
  dict(t='G65', a=0.8, v='V41', sc='cuca', d=None, al=1),
  dict(t='G66', a=1.2, v='V42', sc='sinmusica', d=None, al=1),
@@ -84,9 +86,10 @@ E = [
  dict(t='G88', a=1.6, v='V56', sc='abuela', d=None, al=1),
  dict(t='G89', a=0.0, d=3.2, sc='abuela'),
  # 15. El camino de vuelta
- dict(t='G12', a=0.0, d=2.4, sc='regreso', tarde=1),
+ dict(t='G90', a=0.3, d=3.0, sc='regreso'),                          # toma aérea nueva del regreso al atardecer
+ dict(t='G12', a=0.0, d=2.4, sc='regreso', tarde=1, si_falta='G90'),
  dict(t='G91', a=1.2, v='V57', sc='regreso', d=None, al=1),
- dict(t='G92', a=0.6, d=2.2, sc='regreso', fx=[('E20-chanclazo', 1.3, 0.9)]),
+ dict(t='G92', a=0.6, d=2.2, sc='regreso', espejo=1, fx=[('E20-chanclazo', 1.3, 0.9)]),
  dict(t='G93', a=0.6, v='V58', sc='regreso', d=None, al=1),
  dict(t='G94', a=1.0, v='V59', sc='regreso', d=None, al=1),
  # 16. La comida
@@ -94,7 +97,9 @@ E = [
  dict(t='G96', a=1.0, v='V61', sc='regreso', d=None, al=1),
  dict(t='G97', a=1.2, v='V62', sc='regreso', d=None, al=1),
  # 17. El misterio
+ dict(t='G103', a=0.0, d=2.6, sc='misterio'),                       # PUENTE: cae la noche en la finca
  dict(t='G98', a=1.0, d=4.6, sc='misterio', fx=[('E24-camara-se-prende', 3.0, 1.0)]),
+ dict(t='G98b', a=0.3, d=4.0, sc='misterio'),                       # PUENTE: Dizzy se despierta y mira la pantallita
  dict(t='G99', a=1.4, v='V63', sc='misterio', d=None, al=1, tinte_verde=1),
  dict(t='G100', a=1.0, v='V64', sc='misterio', d=None, al=1),
  # 18. Cierre
@@ -357,8 +362,9 @@ def main():
         if p.get('recorte2'): vf.insert(0, 'crop=iw*0.86:ih*0.86:0:ih*0.05')   # G40: fuera la figura borrosa de la esquina derecha
         if p.get('recorte'): vf.insert(0, 'crop=iw*0.82:ih*0.82:iw*0.02:ih*0.09')   # quita el brazo humano del borde derecho (G36)
         if p.get('voltear'): vf.append('hflip,vflip')
+        if p.get('espejo'): vf.append('hflip')   # misma dirección que la toma anterior
         if p.get('tarde'): vf.append("colortemperature=temperature=2600:mix=1,curves=r='0/0 0.5/0.6 1/1':b='0/0 0.5/0.38 1/0.85',eq=brightness=-0.05:saturation=1.15")
-        if p.get('tinte_verde'): vf.append('colorbalance=gs=.10:gm=.08,eq=saturation=0.9')
+        if p.get('tinte_verde'): vf.append('colorbalance=gs=.10:gm=.08,eq=saturation=0.9,noise=alls=12:allf=t')
         if p.get('tinte'): vf.append('eq=saturation=0.85:gamma=0.97,colorbalance=rs=.07:gs=.03:bs=-.07')
         o = os.path.join(TMP, f'seg{i:03d}.mp4')
         sp.run(['ffmpeg', '-v', 'error', '-y', '-ss', f"{p['a']:.3f}", '-i', p['f'], '-t', f"{p['d']:.3f}", '-an', '-vf', ','.join(vf),

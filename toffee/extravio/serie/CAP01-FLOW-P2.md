@@ -1,6 +1,6 @@
 # Capítulo 1 · PARTE 2 del video: prompts de Flow (tomas 54 a 103)
 
-Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **48 generaciones · ≈ 394 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
+Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **52 generaciones · ≈ 428 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
 
 **Antes de las tomas de la mesa, del zarzo de noche y del camino al atardecer: las 3 fotos nuevas de lugares (HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER).**
 
@@ -28,6 +28,15 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night. Medium shot, static, the cat sitting in the center. From the first frame the cat sits on the old car-seat armchair like a king. He points with one paw to the left, off screen, and talks calmly. The cat looks exactly like the reference image: small black-and-white cat with a black eye patch over one eye (the eye patch is ALWAYS visible in every frame), a toothpick and a gray tracksuit jacket. The cat speaks in Colombian Spanish with a low, calm, husky male voice: "Esa cámara me la ganó con trampa. Y ese café ahora es mío." His mouth moves clearly in sync with every word. Only the cat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only fire crackling in the barrel.
+```
+
+
+## G55b · 4 s · toma 55b (puente)
+
+**Fotos:** TUERTO-FRENTE.jpg + DIZZY-FRENTE.jpg + TOCINO-FRENTE.jpg + BARTOLO-FRENTE.jpg + HUECO-RINCON-TUERTO.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night. Wide shot, static: the cat sitting on the car-seat armchair on the right; the rat, the pig and the mule on the left. From the first frame the rat, the pig and the mule with the two coffee sacks on his back stand together on the left, facing the cat. The three look at the cat nervously; the cat stays seated and calm, chewing his toothpick. The cat looks exactly like the reference image: small black-and-white cat with a black eye patch over one eye (the eye patch is ALWAYS visible in every frame), a toothpick and a gray tracksuit jacket. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar hanging on his back (he never holds it unless he is playing). The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only fire crackling in the barrel.
 ```
 
 
@@ -100,6 +109,15 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night. Close-up, static. From the first frame the pig looks to the right, offended. He raises his snout proudly and shakes his mohawk while he talks. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar hanging on his back (he never holds it unless he is playing). The pig speaks with a loud, raspy male voice and a very heavy American accent: "Shut up, man, it's art!" His mouth moves clearly in sync with every word. Only the pig speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only fire crackling in the barrel.
+```
+
+
+## G63b · 4 s · toma 63b (puente)
+
+**Fotos:** CUCA-FRENTE.jpg + TOCINO-FRENTE.jpg + HUECO-RINCON-TUERTO.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. In the dark corner of the night market from the reference with the car-seat armchair, red light bulb and burning barrel, at night. Medium shot, static. From the first frame the pig stands in the center, proud, with the guitar on his back. The cockroach walks in from the left, rolls her eyes, pushes the pig aside with one leg and keeps walking to the right with her hips swinging. The cockroach looks exactly like the reference image: brown cockroach standing on her back legs, red bikini, gold hoop earrings on her antennae. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar hanging on his back (he never holds it unless he is playing). No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only fire crackling in the barrel.
 ```
 
 
@@ -328,6 +346,15 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 ```
 
 
+## G90 · 6 s · toma 90 (toma aérea del regreso)
+
+**Fotos:** GERTRUDIS-FRENTE.jpg + DIZZY-FRENTE.jpg + BARTOLO-FRENTE.jpg + TOCINO-FRENTE.jpg + CAMINO-ATARDECER.jpg
+
+```
+Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Aerial drone shot following from behind and above, the camera moves forward slowly. From the first frame the mule walks up the winding dirt trail from left to right, small in the frame, with the hen and the rat riding on his back and the pig walking on four legs beside him. They go slowly up the trail between the coffee plants and the giant wax palms toward the sunset. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. The pig looks exactly like the reference image: skinny dirty pink pig on four legs with a black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar hanging on his back (he never holds it unless he is playing). No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
+```
+
+
 ## G91 · 6 s · toma 91
 
 **Fotos:** GERTRUDIS-FRENTE.jpg + DIZZY-FRENTE.jpg + BARTOLO-FRENTE.jpg + TOCINO-FRENTE.jpg + CAMINO-ATARDECER.jpg
@@ -397,6 +424,15 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 8 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Wide shot, static. From the first frame the rat sleeps on a small mattress, snoring softly, WITHOUT his cap on his head: his only cap, with the small action camera, rests on the wooden shelf next to the jars. After four seconds the small camera on the cap turns on by itself and glows with a soft green light. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
+```
+
+
+## G98b · 6 s · toma 98b (puente)
+
+**Fotos:** DIZZY-FRENTE.jpg + ZARZO-NOCHE.jpg
+
+```
+Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Medium shot, static. From the first frame the rat sits up on the mattress, sleepy, not wearing his cap. He takes his cap from the shelf and stares at the small screen on the back of the glowing camera; a soft green light shines on his face; his eyes open wide; the small screen shows only green light, no text and no icons. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
 ```
 
 
