@@ -28,5 +28,35 @@
   "texto": "¿Qué te pasa, estúpido? ¡Eso es un crimen!",
   "parecido": 0.97,
   "dur": 3.06
+ },
+ "ElevenLabs_2026-11-05T15_04_07_toccino_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V40",
+  "texto": "Shut up, man! It's art!",
+  "parecido": 0.97,
+  "dur": 2.15
+ },
+ "ElevenLabs_2026-11-05T15_04_07_toccino_gen_sp100_s50_sb75_v4_558f7507.mp3": {
+  "v": "V40",
+  "texto": "Shut up, man! It's art!",
+  "parecido": 0.97,
+  "dur": 2.15
+ },
+ "ElevenLabs_2026-11-05T15_05_11_el_tuerto_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V42",
+  "texto": "No.",
+  "parecido": 0.8,
+  "dur": 0.53
+ },
+ "ElevenLabs_2026-11-05T15_05_41_toccino_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V43",
+  "texto": "You're see mommy",
+  "parecido": 0.54,
+  "dur": 1.38
+ },
+ "ElevenLabs_2026-11-05T15_06_17_cuca_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V44",
+  "texto": "¡Ajá! ¡Pues que sepas que este anda grabando todo, Tuerto!",
+  "parecido": 0.98,
+  "dur": 3.3
  }
 }
