@@ -1,0 +1,32 @@
+{
+ "ElevenLabs_2026-11-05T14_59_46_el_tuerto_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V35",
+  "texto": "Usted me debe, Ratica. ¿Sí o qué, pues?",
+  "parecido": 0.96,
+  "dur": 4.0
+ },
+ "ElevenLabs_2026-11-05T15_00_38_el_tuerto_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V36",
+  "texto": "esa cámara me la ganó con trampa y ese café ahora es mío.",
+  "parecido": 0.98,
+  "dur": 5.43
+ },
+ "ElevenLabs_2026-11-05T15_01_14_Dizzy_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V37",
+  "texto": "C'mon, Rhea.",
+  "parecido": 0.53,
+  "dur": 1.46
+ },
+ "ElevenLabs_2026-11-05T15_02_12_toccino_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V38",
+  "texto": "Tranquilo, dude. Yo lo distraigo.",
+  "parecido": 0.97,
+  "dur": 2.6
+ },
+ "ElevenLabs_2026-11-05T15_02_51_Dizzy_gen_sp100_s50_sb75_v4.mp3": {
+  "v": "V39",
+  "texto": "¿Qué te pasa, estúpido? ¡Eso es un crimen!",
+  "parecido": 0.97,
+  "dur": 3.06
+ }
+}
