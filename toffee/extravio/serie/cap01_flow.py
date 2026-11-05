@@ -367,7 +367,7 @@ P2 = [
   "From the first frame the pig looks at the hen off screen to the left; no guitar in the frame",
   "His face goes pale, he swallows hard and whispers",("TOCINO","…Oh, no."),"COCINA-FOGON.jpg"),
  ("G98",8,"98 y 103","ZARZO-NOCHE",["DIZZY"],"Wide shot, static",
-  "From the first frame the rat sleeps on a small mattress, snoring softly; his cap with the small action camera rests on a wooden shelf",
+  "From the first frame the rat sleeps on a small mattress, snoring softly, WITHOUT his cap on his head: his only cap, with the small action camera, rests on the wooden shelf next to the jars",
   "After four seconds the small camera on the cap turns on by itself and glows with a soft green light",None,"ZARZO-NOCHE.jpg"),
  ("G99",4,"99","CALLEJON",["DIZZY"],"Medium shot, static, the rat's whole body inside the frame, slightly greenish dreamy look",
   "From the first frame the rat runs through the narrow alley at night",
