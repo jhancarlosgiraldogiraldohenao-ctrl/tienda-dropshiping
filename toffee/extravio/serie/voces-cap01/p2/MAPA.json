@@ -112,5 +112,35 @@
   "texto": "¡Mijito!",
   "parecido": 0.8,
   "dur": 1.32
+ },
+ "ElevenLabs_2026-11-05T15_17_56_gertrudis_gen_s50_sim75_v4.mp3": {
+  "v": "V54",
+  "texto": "Virgen Santísima, suelte a mi muchacho.",
+  "parecido": 0.97,
+  "dur": 3.21
+ },
+ "ElevenLabs_2026-11-05T15_18_35_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V55",
+  "texto": "Señora... Perdón... Señora...",
+  "parecido": 0.93,
+  "dur": 3.22
+ },
+ "ElevenLabs_2026-11-05T15_19_23_toccino_gen_s50_sim75_v4.mp3": {
+  "v": "V56",
+  "texto": "Holy shit, I love this woman.",
+  "parecido": 0.95,
+  "dur": 4.01
+ },
+ "ElevenLabs_2026-11-05T15_20_03_toccino_gen_s50_sim75_v4.mp3": {
+  "v": "V57",
+  "texto": "Señora, usted tiene unas piernas muy...",
+  "parecido": 0.97,
+  "dur": 3.79
+ },
+ "ElevenLabs_2026-11-05T15_21_10_gertrudis_gen_s50_sim75_v4.mp3": {
+  "v": "V59",
+  "texto": "Lo oí, mijito.",
+  "parecido": 0.96,
+  "dur": 1.43
  }
 }
