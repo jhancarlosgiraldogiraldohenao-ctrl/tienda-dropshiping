@@ -46,3 +46,8 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Claude borró la escena de la gallina saliendo de la casa al quitar «¡Mijito!»; la voz de Dizzy quedó encima de la de ella | Se cortó la toma entera en vez de solo la palabra | Quitar palabras = quitar el audio, no la imagen. Nunca borrar una escena sin preguntar |
 | Subtítulos arriba (y = 300) no le gustaron | Se fue al otro extremo | Posición final: **y = 1400** |
 | Se pasó de 3:00 (3:01) | Tomas puente nuevas | Recortar transiciones o repeticiones (la Llorona una vez), nunca tomas aéreas |
+
+## 14. Parte 2 (5-nov-2026)
+| Error | Por qué pasó | Regla nueva |
+|---|---|---|
+| Dos lunas en el cielo (G103, finca de noche desde el aire) | La cámara se mueve y Flow inventa otra luz en el cielo | Cielos de noche: «exactly one bright full moon (never two moons, no second light in the sky)» y que la luna «stays in the same place» |
