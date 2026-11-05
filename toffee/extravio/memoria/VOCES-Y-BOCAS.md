@@ -1,0 +1,27 @@
+# Voces que calzan con la boca (el error más caro del capítulo 1)
+
+## Qué pasó
+- La boca de Flow y la voz de ElevenLabs tienen ritmos distintos. Si la voz dura 8 s con pausas largas y la boca habla
+  6 s casi sin parar, no hay edición que la salve (G01, V01/V02: se repitieron).
+- Los tiempos de Whisper sobre el audio de Flow fallan hasta 1,5 s («What the…», «Siga», «¡Muévete!»). No sirven para pegar.
+
+## Cómo se hace ahora
+1. Con la toma de Flow ya generada, Claude mide **los tramos de boca** = tramos donde suena la voz de Flow
+   (`boca_flow()` en `editor/ed_dizzy01.py`: volumen real, umbral = piso + 10 dB entre −28 y −20 dB).
+2. Claude escribe el texto de ElevenLabs **con la duración de cada tramo**: tantas sílabas como dice Flow, las pausas donde
+   la boca se cierra, y le dice a Jay cuánto debe durar («≈ 6 s, rápido y sin pausas»).
+3. Acotaciones en inglés entre corchetes: [excited] [fast] [whispers] [shouting] [sighs] [nervous laugh] [short pause].
+   **[fast]** cuando la boca no para; **[short pause]** solo donde la boca se cierra de verdad.
+4. Jay manda 2–3 versiones de las difíciles; Claude mide cada una (frases y duración) y escoge.
+5. Revisar cada frase transcrita: ElevenLabs cambia palabras.
+6. Voz de cada personaje fija (ElevenLabs v4, estabilidad 50 %, similitud 75 %). Diseño de voz con menos de 500 caracteres.
+
+## Cómo se pega en el editor
+- `alinear()`: parte la voz en frases (silencios ≥ 0,15 s a −40 dB), empareja cada grupo de frases con un grupo de tramos
+  de boca por duración (`emparejar()`, saltar tramos del principio cuesta caro) y estira o encoge suave (0,8–1,25) con
+  rubberband. La voz entra 0,03 s después de la boca, nunca antes.
+- Si la boca tiene un patrón raro, se ponen los arranques a mano: `fijos=[1.03, None, 3.63, 4.8]` (uno por frase).
+- `quitar=1` quita la primera frase de una voz (p. ej. «¡Mía!») y `solo=1` deja solo la primera; `desde_boca` ignora la boca
+  de antes de cierto segundo.
+- Voz en off (`vo=s`): cuando la boca no se ve o está cerrada (recuerdos, Bartolo pensando).
+- La voz de Flow se tapa por Whisper **y** por volumen (0,12 s antes, 0,15 s después): así no se cuela un «mue».
