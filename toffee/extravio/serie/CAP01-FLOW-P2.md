@@ -1,6 +1,6 @@
 # Capítulo 1 · PARTE 2 del video: prompts de Flow (tomas 54 a 103)
 
-Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **52 generaciones · ≈ 428 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
+Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **56 generaciones · ≈ 456 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
 
 **Antes de las tomas de la mesa, del zarzo de noche y del camino al atardecer: las 3 fotos nuevas de lugares (HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER).**
 
@@ -175,6 +175,15 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 ```
 
 
+## G69b · 4 s · toma 69b (puente)
+
+**Fotos:** DIZZY-FRENTE.jpg + TUERTO-FRENTE.jpg + VENDEDORES-HUECO.jpg + HUECO-MESA-DOMINO.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. In the hidden night market at the bottom of a ravine from the reference, always night, bare light bulbs, burning barrels, smoke. High wide shot, static, looking down at the market street. From the first frame the market creatures gather in a circle around a small wooden domino table in the middle of the street. The rat walks to the table from the left and the cat walks to it from the right; the creatures make room for them. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The cat looks exactly like the reference image: small black-and-white cat with a black eye patch over one eye (the eye patch is ALWAYS visible in every frame), a toothpick and a gray tracksuit jacket. The market creatures look exactly like the reference image (black vulture in an apron, gray opossum, fat toad with gold chains, old rat with a hat, green iguana). No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only fire crackling, dripping water and a crowd of creatures murmuring.
+```
+
+
 ## G70 · 6 s · toma 70
 
 **Fotos:** DIZZY-FRENTE.jpg + TUERTO-FRENTE.jpg + HUECO-MESA-DOMINO.jpg
@@ -217,6 +226,15 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Low shot from under the domino table, static, the paws of the players blurry in the foreground. From the first frame, far in the background, the mule stands near the stairs. The mule turns around quietly and walks away up the stairs; nobody notices. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
+```
+
+
+## G74b · 4 s · toma 74b (puente, toma aérea)
+
+**Fotos:** BARTOLO-FRENTE.jpg + AEREA-OLLA.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. High above a deep ravine at night, orange firelight glowing below. Aerial drone shot, static, high above. From the first frame we see the deep ravine at night with the glowing barrels far below and a dirt road climbing out of it. The mule gallops fast up the winding dirt road, out of the ravine, toward the dark mountains, small in the frame. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only wind and fire crackling far below.
 ```
 
 
@@ -271,6 +289,15 @@ Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around. Close-up, static. From the first frame the cat looks straight into the lens. He slowly brings one paw toward the lens and talks very low. The cat looks exactly like the reference image: small black-and-white cat with a black eye patch over one eye (the eye patch is ALWAYS visible in every frame), a toothpick and a gray tracksuit jacket. The cat speaks in Colombian Spanish with a low, calm, husky male voice: "Así se siente, ratica." His mouth moves clearly in sync with every word. Only the cat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only domino tiles clacking and a crowd of creatures murmuring.
+```
+
+
+## G81b · 4 s · toma 81b (puente, toma aérea)
+
+**Fotos:** BARTOLO-FRENTE.jpg + GERTRUDIS-FRENTE.jpg + AEREA-OLLA.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. High above a deep ravine at night, orange firelight glowing below. Aerial drone shot, the camera slowly follows them, high above. From the first frame the mule gallops down the winding dirt road into the glowing ravine at night, small in the frame, with the hen riding on his back. The mule runs down toward the lights of the hidden market below. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only wind and fire crackling far below.
 ```
 
 
@@ -388,6 +415,15 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows. Close-up of the hen from the front, the camera moves along with her. From the first frame the hen sits on the mule looking forward, the rat's ears blurry behind her. Without turning around she smiles softly and talks. The hen looks exactly like the reference image: old brown speckled hen with a flowered headscarf, rosary and real wings. The hen speaks in Colombian Spanish with a soft, shaky, sweet old grandmother voice: "Lo oí, mijito." Her mouth moves clearly in sync with every word. Only the hen speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only hooves on dirt, wind and the first crickets.
+```
+
+
+## G94b · 4 s · toma 94b (puente, toma aérea)
+
+**Fotos:** BARTOLO-FRENTE.jpg + AEREA-FINCA.jpg
+
+```
+Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. High above the Colombian coffee farm house from the reference at dusk, warm orange and pink sunset sky, the first yellow lights in the windows. Aerial drone shot slowly descending toward the farm house. From the first frame we see the white coffee farm house on the mountain at dusk, smoke rising from the chimney. The mule arrives slowly at the house along the dirt path, small in the frame, with the hen and the rat riding on his back and the pig walking beside him. The mule looks exactly like the reference image: old brown mule wearing a black-and-white striped Colombian sombrero vueltiao (never a plain straw hat), leather bag and two plain sacks on his back. No one speaks; all mouths stay closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only wind, birds going to sleep and the first crickets.
 ```
 
 

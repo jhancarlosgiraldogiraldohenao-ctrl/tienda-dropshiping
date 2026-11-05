@@ -34,4 +34,5 @@ V = [
 ("V64","Dizzy","G100","≈ 1 s: 0,4 · pausa 0,3 · 0,35 s","[fast] [scared] ¡Hijueputa!","Partido en dos, como lo dice la boca."),
 ("V65","Dizzy","G101","≈ 4,4 s: 2,4 s · pausa 0,6 · 1,5 s","[fast] ¿Me meto por esa alcantarilla o qué, mis ratas? [short pause] Escríbanlo en los comentarios.","Rápido: la boca va ligera."),
 ("V66","Dizzy","G102","≈ 2,6 s seguido","[cocky] [fast] Sígueme pa' no perderte el próximo vlog, mi llave.","Rápido y sin pausas."),
+("V67","Dizzy (en off)","G26 (título)","≈ 4 s","[fast] Resumen, mis ratas: le hice trampa al gato más peligroso de El Hueco… y me encontró.","Recuento en off sobre la toma aérea de El Hueco, para quien no vio la parte 1."),
 ]

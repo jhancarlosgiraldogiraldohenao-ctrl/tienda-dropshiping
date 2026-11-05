@@ -42,41 +42,47 @@ ROJO = {'dominó', 'crimen', 'arte', 'gordito', 'diciembre', 'alcantarilla', 'co
 # t: toma · a: entrada (s) · d: duración (None = lo que pida la voz) · v: voz · vo: voz en off (segundos desde el inicio)
 # sc: escena · fx: [(efecto, segundo, ganancia)] · fin: efecto al terminar la voz · tinte · zoom · titulo
 E = [
+ # GANCHO (para quien ve solo la parte 2 en TikTok, Instagram y Shorts)
+ dict(t='G79', a=0.0, v='V51', sc='gancho', d=None, al=1, voltear=1, solo=1),   # «¡Suélteme, pirobo!» colgado de cabeza
+ dict(t='G26', a=0.4, d=3.2, v='V67', vo=0.25, sc='tuerto', titulo=1, titulo_txt='EXTRAVÍO · VLOG 01 · PARTE 2', dmin=3.6),   # El Hueco desde el aire + recuento en off
  # 10. El Tuerto (arranca con la respuesta)
  dict(t='G54', a=0.9, v='V35', sc='tuerto', d=None, al=1),
  dict(t='G55', a=0.8, v='V36', sc='tuerto', d=None, al=1),
  dict(t='G55b', a=0.3, d=3.0, sc='tuerto'),                         # PUENTE: los tres frente al Tuerto (Bartolo ya no aparece de la nada)
- dict(t='G56', a=0.5, d=3.0, sc='tuerto'),
+ dict(t='G56', a=0.5, d=2.4, sc='tuerto'),
  dict(t='G57', a=0.9, v='V37', sc='tuerto', d=None, al=1),
  # 11. El solo de guitarra
  dict(t='G58', a=0.5, v='V38', sc='tuerto', d=None, al=1, cortar_musica=99),
  dict(t='G59', a=0.5, d=3.4, sc='solo', fx=[('E19-solo-guitarra-espantoso', 0.0, 0.9)]),
- dict(t='G60', a=0.5, d=2.0, sc='solo'),
+ dict(t='G60', a=0.5, d=1.6, sc='solo'),
  dict(t='G61', a=0.3, d=1.8, sc='solo'),
  dict(t='G62', a=0.8, v='V39', sc='solo', d=None, al=1),
  dict(t='G63', a=0.8, v='V40', sc='solo', d=None, al=1),
  # 12. Cuca intenta
  dict(t='G63b', a=0.3, d=3.2, sc='cuca'),                          # PUENTE: Cuca entra y aparta a Tocino
- dict(t='G64', a=0.5, d=3.2, sc='cuca'),
+ dict(t='G64', a=0.5, d=2.6, sc='cuca'),
  dict(t='G65', a=0.8, v='V41', sc='cuca', d=None, al=1),
  dict(t='G66', a=1.2, v='V42', sc='sinmusica', d=None, al=1),
  dict(t='G67', a=1.4, v='V43', sc='sinmusica', d=None, al=1),
  dict(t='G68', a=0.8, v='V44', sc='sinmusica', d=None, al=1),
  dict(t='G69', a=0.4, v='V45', sc='sinmusica', d=None, al=1),
  # 13. La apuesta
+ dict(t='G69b', a=0.3, d=3.0, sc='domino'),                         # PUENTE: todos rodean la mesa de dominó
  dict(t='G70', a=1.0, v='V46', sc='domino', d=None, al=1),
  dict(t='G71', a=0.6, v='V47', sc='domino', d=None, al=1),
  dict(t='G72', a=1.8, v='V48', sc='domino', d=None, al=1),
- dict(t='G73', a=0.5, d=3.2, sc='domino'),
+ dict(t='G73', a=0.5, d=2.6, sc='domino'),
  dict(t='G74', a=0.3, d=2.4, sc='domino'),
+ dict(t='G74b', a=0.3, d=2.6, sc='domino'),                         # PUENTE aéreo: Bartolo sale corriendo del Hueco
  dict(t='G75', a=0.3, d=2.8, sc='domino'),
  dict(t='G76', a=0.9, v='V49', sc='domino', d=None, al=1),
  dict(t='G77', a=0.8, v='V50', sc='domino', d=None, al=1),
- dict(t='G78', a=0.3, d=2.8, sc='domino'),
+ dict(t='G78', a=0.3, d=2.4, sc='domino'),
  dict(t='G79', a=0.0, v='V51', sc='domino', d=None, al=1, voltear=1),   # se voltea: queda colgado de cabeza
  dict(t='G80', a=0.9, v='V52', sc='domino', d=None, al=1),
  # 14. La abuela
  dict(t='G37', a=0.0, d=2.6, v='V53', vo=0.35, sc='silencio', dmin=2.4),   # todos se congelan: «¡MIJITOOO!» de lejos
+ dict(t='G81b', a=0.3, d=2.6, sc='abuela'),                         # PUENTE aéreo: Bartolo vuelve con la abuela
  dict(t='G82', a=0.0, d=3.4, sc='abuela'),
  dict(t='G83', a=0.8, v='V54', sc='abuela', d=None, al=1),
  dict(t='G84', a=0.3, d=2.4, sc='abuela'),
@@ -84,8 +90,9 @@ E = [
  dict(t='G86', a=0.8, d=2.0, sc='abuela', fx=[('E20-chanclazo', 1.15, 1.0)]),
  dict(t='G87', a=1.3, v='V55', sc='abuela', d=None, al=1),
  dict(t='G88', a=1.6, v='V56', sc='abuela', d=None, al=1),
- dict(t='G89', a=0.0, d=3.2, sc='abuela'),
+ dict(t='G89', a=0.0, d=2.6, sc='abuela'),
  # 15. El camino de vuelta
+ dict(t='G26', a=0.4, d=2.4, sc='regreso', reversa=1),               # salen del Hueco: la toma aérea al revés (la cámara sube)
  dict(t='G90', a=0.3, d=3.0, sc='regreso'),                          # toma aérea nueva del regreso al atardecer
  dict(t='G12', a=0.0, d=2.4, sc='regreso', tarde=1, si_falta='G90'),
  dict(t='G91', a=1.2, v='V57', sc='regreso', d=None, al=1),
@@ -93,12 +100,13 @@ E = [
  dict(t='G93', a=0.6, v='V58', sc='regreso', d=None, al=1),
  dict(t='G94', a=1.0, v='V59', sc='regreso', d=None, al=1),
  # 16. La comida
+ dict(t='G94b', a=0.3, d=2.6, sc='regreso'),                         # PUENTE aéreo: llegan a la finca al anochecer
  dict(t='G95', a=1.5, v='V60', sc='regreso', d=None, al=1),
  dict(t='G96', a=1.0, v='V61', sc='regreso', d=None, al=1),
  dict(t='G97', a=1.2, v='V62', sc='regreso', d=None, al=1),
  # 17. El misterio
  dict(t='G103', a=0.0, d=2.6, sc='misterio'),                       # PUENTE: cae la noche en la finca
- dict(t='G98', a=1.0, d=4.6, sc='misterio', fx=[('E24-camara-se-prende', 3.0, 1.0)]),
+ dict(t='G98', a=1.0, d=4.0, sc='misterio', fx=[('E24-camara-se-prende', 3.0, 1.0)]),
  dict(t='G98b', a=0.3, d=4.0, sc='misterio'),                       # PUENTE: Dizzy se despierta y mira la pantallita
  dict(t='G99', a=1.4, v='V63', sc='misterio', d=None, al=1, tinte_verde=1),
  dict(t='G100', a=1.0, v='V64', sc='misterio', d=None, al=1),
@@ -109,7 +117,7 @@ E = [
 MUSICA = {'tuerto': ('M5-tuerto-reggaeton', .32), 'cuca': ('M6-cuca-saxofon', .40), 'domino': ('M7-domino-tension', .40),
           'abuela': ('M8-abuela-western', .45), 'regreso': ('M9-regreso-bambuco-tierno', .36), 'misterio': ('M10-misterio-camara', .45),
           'cierre': ('M11-tema-extravio', .40)}
-AMB = {'tuerto': ('E14-ambiente-olla', .40), 'solo': ('E14-ambiente-olla', .30), 'cuca': ('E14-ambiente-olla', .35), 'sinmusica': ('E14-ambiente-olla', .40),
+AMB = {'gancho': ('E14-ambiente-olla', .40), 'tuerto': ('E14-ambiente-olla', .40), 'solo': ('E14-ambiente-olla', .30), 'cuca': ('E14-ambiente-olla', .35), 'sinmusica': ('E14-ambiente-olla', .40),
        'domino': ('E14-ambiente-olla', .40), 'silencio': ('E14-ambiente-olla', .10), 'abuela': ('E14-ambiente-olla', .30), 'regreso': ('E02-ambiente-finca', .18)}
 CANCION = []
 
@@ -362,6 +370,7 @@ def main():
         if p.get('recorte2'): vf.insert(0, 'crop=iw*0.86:ih*0.86:0:ih*0.05')   # G40: fuera la figura borrosa de la esquina derecha
         if p.get('recorte'): vf.insert(0, 'crop=iw*0.82:ih*0.82:iw*0.02:ih*0.09')   # quita el brazo humano del borde derecho (G36)
         if p.get('voltear'): vf.append('hflip,vflip')
+        if p.get('reversa'): vf.append('reverse')
         if p.get('espejo'): vf.append('hflip')   # misma dirección que la toma anterior
         if p.get('tarde'): vf.append("colortemperature=temperature=2600:mix=1,curves=r='0/0 0.5/0.6 1/1':b='0/0 0.5/0.38 1/0.85',eq=brightness=-0.05:saturation=1.15")
         if p.get('tinte_verde'): vf.append('colorbalance=gs=.10:gm=.08,eq=saturation=0.9,noise=alls=12:allf=t')
@@ -453,7 +462,8 @@ def escribir_ass(subs, plan, path):
             cur += d
     # título
     tt = next((p['t0'] for p in plan if p.get('titulo')), None)
-    if tt is not None: ev.append(f"Dialogue: 1,{ass_t(tt + 0.3)},{ass_t(tt + 3.8)},Tit,,0,0,0,,{{\\pos(540,560)\\fad(250,350)}}EXTRAVÍO · VLOG 01")
+    tp = next((p for p in plan if p.get('titulo')), None)
+    if tt is not None: ev.append(f"Dialogue: 1,{ass_t(tt + 0.3)},{ass_t(tt + 3.8)},Tit,,0,0,0,,{{\\pos(540,560)\\fad(250,350)}}{tp.get('titulo_txt', 'EXTRAVÍO · VLOG 01')}")
     open(path, 'w').write(head + '\n'.join(ev) + '\n')
 
 if __name__ == '__main__':

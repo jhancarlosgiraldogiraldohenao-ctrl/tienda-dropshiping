@@ -58,9 +58,10 @@ LUZ = {
  "COCINA": "In the rustic farmhouse kitchen with the wood-fired clay stove from the reference, at night, warm orange firelight",
  "CALLEJON": "In the narrow dark alley with the round sewer hole from the reference, at night, bright green light glowing up from the sewer",
  "AEREA-FINCA-NOCHE": "High above the Colombian coffee farm house from the reference at night, under a sky full of stars and exactly one bright full moon (never two moons, no second light in the sky), warm light in the windows",
+ "AEREA-FINCA-TARDE": "High above the Colombian coffee farm house from the reference at dusk, warm orange and pink sunset sky, the first yellow lights in the windows",
  "MESA": "At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around",
 }
-SONIDO = {"AEREA-FINCA":"wind and birds far away","AEREA-PUEBLO":"wind and church bells far away","AEREA-OLLA":"wind and fire crackling far below","ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel","CAMINO-TARDE":"hooves on dirt, wind and the first crickets","COCINA":"fire crackling in the stove and a pot boiling","CALLEJON":"dripping water and a deep electric hum","AEREA-FINCA-NOCHE":"crickets, frogs and soft wind","MESA":"domino tiles clacking and a crowd of creatures murmuring"}
+SONIDO = {"AEREA-FINCA":"wind and birds far away","AEREA-PUEBLO":"wind and church bells far away","AEREA-OLLA":"wind and fire crackling far below","ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel","CAMINO-TARDE":"hooves on dirt, wind and the first crickets","COCINA":"fire crackling in the stove and a pot boiling","CALLEJON":"dripping water and a deep electric hum","AEREA-FINCA-NOCHE":"crickets, frogs and soft wind","AEREA-FINCA-TARDE":"wind, birds going to sleep and the first crickets","MESA":"domino tiles clacking and a crowd of creatures murmuring"}
 
 # (id, segundos, tomas del guion, lugar, [personajes], cámara, primer cuadro, acción, (quien, frase) o None, ref de lugar)
 P1 = [
@@ -294,6 +295,9 @@ P2 = [
  ("G69",4,"69","RINCON",["DIZZY"],"Close-up, static, his whole head, cap and camera inside the frame",
   "From the first frame the rat looks to the right, shocked and betrayed",
   "He shouts with his mouth wide open",("DIZZY","¡Sapa malparida!"),"HUECO-RINCON-TUERTO.jpg"),
+  ("G69b",4,"69b (puente)","OLLA",["DIZZY","TUERTO","VENDEDORES"],"High wide shot, static, looking down at the market street",
+  "From the first frame the market creatures gather in a circle around a small wooden domino table in the middle of the street",
+  "The rat walks to the table from the left and the cat walks to it from the right; the creatures make room for them",None,"HUECO-MESA-DOMINO.jpg"),
  ("G70",6,"70","MESA",["DIZZY","TUERTO"],"Medium shot in profile: the rat on the left, the cat on the right, the domino table between them",
   "From the first frame the rat and the cat face each other across the table",
   "The rat takes one step forward and talks with a challenging smile; the cat keeps his mouth closed",("DIZZY","Le juego el café al dominó, gato hijueputa."),"HUECO-MESA-DOMINO.jpg"),
@@ -309,6 +313,9 @@ P2 = [
  ("G74",4,"74","MESA",["BARTOLO"],"Low shot from under the domino table, static, the paws of the players blurry in the foreground",
   "From the first frame, far in the background, the mule stands near the stairs",
   "The mule turns around quietly and walks away up the stairs; nobody notices",None,"HUECO-MESA-DOMINO.jpg"),
+  ("G74b",4,"74b (puente, toma aérea)","AEREA-OLLA",["BARTOLO"],"Aerial drone shot, static, high above",
+  "From the first frame we see the deep ravine at night with the glowing barrels far below and a dirt road climbing out of it",
+  "The mule gallops fast up the winding dirt road, out of the ravine, toward the dark mountains, small in the frame",None,"AEREA-OLLA.jpg"),
  ("G75",4,"75","MESA",["PATA-TUERTO"],"Extreme close-up insert under the table, shallow depth of field",
   "From the first frame we only see the cat's black-and-white paw and the gray tracksuit sleeve under the table",
   "The paw slowly slides a white domino tile out of the sleeve",None,"HUECO-MESA-DOMINO.jpg"),
@@ -327,6 +334,9 @@ P2 = [
  ("G80",4,"80","MESA",["TUERTO"],"Close-up, static",
   "From the first frame the cat looks straight into the lens",
   "He slowly brings one paw toward the lens and talks very low",("TUERTO","Así se siente, ratica."),"HUECO-MESA-DOMINO.jpg"),
+  ("G81b",4,"81b (puente, toma aérea)","AEREA-OLLA",["BARTOLO","GERTRUDIS"],"Aerial drone shot, the camera slowly follows them, high above",
+  "From the first frame the mule gallops down the winding dirt road into the glowing ravine at night, small in the frame, with the hen riding on his back",
+  "The mule runs down toward the lights of the hidden market below",None,"AEREA-OLLA.jpg"),
  ("G82",6,"82","ESCALERAS",["GERTRUDIS","BARTOLO"],"Wide shot from the bottom of the stairs looking up, static, both whole bodies inside the frame",
   "From the first frame the hen sits on the saddle in the middle of the mule's back at the top of the broken stairs, holding a yellow flip-flop in one wing",
   "The mule walks slowly down the first steps toward the camera, like in a western duel",None,"HUECO-ENTRADA.jpg"),
@@ -366,6 +376,9 @@ P2 = [
  ("G94",4,"94","CAMINO-TARDE",["GERTRUDIS"],"Close-up of the hen from the front, the camera moves along with her",
   "From the first frame the hen sits on the mule looking forward, the rat's ears blurry behind her",
   "Without turning around she smiles softly and talks",("GERTRUDIS","Lo oí, mijito."),"CAMINO-ATARDECER.jpg"),
+  ("G94b",4,"94b (puente, toma aérea)","AEREA-FINCA-TARDE",["BARTOLO"],"Aerial drone shot slowly descending toward the farm house",
+  "From the first frame we see the white coffee farm house on the mountain at dusk, smoke rising from the chimney",
+  "The mule arrives slowly at the house along the dirt path, small in the frame, with the hen and the rat riding on his back and the pig walking beside him",None,"AEREA-FINCA.jpg"),
  ("G95",6,"95","COCINA",["GERTRUDIS","DIZZY"],"Medium shot, static: the hen on the left by the stove, the rat on the right sitting at the wooden table",
   "From the first frame the hen holds a huge steaming bowl of soup",
   "She puts the bowl in front of the rat and talks sweetly; the rat keeps his mouth closed",("GERTRUDIS","Venga y coma primero, mi amor, que se me va a enfermar."),"COCINA-FOGON.jpg"),

@@ -32,3 +32,10 @@
 - Cada capítulo trae lugares nuevos; Jay los crea con gusto. Claude le pide la foto propia de cada lugar donde pasa una
   escena (y de cada hora distinta: noche, atardecer), en vez de forzar una foto de otro lugar o de otra hora.
 - Prompts de lugares: Nano Banana Pro, vertical 9:16, sin personajes, «empty space in the center for small characters».
+
+## Cada parte es un video completo (Jay, 5-nov-2026)
+- La parte 2 también sale sola en TikTok, Instagram y Shorts: **toda parte lleva su propio gancho** (el momento más fuerte
+  en el primer segundo), su título («EXTRAVÍO · VLOG 01 · PARTE 2») y un **recuento en off** de 4 s sobre una toma aérea
+  para quien no vio la parte 1.
+- **Continuidad ante todo:** tomas aéreas para ubicar cada lugar (llegar, salir, cambiar de lugar). Una toma aérea al revés
+  (`reversa=1`) sirve de salida gratis.
