@@ -28,3 +28,7 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 ## Claude Studio
 - Editor web compartido: https://claude.ai/artifact/Rp5qnwNvumrHP12AFkbkkB (`toffee/extravio/studio/`). Jay prefirió
   decirle los cambios a Claude en el chat; el Studio queda para cuando lo quiera usar.
+
+## Lo que aprendimos en la parte 2 (5-nov-2026)
+- **Voz en off sobre una toma:** la toma dura lo que dure la voz (`d=None` + `cola`), nunca un tiempo fijo más corto que la voz.
+- **Visiones, sueños o videos de la cámara:** se marcan con el visor de cámara (`visor=1`: esquinas blancas, punto rojo y «REC» que titila) + tinte verde + grano + el pitido de la cámara. Antes va una toma de Dizzy mirando la pantallita. Así nadie se pierde.

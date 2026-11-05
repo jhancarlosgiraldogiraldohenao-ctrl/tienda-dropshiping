@@ -44,7 +44,7 @@ ROJO = {'dominó', 'crimen', 'arte', 'gordito', 'diciembre', 'alcantarilla', 'co
 E = [
  # GANCHO (para quien ve solo la parte 2 en TikTok, Instagram y Shorts)
  dict(t='G79', a=0.0, v='V51', sc='gancho', d=None, al=1, voltear=1, solo=1),   # «¡Suélteme, pirobo!» colgado de cabeza
- dict(t='G26', a=0.4, d=3.2, v='V67', vo=0.25, sc='tuerto', titulo=1, titulo_txt='EXTRAVÍO · VLOG 01 · PARTE 2', dmin=3.6),   # El Hueco desde el aire + recuento en off
+ dict(t='G26', a=0.0, d=None, v='V67', vo=0.25, sc='tuerto', titulo=1, titulo_txt='EXTRAVÍO · VLOG 01 · PARTE 2', cola=0.35),   # dura todo el recuento   # El Hueco desde el aire + recuento en off
  # 10. El Tuerto (arranca con la respuesta)
  dict(t='G54', a=0.9, v='V35', sc='tuerto', d=None, al=1),
  dict(t='G55', a=0.8, v='V36', sc='tuerto', d=None, al=1),
@@ -108,7 +108,7 @@ E = [
  dict(t='G103', a=0.0, d=2.6, sc='misterio'),                       # PUENTE: cae la noche en la finca
  dict(t='G98', a=1.0, d=4.0, sc='misterio', fx=[('E24-camara-se-prende', 3.0, 1.0)]),
  dict(t='G98b', a=0.3, d=4.0, sc='misterio'),                       # PUENTE: Dizzy se despierta y mira la pantallita
- dict(t='G99', a=1.4, v='V63', sc='misterio', d=None, al=1, tinte_verde=1),
+ dict(t='G99', a=1.4, v='V63', sc='misterio', d=None, al=1, tinte_verde=1, visor=1, fx=[('E24-camara-se-prende', 0.0, 0.8)]),   # se ve como el video de la cámara (REC)
  dict(t='G100', a=1.0, v='V64', sc='misterio', d=None, al=1),
  # 18. Cierre
  dict(t='G101', archivo='G101-v2', a=0.3, v='V65', sc='cierre', d=None, al=1),
@@ -373,6 +373,15 @@ def main():
         if p.get('reversa'): vf.append('reverse')
         if p.get('espejo'): vf.append('hflip')   # misma dirección que la toma anterior
         if p.get('tarde'): vf.append("colortemperature=temperature=2600:mix=1,curves=r='0/0 0.5/0.6 1/1':b='0/0 0.5/0.38 1/0.85',eq=brightness=-0.05:saturation=1.15")
+        if p.get('visor'):   # marco de cámara: esquinas, punto rojo y REC que titila, para que se entienda que es el video que muestra la cámara
+            esq = []
+            for x, y, w, h in [(60, 70, 130, 9), (60, 70, 9, 130), (W - 190, 70, 130, 9), (W - 69, 70, 9, 130),
+                               (60, H - 79, 130, 9), (60, H - 200, 9, 130), (W - 190, H - 79, 130, 9), (W - 69, H - 200, 9, 130)]:
+                esq.append(f'drawbox=x={x}:y={y}:w={w}:h={h}:color=white@0.9:t=fill')
+            fnt = os.path.join(FONTS, 'Montserrat.ttf').replace(':', '\\:')
+            esq.append("drawbox=x=95:y=125:w=34:h=34:color=red@0.95:t=fill:enable='lt(mod(t,1),0.6)'")
+            esq.append(f"drawtext=fontfile={fnt}:text='REC':x=145:y=120:fontsize=44:fontcolor=white:enable='lt(mod(t,1),0.6)'")
+            vf += esq
         if p.get('tinte_verde'): vf.append('colorbalance=gs=.10:gm=.08,eq=saturation=0.9,noise=alls=12:allf=t')
         if p.get('tinte'): vf.append('eq=saturation=0.85:gamma=0.97,colorbalance=rs=.07:gs=.03:bs=-.07')
         o = os.path.join(TMP, f'seg{i:03d}.mp4')
