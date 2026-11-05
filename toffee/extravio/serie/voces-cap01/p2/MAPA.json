@@ -82,5 +82,35 @@
   "texto": "¿Qué? ¡Eso es trampa!",
   "parecido": 0.94,
   "dur": 2.15
+ },
+ "ElevenLabs_2026-11-05T15_13_06_Dizzy_gen_s50_sim75_v4_bcdcffd0.mp3": {
+  "v": "V49",
+  "texto": "¿Qué? ¡Eso es trampa!",
+  "parecido": 0.94,
+  "dur": 2.15
+ },
+ "ElevenLabs_2026-11-05T15_14_05_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V50",
+  "texto": "No, Rética. Talento.",
+  "parecido": 0.89,
+  "dur": 2.84
+ },
+ "ElevenLabs_2026-11-05T15_15_45_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V51",
+  "texto": "¡Suélteme, pirobo! ¡Perro y hue puta!",
+  "parecido": 0.89,
+  "dur": 3.25
+ },
+ "ElevenLabs_2026-11-05T15_16_14_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V52",
+  "texto": "Así se siente, rática.",
+  "parecido": 0.9,
+  "dur": 2.32
+ },
+ "ElevenLabs_2026-11-05T15_17_03_gertrudis_gen_s50_sim75_v4.mp3": {
+  "v": "V53",
+  "texto": "¡Mijito!",
+  "parecido": 0.8,
+  "dur": 1.32
  }
 }
