@@ -61,3 +61,11 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Del «Oh, no» de la cocina a Dizzy durmiendo, sin aviso | Salto de lugar y de hora sin puente | **Regla de tiempo:** cada cambio de lugar u hora lleva una toma puente (aérea de noche, la casa por fuera, una puerta…). Lo que es sueño o visión se marca con una toma que lo cause (Dizzy mira la pantallita) |
 | La mula iba a la derecha y en la toma siguiente a la izquierda (G91 → G92) | Flow elige la dirección | **Regla de dirección:** en el prompt decir siempre la dirección («walks from left to right») en TODAS las tomas de un viaje; si sale al revés, se voltea en espejo en la edición (`espejo=1`) |
 | Toma aérea de la parte 1 pasada a atardecer se veía naranja y con un solo jinete | El color no se puede inventar y la toma vieja tenía otros personajes | No reusar tomas si cambian la hora o quién va en ellas: se genera la toma nueva (G90) |
+
+## 15. Cierre del capítulo 1 (5-nov-2026, Jay: «quedó brutal»)
+| Lo que faltó | Regla para el capítulo 2 en adelante |
+|---|---|
+| **Siempre el mismo encuadre del rincón del Tuerto** (16 tomas con la misma foto de lugar) | **Dinamismo:** cada lugar donde pasa mucho tiempo lleva **3 a 4 fotos de zonas distintas** (ej. El Hueco: entrada, calle de puestos, rincón del Tuerto de frente, el trono de cerca, detrás de los barriles, la mesa) y se alternan; además cambiar el ángulo en cada toma (picado, contrapicado, por encima del hombro, de perfil, primer plano). Nunca más de 3 tomas seguidas con la misma foto de lugar |
+| El recuento en off quedó corto sobre la aérea | La toma dura lo que dura la voz |
+| La visión del futuro confundía | Toma de Dizzy mirando la pantallita + visor de cámara (REC) |
+| Escenas sin llegada, sin cambio de hora y con dirección cambiada | Reglas de entrada, tiempo y dirección (§13–14) |

@@ -39,3 +39,8 @@
   para quien no vio la parte 1.
 - **Continuidad ante todo:** tomas aéreas para ubicar cada lugar (llegar, salir, cambiar de lugar). Una toma aérea al revés
   (`reversa=1`) sirve de salida gratis.
+
+## Dinamismo de lugares (Jay, 5-nov-2026)
+- En el paso 3 (lugares), por cada lugar importante pedir **3–4 fotos de zonas o ángulos distintos** del mismo sitio, no una sola.
+- En los prompts, rotar esas fotos y los ángulos de cámara; revisar que no haya más de 3 tomas seguidas iguales.
+- Antes de pedir algo nuevo, mirar `reusables/LEEME.md`.
