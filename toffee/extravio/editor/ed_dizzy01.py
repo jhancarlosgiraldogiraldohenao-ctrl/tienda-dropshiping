@@ -54,7 +54,7 @@ E = [
  dict(t='G04', a=0.3, d=None, v='V04', vo=0.3, sc='recuerdo', tinte=1),
  dict(t='G01', a=6.3, v='V02', sc='zarzo', d=None, al=1),
  dict(t='G05', a=0.0, d=2.6, sc='finca', titulo=1),
- dict(t='G06', a=0.0, v='V05', sc='finca', d=None, al=1),
+ dict(t='G06', a=0.0, v='V05', sc='finca', d=None, al=1, fijos=[1.03, None, 3.63, 4.8]),   # «Aquí vivo… gratis» donde lo dice la boca
  dict(t='G07', a=0.0, d=2.3, v='V20', sc='finca', al=1),
  dict(t='G08', a=0.85, v='V06', sc='finca', d=None, al=1),
  dict(t='G09', a=1.6, v='V17', sc='finca', d=None, quitar=1, al=1, desde_boca=1.6),   # se ve cuando sale corriendo de la casa; sin «¡Mijito!»     # Jay: sin «¡Mijito!» (Gertrudis queda pegada como estaba)
@@ -101,7 +101,7 @@ E = [
  dict(t='G41b', a=0.0, v='V34', vo=0.67, sc='cuca', d=None, dfija=4.03),   # «¿quién me compra…» cae donde abre la boca           # PUENTE: Dizzy ofrece el café → por eso Cuca dice lo del Tuerto
  dict(t='G42', a=0.7, v='V29', sc='cuca', d=None, al=1),
  dict(t='G43', a=0.6, v='V15', sc='cuca', d=None, al=1),
- dict(t='G44', a=0.5, d=2.4, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
+ dict(t='G44', a=0.5, d=2.1, sc='cuca', fx=[('E17-bajo-amenaza', 0.8, 1.0)]),
  dict(t='G45', a=0.9, v='V16', sc='final', d=None, al=1),
 ]
 MUSICA = {'recuerdo': ('M5-tuerto-reggaeton', .32), 'finca': ('M1-finca-bambuco', .38), 'camino': ('M2-camino-carranga', .42),
@@ -205,7 +205,7 @@ def emparejar(P, S):
     def f(i, j):
         if i == nP: return (0.25 * (nS - j), [])          # tramos de boca sobrantes al final: barato
         if j == nS: return (1e9, [])
-        best = (0.6 + f(i, j + 1)[0], f(i, j + 1)[1]) if i == 0 else (1e9, [])   # saltar un tramo al inicio
+        best = (1.6 + (S[j][1] - S[j][0]) + f(i, j + 1)[0], f(i, j + 1)[1]) if i == 0 else (1e9, [])   # saltar un tramo al inicio: caro (la voz debe arrancar con la boca)
         for k in range(1, min(3, nP - i) + 1):
             dv = P[i + k - 1][1] - P[i][0]
             for m in range(1, min(4, nS - j) + 1):
@@ -215,11 +215,13 @@ def emparejar(P, S):
                 if c + r[0] < best[0]: best = (c + r[0], [(P[i][0], S[j][0])] + r[1])
         return best
     return f(0, 0)[1]
-def alinear(x, t, a, lim, desde=0.0):
+def alinear(x, t, a, lim, desde=0.0, fijos=None):
     """Pega cada frase de la voz al arranque del tramo de boca de Flow que le toca. Devuelve (señal desde el clip 0, mapa voz→clip, errores)."""
     P = frases_voz(x); S = [q for q in boca_flow(t, a, a + lim) if q[0] >= desde]
     if not P or not S: raise IndexError('sin tramos')
     pares = emparejar(tuple(map(tuple, P)), tuple(map(tuple, S)))
+    if fijos:   # arranques de boca puestos a mano (segundos del clip), uno por frase de la voz; None = como salga
+        pares = [(P[i][0], q) for i, q in enumerate(fijos) if q is not None and i < len(P)]
     if not pares: raise IndexError('sin pares')
     toks = ['k' + chr(97 + i) * 3 for i in range(len(pares))]
     ew = [[pv, pv + 0.1, k] for (pv, _), k in zip(pares, toks)]; fw = [[pf, pf + 0.1, k] for (_, pf), k in zip(pares, toks)]
@@ -249,7 +251,7 @@ def main():
             elif e.get('al'):
                 lim = (e['d'] if e['d'] else L - e['a'])
                 try:
-                    y, mp_, err = alinear(x, e['t'], e['a'], lim, e.get('desde_boca', 0.0))
+                    y, mp_, err = alinear(x, e['t'], e['a'], lim, e.get('desde_boca', 0.0), e.get('fijos'))
                     y = np.concatenate([np.zeros(int(0.03 * SR), np.float32), y])   # la voz un pelo después de la boca, nunca antes
                     nz = np.where(np.abs(y) > 1e-4)[0]; y = y[: nz[-1] + 1] if len(nz) else y
                     vstart = 0.0; mapa = (lambda m: (lambda tv: m(tv) + 0.03))(mp_)
