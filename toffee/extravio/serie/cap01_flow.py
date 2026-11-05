@@ -57,9 +57,10 @@ LUZ = {
  "CAMINO-TARDE": "On the dirt mule trail between coffee plants and giant wax palms from the reference, at sunset, warm orange golden light and long shadows",
  "COCINA": "In the rustic farmhouse kitchen with the wood-fired clay stove from the reference, at night, warm orange firelight",
  "CALLEJON": "In the narrow dark alley with the round sewer hole from the reference, at night, bright green light glowing up from the sewer",
+ "AEREA-FINCA-NOCHE": "High above the Colombian coffee farm house from the reference at night, under a sky full of stars and a bright full moon, warm light in the windows",
  "MESA": "At a small wooden domino table in the middle of the night market from the reference, bare light bulbs and burning barrels around",
 }
-SONIDO = {"AEREA-FINCA":"wind and birds far away","AEREA-PUEBLO":"wind and church bells far away","AEREA-OLLA":"wind and fire crackling far below","ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel","CAMINO-TARDE":"hooves on dirt, wind and the first crickets","COCINA":"fire crackling in the stove and a pot boiling","CALLEJON":"dripping water and a deep electric hum","MESA":"domino tiles clacking and a crowd of creatures murmuring"}
+SONIDO = {"AEREA-FINCA":"wind and birds far away","AEREA-PUEBLO":"wind and church bells far away","AEREA-OLLA":"wind and fire crackling far below","ZARZO":"roosters far away and creaking wood","ZARZO-NOCHE":"crickets at night","FINCA":"birds, wind in the coffee plants and hens","CAMINO":"hooves on dirt and birds","PLAZA":"church bells far away and a fountain splashing","ESQUINA":"a fountain splashing far away and a soft breeze","OLLA":"fire crackling, dripping water and a crowd of creatures murmuring","ESCALERAS":"footsteps on concrete and wind","CARNE":"a knife on a wooden board and fire crackling","RINCON":"fire crackling in the barrel","CAMINO-TARDE":"hooves on dirt, wind and the first crickets","COCINA":"fire crackling in the stove and a pot boiling","CALLEJON":"dripping water and a deep electric hum","AEREA-FINCA-NOCHE":"crickets, frogs and soft wind","MESA":"domino tiles clacking and a crowd of creatures murmuring"}
 
 # (id, segundos, tomas del guion, lugar, [personajes], cámara, primer cuadro, acción, (quien, frase) o None, ref de lugar)
 P1 = [
@@ -380,6 +381,9 @@ P2 = [
  ("G102",4,"102","ZARZO-NOCHE",["DIZZY"],"Close-up very near the lens, static, his whole head, cap and camera inside the frame",
   "From the first frame the rat looks into the lens with a cocky smile",
   "He winks one eye and talks",("DIZZY","Sígueme pa' no perderte el próximo vlog, mi llave."),"ZARZO-NOCHE.jpg"),
+ ("G103",8,"103 (pantallas finales)","AEREA-FINCA-NOCHE",[],"Aerial drone shot, the camera slowly pulls back and rises",
+  "From the first frame we see the farm house from above with its warm yellow windows, smoke rising from the chimney and fireflies in the coffee plants",
+  "The camera rises slowly until the house is small under the huge starry sky and the moon",None,"AEREA-FINCA-NOCHE.jpg"),
 ]
 
 def prompt(g):

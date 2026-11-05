@@ -4,7 +4,7 @@ AQ = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, AQ)
 import cap01_flow as F
 REUSO = [("81", "G37 (de la parte 1): todos se quedan quietos; encima va «¡MIJITO!» de la abuela en off"),
          ("90", "G12 (toma aérea del camino) con color de atardecer"),
-         ("103", "Pantallas finales: G05 (aérea de la finca) con color de noche + el inicio de G98 (Dizzy dormido)")]
+         ("103", "Pantallas finales: G103 nueva (la finca de noche desde el aire) + el inicio de G98 (Dizzy dormido)")]
 NUEVOS = "Antes de las tomas de la mesa, del zarzo de noche y del camino al atardecer: las 3 fotos nuevas de lugares (HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER)."
 tot = sum(F.CRED[g[1]] for g in F.P2)
 md = ["# Capítulo 1 · PARTE 2 del video: prompts de Flow (tomas 54 a 103)\n",

@@ -83,7 +83,7 @@ Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir c
 - **ANTES de cualquier prompt, voz o edición, leer toda la carpeta `toffee/extravio/memoria/`** (orden de trabajo, prompts de Flow, voces y bocas, edición, errores, revisión). Cada error nuevo se anota ahí el mismo día. Objetivo: no gastar créditos de más.
 - **Secciones de dos partes:** cada capítulo son 2 partes (máx. 3:00 cada una); Jay hace las dos y al día siguiente sube. De cada sección salen 4 shorts/reels/TikToks. Al terminar, Claude ayuda con YouTube, Instagram y TikTok.
 - **Orden nuevo:** prompts de Flow → tomas → Claude mide la boca → textos de voz con ese ritmo → voces → edición. Nunca voces antes que las tomas.
-- Parte 2 del capítulo 1: prompts en `toffee/extravio/serie/CAP01-FLOW-P2.md` (47 generaciones, `P2` en `cap01_flow.py`), link https://claude.ai/artifact/6xqFZ4eWWYVSe8zwgRcVPa. Reusadas: 81=G37, 90=G12 con atardecer, 103=G05 de noche + G98.
+- Parte 2 del capítulo 1: prompts en `toffee/extravio/serie/CAP01-FLOW-P2.md` (47 generaciones, `P2` en `cap01_flow.py`), link https://claude.ai/artifact/6xqFZ4eWWYVSe8zwgRcVPa. Reusadas: 81=G37, 90=G12 con atardecer; 103 = G103 nueva (AEREA-FINCA-NOCHE) + inicio de G98.
 - Parte 1 del capítulo 1 aprobada el 5-nov-2026: `toffee/videos-editados/EXTRAVIO-DIZZY-CAP01-P1-FINAL.mp4` (2:55, etiqueta `cap01-parte1-final`). Subtítulos en y = 1400.
 
 ## Claude Studio (editor de Jay, 4-nov-2026)

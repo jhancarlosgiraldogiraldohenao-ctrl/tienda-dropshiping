@@ -1,6 +1,6 @@
 # Capítulo 1 · PARTE 2 del video: prompts de Flow (tomas 54 a 103)
 
-Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **47 generaciones · ≈ 382 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
+Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **48 generaciones · ≈ 394 créditos** (720p, x1). Hechos con todo lo aprendido (`memoria/`).
 
 **Antes de las tomas de la mesa, del zarzo de noche y del camino al atardecer: las 3 fotos nuevas de lugares (HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER).**
 
@@ -8,7 +8,7 @@ Google Flow, **Omni 1.1 Flash**, **vertical 9:16**. **47 generaciones · ≈ 382
 
 - Toma 81: G37 (de la parte 1): todos se quedan quietos; encima va «¡MIJITO!» de la abuela en off
 - Toma 90: G12 (toma aérea del camino) con color de atardecer
-- Toma 103: Pantallas finales: G05 (aérea de la finca) con color de noche + el inicio de G98 (Dizzy dormido)
+- Toma 103: Pantallas finales: G103 nueva (la finca de noche desde el aire) + el inicio de G98 (Dizzy dormido)
 
 **Orden nuevo:** primero estas tomas; después Claude mide la boca de cada una y manda los textos de las voces con el ritmo exacto.
 
@@ -433,4 +433,13 @@ Vertical 9:16, 6 seconds. High-quality 3D animated movie style, exactly the same
 
 ```
 Vertical 9:16, 4 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. Inside the wooden farmhouse attic from the reference at night, dark blue moonlight through the round window. Close-up very near the lens, static, his whole head, cap and camera inside the frame. From the first frame the rat looks into the lens with a cocky smile. He winks one eye and talks. The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, cap with a small action camera on top, gold chain, and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides, backpack with keys. The rat speaks in Colombian Spanish with a raspy, hoarse, rough young male street voice: "Sígueme pa' no perderte el próximo vlog, mi llave." His mouth moves clearly in sync with every word. Only the rat speaks; everybody else keeps their mouth closed. Only these characters appear; no other animals. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets at night.
+```
+
+
+## G103 · 8 s · toma 103 (pantallas finales)
+
+**Fotos:** AEREA-FINCA-NOCHE.jpg
+
+```
+Vertical 9:16, 8 seconds. High-quality 3D animated movie style, exactly the same look as the character reference images, cinematic lighting, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full vertical frame from edge to edge, no black bars. High above the Colombian coffee farm house from the reference at night, under a sky full of stars and a bright full moon, warm light in the windows. Aerial drone shot, the camera slowly pulls back and rises. From the first frame we see the farm house from above with its warm yellow windows, smoke rising from the chimney and fireflies in the coffee plants. The camera rises slowly until the house is small under the huge starry sky and the moon. No one speaks; all mouths stay closed. No humans or people anywhere, no subtitles or captions, no phone, no selfie stick, no bicycle, no music; only crickets, frogs and soft wind.
 ```
