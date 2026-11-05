@@ -58,5 +58,29 @@
   "texto": "¡Ajá! ¡Pues que sepas que este anda grabando todo, Tuerto!",
   "parecido": 0.98,
   "dur": 3.3
+ },
+ "ElevenLabs_2026-11-05T15_11_48_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V46",
+  "texto": "Le juego el café al dominó Gato y Jue puta",
+  "parecido": 0.92,
+  "dur": 3.5
+ },
+ "ElevenLabs_2026-11-05T15_12_12_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V47",
+  "texto": "Y si pierdo, le doy la cámara.",
+  "parecido": 0.97,
+  "dur": 2.72
+ },
+ "ElevenLabs_2026-11-05T15_12_39_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V48",
+  "texto": "¡Juguemos!",
+  "parecido": 0.94,
+  "dur": 0.83
+ },
+ "ElevenLabs_2026-11-05T15_13_06_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V49",
+  "texto": "¿Qué? ¡Eso es trampa!",
+  "parecido": 0.94,
+  "dur": 2.15
  }
 }
