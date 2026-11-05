@@ -214,5 +214,29 @@
   "texto": "Sapa malparida",
   "parecido": 0.97,
   "dur": 1.69
+ },
+ "ElevenLabs_2026-11-05T15_30_55_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V50",
+  "texto": "No, Rattica. Talento.",
+  "parecido": 0.92,
+  "dur": 1.76
+ },
+ "ElevenLabs_2026-11-05T15_30_55_el_tuerto_gen_s50_sim75_v4_1.mp3": {
+  "v": "V50",
+  "texto": "No, Rattica. Talento.",
+  "parecido": 0.92,
+  "dur": 1.76
+ },
+ "ElevenLabs_2026-11-05T15_33_22_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V52",
+  "texto": "Así se siente, rata.",
+  "parecido": 0.9,
+  "dur": 1.69
+ },
+ "ElevenLabs_2026-11-05T15_33_48_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V64",
+  "texto": "Hijo de puta!",
+  "parecido": 0.72,
+  "dur": 1.12
  }
 }
