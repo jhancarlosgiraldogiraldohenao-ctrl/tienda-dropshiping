@@ -184,5 +184,35 @@
   "texto": "Sígueme para no perderte el próximo vlog, mi llave.",
   "parecido": 0.96,
   "dur": 3.04
+ },
+ "ElevenLabs_2026-11-05T15_28_27_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V35",
+  "texto": "Usted me debe, Ratica, ¿sí o qué pues?",
+  "parecido": 0.96,
+  "dur": 2.19
+ },
+ "ElevenLabs_2026-11-05T15_28_51_el_tuerto_gen_s50_sim75_v4.mp3": {
+  "v": "V36",
+  "texto": "Esa cámara me la ganó con trampa y ese café ahora es mío.",
+  "parecido": 0.98,
+  "dur": 4.0
+ },
+ "ElevenLabs_2026-11-05T15_29_17_toccino_gen_s50_sim75_v4.mp3": {
+  "v": "V40",
+  "texto": "Shut up, man! It's art!",
+  "parecido": 0.97,
+  "dur": 1.82
+ },
+ "ElevenLabs_2026-11-05T15_29_54_cuca_gen_s50_sim75_v4.mp3": {
+  "v": "V41",
+  "texto": "Ay, tu ertico, mi vida, ¿y si me regalas ese cafecito?",
+  "parecido": 0.97,
+  "dur": 4.97
+ },
+ "ElevenLabs_2026-11-05T15_30_20_Dizzy_gen_s50_sim75_v4.mp3": {
+  "v": "V45",
+  "texto": "Sapa malparida",
+  "parecido": 0.97,
+  "dur": 1.69
  }
 }
