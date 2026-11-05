@@ -51,3 +51,9 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Error | Por qué pasó | Regla nueva |
 |---|---|---|
 | Dos lunas en el cielo (G103, finca de noche desde el aire) | La cámara se mueve y Flow inventa otra luz en el cielo | Cielos de noche: «exactly one bright full moon (never two moons, no second light in the sky)» y que la luna «stays in the same place» |
+| El Tuerto sin parche (G77, G78) | El parche iba nombrado una vez y Flow lo olvida en planos medios | Candado del Tuerto: «black eye patch over one eye (ALWAYS visible in every frame)» |
+| Dizzy «colgado» pero derecho (G78, G79) | «upside down» no basta | «hangs HEAD DOWN, cap pointing to the floor, feet up». Truco: primer plano normal con la cola hacia abajo y **voltearlo 180° en la edición** |
+| Toma «cenital» que no fue cenital y sin Dizzy (G73) | Plano raro + solo «paws» en el prompt | Plano picado (high-angle) y los candados de los dos jugadores; «only one rat with a cap» |
+| La gallina no le pegó al marrano (G92) | El marrano iba lejos de ella | Poner al que recibe el golpe «very close, right under» al que pega, y decir cómo reacciona («his head turns from the hit») |
+| Tocino agarrando la guitarra como humano en la cocina (G97) | El candado decía «his electric guitar» y Flow se la puso en las patas | Candado: guitarra «hanging on his back (he never holds it unless he is playing)»; primeros planos «framed from the chest up» |
+| Frase cortada al final de la toma (G83 «…muchacho», G88 «…I love this woman») | Frase larga para 4 s | Frases de más de 5 palabras: toma de 6 s. Si se corta, el final va en off sobre la toma siguiente |
