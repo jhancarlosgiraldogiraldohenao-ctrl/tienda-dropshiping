@@ -69,3 +69,8 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | El recuento en off quedó corto sobre la aérea | La toma dura lo que dura la voz |
 | La visión del futuro confundía | Toma de Dizzy mirando la pantallita + visor de cámara (REC) |
 | Escenas sin llegada, sin cambio de hora y con dirección cambiada | Reglas de entrada, tiempo y dirección (§13–14) |
+
+## 16. Lugares del capítulo 2 (6-nov-2026)
+| Error | Por qué | Regla |
+|---|---|---|
+| Las trajineras salieron con nombres escritos en los arcos (letras raras) | En la vida real las trajineras llevan el nombre en el arco, y Nano Banana lo copia aunque el prompt diga «no letters» | Objetos que en la realidad llevan letras (arcos, letreros, camiones, tiendas): describir con qué van cubiertos **en vez** de las letras («arches covered only with flower patterns and swirls»). Si sale con letras, se arregla con una edición en Nano Banana sobre la misma imagen, no con una nueva |
