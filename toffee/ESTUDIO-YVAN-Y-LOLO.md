@@ -1,5 +1,7 @@
 # Estudio: Yvan The Creator (Iván Trigo) · «Yván y Lolo» y «Los Achos» (6-nov-2026)
 
+> **Archivado (6-nov-2026):** a Jay no le interesó este creador. No usar como referencia.
+
 Pedido de Jay: analizar a fondo a @yvan.thecreator (Instagram/TikTok). Instagram bloquea la lectura automática y YouTube
 no deja bajar los videos, así que esto sale de: TikTok (datos públicos del perfil y de 3 videos), el canal de YouTube
 (22 capítulos: títulos, vistas, duración, fechas, miniaturas) y 5 artículos de prensa (jul–ago 2026).
