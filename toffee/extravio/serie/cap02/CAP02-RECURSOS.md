@@ -238,3 +238,90 @@ Prueba: «¿Y tú qué me ves, cochino? ¡Órale, a volar!»
 ```
 Small fierce Mexican woman in her twenties, high-pitched, fast and sassy, very confident and bossy, strong northern Mexican accent, quick tongue, sharp attitude, funny and loud when angry.
 ```
+
+## 6 · Modo película: más ángulos (Nano Banana Pro, vertical 9:16)
+Adjunta SIEMPRE la foto que dice cada uno: así el lugar es el mismo visto desde otro lado (contraplanos, detalles, horas). Primero los 2 arreglos.
+
+### ARREGLO · MAPA-LIMPIO
+Sobre AEREA-VIAJE-MAPA: se quita la raya. La raya nueva (de Colombia a México, viajando) la animo yo en la edición.
+```
+Edit this image: remove the glowing green line, its green glow, the green haze and all the green sparkles completely, and restore the ocean, the land, the clouds and the city lights underneath so they look natural. Keep everything else exactly the same: the earth, the clouds, the city lights, the ocean shine and the framing. No text, no letters. Vertical 9:16.
+```
+
+### ARREGLO · PUEBLO-CALLE-NOCHE
+Sobre PUEBLO-ALCANTARILLA-NOCHE: se quita la alcantarilla. La caída pasa en el callejón de la visión del cap. 1.
+```
+Edit this image: remove the round manhole cover and all the green light and green mist completely, and fill that area with the same old cobblestones so the street looks continuous and natural. Keep everything else exactly the same: the houses, doors, windows, the street lamp, the night sky with stars and the framing. No text, no letters. Vertical 9:16.
+```
+
+### CALLEJON-ALCANTARILLA-CONTRA
+Adjunta CALLEJON-ALCANTARILLA (el de la visión). Contraplano: desde adentro, mirando hacia el pueblo.
+```
+Using the attached image as the exact same place (the same narrow dark alley with old brick walls, peeling plaster, tangled electric cables, black trash bags, wet cobblestones with puddles, the round sewer hole glowing green and the same night light), show it from the opposite direction: the camera stands deep inside the alley, behind the sewer hole, looking back toward the alley entrance, where the warm-lit cobblestone street of a small Colombian colonial village with colorful doors is visible at the far end. The glowing green sewer hole is in the lower center of the frame. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### CALLEJON-ALCANTARILLA-PISO
+Adjunta CALLEJON-ALCANTARILLA. A ras del piso junto a la tapa (los pies, el tropezón).
+```
+Using the attached image as the exact same place, show a very low shot at ground level right next to the round sewer cover: the cover fills the lower part of the frame with bright magical green light coming out of its holes and thin green mist rising, wet cobblestones and a puddle reflecting the green light, the dark alley walls rising blurred behind. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### AEREA-BARRIO-MX-NOCHE
+El mapa del barrio en México: la calle del altar, el mercado y el panteón juntos (para que se entienda por dónde corren).
+```
+Vertical low aerial drone shot at night over a colorful colonial neighborhood in Mexico on the Night of the Dead, showing three places close together: on the left a narrow street with a big home altar and a path of orange marigold petals, in the center the colorful fabric roofs and paper lanterns of a night market, and on the right an old cemetery glowing with hundreds of candles next to a church dome, strings of cut paper flags crossing the streets, full moon (only one moon), warm orange and purple light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-CALLE-ALTAR-CONTRA
+Adjunta MX-CALLE-ALTAR. Contraplano: el altar queda a la izquierda y al fondo se ve el mercado.
+```
+Using the attached image as the exact same street (same painted houses, same strings of cut paper flags, same marigold petal path and the same big home altar with candles), show it from the opposite direction: the camera looks back up the street, so the big altar is now on the left side of the frame, the path of orange marigold petals runs from the lower center into the distance, and at the far end of the street the warm glow of a night market with lanterns is visible. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-ALTAR-CERCA
+Adjunta MX-CALLE-ALTAR. El altar a la altura de una rata: donde cae Dizzy en el gancho.
+```
+Using the attached image as the exact same altar, show a close shot at the height of a small rat, in front of the lowest tier of the altar: big sugar skulls, round sweet breads, candles, orange marigolds and empty wooden picture frames tower above the camera, a soft pile of marigold petals on the lowest step in the center, warm candle light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-MERCADO-CONTRA
+Adjunta MX-MERCADO. Contraplano: mirando hacia la entrada, se ve la calle del altar.
+```
+Using the attached image as the exact same night market (same stalls, orange and purple fabric roofs, paper lanterns, cut paper flags, sugar skulls, piñatas and clay pots), show it from the opposite direction: the camera looks back down the aisle toward the market entrance, where the colorful street with the altar and the marigold petal path is visible beyond the last stalls. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-MERCADO-ESCONDITE
+Adjunta MX-MERCADO. El escondite de Chuy debajo de un puesto.
+```
+Using the attached image as the same night market, show a hidden low corner under a stall: a tight cozy hideout under a table covered by a long colorful tablecloth, piñatas and colorful fantasy animal figures hanging above, a few crates, a small woven mat and a clay cup on the floor in the center, soft warm light coming through the tablecloth, a gentle haze of smoke. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-PANTEON-TUMBA
+Adjunta MX-PANTEON. La tumba de la Catrina (con su abanico encima).
+```
+Using the attached image as the exact same cemetery (same stone graves, marigold crosses, candles, mist, church tower and full moon, only one moon), show a close low shot of one big old ornate stone grave in the center that is the most decorated of all: a large cross made of orange marigolds, an arch of purple flowers, dozens of candles, a small altar with sweet bread and a folded black lace fan resting on the stone. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-TRAJINERA-CHUY-CONTRA
+Adjunta MX-TRAJINERA-CHUY. Contraplano: desde la punta del bote hacia la hamaca.
+```
+Using the attached image as the exact same boat (same painted arch with flowers, paper lanterns, string lights, the hammock, the small table with fruit and clay cups and the colorful wooden benches), show it from the opposite direction: the camera stands at the front tip of the boat looking back along the deck toward the hammock and the table, with the dark canal and other lit boats behind. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-CANAL-PUENTE
+Adjunta MX-CANAL-TRAJINERAS. Un puentecito sobre el canal (la Catrina los espera arriba).
+```
+Using the attached image as the same canals (same colorful trajineras with arches covered only with marigolds and painted swirls, no names, no letters, paper lanterns, willow trees and floating marigolds), show a small old arched wooden footbridge crossing over the canal in the middle of the frame, decorated with marigolds and paper lanterns, the boats passing under it, reflections on the water. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### AEREA-CDMX-AMANECER
+Adjunta AEREA-CDMX-NOCHE. La misma ciudad al amanecer (se acaba el tiempo).
+```
+Using the attached image as the exact same city and framing (same colonial plaza, cathedral with two bell towers, streets and the two volcanoes on the horizon), show it at dawn: the sky turning from deep blue to pink and orange behind the volcanoes, the sun just about to rise, the candles almost burned out, soft blue morning light, no moon, no fireworks. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### HABITANTES-MEXICO
+Los extras: para que el fondo esté vivo (se mueven atrás en las tomas). Se guarda en personajes/.
+```
+Character reference sheet of a group of original cartoon animal background characters for a Mexican Day of the Dead night, all standing in one row on a plain light gray background, front view: three small male chihuahua mariachi musicians in black charro suits with silver buttons and big sombreros (one with a trumpet, one with a guitarrón, one with a vihuela), an old turtle vendor in an apron holding a tray of sugar skulls, a plump iguana lady with her face painted like a sugar skull holding a candle, a goat wearing a straw sombrero and a sarape carrying baskets of orange marigolds, and a green parrot selling sweet bread. Photorealistic 3D animated film style, expressive face, soft natural light, no text, no letters, no logos.
+```
