@@ -239,6 +239,12 @@ def alinear(x, t, a, lim, desde=0.0, fijos=None):
     return y, (lambda tv: float(np.interp(tv, src, dst))), err
 
 SYNC = []
+# LARGO=1: versión para el video largo de YouTube (va pegada después de la parte 1): sin gancho de cabeza,
+# sin título ni recuento; la toma aérea de El Hueco queda sola como puente (pedido de Jay, 6-nov-2026).
+if os.environ.get('LARGO'):
+    E = [dict(t='G26', a=0.0, d=3.5, sc='tuerto')] + E[2:]
+    OUT = OUT.replace('.mp4', '-LARGO.mp4')
+
 def main():
     total = 0.0; plan = []
     for k, e in enumerate(E):
