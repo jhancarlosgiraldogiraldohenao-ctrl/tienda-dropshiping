@@ -101,13 +101,31 @@ Vertical aerial drone shot at night of long calm canals surrounded by trees and 
 ### MX-CANAL-TRAJINERAS
 Los canales a ras del agua. Foto 1.
 ```
-Vertical shot at water level of a calm canal at night with colorful wooden boats (trajineras) tied along both sides, their painted arches decorated with flowers and plain colors (no names, no letters), paper lanterns glowing, orange marigold flowers floating on the water in the lower center, trees and reeds behind, soft warm reflections. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Vertical shot at water level of a calm canal at night with colorful wooden boats (trajineras) tied along both sides, their painted arches covered only with orange marigolds, flower patterns and painted swirls (no names, no letters, no words), paper lanterns glowing, orange marigold flowers floating on the water in the lower center, trees and reeds behind, soft warm reflections. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### ARREGLO · MX-CANAL-TRAJINERAS
+Sobre la imagen que salió con letras en los arcos: edición en Nano Banana, no una nueva.
+```
+Edit this image: remove every letter and word from the arches of all the boats and replace them with colorful flower patterns and painted swirls in the same style and colors. Keep everything else exactly the same: the canal, the water, the reflections, the lanterns, the willow trees, the floating marigolds, the night sky and the framing. No text, no letters, no names anywhere. Vertical 9:16.
 ```
 
 ### MX-TRAJINERA-CHUY
 Dentro de la trajinera de Chuy. Foto 2.
 ```
-Vertical shot on board a small colorful wooden trajinera boat at night: a long wooden deck in the center, a small table with clay cups and a bowl of fruit, a tiny hammock tied between two posts, flowers and paper lanterns hanging from the painted arch (no letters), the dark canal and other lit boats far behind, relaxed and cozy. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Vertical shot on board a small colorful wooden trajinera boat at night: a long wooden deck in the center, a small table with clay cups and a bowl of fruit, a tiny hammock tied between two posts, flowers and paper lanterns hanging from the arch, which is covered only with flower patterns (no names, no letters), the dark canal and other lit boats far behind, relaxed and cozy. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-ALCANTARILLA-NOCHE
+Por donde sale Dizzy al llegar a México (el gancho), de noche.
+```
+Vertical shot at ground level of a narrow colonial street in Mexico on the Night of the Dead: a round old iron manhole cover in the lower center of the frame, slightly lifted, with bright magical green light and green mist bursting out from under it, orange marigold petals scattered around it on the cobblestones, a home altar with candles and marigolds on the right side, strings of colorful cut paper flags (blank shapes) overhead, painted houses, purple night sky. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+```
+
+### MX-TRAJINERA-MARIACHI
+La trajinera de Lupe y los mariachis (la serenata de Tocino). Foto 4 de los canales.
+```
+Vertical shot at eye level of a colorful wooden trajinera boat at night tied at the edge of a calm canal, its painted arch covered only with orange marigolds, flower patterns and painted swirls (no names, no letters, no words), a small empty wooden stage on board with three empty chairs, a big guitar and a guitarrón resting on the chairs, paper lanterns and string lights glowing, the dark canal with floating marigolds in front, willow trees behind. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
 ```
 
 ### MX-ALCANTARILLA-AMANECER
@@ -135,6 +153,12 @@ Instrumental fast Mexican cumbia sonidera chase music, accordion, güiro, bass a
 Serenata de Tocino a Lupe (y a la Catrina).
 ```
 Instrumental cheesy romantic Mexican bolero, requinto guitar and soft maracas, slow and exaggerated, over-the-top romantic for a funny cartoon serenade, no vocals, 30 seconds.
+```
+
+### M16-vals-catrina (0:30)
+Cada vez que aparece la Catrina: vals elegante y de miedito.
+```
+Instrumental elegant spooky Mexican waltz for a funny skeleton lady, soft violins, music box, marimba and light castanets, slow 3/4 time, theatrical and a little creepy but charming, comedy cartoon, no vocals, 30 seconds.
 ```
 
 ### M15-tema-chuy (0:40)
@@ -180,6 +204,12 @@ Light rattling of small bones like wooden castanets, playful and elegant, cartoo
 Lupe le rompe el violín en la cabeza a Tocino.
 ```
 A small violin smashed on a head: wood crack, strings snapping with a twang, then a soft cartoon thud, 3 seconds.
+```
+
+### E32-campanas-amanecer (0:06)
+Aviso de que va a salir el sol (la cuenta para volver).
+```
+Old church bells ringing far away at dawn, three slow deep tolls with long echo, a rooster crowing in the distance after the last bell, 6 seconds.
 ```
 
 ### E31-grito-ajua (0:03)
