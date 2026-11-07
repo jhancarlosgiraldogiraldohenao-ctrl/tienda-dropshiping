@@ -225,7 +225,7 @@ def main():
         for t in c:
             g=T[t]; pr=prompt(g)
             md.append(f"\n### {t} · {g[1]} s · {g[9]}\n```\n{pr}\n```\nFotos: "+", ".join(n for _,n in fotos(g))+"\n")
-            imgs="".join(f'<figure><img src="fotos/{n}" alt="{n}"><a href="fotos/{n}" download>Descargar</a></figure>' for _,n in fotos(g))
+            imgs="".join(f'<figure><img src="fotos/{n}" alt="{n}"><figcaption>{n[:-4]}</figcaption></figure>' for _,n in fotos(g))
             cards.append(f'<div class=card><div class=hd><b>{t} · {g[1]} s</b><button onclick="cp(this)">Copiar prompt</button></div>'
                          f'<p>{html.escape(g[9])}</p><pre>{html.escape(pr)}</pre><div class=fot>{imgs}</div></div>')
     open(os.path.join(AQUI,'CAP02-FLOW-P1.md'),'w').write("".join(md))
@@ -238,10 +238,10 @@ def main():
      ".hd{display:flex;justify-content:space-between;align-items:center;gap:8px}.card p{margin:.3em 0;color:var(--mut)}"
      "pre{white-space:pre-wrap;word-break:break-word;font-size:.82rem;background:var(--bg);padding:10px;border-radius:8px}"
      ".fot{display:flex;gap:8px;flex-wrap:wrap}figure{margin:0;width:120px;text-align:center}figure img{width:120px;border-radius:8px;display:block}"
-     "figure a{font-size:.8rem;color:var(--ac)}button{background:var(--ac);color:#fff;border:0;border-radius:8px;padding:6px 12px;font-weight:600;cursor:pointer}")
+     "figcaption{font-size:.7rem;color:var(--mut);word-break:break-all}button{background:var(--ac);color:#fff;border:0;border-radius:8px;padding:6px 12px;font-weight:600;cursor:pointer}")
     page=(f"<!doctype html><html lang=es><head><meta charset=utf-8><meta name=viewport content='width=device-width,initial-scale=1'><title>Capítulo 2 Flow</title><style>{css}</style></head><body>"
       "<h1>Extravío · Capítulo 2 · Parte 1 · Flow</h1><p>Omni 1.2 Flash · vertical 9:16 · 720p · <b>x1</b>. Cada cuenta suma 16 s (48 créditos). "
-      "Debajo de cada prompt están las fotos que hay que subir: mantén presionada la foto (celular) o arrástrala (computador), o toca «Descargar».</p>"
+      "Debajo de cada prompt están las fotos que hay que subir: en el computador arrástrala a Flow o clic derecho → «Copiar imagen»; en el celular mantenla presionada → «Copiar» o «Guardar».</p>"
       +"".join(cards)+
       "<script>function cp(x){navigator.clipboard.writeText(x.closest('.card').querySelector('pre').innerText).then(()=>{x.textContent='¡Copiado!';setTimeout(()=>x.textContent='Copiar prompt',1500)})}</script></body></html>")
     open(os.path.join(AQUI,'web','cap02-flow-p1.html'),'w').write(page)
