@@ -61,3 +61,12 @@
   en 1.1 (33+7+10), o 30 s de 1.2 + dos de 6 s en 1.1 (30+10+10). Solo 1.1: 10+10+6+6 s = 50 (32 s de video).
 - Con 1.2 solo, lo máximo es 48 (16 s) y sobran 2: por eso cada cuenta lleva sus tomas de 1.1.
 - Las listas de prompts se entregan **por cuenta** (Cuenta 1 … Cuenta 10), cada una sumando 50 exactos, siempre x1.
+
+## DECISIÓN DE JAY (7-nov-2026): SOLO Omni 1.2 Flash, nada de 1.1 (se va el 5-dic)
+- Calidad de película primero. Por cuenta: 16 s de 1.2 = 48 créditos (sobran 2, se acepta). 10 cuentas = 160 s por día.
+- Ritmo: una parte cada 2 días (≈ 200–220 s de tomas por parte, con repeticiones), un capítulo cada 4 días.
+  Los días sin parte nueva salen shorts del capítulo anterior, fotos e historias.
+- Para estirar créditos sin bajar calidad: aéreas y planos de lugar SIN personajes se hacen con las fotos de Nano Banana
+  animadas en la edición (movimiento lento de cámara, luces, humo, partículas), sin gastar Flow. Las tomas de Flow quedan
+  para personajes y acción; ninguna toma dura más de lo que se usa.
+- Tomas por cuenta: combinaciones de 16 s (8+8, 6+6+4, 5+5+6, 4+4+4+4, 10+6, 7+9, 3+3+…).
