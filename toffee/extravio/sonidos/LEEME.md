@@ -48,6 +48,9 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | E24-camara-se-prende | La cámara mágica se prende sola |
 | E28-calada-tos-chuy | Chuy le da una calada larga, tose y se ríe |
 | E29-huesos-catrina | Los huesitos de la Catrina cuando se mueve |
+| E31-grito-ajua | Grito mexicano «¡ajúa!» para remates |
+| E32-campanas-amanecer | Campanas lejanas + gallo: va a salir el sol |
+| E33-viaje-magico | La raya verde que cruza el mapa (viaje mágico) |
 | whoosh-transiciones-y-caidas | Título, tomas aéreas, caídas, lanzamientos |
 | golpe-de-chiste | Remate de cada chiste |
 | rayon-de-disco | Frenazos, «se cortó la música» |
