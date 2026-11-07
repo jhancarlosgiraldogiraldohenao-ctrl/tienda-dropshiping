@@ -70,3 +70,9 @@
   animadas en la edición (movimiento lento de cámara, luces, humo, partículas), sin gastar Flow. Las tomas de Flow quedan
   para personajes y acción; ninguna toma dura más de lo que se usa.
 - Tomas por cuenta: combinaciones de 16 s (8+8, 6+6+4, 5+5+6, 4+4+4+4, 10+6, 7+9, 3+3+…).
+
+## Entrega de prompts de Flow (Jay, 7-nov-2026)
+- UNA toma por respuesta: arriba las fotos (SendUserFile con display "render") y abajo el prompt en un bloque para copiar.
+  El texto escrito entre llamadas a herramientas NO le llega a Jay: solo el texto final de cada respuesta.
+- Cuando Jay manda el video terminado de esa toma → «✓» y, en la misma respuesta, las fotos y el prompt de la toma siguiente
+  (orden de las cuentas: `serie/cap02/cap02_flow.py`, CUENTAS). Sin pedirle «ok».
