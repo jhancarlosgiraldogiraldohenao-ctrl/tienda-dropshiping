@@ -33,6 +33,9 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | E01 | E01-zarzo-amanecer | El zarzo y la casa en la mañana |
 | E02 | E02-ambiente-finca | La finca de día |
 | E14 | E14-ambiente-olla | El Hueco (siempre de noche) |
+| E25 | E25-ambiente-muertos-noche | México, Día de Muertos: calle, mercado, panteón |
+| E26 | E26-ambiente-alcantarilla | Dentro de la alcantarilla / el túnel |
+| E27 | E27-ambiente-canal | Los canales y las trajineras de noche |
 
 ## Efectos (`efectos/`)
 | Archivo | Para qué |
@@ -43,6 +46,8 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | E19-solo-guitarra-espantoso | Tocino tocando (se corta el pedazo que sirva) |
 | E20-chanclazo | La chancla de la abuela |
 | E24-camara-se-prende | La cámara mágica se prende sola |
+| E28-calada-tos-chuy | Chuy le da una calada larga, tose y se ríe |
+| E29-huesos-catrina | Los huesitos de la Catrina cuando se mueve |
 | whoosh-transiciones-y-caidas | Título, tomas aéreas, caídas, lanzamientos |
 | golpe-de-chiste | Remate de cada chiste |
 | rayon-de-disco | Frenazos, «se cortó la música» |
