@@ -11,3 +11,4 @@
 - T29: ✓ el cigarrillo se queda toda la toma (la frase nueva funcionó); arranca sentado y se para.
 - T06: ✗ Tocino camina parado en dos patas como persona; el fondo no es la calle colonial del pueblo (parece ciudad europea). Proponer repetir con «walks on all four legs like a real pig, never standing upright».
 - T28: ✓ Tocino en cuatro patas (la frase nueva funcionó) y se meten debajo del mantel; revisar el primer segundo (entran por la izquierda).
+- T03: ✓ Dizzy entra por la izquierda, Tocino bajo el farol a la derecha (sentado como marrano), frase exacta.
