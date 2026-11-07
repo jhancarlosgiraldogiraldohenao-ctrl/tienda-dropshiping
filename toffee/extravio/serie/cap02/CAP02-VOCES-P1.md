@@ -22,3 +22,4 @@ Una sola versión por voz. Nombre del archivo = la toma (T01.mp3…). Bocas en `
 | T19 | Catrina | 1,5–4,7 s (pausa en 3,0) | [delighted gasp] ¡Un alma perdida! [short pause] ¡Pobrecito… tan feíto! |
 | T20 | Dizzy | 0,0–4,6 s (pausas en 1,6 y 3,6) | [offended] ¿Alma perdida? [short pause] Yo estoy vivo, señora… [unsure] creo. |
 | T21 | Catrina | 1,3–5,5 s (pausa en 3,8) | [theatrical] Todas las almas perdidas se vienen conmigo… [short pause] ¡al panteón! |
+| T30 | Dizzy | 2,3–3,2 s (≈ 1 s, susurro rápido) | [whispers] [fast] ¿Y usted quién es? |
