@@ -212,6 +212,12 @@ Aviso de que va a salir el sol (la cuenta para volver).
 Old church bells ringing far away at dawn, three slow deep tolls with long echo, a rooster crowing in the distance after the last bell, 6 seconds.
 ```
 
+### E33-viaje-magico (0:06)
+La raya verde que cruza el mapa de Colombia a México.
+```
+A magical energy streak traveling fast across the sky: a rising shimmering whoosh with tiny sparkling chimes, a soft deep rumble underneath, ending in a bright magical burst, 6 seconds.
+```
+
 ### E31-grito-ajua (0:03)
 El grito mexicano para los remates.
 ```
