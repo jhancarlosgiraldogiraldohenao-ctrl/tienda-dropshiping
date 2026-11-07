@@ -20,3 +20,4 @@ Una sola versión por voz. Nombre del archivo = la toma (T01.mp3…). Bocas en `
 | T31 | Chuy | 1,4–7,8 s (pausas largas) | [sleepy] Chuy… [long pause] el ajolote más tranquilo… [short pause] de todo México. [giggles] |
 - T06 (Tocino «Dude… it's glowing») queda para después: la toma se repite.
 | T19 | Catrina | 1,5–4,7 s (pausa en 3,0) | [delighted gasp] ¡Un alma perdida! [short pause] ¡Pobrecito… tan feíto! |
+| T20 | Dizzy | 0,0–4,6 s (pausas en 1,6 y 3,6) | [offended] ¿Alma perdida? [short pause] Yo estoy vivo, señora… [unsure] creo. |

@@ -22,3 +22,4 @@
 - T14: ✓ cae en las flores y se asoma (muy bueno para el gancho).
 - T18: ✓ la Catrina entra por el camino de flores abanicándose (entrada de película).
 - T19: ✓ (versión simplificada) «¡Un alma perdida, pobrecito!» con el abanico.
+- T20: ✓ frase exacta (de pie, no sentado; la cámara no está desde arriba, se acepta).
