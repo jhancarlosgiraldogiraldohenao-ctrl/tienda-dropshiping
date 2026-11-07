@@ -7,3 +7,4 @@
 - T24: ✓ muy buena (la Catrina, el abanico, la frase exacta en español).
 - T23: ✓ Tocino en cuatro patas con la guitarra en la espalda, cada uno en su lado; el sombrero de la Catrina se corta un poco arriba.
 - T02: ✓ salta y sale por la ventana redonda (la ventana se abre en dos hojas, se acepta).
+- T25: ✓ lo agarra de la oreja y salen corriendo a la derecha.
