@@ -19,3 +19,4 @@
 - T11: ✓ caen por el túnel verde, Tocino arriba a la derecha.
 - T16: ✓ frase exacta; el altar quedó a la derecha (no a la izquierda), Tocino acostado.
 - T13: ✓ brutal para el gancho: sale disparado con la luz verde y las flores.
+- T14: ✓ cae en las flores y se asoma (muy bueno para el gancho).
