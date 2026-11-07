@@ -14,3 +14,4 @@
 - T03: ✓ Dizzy entra por la izquierda, Tocino bajo el farol a la derecha (sentado como marrano), frase exacta.
 - T07: ✓ frase exacta, luz verde en la cara.
 - T09: ✓ cae por el hueco con chispas verdes; Tocino a la derecha.
+- T04: ✓ frase exacta y señala con el pulgar.
