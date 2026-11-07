@@ -52,3 +52,12 @@
   (3 s = 9 · 4 s = 12 · 5 s = 15 · 6 s = 18 · 7 s = 21 · 8 s = 24 · 9 s = 27 · 10 s = 30).
 - Regla: siempre x1 (una sola salida), duración exacta que pide la toma (no redondear a 4/6/8/10), y repartir las tomas
   entre las cuentas para que el saldo de cada una quede en 0 (el sobrante se llena con insertos de 3–4 s).
+
+## Créditos (Jay, 7-nov-2026): 10 cuentas × 50 créditos gratis cada 24 h = 500 por día
+- Omni 1.2 Flash: 3 créditos por segundo (3–10 s). Omni 1.1 Flash: 4 s = 7 · 6 s = 10 · 8 s = 12 · 10 s = 15.
+- 1.1 sale a mitad de precio en tomas largas: se usa para tomas SIN diálogo ni personajes importantes (aéreas, lugares,
+  caminos, puentes). 1.2 para todo lo que tenga personajes hablando o continuidad delicada.
+- Paquete exacto por cuenta (50 justos): **36 s de 1.2 + dos tomas de 4 s en 1.1** (36+7+7), o 33 s de 1.2 + 4 s + 6 s
+  en 1.1 (33+7+10), o 30 s de 1.2 + dos de 6 s en 1.1 (30+10+10). Solo 1.1: 10+10+6+6 s = 50 (32 s de video).
+- Con 1.2 solo, lo máximo es 48 (16 s) y sobran 2: por eso cada cuenta lleva sus tomas de 1.1.
+- Las listas de prompts se entregan **por cuenta** (Cuenta 1 … Cuenta 10), cada una sumando 50 exactos, siempre x1.
