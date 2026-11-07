@@ -24,3 +24,4 @@ Una sola versión por voz. Nombre del archivo = la toma (T01.mp3…). Bocas en `
 | T21 | Catrina | 1,3–5,5 s (pausa en 3,8) | [theatrical] Todas las almas perdidas se vienen conmigo… [short pause] ¡al panteón! |
 | T30 | Dizzy | 2,3–3,2 s (≈ 1 s, susurro rápido) | [whispers] [fast] ¿Y usted quién es? |
 | T34 | Catrina | 1,6–2,4 s (≈ 0,8 s) | [whispers, playful] Los encontré… |
+| T35 | Dizzy | 1,7–2,8 s + 3,8–4,0 s | [whispers] Ya estamos muertos… [short pause] literal. |

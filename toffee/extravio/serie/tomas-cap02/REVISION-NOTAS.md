@@ -29,3 +29,4 @@
 - T30: ✓ Dizzy sentado bajo el puesto; boca corta 2,3–3,2 s (Whisper no la entendió: susurro).
 - T33: ✓ (salió en 720p) la mano levanta el mantel y la Catrina aparece completa: sirve también como revelación antes de T34.
 - T34: ✓ la Catrina se asoma por un lado (no de cabeza, se acepta) y dice «Los encontré».
+- T35: ✓ cara de miedo con sonrisa nerviosa; boca 1,7–2,8 y 3,8–4,0 s.
