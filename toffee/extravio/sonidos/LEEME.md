@@ -19,6 +19,8 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | M9 | M9-regreso-bambuco-tierno | Bambuco lento y tierno | 1:00 | Momentos sinceros, atardeceres, regresos |
 | M10 | M10-misterio-camara | Misterio con zumbido eléctrico | 0:30 | La cámara mágica, cosas raras de noche |
 | M11 | M11-tema-extravio | Tema de la serie (cumbia + guitarra punk) | 0:30 | Cierre de cada capítulo y pantallas finales |
+| M12 | M12-mariachi-muertos | Mariachi de Día de Muertos, más tranquilo (112 bpm; entra suave y termina en silencio) | 1:04 | Llegada a México, la calle del altar, escenas tranquilas |
+| M12b | M12b-mariachi-muertos-metales | Mariachi con más trompetas, más rápido (123 bpm; arranca fuerte) | 1:04 | El mercado, la fiesta, momentos de energía en México |
 
 ## Ambientes (`ambientes/`), por debajo de las voces
 | Código | Archivo | Lugar |
