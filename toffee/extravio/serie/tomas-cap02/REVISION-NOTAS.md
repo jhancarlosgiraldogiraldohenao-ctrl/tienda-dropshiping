@@ -24,3 +24,4 @@
 - T19: ✓ (versión simplificada) «¡Un alma perdida, pobrecito!» con el abanico.
 - T20: ✓ frase exacta (de pie, no sentado; la cámara no está desde arriba, se acepta).
 - T21: ✓ frase exacta; el altar quedó a la derecha.
+- T26: ✓ corren por el mercado y rompen una olla; Tocino en cuatro patas.
