@@ -21,6 +21,11 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | M11 | M11-tema-extravio | Tema de la serie (cumbia + guitarra punk) | 0:30 | Cierre de cada capítulo y pantallas finales |
 | M12 | M12-mariachi-muertos | Mariachi de Día de Muertos, más tranquilo (112 bpm; entra suave y termina en silencio) | 1:04 | Llegada a México, la calle del altar, escenas tranquilas |
 | M12b | M12b-mariachi-muertos-metales | Mariachi con más trompetas, más rápido (123 bpm; arranca fuerte) | 1:04 | El mercado, la fiesta, momentos de energía en México |
+| M13 | M13-persecucion-cumbia | Cumbia rápida de persecución («Trompo Trouble») | 0:30 | Huida por el mercado, carrera al amanecer (se repite en bucle) |
+| M14 | M14-bolero-tocino | Bolero cursi exagerado («Serenade of Silliness») | 0:30 | Serenatas y coqueteos de Tocino |
+| M15 | M15-tema-chuy | Cumbia lenta y mareada («Lazy Wobble Cumbia») | 0:30 | Cada vez que habla Chuy |
+| M15b | M15b-tema-chuy-suave | Cumbia lenta más suave («Sleepy Cumbia Drift») | 0:30 | Chuy en la trajinera, momentos tranquilos |
+| M16 | M16-vals-catrina | Vals elegante y de miedito («Skeleton Lady Waltz»; viene muy bajito, se sube en la mezcla) | 0:30 | Cada vez que aparece la Catrina |
 
 ## Ambientes (`ambientes/`), por debajo de las voces
 | Código | Archivo | Lugar |
