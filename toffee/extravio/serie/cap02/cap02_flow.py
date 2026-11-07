@@ -199,7 +199,8 @@ def prompt(g):
         p.append(f'{NOM[q].capitalize()} speaks {VOZ[q]}: "{suave(fr)}" {s} mouth moves clearly in sync with every word. Only {NOM[q]} speaks; everybody else keeps their mouth closed.')
     else: p.append("No one speaks; all mouths stay closed.")
     extra=" and the small blurred background extras" if lug in ("MX-CALLE","MX-MERCADO") else ""
-    p.append(("Only these characters appear"+extra+"; no other animals, only one rat. " if cast else "No characters appear except the foot described; no other animals. ")+
+    uno=", only one rat" if "DIZZY" in cast else ""
+    p.append(("Only these characters appear"+extra+"; no other animals"+uno+". " if cast else "No characters appear except the foot described; no other animals. ")+
              f"No humans or people anywhere, no subtitles or captions, no text, no phone, no selfie stick, no vehicle, no music; only {SONIDO[lug]}.")
     return " ".join(p)
 def fotos(g):
