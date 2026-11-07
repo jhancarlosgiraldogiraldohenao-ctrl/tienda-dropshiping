@@ -44,3 +44,11 @@
 - En el paso 3 (lugares), por cada lugar importante pedir **3–4 fotos de zonas o ángulos distintos** del mismo sitio, no una sola.
 - En los prompts, rotar esas fotos y los ángulos de cámara; revisar que no haya más de 3 tomas seguidas iguales.
 - Antes de pedir algo nuevo, mirar `reusables/LEEME.md`.
+
+## Flow: Omni 1.2 Flash (7-nov-2026, grabación de Jay)
+- Nuevo modelo **Omni 1.2 Flash**: mejor consistencia de personajes y escenarios, imagen más nítida y menos cortes raros.
+  Omni 1.1 Flash y Veo 3.1 dicen «dejará de estar disponible»: **desde el cap. 2 se usa Omni 1.2 Flash**.
+- Precio leído en la pantalla (720p, 9:16, x1): **3 créditos por segundo**, duración libre de 3 a 10 s
+  (3 s = 9 · 4 s = 12 · 5 s = 15 · 6 s = 18 · 7 s = 21 · 8 s = 24 · 9 s = 27 · 10 s = 30).
+- Regla: siempre x1 (una sola salida), duración exacta que pide la toma (no redondear a 4/6/8/10), y repartir las tomas
+  entre las cuentas para que el saldo de cada una quede en 0 (el sobrante se llena con insertos de 3–4 s).
