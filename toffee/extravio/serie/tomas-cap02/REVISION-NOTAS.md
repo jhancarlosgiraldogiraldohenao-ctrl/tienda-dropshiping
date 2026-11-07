@@ -28,3 +28,4 @@
 - T27: llegó en 360p (otra herramienta); subida a 720p con nitidez. Al fondo a la derecha hay esqueletos de pie (decoración, parecen humanos).
 - T30: ✓ Dizzy sentado bajo el puesto; boca corta 2,3–3,2 s (Whisper no la entendió: susurro).
 - T33: ✓ (salió en 720p) la mano levanta el mantel y la Catrina aparece completa: sirve también como revelación antes de T34.
+- T34: ✓ la Catrina se asoma por un lado (no de cabeza, se acepta) y dice «Los encontré».
