@@ -242,16 +242,16 @@ Small fierce Mexican woman in her twenties, high-pitched, fast and sassy, very c
 ## 6 · Modo película: más ángulos (Nano Banana Pro, vertical 9:16)
 Adjunta SIEMPRE la foto que dice cada uno: así el lugar es el mismo visto desde otro lado (contraplanos, detalles, horas). Primero los 2 arreglos.
 
-### ARREGLO · MAPA-LIMPIO
-Sobre AEREA-VIAJE-MAPA: se quita la raya. La raya nueva (de Colombia a México, viajando) la animo yo en la edición.
+### AEREA-AMERICA-NOCHE
+(Reemplazado) Nano Banana no editó la foto: se hace un mapa nuevo sin raya, AEREA-AMERICA-NOCHE. La raya la animo yo.
 ```
-Edit this image: remove the glowing green line, its green glow, the green haze and all the green sparkles completely, and restore the ocean, the land, the clouds and the city lights underneath so they look natural. Keep everything else exactly the same: the earth, the clouds, the city lights, the ocean shine and the framing. No text, no letters. Vertical 9:16.
+Vertical very high aerial shot at night from above the clouds, looking down at the Caribbean sea: Colombia and the north of South America with tiny warm city lights at the bottom right of the frame, the thin land of Central America curving through the middle, the Yucatán peninsula and Mexico with glowing city lights on the left side, Cuba and the Caribbean islands on the upper right, the ocean shining under the moonlight, soft clouds at the bottom and top edges, epic and calm. No lines, no light beams, no lasers, no glowing paths, no arrows. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
-### ARREGLO · PUEBLO-CALLE-NOCHE
-Sobre PUEBLO-ALCANTARILLA-NOCHE: se quita la alcantarilla. La caída pasa en el callejón de la visión del cap. 1.
+### PUEBLO-CALLE-NOCHE
+Sube PUEBLO-ALCANTARILLA-NOCHE en el mismo mensaje. Sin alcantarilla y con la entrada del callejón a la derecha.
 ```
-Edit this image: remove the round manhole cover and all the green light and green mist completely, and fill that area with the same old cobblestones so the street looks continuous and natural. Keep everything else exactly the same: the houses, doors, windows, the street lamp, the night sky with stars and the framing. No text, no letters. Vertical 9:16.
+Using the uploaded photo as the exact same Colombian village street (same houses with clay tile roofs, the same blue, red and yellow wooden doors, the same carved window bars, the same street lamp and the same starry night sky), remove the round manhole cover and the green light completely so the cobblestone street is continuous, and on the right side of the street add the dark narrow entrance of an alley between two houses, with tangled electric cables hanging above it and two black trash bags at its corner. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters. Vertical 9:16.
 ```
 
 ### CALLEJON-ALCANTARILLA-CONTRA
@@ -261,9 +261,9 @@ Using the attached image as the exact same place (the same narrow dark alley wit
 ```
 
 ### CALLEJON-ALCANTARILLA-PISO
-Adjunta CALLEJON-ALCANTARILLA. A ras del piso junto a la tapa (los pies, el tropezón).
+Sube CALLEJON-ALCANTARILLA en el mismo mensaje. La MISMA tapa (huequitos), sin escaleras de incendio.
 ```
-Using the attached image as the exact same place, show a very low shot at ground level right next to the round sewer cover: the cover fills the lower part of the frame with bright magical green light coming out of its holes and thin green mist rising, wet cobblestones and a puddle reflecting the green light, the dark alley walls rising blurred behind. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the exact same alley and the exact same sewer cover (the same round iron cover with the same pattern of small holes glowing green, the same wet cobblestones and puddles, the same old brick walls with peeling plaster, tangled electric cables and black trash bags), show a very low shot at ground level right next to the cover: the cover fills the lower part of the frame, green light coming out of its holes and thin green mist rising, a puddle reflecting the green light, the alley walls rising softly out of focus behind. No fire escapes, no tall apartment buildings. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters. Vertical 9:16.
 ```
 
 ### AEREA-BARRIO-MX-NOCHE
