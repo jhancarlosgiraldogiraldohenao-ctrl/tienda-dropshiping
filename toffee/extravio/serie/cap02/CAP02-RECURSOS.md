@@ -273,27 +273,27 @@ One single continuous vertical aerial drone photo, not a collage, not split into
 ```
 
 ### MX-CALLE-ALTAR-CONTRA
-Adjunta MX-CALLE-ALTAR. Contraplano: el altar queda a la izquierda y al fondo se ve el mercado.
+Sube MX-CALLE-ALTAR en el mismo mensaje. Contraplano: el altar a la izquierda y el mercado al fondo.
 ```
-Using the attached image as the exact same street (same painted houses, same strings of cut paper flags, same marigold petal path and the same big home altar with candles), show it from the opposite direction: the camera looks back up the street, so the big altar is now on the left side of the frame, the path of orange marigold petals runs from the lower center into the distance, and at the far end of the street the warm glow of a night market with lanterns is visible. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the exact same street at the same hour, at night with a purple and dark blue sky (same painted houses, same strings of cut paper flags, same path of orange marigold petals and the same big home altar with candles), show it from the opposite direction: the camera looks back up the street, so the big altar is now on the left side of the frame, the path of marigold petals runs from the lower center into the distance, and at the far end of the street the warm glow of a night market with paper lanterns is visible. All picture frames on the altar are empty, no photos, no faces. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
 ### MX-ALTAR-CERCA
-Adjunta MX-CALLE-ALTAR. El altar a la altura de una rata: donde cae Dizzy en el gancho.
+Sube MX-CALLE-ALTAR en el mismo mensaje. El altar a la altura de una rata (donde cae Dizzy).
 ```
-Using the attached image as the exact same altar, show a close shot at the height of a small rat, in front of the lowest tier of the altar: big sugar skulls, round sweet breads, candles, orange marigolds and empty wooden picture frames tower above the camera, a soft pile of marigold petals on the lowest step in the center, warm candle light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the exact same altar on the same street at night, show a close shot at the height of a small rat, in front of the lowest tier of the altar: big painted sugar skulls, round sweet breads, lit candles, orange marigolds and empty wooden picture frames (all frames empty, no photos, no faces) tower above the camera, a soft pile of marigold petals on the lowest step in the center of the frame, warm candle light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
 ### MX-MERCADO-CONTRA
-Adjunta MX-MERCADO. Contraplano: mirando hacia la entrada, se ve la calle del altar.
+Sube MX-MERCADO en el mismo mensaje. Contraplano: mirando hacia la entrada, se ve la calle del altar.
 ```
-Using the attached image as the exact same night market (same stalls, orange and purple fabric roofs, paper lanterns, cut paper flags, sugar skulls, piñatas and clay pots), show it from the opposite direction: the camera looks back down the aisle toward the market entrance, where the colorful street with the altar and the marigold petal path is visible beyond the last stalls. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the exact same night market at the same hour, at night with a dark blue sky (same stalls, same orange and purple fabric roofs, same glowing paper lanterns, cut paper flags, sugar skulls, piñatas and clay pots), show it from the opposite direction: the camera looks back down the aisle toward the market entrance, where the colorful street with the home altar and the path of orange marigold petals is visible beyond the last stalls. The stalls have no signs and no writing. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
 ### MX-MERCADO-ESCONDITE
-Adjunta MX-MERCADO. El escondite de Chuy debajo de un puesto.
+Sube MX-MERCADO en el mismo mensaje. El escondite de Chuy debajo de un puesto.
 ```
-Using the attached image as the same night market, show a hidden low corner under a stall: a tight cozy hideout under a table covered by a long colorful tablecloth, piñatas and colorful fantasy animal figures hanging above, a few crates, a small woven mat and a clay cup on the floor in the center, soft warm light coming through the tablecloth, a gentle haze of smoke. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the same night market at the same hour, at night, show a hidden low corner under one of its stalls, seen at the height of a small rat: a tight cozy hideout under a table covered by a long colorful tablecloth that hangs to the floor, piñatas and colorful fantasy animal figures hanging above the edge of the table, a few wooden crates, a small woven mat and a clay cup on the floor in the center of the frame, warm lantern light coming through the tablecloth, a gentle haze of smoke. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
 ### MX-PANTEON-TUMBA
