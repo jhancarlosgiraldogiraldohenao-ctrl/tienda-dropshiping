@@ -16,3 +16,4 @@
 - T09: ✓ cae por el hueco con chispas verdes; Tocino a la derecha.
 - T04: ✓ frase exacta y señala con el pulgar.
 - T10: ✓ Tocino en cuatro patas se tira de cabeza al hueco.
+- T11: ✓ caen por el túnel verde, Tocino arriba a la derecha.
