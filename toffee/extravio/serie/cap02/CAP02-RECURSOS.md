@@ -267,9 +267,9 @@ Using the uploaded photo as the exact same alley and the exact same sewer cover 
 ```
 
 ### AEREA-BARRIO-MX-NOCHE
-El mapa del barrio en México: la calle del altar, el mercado y el panteón juntos (para que se entienda por dónde corren).
+Una sola foto aérea (la primera salió en 3 franjas pegadas). El barrio de México: la calle del altar, el mercado y el panteón juntos.
 ```
-Vertical low aerial drone shot at night over a colorful colonial neighborhood in Mexico on the Night of the Dead, showing three places close together: on the left a narrow street with a big home altar and a path of orange marigold petals, in the center the colorful fabric roofs and paper lanterns of a night market, and on the right an old cemetery glowing with hundreds of candles next to a church dome, strings of cut paper flags crossing the streets, full moon (only one moon), warm orange and purple light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+One single continuous vertical aerial drone photo, not a collage, not split into panels, no borders: a low drone view at night looking down over one colorful colonial neighborhood in Mexico on the Night of the Dead. In the lower part of the frame a narrow cobblestone street with a big home altar and a long path of orange marigold petals; that street leads up to a small square in the middle of the frame filled with the colorful fabric roofs and paper lanterns of a night market; right behind the market, in the upper part of the frame, an old cemetery glowing with hundreds of candles next to a church with a dome. Strings of cut paper flags cross the streets, full moon (only one moon), warm orange and purple light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
 ### MX-CALLE-ALTAR-CONTRA
