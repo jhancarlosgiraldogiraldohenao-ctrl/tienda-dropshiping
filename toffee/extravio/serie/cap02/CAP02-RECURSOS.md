@@ -278,6 +278,12 @@ Sube MX-CALLE-ALTAR en el mismo mensaje. Contraplano: el altar a la izquierda y 
 Using the uploaded photo as the exact same street at the same hour, at night with a purple and dark blue sky (same painted houses, same strings of cut paper flags, same path of orange marigold petals and the same big home altar with candles), show it from the opposite direction: the camera looks back up the street, so the big altar is now on the left side of the frame, the path of marigold petals runs from the lower center into the distance, and at the far end of the street the warm glow of a night market with paper lanterns is visible. All picture frames on the altar are empty, no photos, no faces. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs. Vertical 9:16.
 ```
 
+### MX-ALTAR-CERCA
+Opción nueva desde cero: sube MX-CALLE-ALTAR en el mismo mensaje. Sin nombrar animales.
+```
+Using the uploaded photo as the exact same altar on the same street at night, show a close shot seen from very low, a few centimeters above the ground, in front of the lowest tier of the altar: big painted sugar skulls, round sweet breads, lit candles, orange marigolds and empty wooden picture frames (all frames empty, no photos, no faces) tower above the camera, a soft pile of marigold petals on the lowest step in the center of the frame, warm candle light. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no mice, no rats, no text, no letters, no writing on signs. Vertical 9:16.
+```
+
 ### ARREGLO · MX-ALTAR-CERCA
 Sube la foto del altar que salió CON LA RATA gris y pide quitarla (o reenvía la primera, la que no tenía rata).
 ```
