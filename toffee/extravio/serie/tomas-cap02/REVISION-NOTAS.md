@@ -17,3 +17,4 @@
 - T04: ✓ frase exacta y señala con el pulgar.
 - T10: ✓ Tocino en cuatro patas se tira de cabeza al hueco.
 - T11: ✓ caen por el túnel verde, Tocino arriba a la derecha.
+- T16: ✓ frase exacta; el altar quedó a la derecha (no a la izquierda), Tocino acostado.
