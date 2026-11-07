@@ -92,5 +92,6 @@ Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir c
 - Link: https://claude.ai/artifact/Rp5qnwNvumrHP12AFkbkkB · cómo funciona: `toffee/extravio/studio/LEEME.md`. Jay mueve voces, volumen y silencios; cuando dice «finalizar» (o hay tareas «pendiente» en `mensajes`), Claude lee la base, escribe `ajustes.json` y renderiza.
 
 ## Entregas en link (pedido de Jay, 29-oct-2026)
+- **Prompts de Flow (pedido de Jay, 7-nov-2026, manda sobre lo de abajo): TODO por el chat, sin links ni PDF.** Cada prompt en su bloque y, justo debajo, las fotos que hay que subir enviadas como archivos (SendUserFile) para que Jay las descargue ahí mismo. Nada de «búscala por el nombre».
 - **Prompts nuevos o cambiados: SIEMPRE en el chat, cada uno en su bloque para copiar y pegar** (pedido de Jay, 29-oct-2026). No basta con decir «está en el link».
 - Todo PDF que se le mande a Jay va **también como link** (Artifact) que pueda abrir directo en el navegador, con botones de Copiar en los prompts. El PDF se puede adjuntar además, pero el link es obligatorio.
