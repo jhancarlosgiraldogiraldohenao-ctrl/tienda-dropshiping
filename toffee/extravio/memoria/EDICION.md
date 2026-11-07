@@ -32,3 +32,9 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 ## Lo que aprendimos en la parte 2 (5-nov-2026)
 - **Voz en off sobre una toma:** la toma dura lo que dure la voz (`d=None` + `cola`), nunca un tiempo fijo más corto que la voz.
 - **Visiones, sueños o videos de la cámara:** se marcan con el visor de cámara (`visor=1`: esquinas blancas, punto rojo y «REC» que titila) + tinte verde + grano + el pitido de la cámara. Antes va una toma de Dizzy mirando la pantallita. Así nadie se pierde.
+
+## Lugares animados desde fotos (aprobado por Jay, 7-nov-2026)
+- Aéreas, lugares y mapas SIN personajes se hacen con la foto de Nano Banana animada (`editor/animar_lugares_demo.py`):
+  cámara lenta que se acerca/baja (trabajar a 2x para que no tiemble), luces que titilan, chispas o brasas que suben,
+  grano de película; en el mapa, la raya verde que viaja de Colombia a México con chispitas y destello al llegar.
+- Así no se gasta Flow en eso: todos los créditos van a las tomas con personajes (Omni 1.2).
