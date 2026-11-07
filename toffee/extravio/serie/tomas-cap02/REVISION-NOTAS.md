@@ -9,3 +9,4 @@
 - T02: ✓ salta y sale por la ventana redonda (la ventana se abre en dos hojas, se acepta).
 - T25: ✓ lo agarra de la oreja y salen corriendo a la derecha.
 - T29: ✓ el cigarrillo se queda toda la toma (la frase nueva funcionó); arranca sentado y se para.
+- T06: ✗ Tocino camina parado en dos patas como persona; el fondo no es la calle colonial del pueblo (parece ciudad europea). Proponer repetir con «walks on all four legs like a real pig, never standing upright».
