@@ -13,3 +13,4 @@
 - T28: ✓ Tocino en cuatro patas (la frase nueva funcionó) y se meten debajo del mantel; revisar el primer segundo (entran por la izquierda).
 - T03: ✓ Dizzy entra por la izquierda, Tocino bajo el farol a la derecha (sentado como marrano), frase exacta.
 - T07: ✓ frase exacta, luz verde en la cara.
+- T09: ✓ cae por el hueco con chispas verdes; Tocino a la derecha.
