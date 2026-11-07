@@ -303,15 +303,15 @@ Using the attached image as the exact same cemetery (same stone graves, marigold
 ```
 
 ### MX-TRAJINERA-CHUY-CONTRA
-Adjunta MX-TRAJINERA-CHUY. Contraplano: desde la punta del bote hacia la hamaca.
+Sube MX-TRAJINERA-CHUY en el mismo mensaje. El MISMO bote (hamaca y mesita a la izquierda), sin sillas de más y sin letras en los botes de atrás.
 ```
-Using the attached image as the exact same boat (same painted arch with flowers, paper lanterns, string lights, the hammock, the small table with fruit and clay cups and the colorful wooden benches), show it from the opposite direction: the camera stands at the front tip of the boat looking back along the deck toward the hammock and the table, with the dark canal and other lit boats behind. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the exact same boat with the exact same layout (the hammock hanging on the left side, the small wooden table with the fruit bowl and three clay cups on the left side, the long red wooden bench on the right side, the same painted arch with flowers, the same paper lanterns and string lights), show it from the opposite direction: the camera stands at the front tip of the boat looking back along the deck toward the hammock and the table. Do not add any chairs. Behind the boat, the dark canal at night and other lit boats whose arches are covered only with flowers and painted swirls, no names, no letters, no words anywhere. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters. Vertical 9:16.
 ```
 
 ### MX-CANAL-PUENTE
-Adjunta MX-CANAL-TRAJINERAS. Un puentecito sobre el canal (la Catrina los espera arriba).
+Sube MX-CANAL-TRAJINERAS en el mismo mensaje. El puente, DE NOCHE (el primero salió de día).
 ```
-Using the attached image as the same canals (same colorful trajineras with arches covered only with marigolds and painted swirls, no names, no letters, paper lanterns, willow trees and floating marigolds), show a small old arched wooden footbridge crossing over the canal in the middle of the frame, decorated with marigolds and paper lanterns, the boats passing under it, reflections on the water. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters, no writing on signs, empty space in the center for small characters. Vertical 9:16.
+Using the uploaded photo as the same canals at the same hour, at night with a dark blue starry sky (same colorful trajineras with arches covered only with marigolds and painted swirls, no names, no letters, same glowing paper lanterns, willow trees and floating marigolds), show a small old arched wooden footbridge crossing over the canal in the middle of the frame, decorated with marigolds and glowing paper lanterns, the boats under it, warm reflections of the lanterns on the dark water. It is night, not day, not sunset. Photorealistic 3D animated film style, cinematic light, rich colors, no characters, no people, no animals, no text, no letters. Vertical 9:16.
 ```
 
 ### AEREA-CDMX-AMANECER
