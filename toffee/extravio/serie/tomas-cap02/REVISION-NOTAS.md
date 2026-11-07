@@ -21,3 +21,4 @@
 - T13: ✓ brutal para el gancho: sale disparado con la luz verde y las flores.
 - T14: ✓ cae en las flores y se asoma (muy bueno para el gancho).
 - T18: ✓ la Catrina entra por el camino de flores abanicándose (entrada de película).
+- T19: ✓ (versión simplificada) «¡Un alma perdida, pobrecito!» con el abanico.

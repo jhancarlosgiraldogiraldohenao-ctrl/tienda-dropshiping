@@ -19,3 +19,4 @@ Una sola versión por voz. Nombre del archivo = la toma (T01.mp3…). Bocas en `
 | T29 | Chuy | 2,1–5,5 s (pausa en 3,2) | [sleepy] Qué onda, carnales… ¿también vienen huyendo de la flaca? |
 | T31 | Chuy | 1,4–7,8 s (pausas largas) | [sleepy] Chuy… [long pause] el ajolote más tranquilo… [short pause] de todo México. [giggles] |
 - T06 (Tocino «Dude… it's glowing») queda para después: la toma se repite.
+| T19 | Catrina | 1,5–4,7 s (pausa en 3,0) | [delighted gasp] ¡Un alma perdida! [short pause] ¡Pobrecito… tan feíto! |
