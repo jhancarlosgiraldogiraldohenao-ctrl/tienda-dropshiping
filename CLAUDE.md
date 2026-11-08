@@ -86,7 +86,7 @@ Se trabaja una parte a la vez. **Jay avisa «parte N lista»** antes de seguir c
 - Parte 2 del capítulo 1: prompts en `toffee/extravio/serie/CAP01-FLOW-P2.md` (47 generaciones, `P2` en `cap01_flow.py`), link https://claude.ai/artifact/6xqFZ4eWWYVSe8zwgRcVPa. Reusadas: 81=G37, 90=G12 con atardecer; 103 = G103 nueva (AEREA-FINCA-NOCHE) + inicio de G98.
 - Parte 2 del capítulo 1 armada el 5-nov-2026 (v4: recuento completo sobre la aérea y visor de cámara en la visión: 2:57): editor `toffee/extravio/editor/ed_dizzy01p2.py` → `toffee/videos-editados/EXTRAVIO-DIZZY-CAP01-P2.mp4`; voces en `serie/voces-cap01/p2/` (ELEGIDAS.json), textos en `serie/cap01_voces_p2.py`, bocas medidas en `serie/cap01_bocas_p2.json`.
 - **Capítulo 1 TERMINADO (5-nov-2026):** parte 2 aprobada → `toffee/videos-editados/EXTRAVIO-DIZZY-CAP01-P2-FINAL.mp4` (2:57, etiqueta `cap01-parte2-final`). Recursos para reusar: `toffee/extravio/reusables/LEEME.md`. Próximo capítulo: más dinamismo (3–4 fotos por lugar, ángulos variados).
-- Parte 1 del capítulo 1 aprobada el 5-nov-2026: `toffee/videos-editados/EXTRAVIO-DIZZY-CAP01-P1-FINAL.mp4` (2:55, etiqueta `cap01-parte1-final`). Subtítulos en y = 1400.
+- Parte 1 del capítulo 1 aprobada el 5-nov-2026: `toffee/videos-editados/EXTRAVIO-DIZZY-CAP01-P1-FINAL.mp4` (2:55, etiqueta `cap01-parte1-final`). Subtítulos en y = 1400 (solo cap. 1); desde el 8-nov-2026 van en y = 900, como Gnomo.
 
 ## Claude Studio (editor de Jay, 4-nov-2026)
 - Link: https://claude.ai/artifact/Rp5qnwNvumrHP12AFkbkkB · cómo funciona: `toffee/extravio/studio/LEEME.md`. Jay mueve voces, volumen y silencios; cuando dice «finalizar» (o hay tareas «pendiente» en `mensajes`), Claude lee la base, escribe `ajustes.json` y renderiza.

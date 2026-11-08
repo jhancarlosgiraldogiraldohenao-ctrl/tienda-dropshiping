@@ -16,6 +16,6 @@
 ## Video
 - [ ] Cada voz entra con su boca (revisar las tomas de frente una por una).
 - [ ] Ninguna voz encima de otra; ninguna escena importante borrada.
-- [ ] Subtítulos en y = 1400 y a tiempo; inglés traducido.
+- [ ] Subtítulos en y = 900 (como Gnomo) y a tiempo; inglés traducido.
 - [ ] Sin palabras de más («¡Mía!», «¡Mijito!») si Jay las quitó.
 - [ ] Dura menos de 3:00.

@@ -302,7 +302,7 @@ def main():
     for j, (a, b, x) in enumerate(subs):
         if j + 1 < len(subs): b = min(b, subs[j + 1][0])
         x = ' '.join(('{\\c&H3B3BFF&}' + w_ + '{\\c&HFFFFFF&}') if w_.lower().strip('¿¡,') in ROJO else w_ for w_ in x.split())
-        ass += f'Dialogue: 0,{tt(a)},{tt(b)},Sub,,0,0,0,,{{\\pos(540,1400)}}{x}\n'
+        ass += f'Dialogue: 0,{tt(a)},{tt(b)},Sub,,0,0,0,,{{\\pos(540,900)}}{x}\n'
     for p in plan:
         if p.get('titulo'): ass += f"Dialogue: 1,{tt(p['t0'] + 0.3)},{tt(p['t0'] + p['d'] - 0.2)},Tit,,0,0,0,,{{\\pos(540,560)\\fad(250,350)}}{p['titulo']}\n"
     sa = os.path.join(TMP, 'subs.ass'); open(sa, 'w').write(ass)

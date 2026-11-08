@@ -44,3 +44,7 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 - Se copia a Gnomo Palomo: foto tipo selfie con la cara del protagonista GRANDE (más de la mitad del cuadro), gesto exagerado, un objeto llamativo hacia la cámara, el segundo personaje atrás con actitud, un lugar colorido y reconocible, y SIN LETRAS. La curiosidad la pone el título («…y… (no es lo que esperaba)»).
 - Se genera en Nano Banana Pro con las fotos de referencia en el mismo mensaje; nada de recortes en Python.
 - Error (8-nov-2026): pedir «side-eye glance» dejó a Dizzy bizco. En Dizzy, pedir siempre: «both eyes look in exactly the same direction, perfectly aligned pupils, not cross-eyed».
+
+## Subtítulos y redes (decisión de Jay, 8-nov-2026, manda sobre la y = 1400)
+- **Subtítulos en y = 900 de 1920**, donde los pone Gnomo Palomo (medido en su video: 46 % del alto, centro del cuadro). Montserrat negrita 62, blanca con borde negro, palabras clave en rojo. Variable `SUBY` en los editores.
+- **Cierre con redes:** cuando Dizzy invita a seguirlo/ver YouTube, sale «Sígueme en YouTube y en mis redes» (y = 1335) y debajo 3 **burbujas redondeadas** (YouTube, TikTok, Instagram) con logo, «El Dizzy» y @el_dizzy_vlogs, que aparecen una por una subiendo (y = 1385, 1525, 1665). Se hacen con `editor/redes_burbujas.py` → `editor/redes/RED-*.png`; ejemplo de uso en `adelanto_cap02.py`.
