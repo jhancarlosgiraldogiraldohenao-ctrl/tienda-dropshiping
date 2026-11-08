@@ -34,8 +34,8 @@ def prompt(tid):
     p=p.replace(F.HEAD.format(d=g[1]),H_HEAD.format(d=g[1]))
     p=p.replace(F.FONDO[g[2]]+".",VIVO.get(g[2],F.FONDO[g[2]])+".")
     return p
-AEREAS_H=[("A-FINCA",6,"AEREA-FINCA-NOCHE.jpg","Horizontal 16:9, 6 seconds. Cinematic aerial drone shot of the lonely two-story coffee farmhouse on the green mountain from the reference image at midnight, exactly the same place: white walls, wooden balconies, warm light in the windows, smoke from the chimney, coffee plants and banana trees around it, misty mountains behind under a full moon and a starry sky. The drone slowly glides forward and down toward the house. Fireflies blink in the coffee plants and the mist moves slowly. It is night, not day. No characters, no animals, no people, no text, no music; only crickets and soft wind.")]
-AEREAS_H+=[(a,d,f,p.replace("Vertical 9:16","Horizontal 16:9")) for a,d,f,p in F.AEREAS]
+AEREAS_H=[("A-FINCA",6,"AEREA-FINCA-NOCHE.jpg","Horizontal 16:9, 6 seconds. Cinematic aerial drone shot of the lonely two-story coffee farmhouse on the green mountain from the reference image at midnight, exactly the same place: white walls, wooden balconies, warm light in the windows, smoke from the chimney, coffee plants and banana trees around it, misty mountains behind under a full moon and a starry sky. The drone slowly glides forward and down toward the house. Fireflies blink in the coffee plants and the mist moves slowly. It is night, not day. One continuous shot with no cuts, full frame from edge to edge, normal lens, no black bars. No characters, no animals, no people, no text, no music; only crickets and soft wind.")]
+AEREAS_H+=[(a,d,f,p.replace("Vertical 9:16","Horizontal 16:9").replace("full vertical frame","full frame from edge to edge")) for a,d,f,p in F.AEREAS]
 if __name__=="__main__":
     tot=sum(DUR[t]*(1 if t in R360 else 3) for t in ORDEN)+sum(a[1] for a in AEREAS_H)
     print("créditos aprox.:",tot)
