@@ -15,7 +15,8 @@ VIVO={
  "MX-ESCONDITE":F.FONDO["MX-ESCONDITE"]+"; through the gap of the tablecloth we see blurred feet of market animals walking by outside",
 }
 # cámara de cine en 16:9 (si no está aquí, se usa la del guion vertical)
-ACC={"T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
+ACC={"T10":"His four hooves stay on the ground the whole time like a real pig; he yells down into the hole, then crouches on all four legs and dives forward head first into the open hole like a real pig jumping into water, never standing up on his back legs",
+     "T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
 CAM={"T07":"Medium shot, static, the rat stands on the left third of the frame with his whole body from his cap to his slides inside the frame, his feet on the wet cobblestones; the closed glowing sewer cover is on the ground on the right side, green light on him from below; both of his eyes look in the same direction, never cross-eyed",
      "T01":"Medium close-up, the rat sits on the left third of the frame, the round moonlit window and the candle visible on the right side; the camera slowly pushes in, his whole head, cap and camera always inside the frame; both of his eyes look straight into the lens, never cross-eyed"}
 # tomas que se rehacen en horizontal (orden de la edición). Fuera: T04 (sin voz) y T13 (Jay: no va el gancho de la alcantarilla).

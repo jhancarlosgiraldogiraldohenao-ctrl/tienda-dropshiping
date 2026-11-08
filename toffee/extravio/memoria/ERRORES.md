@@ -100,3 +100,4 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Error | Por qué | Regla |
 |---|---|---|
 | T02: Dizzy se mete en la ventana y luego se devuelve saltando al cuarto | «squeezes out» sin decir que no vuelve | Salidas: «he never turns around and never comes back inside; for the final second the window/door is empty» |
+| T10: Tocino se paró en 2 patas con las patas de adelante como brazos | La acción decía «shrugs» (encogerse de hombros = gesto humano) | Con Tocino nunca verbos de hombros o brazos (shrug, wave, point); decir «his four hooves stay on the ground the whole time» y la acción como cerdo real («dives like a real pig jumping into water») |
