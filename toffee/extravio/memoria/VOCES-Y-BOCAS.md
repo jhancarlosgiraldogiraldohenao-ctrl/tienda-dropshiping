@@ -46,11 +46,7 @@
 - En los prompts de Flow: «speaks in Spanish with a very heavy American gringo accent, mixing in a few short English words».
 - El mercado de EE. UU. se busca con subtítulos en inglés (.srt) y el doblaje automático de YouTube, no con Tocino en inglés.
 
-## Voice Changer (8-nov-2026): la sincronía perfecta
-- Con Omni 1.2 la boca de Flow dice la frase exacta y en el idioma correcto. Lo más preciso es **ElevenLabs Voice Changer**
-  (voz a voz) sobre el audio de la toma de Flow, con la voz del personaje: el resultado tiene EXACTAMENTE los tiempos de la boca.
-- Claude exporta `voces-capNN/pN-flow-para-voice-changer/TNN-flow.mp3`; Jay lo pasa por Voice Changer (quitar ruido de fondo: sí)
-  y lo devuelve como TNN.mp3. El editor lo pega en el segundo 0 de la toma, sin estirar.
-- Texto a voz (TTS) solo cuando Flow no dijo la frase o la dijo mal.
-- Errores de la parte 1 v3: T04 Dizzy gigante (se repite en plano medio con los dos de cuerpo entero); los gritos de Flow ya calzan
-  con la boca: se usa el audio de Flow, no ElevenLabs; la tos de Chuy está en el audio de Flow: no taparla después de la última palabra.
+## Voice Changer: PROHIBIDO (decisión de Jay, 8-nov-2026, para siempre)
+- Jay lo probó: la voz sale distorsionada y suena distinta cada vez. **Nunca más pedir Voice Changer.**
+- Método fijo: Claude mide la boca de la toma (palabras de Whisper + tramos), escribe el texto de ElevenLabs (TTS, voz del personaje) con comas, puntos y «...» para que dure lo mismo, le dice a Jay cuántos segundos debe durar, y pega la voz con `sincronizar()` / `pegar_suave()` moviendo frases enteras.
+- Los 19 audios `*-flow.mp3` de `p1-flow-para-voice-changer/` ya no se usan para eso: la parte 1 del cap. 2 se termina con las voces TTS que ya están en `voces-cap02/p1/`.

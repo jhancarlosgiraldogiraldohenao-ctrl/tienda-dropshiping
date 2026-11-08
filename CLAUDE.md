@@ -32,7 +32,7 @@ Después del recordatorio, sigue con lo que Jay pidió. No lo repitas en los dem
 - Si la idea no se cumplió, **se repite**. No hay que «arreglarlo» en la edición ni aceptarlo «porque igual funciona».
 - Decirle a Jay qué falló, mejorar el prompt para que no vuelva a pasar y actualizar el plan (`toffee/plan-videos/`, `toffee/PLAN-VIDEOS-7-DIAS.pdf`).
 - **Subtítulos de la voz (en los shorts; los capítulos de Extravío van sin texto): en español, pegados en el video** (cambio decidido el 25-oct-2026; antes eran en inglés). Estilo Gnomo Palomo: 1 a 3 palabras, centrados y sincronizados palabra por palabra. El **inglés va aparte**, como subtítulos .srt en YouTube (y la traducción automática de TikTok/Instagram).
-- **Boca sincronizada:** cuando Toffee habla en cámara, la voz de ElevenLabs se ajusta palabra por palabra a la boca de la toma de Flow (o se usa el Voice Changer de ElevenLabs sobre el audio de Flow).
+- **Boca sincronizada:** cuando Toffee habla en cámara, la voz de ElevenLabs se ajusta palabra por palabra a la boca de la toma de Flow (NUNCA Voice Changer: decisión de Jay, 8-nov-2026, la voz sale distorsionada).
 - **Audio de la voz: primero que suene perfecto** (pedido de Jay, 25-oct-2026). Cortar la voz SOLO en silencios reales (comprobar el nivel en cada corte); nunca dentro de una palabra; no estirar ni encoger la voz. La sincronía con la boca se logra moviendo frases enteras, sin forzar.
 - **No borrar sonidos propios de la toma** (un «miau», un ladrido, un gesto a la cámara): se dejan con volumen que se oiga y sin zoom que corte la cara.
 
