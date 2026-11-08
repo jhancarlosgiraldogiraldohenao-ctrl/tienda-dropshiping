@@ -35,3 +35,4 @@
 - 8-nov (3): T10 (hueco abierto), T15 (Tocino cae), T34 (cuerpo entero), A-CDMX (aérea en video) ✓.
 - 8-nov (4): A-PUEBLO (aérea en video) ✓.
 - 8-nov (5): T08 nueva: la tapa está cerrada y se corre bajo el pie (se usa T08 → T07b desde 2 s → T09).
+- 8-nov (6): T34 nueva con los cuatro (Dizzy, Tocino y Chuy a la izquierda, la Catrina a la derecha) ✓.
