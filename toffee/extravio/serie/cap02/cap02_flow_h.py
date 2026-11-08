@@ -16,7 +16,8 @@ VIVO={
 }
 # cámara de cine en 16:9 (si no está aquí, se usa la del guion vertical)
 ACC={"T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
-CAM={"T01":"Medium close-up, the rat sits on the left third of the frame, the round moonlit window and the candle visible on the right side; the camera slowly pushes in, his whole head, cap and camera always inside the frame; both of his eyes look straight into the lens, never cross-eyed"}
+CAM={"T07":"Medium shot, static, the rat stands on the left third of the frame with his whole body from his cap to his slides inside the frame, his feet on the wet cobblestones; the closed glowing sewer cover is on the ground on the right side, green light on him from below; both of his eyes look in the same direction, never cross-eyed",
+     "T01":"Medium close-up, the rat sits on the left third of the frame, the round moonlit window and the candle visible on the right side; the camera slowly pushes in, his whole head, cap and camera always inside the frame; both of his eyes look straight into the lens, never cross-eyed"}
 # tomas que se rehacen en horizontal (orden de la edición). Fuera: T04 (sin voz) y T13 (Jay: no va el gancho de la alcantarilla).
 ORDEN=["T01","T02","T03","T06","T07","T07b","T08","T09","T10","T11","T14","T15","T16","T17","T18","T19","T20","T21",
        "T22","T23","T24","T25","T26","T27","T28","T29","T30","T31","T33","T34","T35"]
