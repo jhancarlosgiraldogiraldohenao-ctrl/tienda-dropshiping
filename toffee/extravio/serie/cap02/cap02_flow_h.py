@@ -19,6 +19,7 @@ ACC={"T14":"A small swirling burst of green magic light opens in the air above t
      "T15":"The rat already sits dazed in the petals on the left side of the frame. A small swirling burst of green magic light opens in the air above and the pig falls out of it onto the petals on the right with a big soft thump; petals explode into the air; he lands on his back with his four legs up and his sunglasses crooked; the green light closes",
      "T10":"His four hooves stay on the ground the whole time like a real pig; he yells down into the hole, then crouches on all four legs and dives forward head first into the open hole like a real pig jumping into water, never standing up on his back legs",
      "T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
+CAST={"T15":["DIZZY","TOCINO"]}
 CAM={"T07":"Medium shot, static, the rat stands on the left third of the frame with his whole body from his cap to his slides inside the frame, his feet on the wet cobblestones; the closed glowing sewer cover is on the ground on the right side, green light on him from below; both of his eyes look in the same direction, never cross-eyed",
      "T01":"Medium close-up, the rat sits on the left third of the frame, the round moonlit window and the candle visible on the right side; the camera slowly pushes in, his whole head, cap and camera always inside the frame; both of his eyes look straight into the lens, never cross-eyed"}
 # tomas que se rehacen en horizontal (orden de la edición). Fuera: T04 (sin voz) y T13 (Jay: no va el gancho de la alcantarilla).
@@ -34,6 +35,7 @@ def tomas():
     return T
 def prompt(tid):
     g=list(tomas()[tid]); g[1]=DUR[tid]
+    if tid in CAST: g[4]=CAST[tid]
     if tid in CAM: g[5]=CAM[tid]
     if tid in ACC: g[7]=ACC[tid]
     p=F.prompt(tuple(g))
