@@ -186,6 +186,48 @@ P1=[
 CUENTAS=[["T01","T08","T17"],["T31","T22","T24"],["T23","T02","T25"],["T29","T06","T28"],["T03","T07","T09"],
          ["T04","T10","T11"],["T16","T13","T14"],["T18","T19","T20"],["T21","T26","T27"],["T30","T33","T34","T35"]]
 
+# ---- Repeticiones y tomas nuevas tras la revisión de Jay (8-nov-2026) ----
+LUZ["CALLEJON-ABIERTO"] = LUZ["CALLEJON"].replace("bright magical green light glowing up from the round sewer cover", "the round iron sewer cover already slid aside on the ground, the round sewer hole wide open and bright magical green light shining up out of the open hole")
+FONDO["CALLEJON-ABIERTO"] = "Green mist pours out of the open hole and drifts along the wet ground; a loose cable sways slightly"
+SONIDO["CALLEJON-ABIERTO"] = SONIDO["CALLEJON"]
+P1B = [
+ ("T03",6,"PUEBLO-CALLE","PUEBLO-CALLE-NOCHE.jpg",["DIZZY","TOCINO"],"Wide shot from far away, static, both whole bodies small in the frame with their feet on the stone pavement, lots of street around them",
+  "From the first frame the pig stands on all four legs under the street lamp on the right; the rat walks in from the left side of the frame on the stone pavement. The rat is much smaller than the pig, about half his height",
+  "The rat walks from left to right and stops next to the pig; the pig turns his head toward him and complains, nervous",
+  ("TOCINO","Bro, it's midnight. This is a terrible idea."),"REPETIR: Dizzy se veía gigante y flotando."),
+ ("T07",5,"CALLEJON","CALLEJON-ALCANTARILLA.jpg",["DIZZY"],"Medium shot, static, the rat's whole body from his cap to his slides inside the frame, his feet on the wet cobblestones, green light on him from below",
+  "From the first frame the rat stands on the wet cobblestones in front of the closed glowing sewer cover and looks down at it",
+  "He looks up at the lens with wide eyes and a nervous smile",
+  ("DIZZY","Igualito a la visión, mis ratas."),"REPETIR: muy cerca, no se le veían las patas."),
+ ("T07b",4,"CALLEJON","CALLEJON-ALCANTARILLA-PISO.jpg",[],"Close shot at ground level of the round iron sewer cover, static",
+  "From the first frame the heavy round iron cover lies closed on the wet cobblestones with green light leaking from its small holes",
+  "The cover trembles, then slides aside by itself with a loud scrape, and bright green light and mist burst up out of the open round hole",None,"NUEVA: la tapa se abre sola (así se puede caer)."),
+ ("T08",4,"CALLEJON-ABIERTO","CALLEJON-ALCANTARILLA-PISO.jpg",[],"Extreme close-up insert at ground level at the edge of the open glowing sewer hole, shallow depth of field",
+  "From the first frame we only see one small gray rat foot in a white sock and a black slide, exactly like the reference image, stepping toward the edge of the open hole; the iron cover lies to one side",
+  "The black slide catches on the edge of the open hole and the foot slips forward over the green light",None,"REPETIR: con el hueco abierto."),
+ ("T09",5,"CALLEJON-ABIERTO","CALLEJON-ALCANTARILLA.jpg",["DIZZY","TOCINO"],"Medium-wide shot, static, both whole bodies inside the frame, the open glowing hole in the center",
+  "From the first frame the rat stands at the edge of the open glowing sewer hole in the center and the pig stands on all four legs behind him on the right; the iron cover lies to the left of the hole",
+  "After one second the rat slips and falls head first into the open hole, and only then he screams; the pig's mouth stays closed in shock",
+  ("DIZZY","¡Aaaaah!"),"REPETIR: con el hueco abierto y el grito al caer."),
+ ("T10",5,"CALLEJON-ABIERTO","CALLEJON-ALCANTARILLA.jpg",["TOCINO"],"Medium shot of the pig from the side, static, his whole body inside the frame",
+  "From the first frame the pig stands alone on all four legs at the edge of the open glowing sewer hole, looking down; the iron cover lies to one side",
+  "He shrugs, yells and jumps head first into the open hole",
+  ("TOCINO","Wait for meee!"),"REPETIR: con el hueco abierto."),
+ ("T15",4,"MX-ALTAR","MX-ALTAR-CERCA.jpg",["TOCINO"],"Close shot from very low, static, the pile of marigold petals in the center",
+  "From the first frame the pile of orange marigold petals lies in front of the altar, already a little messy",
+  "The pig falls from above onto the petals on the right with a big soft thump, petals explode into the air, he lands on his back with his four legs up and his sunglasses crooked",
+  None,"NUEVA: Tocino también cae (antes aparecía de la nada)."),
+ ("T34",4,"MX-ESCONDITE","MX-MERCADO-ESCONDITE.jpg",["CATRINA"],"Medium shot from inside the hideout, low angle, static, her whole body inside the frame",
+  "From the first frame the skeleton cat lady stands on the right side of the frame holding the lifted edge of the tablecloth up with one gloved hand, bending down to look in",
+  "She smiles slowly, fans herself once and whispers",
+  ("CATRINA","Los encontré…"),"REPETIR: de cuerpo entero y del mismo lado que la toma anterior."),
+]
+AEREAS = [
+ ("A-PUEBLO",6,"AEREA-PUEBLO-NOCHE.jpg","Vertical 9:16, 6 seconds. Cinematic aerial drone shot of the small colorful Colombian colonial village on the coffee mountain from the reference image at midnight, exactly the same place: white houses with clay tile roofs, the little plaza with the white church, warm yellow street lamps, a starry sky with exactly one full moon (never two moons). The drone flies slowly forward and descends toward the empty streets. The street lamps flicker softly, thin mist moves over the mountains, a few lit windows. One continuous shot with no cuts, full vertical frame, normal lens, no black bars. No people, no animals, no characters, no text, no subtitles, no music; only crickets, soft wind and a dog barking very far away."),
+ ("A-CDMX",6,"AEREA-CDMX-NOCHE.jpg","Vertical 9:16, 6 seconds. Cinematic aerial drone shot of the huge old Mexican city on the Night of the Dead from the reference image, exactly the same place: the colonial plaza with the cathedral with two bell towers, streets glowing with thousands of candles and orange marigold paths, strings of cut paper flags, the two volcanoes on the horizon under exactly one full moon (never two moons). The drone slowly descends toward the cathedral. Small fireworks burst far away in the sky, candle lights twinkle, glowing embers float up. One continuous shot with no cuts, full vertical frame, normal lens, no black bars. No people, no animals, no characters, no text, no subtitles, no music; only distant mariachi trumpets, bells and far fireworks."),
+ ("A-BARRIO",5,"AEREA-BARRIO-MX-NOCHE.jpg","Vertical 9:16, 5 seconds. Cinematic aerial drone shot of the colorful colonial neighborhood in Mexico on the Night of the Dead from the reference image, exactly the same place: the street with the big altar and marigold path at the bottom, the night market with fabric roofs and paper lanterns in the middle, the cemetery with candles and the church dome at the top, exactly one full moon (never two moons). The drone flies fast forward over the street toward the market, like following someone running. Lanterns sway, paper flags flutter, candles twinkle. One continuous shot with no cuts, full vertical frame, normal lens, no black bars. No people, no animals, no characters, no text, no subtitles, no music; only distant mariachi music and a crowd murmur far away."),
+]
+
 def suave(t):
     for a,b in SUAVE: t=t.replace(a,b)
     return t
@@ -200,7 +242,8 @@ def prompt(g):
     else: p.append("No one speaks; all mouths stay closed.")
     extra=" and the small blurred background extras" if lug in ("MX-CALLE","MX-MERCADO") else ""
     uno=", only one rat" if "DIZZY" in cast else ""
-    p.append(("Only these characters appear"+extra+"; no other animals"+uno+". " if cast else "No characters appear except the foot described; no other animals. ")+
+    sin = "No characters appear except the foot described; no other animals. " if g[0]=="T08" else "No characters and no animals appear. "
+    p.append(("Only these characters appear"+extra+"; no other animals"+uno+". " if cast else sin)+
              f"No humans or people anywhere, no subtitles or captions, no text, no phone, no selfie stick, no vehicle, no music; only {SONIDO[lug]}.")
     return " ".join(p)
 def fotos(g):
