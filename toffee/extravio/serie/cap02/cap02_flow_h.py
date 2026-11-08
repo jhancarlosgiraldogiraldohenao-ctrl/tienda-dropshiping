@@ -15,6 +15,7 @@ VIVO={
  "MX-ESCONDITE":F.FONDO["MX-ESCONDITE"]+"; through the gap of the tablecloth we see blurred feet of market animals walking by outside",
 }
 # cámara de cine en 16:9 (si no está aquí, se usa la del guion vertical)
+ACC={"T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
 CAM={"T01":"Medium close-up, the rat sits on the left third of the frame, the round moonlit window and the candle visible on the right side; the camera slowly pushes in, his whole head, cap and camera always inside the frame; both of his eyes look straight into the lens, never cross-eyed"}
 # tomas que se rehacen en horizontal (orden de la edición). Fuera: T04 (sin voz) y T13 (Jay: no va el gancho de la alcantarilla).
 ORDEN=["T01","T02","T03","T06","T07","T07b","T08","T09","T10","T11","T14","T15","T16","T17","T18","T19","T20","T21",
@@ -30,6 +31,7 @@ def tomas():
 def prompt(tid):
     g=list(tomas()[tid]); g[1]=DUR[tid]
     if tid in CAM: g[5]=CAM[tid]
+    if tid in ACC: g[7]=ACC[tid]
     p=F.prompt(tuple(g))
     p=p.replace(F.HEAD.format(d=g[1]),H_HEAD.format(d=g[1]))
     p=p.replace(F.FONDO[g[2]]+".",VIVO.get(g[2],F.FONDO[g[2]])+".")

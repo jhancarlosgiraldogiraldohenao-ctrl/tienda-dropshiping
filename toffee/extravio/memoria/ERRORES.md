@@ -95,3 +95,8 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Doble llegada (Dizzy sale disparado dos veces) | Se repitió la toma del gancho en la historia | La toma del gancho no se repite si no suma; en la historia basta la caída en las flores |
 
 - 8-nov-2026 · Tráiler cap. 2 (toma CTA): «No se pudo generar el audio» con la frase «…completo en YouTube, mis ratas…». Causa probable: nombre de marca (YouTube) en la frase hablada. Arreglo: en Flow decir «en mi canal» (mismas sílabas) y poner «en YouTube» solo en la voz de ElevenLabs. Regla: nada de marcas ni plataformas dentro de las comillas de Flow.
+
+## 18. Vlog 2 en horizontal (8-nov-2026)
+| Error | Por qué | Regla |
+|---|---|---|
+| T02: Dizzy se mete en la ventana y luego se devuelve saltando al cuarto | «squeezes out» sin decir que no vuelve | Salidas: «he never turns around and never comes back inside; for the final second the window/door is empty» |
