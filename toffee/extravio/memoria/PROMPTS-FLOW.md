@@ -31,7 +31,7 @@ todos con la misma plantilla. Cada prompt nuevo va en el chat en su propio bloqu
 - **Revisar las 4 esquinas** y el primer segundo de cada toma (figuras humanas, personajes que cambian de puesto).
 
 ## HORIZONTAL 16:9 desde el 8-nov-2026 (decisión de Jay)
-- Prueba aprobada: Dizzy y Tocino caminando por la calle de México, 10 s, travelling hacia atrás, fondo vivo (mariachis, vecinos, papel picado, pólvora lejos). Guardada en `serie/tomas-cap02/H-PRUEBA.mp4`.
+- Prueba aprobada: Dizzy y Tocino caminando por la calle de México, 10 s, travelling hacia atrás, fondo vivo (mariachis, vecinos, papel picado, pólvora lejos). Guardada en `serie/tomas-cap02/horizontal/H-PRUEBA.mp4 (las tomas horizontales van en esa carpeta)`.
 - Encabezado: «Horizontal 16:9 … like a big-budget animated feature film … shallow depth of field …». Línea de fondo vivo reforzada por lugar (`VIVO` en `cap02_flow_h.py`), extras desenfocados que nunca miran a cámara.
 - Composición de cine: personaje en un tercio del cuadro y el lugar al otro lado; con dos personajes, izquierda/derecha y cuerpos enteros.
 - Planos abiertos y de acción a 360p (Claude los sube); caras y frases a 720p.
