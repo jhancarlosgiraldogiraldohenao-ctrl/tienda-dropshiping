@@ -34,3 +34,4 @@
 - 8-nov (2): T03 (pies en el piso), T07 (cuerpo entero), T07b (la tapa se abre) y T09 (hueco abierto) nuevas ✓.
 - 8-nov (3): T10 (hueco abierto), T15 (Tocino cae), T34 (cuerpo entero), A-CDMX (aérea en video) ✓.
 - 8-nov (4): A-PUEBLO (aérea en video) ✓.
+- 8-nov (5): T08 nueva: la tapa está cerrada y se corre bajo el pie (se usa T08 → T07b desde 2 s → T09).
