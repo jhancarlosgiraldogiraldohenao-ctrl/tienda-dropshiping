@@ -43,3 +43,4 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 - Jay rechazó la miniatura armada con recortes y letras amarillas, y también «LE HICE TRAMPA»: quien no conoce la serie no entiende el contexto.
 - Se copia a Gnomo Palomo: foto tipo selfie con la cara del protagonista GRANDE (más de la mitad del cuadro), gesto exagerado, un objeto llamativo hacia la cámara, el segundo personaje atrás con actitud, un lugar colorido y reconocible, y SIN LETRAS. La curiosidad la pone el título («…y… (no es lo que esperaba)»).
 - Se genera en Nano Banana Pro con las fotos de referencia en el mismo mensaje; nada de recortes en Python.
+- Error (8-nov-2026): pedir «side-eye glance» dejó a Dizzy bizco. En Dizzy, pedir siempre: «both eyes look in exactly the same direction, perfectly aligned pupils, not cross-eyed».
