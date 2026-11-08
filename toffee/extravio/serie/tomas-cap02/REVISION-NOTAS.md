@@ -33,3 +33,4 @@
 - 8-nov: T06, T22 y T31 repetidas ✓ (Tocino en cuatro patas; el cigarrillo de Chuy se queda; T22 salió de 3 s).
 - 8-nov (2): T03 (pies en el piso), T07 (cuerpo entero), T07b (la tapa se abre) y T09 (hueco abierto) nuevas ✓.
 - 8-nov (3): T10 (hueco abierto), T15 (Tocino cae), T34 (cuerpo entero), A-CDMX (aérea en video) ✓.
+- 8-nov (4): A-PUEBLO (aérea en video) ✓.
