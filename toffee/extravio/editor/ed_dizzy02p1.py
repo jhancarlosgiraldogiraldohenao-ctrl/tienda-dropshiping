@@ -25,25 +25,27 @@ E = [
  dict(t='T13', a=1.0, b=3.3, v='T13', sc='hook'),
  dict(t='T14', a=0.0, b=2.8, sc='hook'),
  dict(t='T19', a=1.3, b=4.9, v='T19', sc='hook'),
- # TÍTULO + finca a medianoche
- dict(foto='AEREA-FINCA-NOCHE.jpg', d=3.6, mov='baja', sc='finca', titulo='EXTRAVÍO · VLOG 02'),
+ # TÍTULO + finca a medianoche (aérea en video del cap. 1)
+ dict(t='G103', src=TK1, a=0.5, b=4.5, sc='finca', titulo='EXTRAVÍO · VLOG 02'),
  dict(t='T01', a=0.9, b=7.6, v='T01', sc='finca'),
  dict(t='T02', a=0.0, b=5.0, sc='finca'),
- dict(foto='AEREA-PUEBLO-NOCHE.jpg', d=3.0, mov='in', sc='pueblo'),
+ dict(t='A-PUEBLO', a=0.0, b=4.5, sc='pueblo'),
  dict(t='T03', a=2.4, b=6.0, v='T03', sc='pueblo'),
  dict(t='T04', a=0.3, b=5.0, v='T04', sc='pueblo'),
  # el callejón de la visión
  dict(t='T06', a=0.6, b=4.2, v='T06', sc='callejon'),
- dict(t='T07', a=1.7, b=4.6, v='T07', sc='callejon'),
+ dict(t='T07', a=1.0, b=4.5, v='T07', sc='callejon'),
  dict(t='G99', src=TK1, a=0.0, b=2.4, sc='callejon', vision=1),
- dict(t='T08', a=0.0, b=4.0, sc='callejon'),
- dict(t='T09', a=0.6, b=4.6, v='T09', sc='callejon'),
- dict(t='T10', a=1.6, b=5.0, v='T10', sc='callejon'),
+ dict(t='T08', a=0.0, b=3.2, sc='callejon'),
+ dict(t='T07b', a=2.2, b=4.0, sc='callejon'),
+ dict(t='T09', a=0.5, b=4.2, v='T09', sc='callejon'),
+ dict(t='T10', a=1.0, b=5.0, v='T10', sc='callejon'),
  dict(t='T11', a=0.0, b=5.0, v='T11', sc='tunel'),
  # el viaje
  dict(foto='AEREA-AMERICA-NOCHE.jpg', d=5.0, mov='mapa', sc='mapa'),
- dict(foto='AEREA-CDMX-NOCHE.jpg', d=3.6, mov='baja', sc='mx'),
+ dict(t='A-CDMX', a=0.0, b=4.0, sc='mx'),
  dict(t='T14', a=0.0, b=5.0, sc='mx'),
+ dict(t='T15', a=0.0, b=4.0, sc='mx'),
  dict(t='T16', a=0.7, b=4.6, v='T16', sc='mx'),
  dict(t='T17', a=1.0, b=3.6, v='T17', sc='mx'),
  # la Catrina
@@ -56,7 +58,7 @@ E = [
  dict(t='T24', a=0.9, b=4.03, v='T24', sc='flirt', fx=[('efectos/E29-huesos-catrina', 0.1, 0.7)]),
  dict(t='T25', a=0.0, b=3.0, v='T25', sc='flirt'),
  # persecución
- dict(foto='AEREA-BARRIO-MX-NOCHE.jpg', d=2.6, mov='in', sc='chase'),
+ dict(t='A-BARRIO', a=0.0, b=4.0, sc='chase'),
  dict(t='T26', a=0.0, b=5.0, sc='chase'),
  dict(t='T27', a=0.0, b=5.0, sc='chase'),
  dict(t='T28', a=0.0, b=4.0, sc='chase'),
@@ -66,7 +68,7 @@ E = [
  dict(t='T31', a=1.0, b=8.0, v='T31', sc='chuy', fx=[('efectos/E28-calada-tos-chuy', 5.4, 1.0)]),
  # suspenso
  dict(t='T33', a=0.0, b=2.3, sc='susp', fx=[('efectos/E17-bajo-amenaza', 0.3, 1.0)]),
- dict(t='T34', a=1.0, b=4.0, v='T34', sc='susp'),
+ dict(t='T34', a=1.8, b=4.03, v='T34', sc='susp'),
  dict(t='T35', a=1.2, b=4.03, v='T35', sc='susp'),
 ]
 MUS = {'hook': ('M12b-mariachi-muertos-metales', 0.30), 'finca': ('M10-misterio-camara', 0.22), 'pueblo': ('M10-misterio-camara', 0.22),
