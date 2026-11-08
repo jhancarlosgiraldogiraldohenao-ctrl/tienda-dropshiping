@@ -232,7 +232,7 @@ P1C = [
  ("T04",6,"PUEBLO-CALLE","PUEBLO-CALLE-NOCHE.jpg",["DIZZY","TOCINO"],"Medium-wide shot, static, the camera at the rat's height, both whole bodies inside the frame with their feet on the stone pavement; the rat is much smaller than the pig, about half his height",
   "From the first frame the rat stands on the stone pavement on the left looking up at the pig, and the pig stands on all four legs under the street lamp on the right",
   "The rat answers the pig with a cocky smile and points with his thumb over his shoulder toward the dark alley entrance behind him; the pig only listens",
-  ("DIZZY","Por eso lo traje, Pinche Gringo… pa' que se caiga usted primero."),"REPETIR: Dizzy se veía gigante y flotando."),
+  ("DIZZY","Por eso lo traje, mi gringo… para que usted vaya primero."),"REPETIR: Dizzy se veía gigante y flotando."),
  ("T34",5,"MX-ESCONDITE","MX-MERCADO-ESCONDITE.jpg",["DIZZY","TOCINO","CHUY","CATRINA"],"Medium-wide shot from inside the hideout, static, all four whole bodies inside the frame",
   "From the first frame the rat, the pig on all four legs and the axolotl sit huddled together on the woven rug on the left side of the frame, frozen with fear; on the right side the skeleton cat lady lifts the edge of the tablecloth with one gloved hand and bends down to look in",
   "She smiles slowly at the three of them and whispers; the three on the left stay still with wide eyes",
