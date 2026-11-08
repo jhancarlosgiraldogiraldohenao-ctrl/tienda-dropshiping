@@ -38,3 +38,8 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
   cámara lenta que se acerca/baja (trabajar a 2x para que no tiemble), luces que titilan, chispas o brasas que suben,
   grano de película; en el mapa, la raya verde que viaja de Colombia a México con chispitas y destello al llegar.
 - Así no se gasta Flow en eso: todos los créditos van a las tomas con personajes (Omni 1.2).
+
+## Miniaturas de YouTube (8-nov-2026, aprendido del cap. 1)
+- Jay rechazó la miniatura armada con recortes y letras amarillas, y también «LE HICE TRAMPA»: quien no conoce la serie no entiende el contexto.
+- Se copia a Gnomo Palomo: foto tipo selfie con la cara del protagonista GRANDE (más de la mitad del cuadro), gesto exagerado, un objeto llamativo hacia la cámara, el segundo personaje atrás con actitud, un lugar colorido y reconocible, y SIN LETRAS. La curiosidad la pone el título («…y… (no es lo que esperaba)»).
+- Se genera en Nano Banana Pro con las fotos de referencia en el mismo mensaje; nada de recortes en Python.
