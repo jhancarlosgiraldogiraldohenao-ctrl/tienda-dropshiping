@@ -15,7 +15,7 @@ LOCK={
  "DIZZY":"The rat looks exactly like the reference image: gray rat with big tired red-rimmed eyes, flat cap with a small action camera on top, plain gold chain with a plain bottle-cap pendant (no letters), and he is ALWAYS wearing his black hoodie (never bare-chested, the hoodie covers his body and arms), white socks with black slides",
  "TOCINO":"The pig looks exactly like the reference image: skinny dirty pink pig that ALWAYS stands and walks on all four legs like a real pig (never upright on two legs), only four legs and no arms or hands, black mohawk, cracked sunglasses, torn leather vest and his old scratched electric guitar hanging on his back (he never holds it)",
  "CATRINA":"The skeleton cat lady looks exactly like the reference image: tall elegant lady cat made of ivory-white bones, face painted like a colorful sugar skull, glowing orange eyes, huge black hat with orange marigolds and purple ribbons, long purple and black lace dress, marigold necklace, black lace gloves, a black folding fan in one hand, thin bone tail; she is funny and charming, never scary",
- "CHUY":"The axolotl looks exactly like the reference image: chubby pink axolotl with six fluffy pink gills, sleepy half-closed red eyes, lazy smile, small frayed straw sombrero, a long faded striped poncho that covers his body down to his knees, a crooked hand-rolled cigarette in the corner of his mouth with a thin line of soft gray smoke",
+ "CHUY":"The axolotl looks exactly like the reference image: chubby pink axolotl with six fluffy pink gills, sleepy half-closed red eyes, lazy smile, small frayed straw sombrero, a long faded striped poncho that covers his body down to his knees, a crooked hand-rolled cigarette in the corner of his mouth with a thin line of soft gray smoke (the cigarette stays in his mouth for the whole shot)",
 }
 NOM={"DIZZY":"the rat","TOCINO":"the pig","CATRINA":"the skeleton cat lady","CHUY":"the axolotl"}
 REFP={"DIZZY":"DIZZY-FRENTE.jpg","TOCINO":"TOCINO-FRENTE.jpg","CATRINA":"CATRINA-FRENTE.jpg","CHUY":"CHUY-FRENTE.jpg"}
@@ -75,7 +75,7 @@ P1=[
   ("DIZZY","Por eso lo traje, Pinche Gringo… pa' que se caiga usted primero."),"Plano y contraplano: Dizzy a la izquierda mira a la derecha."),
  # --- ESCENA 3 · el callejón de la visión
  ("T06",5,"CALLEJON","CALLEJON-ALCANTARILLA-CONTRA.jpg",["DIZZY","TOCINO"],"Medium-wide shot from deep inside the alley, the camera slowly moves backward as they walk in",
-  "From the first frame the rat on the left and the pig on the right walk into the alley toward the camera, the warm street visible behind them",
+  "From the first frame the rat on the left walks on two legs and the pig on the right walks on all four legs like a real pig, both coming into the alley toward the camera, the warm-lit colorful street of the small Colombian village visible at the far end behind them",
   "They walk slowly toward the camera, the green light from the ground lights their faces; the pig stares at the light, amazed",
   ("TOCINO","Dude… it's glowing."),"Entran al callejón (contraplano desde adentro)."),
  ("T07",5,"CALLEJON","CALLEJON-ALCANTARILLA.jpg",["DIZZY"],"Close-up of the rat, static, his whole head, cap and camera inside the frame, green light on his face from below",
@@ -132,7 +132,7 @@ P1=[
   ("CATRINA","Todas las almas perdidas se vienen conmigo… ¡al panteón!"),"La amenaza."),
  ("T22",4,"MX-CALLE","MX-CALLE-ALTAR-2.jpg",["TOCINO"],"Close-up of the pig framed from the chest up, slow push-in",
   "From the first frame the pig stares straight ahead, his mouth open",
-  "He slowly lowers his head so his sunglasses slide down his snout, staring with love; his ears stand up",
+  "Standing on all four legs, seen from the side in three-quarter view, he slowly lowers his head so his sunglasses slide down to the tip of his snout, staring with love; his ears stand straight up",
   ("TOCINO","Dang… she's hot."),"Tocino se enamora (suena M6, el saxofón)."),
  ("T23",7,"MX-CALLE","MX-CALLE-ALTAR.jpg",["CATRINA","TOCINO"],"Medium two-shot, static, both whole bodies inside the frame",
   "From the first frame the skeleton cat lady stands on the left and the pig walks in on four legs from the right",
