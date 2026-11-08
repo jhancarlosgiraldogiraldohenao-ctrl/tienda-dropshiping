@@ -6,8 +6,8 @@ H_HEAD=("Horizontal 16:9, {d} seconds. High-quality 3D animated movie style like
 VIVO={
  "ZARZO-NOCHE":"The background is alive: the candle flame flickers, dust floats in the moonlight, the curtain of the round window sways and fireflies blink far outside",
  "PUEBLO-CALLE":"The background is alive: moths circle the street lamp, a curtain moves in a lit window, dry leaves blow along the street and thin fog drifts slowly between the houses",
- "CALLEJON":F.FONDO["CALLEJON"]+"; water drips from a broken gutter and a torn poster flaps on the wall",
- "CALLEJON-ABIERTO":F.FONDO["CALLEJON-ABIERTO"]+"; water drips from a broken gutter and a torn poster flaps on the wall",
+ "CALLEJON":F.FONDO["CALLEJON"]+"; water drips from a broken gutter and a torn plastic bag flaps in the wind",
+ "CALLEJON-ABIERTO":F.FONDO["CALLEJON-ABIERTO"]+"; water drips from a broken gutter and a torn plastic bag flaps in the wind",
  "TUNEL":F.FONDO["TUNEL"],
  "MX-ALTAR":"The background is alive: hundreds of candle flames flicker, marigold petals float in the warm air, cut paper flags flutter above and small colorful fireworks burst very far away in the sky",
  "MX-CALLE":"The background is fully alive: small chihuahua mariachi musicians in black charro suits play on a corner; animal neighbors (a turtle, a parrot, a donkey and an iguana) walk by in both directions carrying flowers and candles; cut paper flags flutter; marigold petals blow across the street; candles flicker; small fireworks burst very far away. All background characters stay out of focus and never look at the camera",
