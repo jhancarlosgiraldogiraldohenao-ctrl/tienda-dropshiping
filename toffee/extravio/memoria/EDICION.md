@@ -49,7 +49,7 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 - **Subtítulos en y = 900 de 1920**, donde los pone Gnomo Palomo (medido en su video: 46 % del alto, centro del cuadro). Montserrat negrita 62, blanca con borde negro, palabras clave en rojo. Variable `SUBY` en los editores.
 - **Cierre con redes:** cuando Dizzy invita a seguirlo/ver YouTube, sale «Sígueme en YouTube y en mis redes» (y = 1335) y debajo 3 **burbujas redondeadas** (YouTube, TikTok, Instagram) con logo, «El Dizzy» y @el_dizzy_vlogs, que aparecen una por una subiendo (y = 1385, 1525, 1665). Se hacen con `editor/redes_burbujas.py` → `editor/redes/RED-*.png`; ejemplo de uso en `adelanto_cap02.py`.
 
-## Video largo de YouTube: VERTICAL, como Gnomo (decisión de Jay, 8-nov-2026)
+## Video largo de YouTube: VERTICAL, como Gnomo (8-nov-2026; solo cap. 1 — desde el vlog 2 todo va en 16:9, ver PROMPTS-FLOW)
 - El video largo se sube en **vertical 1080×1920** (dura más de 3 min, así que YouTube lo trata como video normal, no Short). En computador sale con franjas negras a los lados; en el celular, a pantalla completa.
 - **Nunca más** convertirlo a 16:9 con fondo borroso (el error del cap. 1: en el celular se veía pequeñito).
 - Cap. 1: `videos-editados/EXTRAVIO-DIZZY-CAP01-YOUTUBE-VERTICAL.mp4` = P1-FINAL + P2-LARGO + fin de 20 s (G103 con M11), −14 LUFS.
