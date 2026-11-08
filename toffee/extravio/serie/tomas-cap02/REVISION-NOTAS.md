@@ -31,3 +31,4 @@
 - T34: ✓ la Catrina se asoma por un lado (no de cabeza, se acepta) y dice «Los encontré».
 - T35: ✓ cara de miedo con sonrisa nerviosa; boca 1,7–2,8 y 3,8–4,0 s.
 - 8-nov: T06, T22 y T31 repetidas ✓ (Tocino en cuatro patas; el cigarrillo de Chuy se queda; T22 salió de 3 s).
+- 8-nov (2): T03 (pies en el piso), T07 (cuerpo entero), T07b (la tapa se abre) y T09 (hueco abierto) nuevas ✓.
