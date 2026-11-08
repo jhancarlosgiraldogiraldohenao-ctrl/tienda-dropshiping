@@ -40,3 +40,8 @@
 - Personajes con voz «lenta» (Chuy): en el texto NO poner [sleepy]/[slow] cuando la boca de Flow es rápida (T29); la lentitud ya está en la voz diseñada.
 - Bocas muy cortas para una frase (T19 «tan feíto», T35 «literal»): se recorta el texto a lo que cabe; nunca alargar la toma.
 - [whispers] alarga mucho: solo si la boca tiene tiempo de sobra.
+
+## Tocino habla Spanglish (decisión de Jay, 8-nov-2026, desde la parte 2 del cap. 2)
+- Habla sobre todo **español con acento gringo** (mal conjugado, chistoso) y se le salen **frases cortas en inglés** («bro», «dude», «oh my God», «what the heck»).
+- En los prompts de Flow: «speaks in Spanish with a very heavy American gringo accent, mixing in a few short English words».
+- El mercado de EE. UU. se busca con subtítulos en inglés (.srt) y el doblaje automático de YouTube, no con Tocino en inglés.
