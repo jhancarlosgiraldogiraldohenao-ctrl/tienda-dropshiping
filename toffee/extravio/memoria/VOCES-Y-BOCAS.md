@@ -35,3 +35,8 @@
   - Palabras sueltas muy cortas en la boca («No.», «Juguemos.»): `[fast]` y sin acotaciones de emoción lentas.
 - Meta: el habla de la voz (sin silencios) ≤ 1,2 × el tiempo de boca de Flow. El editor estira o encoge como mucho 0,8–1,25.
 - En la parte 2 (cap. 1) Jay permitió repetir las que salieron largas; en los próximos capítulos, no.
+
+## Cap. 2 (Omni 1.2, 8-nov-2026)
+- Personajes con voz «lenta» (Chuy): en el texto NO poner [sleepy]/[slow] cuando la boca de Flow es rápida (T29); la lentitud ya está en la voz diseñada.
+- Bocas muy cortas para una frase (T19 «tan feíto», T35 «literal»): se recorta el texto a lo que cabe; nunca alargar la toma.
+- [whispers] alarga mucho: solo si la boca tiene tiempo de sobra.
