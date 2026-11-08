@@ -43,7 +43,6 @@ E = [
  # el viaje
  dict(foto='AEREA-AMERICA-NOCHE.jpg', d=5.0, mov='mapa', sc='mapa'),
  dict(foto='AEREA-CDMX-NOCHE.jpg', d=3.6, mov='baja', sc='mx'),
- dict(t='T13', a=0.8, b=4.5, v='T13', sc='mx'),
  dict(t='T14', a=0.0, b=5.0, sc='mx'),
  dict(t='T16', a=0.7, b=4.6, v='T16', sc='mx'),
  dict(t='T17', a=1.0, b=3.6, v='T17', sc='mx'),
@@ -62,11 +61,11 @@ E = [
  dict(t='T27', a=0.0, b=5.0, sc='chase'),
  dict(t='T28', a=0.0, b=4.0, sc='chase'),
  # Chuy
- dict(t='T29', a=1.5, b=6.4, v='T29', sc='chuy', fx=[('efectos/E28-calada-tos-chuy', 0.0, 0.5)]),
+ dict(t='T29', a=1.5, b=6.4, v='T29', sc='chuy'),
  dict(t='T30', a=1.8, b=3.9, v='T30', sc='chuy'),
- dict(t='T31', a=1.0, b=8.0, v='T31', sc='chuy'),
+ dict(t='T31', a=1.0, b=8.0, v='T31', sc='chuy', fx=[('efectos/E28-calada-tos-chuy', 5.4, 1.0)]),
  # suspenso
- dict(t='T33', a=0.0, b=4.0, sc='susp', fx=[('efectos/E17-bajo-amenaza', 0.3, 1.0)]),
+ dict(t='T33', a=0.0, b=2.3, sc='susp', fx=[('efectos/E17-bajo-amenaza', 0.3, 1.0)]),
  dict(t='T34', a=1.0, b=4.0, v='T34', sc='susp'),
  dict(t='T35', a=1.2, b=4.03, v='T35', sc='susp'),
 ]
@@ -143,6 +142,67 @@ def toma_video(e, out):
     run(['ffmpeg', '-v', 'error', '-y', '-ss', str(e['a']), '-to', str(e['b']), '-i', src, '-an', '-vf', vf,
          '-c:v', 'libx264', '-crf', '16', '-preset', 'fast', out])
 
+
+BOC = json.load(open(os.path.join(RAIZ, 'serie', 'cap02', 'cap02_bocas_p1.json')))
+GRITO = {'T09', 'T11', 'T13'}
+def _n(w):
+    import unicodedata, re
+    w = unicodedata.normalize('NFD', w.lower()); w = ''.join(c for c in w if unicodedata.category(c) != 'Mn')
+    return re.sub(r'[^a-z0-9]', '', w)
+def _tramos_voz(x):
+    fr = int(0.01 * SR); n = len(x) // fr
+    e = 20 * np.log10(np.sqrt(np.mean(x[:n * fr].reshape(n, fr) ** 2, axis=1)) + 1e-9); on = e > -38; out = []; i = 0
+    while i < n:
+        if on[i]:
+            j = i
+            while j < n and (on[j] or on[j:j + 6].any()): j += 1
+            if j - i >= 5: out.append([i * 0.01, j * 0.01])
+            i = j
+        else: i += 1
+    return out
+def sincronizar(t, a, b, v, lang):
+    """Anclas palabra por palabra: palabras de Flow (Whisper) ajustadas al arranque real de cada tramo de boca, y
+    palabras de ElevenLabs ajustadas al arranque real de cada tramo de voz. Devuelve (señal desde a, mapa voz→clip, error)."""
+    import difflib
+    vx = load(os.path.join(VZ, v + '.mp3'))
+    S = [[q[0] - a, q[1] - a] for q in BOC[t]['tramos'] if q[1] > a and q[0] < b]
+    S = [q for q in S if q[1] - q[0] >= 0.2] or S
+    if t in GRITO or not BOC[t]['palabras']:
+        st = S[0][0] if S else 0.2; tv = _tramos_voz(vx); v0 = tv[0][0] if tv else 0.0
+        y = np.zeros(int((b - a + 3) * SR)); s0 = int(max(0, st - v0 + 0.03) * SR); y[s0:s0 + len(vx)] = vx[:len(y) - s0]
+        return y, (lambda tv_: tv_ - v0 + st + 0.03), 0.0
+    FW = [[w[0] - a, w[1] - a, w[2]] for w in BOC[t]['palabras'] if w[1] - a > 0.05 and w[0] - a < b - a]
+    def snap(words, segs):
+        out = []; usados = set()
+        for w in words:
+            best = None; ov = 0
+            for j, q in enumerate(segs):
+                o = min(w[1], q[1]) - max(w[0], q[0])
+                if o > ov: ov, best = o, j
+            if best is None:
+                best = int(np.argmin([abs(q[0] - w[0]) for q in segs])) if segs else None
+            s0 = w[0]
+            if best is not None:
+                q = segs[best]
+                s0 = q[0] if best not in usados else min(max(w[0], q[0]), q[1] - 0.05)
+                usados.add(best)
+            out.append([s0, w[1], w[2]])
+        for k in range(1, len(out)): out[k][0] = max(out[k][0], out[k - 1][0] + 0.06)
+        return out
+    FW = snap(FW, S)
+    VW = snap([list(w) for w in palabras(v, lang)], _tramos_voz(vx))
+    sm = difflib.SequenceMatcher(None, [_n(w[2]) for w in VW], [_n(w[2]) for w in FW], autojunk=False)
+    pares = []
+    for blk in sm.get_matching_blocks():
+        for k in range(blk.size): pares.append((VW[blk.a + k][0], FW[blk.b + k][0]))
+    if not pares: pares = [(VW[0][0], FW[0][0])] if VW and FW else [(0.0, S[0][0] if S else 0.2)]
+    toks = ['k' + chr(97 + (i % 26)) * 3 + str(i) for i in range(len(pares))]
+    ew = [[pv, pv + 0.1, k] for (pv, _), k in zip(pares, toks)]; fw = [[pf + 0.03, pf + 0.13, k] for (_, pf), k in zip(pares, toks)]
+    import pegar as PG
+    y, err = PG.pegar_suave(vx, ew, fw, b - a + 3, lo=0.8, hi=1.25, tmp=os.path.join(TMP, 'pg'))
+    src, dst = PG.ULTIMO
+    return y, (lambda tv_, s_=src, d_=dst: float(np.interp(tv_, s_, d_))), float(np.max(np.abs(err))) if err else 0.0
+
 # ---------- palabras de cada voz (para subtítulos) ----------
 _WH = None
 def palabras(v, lang):
@@ -155,6 +215,7 @@ def palabras(v, lang):
     s, _ = _WH.transcribe(np.frombuffer(a, np.float32), language=lang, word_timestamps=True)
     w = [[z.start, z.end, z.word.strip()] for g in s for z in g.words]; json.dump(w, open(cache, 'w')); return w
 
+SYNC = []
 def main():
     plan = []; t0 = 0.0
     for i, e in enumerate(E):
@@ -174,17 +235,12 @@ def main():
         env = np.ones(len(x)) * (0.55 if p.get('v') else 0.75)
         if p.get('vision'): env *= 0.5
         if p.get('v'):
-            for q in M.boca_flow(p['t'], p['a'], p['b']):
-                env[max(0, int((q[0] - 0.12) * SR)): int((q[1] + 0.15) * SR)] = 0.0
+            Q = [[q[0] - p['a'], q[1] - p['a']] for q in BOC[p['t']]['tramos'] if q[1] > p['a'] and q[0] < p['b']]
+            if Q: env[max(0, int((Q[0][0] - 0.25) * SR)): int((Q[-1][1] + 0.35) * SR)] = 0.0
             env = np.convolve(env, np.ones(480) / 480, 'same')
-            vx = load(os.path.join(VZ, p['v'] + '.mp3'))
-            try:
-                y, mapa, err = M.alinear(vx, p['t'], p['a'], p['b'] - p['a'])
-            except Exception as ex:
-                S = M.boca_flow(p['t'], p['a'], p['b']); st = S[0][0] if S else 0.2
-                P = M.frases_voz(vx); off = st - (P[0][0] if P else 0)
-                y = np.zeros(int((p['b'] - p['a'] + 3) * SR)); s0 = int(max(0, off) * SR); y[s0:s0 + len(vx)] = vx[:len(y) - s0]
-                mapa = (lambda tv, off=off: tv + off); print('  ', p['t'], 'sin alinear:', ex)
+            lang = 'en' if p['v'] in TRAD else 'es'
+            y, mapa, err = sincronizar(p['t'], p['a'], p['b'], p['v'], lang)
+            SYNC.append((p['t'], round(err, 2)))
             k = int(p['t0'] * SR); voz[k:k + len(y)] += y[:N - k]
             lang = 'en' if p['v'] in TRAD else 'es'
             ws = palabras(p['v'], lang)
@@ -248,6 +304,7 @@ def main():
     sa = os.path.join(TMP, 'subs.ass'); open(sa, 'w').write(ass)
     run(['ffmpeg', '-v', 'error', '-y', '-i', vid, '-i', wav, '-vf', f'ass={sa}:fontsdir={FONTS}', '-map', '0:v', '-map', '1:a',
          '-c:v', 'libx264', '-crf', '18', '-preset', 'medium', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', OUT])
+    print('sincronía (error máx. por toma):', SYNC)
     print('listo:', OUT, round(TOT, 1), 's')
 
 if __name__ == '__main__': main()
