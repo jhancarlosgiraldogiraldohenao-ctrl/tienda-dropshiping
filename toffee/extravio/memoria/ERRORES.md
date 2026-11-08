@@ -79,3 +79,17 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | El puente del canal salió de día (la escena es de noche) | El prompt de ángulo nuevo no repitió la hora | En cada prompt de ángulo nuevo repetir la hora: «at night with a dark blue starry sky… It is night, not day, not sunset» |
 | Salió una rata gris en la foto del altar «a la altura de una rata» | Decir «at the height of a small rat» le hizo dibujar una rata | En fotos de lugar, la altura se dice sin nombrar animales: «seen from very low, a few centimeters above the ground» |
 | El mapa salió con nombres de ciudades (Mérida, Cancún, Cartagena…) y líneas de fronteras | Las fotos de mapas vienen con letreros | En mapas: «no city names, no labels, no borders, no lines». Si salen, Claude los borra (clonando el mar de al lado), como en AEREA-AMERICA-NOCHE |
+
+## 17. Cap. 2 · parte 1, primera versión (8-nov-2026, revisión de Jay)
+| Error | Por qué pasó | Regla |
+|---|---|---|
+| **Voces desfasadas de la boca en casi todo el video** (T01, T11, T13, T20, T21, T25…) | El editor partía la voz solo en silencios largos: una frase entera quedaba con UN ancla (solo el arranque); además tomaba ruidos cortos de Flow como «boca» (T25 «¡Corra, Gringo!» 1 s antes) | Sincronía **palabra por palabra**: palabras de Flow (Whisper) ajustadas al arranque real de cada tramo de boca ≥ 0,2 s, palabras de ElevenLabs ajustadas a su propio arranque, emparejadas por texto (`sincronizar()` en `editor/ed_dizzy02p1.py`). Antes de mandar un video, revisar el error por toma (≤ 0,15 s) |
+| Se oía «ratas» dos veces (la voz de Flow se coló) | La máscara solo tapaba los tramos de boca | En tomas con voz, la voz de Flow se silencia desde 0,25 s antes de la primera boca hasta 0,35 s después de la última |
+| El grito sonaba antes de caer (T09) y en el gancho (T13) | Se pegaba al primer ruido | Gritos: al primer tramo de boca ≥ 0,2 s |
+| Se cayó por una alcantarilla con la tapa cerrada (T08, T09, T10) | El guion no mostraba la tapa abriéndose | **Lógica física:** todo lo que se usa tiene que verse posible: toma de la tapa abriéndose sola y las tomas siguientes con el hueco abierto (prompt: «the cover is already slid aside, the round hole is open») |
+| Tocino aparece de la nada al lado de Dizzy en México (T16) | Faltó su caída | Regla de entrada también en las caídas: cada personaje que llega necesita su toma de llegada |
+| Dizzy se veía gigante / flotando junto a Tocino (T03) y sin patas en primer plano (T07) | Tamaños no dichos en el prompt | Con dos personajes: «both small in the frame, both feet on the ground, the rat is much smaller than the pig». Jay prefiere ver el cuerpo entero: planos medios con los pies, no primeros planos de cara salvo en reacciones |
+| La Catrina cambiaba de lado y se veía cortada entre T33 y T34 | Dos tomas de la misma acción sin regla de lados | T33 se corta antes de que aparezca; T34 se rehace con ella de cuerpo entero en el mismo lado |
+| Las aéreas hechas con foto animada se veían falsas (finca, pueblo, CDMX, barrio) | Una foto quieta no tiene vida | **Aéreas en Flow a 360p** (1 crédito/s) y Claude las sube a 720/1080; el mapa sí puede ser animado |
+| No se oía la tos de Chuy | El efecto estaba en otra toma | Cada efecto en la toma donde pasa la acción |
+| Doble llegada (Dizzy sale disparado dos veces) | Se repitió la toma del gancho en la historia | La toma del gancho no se repite si no suma; en la historia basta la caída en las flores |
