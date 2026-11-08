@@ -93,3 +93,5 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | Las aéreas hechas con foto animada se veían falsas (finca, pueblo, CDMX, barrio) | Una foto quieta no tiene vida | **Aéreas en Flow a 360p** (1 crédito/s) y Claude las sube a 720/1080; el mapa sí puede ser animado |
 | No se oía la tos de Chuy | El efecto estaba en otra toma | Cada efecto en la toma donde pasa la acción |
 | Doble llegada (Dizzy sale disparado dos veces) | Se repitió la toma del gancho en la historia | La toma del gancho no se repite si no suma; en la historia basta la caída en las flores |
+
+- 8-nov-2026 · Tráiler cap. 2 (toma CTA): «No se pudo generar el audio» con la frase «…completo en YouTube, mis ratas…». Causa probable: nombre de marca (YouTube) en la frase hablada. Arreglo: en Flow decir «en mi canal» (mismas sílabas) y poner «en YouTube» solo en la voz de ElevenLabs. Regla: nada de marcas ni plataformas dentro de las comillas de Flow.
