@@ -31,7 +31,7 @@ E = [
  dict(t='T02', a=0.0, b=5.0, sc='finca'),
  dict(t='A-PUEBLO', a=0.0, b=4.5, sc='pueblo'),
  dict(t='T03', a=2.4, b=6.0, v='T03', sc='pueblo'),
- dict(t='T04', a=0.3, b=5.0, v='T04', sc='pueblo'),
+ dict(t='T04', a=0.0, b=4.6, sc='pueblo'),
  # el callejón de la visión
  dict(t='T06', a=0.6, b=4.2, v='T06', sc='callejon'),
  dict(t='T07', a=1.0, b=4.5, v='T07', sc='callejon'),
