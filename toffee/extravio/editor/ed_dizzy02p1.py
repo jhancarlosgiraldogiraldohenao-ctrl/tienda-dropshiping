@@ -22,7 +22,7 @@ M.TK = TK; M.TMP = TMP
 # t = toma (o foto), a/b = corte, v = voz, sc = escena (música/ambiente)
 E = [
  # GANCHO
- dict(t='T13', a=1.0, b=3.3, v='T13', sc='hook'),
+ dict(t='T13', a=1.0, b=3.3, grito=1, vx='T13', sc='hook'),
  dict(t='T14', a=0.0, b=2.8, sc='hook'),
  dict(t='T19', a=1.3, b=4.9, v='T19', sc='hook'),
  # TÍTULO + finca a medianoche (aérea en video del cap. 1)
@@ -36,11 +36,10 @@ E = [
  dict(t='T06', a=0.6, b=4.2, v='T06', sc='callejon'),
  dict(t='T07', a=1.0, b=4.5, v='T07', sc='callejon'),
  dict(t='G99', src=TK1, a=0.0, b=2.4, sc='callejon', vision=1),
- dict(t='T08', a=0.0, b=3.2, sc='callejon'),
- dict(t='T07b', a=2.2, b=4.0, sc='callejon'),
- dict(t='T09', a=0.5, b=4.2, v='T09', sc='callejon'),
+ dict(t='T08', a=0.0, b=4.03, sc='callejon'),
+ dict(t='T09', a=0.5, b=4.2, grito=1, vx='T09', sc='callejon'),
  dict(t='T10', a=1.0, b=5.0, v='T10', sc='callejon'),
- dict(t='T11', a=0.0, b=5.0, v='T11', sc='tunel'),
+ dict(t='T11', a=0.0, b=5.0, grito=1, vx='T11', sc='tunel'),
  # el viaje
  dict(foto='AEREA-AMERICA-NOCHE.jpg', d=5.0, mov='mapa', sc='mapa'),
  dict(t='A-CDMX', a=0.0, b=4.0, sc='mx'),
@@ -65,7 +64,7 @@ E = [
  # Chuy
  dict(t='T29', a=1.5, b=6.4, v='T29', sc='chuy'),
  dict(t='T30', a=1.8, b=3.9, v='T30', sc='chuy'),
- dict(t='T31', a=1.0, b=8.0, v='T31', sc='chuy', fx=[('efectos/E28-calada-tos-chuy', 5.4, 1.0)]),
+ dict(t='T31', a=1.0, b=8.0, v='T31', sc='chuy'),
  # suspenso
  dict(t='T33', a=0.0, b=2.3, sc='susp', fx=[('efectos/E17-bajo-amenaza', 0.3, 1.0)]),
  dict(t='T34', a=1.8, b=4.03, v='T34', sc='susp'),
@@ -201,7 +200,7 @@ def sincronizar(t, a, b, v, lang):
     toks = ['k' + chr(97 + (i % 26)) * 3 + str(i) for i in range(len(pares))]
     ew = [[pv, pv + 0.1, k] for (pv, _), k in zip(pares, toks)]; fw = [[pf + 0.03, pf + 0.13, k] for (_, pf), k in zip(pares, toks)]
     import pegar as PG
-    y, err = PG.pegar_suave(vx, ew, fw, b - a + 3, lo=0.8, hi=1.25, tmp=os.path.join(TMP, 'pg'))
+    y, err = PG.pegar_suave(vx, ew, fw, b - a + 3, lo=0.8, hi=1.25, tmp=os.path.join(TMP, 'pg'), pausa=1.5)
     src, dst = PG.ULTIMO
     return y, (lambda tv_, s_=src, d_=dst: float(np.interp(tv_, s_, d_))), float(np.max(np.abs(err))) if err else 0.0
 
@@ -234,11 +233,14 @@ def main():
         if 'foto' in p: continue
         src = os.path.join(p.get('src', TK), p['t'] + '.mp4')
         x = load(src)[int(p['a'] * SR): int(p['b'] * SR)]
-        env = np.ones(len(x)) * (0.55 if p.get('v') else 0.75)
+        env = np.ones(len(x)) * (0.55 if p.get('v') else (1.0 if p.get('grito') else 0.75))
         if p.get('vision'): env *= 0.5
         if p.get('v'):
             Q = [[q[0] - p['a'], q[1] - p['a']] for q in BOC[p['t']]['tramos'] if q[1] > p['a'] and q[0] < p['b']]
-            if Q: env[max(0, int((Q[0][0] - 0.25) * SR)): int((Q[-1][1] + 0.35) * SR)] = 0.0
+            Wd = [w for w in BOC[p['t']]['palabras'] if w[1] > p['a'] and w[0] < p['b']]
+            fin = (Wd[-1][1] - p['a'] + 0.15) if Wd else (Q[-1][1] + 0.35 if Q else 0)
+            if Q: env[max(0, int((Q[0][0] - 0.25) * SR)): int(fin * SR)] = 0.0
+            env[int(fin * SR):] = 0.9
             env = np.convolve(env, np.ones(480) / 480, 'same')
             lang = 'en' if p['v'] in TRAD else 'es'
             y, mapa, err = sincronizar(p['t'], p['a'], p['b'], p['v'], lang)

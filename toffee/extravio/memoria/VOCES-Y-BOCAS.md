@@ -45,3 +45,12 @@
 - Habla sobre todo **español con acento gringo** (mal conjugado, chistoso) y se le salen **frases cortas en inglés** («bro», «dude», «oh my God», «what the heck»).
 - En los prompts de Flow: «speaks in Spanish with a very heavy American gringo accent, mixing in a few short English words».
 - El mercado de EE. UU. se busca con subtítulos en inglés (.srt) y el doblaje automático de YouTube, no con Tocino en inglés.
+
+## Voice Changer (8-nov-2026): la sincronía perfecta
+- Con Omni 1.2 la boca de Flow dice la frase exacta y en el idioma correcto. Lo más preciso es **ElevenLabs Voice Changer**
+  (voz a voz) sobre el audio de la toma de Flow, con la voz del personaje: el resultado tiene EXACTAMENTE los tiempos de la boca.
+- Claude exporta `voces-capNN/pN-flow-para-voice-changer/TNN-flow.mp3`; Jay lo pasa por Voice Changer (quitar ruido de fondo: sí)
+  y lo devuelve como TNN.mp3. El editor lo pega en el segundo 0 de la toma, sin estirar.
+- Texto a voz (TTS) solo cuando Flow no dijo la frase o la dijo mal.
+- Errores de la parte 1 v3: T04 Dizzy gigante (se repite en plano medio con los dos de cuerpo entero); los gritos de Flow ya calzan
+  con la boca: se usa el audio de Flow, no ElevenLabs; la tos de Chuy está en el audio de Flow: no taparla después de la última palabra.
