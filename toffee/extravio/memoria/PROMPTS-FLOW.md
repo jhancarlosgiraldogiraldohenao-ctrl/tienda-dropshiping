@@ -36,3 +36,8 @@ todos con la misma plantilla. Cada prompt nuevo va en el chat en su propio bloqu
 - Composición de cine: personaje en un tercio del cuadro y el lugar al otro lado; con dos personajes, izquierda/derecha y cuerpos enteros.
 - Planos abiertos y de acción a 360p (Claude los sube); caras y frases a 720p.
 - El video largo de YouTube va en 16:9; los reels se suben en horizontal (franjas negras) y YouTube Shorts solo con tomas de un personaje recortadas o shorts aparte.
+
+## Plantilla LIMPIA desde el 9-nov-2026 (manda sobre la de arriba)
+- Comprobado con la prueba G: el prompt corto pasa donde el largo de `cap02_flow_h.py` era bloqueado («intereses de proveedores de contenido de terceros»).
+- Builder nuevo: `serie/cap02/cap02_flow_limpio.py`. Estructura: formato y duración → «Stylized 3D animation, cinematic night lighting, shallow depth of field» → lugar en una frase («as in the reference photo») → cámara → personajes con descripción corta → acción → diálogo («says in … voice: "…" His mouth moves with the words») → una línea de fondo → una línea de sonido.
+- No usar: encabezado largo, «has this original design / exactly like», listas largas de extras con trajes, bloque final de prohibiciones («No humans…, no phone…»).
