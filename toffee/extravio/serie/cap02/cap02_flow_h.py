@@ -65,3 +65,12 @@ if __name__=="__main__":
     tot=sum(DUR[t]*(1 if t in R360 else 3) for t in ORDEN)+sum(a[1] for a in AEREAS_H)
     print("créditos aprox.:",tot)
     for t in ORDEN: print(t,DUR[t],"360p" if t in R360 else "720p")
+
+def prompt_viejo(tid):
+    """Formato largo ORIGINAL (el que pasó en T19, T21 y T24 de la Catrina): sin LIMPIO y con el encabezado viejo."""
+    global LIMPIO
+    guard=LIMPIO; LIMPIO=[]
+    try: p=prompt(tid)
+    finally: LIMPIO=guard
+    return p.replace("Original high-quality stylized 3D animation with soft detailed fur and fabric textures, expressive cartoon proportions and the same character designs shown in the uploaded reference images, ",
+                     "High-quality 3D animated movie style like a big-budget animated feature film, exactly the same look as the character reference images, ")
