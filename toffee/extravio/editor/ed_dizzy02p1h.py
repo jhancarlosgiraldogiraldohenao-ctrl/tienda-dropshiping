@@ -78,6 +78,7 @@ AMB = {'callejon': 'E26-ambiente-alcantarilla', 'tunel': 'E26-ambiente-alcantari
 TRAD = {'T03': ['Bro,', 'es medianoche.', 'Esta es', 'una pésima idea.'], 'T06': ['Bro…', '¡está brillando!'], 'T10': ['¡Espérenme!'],
         'T22': ['Uff…', '¡qué mamacita!'],
         'T23': ['¡Mamacita!', 'No me importa', 'que seas puro hueso…', 'me gustan flaquitas.']}
+FIX = {'T17h': ['Bro…', '¡estamos en', 'México!']}  # subtítulo fijo (Whisper oye «Brother»)
 ROJO = {'ratas', 'doce', 'gringo', 'visión', 'méxico', 'méxico!', 'alma', 'perdida', 'panteón', 'chuy', 'muertos', 'marrano', 'flaquitas',
         'hueso…', 'flaca', 'youtube', 'méxico,', 'tacos!', 'medianoche.', 'brillando!', 'mamacita!', 'encontré'}
 
@@ -253,8 +254,8 @@ def main():
             k = int(p['t0'] * SR); voz[k:k + len(y)] += y[:N - k]
             lang = 'en' if p['v'] in TRAD else 'es'
             ws = palabras(p['v'], lang)
-            if p['v'] in TRAD and ws:
-                a0 = mapa(ws[0][0]); a1 = mapa(ws[-1][1]); ch = TRAD[p['v']]; step = (a1 - a0) / len(ch)
+            if (p['v'] in TRAD or p['v'] in FIX) and ws:
+                a0 = mapa(ws[0][0]); a1 = mapa(ws[-1][1]); ch = TRAD.get(p['v']) or FIX[p['v']]; step = (a1 - a0) / len(ch)
                 for j, c in enumerate(ch): subs.append((p['t0'] + a0 + j * step, p['t0'] + a0 + (j + 1) * step + 0.15, c))
             elif ws and p['t'] not in ('T09', 'T11'):
                 grp = []; cur = []
