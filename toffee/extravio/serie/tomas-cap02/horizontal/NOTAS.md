@@ -3,3 +3,4 @@
 - T17: Flow dijo «Bro! ¡Estamos en México!» (en español, sin «Tacos»). Voz de ElevenLabs con ese ritmo: «Bro… ¡estamos en México!» con acento gringo.
 - T23: es la toma G (sin voz). La frase de Tocino va en ElevenLabs mientras entra caminando de perfil.
 - T27: la versión 1 (larga) se bloqueó; salió con la versión 2 (limpia).
+- T34 (limpia): salen los cuatro y ella dice «¡Los encontré!», pero la Catrina ya está adentro de pie y los tres están parados en fila (no agachados ni levantando el mantel). Jay decide si se repite.
