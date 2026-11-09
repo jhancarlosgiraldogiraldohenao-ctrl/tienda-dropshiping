@@ -15,14 +15,16 @@ VIVO={
  "MX-ESCONDITE":F.FONDO["MX-ESCONDITE"]+"; through the gap of the tablecloth we see blurred feet of market animals walking by outside",
 }
 # cámara de cine en 16:9 (si no está aquí, se usa la del guion vertical)
-ACC={"T21":"She points her closed fan to the left, toward the far end of the street, theatrical",
+ACC={"T22":"His four hooves stay on the ground; he slowly lowers his head so his sunglasses slide down to the tip of his snout, staring to the left with love; his ears stand straight up and his tail curls",
+     "T21":"She points her closed fan to the left, toward the far end of the street, theatrical",
      "T18":"She walks elegantly along the petal path toward the camera, swaying her hips and fanning herself with the black lace fan; as she passes, the blurred animal neighbors step aside and bow their heads respectfully",
      "T14":"A small swirling burst of green magic light opens in the air above the petals and the rat falls out of it into the pile of petals with a soft puff; petals fly everywhere and slowly rain down; only his cap and the tip of his tail stick out; the green light closes",
      "T15":"The rat already sits dazed in the petals on the left side of the frame. A small swirling burst of green magic light opens in the air above and the pig falls out of it onto the petals on the right with a big soft thump; petals explode into the air; he lands on his back with his four legs up and his sunglasses crooked; the green light closes",
      "T10":"His four hooves stay on the ground the whole time like a real pig; he yells down into the hole, then crouches on all four legs and dives forward head first into the open hole like a real pig jumping into water, never standing up on his back legs",
      "T02":"He climbs up onto the window frame with his back to the camera, squeezes through the small round window and jumps out into the night; he never turns around and never comes back inside; his tail disappears last and for the final second the window is empty"}
 CAST={"T15":["DIZZY","TOCINO"]}
-CAM={"T21":"Medium shot from a low angle, static, the skeleton cat lady stands tall on the petal path on the right third of the frame with her whole body inside the frame; on the left side the long colorful street goes far into the distance toward a glowing cemetery gate with candles",
+CAM={"T22":"Medium close-up of the pig, slow push-in, the pig stands on all four legs on the right third of the frame seen from the side in three-quarter view, looking to the left at someone off screen; the blurred colorful street on the left side",
+     "T21":"Medium shot from a low angle, static, the skeleton cat lady stands tall on the petal path on the right third of the frame with her whole body inside the frame; on the left side the long colorful street goes far into the distance toward a glowing cemetery gate with candles",
      "T20":"Close-up of the rat from a high angle, as if seen by someone tall standing in front of him on the right, static; the rat sits in the marigold petals on the left third of the frame with his whole head, cap and camera inside the frame, looking up to the right; the blurred street and candles behind him; both of his eyes look in the same direction, never cross-eyed",
      "T19":"Close-up of the skeleton cat lady, static, she stands on the right third of the frame with her whole head and huge hat inside the frame, looking down to the left at someone small in front of her; the blurred colorful street and the altar on the left side",
      "T17":"Medium close-up of the pig, static, the pig stands on all four legs on the right third of the frame, his head and shoulders big in the frame, the colorful street with the altar and the mariachis blurred on the left side",
