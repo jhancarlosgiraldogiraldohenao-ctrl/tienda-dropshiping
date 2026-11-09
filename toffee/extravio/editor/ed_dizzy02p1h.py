@@ -24,7 +24,7 @@ M.TK = TK; M.TMP = TMP
 # t = toma (o foto), a/b = corte, v = voz, sc = escena (música/ambiente)
 E = [
  # GANCHO (sin la alcantarilla, pedido de Jay): la Catrina llega y lo ve
- dict(t='T11', a=0.3, b=2.9, v='T11', mute=1, sc='hook'),
+ dict(t='T18', a=4.0, b=6.6, sc='hook'),
  dict(t='T19', a=0.4, b=5.2, v='T19', sc='hook'),
  # TÍTULO sobre la finca a medianoche
  dict(t='A-FINCA', a=0.0, b=4.6, sc='finca', titulo='EXTRAVÍO · VLOG 02'),
@@ -38,9 +38,8 @@ E = [
  dict(t='G99', src=TK1, a=0.0, b=2.4, sc='callejon', vision=1),
  dict(t='T07b', a=0.0, b=4.0, sc='callejon'),
  dict(t='T08', a=0.0, b=4.0, sc='callejon'),
- dict(t='T09', a=0.5, b=5.0, v='T09', mute=1, sc='callejon'),
+ dict(t='T09', a=0.5, b=5.0, mute=1, sc='callejon', fx=[('efectos/E33-viaje-magico', 1.2, 0.6)]),
  dict(t='T10', a=0.5, b=5.6, v='T10', sc='callejon'),
- dict(t='T11', a=0.0, b=4.0, v='T11', mute=1, sc='tunel'),
  # el viaje
  dict(foto='AEREA-AMERICA-NOCHE.jpg', d=5.0, mov='mapa', sc='mapa'),
  dict(t='A-CDMX', a=0.0, b=4.5, sc='mx'),
