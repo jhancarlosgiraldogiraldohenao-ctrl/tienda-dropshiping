@@ -18,6 +18,7 @@ TMP = os.environ.get('TMPED', '/tmp/ed_dizzy02p1h'); os.makedirs(TMP, exist_ok=T
 OUT = os.path.abspath(os.path.join(RAIZ, '..', 'videos-editados', 'EXTRAVIO-DIZZY-CAP02-P1-H.mp4'))
 W, H, FPS = 1920, 1080, 30
 XF = 0.3  # fundido entre tomas
+CORTE_DB, CORTE_MIN = -36, 12  # la voz se corta solo en silencios reales: bajo -36 dB durante 0,12 s o más
 M.TK = TK; M.TMP = TMP
 
 # t = toma (o foto), a/b = corte, v = voz, sc = escena (música/ambiente)
@@ -206,12 +207,12 @@ def sincronizar(t, a, b, v, lang):
     # 9-nov-2026 (Jay: «las voces suenan ralentizadas»): NADA de estirar. La voz se parte solo en silencios reales
     # (>= 0,18 s bajo -40 dB) y cada frase entera se mueve para que su primera palabra caiga en la boca de Flow.
     fr = int(0.01 * SR); n_ = len(vx) // fr
-    db = 20 * np.log10(np.sqrt(np.mean(vx[:n_ * fr].reshape(n_, fr) ** 2, axis=1)) + 1e-9); on = db > -40
+    db = 20 * np.log10(np.sqrt(np.mean(vx[:n_ * fr].reshape(n_, fr) ** 2, axis=1)) + 1e-9); on = db > CORTE_DB
     fr_ = []; i = 0
     while i < n_:
         if on[i]:
             j = i
-            while j < n_ and (on[j] or on[j:j + 18].any()): j += 1
+            while j < n_ and (on[j] or on[j:j + CORTE_MIN].any()): j += 1
             fr_.append([max(0, i * 0.01 - 0.03), min(len(vx) / SR, j * 0.01 + 0.05)]); i = j
         else: i += 1
     if not fr_: fr_ = [[0.0, len(vx) / SR]]
@@ -219,12 +220,12 @@ def sincronizar(t, a, b, v, lang):
     L = int((b - a + 3) * SR); y = np.zeros(L); offs = []; prev_end = -1.0; errs = []
     for k, (f0, f1) in enumerate(fr_):
         dentro = [pv for pv in vmap if f0 - 0.05 <= pv <= f1]
-        if dentro:
-            pv = min(dentro); st = vmap[pv] - (pv - f0)
+        if dentro:   # desplazamiento = mediana de todas las palabras de la frase (más estable que solo la primera)
+            st = f0 + float(np.median([vmap[q] - q for q in dentro]))
         else:
             st = (prev_end + (f0 - fr_[k - 1][1])) if k else (S[0][0] if S else 0.2)
         st = max(st, prev_end + 0.08, 0.0)
-        if dentro: errs.append(abs(st + (pv - f0) - vmap[pv]))
+        if dentro: errs.append(float(np.median([abs(st + (q - f0) - vmap[q]) for q in dentro])))
         seg = vx[int(f0 * SR): int(f1 * SR)].copy(); g = min(len(seg) // 2, int(0.01 * SR))
         if g: seg[:g] *= np.linspace(0, 1, g); seg[-g:] *= np.linspace(1, 0, g)
         k0 = int(st * SR); m = min(len(seg), L - k0)
