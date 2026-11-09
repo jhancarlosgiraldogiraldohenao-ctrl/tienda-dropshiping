@@ -43,7 +43,7 @@ T={
 "T34":(6,["DIZZY","TOCINO","CHUY","CATRINA","MX-MERCADO-ESCONDITE"],H.format(d=6)+ESC+
  "Medium-wide shot from inside the hideout, static camera, all four whole bodies in the frame. On the left, huddled together on the rug, frozen with fear: "+RAT+"; "+PIG+"; and "+AXO+". On the right, "+CAT+" lifts the edge of the tablecloth with one gloved hand, bends down to look in, smiles slowly and whispers "+VOZ_CAT+': "¡Los encontré!" Her mouth moves with the words; only she speaks. '+SON_ESC),
 "T35":(4,["DIZZY","MX-MERCADO-ESCONDITE"],H.format(d=4)+ESC+
- "Extreme close-up, static camera: "+RAT+", lying under the table, his whole head in the frame, both eyes looking the same way, staring up toward the lifted tablecloth, frozen. His eyes go huge and he whispers to the camera "+VOZ_RAT+': "Ya estamos muertos… literal." His mouth moves with the words. '+SON_ESC),
+ "Extreme close-up, static camera: "+RAT+", standing frozen in the hideout on the left third of the frame, his whole head, cap and camera in the frame, both eyes looking the same way, staring up to the right at someone tall. His eyes go huge and he whispers to the camera "+VOZ_RAT+': "Ya estamos muertos… literal." His mouth moves with the words. '+SON_ESC),
 }
 if __name__=="__main__":
     for k,(d,f,p) in T.items(): print(k,d,len(p),f)
