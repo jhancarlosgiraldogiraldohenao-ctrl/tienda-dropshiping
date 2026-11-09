@@ -17,18 +17,19 @@ FONTS = os.path.join(AQ, 'datos-dizzy01', 'fonts')
 TMP = os.environ.get('TMPED', '/tmp/ed_dizzy02p1h'); os.makedirs(TMP, exist_ok=True)
 OUT = os.path.abspath(os.path.join(RAIZ, '..', 'videos-editados', 'EXTRAVIO-DIZZY-CAP02-P1-H.mp4'))
 W, H, FPS = 1920, 1080, 30
+XF = 0.3  # fundido entre tomas
 M.TK = TK; M.TMP = TMP
 
 # t = toma (o foto), a/b = corte, v = voz, sc = escena (música/ambiente)
 E = [
  # GANCHO (sin la alcantarilla, pedido de Jay): la Catrina llega y lo ve
- dict(t='T18', a=4.0, b=6.6, sc='hook'),
+ dict(t='T11', a=0.3, b=2.9, v='T11', mute=1, sc='hook'),
  dict(t='T19', a=0.4, b=5.2, v='T19', sc='hook'),
  # TÍTULO sobre la finca a medianoche
- dict(t='A-FINCA', a=0.0, b=6.0, sc='finca', titulo='EXTRAVÍO · VLOG 02'),
- dict(t='T01', a=0.3, b=7.8, v='T01', sc='finca'),
- dict(t='T02', a=0.0, b=3.9, sc='finca'),
- dict(t='A-PUEBLO', a=0.0, b=5.5, sc='pueblo'),
+ dict(t='A-FINCA', a=0.0, b=4.6, sc='finca', titulo='EXTRAVÍO · VLOG 02'),
+ dict(t='T01', a=0.6, b=7.7, v='T01', sc='finca'),
+ dict(t='T02', a=0.2, b=3.8, sc='finca'),
+ dict(t='A-PUEBLO', a=0.0, b=4.2, sc='pueblo'),
  dict(t='T03', a=0.5, b=7.2, v='T03', sc='pueblo'),
  # el callejón de la visión
  dict(t='T06', a=1.6, b=5.2, v='T06', sc='callejon'),
@@ -41,7 +42,7 @@ E = [
  dict(t='T11', a=0.0, b=4.0, v='T11', mute=1, sc='tunel'),
  # el viaje
  dict(foto='AEREA-AMERICA-NOCHE.jpg', d=5.0, mov='mapa', sc='mapa'),
- dict(t='A-CDMX', a=0.0, b=5.5, sc='mx'),
+ dict(t='A-CDMX', a=0.0, b=4.5, sc='mx'),
  dict(t='T14', a=0.5, b=5.5, sc='mx'),
  dict(t='T15', a=0.0, b=4.0, sc='mx'),
  dict(t='T16', a=0.6, b=4.6, v='T16', sc='mx'),
@@ -57,7 +58,7 @@ E = [
  dict(t='T24', a=0.0, b=4.0, v='T24', sc='flirt', fx=[('efectos/E29-huesos-catrina', 0.1, 0.7)]),
  dict(t='T25', a=0.0, b=4.5, v='T25', sc='flirt'),
  # persecución
- dict(t='A-BARRIO', a=0.0, b=5.0, sc='chase'),
+ dict(t='A-BARRIO', a=0.0, b=4.2, sc='chase'),
  dict(t='T26', a=0.0, b=6.0, sc='chase'),
  dict(t='T27', a=2.0, b=6.0, v='T27', sc='chase'),
  dict(t='T28', a=0.0, b=4.0, sc='chase'),
@@ -202,10 +203,38 @@ def sincronizar(t, a, b, v, lang):
     if not pares: pares = [(VW[0][0], FW[0][0])] if VW and FW else [(0.0, S[0][0] if S else 0.2)]
     toks = ['k' + chr(97 + (i % 26)) * 3 + str(i) for i in range(len(pares))]
     ew = [[pv, pv + 0.1, k] for (pv, _), k in zip(pares, toks)]; fw = [[pf + 0.03, pf + 0.13, k] for (_, pf), k in zip(pares, toks)]
-    import pegar as PG
-    y, err = PG.pegar_suave(vx, ew, fw, b - a + 3, lo=0.8, hi=1.25, tmp=os.path.join(TMP, 'pg'), pausa=1.5)
-    src, dst = PG.ULTIMO
-    return y, (lambda tv_, s_=src, d_=dst: float(np.interp(tv_, s_, d_))), float(np.max(np.abs(err))) if err else 0.0
+    # 9-nov-2026 (Jay: «las voces suenan ralentizadas»): NADA de estirar. La voz se parte solo en silencios reales
+    # (>= 0,18 s bajo -40 dB) y cada frase entera se mueve para que su primera palabra caiga en la boca de Flow.
+    fr = int(0.01 * SR); n_ = len(vx) // fr
+    db = 20 * np.log10(np.sqrt(np.mean(vx[:n_ * fr].reshape(n_, fr) ** 2, axis=1)) + 1e-9); on = db > -40
+    fr_ = []; i = 0
+    while i < n_:
+        if on[i]:
+            j = i
+            while j < n_ and (on[j] or on[j:j + 18].any()): j += 1
+            fr_.append([max(0, i * 0.01 - 0.03), min(len(vx) / SR, j * 0.01 + 0.05)]); i = j
+        else: i += 1
+    if not fr_: fr_ = [[0.0, len(vx) / SR]]
+    vmap = {pv: pf for pv, pf in pares}
+    L = int((b - a + 3) * SR); y = np.zeros(L); offs = []; prev_end = -1.0; errs = []
+    for k, (f0, f1) in enumerate(fr_):
+        dentro = [pv for pv in vmap if f0 - 0.05 <= pv <= f1]
+        if dentro:
+            pv = min(dentro); st = vmap[pv] - (pv - f0)
+        else:
+            st = (prev_end + (f0 - fr_[k - 1][1])) if k else (S[0][0] if S else 0.2)
+        st = max(st, prev_end + 0.08, 0.0)
+        if dentro: errs.append(abs(st + (pv - f0) - vmap[pv]))
+        seg = vx[int(f0 * SR): int(f1 * SR)].copy(); g = min(len(seg) // 2, int(0.01 * SR))
+        if g: seg[:g] *= np.linspace(0, 1, g); seg[-g:] *= np.linspace(1, 0, g)
+        k0 = int(st * SR); m = min(len(seg), L - k0)
+        if m > 0: y[k0:k0 + m] += seg[:m]
+        offs.append((f0, f1, st - f0)); prev_end = st + (f1 - f0)
+    def mapa_(tv_, o_=offs):
+        for f0, f1, d in o_:
+            if tv_ <= f1 + 0.02: return tv_ + d
+        return tv_ + o_[-1][2]
+    return y, mapa_, (max(errs) if errs else 0.0)
 
 # ---------- palabras de cada voz (para subtítulos) ----------
 _WH = None
@@ -229,8 +258,8 @@ def main():
             d = e['d']
         else:
             toma_video(e, vf); d = e['b'] - e['a']
-        plan.append(dict(e, vf=vf, t0=t0, d=d)); t0 += d
-    TOT = t0; N = int(TOT * SR) + SR * 3
+        plan.append(dict(e, vf=vf, t0=t0, d=d)); t0 += d - XF
+    TOT = t0 + XF; N = int(TOT * SR) + SR * 3
     flow = np.zeros(N); voz = np.zeros(N); fx = np.zeros(N); subs = []
     for p in plan:
         if 'foto' in p: continue
@@ -267,6 +296,8 @@ def main():
                     if p.get('vcut') and mapa(g[0][0]) > p['d'] - 0.3: break
                     s0 = p['t0'] + mapa(g[0][0]); s1 = p['t0'] + (mapa(grp[j + 1][0][0]) if j + 1 < len(grp) else mapa(g[-1][1]) + 0.35)
                     subs.append((s0, min(s1, s0 + 1.6), ' '.join(g_[2] for g_ in g)))
+        f_ = int(XF * SR)
+        if len(x) > 2 * f_: env = env.copy(); env[:f_] *= np.linspace(0, 1, f_); env[-f_:] *= np.linspace(1, 0, f_)
         k = int(p['t0'] * SR); flow[k:k + len(x)] += x * env[:len(x)]
         for f, at, g in p.get('fx', []):
             z = load(os.path.join(SN, f + '.mp3')) * g; k2 = int((p['t0'] + at) * SR); fx[k2:k2 + len(z)] += z[:N - k2]
@@ -288,16 +319,22 @@ def main():
     for sc, a, b in blocks:
         if sc in MUS: bed(MUS[sc][0], a, b, MUS[sc][1], mus)
         if sc in AMB: bed(AMB[sc], a, b, 0.22, amb, 0.6)
-    ve = np.convolve(np.abs(voz) > 0.02, np.ones(int(0.25 * SR)) / int(0.25 * SR), 'same')
-    duck = 1 - 0.6 * np.clip(ve * 3, 0, 1)
+    hab = np.zeros(N)
+    for p in plan:
+        if p.get('v'): hab[int(p['t0'] * SR): int((p['t0'] + p['d']) * SR)] = 1
+    w_ = int(1.2 * SR); duck = 1 - 0.35 * np.convolve(hab, np.ones(w_) / w_, 'same')  # baja 3-4 dB en toda la toma con diálogo, sin subir y bajar a cada palabra
     mix = flow + voz + fx + mus * duck + amb
     mix = mix[:int(TOT * SR)]
     wav = os.path.join(TMP, 'mix.wav')
     sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af', 'loudnorm=I=-14:TP=-1.5', '-ar', '48000', '-ac', '2', wav],
            input=np.clip(mix, -1, 1).astype(np.float32).tobytes(), check=True)
     # video
-    open(os.path.join(TMP, 'l.txt'), 'w').write(''.join(f"file '{p['vf']}'\n" for p in plan))
-    vid = os.path.join(TMP, 'video.mp4'); run(['ffmpeg', '-v', 'error', '-y', '-f', 'concat', '-safe', '0', '-i', os.path.join(TMP, 'l.txt'), '-c', 'copy', vid])
+    vid = os.path.join(TMP, 'video.mp4'); inp = []; fc = []
+    for p in plan: inp += ['-i', p['vf']]
+    last = '0:v'
+    for k in range(1, len(plan)):
+        fc.append(f"[{last}][{k}:v]xfade=transition=fade:duration={XF}:offset={plan[k]['t0']:.3f}[x{k}]"); last = f'x{k}'
+    run(['ffmpeg', '-v', 'error', '-y'] + inp + ['-filter_complex', ';'.join(fc), '-map', f'[{last}]', '-c:v', 'libx264', '-crf', '17', '-preset', 'fast', '-pix_fmt', 'yuv420p', vid])
     # subtítulos
     def tt(s): return f'{int(s // 3600)}:{int(s % 3600 // 60):02d}:{s % 60:05.2f}'
     ass = ('[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\n'
