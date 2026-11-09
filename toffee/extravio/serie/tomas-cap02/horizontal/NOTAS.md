@@ -4,3 +4,4 @@
 - T23: es la toma G (sin voz). La frase de Tocino va en ElevenLabs mientras entra caminando de perfil.
 - T27: la versión 1 (larga) se bloqueó; salió con la versión 2 (limpia).
 - T34 (limpia): salen los cuatro y ella dice «¡Los encontré!», pero la Catrina ya está adentro de pie y los tres están parados en fila (no agachados ni levantando el mantel). Jay decide si se repite.
+- T35: tenía una persona en el borde derecho; recortada (crop 1110x624 desde 0,40 → 1280x720). Original en T35-original.mp4.
