@@ -72,10 +72,10 @@ E = [
  dict(t='T34', a=1.5, b=4.5, v='T34', mute=1, sc='susp'),
  dict(t='T35', a=0.8, b=4.0, v='T35', sc='susp'),
 ]
-MUS = {'hook': ('M12b-mariachi-muertos-metales', 0.30), 'finca': ('M10-misterio-camara', 0.22), 'pueblo': ('M10-misterio-camara', 0.22),
+MUS = {'hook': ('M12b-mariachi-muertos-metales', 0.32), 'finca': ('M11-tema-extravio', 0.30), 'pueblo': ('M11-tema-extravio', 0.30), 'tunel': ('M10-misterio-camara', 0.30), 'mapa': ('M12-mariachi-muertos', 0.30),
        'callejon': ('M10-misterio-camara', 0.26), 'mx': ('M12-mariachi-muertos', 0.30), 'catrina': ('M16-vals-catrina', 0.55),
        'flirt': ('M6-cuca-saxofon', 0.28), 'chase': ('M13-persecucion-cumbia', 0.32), 'chuy': ('M15-tema-chuy', 0.28), 'susp': ('M10-misterio-camara', 0.25)}
-AMB = {'callejon': 'E26-ambiente-alcantarilla', 'tunel': 'E26-ambiente-alcantarilla', 'mx': 'E25-ambiente-muertos-noche', 'catrina': 'E25-ambiente-muertos-noche',
+AMB = {'finca': 'E02-ambiente-finca', 'pueblo': 'E02-ambiente-finca', 'callejon': 'E26-ambiente-alcantarilla', 'tunel': 'E26-ambiente-alcantarilla', 'mx': 'E25-ambiente-muertos-noche', 'catrina': 'E25-ambiente-muertos-noche',
        'flirt': 'E25-ambiente-muertos-noche', 'chase': 'E25-ambiente-muertos-noche', 'hook': 'E25-ambiente-muertos-noche'}
 TRAD = {'T03': ['Bro,', 'es medianoche.', 'Esta es', 'una pésima idea.'], 'T06': ['Bro…', '¡está brillando!'], 'T10': ['¡Espérenme!'],
         'T22': ['Uff…', '¡qué mamacita!'],
@@ -323,12 +323,17 @@ def main():
     hab = np.zeros(N)
     for p in plan:
         if p.get('v'): hab[int(p['t0'] * SR): int((p['t0'] + p['d']) * SR)] = 1
-    w_ = int(1.2 * SR); duck = 1 - 0.35 * np.convolve(hab, np.ones(w_) / w_, 'same')  # baja 3-4 dB en toda la toma con diálogo, sin subir y bajar a cada palabra
+    w_ = int(1.2 * SR); duck = 1 - 0.30 * np.convolve(hab, np.ones(w_) / w_, 'same')  # baja 3-4 dB en toda la toma con diálogo, sin subir y bajar a cada palabra
     mix = flow + voz + fx + mus * duck + amb
     mix = mix[:int(TOT * SR)]
     wav = os.path.join(TMP, 'mix.wav')
-    sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af', 'loudnorm=I=-14:TP=-1.5', '-ar', '48000', '-ac', '2', wav],
-           input=np.clip(mix, -1, 1).astype(np.float32).tobytes(), check=True)
+    raw = np.clip(mix, -1, 1).astype(np.float32).tobytes()
+    r = sp.run(['ffmpeg', '-hide_banner', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af', 'loudnorm=I=-14:TP=-1.5:print_format=json', '-f', 'null', '-'],
+               input=raw, capture_output=True)
+    js = json.loads(r.stderr.decode()[r.stderr.decode().rfind('{'):])
+    ln = (f"loudnorm=I=-14:TP=-1.5:linear=true:measured_I={js['input_i']}:measured_TP={js['input_tp']}:"
+          f"measured_LRA={js['input_lra']}:measured_thresh={js['input_thresh']}:offset={js['target_offset']}")
+    sp.run(['ffmpeg', '-v', 'error', '-y', '-f', 'f32le', '-ar', str(SR), '-ac', '1', '-i', '-', '-af', ln, '-ar', '48000', '-ac', '2', wav], input=raw, check=True)
     # video
     vid = os.path.join(TMP, 'video.mp4'); inp = []; fc = []
     for p in plan: inp += ['-i', p['vf']]

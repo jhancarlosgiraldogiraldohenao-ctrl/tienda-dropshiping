@@ -53,3 +53,8 @@ Editor: `toffee/extravio/editor/ed_dizzy01.py` (copiarlo como `ed_dizzy01p2.py` 
 - El video largo se sube en **vertical 1080×1920** (dura más de 3 min, así que YouTube lo trata como video normal, no Short). En computador sale con franjas negras a los lados; en el celular, a pantalla completa.
 - **Nunca más** convertirlo a 16:9 con fondo borroso (el error del cap. 1: en el celular se veía pequeñito).
 - Cap. 1: `videos-editados/EXTRAVIO-DIZZY-CAP01-YOUTUBE-VERTICAL.mp4` = P1-FINAL + P2-LARGO + fin de 20 s (G103 con M11), −14 LUFS.
+
+## Música siempre corriendo (pedido de Jay, 9-nov-2026)
+- La música **nunca se corta**: suena en todas las escenas (también túnel y mapa) y solo baja ~3 dB en las tomas con diálogo, suave (1,2 s).
+- El volumen final se normaliza en modo **lineal** (loudnorm de dos pasadas con `linear=true`). El loudnorm de una pasada es dinámico y hacía que la música subiera y bajara cuando entraban las voces.
+- Cada escena lleva **ambiente** debajo (finca/pueblo: E02; callejón: E26; México: E25). Sin ambiente las tomas «se oyen muertas».
