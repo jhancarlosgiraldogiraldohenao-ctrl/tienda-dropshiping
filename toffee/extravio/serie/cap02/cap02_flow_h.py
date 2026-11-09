@@ -1,7 +1,7 @@
 # Capítulo 2 · parte 1 en HORIZONTAL 16:9 (decisión de Jay, 8-nov-2026, tras la prueba de la calle de México).
 # Reusa guion, candados y lugares de cap02_flow.py; cambia el encabezado a 16:9, refuerza el fondo vivo y la cámara de cine.
 import cap02_flow as F
-H_HEAD=("Horizontal 16:9, {d} seconds. High-quality 3D animated movie style like a big-budget animated feature film, exactly the same look as the character reference images, "
+H_HEAD=("Horizontal 16:9, {d} seconds. Original high-quality stylized 3D animation with soft detailed fur and fabric textures, expressive cartoon proportions and the same character designs shown in the uploaded reference images, "
         "rich cinematic lighting, shallow depth of field, normal lens (no fisheye, no vignette, no dark corners). One continuous shot with no cuts, full frame from edge to edge, no black bars.")
 VIVO={
  "ZARZO-NOCHE":"The background is alive: the candle flame flickers, dust floats in the moonlight, the curtain of the round window sways and fireflies blink far outside",
@@ -49,7 +49,16 @@ def prompt(tid):
     p=F.prompt(tuple(g))
     p=p.replace(F.HEAD.format(d=g[1]),H_HEAD.format(d=g[1]))
     p=p.replace(F.FONDO[g[2]]+".",VIVO.get(g[2],F.FONDO[g[2]])+".")
+    # 9-nov-2026: Flow rechazó prompts «por intereses de proveedores de contenido de terceros».
+    # Se quitan comparaciones con producciones comerciales, frases de «exactamente igual» y voces «como» alguien.
+    for a,b in LIMPIO: p=p.replace(a,b)
     return p
+LIMPIO=[
+ (" looks exactly like the reference image: "," has this original design: "),
+ (", exactly like the reference image,",", with the original design from the reference image,"),
+ ("like an old telenovela star","dramatic and melodic, with slow elegant pauses, rolled r's and a playful flirtatious laugh in her tone"),
+ ("from the reference image, exactly the same place:","from the reference image, keeping the same place:"),
+]
 AEREAS_H=[("A-FINCA",6,"AEREA-FINCA-NOCHE.jpg","Horizontal 16:9, 6 seconds. Cinematic aerial drone shot of the lonely two-story coffee farmhouse on the green mountain from the reference image at midnight, exactly the same place: white walls, wooden balconies, warm light in the windows, smoke from the chimney, coffee plants and banana trees around it, misty mountains behind under a full moon and a starry sky. The drone slowly glides forward and down toward the house. Fireflies blink in the coffee plants and the mist moves slowly. It is night, not day. One continuous shot with no cuts, full frame from edge to edge, normal lens, no black bars. No characters, no animals, no people, no text, no music; only crickets and soft wind.")]
 AEREAS_H+=[(a,d,f,p.replace("Vertical 9:16","Horizontal 16:9").replace("full vertical frame","full frame from edge to edge")) for a,d,f,p in F.AEREAS]
 if __name__=="__main__":
