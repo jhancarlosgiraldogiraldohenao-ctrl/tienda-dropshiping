@@ -25,7 +25,7 @@ t("U02", 6, ["CATRINA", "MX-MERCADO-ESCONDITE"], "720p", ESC +
 t("U03", 6, ["CHUY", "MX-MERCADO-ESCONDITE"], "720p", ESC +
   "Medium close-up, static camera: " + AXO + ", standing on the left side of the frame, a thick rope hanging from the roof next to him. Very slowly and calmly he grabs the rope with one hand and says " + VOZ_AXO + ': "Tranquila, flaca…" His mouth moves with the words; the cigarette stays in his mouth. Soft smoke drifts. ' + SON_ESC)
 t("U04", 4, ["CATRINA", "MX-MERCADO-ESCONDITE"], "360p", ESC +
-  "Medium shot, static camera. A big colorful fabric awning falls from above and drops completely over " + CAT + ", who stands on the right; she ends up covered by the cloth, a moving lump that wiggles and struggles, only her black hat sticking out. No one speaks. " + SON_ESC)
+  "Medium shot, static camera. " + P(CAT) + " stands on the right. A huge heavy colorful fabric awning falls from the roof and lands on top of her, burying her completely from head to toe so that her face and body are hidden; she turns into a big wiggling lump of cloth that spins around blindly and bumps into a crate. No one speaks. " + SON_ESC)
 t("U05", 6, ["DIZZY", "TOCINO", "CHUY", "MX-MERCADO-MUELLE"], "720p", MUE +
   "Low wide shot, static camera, all three whole bodies in the frame, running from the left toward the boat on the right: " + RAT + " in front, " + PIG + " behind him, and " + AXO + " walking slowly last. The rat is much smaller than the pig. The rat shouts " + VOZ_RAT + ': "¡Patitas pa\' qué las quiero!" Only the rat speaks. Lanterns sway and petals float on the water. ' + SON_CAN)
 t("A-CANALES", 6, ["AEREA-XOCHIMILCO-NOCHE"], "360p",
