@@ -5,6 +5,7 @@ ENTERA antes de escribir cualquier prompt, voz o edición nueva.** Cada error nu
 
 | Archivo | Para qué |
 |---|---|
+| `REGLAS-DE-ORO.md` | **Resumen de todos los errores en una página: leer primero** |
 | `ORDEN-DE-TRABAJO.md` | El orden correcto (Flow primero, voces después) y las secciones de dos partes |
 | `PROMPTS-FLOW.md` | Plantilla fija y reglas de los prompts de Google Flow, con todos los errores ya pagados |
 | `VOCES-Y-BOCAS.md` | Cómo escribir las voces de ElevenLabs midiendo la boca de Flow (el error más caro del capítulo 1) |
