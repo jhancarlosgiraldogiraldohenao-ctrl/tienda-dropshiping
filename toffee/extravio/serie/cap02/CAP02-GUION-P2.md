@@ -11,7 +11,7 @@ Sigue EXACTO a la parte 1: escondite bajo el puesto, la Catrina adentro a la der
 | U04 | 4 | MX-MERCADO-ESCONDITE | (mantel) | Jala la cuerda: el toldo/mantel le cae encima a la Catrina, que queda enredada | — |
 | U05 | 6 | MX-MERCADO-MUELLE (NUEVA) | Dizzy, Tocino, Chuy | Salen corriendo por detrás del puesto hacia el muelle (izq.→der.) | DIZZY: «¡Patitas pa' qué las quiero!» |
 | A-CANALES | 6 | AEREA-XOCHIMILCO-NOCHE | — | Aérea de los canales (360p) | — |
-| U06 | 6 | MX-TRAJINERA-CHUY | los 3 | Chuy empuja con una vara; Dizzy y Tocino sentados | TOCINO: «Bro… ¿esto es un Uber de agua?» |
+| U06 | 6 | MX-TRAJINERA-CHUY | los 3 | Chuy empuja con una vara; Dizzy y Tocino sentados | TOCINO: «Bro… ¿esto es un Uber de agua?» (en Flow: «taxi de agua», sin marcas; «Uber» solo en ElevenLabs) |
 | U07 | 6 | MX-TRAJINERA-CHUY-CONTRA | Dizzy | Le pregunta a Chuy | DIZZY: «Chuy, ¿y cómo volvemos a Colombia?» |
 | U08 | 8 | MX-TRAJINERA-CHUY | Chuy | Lento, con pausas | CHUY: «Por donde llegaron, carnal… antes de que salga el sol… si no, se quedan aquí pa' siempre.» |
 | U09 | 6 | MX-TRAJINERA-CHUY-CONTRA | Tocino | Asustado | TOCINO: «¿Pa' siempre? Bro, yo amo México… pero no tanto.» |

@@ -31,7 +31,7 @@ t("U05", 6, ["DIZZY", "TOCINO", "CHUY", "MX-MERCADO-MUELLE"], "720p", MUE +
 t("A-CANALES", 6, ["AEREA-XOCHIMILCO-NOCHE"], "360p",
   "Cinematic aerial drone shot at night over long calm canals with floating gardens and many colorful flower-covered boats lit by paper lanterns, marigolds floating on the dark water, one full moon, as in the reference photo. The drone glides slowly forward. Lanterns flicker and reflections shimmer. No characters, no text. " + SON_CAN)
 t("U06", 6, ["DIZZY", "TOCINO", "CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
-  "Medium-wide shot, slow side tracking camera, all three whole bodies in the frame. " + P(AXO) + " stands at the back on the right and slowly pushes the boat with a long wooden pole; " + RAT + " and " + PIG + " sit on the bench on the left. The pig looks around and says " + VOZ_PIG + ': "Bro… ¿esto es un Uber de agua?" Only the pig speaks. ' + SON_CAN)
+  "Medium-wide shot, slow side tracking camera, all three whole bodies in the frame. " + P(AXO) + " stands at the back on the right and slowly pushes the boat with a long wooden pole; " + RAT + " and " + PIG + " sit on the bench on the left. The pig looks around and says " + VOZ_PIG + ': "Bro… ¿esto es un taxi de agua?" Only the pig speaks. ' + SON_CAN)
 t("U07", 6, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
   "Medium close-up, static camera: " + RAT + ", sitting on the boat bench on the left side of the frame, his whole head, cap and camera in the frame, both eyes looking the same way. He turns to someone on the right and asks " + VOZ_RAT + ': "Chuy, ¿y cómo volvemos a Colombia?" His mouth moves with the words. ' + SON_CAN)
 t("U08", 8, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
