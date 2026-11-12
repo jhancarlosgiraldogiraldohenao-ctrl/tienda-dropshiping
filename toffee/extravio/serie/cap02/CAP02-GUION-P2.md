@@ -41,3 +41,11 @@ Sigue EXACTO a la parte 1: escondite bajo el puesto, la Catrina adentro a la der
 
 Música: M15 (Chuy) en el escondite y la trajinera · M14 bolero en la serenata · M13 cumbia en la carrera · M11 tema al final. Ambientes: E27 canales, E25 calles, E02 finca.
 Fotos NUEVAS: MX-MERCADO-MUELLE, MX-CANAL-PUENTE-AMANECER, MX-CALLE-AMANECER, ZARZO-AMANECER.
+
+## Escena nueva (idea de Jay, 12-nov): convivencia en la trajinera, entre U13 y U14
+Plano general de los tres + primeros planos alternados (cámara sobre el hombro, plano/contraplano). Tocino izq., Dizzy medio, Chuy der.; Lupe al fondo.
+| V1 | 6 | general: Tocino mirando a Lupe embobado; Dizzy lo codea | — |
+| V2 | 5 | sobre el hombro de Tocino → Dizzy | DIZZY: «¡Ey, Gringo! ¿Usted es güevón o qué? ¡Esa mariachi lo va a matar!» (Flow: «bobo») |
+| V3 | 5 | Tocino | TOCINO: «Bro, relax… es amor a primera vista.» |
+| V4 | 4 | Chuy | CHUY: «Ay, el amor, carnal…» |
+| V5 | 4 | Dizzy a cámara | DIZZY: «¡Amor mis chanclas!» |

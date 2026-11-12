@@ -84,7 +84,21 @@ t("U32", 4, ["DIZZY", "ZARZO-AMANECER"], "720p", ZAR +
   "Extreme close-up, static camera, of the small action camera on top of the rat's cap: its little red light turns on by itself and a soft green glow pulses from its lens, lighting the rat's surprised face from above. No one speaks. A soft electronic beep and a magical hum.")
 t("FIN", 10, ["AEREA-FINCA"], "360p",
   "Horizontal 16:9, 10 seconds. Cinematic aerial drone shot of the lonely two-story coffee farmhouse on the green mountain at sunrise, as in the reference photo, golden light, mist in the valleys, birds flying. The drone slowly pulls back and rises. No characters, no text. Soft wind, birds and a rooster far away.")
-ORDEN = ["U02","U03","U04","U05","A-CANALES","U06","U07","U08","U09","U11","U12","U13","U14","U15","U16","U17","U18","U19",
+
+# --- Escena de convivencia en la trajinera (idea de Jay, 12-nov): plano general + primeros planos alternados (plano/contraplano)
+# Posiciones fijas como en U06: Tocino a la IZQUIERDA, Dizzy en el MEDIO, Chuy a la DERECHA con la vara; la trajinera de Lupe al fondo.
+FONDO_LUPE = "Far behind them, out of focus, another flower-covered boat with a small chihuahua musician playing the violin. "
+t("V1", 6, ["DIZZY", "TOCINO", "CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
+  "Wide shot, slow push-in, all three whole bodies on the boat: on the left " + PIG + ", staring dreamily to the back with his sunglasses down; in the middle " + RAT + ", sitting on the bench; on the right " + AXO + ", standing with the long pole. The rat notices the pig staring, rolls his eyes and nudges him with his elbow. " + FONDO_LUPE + "No one speaks. " + SON_CAN)
+t("V2", 5, ["DIZZY", "MX-TRAJINERA-CHUY"], "720p", TRA +
+  "Over-the-shoulder close-up: the camera is behind the pig's pink ear on the left edge of the frame, looking at " + RAT + ", who sits in the center, his whole head, cap and camera in the frame, both eyes looking the same way, angry, pointing his finger at the pig. He scolds him " + VOZ_RAT + ': "¡Ey, Gringo! ¿Usted es bobo o qué? ¡Esa mariachi lo va a matar!" His mouth moves with the words; only the rat speaks. ' + SON_CAN)
+t("V3", 5, ["TOCINO", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
+  "Close-up, static camera: " + PIG + ", on the left side of the frame, his four hooves down, a silly in-love smile, his ears up, looking to the right at the rat. He answers " + VOZ_PIG + ': "Bro, relax… es amor a primera vista." His mouth moves with the words; only the pig speaks. ' + FONDO_LUPE + SON_CAN)
+t("V4", 4, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
+  "Close-up, static camera: " + AXO + ", on the right side of the frame, holding the long pole, smiles lazily, giggles and says " + VOZ_AXO + ': "Ay, el amor, carnal…" His mouth moves with the words; the cigarette stays in his mouth. ' + SON_CAN)
+t("V5", 4, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
+  "Close-up, static camera: " + RAT + ", in the center of the frame, his whole head, cap and camera in the frame, both eyes looking straight into the lens, fed up, and he says to the camera " + VOZ_RAT + ': "¡Amor mis chanclas!" His mouth moves with the words. ' + SON_CAN)
+ORDEN = ["U02","U03","U04","U05","A-CANALES","U06","U07","U08","U09","U11","U12","U13","V1","V2","V3","V4","V5","U14","U15","U16","U17","U18","U19",
          "U20","U21","U22","U23","U24","U25","U26","U27","U28","U29","U30","U31","U32","FIN"]
 if __name__ == "__main__":
     c = 0
