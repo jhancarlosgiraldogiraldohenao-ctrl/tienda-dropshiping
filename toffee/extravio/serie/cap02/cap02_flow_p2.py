@@ -112,3 +112,17 @@ if __name__ == "__main__":
     for k in ORDEN:
         d, f, r, p = U[k]; c += d * (3 if r == "720p" else 1); print(k, d, r, len(p), f)
     print("créditos aprox.", c)
+
+# --- 12-nov (Jay): «nunca el fondo vacío»: detrás del que habla siempre se ven los otros reaccionando (muecas), con la boca cerrada.
+def atras(k, extra, cast_add):
+    d, f, r, p = U[k]
+    for c in cast_add:
+        if c not in f: f = [c] + f
+    U[k] = (d, f, r, p.replace(" His mouth moves with the words", " " + extra + " His mouth moves with the words", 1).replace(" Her mouth moves with the words", " " + extra + " Her mouth moves with the words", 1))
+atras("V5", "Behind him, slightly out of focus, " + PIG + " still stares dreamily to the back with his sunglasses down, and " + AXO + " giggles at the pig; both keep their mouths closed.", ["TOCINO", "CHUY"])
+atras("U21", "Behind him, slightly out of focus, " + RAT + " and " + PIG + " (a broken small violin hanging around his neck) sit on the bench and slowly look up at the sky, worried, mouths closed.", ["DIZZY", "TOCINO"])
+atras("U28", "In the foreground on the right, slightly out of focus, " + RAT + " and " + PIG + " sit frozen on the mattress with guilty faces, mouths closed.", ["DIZZY", "TOCINO"])
+atras("U29", "Behind him, " + PIG + " hides under the blanket on the mattress and peeks out with one eye, scared, mouth closed.", ["TOCINO"])
+atras("U31", "Behind him, " + PIG + " lies on the mattress with a big bump on his head, snoring with his mouth closed.", ["TOCINO"])
+ORDEN = [k for k in ORDEN if k not in ("V1", "V2", "V3", "V4", "U14")]
+ORDEN.insert(ORDEN.index("V5"), "V0")

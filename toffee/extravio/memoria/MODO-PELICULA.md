@@ -32,3 +32,9 @@ que el escenario esté vivo y se vea desde distintos ángulos». Se cumple así,
 ## 4. Sonido continuo
 - El ambiente de un lugar no se corta en cada toma: pasa por debajo de todas las tomas de la escena.
 - La voz o la música entra un poco antes del corte (corte en J) o sigue un poco después (corte en L).
+
+## 5. Escenas de grupo (Jay, 12-nov-2026: «perfecto, este tipo de efectos lo vamos a utilizar»)
+- **Nunca el fondo vacío detrás del que habla:** se ven los otros personajes atrás reaccionando (una mueca, comiendo, embobado, burlándose), con la boca cerrada. Genera simpatía y continuidad.
+- **Tomas largas de grupo (10 s) con cámara que va de cara en cara** mientras hablan (plano general → primer plano de uno → giro al otro). Ejemplo: V0 de la trajinera (`serie/tomas-cap02/p2/V0.mp4`).
+- Con dos o más que hablan en la misma toma: Flow en **vídeos silenciosos**, sin frases entre comillas, tramos de tiempo por personaje («2 to 5 seconds… talking with big clear mouth movements»); las voces de ElevenLabs van en esos tramos.
+- Los personajes de la escena siguen en el mismo puesto en todas las tomas (en la trajinera: Tocino izq., Dizzy medio, Chuy der.) y alguno puede pasar caminando al fondo para dar vida.
