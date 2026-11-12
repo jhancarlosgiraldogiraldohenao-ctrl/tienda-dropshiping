@@ -19,7 +19,7 @@ SON_CAN = "Soft water lapping, wooden boat creaks, frogs and distant trumpets."
 SON_AMA = "Church bells far away, birds waking up and soft wind."
 SON_ZAR = "Roosters far away and soft morning birds."
 U = {}
-def t(i, d, fotos, res, txt): U[i] = (d, fotos, res, H.format(d=d) + txt)
+def t(i, d, fotos, res, txt): U[i] = (d, fotos, res, txt if txt.startswith("Horizontal 16:9") else H.format(d=d) + txt)
 t("U02", 6, ["CATRINA", "MX-MERCADO-ESCONDITE"], "720p", ESC +
   "Medium shot, static camera: " + CAT + ", on the right side of the frame, bends down toward someone small on the left, her whole body in the frame, smiling slowly and charmingly. She says " + VOZ_CAT + ': "Vamos, almitas… el panteón los espera." Her mouth moves with the words; only she speaks. ' + SON_ESC)
 t("U03", 6, ["CHUY", "MX-MERCADO-ESCONDITE"], "720p", ESC +
