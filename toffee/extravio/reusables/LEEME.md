@@ -53,3 +53,6 @@ Biblioteca fija: `sonidos/` (LEEME.md): M1–M11, E01–E24. Ninguno nuevo en el
 
 ## Lugares (fotos en `refs/extravio/lugares/`)
 Todos los del capítulo 1 + HUECO-MESA-DOMINO, ZARZO-NOCHE, CAMINO-ATARDECER, AEREA-FINCA-NOCHE.
+
+## VACA (12-nov-2026) — recurso fijo
+`refs/extravio/personajes/VACA.jpg`: vaca Holstein realista, de lado, con campana de bronce. **El costado del medio es blanco y liso, sin manchas**, para proyectar cosas encima (el proyector del Tuerto en El Hueco). En Flow: «a realistic black-and-white Holstein cow with a big clean white middle side with no spots, small horns and a brass bell on a leather collar».

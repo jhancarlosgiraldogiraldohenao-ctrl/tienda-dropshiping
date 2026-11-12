@@ -184,7 +184,7 @@ i = ORDEN.index("U25"); ORDEN.insert(i + 1, "I-TAPA")
 i = ORDEN.index("H1"); ORDEN.insert(i, "A-HUECO")
 
 # ===== 12-nov (Jay): en vez de la pantalla, un PROYECTOR robado que proyecta a Dizzy sobre una VACA que se le escapa al Gallinazo =====
-VACA = "a big round friendly white cow with large black spots, pink nose, small horns and a little bell on her neck"
+VACA = "a realistic black-and-white Holstein cow with a big clean white middle side with no spots, small horns and a brass bell on a leather collar"
 GALL = "a black vulture meat seller with a white butcher apron and a red cap, from the reference image"
 CAR = "The meat stall of a rough hidden street market in a Colombian alley at the first light of dawn, hanging string lights, crates and fire barrels, as in the reference photo. "
 t("H0", 6, ["VACA", "VENDEDORES-HUECO", "HUECO-PUESTO-CARNE"], "720p", CAR +
