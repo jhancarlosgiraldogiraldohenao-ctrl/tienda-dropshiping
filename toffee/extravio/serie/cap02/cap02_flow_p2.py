@@ -54,8 +54,8 @@ t("U17", 4, ["LUPE", "MX-TRAJINERA-MARIACHI"], "720p", MAR +
   "Close-up, static camera: " + LUPE + ", on the left side of the frame, her whole head and sombrero in the frame, outraged, ears straight up. She says " + VOZ_LUPE + ': "¿Tamalito? ¡Tamalito su abuela!" Her mouth moves with the words. ' + SON_CAN)
 t("U18", 4, ["LUPE", "TOCINO", "MX-TRAJINERA-MARIACHI"], "720p", MAR +
   "Medium two-shot, static camera, both whole bodies on the small stage: on the left " + LUPE + "; on the right " + PIG + ". She swings her small violin and smashes it on top of the pig's head with a funny crack; the violin breaks and ends up hanging around his neck; he blinks, dizzy, with tiny stars. No one speaks. " + SON_CAN)
-t("U19", 4, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
-  "Medium close-up, static camera: " + RAT + ", sitting on the bench in the center of the frame, his whole head, cap and camera in the frame, both eyes looking straight into the lens. He shakes his head and says to the camera " + VOZ_RAT + ': "Cero suerte, mi llave." His mouth moves with the words. ' + SON_CAN)
+t("U19", 5, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
+  "Medium shot, static camera, his whole body in the frame: " + RAT + ", sitting relaxed on the boat bench, leaning back with both hands behind his head and his feet in black slides resting up on the small wooden table in front of him, the hammock and lanterns behind. He looks into the lens, shakes his head slowly with a lazy smile and says " + VOZ_RAT + ': "Cero suerte, mi llave." His mouth moves with the words; both eyes look the same way. ' + SON_CAN)
 t("U20", 4, ["MX-CATEDRAL-AMANECER"], "360p",
   "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic light. The old cathedral with two bell towers at the blue hour just before sunrise, as in the reference photo; the bells swing and ring, birds fly out of the towers, the sky turns pink and orange behind. No characters, no text. Loud church bells and birds.")
 t("U21", 5, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA.replace("at night", "at the blue hour just before sunrise, the sky turning pink") +
