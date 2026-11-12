@@ -1,0 +1,1 @@
+- U09: salió de 4 s y la boca llega solo hasta «pero…». En la edición «no tanto» termina en off sobre la toma siguiente (corte en L).
