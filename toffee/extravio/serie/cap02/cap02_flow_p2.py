@@ -126,3 +126,14 @@ atras("U29", "Behind him, " + PIG + " hides under the blanket on the mattress an
 atras("U31", "Behind him, " + PIG + " lies on the mattress with a big bump on his head, snoring with his mouth closed.", ["TOCINO"])
 ORDEN = [k for k in ORDEN if k not in ("V1", "V2", "V3", "V4", "U14")]
 ORDEN.insert(ORDEN.index("V5"), "V0")
+
+# 12-nov: Jay pide tomas de 4 s para cerrar créditos
+for k in ("U27", "U29"):
+    d, f, r, p_ = U[k]; U[k] = (4, f, r, p_.replace(f"Horizontal 16:9, {d} seconds.", "Horizontal 16:9, 4 seconds.", 1))
+# 12-nov: el encabezado decía «night lighting» también en las escenas del amanecer
+for k, (d, f, r, p_) in list(U.items()):
+    if "sunrise" in p_ and "night lighting" in p_:
+        U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting" if "blue hour" in p_ else "cinematic warm morning lighting", 1))
+atras("U30", "Behind them on the mattress, " + PIG + " covers his eyes with the blanket, mouth closed.", ["TOCINO"])
+d_, f_, r_, p_ = U["U30"]
+U["U30"] = (d_, f_, r_, p_.replace("No one speaks. A funny slap sound.", "Behind them on the mattress, a skinny pink pig with a black mohawk, cracked sunglasses and a torn leather vest, on all four legs, hides under the blanket, mouth closed. No one speaks. A funny slap sound."))
