@@ -98,6 +98,13 @@ t("V4", 4, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
   "Close-up, static camera: " + AXO + ", on the right side of the frame, holding the long pole, smiles lazily, giggles and says " + VOZ_AXO + ': "Ay, el amor, carnal…" His mouth moves with the words; the cigarette stays in his mouth. ' + SON_CAN)
 t("V5", 4, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
   "Close-up, static camera: " + RAT + ", in the center of the frame, his whole head, cap and camera in the frame, both eyes looking straight into the lens, fed up, and he says to the camera " + VOZ_RAT + ': "¡Amor mis chanclas!" His mouth moves with the words. ' + SON_CAN)
+t("V0", 10, ["DIZZY", "TOCINO", "CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
+  "One continuous 10-second shot with a moving camera, like a TV series. Positions never change: on the left " + PIG + "; in the middle " + RAT + ", sitting on the bench; on the right " + AXO + ", standing with the long pole. "
+  "0 to 2 seconds: wide shot of all three; the pig stares dreamily to the back with his sunglasses down and the rat nudges him with his elbow. "
+  "2 to 5 seconds: the camera pushes in fast to a close-up of the rat's face (cap and camera fully in the frame, both eyes looking the same way); angry, he scolds the pig " + VOZ_RAT + ': "¡Ey, Gringo! ¿Usted es bobo o qué?" '
+  "5 to 8 seconds: the camera pans left to a close-up of the pig, who smiles in love and answers " + VOZ_PIG + ': "Bro, relax… es amor a primera vista." '
+  "8 to 10 seconds: the camera pans right to a close-up of the axolotl, who giggles lazily, the cigarette in his mouth. "
+  "Each character's mouth moves only when he speaks. " + FONDO_LUPE + SON_CAN)
 ORDEN = ["U02","U03","U04","U05","A-CANALES","U06","U07","U08","U09","U11","U12","U13","V1","V2","V3","V4","V5","U14","U15","U16","U17","U18","U19",
          "U20","U21","U22","U23","U24","U25","U26","U27","U28","U29","U30","U31","U32","FIN"]
 if __name__ == "__main__":
