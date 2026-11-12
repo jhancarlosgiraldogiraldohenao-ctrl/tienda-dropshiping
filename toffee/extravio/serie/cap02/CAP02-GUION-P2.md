@@ -71,3 +71,6 @@ Se quitan U27–U32 y FIN (el regreso al zarzo queda para otro capítulo). Cierr
 | H3b | 6 | HUECO-DENTRO | Vaca | La luz cae en el lomo de la vaca (rectángulo verde para poner a Dizzy) y ella mira a cámara | VACA: «Muuuu…» |
 | H4 | 10 | HUECO-DENTRO | todos | Reacciones de cara en cara (silenciosa) | — |
 Foto NUEVA: VACA (personaje).
+
+## ORDEN FINAL del cierre (Jay, 12-nov)
+U22 puente → U23 la Catrina persigue → **corte a Colombia:** A-HUECO → H0 vaca se escapa (zoom al Gallinazo) → H0b patas → H1 el Tuerto y el proyector → H2 la abuela y Bartolo → H3 lo prende sin querer → H3b la luz cae en la vaca, «Muuu» → **H3c la cámara se mete en la proyección** → **México visto por la cámara de Dizzy (visor REC):** A-MX-AMANECER → U24 → U25 «¡Se apagó!» → I-TAPA → U26 «Ya valió» → U26b la sombra de la Catrina → **vuelta a El Hueco:** H4 reacciones → H5 «¿Y mi nieto qué hace en México?» → H6 «Ese pelado no aprende» → W2 Dizzy se despide (en la vaca y luego a pantalla completa) → final tranquilo para pantallas finales.

@@ -215,3 +215,11 @@ i = ORDEN.index("H0"); ORDEN.insert(i + 1, "H0b")
 for k, (d, f, r, p_) in list(U.items()):
     if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
         U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
+# 12-nov (Jay): transición: la cámara se acerca a la proyección en el lomo de la vaca y entramos a México «como si grabara la cámara de Dizzy» (visor REC en la edición)
+t("H3c", 4, ["VACA", "HUECO-DENTRO"], "360p",
+  "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic soft dawn lighting. In a rough street market at dawn, as in the reference photo, a realistic black-and-white Holstein cow stands still with a big bright rectangle of plain solid green projector light on the clean white middle side of her body. The camera slowly pushes in straight toward the green rectangle until the green light fills the whole frame. No faces, no text. Projector whirr getting louder.")
+mex = ["A-MX-AMANECER", "U24", "U25", "I-TAPA", "U26", "U26b"]
+hue = ["A-HUECO", "H0", "H0b", "H1", "H2", "H3", "H3b", "H3c"]
+ORDEN = [k for k in ORDEN if k not in mex + hue + ["H3c"]]
+i = ORDEN.index("U23") + 1
+ORDEN[i:i] = hue + mex   # después de la persecución: corte a El Hueco → proyección → México por la cámara de Dizzy → vuelta a las reacciones (H4, H5, H6) → W2
