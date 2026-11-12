@@ -170,3 +170,15 @@ ORDEN = ORDEN[:ORDEN.index("U26") + 1] + ["U26b", "H1", "H2", "H3", "H4", "H5", 
 for k, (d, f, r, p_) in list(U.items()):
     if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
         U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
+# 12-nov (Jay): las de 5 s pasan a 4 s; más tomas de cine (aéreas, enfoque/desenfoque, acercamientos a objetos y caras)
+for k in ("U26", "U26b", "H5"):
+    d, f, r, p_ = U[k]; U[k] = (4, f, r, p_.replace(f"Horizontal 16:9, {d} seconds.", "Horizontal 16:9, 4 seconds.", 1))
+t("A-MX-AMANECER", 6, ["AEREA-CDMX-NOCHE"], "360p",
+  "Horizontal 16:9, 6 seconds. Cinematic aerial drone shot of the old Mexican city with the two-tower cathedral and the two volcanoes, as in the reference photo, at the exact moment of sunrise: the first golden sun appears behind the volcanoes and its light sweeps over the rooftops, candles going out, morning mist. The drone flies fast forward and down toward the narrow streets. No characters, no text. Church bells and wind.")
+t("I-TAPA", 4, ["MX-ALCANTARILLA-AMANECER"], "360p",
+  "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic soft dawn lighting. Extreme close-up at ground level of the round iron manhole cover from the reference photo, its faint green glow pulsing; a golden sunbeam slowly slides across the cobblestones and touches it, and the green glow fades out completely; then the focus racks to the background, where a small gray rat's black slides in white socks stop running in front of it. No faces, no text. A dying magical hum and birds.")
+t("A-HUECO", 6, ["AEREA-OLLA"], "360p",
+  "Horizontal 16:9, 6 seconds. Cinematic aerial drone shot at the first light of dawn over the crowded Colombian hillside neighborhood from the reference photo, brick houses, tangled cables, smoke from a few chimneys, pink sky. The drone dives fast down into one narrow alley. No characters, no text. Distant roosters, dogs and wind.")
+i = ORDEN.index("U24"); ORDEN.insert(i, "A-MX-AMANECER")
+i = ORDEN.index("U25"); ORDEN.insert(i + 1, "I-TAPA")
+i = ORDEN.index("H1"); ORDEN.insert(i, "A-HUECO")

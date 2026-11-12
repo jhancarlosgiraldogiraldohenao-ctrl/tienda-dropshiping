@@ -38,3 +38,5 @@ que el escenario esté vivo y se vea desde distintos ángulos». Se cumple así,
 - **Tomas largas de grupo (10 s) con cámara que va de cara en cara** mientras hablan (plano general → primer plano de uno → giro al otro). Ejemplo: V0 de la trajinera (`serie/tomas-cap02/p2/V0.mp4`).
 - Con dos o más que hablan en la misma toma: Flow en **vídeos silenciosos**, sin frases entre comillas, tramos de tiempo por personaje («2 to 5 seconds… talking with big clear mouth movements»); las voces de ElevenLabs van en esos tramos.
 - Los personajes de la escena siguen en el mismo puesto en todas las tomas (en la trajinera: Tocino izq., Dizzy medio, Chuy der.) y alguno puede pasar caminando al fondo para dar vida.
+- **Lenguaje de cine en cada escena (Jay, 12-nov-2026):** aéreas de transición (ej. la ciudad al amanecer, el barrio en picada), enfoque/desenfoque (rack focus) de un objeto a un personaje, acercamientos rápidos a objetos y caras, cambios rápidos de toma. Insertos de 4 s en 360p para esto (baratos).
+- Tomas de 5 s → se piden de 4 s (Jay, 12-nov-2026).
