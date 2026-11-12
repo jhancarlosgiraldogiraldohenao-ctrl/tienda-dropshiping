@@ -167,3 +167,6 @@ t("W2", 8, ["DIZZY", "TOCINO", "CHUY", "MX-ALCANTARILLA-AMANECER"], "720p", ALC.
   "Medium close-up, static camera: " + RAT + ", in the center of the frame, his whole head, cap and camera in the frame, both eyes looking straight into the lens, with a crooked brave smile. He says to the camera " + VOZ_RAT + ': "Mis ratas… nos quedamos en México. Sígueme pa\' no perderte el próximo episodio, mi llave." Behind him, ' + AXO + " waves lazily at the camera and " + PIG + " lies on the cobblestones, both with mouths closed. His mouth moves with the words. " + SON_AMA)
 ORDEN = [k for k in ORDEN if k not in ("U27", "U28", "U29", "U30", "U31", "U32", "FIN")]
 ORDEN = ORDEN[:ORDEN.index("U26") + 1] + ["U26b", "H1", "H2", "H3", "H4", "H5", "H6", "W2"]
+for k, (d, f, r, p_) in list(U.items()):
+    if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
+        U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
