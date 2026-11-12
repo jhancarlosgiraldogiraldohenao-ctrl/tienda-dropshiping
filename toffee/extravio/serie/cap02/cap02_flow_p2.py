@@ -126,3 +126,4 @@ atras("U29", "Behind him, " + PIG + " hides under the blanket on the mattress an
 atras("U31", "Behind him, " + PIG + " lies on the mattress with a big bump on his head, snoring with his mouth closed.", ["TOCINO"])
 ORDEN = [k for k in ORDEN if k not in ("V1", "V2", "V3", "V4", "U14")]
 ORDEN.insert(ORDEN.index("V5"), "V0")
+atras("U23", "Far ahead of her in the background, out of focus, three small figures (a rat, a pig and an axolotl) run away across the end of the bridge.", [])
