@@ -62,3 +62,12 @@ Plano general de los tres + primeros planos alternados (cámara sobre el hombro,
 | H6 | 4 | HUECO-DENTRO | Tuerto | — | TUERTO: «Ese pelado no aprende.» |
 | W2 | 8 | MX-ALCANTARILLA-AMANECER | Dizzy (Chuy y Tocino atrás) | Se ve también en la pantalla del Hueco | DIZZY: «Mis ratas… nos quedamos en México. Sígueme pa' no perderte el próximo episodio, mi llave.» |
 Se quitan U27–U32 y FIN (el regreso al zarzo queda para otro capítulo). Cierre de pantallas finales: El Hueco mirando la pantalla.
+
+## CAMBIO (Jay, 12-nov): en El Hueco no hay pantalla: el Tuerto se roba un PROYECTOR y Dizzy se proyecta en una VACA
+| H0 | 6 | HUECO-PUESTO-CARNE | Vaca, Gallinazo | La vaca blanca con manchas negras se le escapa al Gallinazo | GALLINAZO: «¡Vuelva acá, mi almuerzo!» |
+| H1 | 6 | HUECO-DENTRO | Tuerto, Cuca, vendedores | Llega con un proyector robado | TUERTO: «¡Miren lo que me robé, gonorreas!» (Flow: «lo que me conseguí, parceros») |
+| H2 | 6 | HUECO-ENTRADA | Gertrudis, Bartolo | Llegan con arepas | (igual) |
+| H3 | 4 | HUECO-DENTRO | (pata del Tuerto) | Lo prende sin querer queriendo | — |
+| H3b | 6 | HUECO-DENTRO | Vaca | La luz cae en el lomo de la vaca (rectángulo verde para poner a Dizzy) y ella mira a cámara | VACA: «Muuuu…» |
+| H4 | 10 | HUECO-DENTRO | todos | Reacciones de cara en cara (silenciosa) | — |
+Foto NUEVA: VACA (personaje).

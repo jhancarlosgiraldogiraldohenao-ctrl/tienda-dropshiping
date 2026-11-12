@@ -182,3 +182,26 @@ t("A-HUECO", 6, ["AEREA-OLLA"], "360p",
 i = ORDEN.index("U24"); ORDEN.insert(i, "A-MX-AMANECER")
 i = ORDEN.index("U25"); ORDEN.insert(i + 1, "I-TAPA")
 i = ORDEN.index("H1"); ORDEN.insert(i, "A-HUECO")
+
+# ===== 12-nov (Jay): en vez de la pantalla, un PROYECTOR robado que proyecta a Dizzy sobre una VACA que se le escapa al Gallinazo =====
+VACA = "a big round friendly white cow with large black spots, pink nose, small horns and a little bell on her neck"
+GALL = "a black vulture meat seller with a white butcher apron and a red cap, from the reference image"
+CAR = "The meat stall of a rough hidden street market in a Colombian alley at the first light of dawn, hanging string lights, crates and fire barrels, as in the reference photo. "
+t("H0", 6, ["VACA", "VENDEDORES-HUECO", "HUECO-PUESTO-CARNE"], "720p", CAR +
+  "Wide shot, the camera pans fast following the action: " + VACA + " escapes from the meat stall and runs through the market from right to left, knocking over crates and scattering vendors; behind her " + GALL + " chases her, flapping his wings, and shouts in Colombian Spanish with a very deep, croaky male voice: \"¡Vuelva acá, mi almuerzo!\" Only the vulture speaks. Crates crashing, a cow bell ringing, chickens squawking.")
+t("H1", 6, ["TUERTO", "CUCA", "VENDEDORES-HUECO", "HUECO-DENTRO"], "720p", HUE +
+  "Medium-wide shot, slow push-in. " + P(CUCA) + " and a few animal vendors warm up around a fire barrel. " + P(TUERTO) + " walks in from the left proudly carrying a big old movie projector in his arms, and says " + VOZ_TUE + ': "¡Miren lo que me conseguí, parceros!" Only the cat speaks; the others turn to look, mouths closed. Crackling fire and distant roosters.')
+t("H3", 4, ["TUERTO", "HUECO-DENTRO"], "360p",
+  "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic soft dawn lighting, shallow depth of field. Extreme close-up of an old movie projector held by the paws of a black-and-white cat in a gray tracksuit sleeve, in a rough street market at dawn, as in the reference photo: his paw presses a button by accident, the lens lights up and a strong beam of light shoots out toward the right; the focus racks along the beam. No faces, no text. A click and a mechanical whirr.")
+t("H3b", 6, ["VACA", "HUECO-DENTRO"], "720p", HUE +
+  "Medium shot, static camera: " + VACA + " runs in from the left and stops in the middle of the frame, panting, right in front of a strong beam of projector light coming from the left. The beam paints a big bright rectangle of plain solid green light on the white side of her body. She slowly turns her head to the camera with a confused face and moos: \"Muuuu…\" Her mouth moves with the moo. Projector whirr and a cow bell.")
+t("H4", 10, ["TUERTO", "CUCA", "GERTRUDIS", "BARTOLO", "HUECO-DENTRO"], "720p", HUE +
+  "One continuous 10-second shot with a moving camera, like a TV series. Exactly these characters, only one of each, standing together and staring at something bright on the right, their faces lit by flickering projector light: " + TUERTO + "; " + CUCA + "; " + GER.replace("holding one rubber slipper in her wing", "holding a basket of arepas") + "; and " + BART + ". The camera glides from face to face: the cat smirks, the cockroach covers her mouth in surprise, the hen's eyes go wide and she drops her basket, the mule keeps chewing calmly. Nobody speaks; all mouths closed. Crackling fire and a projector whirr.")
+for k in ("H5", "H6"):
+    d, f, r, p_ = U[k]; U[k] = (d, f, r, p_.replace("her face lit by a green glow", "her face lit by flickering projector light").replace("his face lit by a green glow", "his face lit by flickering projector light"))
+ORDEN = [k for k in ORDEN if k not in ("H1", "H2", "H3", "H4")]
+i = ORDEN.index("A-HUECO") + 1
+ORDEN[i:i] = ["H0", "H1", "H2", "H3", "H3b", "H4"]
+for k, (d, f, r, p_) in list(U.items()):
+    if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
+        U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
