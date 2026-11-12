@@ -137,3 +137,33 @@ for k, (d, f, r, p_) in list(U.items()):
 atras("U30", "Behind them on the mattress, " + PIG + " covers his eyes with the blanket, mouth closed.", ["TOCINO"])
 d_, f_, r_, p_ = U["U30"]
 U["U30"] = (d_, f_, r_, p_.replace("No one speaks. A funny slap sound.", "Behind them on the mattress, a skinny pink pig with a black mohawk, cracked sunglasses and a torn leather vest, on all four legs, hides under the blanket, mouth closed. No one speaks. A funny slap sound."))
+
+# ===== 12-nov (Jay): NO vuelven a casa todavía: «sacarle más jugo a México». Nuevo final =====
+TUERTO = "a small black-and-white cat with a black eye patch over one eye (always visible), a toothpick in his mouth, a gray tracksuit jacket and gold bracelets"
+CUCA = "a brown cockroach standing on her back legs, with a red bikini and gold hoop earrings on her antennae"
+BART = "an old brown mule wearing a black-and-white striped Colombian sombrero vueltiao, a leather bag and two plain sacks on his back"
+VOZ_TUE = "in Colombian Spanish with a low, calm, husky male voice"
+HUE = "A rough hidden street market in a Colombian alley at the first light of dawn, brick walls with graffiti, old car seats, fire barrels with dying flames, string lights, as in the reference photo. "
+HUE_E = "The entrance of a rough hidden street market in a Colombian alley at the first light of dawn, brick walls, string lights, as in the reference photo. "
+t("U25", 6, ["DIZZY", "TOCINO", "CHUY", "MX-ALCANTARILLA-AMANECER"], "720p", ALC +
+  "Medium-wide shot, static camera, exactly three characters, only one of each, whole bodies in the frame, feet on the cobblestones, out of breath: " + RAT + " in front of the manhole cover in the center, " + PIG + " on the left and " + AXO + " on the right. The first golden rays of the sun hit the alley and the faint green glow of the cover flickers and goes out completely. The rat stares at it in panic and says " + VOZ_RAT + ': "No, no, no… ¡se apagó!" Only the rat speaks; the pig and the axolotl keep their mouths open in shock without speaking. ' + SON_AMA)
+t("U26", 5, ["CHUY", "TOCINO", "MX-ALCANTARILLA-AMANECER"], "720p", ALC.replace("glowing faint magical green", "no longer glowing") +
+  "Close-up, static camera: " + AXO + ", on the right side of the frame, scratches his head, smiles lazily and says " + VOZ_AXO + ': "Uy… ya valió, carnales." Behind him, ' + PIG + " faints dramatically and falls on his side onto the cobblestones, mouth closed. His mouth moves with the words; the cigarette stays in his mouth. " + SON_AMA)
+t("U26b", 5, ["CATRINA", "MX-ALCANTARILLA-AMANECER"], "720p", ALC.replace("glowing faint magical green", "no longer glowing") +
+  "Wide shot, slow push-in: at the far end of the alley, backlit by the sunrise, " + CAT + " appears and walks slowly toward the camera, fanning herself, smiling, and says " + VOZ_CAT + ': "Ahora sí, almitas… no se me escapan." Her mouth moves with the words. ' + SON_AMA)
+t("H1", 8, ["TUERTO", "CUCA", "VENDEDORES-HUECO", "HUECO-DENTRO"], "720p", HUE +
+  "Wide shot, slow push-in. " + P(CUCA) + " and a few animal vendors warm up around a fire barrel. " + P(TUERTO) + " walks in from the left dragging a huge old flat TV screen on a rope, proud, and says " + VOZ_TUE + ': "¡Miren esta pantallota que me encontré, parceros!" Only the cat speaks; the others turn to look, surprised, mouths closed. Crackling fire and distant roosters.')
+t("H2", 6, ["GERTRUDIS", "BARTOLO", "HUECO-ENTRADA"], "720p", HUE_E +
+  "Medium-wide shot, static camera, both whole bodies in the frame: " + GER.replace("holding one rubber slipper in her wing", "holding a basket full of arepas in her wings") + " walks in on the left, and " + BART + " walks in behind her on the right, chewing slowly. She looks around worried and says " + VOZ_GER + ': "¿Alguien ha visto a mi nieto? Le traje arepitas." Her mouth moves with the words; only the hen speaks. Crackling fire and distant roosters.')
+t("H3", 4, ["HUECO-DENTRO"], "360p",
+  "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic light. A huge old flat TV screen hangs on the graffiti brick wall of the rough street market at dawn, as in the reference photo, string lights around it. The screen flickers with static and then lights up completely in plain solid bright green, with no image and no text. No characters. An electric buzz and a beep.")
+t("H4", 10, ["TUERTO", "CUCA", "GERTRUDIS", "BARTOLO", "HUECO-DENTRO"], "720p", HUE +
+  "One continuous 10-second shot with a moving camera, like a TV series. Exactly these characters, only one of each, standing together in front of a huge screen on the wall, their faces lit by its green glow: " + TUERTO + "; " + CUCA + "; " + GER.replace("holding one rubber slipper in her wing", "holding a basket of arepas") + "; and " + BART + ". The camera glides from face to face: the cat smirks, the cockroach covers her mouth in surprise, the hen's eyes go wide and she drops her basket, the mule keeps chewing calmly. Nobody speaks; all mouths closed. Crackling fire and distant roosters.")
+t("H5", 5, ["GERTRUDIS", "BARTOLO", "HUECO-DENTRO"], "720p", HUE +
+  "Close-up, static camera: " + GER.replace("holding one rubber slipper in her wing", "with both wings on her cheeks") + ", on the left side of the frame, her face lit by a green glow, shocked, and she says " + VOZ_GER + ': "¿Y mi nieto qué hace en México?" Behind her, slightly out of focus, ' + BART + " keeps chewing calmly, mouth closed. Her mouth moves with the words. Crackling fire.")
+t("H6", 4, ["TUERTO", "HUECO-DENTRO"], "720p", HUE +
+  "Close-up, static camera: " + TUERTO + ", on the right side of the frame, his face lit by a green glow, moves the toothpick to the other side of his mouth, smirks and says " + VOZ_TUE + ': "Ese pelado no aprende." His mouth moves with the words. Crackling fire.')
+t("W2", 8, ["DIZZY", "TOCINO", "CHUY", "MX-ALCANTARILLA-AMANECER"], "720p", ALC.replace("glowing faint magical green", "no longer glowing") +
+  "Medium close-up, static camera: " + RAT + ", in the center of the frame, his whole head, cap and camera in the frame, both eyes looking straight into the lens, with a crooked brave smile. He says to the camera " + VOZ_RAT + ': "Mis ratas… nos quedamos en México. Sígueme pa\' no perderte el próximo episodio, mi llave." Behind him, ' + AXO + " waves lazily at the camera and " + PIG + " lies on the cobblestones, both with mouths closed. His mouth moves with the words. " + SON_AMA)
+ORDEN = [k for k in ORDEN if k not in ("U27", "U28", "U29", "U30", "U31", "U32", "FIN")]
+ORDEN = ORDEN[:ORDEN.index("U26") + 1] + ["U26b", "H1", "H2", "H3", "H4", "H5", "H6", "W2"]

@@ -49,3 +49,16 @@ Plano general de los tres + primeros planos alternados (cámara sobre el hombro,
 | V3 | 5 | Tocino | TOCINO: «Bro, relax… es amor a primera vista.» |
 | V4 | 4 | Chuy | CHUY: «Ay, el amor, carnal…» |
 | V5 | 4 | Dizzy a cámara | DIZZY: «¡Amor mis chanclas!» |
+
+## FINAL NUEVO (Jay, 12-nov): no vuelven a casa; se quedan en México (más jugo) y El Hueco los ve por una pantalla
+| U25 | 6 | MX-ALCANTARILLA-AMANECER | los 3 | Sale el sol y la tapa se APAGA | DIZZY: «No, no, no… ¡se apagó!» |
+| U26 | 5 | idem | Chuy (Tocino se desmaya atrás) | — | CHUY: «Uy… ya valió, carnales.» |
+| U26b | 5 | idem | Catrina | Aparece al fondo con el sol detrás | CATRINA: «Ahora sí, almitas… no se me escapan.» |
+| H1 | 8 | HUECO-DENTRO | Tuerto, Cuca, vendedores | Tuerto llega arrastrando una pantalla enorme | TUERTO: «¡Miren esta pantallota que me encontré, gonorreas!» (Flow: «parceros») |
+| H2 | 6 | HUECO-ENTRADA | Gertrudis, Bartolo | Llegan con arepas buscando a Dizzy | GERTRUDIS: «¿Alguien ha visto a mi nieto? Le traje arepitas.» |
+| H3 | 4 | HUECO-DENTRO | — | La pantalla se prende en VERDE (Claude pone encima lo que transmite la cámara de Dizzy) | — |
+| H4 | 10 | HUECO-DENTRO | todos | Toma de grupo de cara en cara (silenciosa): reacciones | — |
+| H5 | 5 | HUECO-DENTRO | Gertrudis (Bartolo atrás) | — | GERTRUDIS: «¿Y mi nieto qué hace en México?» |
+| H6 | 4 | HUECO-DENTRO | Tuerto | — | TUERTO: «Ese pelado no aprende.» |
+| W2 | 8 | MX-ALCANTARILLA-AMANECER | Dizzy (Chuy y Tocino atrás) | Se ve también en la pantalla del Hueco | DIZZY: «Mis ratas… nos quedamos en México. Sígueme pa' no perderte el próximo episodio, mi llave.» |
+Se quitan U27–U32 y FIN (el regreso al zarzo queda para otro capítulo). Cierre de pantallas finales: El Hueco mirando la pantalla.
