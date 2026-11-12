@@ -185,7 +185,7 @@ i = ORDEN.index("H1"); ORDEN.insert(i, "A-HUECO")
 
 # ===== 12-nov (Jay): en vez de la pantalla, un PROYECTOR robado que proyecta a Dizzy sobre una VACA que se le escapa al Gallinazo =====
 VACA = "a realistic black-and-white Holstein cow with a big clean white middle side with no spots, small horns and a brass bell on a leather collar"
-GALL = "a black vulture meat seller with a white butcher apron and a red cap, from the reference image"
+GALL = "a black vulture with a bald wrinkled reddish head, a white fluffy neck ruff and a stained white butcher apron, from the reference image"
 CAR = "The meat stall of a rough hidden street market in a Colombian alley at the first light of dawn, hanging string lights, crates and fire barrels, as in the reference photo. "
 t("H0", 6, ["VACA", "VENDEDORES-HUECO", "HUECO-PUESTO-CARNE"], "720p", CAR +
   "Wide shot, the camera pans fast following the action: " + VACA + " escapes from the meat stall and runs through the market from right to left, knocking over crates and scattering vendors; behind her " + GALL + " chases her, flapping his wings, and shouts in Colombian Spanish with a very deep, croaky male voice: \"¡Vuelva acá, mi almuerzo!\" Only the vulture speaks. Crates crashing, a cow bell ringing, chickens squawking.")
@@ -205,3 +205,10 @@ ORDEN[i:i] = ["H0", "H1", "H2", "H3", "H3b", "H4"]
 for k, (d, f, r, p_) in list(U.items()):
     if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
         U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
+
+# 12-nov (Jay): el Gallinazo NO persigue; zoom rápido a su cara mientras la vaca se va. Más ángulos.
+t("H0", 6, ["VACA", "GALLINAZO-FRENTE", "HUECO-PUESTO-CARNE"], "720p", CAR +
+  "Medium shot of the meat stall, then a fast zoom-in: " + VACA + " bursts out from behind the stall and runs away to the left, knocking over a crate; the camera quickly zooms in to a close-up of " + GALL + ", who stays behind the counter, frozen, his beak open in shock, while out of focus behind him the cow runs away down the alley. He shouts in Colombian Spanish with a very deep, croaky male voice: \"¡Vuelva acá, mi almuerzo!\" Only the vulture speaks. A crate crashing, a cow bell ringing away.")
+t("H0b", 4, ["VACA", "HUECO-DENTRO"], "360p",
+  "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic soft dawn lighting, shallow depth of field. Low shot at ground level in a rough street market at dawn, as in the reference photo: the hooves of a black-and-white cow gallop fast past the camera from right to left, kicking up dust and bottle caps, a brass bell ringing; motion blur. No faces, no text. Galloping hooves and a cow bell.")
+i = ORDEN.index("H0"); ORDEN.insert(i + 1, "H0b")
