@@ -3,7 +3,7 @@ from cap02_flow_limpio import H, RAT, PIG, CAT, AXO, VOZ_RAT, VOZ_CAT, VOZ_AXO
 P = lambda s: s[0].upper() + s[1:]
 LUPE = "a small tan female chihuahua with huge pointed ears, big shiny dark eyes with long eyelashes, a pink bow on one ear, a fitted black mariachi suit with silver buttons, a red bow tie and a giant black and silver sombrero, holding a small violin and its bow"
 GER = "an old brown speckled hen with a flowered headscarf and a rosary, with real wings, holding one rubber slipper in her wing"
-VOZ_PIG = "in Spanish with a very heavy American gringo accent, loud and raspy, mixing in a few short English words"
+VOZ_PIG = "in Spanish with a heavy American accent and a loud, raspy male voice"  # sin «mixing English»: falló el audio en U09
 VOZ_LUPE = "in Mexican Spanish with a high-pitched, fast, sassy and bossy female voice"
 VOZ_GER = "in Colombian Spanish with a soft, shaky, sweet old grandmother voice"
 ESC = "A cozy hidden spot under a market stall at night, with a long colorful tablecloth, a woven rug, a clay jug and warm lantern light, as in the reference photo. "
