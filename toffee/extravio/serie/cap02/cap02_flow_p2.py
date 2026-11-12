@@ -63,7 +63,7 @@ t("U21", 5, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA.replace("at night", "at t
 t("U22", 6, ["DIZZY", "TOCINO", "CHUY", "MX-CANAL-PUENTE-AMANECER"], "720p", PUE +
   "Low front shot on the bridge, the camera moves backwards in front of them. Exactly three characters, only one of each: " + RAT + " runs in front in the center; right behind him " + PIG + ", with a broken small violin hanging around his neck; and last " + AXO + ", jogging slowly and out of breath. All three run in the same direction, straight toward the camera, across the wooden bridge, their whole bodies in the frame. No one speaks. Running footsteps on wood, birds and water.")
 t("U23", 6, ["CATRINA", "MX-CANAL-PUENTE-AMANECER"], "720p", PUE +
-  "Medium shot, the camera moves backwards in front of her: " + CAT + " walks fast and elegantly across the bridge from left to right, fanning herself, never running, and calls out sweetly " + VOZ_CAT + ': "¡Almitas, no se vayan sin despedirse!" Her mouth moves with the words. ' + SON_AMA)
+  "Medium side tracking shot, the camera moves along with her: " + CAT + " walks fast and elegantly across the bridge from left to right, her face turned toward the camera, fanning herself, never running, and calls out sweetly " + VOZ_CAT + ': "¡Almitas, no se vayan sin despedirse!" Her mouth moves with the words. ' + SON_AMA)
 t("U24", 6, ["DIZZY", "TOCINO", "CHUY", "MX-CALLE-AMANECER"], "360p", CAL +
   "Low side tracking camera moving fast, all three whole bodies in the frame, feet on the cobblestones: " + RAT + ", " + PIG + " and " + AXO + " run from left to right down the street, kicking up marigold petals. No one speaks. " + SON_AMA)
 t("U25", 6, ["DIZZY", "TOCINO", "CHUY", "MX-ALCANTARILLA-AMANECER"], "720p", ALC +
@@ -126,4 +126,4 @@ atras("U29", "Behind him, " + PIG + " hides under the blanket on the mattress an
 atras("U31", "Behind him, " + PIG + " lies on the mattress with a big bump on his head, snoring with his mouth closed.", ["TOCINO"])
 ORDEN = [k for k in ORDEN if k not in ("V1", "V2", "V3", "V4", "U14")]
 ORDEN.insert(ORDEN.index("V5"), "V0")
-atras("U23", "Far ahead of her in the background, out of focus, three small figures (a rat, a pig and an axolotl) run away across the end of the bridge.", [])
+atras("U23", "Far ahead of her on the right side of the frame, out of focus, three small figures (one rat, one pig and one axolotl) run away off the end of the bridge.", [])
