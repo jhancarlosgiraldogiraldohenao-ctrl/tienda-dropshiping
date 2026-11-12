@@ -212,3 +212,6 @@ t("H0", 6, ["VACA", "GALLINAZO-FRENTE", "HUECO-PUESTO-CARNE"], "720p", CAR +
 t("H0b", 4, ["VACA", "HUECO-DENTRO"], "360p",
   "Horizontal 16:9, 4 seconds. Stylized 3D animation, cinematic soft dawn lighting, shallow depth of field. Low shot at ground level in a rough street market at dawn, as in the reference photo: the hooves of a black-and-white cow gallop fast past the camera from right to left, kicking up dust and bottle caps, a brass bell ringing; motion blur. No faces, no text. Galloping hooves and a cow bell.")
 i = ORDEN.index("H0"); ORDEN.insert(i + 1, "H0b")
+for k, (d, f, r, p_) in list(U.items()):
+    if ("dawn" in p_ or "sunrise" in p_) and "cinematic night lighting" in p_:
+        U[k] = (d, f, r, p_.replace("cinematic night lighting", "cinematic soft dawn lighting", 1))
