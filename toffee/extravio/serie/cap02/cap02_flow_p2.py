@@ -223,3 +223,13 @@ hue = ["A-HUECO", "H0", "H0b", "H1", "H2", "H3", "H3b", "H3c"]
 ORDEN = [k for k in ORDEN if k not in mex + hue + ["H3c"]]
 i = ORDEN.index("U23") + 1
 ORDEN[i:i] = hue + mex   # después de la persecución: corte a El Hueco → proyección → México por la cámara de Dizzy → vuelta a las reacciones (H4, H5, H6) → W2
+
+# 13-nov-2026 · U26b versión SOMBRA: la Catrina completa se bloqueó 3 veces (limpia, larga y muda).
+# Solo su sombra, sin cara ni cuerpo, sin voz en Flow (la frase va con ElevenLabs encima). Solo la foto del lugar.
+t("U26b", 4, ["MX-ALCANTARILLA-AMANECER"], "720p", ALC +
+  "Low wide shot, static camera, no characters visible in the frame. The rising sun shines from the far end of the alley. "
+  "A long dark shadow slowly stretches across the cobblestones toward the camera: the shadow of a tall slim lady with a huge wide hat decorated with flowers, "
+  "a long flowing dress and a folding fan that opens and moves slowly. Only the shadow is seen, never the person. Marigold petals drift in the wind. "
+  "No one speaks. Church bells far away, a soft eerie wind.")
+_d, _f, _r, _x = U["U26b"]
+U["U26b"] = (_d, _f, _r, _x.replace("cinematic night lighting", "cinematic soft dawn lighting").replace("a round iron manhole cover glowing faint magical green", "a round iron manhole cover no longer glowing"))
