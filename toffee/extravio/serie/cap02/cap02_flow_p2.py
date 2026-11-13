@@ -412,3 +412,7 @@ L("U26", 6, ["CHUY", "TOCINO", "MX-ALCANTARILLA-AMANECER"],
   "A narrow Mexican colonial alley at blue dawn, a round iron manhole cover no longer glowing, marigold petals and burnt-out candles on the cobblestones, pink sky, as in the reference photo. "
   "Close-up, static camera: " + AXO + ", on the right side of the frame. 0 to 1 second: he scratches his head. 1 to 5 seconds: he talks very slowly with lazy mouth movements, smiling. "
   "Behind him, " + PIG + " faints dramatically and falls on his side onto the cobblestones, mouth closed, and stays lying there.", dawn=True)
+# L5 v2 (13-nov): tras L4, aclarar que nadie cambia de barco (en L4 apareció un 2.º Tocino en el barco de Lupe).
+_d, _f, _r, _x = U["L5"]
+U["L5"] = R["L5"] = (_d, _f, _r, _x.replace(" Silent video, no voices, no music.",
+    " The pig, the rat and the axolotl stay on THEIR red boat the whole time and the chihuahua stays alone on her stage; nobody changes boats. Silent video, no voices, no music."))
