@@ -15,7 +15,7 @@ E = [
  dict(t='A-BARRIO', src=TK1, a=0.0, b=4.0, titulo='EXTRAVÍO · VLOG 02 · PARTE 2'),
  dict(t='T35', src=TK1, a=0.8, b=4.0),                          # clip de la parte 1: «Ya estamos muertos… literal» (cada parte se entiende sola)
  dict(t='U02', a=0.6, b=4.8), dict(t='U03', a=1.5, b=5.4), dict(t='U03b', a=0.5, b=3.6), dict(t='U04', a=0.0, b=4.0),
- dict(t='U05', a=0.6, b=2.4), dict(t='U05b', a=0.0, b=4.0),     # corre al muelle (sin el salto) → se suben
+ dict(t='U05b', a=0.0, b=4.0),                                 # se suben (U05 quitada por Jay, 13-nov: el salto se veía mal)
  dict(t='A-CANALES', a=0.0, b=3.5),
  # LA TRAJINERA EN TOMAS LARGAS (misma barca, mismas posiciones)
  dict(t='L1', a=0.0, b=10.0), dict(t='L2', a=0.0, b=10.0), dict(t='L3', a=0.0, b=10.0),
