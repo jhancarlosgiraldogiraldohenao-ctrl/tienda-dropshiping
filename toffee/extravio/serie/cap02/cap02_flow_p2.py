@@ -416,3 +416,10 @@ L("U26", 6, ["CHUY", "TOCINO", "MX-ALCANTARILLA-AMANECER"],
 _d, _f, _r, _x = U["L5"]
 U["L5"] = R["L5"] = (_d, _f, _r, _x.replace(" Silent video, no voices, no music.",
     " The pig, the rat and the axolotl stay on THEIR red boat the whole time and the chihuahua stays alone on her stage; nobody changes boats. Silent video, no voices, no music."))
+# L9 en 6 s (13-nov): a Jay solo le quedan créditos para 6 s. Se prioriza la persecución en el puente (el error más visible).
+L("L9", 6, ["DIZZY", "TOCINO", "CHUY", "CATRINA", "MX-CANAL-PUENTE-AMANECER"], PUE +
+  "Exactly four characters, only one of each: " + RAT + "; " + PIG + "; " + AXO + "; and " + CAT + ". "
+  "One continuous 6-second shot ON the wooden bridge, the camera moves backwards in front of them. "
+  "0 to 6 seconds: the rat, the pig on his four legs and the axolotl run straight toward the camera across the bridge, whole bodies in the frame, out of breath. "
+  "From second 2, far behind them at the other end of the SAME bridge, the skeleton cat lady appears and walks fast and elegantly after them, fanning herself, getting closer. "
+  "The bridge stays the same the whole time.", dawn=True)
