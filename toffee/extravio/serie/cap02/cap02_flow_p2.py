@@ -313,3 +313,10 @@ r("U23", 6, ["CATRINA", "MX-CANAL-PUENTE-AMANECER"], "720p", PUE +
   "Medium-wide shot, static camera low on a wooden walkway with wooden railings that passes under a big wooden arched bridge. "
   "Under the arch, far away, " + CAT + " appears and walks fast and elegantly straight toward the camera along the same walkway, her whole body in the frame, fanning herself, never running, "
   "and calls out sweetly " + VOZ_CAT + ': "¡Almitas, no se vayan sin despedirse!" Her mouth moves with the words. Church bells far away, birds waking up and soft wind.', dawn=True)
+# U05b v2 (13-nov): la v1 salió con DOS ratas, el marrano «volando» y Dizzy y Tocino se quedaron en el muelle.
+# Más simple: Chuy YA está en la trajinera con la vara; solo saltan dos, de lado, y U06 sigue con Chuy empujando.
+r("U05b", 4, ["DIZZY", "TOCINO", "CHUY", "MX-MERCADO-MUELLE"], "720p", MUE +
+  "Medium side shot, static camera, the flower-covered boat in the foreground across the frame, the small wooden dock on the left. Exactly three characters, only one of each. "
+  + P(AXO) + " already stands at the back of the boat on the right, holding a long wooden pole. "
+  "From the dock on the left, " + RAT + " jumps into the boat and lands sitting on the bench; right behind him " + PIG + " jumps in on his four legs and lands next to the rat. "
+  "Both end inside the boat; nobody stays on the dock. The boat rocks and water splashes. No one speaks. " + SON_CAN)
