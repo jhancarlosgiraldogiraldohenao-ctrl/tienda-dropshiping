@@ -233,3 +233,15 @@ t("U26b", 4, ["MX-ALCANTARILLA-AMANECER"], "720p", ALC +
   "No one speaks. Church bells far away, a soft eerie wind.")
 _d, _f, _r, _x = U["U26b"]
 U["U26b"] = (_d, _f, _r, _x.replace("cinematic night lighting", "cinematic soft dawn lighting").replace("a round iron manhole cover glowing faint magical green", "a round iron manhole cover no longer glowing"))
+
+# 13-nov-2026 · W2 v2: Tocino salió de pie (venía desmayado de U26). Estado explícito y posición fija.
+t("W2", 8, ["DIZZY", "TOCINO", "CHUY", "MX-ALCANTARILLA-AMANECER"], "720p", ALC.replace("a round iron manhole cover glowing faint magical green", "a round iron manhole cover no longer glowing") +
+  "Medium close-up, static camera, exactly three characters, only one of each. In the center: " + RAT + ", his whole head, cap and camera in the frame, both eyes looking straight into the lens, never cross-eyed, with a crooked brave smile. "
+  "He says to the camera in Colombian Spanish with a raspy, hoarse young male street voice: \"Mis ratas… nos quedamos en México. Sígueme pa' no perderte el próximo episodio, mi llave.\" His mouth moves with the words; only he speaks. "
+  "Behind him on the left: " + AXO + ", standing, waving lazily at the camera with his mouth closed. "
+  "Behind him on the right, on the ground: " + PIG + ", lying flat on his side on the cobblestones, fainted, with his eyes closed and his tongue out; he never stands up and never moves. "
+  "Church bells far away, birds waking up and soft wind.")
+_d, _f, _r, _x = U["W2"]
+U["W2"] = (_d, _f, _r, _x.replace("cinematic night lighting", "cinematic soft dawn lighting"))
+_d, _f, _r, _x = U["W2"]
+U["W2"] = (_d, _f, _r, _x.replace("on his back, always on all four legs, lying flat", "on his back, lying flat"))
