@@ -245,3 +245,11 @@ _d, _f, _r, _x = U["W2"]
 U["W2"] = (_d, _f, _r, _x.replace("cinematic night lighting", "cinematic soft dawn lighting"))
 _d, _f, _r, _x = U["W2"]
 U["W2"] = (_d, _f, _r, _x.replace("on his back, always on all four legs, lying flat", "on his back, lying flat"))
+
+# 13-nov-2026 · W2 v3 MUDA: la v2 dio «No se pudo generar el audio». Modo vídeos silenciosos, sin frase entre comillas;
+# Dizzy habla con ventana de tiempo y la voz de ElevenLabs se pega en la edición.
+_x = U["W2"][3]
+_x = _x.replace('He says to the camera in Colombian Spanish with a raspy, hoarse young male street voice: "Mis ratas… nos quedamos en México. Sígueme pa\' no perderte el próximo episodio, mi llave." His mouth moves with the words; only he speaks. ',
+                "From second 0.5 to second 7 he talks to the camera with lively, clear mouth movements and small head nods, then he stops talking and smiles; only he moves his mouth. ")
+_x = _x.replace(" Church bells far away, birds waking up and soft wind.", " Silent video, no voices.")
+U["W2"] = (8, U["W2"][1], "720p", _x)
