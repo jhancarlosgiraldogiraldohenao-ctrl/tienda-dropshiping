@@ -253,3 +253,63 @@ _x = _x.replace('He says to the camera in Colombian Spanish with a raspy, hoarse
                 "From second 0.5 to second 7 he talks to the camera with lively, clear mouth movements and small head nods, then he stops talking and smiles; only he moves his mouth. ")
 _x = _x.replace(" Church bells far away, birds waking up and soft wind.", " Silent video, no voices.")
 U["W2"] = (8, U["W2"][1], "720p", _x)
+
+# ======================================================================================================
+# 13-nov-2026 · ARREGLOS DE CONTINUIDAD tras el armado (Jay: «que parezca una película; la continuidad es lo más importante»)
+# ======================================================================================================
+AMA = lambda s: s.replace("cinematic night lighting", "cinematic soft dawn lighting")
+R = {}
+def r(i, d, fotos, res, txt, dawn=False):
+    full = H.format(d=d) + txt
+    R[i] = U[i] = (d, fotos, res, AMA(full) if dawn else full)
+
+# 1. Chuy jala la cuerda (inserto de la mano) — antes no se entendía quién tiraba el toldo
+r("U03b", 4, ["MX-MERCADO-ESCONDITE"], "720p", ESC +
+  "Close-up insert, static camera, no faces: from the left side of the frame, one chubby pink four-fingered hand grabs a thick rope that hangs from the roof "
+  "and pulls it down hard and fast; the rope runs up out of the frame. Dust falls from above. No one speaks. A loud rope creak. " + SON_ESC)
+# 2. El toldo le cae a la Catrina — plano más cerrado para que se entienda
+r("U04", 4, ["CATRINA", "MX-MERCADO-ESCONDITE"], "720p", ESC +
+  "Medium shot, static camera: " + CAT + ", on the right side of the frame, bends down toward the camera with a sly smile, her whole body in the frame. "
+  "Suddenly a huge heavy colorful striped fabric awning drops from the top of the frame straight onto her and covers her completely from head to toe, "
+  "so her face and body disappear; she turns into a big wiggling lump of cloth that waves its arms under the fabric. No one speaks. A heavy cloth thump. " + SON_ESC)
+# 3. Se suben a la trajinera — antes aparecían a bordo de un momento a otro
+r("U05b", 6, ["DIZZY", "TOCINO", "CHUY", "MX-MERCADO-MUELLE"], "720p", MUE +
+  "Medium-wide shot, static camera from the water, the colorful flower-covered boat tied to the small wooden dock in the foreground. Exactly three characters, only one of each: "
+  "first " + RAT + " jumps from the dock into the boat; then " + PIG + " jumps in on his four legs; last " + AXO + " steps in calmly, "
+  "picks up a long wooden pole and pushes the boat away from the dock. The boat starts to glide away. No one speaks. " + SON_CAN)
+# 4. Más conversación antes de que Chuy cambie de tema
+r("U10a", 4, ["DIZZY", "MX-TRAJINERA-CHUY-CONTRA"], "720p", TRA +
+  "Medium close-up, static camera: " + RAT + ", sitting on the boat bench on the left side of the frame, his whole head, cap and camera in the frame, both eyes looking the same way, worried. "
+  "He leans toward someone on the right and asks " + VOZ_RAT + ': "Chuy… ¿y cuánto falta pa\' que salga el sol?" His mouth moves with the words. ' + SON_CAN)
+r("U10b", 6, ["CHUY", "MX-TRAJINERA-CHUY"], "720p", TRA +
+  "Medium close-up, static camera: " + AXO + ", standing at the back of the boat on the right side of the frame, holding the long pole with one hand. "
+  "Very slowly he looks up at the night sky, counts on the fingers of his free hand with his lips moving silently, then freezes with a totally blank face, "
+  "eyes crossed for a second, the cigarette still in his mouth. No one speaks. " + SON_CAN)
+# 5. La trajinera de los mariachis llega al lado (antes Lupe aparecía en otro barco y luego atrás de ellos)
+r("U12b", 6, ["DIZZY", "TOCINO", "CHUY", "LUPE", "MX-CANAL-TRAJINERAS"], "720p",
+  "Calm dark canal at night with floating marigolds, lanterns and string lights, as in the reference photo. Wide shot from the water, static camera, exactly four characters, only one of each. "
+  "Two flower-covered canal boats glide slowly side by side, very close, with a narrow gap of dark water between them. "
+  "On the boat on the right: " + RAT + " sits on the bench, " + PIG + " stands next to him on his four legs, and " + AXO + " stands at the back pushing with a long pole. "
+  "On the boat on the left, standing on its small wooden stage: " + LUPE + ", who plays a sweet melody on her violin. "
+  "The pig slowly turns his head and stares at her. No one speaks. Sweet violin music and water lapping.")
+# 6. Tocino salta de una trajinera a la otra, claro y de lado
+r("U15", 4, ["TOCINO", "DIZZY", "CHUY", "MX-TRAJINERA-MARIACHI"], "720p", MAR +
+  "Wide side shot, static camera from the water: two flower-covered boats side by side with a narrow gap of dark water between them, the mariachi boat with its small stage on the left. "
+  "Exactly three characters, only one of each. On the edge of the boat on the right, " + PIG + " takes a short run and leaps across the gap, flies over the water "
+  "and lands on his four hooves on the small stage of the boat on the left, wobbling. On the boat on the right, " + RAT + " covers his eyes and " + AXO + " watches calmly. "
+  "No one speaks. A splash of water and wood creaks.")
+# 7. El violinazo: el violín se rompe en pedazos (ya no queda colgado del cuello)
+r("U18", 4, ["LUPE", "TOCINO", "MX-TRAJINERA-MARIACHI"], "720p", MAR +
+  "Medium two-shot, static camera, both whole bodies on the small stage: on the left " + LUPE + "; on the right " + PIG + ". "
+  "She swings her small violin and smashes it on top of the pig's head; the violin shatters into small wooden pieces and strings that fall to the floor, nothing stays on him. "
+  "He blinks, dizzy, his eyes spinning, and wobbles on his four legs. No one speaks. A wooden crack and water lapping.")
+# 8. Se bajan de la trajinera al pie del puente (antes estaban en la barca y de pronto corriendo en el puente)
+r("U21b", 6, ["DIZZY", "TOCINO", "CHUY", "MX-CANAL-PUENTE-AMANECER"], "720p", PUE +
+  "Medium-wide shot, static camera from the stone steps at the foot of the wooden arched bridge. Exactly three characters, only one of each. "
+  "Their flower-covered boat bumps into the steps; " + RAT + " jumps off first and runs up the steps toward the camera, " + PIG + " jumps off on his four legs right behind him, "
+  "and " + AXO + " drops his pole and follows them, jogging slowly and out of breath. No one speaks. Wood bump, running steps and birds waking up.", dawn=True)
+# 9. La Catrina los persigue en el MISMO puente (antes salía en otro muelle)
+r("U23", 6, ["CATRINA", "MX-CANAL-PUENTE-AMANECER"], "720p", PUE +
+  "Medium-wide shot, static camera low on a wooden walkway with wooden railings that passes under a big wooden arched bridge. "
+  "Under the arch, far away, " + CAT + " appears and walks fast and elegantly straight toward the camera along the same walkway, her whole body in the frame, fanning herself, never running, "
+  "and calls out sweetly " + VOZ_CAT + ': "¡Almitas, no se vayan sin despedirse!" Her mouth moves with the words. Church bells far away, birds waking up and soft wind.', dawn=True)

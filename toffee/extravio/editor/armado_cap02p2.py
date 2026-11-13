@@ -22,7 +22,7 @@ E = [
  dict(t='U19', a=0.9, b=3.8), dict(t='U20', a=0.0, b=3.0), dict(t='U21', a=1.2, b=3.9),
  dict(t='U22', a=0.0, b=5.0), dict(t='U23', a=1.0, b=5.4),
  # corte a Colombia: El Hueco
- dict(t='A-HUECO', a=0.0, b=5.0), dict(t='H0', a=0.5, b=5.5), dict(t='H0b', a=0.0, b=3.0),
+ dict(t='A-HUECO', a=0.0, b=5.0), dict(t='H0', a=2.6, b=6.0), dict(t='H0b', a=0.0, b=3.0),
  dict(t='H1', a=1.2, b=5.0), dict(t='H2', a=1.2, b=5.8), dict(t='H3', a=0.0, b=4.0),
  dict(t='H3b', a=0.0, b=6.0, proy=('U24', 0.0, 1.0)),
  dict(t='H3c', a=0.0, b=4.0, proy=('A-MX-AMANECER', 0.0, 0.75)),
@@ -93,9 +93,14 @@ def segmento(i, e):
         vin = ['-ss', str(e['a']), '-t', str(d), '-i', src]; vss = []
     vf = f'scale={W}:{H}:flags=lanczos,fps={FPS},setsar=1'
     if e.get('rec'): vf += ',' + REC
-    if e.get('titulo'):
-        vf += (f",drawtext=fontfile={FONT}:text='{e['titulo']}':fontsize=46:fontcolor=white:x=(w-tw)/2:y=300:"
-               f"shadowcolor=black@0.6:shadowx=0:shadowy=3:alpha='if(lt(t,0.4),t/0.4,if(gt(t,{d}-0.5),({d}-t)/0.5,1))'")
+    if e.get('titulo'):  # letra de Gnomo: Montserrat negrita, blanca, borde fino oscuro, pequeña, igual que la parte 1
+        ass = os.path.join(TMP, f't{i:02d}.ass')
+        open(ass, 'w').write('[Script Info]\nScriptType: v4.00+\nPlayResX: 1920\nPlayResY: 1080\n\n[V4+ Styles]\n'
+            'Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding\n'
+            'Style: Tit,Montserrat,50,&H00FFFFFF,&H00FFFFFF,&H00000000,&H80000000,-1,0,0,0,100,100,6,0,1,4,2,5,60,60,0,1\n\n'
+            '[Events]\nFormat: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text\n'
+            f'Dialogue: 1,0:00:00.30,0:00:{d - 0.2:05.2f},Tit,,0,0,0,,{{\\pos(960,300)\\fad(250,350)}}' + e['titulo'] + '\n')
+        vf += f",subtitles={ass}:fontsdir={os.path.dirname(FONT)}"
     if e.get('fin'): vf += f',fade=t=out:st={d - 1.0}:d=1.0'
     vf += ',format=yuv420p'
     # audio guía de Flow (de la toma original, mismo tramo)
