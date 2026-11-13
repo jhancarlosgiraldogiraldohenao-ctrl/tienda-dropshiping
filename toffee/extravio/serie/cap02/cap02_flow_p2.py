@@ -329,3 +329,12 @@ r("U12b", 6, ["DIZZY", "TOCINO", "CHUY", "LUPE", "MX-TRAJINERA-CHUY", "MX-TRAJIN
   "On the left, gliding side by side very close to it, with a narrow gap of dark water between them: the mariachi boat with the small wooden stage and the arch covered with flowers "
   "from the second boat reference photo; on its stage " + LUPE + " plays a sweet melody on her violin. "
   "At second 2 the pig slowly turns his whole head to the left toward her, his sunglasses slide down and he stares at her in love. No one speaks. Sweet violin music and water lapping.")
+# U12b v3 (13-nov): v2 acertó las barcas pero TOCINO NO SALIÓ (en su lugar, una rata café). Con 6 fotos Flow suelta un personaje.
+# Máximo 5 fotos: la barca de los mariachis va solo descrita. Tocino en el borde más cercano a Lupe, bien visible y primero en la lista.
+r("U12b", 6, ["TOCINO", "DIZZY", "CHUY", "LUPE", "MX-TRAJINERA-CHUY"], "720p",
+  "Calm dark canal at night with floating marigolds, lanterns and string lights. Wide shot from the water, static camera, exactly four characters, only one of each, and exactly two boats. "
+  "On the right: THEIR boat, exactly the red wooden boat with the green painted arch, paper lanterns and a hammock from the boat reference photo. On it, from left to right: "
+  + PIG + ", pink skin, clearly visible on the left edge of their boat, standing on his four legs; then " + RAT + ", gray fur, sitting on the bench; then " + AXO + ", at the back pushing with a long pole. "
+  "On the left, gliding side by side very close to them, with a narrow gap of dark water between them: a mariachi boat with a small wooden stage and a tall orange arch covered with marigolds; on its stage "
+  + LUPE + " plays a sweet melody on her violin. "
+  "At second 2 the pink pig slowly turns his whole head to the left toward her, his sunglasses slide down and he stares at her in love. No one speaks. Sweet violin music and water lapping.")
