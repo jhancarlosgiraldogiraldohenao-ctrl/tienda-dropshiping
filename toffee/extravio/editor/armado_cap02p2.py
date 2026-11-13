@@ -11,18 +11,20 @@ W, H, FPS, XF = 1920, 1080, 30, 0.3
 
 # t = toma, a/b = corte. rec = visto por la cámara de Dizzy. proy = (toma proyectada en el recuadro verde, desde, velocidad)
 E = [
- dict(t='U18', a=0.0, b=3.0),                                   # GANCHO: el violinazo
+ dict(t='U18', a=0.0, b=2.3),                                   # GANCHO: el violinazo (corta antes de que el violín quede en el cuello)
  dict(t='A-BARRIO', src=TK1, a=0.0, b=4.0, titulo='EXTRAVÍO · VLOG 02 · PARTE 2'),
- dict(t='U02', a=0.4, b=5.0), dict(t='U03', a=1.5, b=5.4), dict(t='U04', a=0.0, b=4.0), dict(t='U05', a=0.6, b=4.5),
+ dict(t='U02', a=0.6, b=4.8), dict(t='U03', a=1.5, b=5.4), dict(t='U03b', a=0.5, b=3.6), dict(t='U04', a=0.0, b=4.0),
+ dict(t='U05', a=0.6, b=3.2), dict(t='U05b', a=0.0, b=4.0),
  dict(t='A-CANALES', a=0.0, b=3.5),
  dict(t='U06', a=0.2, b=4.0), dict(t='U07', a=1.2, b=4.6), dict(t='U08', a=0.4, b=8.0), dict(t='U09', a=0.0, b=4.0),
- dict(t='U11', a=1.4, b=4.9), dict(t='U12', a=0.0, b=3.5), dict(t='U13', a=0.0, b=3.0),
- dict(t='V0', a=0.5, b=9.5), dict(t='V5', a=0.4, b=2.9),
- dict(t='U15', a=0.0, b=4.0), dict(t='U16', a=0.5, b=6.6), dict(t='U17', a=0.4, b=4.0), dict(t='U18', a=0.0, b=4.0),
- dict(t='U19', a=0.9, b=3.8), dict(t='U20', a=0.0, b=3.0), dict(t='U21', a=1.2, b=3.9),
- dict(t='U22', a=0.0, b=5.0), dict(t='U23', a=1.0, b=5.4),
+ dict(t='U10a', a=0.0, b=4.0), dict(t='U10b', a=1.0, b=5.6),
+ dict(t='U11', a=1.4, b=4.9), dict(t='U12b', a=0.0, b=6.0), dict(t='U12', a=0.0, b=3.0), dict(t='U13', a=0.0, b=3.0),
+ dict(t='V0', a=1.5, b=9.0), dict(t='V5', a=0.4, b=2.9),
+ dict(t='U15', a=0.6, b=3.8), dict(t='U16', a=0.5, b=6.6), dict(t='U17', a=0.4, b=4.0), dict(t='U18', a=0.0, b=2.3),
+ dict(t='U19', a=0.9, b=3.8), dict(t='U21', a=1.2, b=3.9), dict(t='U20', a=0.0, b=3.5),   # «ya va a salir el sol» → campanas y cielo rosado → corren
+ dict(t='U22', a=1.0, b=5.5), dict(t='U23', a=1.0, b=5.4),
  # corte a Colombia: El Hueco
- dict(t='A-HUECO', a=0.0, b=5.0), dict(t='H0', a=2.6, b=6.0), dict(t='H0b', a=0.0, b=3.0),
+ dict(t='A-HUECO', a=0.0, b=4.2), dict(t='H0', a=2.6, b=6.0), dict(t='H0b', a=0.0, b=3.0),
  dict(t='H1', a=1.2, b=5.0), dict(t='H2', a=1.2, b=5.8), dict(t='H3', a=0.0, b=4.0),
  dict(t='H3b', a=0.0, b=6.0, proy=('U24', 0.0, 1.0)),
  dict(t='H3c', a=0.0, b=4.0, proy=('A-MX-AMANECER', 0.0, 0.75)),
@@ -30,7 +32,7 @@ E = [
  dict(t='A-MX-AMANECER', a=3.0, b=6.0, rec=1), dict(t='U24', a=0.0, b=5.0, rec=1), dict(t='U25', a=1.2, b=5.0, rec=1),
  dict(t='I-TAPA', a=0.0, b=4.0, rec=1), dict(t='U26-v2', a=0.8, b=4.0, rec=1), dict(t='U26b', a=0.0, b=4.0, rec=1),
  # vuelta a El Hueco
- dict(t='H4', a=0.0, b=8.0), dict(t='H5', a=0.0, b=3.0), dict(t='H6', a=0.8, b=4.0),
+ dict(t='H4', a=0.0, b=7.0), dict(t='H5', a=0.0, b=3.0), dict(t='H6', a=0.8, b=4.0),
  dict(t='H3b', a=3.0, b=6.0, proy=('W2-v3', 0.0, 1.0)),          # Dizzy aparece en la vaca…
  dict(t='W2-v3', a=3.0, b=8.0, rec=1, fin=1),                    # …y luego a pantalla completa
 ]
