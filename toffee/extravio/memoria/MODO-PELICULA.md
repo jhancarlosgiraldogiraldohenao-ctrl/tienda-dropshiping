@@ -40,3 +40,13 @@ que el escenario esté vivo y se vea desde distintos ángulos». Se cumple así,
 - Los personajes de la escena siguen en el mismo puesto en todas las tomas (en la trajinera: Tocino izq., Dizzy medio, Chuy der.) y alguno puede pasar caminando al fondo para dar vida.
 - **Lenguaje de cine en cada escena (Jay, 12-nov-2026):** aéreas de transición (ej. la ciudad al amanecer, el barrio en picada), enfoque/desenfoque (rack focus) de un objeto a un personaje, acercamientos rápidos a objetos y caras, cambios rápidos de toma. Insertos de 4 s en 360p para esto (baratos).
 - Tomas de 5 s → se piden de 4 s (Jay, 12-nov-2026).
+
+
+## Reglas del 13-nov-2026 (Jay, tras el armado de la parte 2 del cap. 2)
+- **Cada parte es un video solo:** arranca con el clip clave de la parte anterior (en la P2 del cap. 2: T35 «Ya estamos muertos… literal» justo antes de «Vamos, almitas…»).
+- **Sin límite de 3:00:** si la continuidad lo pide, la parte dura 4 o 5 min.
+- **Tomas largas de 8 y 10 s** con la cámara moviéndose (de cara en cara, acercándose, girando hacia lo que llega). Varios hablan en ventanas de tiempo en modo silencioso; voces de ElevenLabs en la edición. Jay tiene 10 cuentas ≈ 100 s al día: planear el capítulo en bloques de 10 s.
+- **Lo que llega se ve llegar:** un barco, un personaje o un peligro aparece primero lejos (silueta, sombra, sonido), se acerca y recién entonces está al lado. Nunca aparece «de un momento a otro».
+- **Mismo vehículo, misma foto, mismas posiciones** en todas las tomas de esa escena; si no, parece otro barco cada vez.
+- **Dirección de movimiento:** quien corre hacia la izquierda en una toma sigue hacia la izquierda en la siguiente (la vaca cambió de lado entre H0 y H0b). Si una toma sale al revés, se voltea en la edición.
+- **No cortar frases a la mitad:** si la toma de Flow corta la boca, se pide más larga.

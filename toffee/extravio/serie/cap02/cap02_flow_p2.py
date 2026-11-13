@@ -338,3 +338,77 @@ r("U12b", 6, ["TOCINO", "DIZZY", "CHUY", "LUPE", "MX-TRAJINERA-CHUY"], "720p",
   "On the left, gliding side by side very close to them, with a narrow gap of dark water between them: a mariachi boat with a small wooden stage and a tall orange arch covered with marigolds; on its stage "
   + LUPE + " plays a sweet melody on her violin. "
   "At second 2 the pink pig slowly turns his whole head to the left toward her, his sunglasses slide down and he stares at her in love. No one speaks. Sweet violin music and water lapping.")
+
+# ======================================================================================================
+# 13-nov-2026 (tarde) · CANALES EN TOMAS LARGAS DE 10 s (Jay: «la continuidad es lo más importante»; cada toma corta parecía otra barca)
+# Regla: misma trajinera SIEMPRE (foto MX-TRAJINERA-CHUY), mismas posiciones, cámara que se mueve dentro de la toma,
+# modo «vídeos silenciosos» con ventanas de tiempo para las bocas (varios hablan en la misma toma); voces de ElevenLabs en la edición.
+# ======================================================================================================
+BOTE = ("All the action happens on THEIR boat: exactly the red wooden canal boat with the green painted arch, paper lanterns and a hammock from the boat reference photo; "
+        "it is always this same boat. Positions never change: the pig stands on the left side of the boat on his four legs, the rat sits on the bench in the middle, "
+        "the axolotl stands at the back on the right holding the long wooden pole. ")
+CANAL = "A calm dark canal at night with floating marigolds, lanterns and string lights, other lit boats far away. "
+MUDO = " Silent video, no voices, no music."
+def L(i, d, fotos, txt, dawn=False):
+    full = H.format(d=d) + txt + MUDO
+    R[i] = U[i] = (d, fotos, "720p", AMA(full) if dawn else full)
+F3 = ["TOCINO", "DIZZY", "CHUY", "MX-TRAJINERA-CHUY"]
+TRES = "Exactly three characters, only one of each: " + PIG + "; " + RAT + "; " + AXO + ". "
+
+L("L1", 10, F3, CANAL + BOTE + TRES +
+  "One continuous 10-second shot, the camera floats slowly alongside the boat as it glides away from the dock. "
+  "0 to 3 seconds: the pig looks around amazed and talks with lively mouth movements. "
+  "3 to 6 seconds: the camera drifts closer to the rat, who turns to the axolotl and talks with lively mouth movements, both eyes looking the same way. "
+  "6 to 10 seconds: the camera pushes in to the axolotl, who answers very slowly with lazy mouth movements, the cigarette in his mouth. "
+  "Only the one who talks moves his mouth; the others keep their mouths closed.")
+L("L2", 10, F3, CANAL + BOTE + TRES +
+  "One continuous 10-second shot with a slow moving camera. "
+  "0 to 4 seconds: close on the axolotl, who keeps talking very slowly with lazy mouth movements and points up at the night sky. "
+  "4 to 7 seconds: the camera pans left to the pig, scared, ears flat, who talks fast with nervous mouth movements. "
+  "7 to 10 seconds: the camera pans to the rat, worried, who leans toward the axolotl and asks something with lively mouth movements, both eyes looking the same way. "
+  "Only the one who talks moves his mouth; the others keep their mouths closed.")
+L("L3", 10, F3, CANAL + BOTE + TRES +
+  "One continuous 10-second shot, medium shot of the axolotl with the rat in the foreground on the left, out of focus. "
+  "0 to 6 seconds: the axolotl looks up at the sky, counts slowly on the fingers of his free hand with silent lips, then freezes with a totally blank face. "
+  "6 to 8 seconds: he blinks, giggles lazily and talks with slow mouth movements. "
+  "8 to 10 seconds: the rat slaps his own forehead with his paw in frustration, mouth closed.")
+L("L4", 10, ["TOCINO", "DIZZY", "CHUY", "LUPE", "MX-TRAJINERA-CHUY"], CANAL + BOTE +
+  "Exactly four characters, only one of each: " + PIG + "; " + RAT + "; " + AXO + "; and " + LUPE + ". "
+  "One continuous 10-second cinematic shot. 0 to 2 seconds: on their boat, the axolotl lazily points ahead and talks with slow mouth movements. "
+  "2 to 6 seconds: the camera turns toward the canal ahead: in the thick mist, a dark silhouette of another boat with a tall arch and a small figure with a big sombrero appears, backlit by warm lanterns, and slowly comes closer. "
+  "6 to 10 seconds: it comes out of the mist and glides right next to their boat on the left side: a mariachi boat with a small wooden stage and a tall orange arch covered with marigolds, "
+  "where the chihuahua stands on the stage playing her violin with her eyes closed; on their boat, the pig turns his head toward her and his sunglasses slide down.")
+L("L5", 10, ["TOCINO", "DIZZY", "CHUY", "LUPE", "MX-TRAJINERA-CHUY"], CANAL + BOTE +
+  "Exactly four characters, only one of each: " + PIG + "; " + RAT + "; " + AXO + "; and " + LUPE + ", who plays the violin on the small stage of a mariachi boat with an orange arch of marigolds, gliding right next to their boat on the left, always visible in the background. "
+  "One continuous 10-second shot with a moving camera, like a TV series. "
+  "0 to 2 seconds: wide shot; the pig stares dreamily at the chihuahua and the rat nudges him with his elbow. "
+  "2 to 5 seconds: the camera pushes in to the rat's face (cap and camera fully in the frame, both eyes looking the same way); angry, he scolds the pig with lively mouth movements. "
+  "5 to 8 seconds: the camera pans left to the pig, who smiles in love and answers with lively mouth movements. "
+  "8 to 10 seconds: the camera pans right to the axolotl, who giggles lazily. Only the one who talks moves his mouth.")
+L("L6", 10, ["TOCINO", "LUPE", "DIZZY", "CHUY", "MX-TRAJINERA-MARIACHI"],
+  "A mariachi canal boat at night with a small wooden stage, string lights and a tall arch covered with marigolds, as in the reference photo, gliding side by side with a red boat with a green arch on the right. "
+  "Exactly four characters, only one of each: " + PIG + "; " + LUPE + "; and, on the red boat on the right in the background, " + RAT + " and " + AXO + ". "
+  "One continuous 10-second shot, the camera on the side. 0 to 3 seconds: the pig takes a short run on the edge of the red boat and leaps across the narrow gap of water, landing on his four hooves on the small stage next to the chihuahua, wobbling. "
+  "3 to 8 seconds: the camera pushes in; the pig stands in front of her on his four legs, sways his head and sings to her with big romantic mouth movements, eyes closed. "
+  "8 to 10 seconds: the chihuahua stops playing and stares at him, offended, mouth closed. In the background the rat covers his eyes.")
+L("L7", 10, ["LUPE", "TOCINO", "DIZZY", "CHUY", "MX-TRAJINERA-MARIACHI"],
+  "A mariachi canal boat at night with a small wooden stage, string lights and a tall arch covered with marigolds, as in the reference photo, gliding side by side with a red boat with a green arch on the right. "
+  "Exactly four characters, only one of each: " + LUPE + "; " + PIG + "; and, on the red boat on the right, " + RAT + " and " + AXO + ". "
+  "One continuous 10-second shot. 0 to 3 seconds: two-shot on the stage, the chihuahua yells at the pig with angry, fast mouth movements. "
+  "3 to 5 seconds: she swings her small violin and smashes it on top of his head; the violin shatters into small wooden pieces and strings that fall to the floor, nothing stays on him; he wobbles, dizzy, eyes spinning. "
+  "5 to 7 seconds: the pig jumps back across the gap onto the red boat. "
+  "7 to 10 seconds: the camera pans to the rat on the red boat, who looks into the lens, tired, and talks with lively mouth movements, both eyes looking the same way.")
+L("L8", 10, F3, "A calm canal at the blue hour just before sunrise, the sky turning pink and orange, soft mist on the water, a wooden arched bridge ahead with stone steps at its foot. " + BOTE + TRES +
+  "One continuous 10-second shot. 0 to 3 seconds: the axolotl looks up at the pink sky and talks with slow mouth movements. "
+  "3 to 6 seconds: the camera pans forward: the boat bumps into the stone steps at the foot of the bridge. "
+  "6 to 10 seconds: the rat jumps off first and runs up the steps, the pig follows on his four legs, and the axolotl drops the pole and follows them, out of breath. Nobody stays on the boat.", dawn=True)
+L("L9", 10, ["DIZZY", "TOCINO", "CHUY", "CATRINA", "MX-CANAL-PUENTE-AMANECER"], PUE +
+  "Exactly four characters, only one of each: " + RAT + "; " + PIG + "; " + AXO + "; and " + CAT + ". "
+  "One continuous 10-second shot ON the wooden bridge, the camera moves backwards in front of them. "
+  "0 to 6 seconds: the rat, the pig on his four legs and the axolotl run straight toward the camera across the bridge, whole bodies in the frame. "
+  "From second 4, far behind them at the other end of the SAME bridge, the skeleton cat lady appears and walks fast and elegantly after them, fanning herself. "
+  "6 to 10 seconds: the focus racks to her as she comes closer and calls out to them with sweet, theatrical mouth movements.", dawn=True)
+L("U26", 6, ["CHUY", "TOCINO", "MX-ALCANTARILLA-AMANECER"],
+  "A narrow Mexican colonial alley at blue dawn, a round iron manhole cover no longer glowing, marigold petals and burnt-out candles on the cobblestones, pink sky, as in the reference photo. "
+  "Close-up, static camera: " + AXO + ", on the right side of the frame. 0 to 1 second: he scratches his head. 1 to 5 seconds: he talks very slowly with lazy mouth movements, smiling. "
+  "Behind him, " + PIG + " faints dramatically and falls on his side onto the cobblestones, mouth closed, and stays lying there.", dawn=True)
