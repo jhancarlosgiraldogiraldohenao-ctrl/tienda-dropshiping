@@ -320,3 +320,12 @@ r("U05b", 4, ["DIZZY", "TOCINO", "CHUY", "MX-MERCADO-MUELLE"], "720p", MUE +
   + P(AXO) + " already stands at the back of the boat on the right, holding a long wooden pole. "
   "From the dock on the left, " + RAT + " jumps into the boat and lands sitting on the bench; right behind him " + PIG + " jumps in on his four legs and lands next to the rat. "
   "Both end inside the boat; nobody stays on the dock. The boat rocks and water splashes. No one speaks. " + SON_CAN)
+# U12b v2 (13-nov): la trajinera de ellos salió como un bote azul sin arco (no es la de Chuy) y Tocino no volteó.
+# Se suben las DOS fotos de barcas (la de Chuy y la de los mariachis) en vez de la del canal, y cada barca se describe.
+r("U12b", 6, ["DIZZY", "TOCINO", "CHUY", "LUPE", "MX-TRAJINERA-CHUY", "MX-TRAJINERA-MARIACHI"], "720p",
+  "Calm dark canal at night with floating marigolds, lanterns and string lights. Wide shot from the water, static camera, exactly four characters, only one of each, and exactly two boats. "
+  "On the right: THEIR boat, exactly the red wooden boat with the green painted arch, paper lanterns and a hammock from the first boat reference photo; on it "
+  + RAT + " sits on the bench, " + PIG + " stands next to him on his four legs, and " + AXO + " stands at the back pushing with a long pole. "
+  "On the left, gliding side by side very close to it, with a narrow gap of dark water between them: the mariachi boat with the small wooden stage and the arch covered with flowers "
+  "from the second boat reference photo; on its stage " + LUPE + " plays a sweet melody on her violin. "
+  "At second 2 the pig slowly turns his whole head to the left toward her, his sunglasses slide down and he stares at her in love. No one speaks. Sweet violin music and water lapping.")
