@@ -12,7 +12,10 @@
 4. **Claude mide la boca de cada toma** (tramos de volumen del audio de Flow) y recién ahí escribe los textos de ElevenLabs
    con la duración y las pausas de esa boca (ver `VOCES-Y-BOCAS.md`). Así la voz entra a la primera.
 5. Jay genera las voces (2–3 versiones de las difíciles). Claude escoge la que mejor calza.
-6. Edición → video a Jay → correcciones → versión final.
+6. **Armado sin voces (regla fija de Jay, 13-nov-2026):** con todas las tomas, Claude arma el video completo (orden, cortes,
+   fundidos, transiciones, visor REC, recuadros) con el audio guía de Flow y SIN voces, música ni sonidos. Lo manda a Jay.
+   **Solo con «aprobado»** se pasa a medir bocas (paso 4), voces, sonidos y música.
+7. Edición final → video a Jay → correcciones → versión final.
 
 > En la parte 1 se hizo al revés (voces antes que las tomas) y hubo que repetir V01 y V02: la boca de Flow tenía otro
 > ritmo. **Nunca más voces antes de tener la toma.**
