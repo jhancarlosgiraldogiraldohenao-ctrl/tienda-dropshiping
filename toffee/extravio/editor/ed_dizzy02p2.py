@@ -47,8 +47,9 @@ FLOW_LLENO = {('U17', 0.4), ('H3b', 0.0)}      # Lupe y el «Muuu» de la vaca: 
 # 14-nov (Jay: «se oyen las voces de Flow encima»): en toda toma con voz nuestra, en las tomas largas (Flow murmura aunque
 # Whisper no lo oiga) y en T35/W2 el audio de Flow va en CERO; el ambiente y la música lo ponen las capas propias.
 MUDA = lambda p: (p['t'], p['a']) not in FLOW_LLENO and (VOCES.get(p['i']) or p['t'].startswith('L') or p['t'] in ('T35', 'W2-v3'))
-FIX = {'U16': ['Mi amor…', '(eres mi', 'tamalito…)'], 'L1-tocino': ['Bro…', '¿esto es un', 'Uber de agua?'],
-       'L5-tocino': ['Bro, relax…', 'es amor a', 'primera vista.'], 'L2-tocino': ['¿Pa\' siempre?', 'Bro, yo amo México…', 'pero no tanto.']}
+FIX = {  # Tocino: lo que dice en inglés va TRADUCIDO en el subtítulo (regla de Jay)
+       'U16': ['Mi amor…', 'eres mi', 'tamalito…'], 'L1-tocino': ['Hermano…', '¿esto es un', 'Uber de agua?'],
+       'L5-tocino': ['Tranquilo, hermano…', 'es amor a', 'primera vista.'], 'L2-tocino': ['¿Pa\' siempre?', 'Hermano, yo amo México…', 'pero no tanto.']}
 ROJO = P.ROJO | {'gringo!', 'gringo', 'mariachis.', 'sol?', 'sol.', 'almuerzo!', 'gonorreas!', 'nieto?', 'méxico?', 'apagó!', 'valió,', 'tamalito…)',
                  'almitas…', 'almitas,', 'colombia?', 'siempre.', 'chanclas!', 'güevón', 'huevón'}
 

@@ -130,3 +130,12 @@ Copiados del manual (`MANUAL-PRODUCCION.md` §10–12) más los de la tercera y 
 | U12b v2 (13-nov-2026): con 6 fotos (4 personajes + 2 barcas) acertó las barcas pero NO salió Tocino: en su lugar, una rata café | Demasiadas fotos de referencia; Flow suelta uno de los personajes | **Máximo 5 fotos** por toma. Si sobran, el lugar o el objeto secundario va solo descrito. El personaje clave de la acción va primero en la lista de fotos y en el texto, con su color («pink skin») y posición exacta |
 | L4 (13-nov-2026): la llegada del barco de Lupe en la niebla salió muy bien hasta el s 4,7; después apareció un SEGUNDO Tocino en el barco de Lupe y el de su barca se volvió rata | Al acercar el segundo barco con personajes «parecidos», Flow reparte/duplica personajes entre los dos barcos | Se usa solo 0–4,7 s (la llegada en la niebla) y L5 arranca con el barco ya al lado. Con dos barcos en una toma: decir «the pig stays on THEIR boat the whole time; nobody changes boats» |
 | Final parte 2 cap. 2 (14-nov-2026): se oían voces de Flow debajo de las de ElevenLabs | Solo se tapaba el tramo de palabras que oye Whisper; Flow murmura cosas que Whisper no transcribe, y las tomas «silenciosas» de 10 s SÍ traían murmullos | En toda toma con voz nuestra (y en las tomas largas) el audio de Flow va en CERO completo; el ambiente y los efectos los ponen nuestras capas. Solo se deja Flow donde Jay lo pide (Lupe, el «Muuu») |
+
+## Resumen del capítulo 2, parte 2 (13 y 14-nov-2026) — ver CONTINUIDAD.md
+- ~20 generaciones de más por continuidad: tomas puente que faltaban (subirse, bajarse, Lupe llegando, la Catrina en el mismo
+  puente), barcas distintas en cada toma corta, la vaca cambiando de dirección.
+- Flow: dos ratas con 3 acciones en cadena (U05b), Tocino ausente con 6 fotos (U12b), Tocino duplicado al acercar otro barco (L4),
+  violín colgado del cuello (U18), «No se pudo generar el audio» (W2 v2), «actividad inusual» (cuenta/red, no el prompt).
+- Edición: voces de Flow que se colaban (Whisper no oye los murmullos), frases de Flow cortadas a la mitad (U26),
+  subtítulos de Tocino sin traducir.
+- Producción: Dizzy perdió las groserías (su sello). Jay se quemó: demasiadas tomas (50+) para 3 min.
