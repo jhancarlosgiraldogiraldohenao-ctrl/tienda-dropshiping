@@ -59,3 +59,5 @@ los de amenaza, los ambientes de fondo por lugar y la música.
 | subida-de-tension | Antes de una apuesta o un susto |
 | latido | Miedo, tensión cercana |
 | remate-final-de-episodio | Golpe final del cierre |
+- **E34-vaca-muu** (efectos): una vaca muge una vez, larga y confundida (cap. 2, 14-nov-2026).
+- **E35-proyector** (efectos): proyector viejo que se prende con un clic y queda zumbando (cap. 2, 14-nov-2026).

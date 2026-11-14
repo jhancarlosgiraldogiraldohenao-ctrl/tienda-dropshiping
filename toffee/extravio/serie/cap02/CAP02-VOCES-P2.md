@@ -42,3 +42,7 @@ Archivo: `voces-cap02/p2/<TOMA>.mp3` (en las tomas largas, `<TOMA>-<personaje>.m
 
 Lo demás se reusa: E27 canal, E14 olla (El Hueco), E25 calles de México, E30 violín roto, E32 campanas, E29 huesos de la
 Catrina, E24 cámara se prende; música M15 (Chuy), M12 mariachi, M14 bolero, M13 cumbia, M16 vals Catrina, M4/M5 El Hueco, M11 tema.
+
+## Decisión de Jay (14-nov-2026)
+- **U17 (Lupe):** se deja la voz que generó Google Flow (no ElevenLabs).
+- **H3b (vaca):** se deja el «Muuu» de Flow. E34-vaca-muu queda en la biblioteca para otra ocasión.
