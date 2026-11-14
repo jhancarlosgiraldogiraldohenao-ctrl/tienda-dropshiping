@@ -31,11 +31,11 @@ VOCES = dict([
     V('T35', ('sync', 'T35', 'p1')),
     V('U02', ('sync', 'U02')), V('U03', ('sync', 'U03')),
     V('U05b', ('at', 'U05b', 0.3)),
-    V('L1', ('at', 'L1-tocino', 0.3), ('at', 'L1-dizzy', 3.3), ('at', 'L1-chuy', 6.6)),
-    V('L2', ('at', 'L2-chuy', 0.2), ('at', 'L2-tocino', 4.6), ('at', 'L2-dizzy', 8.5)),
-    V('L3', ('at', 'L3-chuy', 5.6), ('at', 'L3-dizzy', 8.0)),
-    V('L4', ('at', 'L4-chuy', 0.6)),
-    V('L5', ('at', 'L5-dizzy', 2.0), ('at', 'L5-tocino', 4.6), ('at', 'L5-chuy', 8.4)),
+    V('L1', ('at', 'L1-tocino', 0.3), ('at', 'L1-dizzy', 3.3), ('at', 'L1-chuy', 7.2)),
+    V('L2', ('at', 'L2-chuy', 0.1), ('at', 'L2-tocino', 4.45), ('at', 'L2-dizzy', 8.3)),
+    V('L3', ('at', 'L3-chuy', 6.2), ('at', 'L3-dizzy', 8.6)),
+    V('L4', ('at', 'L4-chuy', 1.0)),
+    V('L5', ('at', 'L5-dizzy', 1.9), ('at', 'L5-tocino', 5.0), ('at', 'L5-chuy', 8.75)),
     V('U16', ('sync', 'U16')), V('U19', ('sync', 'U19')), V('U21', ('sync', 'U21')),
     V('L9', ('at', 'L9', 2.3)),
     V('H0', ('sync', 'H0')), V('H1', ('sync', 'H1')), V('H2', ('sync', 'H2')),
@@ -43,7 +43,10 @@ VOCES = dict([
     V('H5', ('sync', 'H5')), V('H6', ('sync', 'H6')),
     V('H3b', ('at', 'W2', 0.5), a=3.0),        # Dizzy habla desde la vaca y sigue a pantalla completa
 ])
-FLOW_LLENO = {'U17', 'H3b'}                    # Lupe y el «Muuu» de la vaca: audio de Flow (Jay, 14-nov)
+FLOW_LLENO = {('U17', 0.4), ('H3b', 0.0)}      # Lupe y el «Muuu» de la vaca: audio de Flow (Jay, 14-nov)
+# 14-nov (Jay: «se oyen las voces de Flow encima»): en toda toma con voz nuestra, en las tomas largas (Flow murmura aunque
+# Whisper no lo oiga) y en T35/W2 el audio de Flow va en CERO; el ambiente y la música lo ponen las capas propias.
+MUDA = lambda p: (p['t'], p['a']) not in FLOW_LLENO and (VOCES.get(p['i']) or p['t'].startswith('L') or p['t'] in ('T35', 'W2-v3'))
 FIX = {'U16': ['Mi amor…', '(eres mi', 'tamalito…)'], 'L1-tocino': ['Bro…', '¿esto es un', 'Uber de agua?'],
        'L5-tocino': ['Bro, relax…', 'es amor a', 'primera vista.'], 'L2-tocino': ['¿Pa\' siempre?', 'Bro, yo amo México…', 'pero no tanto.']}
 ROJO = P.ROJO | {'gringo!', 'gringo', 'mariachis.', 'sol?', 'sol.', 'almuerzo!', 'gonorreas!', 'nieto?', 'méxico?', 'apagó!', 'valió,', 'tamalito…)',
@@ -107,7 +110,7 @@ def main():
         src = os.path.join(p.get('src', A.TK), p['t'] + '.mp4')
         x = load(src)[int(p['a'] * SR): int(p['b'] * SR)]
         items = VOCES.get(p['i'], [])
-        env = np.ones(len(x)) * (1.0 if p['t'] in FLOW_LLENO else 0.6)
+        env = np.ones(len(x)) * (1.0 if (p['t'], p['a']) in FLOW_LLENO else (0.0 if MUDA(p) else 0.6))
         if p.get('proy'): env *= 0.5
         base = p['t0']
         for it in items:
