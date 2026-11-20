@@ -19,6 +19,15 @@
 - assets/zc.css, assets/zc.js. Secciones: zc-cinta, zc-producto (ofertas + casilla de compromiso obligatoria + compra directa a /checkout + barra fija móvil), zc-problema, zc-beneficios, zc-comparativa, zc-pasos, zc-faq, zc-cierre.
 - index.json = página de venta (zc-producto con producto body-zero-sweat). product.zc.json igual.
 
+## Hecho (20-nov)
+- Producto PUBLICADO en Tienda online. 9 fotos en galería (Nano Banana del usuario); variantes con su foto: 1 frasco→bz-1-frasco, 2→bz-2-frascos, 3→bz-3-frascos.
+- Files: zc-camiseta-mancha.jpg (sección problema), zc-antes-despues.jpg y zc-flotando.jpg (para anuncios).
+- Barra de anuncios en inglés eliminada del header. Arreglado desborde horizontal en celular (grid min-width:0).
+- Compra probada: casilla + botón → /cart/add → /checkout OK.
+- Políticas creadas: envíos, devoluciones (Ley 1480), términos, contacto. Privacidad la gestiona Shopify automáticamente.
+- Plan Basic 1 USD/mes hasta 22-feb-2027. Contraseña de tienda quitada.
+
 ## Pendiente
-- Contraseña de la tienda (para revisar) y fotos del producto.
-- Header/footer con logo, páginas legales, favicon, pago contra entrega (método manual), integración Dropi, píxel Meta, publicar.
+- Usuario: renombrar tienda a "Zero Club" (Configuración → General); activar pago contra entrega (Configuración → Pagos → métodos manuales); tarifa de envío gratis Colombia; conectar Dropi; aprobar y publicar el tema.
+- Anuncio antes/después con el frasco real encima de zc-antes-despues.jpg.
+- Píxel de Meta, página de Facebook conectada.

@@ -4,6 +4,7 @@
   --zc-ink:#16211e;--zc-muted:#5c6b66;--zc-line:#dbe9e3;--zc-white:#fff;--zc-warn:#e8743b;
   --zc-r:16px;--zc-head:'Archivo Black',Impact,sans-serif;--zc-body:'Inter',system-ui,sans-serif;
 }
+html,body{overflow-x:clip}
 .zc{font-family:var(--zc-body);color:var(--zc-ink);line-height:1.5;-webkit-font-smoothing:antialiased}
 .zc *{box-sizing:border-box}
 .zc img{max-width:100%;display:block}
@@ -33,6 +34,7 @@
 /* Producto */
 .zc-prod{padding:28px 0 40px;background:linear-gradient(180deg,var(--zc-mint-3) 0%,#fff 70%)}
 .zc-prod__grid{display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:start}
+.zc-prod__grid>*{min-width:0}
 .zc-gal{position:sticky;top:90px}
 .zc-gal__main{position:relative;background:#fff;border-radius:22px;overflow:hidden;aspect-ratio:1/1;box-shadow:0 20px 50px rgba(15,61,51,.12)}
 .zc-gal__main img{width:100%;height:100%;object-fit:contain;transition:opacity .25s}

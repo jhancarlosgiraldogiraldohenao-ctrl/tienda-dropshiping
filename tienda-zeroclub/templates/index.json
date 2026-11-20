@@ -110,7 +110,10 @@
     "b1",
     "b2",
     "b3"
-   ]
+   ],
+   "settings": {
+    "imagen": "shopify://shop_images/zc-camiseta-mancha.jpg"
+   }
   },
   "beneficios": {
    "type": "zc-beneficios",

@@ -55,7 +55,6 @@
 
     function syncBtn() {
       if (!commit || !btn) return;
-      btn.setAttribute('aria-disabled', commit.checked ? 'false' : 'true');
       btn.classList.toggle('zc-pulse', commit.checked);
     }
     if (commit) {
