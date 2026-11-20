@@ -1,0 +1,17 @@
+{%- assign items = section.blocks -%}
+<div class="zc zc-cinta" aria-label="Avisos">
+  <div class="zc-cinta__track">
+    {%- for r in (1..2) -%}
+      <span>{%- for b in items -%}<span {{ b.shopify_attributes }}>{{ b.settings.texto }}</span>{%- endfor -%}</span>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+{ "name": "ZC · Cinta de avisos", "tag": "section",
+  "blocks": [ { "type": "aviso", "name": "Aviso", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "🚚 Envío gratis a toda Colombia" } ] } ],
+  "presets": [ { "name": "ZC · Cinta de avisos", "blocks": [
+    { "type": "aviso", "settings": { "texto": "🚚 Envío gratis a toda Colombia" } },
+    { "type": "aviso", "settings": { "texto": "💵 Pagas cuando lo recibes" } },
+    { "type": "aviso", "settings": { "texto": "💧 Adiós a las manchas de sudor" } },
+    { "type": "aviso", "settings": { "texto": "⚡ Despacho en 24 horas" } } ] } ] }
+{% endschema %}

@@ -1,0 +1,25 @@
+<section class="zc zc-sec">
+  <div class="zc-wrap">
+    <div class="zc-center">
+      {%- if section.settings.kicker != blank -%}<span class="zc-kicker">{{ section.settings.kicker }}</span>{%- endif -%}
+      <h2 class="zc-h">{{ section.settings.titulo }}</h2>
+    </div>
+    <div class="zc-faq">
+      {%- for b in section.blocks -%}
+        <details {{ b.shopify_attributes }} {% if forloop.first %}open{% endif %}><summary>{{ b.settings.pregunta }}</summary><div class="zc-faq__a">{{ b.settings.respuesta }}</div></details>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · Preguntas frecuentes", "tag": "section",
+  "settings": [ { "type": "text", "id": "kicker", "label": "Etiqueta", "default": "Dudas" }, { "type": "text", "id": "titulo", "label": "Título", "default": "Preguntas frecuentes" } ],
+  "blocks": [ { "type": "pregunta", "name": "Pregunta", "settings": [ { "type": "text", "id": "pregunta", "label": "Pregunta", "default": "¿Pregunta?" }, { "type": "richtext", "id": "respuesta", "label": "Respuesta", "default": "<p>Respuesta.</p>" } ] } ],
+  "presets": [ { "name": "ZC · Preguntas frecuentes", "blocks": [
+    { "type": "pregunta", "settings": { "pregunta": "¿Cómo pago?", "respuesta": "<p>En efectivo cuando el pedido llega a tu casa. No pagas nada por adelantado.</p>" } },
+    { "type": "pregunta", "settings": { "pregunta": "¿Cuánto se demora en llegar?", "respuesta": "<p>Despachamos en 24 horas. En Medellín y el Valle de Aburrá llega en 1 a 2 días hábiles; al resto de Colombia, en 2 a 5 días hábiles.</p>" } },
+    { "type": "pregunta", "settings": { "pregunta": "¿Sirve para hombres y mujeres?", "respuesta": "<p>Sí, es para todos. Lo puedes usar en axilas, manos y pies.</p>" } },
+    { "type": "pregunta", "settings": { "pregunta": "¿Puedo usarlo con mi desodorante?", "respuesta": "<p>Sí. Aplica Body Zero, deja secar y luego tu desodorante si quieres.</p>" } },
+    { "type": "pregunta", "settings": { "pregunta": "¿Cuánto contenido trae?", "respuesta": "<p>Cada frasco trae 120 ml, que rinde muchas aplicaciones.</p>" } },
+    { "type": "pregunta", "settings": { "pregunta": "¿Tiene alguna precaución?", "respuesta": "<p>Es de uso externo. No lo apliques sobre piel irritada, con heridas o quemaduras de sol, y evita el contacto con ojos y mucosas.</p>" } } ] } ] }
+{% endschema %}

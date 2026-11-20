@@ -1,0 +1,29 @@
+<section class="zc zc-sec">
+  <div class="zc-wrap zc-center">
+    {%- if section.settings.kicker != blank -%}<span class="zc-kicker">{{ section.settings.kicker }}</span>{%- endif -%}
+    <h2 class="zc-h">{{ section.settings.titulo }}</h2>
+    {%- if section.settings.sub != blank -%}<p class="zc-sub">{{ section.settings.sub }}</p>{%- endif -%}
+    <div class="zc-cards" style="text-align:left">
+      {%- for b in section.blocks -%}
+        <div class="zc-card zc-reveal" {{ b.shopify_attributes }} style="transition-delay:{{ forloop.index0 | times: 80 }}ms">
+          <div class="zc-card__ico">{{ b.settings.icono }}</div>
+          <h3>{{ b.settings.titulo }}</h3>
+          <p>{{ b.settings.texto }}</p>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · Beneficios", "tag": "section",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Etiqueta", "default": "La solución" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Body Zero Sweat 24/7" },
+    { "type": "textarea", "id": "sub", "label": "Subtítulo", "default": "Un spray antisudoral pensado para el día a día en clima colombiano." } ],
+  "blocks": [ { "type": "card", "name": "Beneficio", "settings": [ { "type": "text", "id": "icono", "label": "Ícono", "default": "💧" }, { "type": "text", "id": "titulo", "label": "Título", "default": "Menos sudor" }, { "type": "textarea", "id": "texto", "label": "Texto", "default": "Disminuye la sudoración progresivamente." } ] } ],
+  "presets": [ { "name": "ZC · Beneficios", "blocks": [
+    { "type": "card", "settings": { "icono": "💧", "titulo": "Menos sudor", "texto": "Disminuye la sudoración progresivamente con el uso diario." } },
+    { "type": "card", "settings": { "icono": "🌿", "titulo": "Adiós mal olor", "texto": "Controla las bacterias que causan el mal olor." } },
+    { "type": "card", "settings": { "icono": "🤍", "titulo": "Cuida tu piel", "texto": "Con aloe vera y vitamina E: humecta y no reseca." } },
+    { "type": "card", "settings": { "icono": "🙌", "titulo": "Axilas, manos y pies", "texto": "Para hombres y mujeres, donde más lo necesites." } } ] } ] }
+{% endschema %}

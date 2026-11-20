@@ -1,0 +1,33 @@
+<section class="zc zc-sec zc-sec--soft">
+  <div class="zc-wrap zc-split">
+    <div class="zc-split__img zc-reveal">
+      {%- if section.settings.imagen != blank -%}
+        {{ section.settings.imagen | image_url: width: 1000 | image_tag: loading: 'lazy', alt: section.settings.titulo }}
+      {%- else -%}
+        <div class="zc-gal__ph" style="background:none;color:#fff">Sin manchas.<br>Sin pena.</div>
+      {%- endif -%}
+    </div>
+    <div class="zc-reveal">
+      {%- if section.settings.kicker != blank -%}<span class="zc-kicker">{{ section.settings.kicker }}</span>{%- endif -%}
+      <h2 class="zc-h">{{ section.settings.titulo }}</h2>
+      <ul class="zc-pains">
+        {%- for b in section.blocks -%}<li {{ b.shopify_attributes }}><span>{{ b.settings.icono }}</span>{{ b.settings.texto }}</li>{%- endfor -%}
+      </ul>
+      {%- if section.settings.remate != blank -%}<p class="zc-callout">{{ section.settings.remate }}</p>{%- endif -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · El problema", "tag": "section",
+  "settings": [
+    { "type": "image_picker", "id": "imagen", "label": "Imagen" },
+    { "type": "text", "id": "kicker", "label": "Etiqueta", "default": "¿Te pasa esto?" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "El sudor no debería decidir qué te pones" },
+    { "type": "textarea", "id": "remate", "label": "Frase final", "default": "No es falta de aseo: tu desodorante tapa el olor, pero no controla el sudor." } ],
+  "blocks": [ { "type": "dolor", "name": "Situación", "settings": [ { "type": "text", "id": "icono", "label": "Ícono", "default": "😩" }, { "type": "text", "id": "texto", "label": "Texto", "default": "Te cambias de camisa a mitad del día" } ] } ],
+  "presets": [ { "name": "ZC · El problema", "blocks": [
+    { "type": "dolor", "settings": { "icono": "👕", "texto": "Dejaste de usar camisas de color por las manchas" } },
+    { "type": "dolor", "settings": { "icono": "😩", "texto": "Te cambias de camisa a mitad del día" } },
+    { "type": "dolor", "settings": { "icono": "🙈", "texto": "Te da pena levantar los brazos o dar un abrazo" } },
+    { "type": "dolor", "settings": { "icono": "⏱️", "texto": "Ningún desodorante te dura todo el día" } } ] } ] }
+{% endschema %}

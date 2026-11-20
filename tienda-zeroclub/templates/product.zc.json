@@ -1,0 +1,259 @@
+{
+ "sections": {
+  "cinta": {
+   "type": "zc-cinta",
+   "blocks": {
+    "b0": {
+     "type": "aviso",
+     "settings": {
+      "texto": "🚚 Envío gratis a toda Colombia"
+     }
+    },
+    "b1": {
+     "type": "aviso",
+     "settings": {
+      "texto": "💵 Pagas cuando lo recibes"
+     }
+    },
+    "b2": {
+     "type": "aviso",
+     "settings": {
+      "texto": "💧 Adiós a las manchas de sudor"
+     }
+    },
+    "b3": {
+     "type": "aviso",
+     "settings": {
+      "texto": "⚡ Despacho en 24 horas"
+     }
+    }
+   },
+   "block_order": [
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+   ]
+  },
+  "principal": {
+   "type": "zc-producto",
+   "blocks": {
+    "b0": {
+     "type": "punto",
+     "settings": {
+      "texto": "Controla las bacterias que causan el mal olor"
+     }
+    },
+    "b1": {
+     "type": "punto",
+     "settings": {
+      "texto": "Disminuye la sudoración progresivamente"
+     }
+    },
+    "b2": {
+     "type": "punto",
+     "settings": {
+      "texto": "Humecta y no reseca la piel"
+     }
+    },
+    "b3": {
+     "type": "punto",
+     "settings": {
+      "texto": "Para axilas, manos y pies · hombres y mujeres"
+     }
+    }
+   },
+   "settings": {},
+   "block_order": [
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+   ]
+  },
+  "problema": {
+   "type": "zc-problema",
+   "blocks": {
+    "b0": {
+     "type": "dolor",
+     "settings": {
+      "icono": "👕",
+      "texto": "Dejaste de usar camisas de color por las manchas"
+     }
+    },
+    "b1": {
+     "type": "dolor",
+     "settings": {
+      "icono": "😩",
+      "texto": "Te cambias de camisa a mitad del día"
+     }
+    },
+    "b2": {
+     "type": "dolor",
+     "settings": {
+      "icono": "🙈",
+      "texto": "Te da pena levantar los brazos o dar un abrazo"
+     }
+    },
+    "b3": {
+     "type": "dolor",
+     "settings": {
+      "icono": "⏱️",
+      "texto": "Ningún desodorante te dura todo el día"
+     }
+    }
+   },
+   "block_order": [
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+   ]
+  },
+  "beneficios": {
+   "type": "zc-beneficios",
+   "blocks": {
+    "b0": {
+     "type": "card",
+     "settings": {
+      "icono": "💧",
+      "titulo": "Menos sudor",
+      "texto": "Disminuye la sudoración progresivamente con el uso diario."
+     }
+    },
+    "b1": {
+     "type": "card",
+     "settings": {
+      "icono": "🌿",
+      "titulo": "Adiós mal olor",
+      "texto": "Controla las bacterias que causan el mal olor."
+     }
+    },
+    "b2": {
+     "type": "card",
+     "settings": {
+      "icono": "🤍",
+      "titulo": "Cuida tu piel",
+      "texto": "Con aloe vera y vitamina E: humecta y no reseca."
+     }
+    },
+    "b3": {
+     "type": "card",
+     "settings": {
+      "icono": "🙌",
+      "titulo": "Axilas, manos y pies",
+      "texto": "Para hombres y mujeres, donde más lo necesites."
+     }
+    }
+   },
+   "block_order": [
+    "b0",
+    "b1",
+    "b2",
+    "b3"
+   ]
+  },
+  "comparativa": {
+   "type": "zc-comparativa"
+  },
+  "pasos": {
+   "type": "zc-pasos",
+   "blocks": {
+    "b0": {
+     "type": "paso",
+     "settings": {
+      "titulo": "Piel limpia y seca",
+      "texto": "Después de bañarte, seca bien la zona."
+     }
+    },
+    "b1": {
+     "type": "paso",
+     "settings": {
+      "titulo": "Aplica y frota",
+      "texto": "Rocía en axilas, manos o pies y frota suavemente."
+     }
+    },
+    "b2": {
+     "type": "paso",
+     "settings": {
+      "titulo": "Todos los días",
+      "texto": "Úsalo a diario y nota cómo baja la sudoración."
+     }
+    }
+   },
+   "block_order": [
+    "b0",
+    "b1",
+    "b2"
+   ]
+  },
+  "faq": {
+   "type": "zc-faq",
+   "blocks": {
+    "b0": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Cómo pago?",
+      "respuesta": "<p>En efectivo cuando el pedido llega a tu casa. No pagas nada por adelantado.</p>"
+     }
+    },
+    "b1": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Cuánto se demora en llegar?",
+      "respuesta": "<p>Despachamos en 24 horas. En Medellín y el Valle de Aburrá llega en 1 a 2 días hábiles; al resto de Colombia, en 2 a 5 días hábiles.</p>"
+     }
+    },
+    "b2": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Sirve para hombres y mujeres?",
+      "respuesta": "<p>Sí, es para todos. Lo puedes usar en axilas, manos y pies.</p>"
+     }
+    },
+    "b3": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Puedo usarlo con mi desodorante?",
+      "respuesta": "<p>Sí. Aplica Body Zero, deja secar y luego tu desodorante si quieres.</p>"
+     }
+    },
+    "b4": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Cuánto contenido trae?",
+      "respuesta": "<p>Cada frasco trae 120 ml, que rinde muchas aplicaciones.</p>"
+     }
+    },
+    "b5": {
+     "type": "pregunta",
+     "settings": {
+      "pregunta": "¿Tiene alguna precaución?",
+      "respuesta": "<p>Es de uso externo. No lo apliques sobre piel irritada, con heridas o quemaduras de sol, y evita el contacto con ojos y mucosas.</p>"
+     }
+    }
+   },
+   "block_order": [
+    "b0",
+    "b1",
+    "b2",
+    "b3",
+    "b4",
+    "b5"
+   ]
+  },
+  "cierre": {
+   "type": "zc-cierre"
+  }
+ },
+ "order": [
+  "cinta",
+  "principal",
+  "problema",
+  "beneficios",
+  "comparativa",
+  "pasos",
+  "faq",
+  "cierre"
+ ]
+}

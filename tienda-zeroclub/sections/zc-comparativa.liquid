@@ -1,0 +1,27 @@
+<section class="zc zc-sec zc-sec--dark">
+  <div class="zc-wrap zc-center">
+    {%- if section.settings.kicker != blank -%}<span class="zc-kicker">{{ section.settings.kicker }}</span>{%- endif -%}
+    <h2 class="zc-h">{{ section.settings.titulo }}</h2>
+    <div class="zc-vs" style="text-align:left">
+      <div class="zc-vs__col zc-vs__col--bad zc-reveal">
+        <h3>{{ section.settings.malo_titulo }}</h3>
+        <ul>{%- assign l = section.settings.malo | newline_to_br | split: '<br />' -%}{%- for x in l -%}{%- assign t = x | strip -%}{%- if t != blank -%}<li>❌ {{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+      </div>
+      <div class="zc-vs__col zc-vs__col--good zc-reveal">
+        <h3>{{ section.settings.bueno_titulo }}</h3>
+        <ul>{%- assign l = section.settings.bueno | newline_to_br | split: '<br />' -%}{%- for x in l -%}{%- assign t = x | strip -%}{%- if t != blank -%}<li>✅ {{ t }}</li>{%- endif -%}{%- endfor -%}</ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · Comparativa", "tag": "section",
+  "settings": [
+    { "type": "text", "id": "kicker", "label": "Etiqueta", "default": "La diferencia" },
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Tu desodorante tapa el olor. Body Zero controla el sudor." },
+    { "type": "text", "id": "malo_titulo", "label": "Columna 1: título", "default": "Desodorante normal" },
+    { "type": "textarea", "id": "malo", "label": "Columna 1: puntos (uno por línea)", "default": "Solo perfuma por unas horas\nNo controla el sudor\nDeja manchas amarillas y blancas\nTe toca volver a aplicar" },
+    { "type": "text", "id": "bueno_titulo", "label": "Columna 2: título", "default": "Body Zero Sweat 24/7" },
+    { "type": "textarea", "id": "bueno", "label": "Columna 2: puntos (uno por línea)", "default": "Controla el sudor desde la raíz\nControla las bacterias del mal olor\nCon aloe vera y vitamina E\nPara axilas, manos y pies" } ],
+  "presets": [ { "name": "ZC · Comparativa" } ] }
+{% endschema %}

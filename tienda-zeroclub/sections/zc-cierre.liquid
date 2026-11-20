@@ -1,0 +1,17 @@
+<section class="zc zc-final">
+  <div class="zc-wrap">
+    <h2 class="zc-h">{{ section.settings.titulo }} <em>{{ section.settings.titulo_2 }}</em></h2>
+    {%- if section.settings.texto != blank -%}<p>{{ section.settings.texto }}</p>{%- endif -%}
+    <a class="zc-btn zc-pulse" href="{{ section.settings.enlace | default: '#comprar' }}">{{ section.settings.boton }}</a>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · Cierre", "tag": "section",
+  "settings": [
+    { "type": "text", "id": "titulo", "label": "Título", "default": "Cero sudor." },
+    { "type": "text", "id": "titulo_2", "label": "Título (parte resaltada)", "default": "Cero pena." },
+    { "type": "textarea", "id": "texto", "label": "Texto", "default": "Envío gratis a toda Colombia y pagas cuando lo recibes." },
+    { "type": "text", "id": "boton", "label": "Botón", "default": "QUIERO MI BODY ZERO" },
+    { "type": "url", "id": "enlace", "label": "Enlace del botón (vacío = sube a la oferta)" } ],
+  "presets": [ { "name": "ZC · Cierre" } ] }
+{% endschema %}

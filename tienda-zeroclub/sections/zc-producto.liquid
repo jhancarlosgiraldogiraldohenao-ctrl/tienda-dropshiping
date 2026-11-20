@@ -1,0 +1,187 @@
+{%- liquid
+  assign p = product
+  if section.settings.producto != blank
+    assign p = section.settings.producto
+  endif
+  assign v_sel = p.selected_or_first_available_variant
+  if p != blank and p.variants.size > 1
+    assign v_sel = p.variants[1]
+    if section.settings.oferta_inicial == '1'
+      assign v_sel = p.variants[0]
+    elsif section.settings.oferta_inicial == '3' and p.variants.size > 2
+      assign v_sel = p.variants[2]
+    endif
+  endif
+  assign main_img = v_sel.featured_image | default: p.featured_image
+-%}
+<div class="zc zc-prod" id="comprar" data-zc-product>
+  <div class="zc-wrap zc-prod__grid">
+    <div class="zc-gal">
+      <div class="zc-gal__main">
+        {%- if section.settings.badge != blank -%}<span class="zc-gal__badge">{{ section.settings.badge }}</span>{%- endif -%}
+        {%- if main_img -%}
+          <img data-zc-main src="{{ main_img | image_url: width: 1100 }}" alt="{{ main_img.alt | default: p.title | escape }}" width="1100" height="1100" fetchpriority="high">
+        {%- else -%}
+          <div class="zc-gal__ph">Body Zero<br>Sweat 24/7</div>
+        {%- endif -%}
+      </div>
+      {%- if p.media.size > 1 -%}
+        <div class="zc-gal__thumbs">
+          {%- for m in p.media -%}
+            {%- if m.media_type == 'image' -%}
+              <button type="button" class="{% if m.id == main_img.id %}is-on{% endif %}" data-zc-thumb data-src="{{ m | image_url: width: 1100 }}" aria-label="Ver foto {{ forloop.index }}">
+                <img src="{{ m | image_url: width: 160 }}" alt="" loading="lazy" width="80" height="80">
+              </button>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="zc-info">
+      {%- if section.settings.estrellas != blank -%}
+        <div class="zc-stars"><b>★★★★★</b> {{ section.settings.estrellas }}</div>
+      {%- endif -%}
+      <h1 class="zc-h">{{ section.settings.titulo | default: p.title }}</h1>
+      {%- if section.settings.lead != blank -%}<p class="zc-lead">{{ section.settings.lead }}</p>{%- endif -%}
+
+      {%- assign bullets = section.blocks | where: 'type', 'punto' -%}
+      {%- if bullets.size > 0 -%}
+        <ul class="zc-bullets">
+          {%- for b in bullets -%}<li {{ b.shopify_attributes }}>{{ b.settings.texto }}</li>{%- endfor -%}
+        </ul>
+      {%- endif -%}
+
+      {%- if p != blank -%}
+      {%- form 'product', p, data-zc-form: '', novalidate: 'novalidate' -%}
+        <input type="hidden" name="id" value="{{ v_sel.id }}">
+        <input type="hidden" name="quantity" value="1">
+        <input type="hidden" name="return_to" value="/checkout">
+
+        {%- if p.variants.size > 1 -%}
+          <fieldset class="zc-offers">
+            <legend>{{ section.settings.titulo_ofertas }}</legend>
+            {%- for v in p.variants -%}
+              {%- liquid
+                assign idx = forloop.index
+                assign nota = ''
+                assign tag = ''
+                case idx
+                  when 1
+                    assign nota = section.settings.nota_1
+                    assign tag = section.settings.tag_1
+                  when 2
+                    assign nota = section.settings.nota_2
+                    assign tag = section.settings.tag_2
+                  when 3
+                    assign nota = section.settings.nota_3
+                    assign tag = section.settings.tag_3
+                endcase
+                assign vimg = v.featured_image | default: p.featured_image
+              -%}
+              <label class="zc-offer{% if v.id == v_sel.id %} is-on{% endif %}" data-zc-offer data-variant="{{ v.id }}" data-price="{{ v.price }}" {% if vimg %}data-image="{{ vimg | image_url: width: 1100 }}"{% endif %}>
+                <input type="radio" name="zc-oferta" value="{{ v.id }}" {% if v.id == v_sel.id %}checked{% endif %}>
+                {%- if tag != blank -%}<span class="zc-offer__tag{% if idx == 3 %} zc-offer__tag--gift{% endif %}">{{ tag }}</span>{%- endif -%}
+                <span class="zc-offer__dot"></span>
+                <span class="zc-offer__txt">
+                  <span class="zc-offer__name">{{ v.title }}</span><br>
+                  {%- if nota != blank -%}<span class="zc-offer__note">{{ nota }}</span>{%- endif -%}
+                </span>
+                <span class="zc-offer__price">
+                  <b>{{ v.price | money_without_trailing_zeros }}</b>
+                  {%- if v.compare_at_price > v.price -%}<s>{{ v.compare_at_price | money_without_trailing_zeros }}</s>{%- endif -%}
+                </span>
+              </label>
+            {%- endfor -%}
+          </fieldset>
+        {%- endif -%}
+
+        {%- if section.settings.compromiso_titulo != blank -%}
+          <label class="zc-commit">
+            <input type="checkbox" data-zc-commit>
+            <span><b>{{ section.settings.compromiso_titulo }}</b><span>{{ section.settings.compromiso_texto }}</span></span>
+          </label>
+        {%- endif -%}
+
+        <button type="submit" class="zc-btn" data-zc-buy {% unless v_sel.available %}disabled{% endunless %}>
+          <span>{{ section.settings.boton }}</span>
+          <small>· <span data-zc-btnprice>{{ v_sel.price | money_without_trailing_zeros }}</span></small>
+        </button>
+      {%- endform -%}
+      {%- else -%}
+        <p class="zc-sub">Escoge el producto en los ajustes de esta sección.</p>
+      {%- endif -%}
+
+      <div class="zc-trust">
+        {%- for i in (1..3) -%}
+          {%- liquid
+            assign k_ico = 'confianza_ico_' | append: i
+            assign k_txt = 'confianza_txt_' | append: i
+            assign ico = section.settings[k_ico]
+            assign txt = section.settings[k_txt]
+          -%}
+          {%- if txt != blank -%}<div><i>{{ ico }}</i>{{ txt }}</div>{%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+
+  {%- if section.settings.barra_movil and p != blank -%}
+    <div class="zc zc-sticky" data-zc-sticky>
+      <div>
+        <div style="font-size:.75rem;color:var(--zc-muted);font-weight:700">{{ section.settings.barra_texto }}</div>
+        <div class="zc-sticky__p" data-zc-sticky-price>{{ v_sel.price | money_without_trailing_zeros }}</div>
+      </div>
+      <a href="#" class="zc-btn" data-zc-sticky-go>{{ section.settings.boton }}</a>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "ZC · Producto",
+  "tag": "section",
+  "class": "zc-section",
+  "settings": [
+    { "type": "product", "id": "producto", "label": "Producto (en la página de inicio)", "info": "En la página del producto se usa el producto de esa página." },
+    { "type": "text", "id": "badge", "label": "Etiqueta sobre la foto", "default": "-38% HOY" },
+    { "type": "text", "id": "estrellas", "label": "Texto junto a las estrellas", "default": "Para hombres y mujeres" },
+    { "type": "text", "id": "titulo", "label": "Título (vacío = nombre del producto)" },
+    { "type": "textarea", "id": "lead", "label": "Frase debajo del título", "default": "Spray antisudoral que controla el sudor y el mal olor desde la raíz. Con aloe vera y vitamina E." },
+    { "type": "header", "content": "Ofertas" },
+    { "type": "text", "id": "titulo_ofertas", "label": "Título de las ofertas", "default": "Escoge tu oferta:" },
+    { "type": "select", "id": "oferta_inicial", "label": "Oferta marcada al entrar", "default": "2", "options": [ { "value": "1", "label": "Primera" }, { "value": "2", "label": "Segunda" }, { "value": "3", "label": "Tercera" } ] },
+    { "type": "text", "id": "nota_1", "label": "Nota oferta 1", "default": "Para probarlo" },
+    { "type": "text", "id": "tag_1", "label": "Etiqueta oferta 1" },
+    { "type": "text", "id": "nota_2", "label": "Nota oferta 2", "default": "Ahorras $29.900 · Uno para la casa y otro para el bolso" },
+    { "type": "text", "id": "tag_2", "label": "Etiqueta oferta 2", "default": "⭐ El más vendido" },
+    { "type": "text", "id": "nota_3", "label": "Nota oferta 3", "default": "Incluye mini de viaje GRATIS · Para toda la familia" },
+    { "type": "text", "id": "tag_3", "label": "Etiqueta oferta 3", "default": "🎁 Mejor precio" },
+    { "type": "header", "content": "Compromiso y botón" },
+    { "type": "text", "id": "compromiso_titulo", "label": "Casilla: título (vacío = sin casilla)", "default": "Confirmo que estaré disponible para recibir y pagar mi pedido." },
+    { "type": "textarea", "id": "compromiso_texto", "label": "Casilla: texto", "default": "Cada pedido no recibido nos genera costos de envío y devolución. Si no puedes recibirlo, por favor no lo pidas. ¡Gracias por ayudarnos a mantener el envío gratis! 🙏" },
+    { "type": "text", "id": "boton", "label": "Texto del botón", "default": "PEDIR AHORA · PAGO AL RECIBIR" },
+    { "type": "header", "content": "Sellos de confianza" },
+    { "type": "text", "id": "confianza_ico_1", "label": "Ícono 1", "default": "🚚" },
+    { "type": "text", "id": "confianza_txt_1", "label": "Texto 1", "default": "Envío gratis a toda Colombia" },
+    { "type": "text", "id": "confianza_ico_2", "label": "Ícono 2", "default": "💵" },
+    { "type": "text", "id": "confianza_txt_2", "label": "Texto 2", "default": "Pagas cuando lo recibes" },
+    { "type": "text", "id": "confianza_ico_3", "label": "Ícono 3", "default": "⚡" },
+    { "type": "text", "id": "confianza_txt_3", "label": "Texto 3", "default": "Despacho en 24 horas" },
+    { "type": "header", "content": "Barra fija en celular" },
+    { "type": "checkbox", "id": "barra_movil", "label": "Mostrar barra de compra al bajar (celular)", "default": true },
+    { "type": "text", "id": "barra_texto", "label": "Texto pequeño de la barra", "default": "Envío gratis · Pago al recibir" }
+  ],
+  "blocks": [
+    { "type": "punto", "name": "Beneficio", "settings": [ { "type": "text", "id": "texto", "label": "Texto", "default": "Controla el sudor y el mal olor" } ] }
+  ],
+  "presets": [
+    { "name": "ZC · Producto", "blocks": [
+      { "type": "punto", "settings": { "texto": "Controla las bacterias que causan el mal olor" } },
+      { "type": "punto", "settings": { "texto": "Disminuye la sudoración progresivamente" } },
+      { "type": "punto", "settings": { "texto": "Humecta y no reseca la piel" } },
+      { "type": "punto", "settings": { "texto": "Para axilas, manos y pies" } }
+    ] }
+  ]
+}
+{% endschema %}

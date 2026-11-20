@@ -1,0 +1,20 @@
+<section class="zc zc-sec zc-sec--soft">
+  <div class="zc-wrap zc-center">
+    {%- if section.settings.kicker != blank -%}<span class="zc-kicker">{{ section.settings.kicker }}</span>{%- endif -%}
+    <h2 class="zc-h">{{ section.settings.titulo }}</h2>
+    <div class="zc-steps" style="text-align:left">
+      {%- for b in section.blocks -%}
+        <div class="zc-step zc-reveal" {{ b.shopify_attributes }}><h3>{{ b.settings.titulo }}</h3><p>{{ b.settings.texto }}</p></div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+{% schema %}
+{ "name": "ZC · Cómo se usa", "tag": "section",
+  "settings": [ { "type": "text", "id": "kicker", "label": "Etiqueta", "default": "Fácil" }, { "type": "text", "id": "titulo", "label": "Título", "default": "Así de simple se usa" } ],
+  "blocks": [ { "type": "paso", "name": "Paso", "settings": [ { "type": "text", "id": "titulo", "label": "Título", "default": "Aplica" }, { "type": "textarea", "id": "texto", "label": "Texto", "default": "Explica el paso." } ] } ],
+  "presets": [ { "name": "ZC · Cómo se usa", "blocks": [
+    { "type": "paso", "settings": { "titulo": "Piel limpia y seca", "texto": "Después de bañarte, seca bien la zona." } },
+    { "type": "paso", "settings": { "titulo": "Aplica y frota", "texto": "Rocía en axilas, manos o pies y frota suavemente." } },
+    { "type": "paso", "settings": { "titulo": "Todos los días", "texto": "Úsalo a diario y nota cómo baja la sudoración." } } ] } ] }
+{% endschema %}
