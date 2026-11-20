@@ -2,7 +2,7 @@
 
 - Tienda: am4qyv-vq.myshopify.com (correo zeroclub.store@gmail.com) · moneda COP
 - Carpeta: tienda-zeroclub/ (base: tema Horizon descargado de la tienda; GitHub bloqueado para bajar Dawn)
-- Tema de trabajo: "Zero Club" id 196250927474 (NO publicado). Tema activo: Horizon 196250337650.
+- Tema "Zero Club" id 196250927474 PUBLICADO (live) 20-nov. Horizon 196250337650 queda de respaldo.
 - Entorno: Shopify CLI 5.0.2 con NODE_USE_ENV_PROXY=1. Permiso de datos: pegar URL 127.0.0.1:13387/auth/callback?... (curl --noproxy '*').
 
 ## Producto
