@@ -265,7 +265,7 @@
     "zc_redir": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{%- if request.path contains '/products/body-zero-sweat' -%}<script>location.replace('/');</script>{%- endif -%}"
+        "custom_liquid": "<script>if(location.pathname.replace(/\\/$/,'')==='/products/body-zero-sweat'){location.replace('/');}</script>"
       }
     }
   },
