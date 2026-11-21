@@ -128,7 +128,7 @@
             <span class="zc-paga5__ico" aria-hidden="true">💳</span>
             <span class="zc-paga5__txt">
               <b>{{ section.settings.tarjeta_titulo }}</b>
-              <span>Te queda en <strong data-zc-cardprice>{{ card_price | money_without_trailing_zeros }}</strong> con el código</span>
+              <span>Te queda en <strong data-zc-cardprice>{{ card_price | money_without_trailing_zeros }}</strong> · Escribe el código en <strong>"Agregar descuento"</strong> al pagar</span>
             </span>
             <button type="button" class="zc-paga5__code" data-zc-copy="{{ section.settings.tarjeta_codigo }}">{{ section.settings.tarjeta_codigo }}<small>Copiar</small></button>
           </div>
