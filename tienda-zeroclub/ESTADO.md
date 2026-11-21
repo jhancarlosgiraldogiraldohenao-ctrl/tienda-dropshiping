@@ -45,3 +45,9 @@
 ## Meta (21-nov-2026)
 - App Facebook & Instagram instalada. Píxel ID 1834735874316552: PageView, AddToCart e InitiateCheckout verificados.
 - Los 3 productos están publicados en el canal Facebook & Instagram.
+
+## Campaña Meta (21-nov-2026)
+- Cuenta publicitaria: Zero Club Anuncios (1121360727196403), portfolio Shopify am4qyvvq. Píxel conectado.
+- Campaña "Body Zero - Ventas", $8.400/día (≈$10.000 con IVA). Conjunto "Colombia 22-55" (edad mín. 22), evento Comprar.
+- Anuncios activos: Imagen A - Chucha, Imagen C - Antes y después. Mejoras IA (música, animación, texto, imágenes) apagadas.
+- Pendiente: imagen B (falló la subida), imagen de persona usando el spray, Instagram.
