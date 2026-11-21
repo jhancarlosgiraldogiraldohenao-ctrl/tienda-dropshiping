@@ -31,3 +31,13 @@
 - Usuario: renombrar tienda a "Zero Club" (Configuración → General); activar pago contra entrega (Configuración → Pagos → métodos manuales); tarifa de envío gratis Colombia; conectar Dropi; aprobar y publicar el tema.
 - Anuncio antes/después con el frasco real encima de zc-antes-despues.jpg.
 - Píxel de Meta, página de Facebook conectada.
+
+## Dropi (20-nov) — IMPORTANTE
+- App correcta: "Dropify" (logo Dropi, apps/dropify-10), token configurado (integración "Zero Club"). NO usar "Dropify PRO".
+- Dropify vincula POR PRODUCTO (metafield dropi._dropi_product), no por variante. Por eso cada oferta es un producto importado desde la app:
+  - 1 frasco: Product 15354345193842 (variant 63031542186354) handle body-zero-sweat-1-frasco · Dropi 2047569 · 74.900 (119.900)
+  - 2 frascos: Product 15354348011890 (variant 63031573676402) handle body-zero-sweat-2-frascos · Dropi 2047671 · 119.900 (199.900)
+  - 3 frascos: Product 15354348634482 (variant 63031576232306) handle body-zero-sweat-3-frascos · Dropi 2047680 · 149.800 (279.900)
+- zc-producto: settings oferta_1..3 (product) + nombre_1..3; si oferta_1 está puesto, las ofertas son esos productos. Galería = fotos de oferta_1.
+- Producto original 15353919046002 (body-zero-sweat, 3 variantes) → DRAFT.
+- Pedido de prueba #1001 (con producto viejo) NO pasó a Dropi; cancelarlo en Shopify.

@@ -1,18 +1,32 @@
 {%- liquid
+  # Modo "3 productos": cada oferta es un producto distinto (así lo exige Dropi).
   assign p = product
   if section.settings.producto != blank
     assign p = section.settings.producto
   endif
-  assign v_sel = p.selected_or_first_available_variant
-  if p != blank and p.variants.size > 1
-    assign v_sel = p.variants[1]
-    if section.settings.oferta_inicial == '1'
-      assign v_sel = p.variants[0]
-    elsif section.settings.oferta_inicial == '3' and p.variants.size > 2
-      assign v_sel = p.variants[2]
-    endif
+  assign multi = false
+  if section.settings.oferta_1 != blank
+    assign multi = true
+    assign p = section.settings.oferta_1
   endif
-  assign main_img = v_sel.featured_image | default: p.featured_image
+  assign ini = section.settings.oferta_inicial | plus: 0
+  if multi
+    assign k_ini = 'oferta_' | append: ini
+    assign p_ini = section.settings[k_ini] | default: section.settings.oferta_1
+    assign v_sel = p_ini.selected_or_first_available_variant
+    assign main_img = p_ini.featured_image
+  else
+    assign v_sel = p.selected_or_first_available_variant
+    if p != blank and p.variants.size > 1
+      assign v_sel = p.variants[1]
+      if ini == 1
+        assign v_sel = p.variants[0]
+      elsif ini == 3 and p.variants.size > 2
+        assign v_sel = p.variants[2]
+      endif
+    endif
+    assign main_img = v_sel.featured_image | default: p.featured_image
+  endif
 -%}
 <div class="zc zc-prod" id="comprar" data-zc-product>
   <div class="zc-wrap zc-prod__grid">
@@ -42,7 +56,7 @@
       {%- if section.settings.estrellas != blank -%}
         <div class="zc-stars"><b>★★★★★</b> {{ section.settings.estrellas }}</div>
       {%- endif -%}
-      <h1 class="zc-h">{{ section.settings.titulo | default: p.title }}</h1>
+      <h1 class="zc-h">{{ section.settings.titulo | default: 'Body Zero Sweat 24/7 – Spray Antisudoral' }}</h1>
       {%- if section.settings.lead != blank -%}<p class="zc-lead">{{ section.settings.lead }}</p>{%- endif -%}
 
       {%- assign bullets = section.blocks | where: 'type', 'punto' -%}
@@ -58,33 +72,41 @@
         <input type="hidden" name="quantity" value="1">
         <input type="hidden" name="return_to" value="/checkout">
 
-        {%- if p.variants.size > 1 -%}
+        {%- if multi or p.variants.size > 1 -%}
           <fieldset class="zc-offers">
             <legend>{{ section.settings.titulo_ofertas }}</legend>
-            {%- for v in p.variants -%}
+            {%- for idx in (1..3) -%}
               {%- liquid
-                assign idx = forloop.index
-                assign nota = ''
-                assign tag = ''
-                case idx
-                  when 1
-                    assign nota = section.settings.nota_1
-                    assign tag = section.settings.tag_1
-                  when 2
-                    assign nota = section.settings.nota_2
-                    assign tag = section.settings.tag_2
-                  when 3
-                    assign nota = section.settings.nota_3
-                    assign tag = section.settings.tag_3
-                endcase
-                assign vimg = v.featured_image | default: p.featured_image
+                assign k_n = 'nota_' | append: idx
+                assign k_t = 'tag_' | append: idx
+                assign k_l = 'nombre_' | append: idx
+                assign nota = section.settings[k_n]
+                assign tag = section.settings[k_t]
+                if multi
+                  assign k_p = 'oferta_' | append: idx
+                  assign op = section.settings[k_p]
+                  if op == blank
+                    continue
+                  endif
+                  assign v = op.selected_or_first_available_variant
+                  assign vimg = op.featured_image
+                  assign vname = section.settings[k_l] | default: op.title
+                else
+                  assign vi = idx | minus: 1
+                  assign v = p.variants[vi]
+                  if v == blank
+                    continue
+                  endif
+                  assign vimg = v.featured_image | default: p.featured_image
+                  assign vname = v.title
+                endif
               -%}
               <label class="zc-offer{% if v.id == v_sel.id %} is-on{% endif %}" data-zc-offer data-variant="{{ v.id }}" data-price="{{ v.price }}" {% if vimg %}data-image="{{ vimg | image_url: width: 1100 }}"{% endif %}>
                 <input type="radio" name="zc-oferta" value="{{ v.id }}" {% if v.id == v_sel.id %}checked{% endif %}>
                 {%- if tag != blank -%}<span class="zc-offer__tag{% if idx == 3 %} zc-offer__tag--gift{% endif %}">{{ tag }}</span>{%- endif -%}
                 <span class="zc-offer__dot"></span>
                 <span class="zc-offer__txt">
-                  <span class="zc-offer__name">{{ v.title }}</span><br>
+                  <span class="zc-offer__name">{{ vname }}</span><br>
                   {%- if nota != blank -%}<span class="zc-offer__note">{{ nota }}</span>{%- endif -%}
                 </span>
                 <span class="zc-offer__price">
@@ -143,7 +165,14 @@
   "tag": "section",
   "class": "zc-section",
   "settings": [
-    { "type": "product", "id": "producto", "label": "Producto (en la página de inicio)", "info": "En la página del producto se usa el producto de esa página." },
+    { "type": "product", "id": "producto", "label": "Producto (modo 1 producto con variantes)", "info": "Solo se usa si las ofertas de abajo están vacías." },
+    { "type": "header", "content": "Ofertas = productos de Dropi" },
+    { "type": "product", "id": "oferta_1", "label": "Oferta 1 (producto)" },
+    { "type": "text", "id": "nombre_1", "label": "Nombre oferta 1", "default": "1 frasco" },
+    { "type": "product", "id": "oferta_2", "label": "Oferta 2 (producto)" },
+    { "type": "text", "id": "nombre_2", "label": "Nombre oferta 2", "default": "2 frascos" },
+    { "type": "product", "id": "oferta_3", "label": "Oferta 3 (producto)" },
+    { "type": "text", "id": "nombre_3", "label": "Nombre oferta 3", "default": "3 frascos + mini de viaje" },
     { "type": "text", "id": "badge", "label": "Etiqueta sobre la foto", "default": "-38% HOY" },
     { "type": "text", "id": "estrellas", "label": "Texto junto a las estrellas", "default": "Para hombres y mujeres" },
     { "type": "text", "id": "titulo", "label": "Título (vacío = nombre del producto)" },
