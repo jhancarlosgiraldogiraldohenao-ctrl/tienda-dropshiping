@@ -158,3 +158,7 @@ html,body{overflow-x:clip}
   .zc-offer__price b{font-size:1.1rem}
 }
 @media (prefers-reduced-motion:reduce){.zc-cinta__track,.zc-pulse{animation:none}.zc-reveal{opacity:1;transform:none}}
+
+.zc-paga5{margin-top:12px;background:var(--zc-mint-3);border:1.5px dashed var(--zc-mint);border-radius:12px;padding:10px 14px;font-size:.9rem;text-align:center}
+.zc-paga5 p{margin:0}
+.zc-paga5 strong{color:var(--zc-dark)}
