@@ -35,6 +35,12 @@
       idInput.value = el.getAttribute('data-variant');
       var price = parseInt(el.getAttribute('data-price'), 10);
       if (btnPrice) btnPrice.textContent = money(price);
+      var card = root.querySelector('[data-zc-card]');
+      if (card) {
+        var cp = card.querySelector('[data-zc-cardprice]');
+        var d = parseFloat(card.getAttribute('data-dto')) || 5;
+        if (cp) cp.textContent = money(Math.round(price * (100 - d) / 100));
+      }
       if (sticky) {
         var sp = sticky.querySelector('[data-zc-sticky-price]');
         if (sp) sp.textContent = money(price);
@@ -44,6 +50,15 @@
 
     offers.forEach(function (o) {
       o.addEventListener('click', function () { select(o); });
+    });
+
+    root.querySelectorAll('[data-zc-copy]').forEach(function (b) {
+      b.addEventListener('click', function () {
+        var code = b.getAttribute('data-zc-copy');
+        var sm = b.querySelector('small');
+        var done = function () { if (sm) { sm.textContent = '¡Copiado!'; setTimeout(function () { sm.textContent = 'Copiar'; }, 1800); } };
+        if (navigator.clipboard) navigator.clipboard.writeText(code).then(done, done); else done();
+      });
     });
 
     thumbs.forEach(function (t) {

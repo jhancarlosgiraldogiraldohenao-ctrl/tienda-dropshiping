@@ -26,11 +26,18 @@
      "settings": {
       "texto": "⚡ Despacho en 24 horas"
      }
+    },
+    "bt": {
+     "type": "aviso",
+     "settings": {
+      "texto": "💳 5% OFF pagando con tarjeta"
+     }
     }
    },
    "block_order": [
     "b0",
     "b1",
+    "bt",
     "b2",
     "b3"
    ]

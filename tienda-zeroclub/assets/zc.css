@@ -159,6 +159,11 @@ html,body{overflow-x:clip}
 }
 @media (prefers-reduced-motion:reduce){.zc-cinta__track,.zc-pulse{animation:none}.zc-reveal{opacity:1;transform:none}}
 
-.zc-paga5{margin-top:12px;background:var(--zc-mint-3);border:1.5px dashed var(--zc-mint);border-radius:12px;padding:10px 14px;font-size:.9rem;text-align:center}
-.zc-paga5 p{margin:0}
-.zc-paga5 strong{color:var(--zc-dark)}
+
+.zc-paga5{display:flex;align-items:center;gap:12px;background:linear-gradient(135deg,#0f3d33,#17594a);color:#fff;border-radius:14px;padding:12px 14px;margin:0 0 14px;box-shadow:0 8px 22px rgba(15,61,51,.22)}
+.zc-paga5__ico{font-size:1.6rem;line-height:1}
+.zc-paga5__txt{flex:1;min-width:0;font-size:.86rem;line-height:1.35}
+.zc-paga5__txt b{display:block;font-size:.98rem;color:#8ff0d2}
+.zc-paga5__txt strong{color:#fff;font-weight:800}
+.zc-paga5__code{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;background:#8ff0d2;color:#0f3d33;border:2px dashed #0f3d33;border-radius:10px;padding:6px 10px;font:800 1rem/1.1 var(--zc-head);letter-spacing:.04em;cursor:pointer}
+.zc-paga5__code small{font:700 .66rem/1.2 Inter,sans-serif;letter-spacing:0;text-transform:uppercase;margin-top:2px}
