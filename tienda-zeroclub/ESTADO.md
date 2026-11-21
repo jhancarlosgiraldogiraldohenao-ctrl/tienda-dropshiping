@@ -41,3 +41,7 @@
 - zc-producto: settings oferta_1..3 (product) + nombre_1..3; si oferta_1 está puesto, las ofertas son esos productos. Galería = fotos de oferta_1.
 - Producto original 15353919046002 (body-zero-sweat, 3 variantes) → DRAFT.
 - Pedido de prueba #1001 (con producto viejo) NO pasó a Dropi; cancelarlo en Shopify.
+
+## Meta (21-nov-2026)
+- App Facebook & Instagram instalada. Píxel ID 1834735874316552: PageView, AddToCart e InitiateCheckout verificados.
+- Los 3 productos están publicados en el canal Facebook & Instagram.
