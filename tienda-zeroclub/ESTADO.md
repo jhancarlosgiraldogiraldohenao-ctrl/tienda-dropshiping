@@ -51,3 +51,9 @@
 - Campaña "Body Zero - Ventas", $8.400/día (≈$10.000 con IVA). Conjunto "Colombia 22-55" (edad mín. 22), evento Comprar.
 - Anuncios activos: Imagen A - Chucha, Imagen C - Antes y después. Mejoras IA (música, animación, texto, imágenes) apagadas.
 - Pendiente: imagen B (falló la subida), imagen de persona usando el spray, Instagram.
+
+## Pendientes para cuando el usuario esté en la tablet
+1. Conectar Instagram @zero_club.store a la página de Facebook Zero Club (y luego, al revisar números, cambiar identidad de los anuncios).
+2. HidePay: regla "ocultar Pago contra entrega si el código es PAGA5" + activarla en Configuración > Pagos > Personalizaciones de pago. Luego volver a probar el pago (hp.js).
+3. Imagen B (falló la subida) e imagen de persona usando el spray.
+4. Video para Reels.
