@@ -172,3 +172,4 @@ html,body{overflow-x:clip}
 .zc-envio__ico{font-size:1.9rem;line-height:1}
 .zc-envio b{display:block;font-family:var(--zc-head);font-weight:400;font-size:1.15rem;letter-spacing:.02em;line-height:1.15}
 .zc-envio small{display:block;font-size:.84rem;opacity:.95;margin-top:2px}
+.zc-envio small{display:inline-block;background:#fff;color:var(--zc-dark);font-weight:800;font-size:.86rem;opacity:1;border-radius:99px;padding:5px 12px;margin-top:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
