@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: C,Inter Display Black,64,&H00FFFFFF,&H00FFFFFF,&H00000000,&H64000000,1,0,0,0,100,100,0,0,1,5,3,2,40,40,250,1
+Style: E,Inter Display Black,40,&H00FFFFFF,&H00FFFFFF,&H00332F0F,&H00332F0F,1,0,0,0,100,100,0,0,3,14,0,2,40,40,250,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.98,0:00:01.66,C,,0,0,0,,{\fad(60,0)}{\c&H004DE1FF&\fscx108\fscy108}¿SUDÁS{\r} MUCHO?
+Dialogue: 0,0:00:01.66,0:00:02.48,C,,0,0,0,,{\fad(60,0)}¿SUDÁS {\c&H004DE1FF&\fscx108\fscy108}MUCHO?{\r}
+Dialogue: 0,0:00:02.48,0:00:03.46,C,,0,0,0,,{\fad(60,0)}{\c&H004DE1FF&\fscx108\fscy108}MIRÁ{\r}
+Dialogue: 0,0:00:03.46,0:00:03.64,C,,0,0,0,,{\fad(60,0)}{\c&H004DE1FF&\fscx108\fscy108}BODY{\r} ZERO SWEAT
+Dialogue: 0,0:00:03.64,0:00:03.98,C,,0,0,0,,{\fad(60,0)}BODY {\c&H004DE1FF&\fscx108\fscy108}ZERO{\r} SWEAT
+Dialogue: 0,0:00:03.98,0:00:04.80,C,,0,0,0,,{\fad(60,0)}BODY ZERO {\c&H004DE1FF&\fscx108\fscy108}SWEAT{\r}
+Dialogue: 0,0:00:04.80,0:00:05.48,C,,0,0,0,,{\fad(60,0)}{\c&H004DE1FF&\fscx108\fscy108}ENVÍO{\r} GRATIS
+Dialogue: 0,0:00:05.48,0:00:06.02,C,,0,0,0,,{\fad(60,0)}ENVÍO {\c&H004DE1FF&\fscx108\fscy108}GRATIS{\r}
+Dialogue: 0,0:00:06.02,0:00:06.12,C,,0,0,0,,{\fad(60,0)}{\c&H004DE1FF&\fscx108\fscy108}Y{\r} PAGÁS AL RECIBIR
+Dialogue: 0,0:00:06.12,0:00:06.46,C,,0,0,0,,{\fad(60,0)}Y {\c&H004DE1FF&\fscx108\fscy108}PAGÁS{\r} AL RECIBIR
+Dialogue: 0,0:00:06.46,0:00:06.56,C,,0,0,0,,{\fad(60,0)}Y PAGÁS {\c&H004DE1FF&\fscx108\fscy108}AL{\r} RECIBIR
+Dialogue: 0,0:00:06.56,0:00:07.30,C,,0,0,0,,{\fad(60,0)}Y PAGÁS AL {\c&H004DE1FF&\fscx108\fscy108}RECIBIR{\r}
+Dialogue: 0,0:00:07.30,0:00:08.05,E,,0,0,0,,{\fad(120,0)}ENVÍO GRATIS · PAGÁS AL RECIBIR
