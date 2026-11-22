@@ -118,19 +118,13 @@
           </fieldset>
         {%- endif -%}
 
-        {%- if section.settings.tarjeta_codigo != blank -%}
-          {%- liquid
-            assign dto = section.settings.tarjeta_dto | default: 5
-            assign pct = 100 | minus: dto
-            assign card_price = v_sel.price | times: pct | divided_by: 100
-          -%}
-          <div class="zc-paga5" data-zc-card data-dto="{{ dto }}">
+        {%- if section.settings.tarjeta_titulo != blank -%}
+          <div class="zc-paga5">
             <span class="zc-paga5__ico" aria-hidden="true">💳</span>
             <span class="zc-paga5__txt">
               <b>{{ section.settings.tarjeta_titulo }}</b>
-              <span>Te queda en <strong data-zc-cardprice>{{ card_price | money_without_trailing_zeros }}</strong> · Escribe el código en <strong>"Agregar descuento"</strong> al pagar</span>
+              <span>{{ section.settings.tarjeta_texto }}</span>
             </span>
-            <button type="button" class="zc-paga5__code" data-zc-copy="{{ section.settings.tarjeta_codigo }}">{{ section.settings.tarjeta_codigo }}<small>Copiar</small></button>
           </div>
         {%- endif -%}
 
@@ -206,10 +200,9 @@
     { "type": "text", "id": "compromiso_titulo", "label": "Casilla: título (vacío = sin casilla)", "default": "Confirmo que estaré disponible para recibir y pagar mi pedido." },
     { "type": "textarea", "id": "compromiso_texto", "label": "Casilla: texto", "default": "Cada pedido no recibido nos genera costos de envío y devolución. Si no puedes recibirlo, por favor no lo pidas. ¡Gracias por ayudarnos a mantener el envío gratis! 🙏" },
     { "type": "text", "id": "boton", "label": "Texto del botón", "default": "PEDIR AHORA · PAGO AL RECIBIR" },
-    { "type": "header", "content": "Descuento por pago con tarjeta" },
-    { "type": "text", "id": "tarjeta_titulo", "label": "Título", "default": "¿Pagas con tarjeta? Ahorra 5%" },
-    { "type": "text", "id": "tarjeta_codigo", "label": "Código de descuento (vacío = ocultar)", "default": "PAGA5" },
-    { "type": "number", "id": "tarjeta_dto", "label": "Porcentaje de descuento", "default": 5 },
+    { "type": "header", "content": "Aviso de pago con tarjeta" },
+    { "type": "text", "id": "tarjeta_titulo", "label": "Título (vacío = ocultar)", "default": "¿Prefieres pagar con tarjeta? Hazlo a cuotas" },
+    { "type": "text", "id": "tarjeta_texto", "label": "Texto", "default": "Paga con tu tarjeta de crédito en cuotas y tu pedido tiene despacho prioritario: sale de primero." },
     { "type": "header", "content": "Sellos de confianza" },
     { "type": "text", "id": "confianza_ico_1", "label": "Ícono 1", "default": "🚚" },
     { "type": "text", "id": "confianza_txt_1", "label": "Texto 1", "default": "Envío gratis a toda Colombia" },
