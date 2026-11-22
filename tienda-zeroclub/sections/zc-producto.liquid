@@ -58,6 +58,12 @@
       {%- endif -%}
       <h1 class="zc-h">{{ section.settings.titulo | default: 'Body Zero Sweat 24/7 – Spray Antisudoral' }}</h1>
       {%- if section.settings.lead != blank -%}<p class="zc-lead">{{ section.settings.lead }}</p>{%- endif -%}
+      {%- if section.settings.envio_titulo != blank -%}
+        <div class="zc-envio">
+          <span class="zc-envio__ico" aria-hidden="true">🚚</span>
+          <span><b>{{ section.settings.envio_titulo }}</b><small>{{ section.settings.envio_texto }}</small></span>
+        </div>
+      {%- endif -%}
 
       {%- assign bullets = section.blocks | where: 'type', 'punto' -%}
       {%- if bullets.size > 0 -%}
@@ -161,7 +167,7 @@
   {%- if section.settings.barra_movil and p != blank -%}
     <div class="zc zc-sticky" data-zc-sticky>
       <div>
-        <div style="font-size:.75rem;color:var(--zc-muted);font-weight:700">{{ section.settings.barra_texto }}</div>
+        <div style="font-size:.78rem;color:var(--zc-mint);font-weight:800">🚚 {{ section.settings.barra_texto }}</div>
         <div class="zc-sticky__p" data-zc-sticky-price>{{ v_sel.price | money_without_trailing_zeros }}</div>
       </div>
       <a href="#" class="zc-btn" data-zc-sticky-go>{{ section.settings.boton }}</a>
@@ -200,6 +206,9 @@
     { "type": "text", "id": "compromiso_titulo", "label": "Casilla: título (vacío = sin casilla)", "default": "Confirmo que estaré disponible para recibir y pagar mi pedido." },
     { "type": "textarea", "id": "compromiso_texto", "label": "Casilla: texto", "default": "Cada pedido no recibido nos genera costos de envío y devolución. Si no puedes recibirlo, por favor no lo pidas. ¡Gracias por ayudarnos a mantener el envío gratis! 🙏" },
     { "type": "text", "id": "boton", "label": "Texto del botón", "default": "PEDIR AHORA · PAGO AL RECIBIR" },
+    { "type": "header", "content": "Banner de envío gratis" },
+    { "type": "text", "id": "envio_titulo", "label": "Título (vacío = ocultar)", "default": "ENVÍO GRATIS A TODA COLOMBIA" },
+    { "type": "text", "id": "envio_texto", "label": "Texto", "default": "Pagás cuando lo recibís en tu casa · Llega en 1 a 5 días hábiles" },
     { "type": "header", "content": "Aviso de pago con tarjeta" },
     { "type": "text", "id": "tarjeta_titulo", "label": "Título (vacío = ocultar)", "default": "¿Prefieres pagar con tarjeta? Hazlo a cuotas" },
     { "type": "text", "id": "tarjeta_texto", "label": "Texto", "default": "Paga con tu tarjeta de crédito en cuotas y tu pedido tiene despacho prioritario: sale de primero." },
