@@ -15,12 +15,6 @@
       "texto": "💵 Pagas cuando lo recibes"
      }
     },
-    "b4": {
-     "type": "aviso",
-     "settings": {
-      "texto": "💳 5% OFF pagando con tarjeta"
-     }
-    },
     "b2": {
      "type": "aviso",
      "settings": {
@@ -37,7 +31,6 @@
    "block_order": [
     "b0",
     "b1",
-    "b4",
     "b2",
     "b3"
    ]
@@ -74,7 +67,8 @@
     "oferta_1": "body-zero-sweat-1-frasco",
     "oferta_2": "body-zero-sweat-2-frascos",
     "oferta_3": "body-zero-sweat-3-frascos",
-    "titulo": "Body Zero Sweat 24/7 – Spray Antisudoral"
+    "titulo": "Body Zero Sweat 24/7 – Spray Antisudoral",
+    "tarjeta_codigo": ""
    },
    "block_order": [
     "b0",
