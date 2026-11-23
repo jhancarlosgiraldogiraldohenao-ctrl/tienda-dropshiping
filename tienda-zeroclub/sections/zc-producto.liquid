@@ -134,17 +134,13 @@
           </div>
         {%- endif -%}
 
-        {%- if section.settings.compromiso_titulo != blank -%}
-          <label class="zc-commit">
-            <input type="checkbox" data-zc-commit>
-            <span><b>{{ section.settings.compromiso_titulo }}</b><span>{{ section.settings.compromiso_texto }}</span></span>
-          </label>
-        {%- endif -%}
-
         <button type="submit" class="zc-btn" data-zc-buy {% unless v_sel.available %}disabled{% endunless %}>
           <span>{{ section.settings.boton }}</span>
           <small>· <span data-zc-btnprice>{{ v_sel.price | money_without_trailing_zeros }}</span></small>
         </button>
+        {%- if section.settings.compromiso_titulo != blank -%}
+          <p class="zc-note">{{ section.settings.compromiso_titulo }}</p>
+        {%- endif -%}
       {%- endform -%}
       {%- else -%}
         <p class="zc-sub">Escoge el producto en los ajustes de esta sección.</p>
@@ -203,7 +199,7 @@
     { "type": "text", "id": "nota_3", "label": "Nota oferta 3", "default": "Incluye mini de viaje GRATIS · Para toda la familia" },
     { "type": "text", "id": "tag_3", "label": "Etiqueta oferta 3", "default": "🎁 Mejor precio" },
     { "type": "header", "content": "Compromiso y botón" },
-    { "type": "text", "id": "compromiso_titulo", "label": "Casilla: título (vacío = sin casilla)", "default": "Confirmo que estaré disponible para recibir y pagar mi pedido." },
+    { "type": "text", "id": "compromiso_titulo", "label": "Nota debajo del botón (vacío = ocultar)", "default": "Al pedir, confirmás que estarás para recibirlo y pagarlo. ¡Gracias! 🙏" },
     { "type": "textarea", "id": "compromiso_texto", "label": "Casilla: texto", "default": "Cada pedido no recibido nos genera costos de envío y devolución. Si no puedes recibirlo, por favor no lo pidas. ¡Gracias por ayudarnos a mantener el envío gratis! 🙏" },
     { "type": "text", "id": "boton", "label": "Texto del botón", "default": "PEDIR AHORA · PAGO AL RECIBIR" },
     { "type": "header", "content": "Banner de envío gratis" },
@@ -213,12 +209,12 @@
     { "type": "text", "id": "tarjeta_titulo", "label": "Título (vacío = ocultar)", "default": "¿Prefieres pagar con tarjeta? Hazlo a cuotas" },
     { "type": "text", "id": "tarjeta_texto", "label": "Texto", "default": "Paga con tu tarjeta de crédito en cuotas y tu pedido tiene despacho prioritario: sale de primero." },
     { "type": "header", "content": "Sellos de confianza" },
-    { "type": "text", "id": "confianza_ico_1", "label": "Ícono 1", "default": "🚚" },
-    { "type": "text", "id": "confianza_txt_1", "label": "Texto 1", "default": "Envío gratis a toda Colombia" },
+    { "type": "text", "id": "confianza_ico_1", "label": "Ícono 1", "default": "🔒" },
+    { "type": "text", "id": "confianza_txt_1", "label": "Texto 1", "default": "Compra segura" },
     { "type": "text", "id": "confianza_ico_2", "label": "Ícono 2", "default": "💵" },
-    { "type": "text", "id": "confianza_txt_2", "label": "Texto 2", "default": "Pagas cuando lo recibes" },
-    { "type": "text", "id": "confianza_ico_3", "label": "Ícono 3", "default": "⚡" },
-    { "type": "text", "id": "confianza_txt_3", "label": "Texto 3", "default": "Despacho en 24 horas" },
+    { "type": "text", "id": "confianza_txt_2", "label": "Texto 2", "default": "Pagás cuando lo recibís" },
+    { "type": "text", "id": "confianza_ico_3", "label": "Ícono 3", "default": "🔄" },
+    { "type": "text", "id": "confianza_txt_3", "label": "Texto 3", "default": "Si llega dañado, te lo cambiamos gratis" },
     { "type": "header", "content": "Barra fija en celular" },
     { "type": "checkbox", "id": "barra_movil", "label": "Mostrar barra de compra al bajar (celular)", "default": true },
     { "type": "text", "id": "barra_texto", "label": "Texto pequeño de la barra", "default": "Envío gratis · Pago al recibir" }

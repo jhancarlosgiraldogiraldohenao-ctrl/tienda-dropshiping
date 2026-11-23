@@ -174,3 +174,5 @@ html,body{overflow-x:clip}
 .zc-envio small{display:block;font-size:.84rem;opacity:.95;margin-top:2px}
 .zc-envio small{display:inline-block;background:#fff;color:var(--zc-dark);font-weight:800;font-size:.86rem;opacity:1;border-radius:99px;padding:5px 12px;margin-top:8px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
 .zc-envio small{display:block;background:none;box-shadow:none;border-radius:0;padding:8px 0 0;margin-top:8px;border-top:1.5px solid rgba(255,255,255,.45);color:#fff;font-family:var(--zc-head);font-weight:400;font-size:1.02rem;letter-spacing:.02em;line-height:1.2}
+
+.zc-note{margin:10px 0 0;text-align:center;font-size:.8rem;color:var(--zc-muted)}
