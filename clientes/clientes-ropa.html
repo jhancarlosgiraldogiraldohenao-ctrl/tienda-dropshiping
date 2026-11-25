@@ -77,6 +77,15 @@ textarea{min-height:70px;resize:vertical}
 .row .right{display:flex;gap:10px;margin-left:auto}
 .confirm{background:var(--bad-2);color:var(--bad);border-radius:12px;padding:12px;font-size:.9rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 86px);z-index:40;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;background:var(--bg);border:1.5px solid var(--line);border-radius:12px;padding:4px}
+.seg button{font:600 .88rem var(--body);border:0;border-radius:9px;padding:10px 8px;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--denim);color:var(--surface)}
+.pick{background:var(--kraft-2);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:6px}
+.pick label{color:var(--kraft)}
+.who{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px}
+.badge{font:700 .7rem var(--body);letter-spacing:.03em;border-radius:999px;padding:3px 9px;background:var(--denim-2);color:var(--denim)}
+.badge.personal{background:var(--kraft-2);color:var(--kraft)}
+.badge.repeat{background:var(--ok-2);color:var(--ok)}
 @media (max-width:700px){.stats{grid-template-columns:1fr 1fr}}
 @media (max-width:520px){.grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}.panel{animation:up .22s ease-out}@keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}}
@@ -111,6 +120,17 @@ textarea{min-height:70px;resize:vertical}
 <div class="sheet" id="sheet" hidden>
   <form class="panel" id="form" novalidate>
     <h2 id="formTitle">Nueva venta</h2>
+    <div>
+      <p class="note" style="margin:0 0 6px">¿Quién te compró?</p>
+      <div class="seg" role="group" aria-label="Tipo de comprador">
+        <button type="button" id="t_app" aria-pressed="true">📱 Comprador de app</button>
+        <button type="button" id="t_personal" aria-pressed="false">🤝 Cliente personal</button>
+      </div>
+    </div>
+    <div class="pick" id="pickBox" hidden>
+      <label>Escoger un cliente que ya tengo<select id="f_cliente"></select></label>
+      <span class="note" id="pickInfo">O escribe los datos abajo si es un cliente nuevo.</span>
+    </div>
     <div class="grid">
       <label class="full">Nombre del comprador<input id="f_nombre" required autocomplete="off"></label>
       <label>Teléfono<input id="f_tel" inputmode="tel" autocomplete="off"></label>
@@ -150,7 +170,11 @@ const ESTADOS=["Apartado","Pagado","Enviado","Entregado","Cancelado"];
 const CANALES=["GoTrendier","Marketplace","Instagram","WhatsApp","En persona","Otro"];
 const $=id=>document.getElementById(id);
 const fmt=n=>"$"+Math.round(Number(n)||0).toLocaleString("es-CO");
-let db=null, col=null, rows=[], filtro="Todos", editing=null;
+let db=null, col=null, rows=[], filtro="Todos", editing=null, tipo="app";
+const keyOf=r=>{const t=String(r.tel||"").replace(/\D/g,"");return t.length>=7?"t"+t:"n"+String(r.nombre||"").trim().toLowerCase();};
+function clientes(){const m=new Map();rows.forEach(r=>{if(r.estado==="Cancelado")return;const k=keyOf(r);const c=m.get(k)||{k,n:0,last:r};c.n++;if((r.fecha||"")>=(c.last.fecha||""))c.last=r;m.set(k,c);});return m;}
+function setTipo(t){tipo=t;$("t_app").setAttribute("aria-pressed",String(t==="app"));$("t_personal").setAttribute("aria-pressed",String(t==="personal"));}
+$("t_app").onclick=()=>setTipo("app");$("t_personal").onclick=()=>setTipo("personal");
 
 function fillSelect(el,opts){el.replaceChildren(...opts.map(o=>{const x=document.createElement("option");x.value=o;x.textContent=o;return x;}));}
 fillSelect($("f_marca"),MARCAS);fillSelect($("f_estado"),ESTADOS);fillSelect($("f_canal"),CANALES);
@@ -177,8 +201,12 @@ function render(){
   if(!rows.length){const e=document.createElement("div");e.className="empty";e.innerHTML="<strong>Todavía no hay ventas</strong>";
     e.append("Toca “＋ Nueva venta” para anotar a tu primer comprador: nombre, teléfono y la prenda que se llevó.");list.appendChild(e);return;}
   if(!vis.length){const e=document.createElement("div");e.className="empty";e.innerHTML="<strong>Sin resultados</strong>";e.append("Prueba con otro nombre o quita el filtro.");list.appendChild(e);return;}
+  const cm=clientes();
   vis.forEach(r=>{
     const c=document.createElement("article");c.className="card";c.tabIndex=0;
+    const who=document.createElement("div");who.className="who";
+    const b1=document.createElement("span");b1.className="badge"+(r.tipo==="personal"?" personal":"");b1.textContent=r.tipo==="personal"?"🤝 Cliente personal":"📱 Comprador de app";who.appendChild(b1);
+    const n=(cm.get(keyOf(r))||{n:0}).n;if(n>0){const b2=document.createElement("span");b2.className="badge"+(n>1?" repeat":"");b2.textContent=n===1?"1 compra":n+" compras";who.appendChild(b2);}
     const h=document.createElement("h3");h.textContent=r.nombre||"Sin nombre";
     const p=document.createElement("div");p.className="price";p.textContent=r.precio?fmt(r.precio):"";
     const m=document.createElement("div");m.className="meta";
@@ -192,7 +220,7 @@ function render(){
     const mo=document.createElement("div");mo.className="money";
     const chip=(label,val,cls)=>{const s=document.createElement("span");if(cls)s.className=cls;s.append(label+" ");const b=document.createElement("b");b.textContent=fmt(val);s.appendChild(b);mo.appendChild(s);};
     if(r.costo||r.precio){chip("Costó",r.costo||0);chip("Vendí en",r.precio||0);const g=(Number(r.precio)||0)-(Number(r.costo)||0);chip("Ganancia",g,g<0?"loss":"gain");}
-    c.append(h,p,m,mo,tag);
+    c.append(h,p,who,m,mo,tag);
     c.style.gridTemplateAreas="";
     c.onclick=()=>openForm(r);c.onkeydown=e=>{if(e.key==="Enter")openForm(r);};
     list.appendChild(c);
@@ -206,10 +234,22 @@ function openForm(r){
   $("f_precio").value=r?.precio?String(r.precio):"";$("f_costo").value=r?.costo?String(r.costo):"";showGan();$("f_fecha").value=r?.fecha||new Date().toISOString().slice(0,10);
   $("f_estado").value=r?.estado||"Pagado";$("f_canal").value=r?.canal||"GoTrendier";
   $("f_dir").value=r?.dir||"";$("f_notas").value=r?.notas||"";
+  setTipo(r?.tipo||"app");
+  const cm=[...clientes().values()].sort((a,b)=>String(a.last.nombre).localeCompare(String(b.last.nombre),"es"));
+  const sel=$("f_cliente");sel.replaceChildren();const o0=document.createElement("option");o0.value="";o0.textContent="— Cliente nuevo —";sel.appendChild(o0);
+  cm.forEach(c=>{const o=document.createElement("option");o.value=c.k;o.textContent=(c.last.nombre||"Sin nombre")+(c.last.tel?" · "+c.last.tel:"")+" — "+(c.n===1?"1 compra":c.n+" compras");sel.appendChild(o);});
+  $("pickBox").hidden=!!r||!cm.length;$("pickInfo").textContent="O escribe los datos abajo si es un cliente nuevo.";
   $("delBtn").hidden=!r;$("confirmBox").hidden=true;$("formMsg").textContent="";
   $("sheet").hidden=false;setTimeout(()=>$("f_nombre").focus(),50);
 }
 function closeForm(){$("sheet").hidden=true;editing=null;}
+$("f_cliente").addEventListener("change",()=>{
+  const c=clientes().get($("f_cliente").value);
+  if(!c){$("pickInfo").textContent="O escribe los datos abajo si es un cliente nuevo.";return;}
+  const l=c.last;$("f_nombre").value=l.nombre||"";$("f_tel").value=l.tel||"";$("f_ciudad").value=l.ciudad||"";$("f_dir").value=l.dir||"";
+  setTipo(l.tipo||"app");$("pickInfo").textContent="Lleva "+(c.n===1?"1 compra":c.n+" compras")+". Con esta queda en "+(c.n+1)+". Ahora anota la prenda.";
+  $("f_prenda").focus();
+});
 $("addBtn").onclick=()=>openForm(null);
 $("cancelBtn").onclick=closeForm;
 $("sheet").addEventListener("click",e=>{if(e.target.id==="sheet")closeForm();});
@@ -227,7 +267,7 @@ $("form").addEventListener("submit",async e=>{
   const data={nombre,tel:$("f_tel").value.trim(),ciudad:$("f_ciudad").value.trim(),prenda:$("f_prenda").value.trim(),
     marca:$("f_marca").value,talla:$("f_talla").value.trim(),precio:num($("f_precio").value),costo:num($("f_costo").value),
     fecha:$("f_fecha").value,estado:$("f_estado").value,canal:$("f_canal").value,dir:$("f_dir").value.trim(),notas:$("f_notas").value.trim(),
-    creado:editing?.creado||new Date().toISOString()};
+    tipo,creado:editing?.creado||new Date().toISOString()};
   $("saveBtn").disabled=true;
   try{ if(editing) await col.doc(editing.id).set(data); else await col.add(data);
     closeForm();toast(editing?"Venta actualizada":"Venta guardada");}
@@ -254,8 +294,9 @@ renderChips();
   const dl=await window.claude.use("downloads");
   if(dl){$("exportBtn").hidden=false;$("exportBtn").onclick=async()=>{
     rows.forEach(r=>r.ganancia=(Number(r.precio)||0)-(Number(r.costo)||0));
-    const cols=["fecha","nombre","tel","ciudad","dir","prenda","marca","talla","costo","precio","ganancia","estado","canal","notas"];
-    const head=["Fecha","Nombre","Teléfono","Ciudad","Dirección","Prenda","Marca","Talla","Costo","Precio de venta","Ganancia","Estado","Canal","Notas"];
+    rows.forEach(r=>r.tipoTxt=r.tipo==="personal"?"Cliente personal":"Comprador de app");
+    const cols=["fecha","tipoTxt","nombre","tel","ciudad","dir","prenda","marca","talla","costo","precio","ganancia","estado","canal","notas"];
+    const head=["Fecha","Tipo","Nombre","Teléfono","Ciudad","Dirección","Prenda","Marca","Talla","Costo","Precio de venta","Ganancia","Estado","Canal","Notas"];
     const esc=v=>{v=String(v??"");if(/^[=+\-@]/.test(v))v="'"+v;return /[",\n;]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
     const csv="﻿"+[head.join(","),...rows.map(r=>cols.map(c=>esc(r[c])).join(","))].join("\n");
     try{await dl.save({filename:"clientes-ropa-americana.csv",data:csv});toast("Copia descargada");}
