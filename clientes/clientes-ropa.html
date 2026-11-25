@@ -30,7 +30,13 @@ h1{margin:2px 0 0;font-family:var(--head);font-weight:800;font-size:clamp(1.6rem
 .btn:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,.chip:focus-visible{outline:3px solid var(--kraft);outline-offset:2px}
 .btn.primary{background:var(--denim);border-color:var(--denim);color:var(--surface)}
 .btn.danger{color:var(--bad);border-color:var(--bad-2)}
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.money{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.money span{font-size:.8rem;font-variant-numeric:tabular-nums;border-radius:8px;padding:4px 9px;background:var(--bg);color:var(--muted)}
+.money b{color:var(--ink)}
+.money .gain{background:var(--ok-2);color:var(--ok)}.money .gain b{color:var(--ok)}
+.money .loss{background:var(--bad-2);color:var(--bad)}.money .loss b{color:var(--bad)}
+.stat.gain b{color:var(--ok)}
 .stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;min-width:0}
 .stat b{display:block;font-family:var(--head);font-weight:800;font-size:1.35rem;font-variant-numeric:tabular-nums;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .stat span{font-size:.78rem;color:var(--muted)}
@@ -71,7 +77,8 @@ textarea{min-height:70px;resize:vertical}
 .row .right{display:flex;gap:10px;margin-left:auto}
 .confirm{background:var(--bad-2);color:var(--bad);border-radius:12px;padding:12px;font-size:.9rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 86px);z-index:40;background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-weight:600;font-size:.9rem}
-@media (max-width:520px){.stats{grid-template-columns:1fr 1fr}.stats .stat:last-child{grid-column:1/-1}.grid{grid-template-columns:1fr}}
+@media (max-width:700px){.stats{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:no-preference){.card{transition:border-color .15s}.panel{animation:up .22s ease-out}@keyframes up{from{transform:translateY(24px);opacity:.6}to{transform:none;opacity:1}}}
 </style>
 
@@ -82,9 +89,10 @@ textarea{min-height:70px;resize:vertical}
   </header>
 
   <section class="stats" aria-label="Resumen">
-    <div class="stat"><b id="stClientes">0</b><span>Ventas anotadas</span></div>
     <div class="stat"><b id="stTotal">$0</b><span>Vendido en total</span></div>
-    <div class="stat"><b id="stMes">$0</b><span>Vendido este mes</span></div>
+    <div class="stat gain"><b id="stGan">$0</b><span>Ganancia total</span></div>
+    <div class="stat gain"><b id="stMes">$0</b><span>Ganancia este mes</span></div>
+    <div class="stat"><b id="stClientes">0</b><span>Ventas anotadas</span></div>
   </section>
 
   <section class="tools">
@@ -110,7 +118,9 @@ textarea{min-height:70px;resize:vertical}
       <label class="full">Prenda<input id="f_prenda" placeholder="Ej: chaqueta Detroit café" autocomplete="off"></label>
       <label>Marca<select id="f_marca"></select></label>
       <label>Talla<input id="f_talla" placeholder="S, M, L, 32x30…" autocomplete="off"></label>
-      <label>Precio de venta<input id="f_precio" inputmode="numeric" placeholder="120000" autocomplete="off"></label>
+      <label>¿Cuánto te costó?<input id="f_costo" inputmode="numeric" placeholder="40000" autocomplete="off"></label>
+      <label>¿En cuánto la vendiste?<input id="f_precio" inputmode="numeric" placeholder="120000" autocomplete="off"></label>
+      <p class="note full" id="f_gan"></p>
       <label>Fecha<input id="f_fecha" type="date"></label>
       <label>Estado<select id="f_estado"></select></label>
       <label>Canal<select id="f_canal"></select></label>
@@ -157,8 +167,10 @@ function render(){
   const vendidas=rows.filter(r=>r.estado!=="Cancelado");
   const now=new Date(), ym=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
   $("stClientes").textContent=rows.length;
+  const gan=r=>(Number(r.precio)||0)-(Number(r.costo)||0);
   $("stTotal").textContent=fmt(vendidas.reduce((s,r)=>s+(Number(r.precio)||0),0));
-  $("stMes").textContent=fmt(vendidas.filter(r=>(r.fecha||"").startsWith(ym)).reduce((s,r)=>s+(Number(r.precio)||0),0));
+  $("stGan").textContent=fmt(vendidas.reduce((s,r)=>s+gan(r),0));
+  $("stMes").textContent=fmt(vendidas.filter(r=>(r.fecha||"").startsWith(ym)).reduce((s,r)=>s+gan(r),0));
   const list=$("list");list.replaceChildren();
   let vis=rows.filter(r=>filtro==="Todos"||r.estado===filtro);
   if(q)vis=vis.filter(r=>[r.nombre,r.tel,r.prenda,r.marca,r.ciudad,r.notas].join(" ").toLowerCase().includes(q));
@@ -177,7 +189,10 @@ function render(){
     if(r.canal){const t=document.createElement("span");t.textContent=r.canal;m.appendChild(t);}
     if(r.fecha){const t=document.createElement("span");const [y,mo,d]=r.fecha.split("-");t.textContent=d+"/"+mo+"/"+y;m.appendChild(t);}
     const tag=document.createElement("span");tag.className="tag s-"+(r.estado||"Apartado");tag.textContent=r.estado||"Apartado";
-    c.append(h,p,m,tag);
+    const mo=document.createElement("div");mo.className="money";
+    const chip=(label,val,cls)=>{const s=document.createElement("span");if(cls)s.className=cls;s.append(label+" ");const b=document.createElement("b");b.textContent=fmt(val);s.appendChild(b);mo.appendChild(s);};
+    if(r.costo||r.precio){chip("Costó",r.costo||0);chip("Vendí en",r.precio||0);const g=(Number(r.precio)||0)-(Number(r.costo)||0);chip("Ganancia",g,g<0?"loss":"gain");}
+    c.append(h,p,m,mo,tag);
     c.style.gridTemplateAreas="";
     c.onclick=()=>openForm(r);c.onkeydown=e=>{if(e.key==="Enter")openForm(r);};
     list.appendChild(c);
@@ -188,7 +203,7 @@ function openForm(r){
   editing=r||null;$("formTitle").textContent=r?"Editar venta":"Nueva venta";
   $("f_nombre").value=r?.nombre||"";$("f_tel").value=r?.tel||"";$("f_ciudad").value=r?.ciudad||"";
   $("f_prenda").value=r?.prenda||"";$("f_marca").value=r?.marca||"Carhartt";$("f_talla").value=r?.talla||"";
-  $("f_precio").value=r?.precio?String(r.precio):"";$("f_fecha").value=r?.fecha||new Date().toISOString().slice(0,10);
+  $("f_precio").value=r?.precio?String(r.precio):"";$("f_costo").value=r?.costo?String(r.costo):"";showGan();$("f_fecha").value=r?.fecha||new Date().toISOString().slice(0,10);
   $("f_estado").value=r?.estado||"Pagado";$("f_canal").value=r?.canal||"GoTrendier";
   $("f_dir").value=r?.dir||"";$("f_notas").value=r?.notas||"";
   $("delBtn").hidden=!r;$("confirmBox").hidden=true;$("formMsg").textContent="";
@@ -200,6 +215,9 @@ $("cancelBtn").onclick=closeForm;
 $("sheet").addEventListener("click",e=>{if(e.target.id==="sheet")closeForm();});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("sheet").hidden)closeForm();});
 $("q").addEventListener("input",render);
+function num(v){return Number(String(v||"").replace(/[^\d]/g,""))||0;}
+function showGan(){const c=num($("f_costo").value),p=num($("f_precio").value);$("f_gan").textContent=(c||p)?"Ganancia: "+fmt(p-c):"";}
+$("f_costo").addEventListener("input",showGan);$("f_precio").addEventListener("input",showGan);
 
 $("form").addEventListener("submit",async e=>{
   e.preventDefault();
@@ -207,7 +225,7 @@ $("form").addEventListener("submit",async e=>{
   if(!nombre){$("formMsg").textContent="Escribe el nombre del comprador para guardar.";$("f_nombre").focus();return;}
   if(!col){$("formMsg").textContent="No se pudo conectar con tus datos. Recarga la página e inténtalo otra vez.";return;}
   const data={nombre,tel:$("f_tel").value.trim(),ciudad:$("f_ciudad").value.trim(),prenda:$("f_prenda").value.trim(),
-    marca:$("f_marca").value,talla:$("f_talla").value.trim(),precio:Number(($("f_precio").value||"").replace(/[^\d]/g,""))||0,
+    marca:$("f_marca").value,talla:$("f_talla").value.trim(),precio:num($("f_precio").value),costo:num($("f_costo").value),
     fecha:$("f_fecha").value,estado:$("f_estado").value,canal:$("f_canal").value,dir:$("f_dir").value.trim(),notas:$("f_notas").value.trim(),
     creado:editing?.creado||new Date().toISOString()};
   $("saveBtn").disabled=true;
@@ -235,8 +253,9 @@ renderChips();
     ()=>{$("list").replaceChildren();const e=document.createElement("div");e.className="empty";e.innerHTML="<strong>Se perdió la conexión</strong>";e.append("Recarga la página.");$("list").appendChild(e);});
   const dl=await window.claude.use("downloads");
   if(dl){$("exportBtn").hidden=false;$("exportBtn").onclick=async()=>{
-    const cols=["fecha","nombre","tel","ciudad","dir","prenda","marca","talla","precio","estado","canal","notas"];
-    const head=["Fecha","Nombre","Teléfono","Ciudad","Dirección","Prenda","Marca","Talla","Precio","Estado","Canal","Notas"];
+    rows.forEach(r=>r.ganancia=(Number(r.precio)||0)-(Number(r.costo)||0));
+    const cols=["fecha","nombre","tel","ciudad","dir","prenda","marca","talla","costo","precio","ganancia","estado","canal","notas"];
+    const head=["Fecha","Nombre","Teléfono","Ciudad","Dirección","Prenda","Marca","Talla","Costo","Precio de venta","Ganancia","Estado","Canal","Notas"];
     const esc=v=>{v=String(v??"");if(/^[=+\-@]/.test(v))v="'"+v;return /[",\n;]/.test(v)?'"'+v.replace(/"/g,'""')+'"':v;};
     const csv="﻿"+[head.join(","),...rows.map(r=>cols.map(c=>esc(r[c])).join(","))].join("\n");
     try{await dl.save({filename:"clientes-ropa-americana.csv",data:csv});toast("Copia descargada");}
