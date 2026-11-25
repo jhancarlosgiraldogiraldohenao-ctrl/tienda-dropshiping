@@ -83,7 +83,7 @@ textarea{min-height:70px;resize:vertical}
 
   <section class="stats" aria-label="Resumen">
     <div class="stat"><b id="stClientes">0</b><span>Ventas anotadas</span></div>
-    <div class="stat"><b id="stTotal">$0</b><span>Vendido (sin devoluciones)</span></div>
+    <div class="stat"><b id="stTotal">$0</b><span>Vendido en total</span></div>
     <div class="stat"><b id="stMes">$0</b><span>Vendido este mes</span></div>
   </section>
 
@@ -136,7 +136,7 @@ textarea{min-height:70px;resize:vertical}
 
 <script>
 const MARCAS=["Carhartt","Dickies","Patagonia","The North Face","Columbia","Ralph Lauren","Tommy Hilfiger","Nautica","Chaps","Harley-Davidson","Levi's","Nike","Otra"];
-const ESTADOS=["Apartado","Pagado","Enviado","Entregado","Devuelto","Cancelado"];
+const ESTADOS=["Apartado","Pagado","Enviado","Entregado","Cancelado"];
 const CANALES=["GoTrendier","Marketplace","Instagram","WhatsApp","En persona","Otro"];
 const $=id=>document.getElementById(id);
 const fmt=n=>"$"+Math.round(Number(n)||0).toLocaleString("es-CO");
@@ -154,7 +154,7 @@ function toast(t){const el=$("toast");el.textContent=t;el.hidden=false;clearTime
 
 function render(){
   const q=$("q").value.trim().toLowerCase();
-  const vendidas=rows.filter(r=>!["Devuelto","Cancelado"].includes(r.estado));
+  const vendidas=rows.filter(r=>r.estado!=="Cancelado");
   const now=new Date(), ym=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0");
   $("stClientes").textContent=rows.length;
   $("stTotal").textContent=fmt(vendidas.reduce((s,r)=>s+(Number(r.precio)||0),0));
